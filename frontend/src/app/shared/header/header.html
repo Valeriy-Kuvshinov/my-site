@@ -1,0 +1,68 @@
+@if (store.deviceType() !== 'desktop') {
+<nav class="mobile-view flex items-center justify-between p-4 max-w-7xl mx-auto">
+	<button
+		(click)="openMenu()"
+		aria-label="Open user menu"
+		class="p-2">
+		<!-- <app-svg-icon icon="menu"></app-svg-icon> -->
+		<span>[Menu]</span>
+	</button>
+
+	<a
+		routerLink="/"
+		aria-label="Go to Home"
+		class="flex shrink-0">
+		<app-image-container
+			[src]="LOGO_IMG"
+			alt="Noffty logo"
+			[width]="56"
+			[height]="56"
+			[priority]="true">
+		</app-image-container>
+	</a>
+
+	<!-- Placeholder for User Avatar -->
+	<div class="w-10 h-10 bg-slate-600 rounded-full"></div>
+</nav>
+} @else {
+<nav class="desktop-view flex flex-row items-center justify-center gap-8 p-4 max-w-7xl mx-auto">
+	<a
+		routerLink="/portfolio"
+		routerLinkActive="text-blue-400"
+		class="hover:text-blue-300 font-semibold transition-colors">
+		Portfolio
+	</a>
+	<a
+		routerLink="/reviews"
+		routerLinkActive="text-blue-400"
+		class="hover:text-blue-300 font-semibold transition-colors">
+		Reviews
+	</a>
+
+	<a
+		routerLink="/"
+		class="flex shrink-0 mx-4"
+		aria-label="Go to Home">
+		<app-image-container
+			[src]="LOGO_IMG"
+			alt="Noffty logo"
+			[width]="64"
+			[height]="64"
+			[priority]="true">
+		</app-image-container>
+	</a>
+
+	<a
+		routerLink="/about"
+		routerLinkActive="text-blue-400"
+		class="hover:text-blue-300 font-semibold transition-colors">
+		About
+	</a>
+	<a
+		routerLink="/contact"
+		routerLinkActive="text-blue-400"
+		class="hover:text-blue-300 font-semibold transition-colors">
+		Contact
+	</a>
+</nav>
+}

@@ -1,0 +1,93 @@
+/* ============================== FLEX & GRID STUFF ============================== */
+.flex {
+	display: flex;
+
+	&.full-center {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.grid {
+	display: grid;
+
+	&.full-center {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* ============================== MARGIN STUFF ============================== */
+.layout-row {
+	margin: 0 auto;
+	max-width: 90rem;
+}
+
+/* ============================== WIDTH & HEIGHT STUFF ============================== */
+.w-h-full {
+	width: 100%;
+	height: 100%;
+}
+
+/* ============================== TEXT STUFF ============================== */
+.text-hide-overflow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	line-clamp: 1;
+}
+
+/* ============================== TEXT FAMILY STUFF ============================== */
+.text-family-bold {
+	font-family: "cool-bold", Arial, sans-serif;
+}
+
+.text-family-regular {
+	font-family: "cool-regular", Arial, sans-serif;
+}
+
+.text-family-light {
+	font-family: "cool-light", Arial, sans-serif;
+}
+
+/* ============================== POSITION STUFF ============================== */
+.absolute {
+	position: absolute;
+
+	&.full {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.fixed {
+	position: fixed;
+
+	&.full {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+/* ============================== SMOOTH TRANSITIONS STUFF ============================== */
+.fast-trans {
+	transition: all 0.3s ease-in-out;
+}
+
+.normal-trans {
+	transition: all 0.5s ease-in-out;
+}
+
+.slow-trans {
+	transition: all 0.75s ease-in-out;
+}
+
+.very-slow-trans {
+	transition: all 1s ease-in-out;
+}

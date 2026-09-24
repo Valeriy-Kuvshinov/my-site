@@ -1,0 +1,23 @@
+@font-face {
+	font-family: "heebo-light";
+	src: url("../fonts/Heebo-Light.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "heebo-regular";
+	src: url("../fonts/Heebo-Regular.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "heebo-bold";
+	src: url("../fonts/Heebo-Bold.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "dyslexic-regular";
+	src: url("../fonts/Dyslexia-Hebrew.woff2") format("woff2");
+	font-display: swap;
+}

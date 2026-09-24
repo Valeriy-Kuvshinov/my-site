@@ -24,7 +24,12 @@
 								"input": "public"
 							}
 						],
-						"styles": ["src/styles.css"],
+						"styles": [
+							"src/assets/styles/base.css",
+							"src/assets/styles/variables.css",
+							"src/assets/styles/typography.css",
+							"src/assets/styles/helpers.css"
+						],
 						"server": "src/main.server.ts",
 						"outputMode": "server",
 						"security": {
@@ -53,7 +58,13 @@
 						"development": {
 							"optimization": false,
 							"extractLicenses": false,
-							"sourceMap": true
+							"sourceMap": true,
+							"fileReplacements": [
+								{
+									"replace": "src/environments/environment.ts",
+									"with": "src/environments/environment.development.ts"
+								}
+							]
 						}
 					},
 					"defaultConfiguration": "production"
