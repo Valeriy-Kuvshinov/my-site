@@ -11,7 +11,7 @@ import { ImageContainerComponent } from "../general/image-container.component"
 	imports: [RouterLink, RouterLinkActive, ImageContainerComponent],
 	templateUrl: "./header.html",
 	host: {
-		"[class]": '"w-full bg-slate-800 text-white shadow-md sticky top-0 z-50 block"',
+		class: "w-full bg-slate-800 text-white shadow-md sticky top-0 z-50 block",
 	},
 })
 export class HeaderComponent {

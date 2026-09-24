@@ -1,0 +1,130 @@
+<button
+	class="a11y-trigger flex items-center justify-center transition-all fixed"
+	(click)="openA11yMenu(); $event.stopPropagation()"
+	aria-label="Open accessibility menu">
+	<app-svg-icon icon="accessibility"></app-svg-icon>
+	<span>[A11y]</span>
+</button>
+
+@if (isOpen()) {
+<aside
+	#asideRef
+	class="a11y-menu grid transition-all fixed w-full"
+	[class.show]="showMenu()"
+	role="dialog"
+	aria-modal="true"
+	aria-label="Accessibility menu"
+	tabindex="-1">
+	<section class="menu-header flex flex-row items-center justify-between">
+		<h2 class="flex flex-row items-center">
+			<app-svg-icon icon="accessibility"></app-svg-icon>
+			<span>Accessibility Options</span>
+		</h2>
+
+		<div class="header-actions flex flex-row items-center">
+			<button
+				(click)="store.resetA11yPreferences()"
+				aria-label="Reset accessibility settings">
+				<app-svg-icon icon="reset"></app-svg-icon>
+				<span>Reset</span>
+			</button>
+
+			<div
+				class="dividor"
+				aria-hidden="true"></div>
+
+			<button
+				(click)="closeA11yMenu()"
+				aria-label="Close menu">
+				<app-svg-icon icon="close"></app-svg-icon>
+				<span>Close</span>
+			</button>
+		</div>
+	</section>
+
+	<section class="a11y-options grid items-center w-full">
+		<h3>Visual</h3>
+		<button
+			app-toggle-option
+			label="Pause Motion"
+			icon="noMotion"
+			[isActive]="store.a11yPreferences().pauseMotion"
+			(onToggle)="updateToggle('pauseMotion', store.a11yPreferences().pauseMotion)"></button>
+		<button
+			app-toggle-option
+			label="Hide Media"
+			icon="noMedia"
+			[isActive]="store.a11yPreferences().hideMedia"
+			(onToggle)="updateToggle('hideMedia', store.a11yPreferences().hideMedia)"></button>
+		<button
+			app-toggle-option
+			label="High Contrast"
+			icon="highContrast"
+			[isActive]="store.a11yPreferences().highContrast"
+			(onToggle)="toggleColorMode('highContrast')"></button>
+		<button
+			app-toggle-option
+			label="Gray Mode"
+			icon="grayMode"
+			[isActive]="store.a11yPreferences().grayscaleView"
+			(onToggle)="toggleColorMode('grayscaleView')"></button>
+
+		<h3>Orientation</h3>
+		<button
+			app-toggle-option
+			label="Reading Mask"
+			icon="readingMask"
+			[isActive]="store.a11yPreferences().readingMask"
+			(onToggle)="updateToggle('readingMask', store.a11yPreferences().readingMask)"></button>
+		<button
+			app-toggle-option
+			label="Highlight Links"
+			icon="linkHighlight"
+			[isActive]="store.a11yPreferences().highlightLinks"
+			(onToggle)="updateToggle('highlightLinks', store.a11yPreferences().highlightLinks)"></button>
+
+		<h3>Text</h3>
+		<div
+			app-scale-option
+			label="Word Spacing"
+			icon="wordSpace"
+			[currentLevel]="store.a11yPreferences().wordSpacing"
+			(onScaleChange)="updateScale('wordSpacing', $event)"></div>
+		<div
+			app-scale-option
+			label="Line Height"
+			icon="lineHeight"
+			[currentLevel]="store.a11yPreferences().lineHeight"
+			(onScaleChange)="updateScale('lineHeight', $event)"></div>
+		<div
+			app-scale-option
+			label="Letter Spacing"
+			icon="letterSpace"
+			[currentLevel]="store.a11yPreferences().letterSpacing"
+			(onScaleChange)="updateScale('letterSpacing', $event)"></div>
+		<div
+			app-scale-option
+			label="Text Size"
+			icon="textSize"
+			[currentLevel]="store.a11yPreferences().textScale"
+			(onScaleChange)="updateScale('textScale', $event)"></div>
+		<button
+			app-toggle-option
+			label="Friendly Font"
+			icon="dyslexicFont"
+			[isActive]="store.a11yPreferences().dyslexiaFont"
+			(onToggle)="updateToggle('dyslexiaFont', store.a11yPreferences().dyslexiaFont)"></button>
+	</section>
+
+	<section class="menu-footer flex flex-col">
+		<a
+			routerLink="/accessibility"
+			class="flex flex-row items-center w-fit"
+			aria-label="Accessibility Statement. Go to Accessibility page"
+			(click)="closeA11yMenu()">
+			<span>Accessibility Statement</span>
+			<app-svg-icon icon="arrow"></app-svg-icon>
+		</a>
+	</section>
+</aside>
+}

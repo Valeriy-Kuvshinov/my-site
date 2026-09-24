@@ -7,7 +7,6 @@ import { Component } from "@angular/core"
 	styleUrl: "./footer.css",
 	host: {
 		id: "site-footer",
-		// 'block' is added to ensure proper rendering behavior
 		class: "w-full bg-slate-900 text-slate-400 py-6 mt-auto block",
 	},
 })
