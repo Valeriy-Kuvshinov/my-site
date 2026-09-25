@@ -1,0 +1,7 @@
+:host {
+	top: 0;
+	left: 0;
+	right: 0;
+	background: var(--prmclr3);
+	border-bottom: 1px solid var(--scdclr6);
+}

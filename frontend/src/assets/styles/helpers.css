@@ -1,7 +1,5 @@
 /* ============================== FLEX & GRID STUFF ============================== */
 .flex {
-	display: flex;
-
 	&.full-center {
 		justify-content: center;
 		align-items: center;
@@ -9,8 +7,6 @@
 }
 
 .grid {
-	display: grid;
-
 	&.full-center {
 		justify-content: center;
 		align-items: center;
@@ -41,15 +37,15 @@
 
 /* ============================== TEXT FAMILY STUFF ============================== */
 .text-family-bold {
-	font-family: "cool-bold", Arial, sans-serif;
+	font-family: "heebo-bold", Arial, sans-serif;
 }
 
 .text-family-regular {
-	font-family: "cool-regular", Arial, sans-serif;
+	font-family: "heebo-regular", Arial, sans-serif;
 }
 
 .text-family-light {
-	font-family: "cool-light", Arial, sans-serif;
+	font-family: "heebo-light", Arial, sans-serif;
 }
 
 /* ============================== POSITION STUFF ============================== */

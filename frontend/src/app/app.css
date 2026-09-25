@@ -1,0 +1,17 @@
+.back-to-top-link {
+	right: 1rem;
+	bottom: 1rem;
+	padding: 0.5rem;
+	background: var(--scdclr4);
+	fill: var(--prmclr4);
+	border-radius: 100%;
+	outline: none;
+	transform: rotate(-125deg);
+
+	&:hover,
+	&:focus-visible {
+		background: var(--prmclr3);
+		fill: var(--mnrclr6);
+		transform: rotate(-125deg) scale(1.2);
+	}
+}

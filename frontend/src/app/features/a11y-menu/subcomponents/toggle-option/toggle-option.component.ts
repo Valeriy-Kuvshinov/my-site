@@ -1,8 +1,8 @@
 import { Component, ChangeDetectionStrategy, Input, output } from "@angular/core"
 
-import { IconName } from "../../../shared/icon/icon.map"
+import { IconName } from "../../../../shared/components/icon/icon.map"
 
-import { SvgIconComponent } from "../../../shared/icon/icon.component"
+import { SvgIconComponent } from "../../../../shared/components/icon/icon.component"
 
 @Component({
 	selector: "button[app-toggle-option]",
@@ -10,16 +10,20 @@ import { SvgIconComponent } from "../../../shared/icon/icon.component"
 	imports: [SvgIconComponent],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
-		<div class="toggle-header flex flex-row items-center">
-			<app-svg-icon [icon]="icon"></app-svg-icon>
+		<div class="toggle-header flex flex-row items-center gap-2">
+			<app-svg-icon
+				[icon]="icon"
+				width="32"
+				height="32"></app-svg-icon>
 			<span class="text-center">{{ label }}</span>
 		</div>
 	`,
+	styleUrl: "./toggle-option.css",
 	host: {
 		"[attr.aria-pressed]": "isActive",
 		"[class.active]": "isActive",
 		"(click)": "onToggle.emit()",
-		class: "toggle-option flex flex-row items-center justify-center transition-all duration-200",
+		class: "toggle-option flex flex-row full-center w-full fast-trans",
 	},
 })
 export class ToggleOptionComponent {

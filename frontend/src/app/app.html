@@ -10,6 +10,19 @@
 </a>
 
 <app-a11y-menu></app-a11y-menu>
+
+@if (showBackToTop()) {
+<a
+	href="#main-content"
+	class="back-to-top-link flex full-center fast-trans fixed z-15"
+	aria-label="Scroll back to main content">
+	<app-svg-icon
+		icon="arrow"
+		width="32"
+		height="32"></app-svg-icon>
+</a>
+}
+
 <header app-header></header>
 <router-outlet />
 <footer app-footer></footer>

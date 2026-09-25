@@ -20,11 +20,11 @@ export class SvgIconComponent {
 	private readonly sanitizer = inject(DomSanitizer)
 
 	@Input({ required: true }) icon!: IconName
-	@Input() width: number | string = 64
-	@Input() height: number | string = 64
+
+	@Input() width?: number | string
+	@Input() height?: number | string
 	@Input() className = ""
 
-	// Ensure the host element behaves like an icon container while accepting utility classes
 	get hostClass(): string {
 		return `inline-flex items-center justify-center ${this.className}`.trim()
 	}

@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, Input, output } from "@angular/core"
 
-import { IconName } from "../../../shared/icon/icon.map"
+import { IconName } from "../../../../shared/components/icon/icon.map"
 
-import { SvgIconComponent } from "../../../shared/icon/icon.component"
+import { SvgIconComponent } from "../../../../shared/components/icon/icon.component"
 
 export type ScaleLevel = 0 | 1 | 2 | 3 | 4
 
@@ -12,11 +12,14 @@ export type ScaleLevel = 0 | 1 | 2 | 3 | 4
 	imports: [SvgIconComponent],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
-		<div class="scale-header flex flex-row items-center">
-			<app-svg-icon [icon]="icon"></app-svg-icon>
+		<div class="scale-header flex flex-row items-center gap-2">
+			<app-svg-icon
+				[icon]="icon"
+				width="32"
+				height="32"></app-svg-icon>
 			<label
 				[for]="id"
-				class="font-bold text-center"
+				class="text-family-bold text-center"
 				>{{ label }}</label
 			>
 		</div>
@@ -37,9 +40,10 @@ export type ScaleLevel = 0 | 1 | 2 | 3 | 4
 				[attr.aria-valuetext]="currentLevel === 0 ? 'Default' : 'Level ' + currentLevel" />
 		</div>
 	`,
+	styleUrl: "./scale-option.css",
 	host: {
 		"[class.active]": "currentLevel > 0",
-		class: "scale-option flex flex-col items-center justify-center transition-all duration-200 w-full",
+		class: "scale-option flex flex-col full-center w-full fast-trans",
 	},
 })
 export class ScaleOptionComponent {

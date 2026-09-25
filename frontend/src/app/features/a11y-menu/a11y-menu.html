@@ -1,15 +1,17 @@
 <button
-	class="a11y-trigger flex items-center justify-center transition-all fixed"
+	class="a11y-trigger flex full-center fixed fast-trans z-15"
 	(click)="openA11yMenu(); $event.stopPropagation()"
 	aria-label="Open accessibility menu">
-	<app-svg-icon icon="accessibility"></app-svg-icon>
-	<span>[A11y]</span>
+	<app-svg-icon
+		icon="accessibility"
+		width="32"
+		height="32"></app-svg-icon>
 </button>
 
 @if (isOpen()) {
 <aside
 	#asideRef
-	class="a11y-menu grid transition-all fixed w-full"
+	class="a11y-menu grid fixed fast-trans w-full z-30"
 	[class.show]="showMenu()"
 	role="dialog"
 	aria-modal="true"
@@ -17,7 +19,10 @@
 	tabindex="-1">
 	<section class="menu-header flex flex-row items-center justify-between">
 		<h2 class="flex flex-row items-center">
-			<app-svg-icon icon="accessibility"></app-svg-icon>
+			<app-svg-icon
+				icon="accessibility"
+				width="32"
+				height="32"></app-svg-icon>
 			<span>Accessibility Options</span>
 		</h2>
 
@@ -25,8 +30,10 @@
 			<button
 				(click)="store.resetA11yPreferences()"
 				aria-label="Reset accessibility settings">
-				<app-svg-icon icon="reset"></app-svg-icon>
-				<span>Reset</span>
+				<app-svg-icon
+					icon="reset"
+					width="32"
+					height="32"></app-svg-icon>
 			</button>
 
 			<div
@@ -36,8 +43,10 @@
 			<button
 				(click)="closeA11yMenu()"
 				aria-label="Close menu">
-				<app-svg-icon icon="close"></app-svg-icon>
-				<span>Close</span>
+				<app-svg-icon
+					icon="close"
+					width="32"
+					height="32"></app-svg-icon>
 			</button>
 		</div>
 	</section>
@@ -123,7 +132,10 @@
 			aria-label="Accessibility Statement. Go to Accessibility page"
 			(click)="closeA11yMenu()">
 			<span>Accessibility Statement</span>
-			<app-svg-icon icon="arrow"></app-svg-icon>
+			<app-svg-icon
+				icon="arrow"
+				width="16"
+				height="16"></app-svg-icon>
 		</a>
 	</section>
 </aside>

@@ -12,15 +12,16 @@ import { RouterLink } from "@angular/router"
 
 import { SystemStore } from "../../core/stores/system.store"
 
-import { SvgIconComponent } from "../../shared/icon/icon.component"
-import { ScaleOptionComponent, ScaleLevel } from "./subcomponents/scale-option.component"
-import { ToggleOptionComponent } from "./subcomponents/toggle-option.component"
+import { SvgIconComponent } from "../../shared/components/icon/icon.component"
+import { ScaleOptionComponent, ScaleLevel } from "./subcomponents/scale-option/scale-option.component"
+import { ToggleOptionComponent } from "./subcomponents/toggle-option/toggle-option.component"
 
 @Component({
 	selector: "app-a11y-menu",
 	standalone: true,
 	imports: [RouterLink, ToggleOptionComponent, ScaleOptionComponent, SvgIconComponent],
 	templateUrl: "./a11y-menu.html",
+	styleUrl: "./a11y-menu.css",
 })
 export class A11yMenuComponent {
 	protected readonly store = inject(SystemStore)
