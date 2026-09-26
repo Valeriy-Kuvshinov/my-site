@@ -7,7 +7,7 @@ import { SystemStore } from "../../../core/stores/system.store"
 import { ImageContainerComponent } from "../general/image-container.component"
 import { SvgIconComponent } from "../icon/icon.component"
 
-const SCROLL_THRESHOLD_PIXELS = 20
+const SCROLL_THRESHOLD_PIXELS = 10
 
 @Component({
 	selector: "header[app-header]",

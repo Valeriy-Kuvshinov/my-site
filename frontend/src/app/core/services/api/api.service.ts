@@ -2,9 +2,9 @@ import { HttpClient, HttpParams } from "@angular/common/http"
 import { inject, Injectable } from "@angular/core"
 import { firstValueFrom } from "rxjs"
 
-import { ApiResponse } from "../models/network"
+import { ApiResponse } from "../../models/network"
 
-import { environment } from "../../../environments/environment"
+import { environment } from "../../../../environments/environment"
 
 const API_BASE_URL = environment.apiUrl
 @Injectable({

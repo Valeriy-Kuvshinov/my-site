@@ -73,6 +73,10 @@ html {
 	}
 
 	&.hide-media {
+		app-image-container {
+			background: var(--scdclr2) !important;
+		}
+
 		img,
 		picture,
 		video,
@@ -224,6 +228,7 @@ html {
 
 		select {
 			cursor: pointer;
+			height: 37.6px;
 		}
 
 		input,
@@ -267,7 +272,11 @@ html {
 		app-image-container,
 		picture,
 		video {
-			background: var(--scdclr6);
+			background: var(--scdclr2);
+
+			&.ready {
+				background: none;
+			}
 		}
 
 		.modal-wrapper {

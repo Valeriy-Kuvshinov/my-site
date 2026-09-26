@@ -28,7 +28,7 @@
 	}
 
 	@media (max-width: 600px) {
-		min-height: 60vh;
+		min-height: 70vh;
 		padding: 2rem 1rem;
 
 		h2 {

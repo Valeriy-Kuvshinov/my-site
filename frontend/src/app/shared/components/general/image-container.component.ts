@@ -1,7 +1,7 @@
 import { ImageLoaderConfig, IMAGE_LOADER, CommonModule, NgOptimizedImage } from "@angular/common"
-import { Provider, Component, OnInit, Input, output } from "@angular/core"
+import { Provider, Component, OnInit, Input, output, signal } from "@angular/core"
 
-export function cloudinaryLoader(config: ImageLoaderConfig): string {
+function cloudinaryLoader(config: ImageLoaderConfig): string {
 	const { src, width } = config
 
 	if (!src.includes("res.cloudinary.com")) return src
@@ -32,15 +32,16 @@ const CustomImageLoaderProvider: Provider = {
 			[width]="width"
 			[height]="height"
 			[priority]="priority"
-			class="size-full"
+			class="w-full h-full object-cover"
 			[class.fast-trans]="!disableFade"
-			[class.hide]="!isLoaded"
+			[class.hide]="!isLoaded()"
 			(load)="onLoad()" />
 	`,
 	host: {
 		"[class]": "hostClasses",
+		"[class.ready]": "isLoaded()",
 		"[style]": "style",
-		"[style.backgroundImage]": "blurDataURL",
+		"[style.backgroundImage]": "blurDataURL()",
 		"[style.backgroundSize]": '"cover"',
 		"[style.backgroundPosition]": '"center"',
 		"(click)": "onClickEvent.emit()",
@@ -58,22 +59,22 @@ export class ImageContainerComponent implements OnInit {
 
 	onClickEvent = output<void>()
 
-	isLoaded = false
+	readonly isLoaded = signal(false)
 
 	ngOnInit() {
-		this.isLoaded = this.disableFade
+		this.isLoaded.set(this.disableFade)
 	}
 
 	onLoad() {
-		this.isLoaded = true
+		this.isLoaded.set(true)
 	}
 
 	get hostClasses(): string {
 		return `image-container flex ${this.className}`.trim()
 	}
 
-	get blurDataURL(): string | null {
-		if (!this.src || !this.src.includes("res.cloudinary.com")) return null
+	blurDataURL(): string | null {
+		if (this.isLoaded() || !this.src || !this.src.includes("res.cloudinary.com")) return null
 
 		const lowResUrl = cloudinaryLoader({ src: this.src, width: 25 })
 

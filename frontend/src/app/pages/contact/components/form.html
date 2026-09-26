@@ -1,0 +1,115 @@
+<form
+	[formGroup]="form"
+	class="grid layout-row w-full gap-4"
+	(ngSubmit)="onSubmit()">
+	<app-input-area
+		label="Name"
+		name="name"
+		[required]="true"
+		type="text"
+		icon="person"
+		placeholder="Your name"
+		[control]="getControl('name')"
+		[error]="getErrorMessage('name')">
+	</app-input-area>
+
+	<app-input-area
+		label="Email"
+		name="email"
+		[required]="true"
+		type="email"
+		icon="mail"
+		placeholder="Your email"
+		[control]="getControl('email')"
+		[error]="getErrorMessage('email')">
+	</app-input-area>
+
+	<app-input-area
+		label="Title"
+		name="title"
+		[required]="true"
+		type="text"
+		icon="title"
+		placeholder="Asking about..."
+		[control]="getControl('title')"
+		[error]="getErrorMessage('title')">
+	</app-input-area>
+
+	<app-select-area
+		label="Subject"
+		name="requestType"
+		icon="info"
+		[control]="getControl('requestType')"
+		[error]="getErrorMessage('requestType')">
+		<option value="Q&A">Q&A</option>
+		<option value="Suggestion">Suggestion</option>
+		<option value="Bug Report">Bug Report</option>
+		<option value="Volunteering">Volunteering</option>
+		<option value="Accessibility">Accessibility</option>
+		<option value="Other">Other</option>
+	</app-select-area>
+
+	<app-input-area
+		label="Message"
+		name="message"
+		[required]="true"
+		type="textarea"
+		icon="message"
+		placeholder="Yo, I got a question..."
+		[control]="getControl('message')"
+		[error]="getErrorMessage('message')">
+	</app-input-area>
+
+	<section class="form-actions flex flex-row items-center justify-between">
+		<button
+			class="flex flex-row items-center gap-2"
+			type="submit"
+			[disabled]="isSendDisabled"
+			(mouseenter)="isActiveInteract.set(true)"
+			(mouseleave)="isActiveInteract.set(false)"
+			(focus)="isActiveInteract.set(true)"
+			(blur)="isActiveInteract.set(false)">
+			<span>
+				@if (isProcessing() || sendMailMutation.isPending()) { Sending... } @else { Send }
+			</span>
+			<app-svg-icon
+				icon="monitor"
+				width="32"
+				height="32"></app-svg-icon>
+		</button>
+
+		<div class="recaptcha-branding grid items-center">
+			<span class="text-xs">Protected by reCAPTCHA</span>
+			<app-image-container
+				[src]="RECAPTCHA_IMG_SRC"
+				alt=""
+				[width]="40"
+				[height]="40">
+			</app-image-container>
+
+			<div class="links flex flex-row justify-between text-xs text-blue-400">
+				<a
+					href="https://policies.google.com/privacy"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="Privacy Policy of Google (opens in a new tab)"
+					>Privacy</a
+				>
+				<a
+					href="https://policies.google.com/terms"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="Terms and Conditions of Google (opens in a new tab)"
+					>Terms</a
+				>
+			</div>
+		</div>
+	</section>
+
+	<re-captcha
+		#recaptchaRef
+		size="invisible"
+		[siteKey]="RECAPTCHA_KEY"
+		(resolved)="onRecaptchaResolved($event)">
+	</re-captcha>
+</form>

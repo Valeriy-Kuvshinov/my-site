@@ -1,23 +1,26 @@
 import { Component, ChangeDetectionStrategy, Input } from "@angular/core"
+import { FormControl, ReactiveFormsModule } from "@angular/forms"
 
-import { IconName } from "../icon/icon.map"
+import { IconName } from "../../icon/icon.map"
 
-import { SvgIconComponent } from "../icon/icon.component"
+import { SvgIconComponent } from "../../icon/icon.component"
 
-export type InputAreaType = "text" | "email" | "textarea" | "password" | "tel"
+type InputAreaType = "text" | "email" | "textarea" | "password" | "tel"
 
 @Component({
 	selector: "app-input-area",
 	standalone: true,
-	imports: [SvgIconComponent],
+	imports: [SvgIconComponent, ReactiveFormsModule],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
 		<label
 			[for]="name"
 			class="grid items-center">
 			@if (icon) {
-				<app-svg-icon [icon]="icon"></app-svg-icon>
-				<span>[{{ icon }}]</span>
+				<app-svg-icon
+					[icon]="icon"
+					width="32"
+					height="32"></app-svg-icon>
 			}
 			<span>
 				{{ label }}
@@ -32,6 +35,7 @@ export type InputAreaType = "text" | "email" | "textarea" | "password" | "tel"
 
 		@if (type === "textarea") {
 			<textarea
+				[formControl]="control"
 				[id]="name"
 				[name]="name"
 				[required]="required"
@@ -39,6 +43,7 @@ export type InputAreaType = "text" | "email" | "textarea" | "password" | "tel"
 				[placeholder]="placeholder"></textarea>
 		} @else {
 			<input
+				[formControl]="control"
 				[type]="type"
 				[id]="name"
 				[name]="name"
@@ -48,12 +53,14 @@ export type InputAreaType = "text" | "email" | "textarea" | "password" | "tel"
 		}
 		<ng-content></ng-content>
 	`,
+	styleUrl: "./input-area.css",
 	host: {
 		"[class.error]": "!!error",
 		class: "input-area grid h-fit block",
 	},
 })
 export class InputAreaComponent {
+	@Input({ required: true }) control!: FormControl
 	@Input({ required: true }) label!: string
 	@Input({ required: true }) name!: string
 	@Input() icon?: IconName

@@ -1,0 +1,37 @@
+:host {
+	gap: 0.25rem;
+
+	label {
+		grid-template-columns: auto auto 1fr;
+		column-gap: 0.5rem;
+		padding: 0 0.5rem;
+		font-size: 1.25rem;
+		fill: var(--prmclr2);
+
+		span:nth-of-type(2) {
+			justify-self: end;
+			color: var(--mnrclr3);
+		}
+	}
+
+	textarea {
+		min-height: 13.5rem;
+	}
+
+	input,
+	textarea {
+		padding: 0.25rem 0.5rem;
+		border: 2px solid transparent;
+		border-radius: 0.5rem;
+		font-size: 1rem;
+
+		&:focus {
+			border-color: var(--mnrclr2);
+		}
+	}
+
+	&.error input,
+	&.error textarea {
+		border-color: var(--mnrclr3);
+	}
+}
