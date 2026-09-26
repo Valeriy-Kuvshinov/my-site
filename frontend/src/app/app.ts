@@ -5,20 +5,31 @@ import { isPlatformBrowser } from "@angular/common"
 import { HeaderComponent } from "./shared/components/header/header.component"
 import { FooterComponent } from "./shared/components/footer/footer.component"
 import { SvgIconComponent } from "./shared/components/icon/icon.component"
+import { AsideMenuComponent } from "./shared/components/aside-menu/aside-menu.component"
 import { A11yMenuComponent } from "./features/a11y-menu/a11y-menu.component"
+import { SystemMessageComponent } from "./features/system-message/system-message.component"
+import { ScreenReaderAnnouncerComponent } from "./features/screen-reader-announcer/screen-reader-announcer.component"
 
 const SCROLL_THRESHOLD_PIXELS = 300
 
 @Component({
 	selector: "app-root",
 	standalone: true,
-	imports: [RouterOutlet, HeaderComponent, FooterComponent, A11yMenuComponent, SvgIconComponent],
+	imports: [
+		RouterOutlet,
+		ScreenReaderAnnouncerComponent,
+		HeaderComponent,
+		FooterComponent,
+		A11yMenuComponent,
+		SystemMessageComponent,
+		SvgIconComponent,
+		AsideMenuComponent,
+	],
 	templateUrl: "./app.html",
 	styleUrl: "./app.css",
 })
 export class App implements OnInit {
 	private readonly platformId = inject(PLATFORM_ID)
-
 	private readonly destroyRef = inject(DestroyRef)
 
 	readonly showBackToTop = signal(false)
@@ -39,6 +50,19 @@ export class App implements OnInit {
 			this.destroyRef.onDestroy(() => {
 				window.removeEventListener("scroll", handleScroll)
 			})
+		}
+	}
+
+	scrollToTarget(targetId: string, event: Event) {
+		event.preventDefault()
+
+		if (isPlatformBrowser(this.platformId)) {
+			const element = document.getElementById(targetId)
+
+			if (element) {
+				element.scrollIntoView({ behavior: "smooth" })
+				element.focus({ preventScroll: true })
+			}
 		}
 	}
 }

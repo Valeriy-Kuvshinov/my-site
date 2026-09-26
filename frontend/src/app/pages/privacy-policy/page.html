@@ -1,1 +1,160 @@
-<section class="page-contents flex flex-col items-center relative w-h-full"></section>
+<section class="page-contents flex flex-col items-center relative w-h-full layout-row">
+	<h1 class="text-center text-family-bold">Privacy Policy</h1>
+
+	<p class="w-full">
+		This Privacy Policy describes how "Did Not Get It" (the "Extension"), developed by
+		vkfreelancesoftware, handles your personal information and data. Our core principle is
+		absolute data minimization: your data belongs to you, stays on your device, and is never
+		transmitted to our server.
+	</p>
+
+	<article class="policy-section w-full">
+		<h2 class="w-fit">1. Information We Do Not Collect</h2>
+		<p class="">"Did Not Get It" operates entirely locally within your browser.</p>
+		<ul class="list-disc">
+			<li>
+				<strong>No Telemetry or Tracking:</strong> We do not track your browsing behavior,
+				clicks, or extension usage.
+			</li>
+			<li>
+				<strong>No Server Transmissions:</strong> We do not own, operate, or route your data
+				through any external backend servers.
+			</li>
+			<li>
+				<strong>No Email Harvesting:</strong> Your email content, sender addresses, and
+				metadata are never copied, logged, or sent to the developer or any third party.
+			</li>
+		</ul>
+	</article>
+
+	<article class="policy-section w-full">
+		<h2 class="w-fit">2. Google API Data Access and Usage</h2>
+		<p class="">
+			In order to function, the Extension requests access to your Gmail account using the
+			Google OAuth 2.0 protocol, specifically to perform modifications in Gmail.
+		</p>
+		<p class="">We access and use this data in the following strictly limited ways:</p>
+		<ul class="list-disc">
+			<li>
+				<strong>Reading Data:</strong> The Extension reads the HTML text of incoming unread
+				emails locally in your browser to check for standard job rejection phrasing using
+				regular expressions.
+			</li>
+			<li>
+				<strong>Modifying Data:</strong> If a rejection is detected, the Extension
+				communicates directly with the Google Gmail API to apply your custom label and
+				remove the "UNREAD" status from that specific email thread.
+			</li>
+			<li>
+				<strong>Authentication:</strong> Your Google OAuth access token is used exclusively
+				to authorize these specific actions directly between your browser and Google's
+				servers.
+			</li>
+		</ul>
+	</article>
+
+	<article class="policy-section w-full">
+		<h2 class="w-fit">3. Google API Services User Data Policy (Limited Use)</h2>
+		<p class="">
+			"Did Not Get It" complies entirely with Google's strict requirements for accessing user
+			data. "Did Not Get It"'s use and transfer to any other app of information received from
+			Google APIs will adhere to the
+			<a
+				app-external-link
+				href="https://developers.google.com/terms/api-services-user-data-policy?utm_source=gemini&authuser=1"
+				label="Google API Services User Data Policy"
+				class="text-blue-400 hover:text-blue-300 underline"></a
+			>, including the Limited Use requirements.
+		</p>
+
+		<p class="">Specifically:</p>
+		<ul class="list-disc">
+			<li>We do not use your data to serve advertisements.</li>
+			<li>We do not allow humans to read your data.</li>
+			<li>We do not sell or transfer your data to third parties.</li>
+		</ul>
+	</article>
+
+	<article class="policy-section w-full">
+		<h2 class="w-fit">4. Data Storage and Security</h2>
+		<p class="">
+			All data required for the Extension to function is stored securely and locally on your
+			device using the browser's native <code>browser.storage.local</code> API. This includes:
+		</p>
+		<ul class="list-disc">
+			<li>Your custom rejection label text.</li>
+			<li>Your "rejections skipped" numerical counter.</li>
+			<li>
+				Your current authentication state and extension settings (e.g., paused/active
+				status).
+			</li>
+			<li>The temporary OAuth access token provided by Google.</li>
+		</ul>
+		<p>
+			Uninstalling the Extension or clicking "Disconnect Gmail" inside the Extension will
+			immediately clear this local data.
+		</p>
+	</article>
+
+	<article class="policy-section w-full">
+		<h2 class="w-fit">5. Third-Party Sharing</h2>
+		<p>
+			We do not share, sell, rent, or trade your personal information, email data, or usage
+			metrics with any third parties. The only data transmission that occurs is the direct
+			communication between your browser and Google's official API endpoints.
+		</p>
+	</article>
+
+	<article class="policy-section w-full">
+		<h2 class="w-fit">6. User Control and Revocation</h2>
+		<p class="">
+			You have complete control over your data and the Extension's access to your account:
+		</p>
+		<ul class="list-disc">
+			<li>
+				<strong>Pause Scanning:</strong> You can temporarily halt the Extension's access to
+				your emails at any time using the "Pause Scanning" button in the Extension popup.
+			</li>
+			<li>
+				<strong>Disconnect:</strong> You can permanently sever the Extension's access by
+				clicking "Disconnect Gmail" in the popup. This calls Google's official revocation
+				API to invalidate your token and wipes all local authentication data.
+			</li>
+			<li>
+				<strong>Google Account Settings:</strong> You can review and revoke access to "Did
+				Not Get It" at any time by visiting your
+				<a
+					app-external-link
+					href="https://myaccount.google.com/permissions?authuser=1"
+					label="Google Account's Third-party apps with account access."
+					class="text-blue-400 hover:text-blue-300 underline">
+				</a>
+			</li>
+		</ul>
+	</article>
+
+	<article class="policy-section w-full">
+		<h2 class="w-fit">7. Changes to This Policy</h2>
+		<p>
+			If we make significant changes to how we handle your data, we will update this Privacy
+			Policy and update the "Effective Date" at the top of this page. Because the Extension
+			does not collect your contact information, we recommend reviewing this policy
+			periodically on the vkfreelancesoftware website.
+		</p>
+	</article>
+
+	<article class="policy-section w-full">
+		<h2 class="w-fit">8. Contact Information</h2>
+		<p class="">
+			If you have any questions, concerns, or requests regarding this Privacy Policy or the
+			security of the Extension, please contact us
+			<a
+				routerLink="/contact"
+				aria-label="Here. Go to Contact page"
+				class="text-blue-400 hover:text-blue-300 underline w-fit">
+				<span> Here.</span>
+			</a>
+		</p>
+		<p class="w-full"><strong>Effective Date:</strong> September 22, 2026</p>
+	</article>
+</section>

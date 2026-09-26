@@ -1,0 +1,59 @@
+.modal-wrapper .aside-menu {
+	max-width: 15rem;
+	background: var(--prmclr1);
+	border-right: 1px solid var(--scdclr6);
+	transform: translateX(-100%);
+	outline: none;
+
+	&.show {
+		transform: translateX(0);
+	}
+
+	.menu-header {
+		padding: 2rem 1rem;
+		padding-block-end: 1rem;
+
+		h2 {
+			font-size: 1.75rem;
+			color: var(--scdclr6);
+		}
+	}
+
+	nav {
+		border-top: 1px solid var(--scdclr6);
+		overflow-y: auto;
+
+		a,
+		button {
+			gap: 1rem;
+			padding: 1rem;
+			color: var(--scdclr6);
+			fill: var(--scdclr6);
+			border-bottom: 1px solid var(--scdclr6);
+			font-size: 1.25rem;
+
+			&.active {
+				cursor: default;
+				pointer-events: none;
+			}
+
+			svg {
+				width: 2rem;
+				height: 2rem;
+			}
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			&:hover,
+			&.active,
+			&:focus-visible {
+				color: var(--scdclr4);
+				fill: var(--scdclr4);
+				background: var(--prmclr4);
+				outline: none;
+			}
+		}
+	}
+}

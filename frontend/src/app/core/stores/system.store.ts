@@ -9,7 +9,7 @@ export interface FlashMessage {
 	type: "success" | "error"
 }
 
-export interface A11yPreferences {
+interface A11yPreferences {
 	pauseMotion: boolean
 	dyslexiaFont: boolean
 	readingMask: boolean

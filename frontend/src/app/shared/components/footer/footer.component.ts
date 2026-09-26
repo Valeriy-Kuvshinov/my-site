@@ -1,11 +1,10 @@
 import { Component } from "@angular/core"
-
-import { NavLinkComponent } from "../general/nav-link.component"
+import { RouterLink, RouterLinkActive } from "@angular/router"
 
 @Component({
 	selector: "footer[app-footer]",
 	standalone: true,
-	imports: [NavLinkComponent],
+	imports: [RouterLink, RouterLinkActive],
 	templateUrl: "./footer.html",
 	host: {
 		id: "site-footer",

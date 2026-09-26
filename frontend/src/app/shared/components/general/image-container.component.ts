@@ -68,17 +68,15 @@ export class ImageContainerComponent implements OnInit {
 		this.isLoaded = true
 	}
 
-	// Dynamically computes the host classes, merging static requirements with dynamic Tailwind inputs
 	get hostClasses(): string {
 		return `image-container flex ${this.className}`.trim()
 	}
 
 	get blurDataURL(): string | null {
-		if (!this.src || !this.src.includes("res.cloudinary.com")) {
-			return null
-		}
+		if (!this.src || !this.src.includes("res.cloudinary.com")) return null
 
 		const lowResUrl = cloudinaryLoader({ src: this.src, width: 25 })
+
 		return `url('${lowResUrl}')`
 	}
 }

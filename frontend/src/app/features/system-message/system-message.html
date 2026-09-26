@@ -1,0 +1,27 @@
+@if (store.message(); as message) {
+<article
+	animate.enter="message-enter"
+	animate.leave="message-leave"
+	class="system-message flex flex-col full-center fixed w-fit z-20"
+	aria-hidden="true">
+	<div
+		class="message-title"
+		[class]="message.type">
+		<h3 class="font-bold">{{ message.title }}</h3>
+	</div>
+
+	<section
+		class="message-contents flex flex-row full-center gap-3"
+		[class]="message.type">
+		<app-svg-icon
+			icon="info"
+			width="24"
+			height="24"></app-svg-icon>
+		<span>{{ message.msg }}</span>
+		<app-svg-icon
+			icon="info"
+			width="24"
+			height="24"></app-svg-icon>
+	</section>
+</article>
+}

@@ -22,9 +22,9 @@ export const routes: Routes = [
 		title: "Portfolio | VK Freelance Software",
 	},
 	{
-		path: "reviews",
-		loadComponent: () => import("./pages/reviews/page.component"),
-		title: "Reviews | VK Freelance Software",
+		path: "services",
+		loadComponent: () => import("./pages/services/page.component"),
+		title: "Services | VK Freelance Software",
 	},
 	{
 		path: "privacy-policy",

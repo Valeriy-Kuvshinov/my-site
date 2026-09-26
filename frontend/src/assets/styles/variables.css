@@ -1,26 +1,27 @@
 :root {
-	/* Primary Colors */
-	--prmclr1: #333230;
-	--prmclr2: #e2e2e2;
-	--prmclr3: #000000;
-	--prmclr4: #0a0a0a;
+	/* Primary Colors: The Extremes (Backgrounds & Core Text) */
+	--prmclr1: #0b0f19; /* Deep Cyber Navy (Main App Background) */
+	--prmclr2: #f8fafc; /* Ice White (Primary Text / High Contrast) */
+	--prmclr3: #04060a; /* Dark Abyss (Deepest background / shadow) */
+	--prmclr4: #ffffff; /* Pure White (Absolute contrast points) */
 
-	/* Secondary Colors */
-	--scdclr1: #504a48;
-	--scdclr2: #1f1c1b;
-	--scdclr3: #bcbcbc;
-	--scdclr4: #f5f5f5;
-	--scdclr5: #2a2a2a;
-	--scdclr6: #8f8f8f;
-	--scdclr7: #242424;
-	--scdclr8: #0f0f0f;
-	--scdclr9: #030303;
+	/* Secondary Colors: The "In-Betweeners" (Typography gradients & Surface elevations) */
+	--scdclr1: #e2e8f0; /* Light Silver (Subheadings) */
+	--scdclr2: #cbd5e1; /* Muted Silver (Secondary Text / Metadata) */
+	--scdclr3: #94a3b8; /* Slate Gray (Tertiary Text / Muted Icons) */
+	--scdclr4: #64748b; /* Dark Slate (Borders / Dividers) */
+	--scdclr5: #475569; /* Mid Slate (Disabled states / Input backgrounds) */
+	--scdclr6: #334155; /* Surface L3 (Highest elevation cards/modals) */
+	--scdclr7: #1e293b; /* Surface L2 (Mid elevation elements) */
+	--scdclr8: #0f172a; /* Surface L1 (Low elevation panels) */
+	--scdclr9: #080b12; /* Inset backgrounds / Code block backgrounds */
 
-	--mnrclr1: #007bff;
-	--mnrclr2: #39ff14;
-	--mnrclr3: #dc143c;
-	--mnrclr4: #110220;
-	--mnrclr5: #ffa500;
-	--mnrclr6: #ffd300;
-	--mnrclr7: #00072c;
+	/* Minor Colors: Accents, Interactions & Alerts */
+	--mnrclr1: #38bdf8; /* Neon Sky Blue */
+	--mnrclr2: #4ade80; /* Mint Green */
+	--mnrclr3: #f87171; /* Soft Coral Red */
+	--mnrclr4: #facc15; /* Neon Gold */
+	--mnrclr5: #0284c7; /* Deep Sky Blue */
+	--mnrclr6: #16a34a; /* Emerald Green */
+	--mnrclr7: #dc2626; /* Crimson */
 }

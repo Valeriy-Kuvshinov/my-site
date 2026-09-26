@@ -163,7 +163,7 @@ html {
 
 	/* Main Stuff */
 	body app-root {
-		background: var(--scdclr8);
+		background: var(--prmclr3);
 		color: var(--prmclr2);
 
 		h1,
@@ -264,21 +264,16 @@ html {
 			transition: all 0.3s ease-in-out;
 		}
 
-		img,
+		app-image-container,
 		picture,
 		video {
 			background: var(--scdclr6);
-		}
-
-		.app-image-container img.hide {
-			opacity: 0;
 		}
 
 		.modal-wrapper {
 			padding: 0;
 			background: rgba(0, 0, 0, 0.75);
 			border: 0;
-			z-index: 20;
 		}
 
 		.skip-link {

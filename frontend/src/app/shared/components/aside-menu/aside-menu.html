@@ -1,0 +1,81 @@
+@if (isOpen()) {
+<div
+	class="modal-wrapper fixed full w-h-full z-20"
+	role="dialog"
+	aria-modal="true">
+	<aside
+		#asideRef
+		class="aside-menu flex flex-col h-full fast-trans"
+		[class.show]="showMenu()"
+		aria-label="Mobile user menu"
+		tabindex="-1">
+		<div class="menu-header flex flex-row items-center">
+			<h2 class="font-bold">Navigation</h2>
+		</div>
+
+		<nav class="flex flex-col">
+			<a
+				routerLink="/"
+				routerLinkActive="active"
+				[routerLinkActiveOptions]="{ exact: true }"
+				ariaCurrentWhenActive="page"
+				class="flex flex-row items-center fast-trans"
+				(click)="closeAsideMenu()">
+				<app-svg-icon
+					icon="home"
+					width="32"
+					height="32"></app-svg-icon>
+				<span>Home</span>
+			</a>
+			<a
+				routerLink="/portfolio"
+				routerLinkActive="active"
+				ariaCurrentWhenActive="page"
+				class="flex flex-row items-center fast-trans"
+				(click)="closeAsideMenu()">
+				<span>Portfolio</span>
+			</a>
+			<a
+				routerLink="/services"
+				routerLinkActive="active"
+				ariaCurrentWhenActive="page"
+				class="flex flex-row items-center fast-trans"
+				(click)="closeAsideMenu()">
+				<span>Services</span>
+			</a>
+			<a
+				routerLink="/about"
+				routerLinkActive="active"
+				ariaCurrentWhenActive="page"
+				class="flex flex-row items-center fast-trans"
+				(click)="closeAsideMenu()">
+				<span>About</span>
+			</a>
+			<a
+				routerLink="/contact"
+				routerLinkActive="active"
+				ariaCurrentWhenActive="page"
+				class="flex flex-row items-center fast-trans"
+				(click)="closeAsideMenu()">
+				<span>Contact</span>
+			</a>
+			<a
+				routerLink="/privacy-policy"
+				routerLinkActive="active"
+				ariaCurrentWhenActive="page"
+				class="flex flex-row items-center fast-trans"
+				(click)="closeAsideMenu()">
+				<span>Privacy Policy</span>
+			</a>
+			<a
+				routerLink="/accessibility"
+				routerLinkActive="active"
+				ariaCurrentWhenActive="page"
+				class="flex flex-row items-center fast-trans"
+				(click)="closeAsideMenu()">
+				<span>Accessibility</span>
+			</a>
+		</nav>
+	</aside>
+</div>
+}

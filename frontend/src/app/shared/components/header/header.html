@@ -1,58 +1,75 @@
 @if (store.deviceType() !== 'desktop') {
-<nav class="mobile-view flex items-center justify-between p-4 max-w-7xl mx-auto">
+<nav class="mobile-view grid items-center">
 	<button
 		(click)="openMenu()"
 		aria-label="Open user menu"
-		class="p-2">
-		<app-svg-icon icon="menu"></app-svg-icon>
+		class="w-fit">
+		<app-svg-icon
+			icon="menu"
+			width="32"
+			height="32"></app-svg-icon>
 	</button>
 
-	<app-nav-link
-		href="/"
-		label="Home"
-		[isLogo]="true"
-		[exact]="true"
-		className="flex shrink-0">
+	<a
+		routerLink="/"
+		routerLinkActive="active"
+		[routerLinkActiveOptions]="{ exact: true }"
+		ariaCurrentWhenActive="page"
+		class="logo flex fast-trans">
 		<app-image-container
 			[src]="LOGO_IMG"
 			alt="Noffty logo"
 			[width]="56"
 			[height]="56"
-			[priority]="true">
+			[priority]="true"
+			className="!bg-transparent">
 		</app-image-container>
-	</app-nav-link>
-
-	<div class="w-10 h-10 bg-slate-600 rounded-full"></div>
+	</a>
 </nav>
 } @else {
-<nav class="desktop-view flex flex-row items-center justify-center gap-8 p-4 max-w-7xl mx-auto">
-	<app-nav-link
-		href="/portfolio"
-		label="Portfolio"></app-nav-link>
-	<app-nav-link
-		href="/reviews"
-		label="Reviews"></app-nav-link>
-
-	<app-nav-link
-		href="/"
-		label="Home"
-		[isLogo]="true"
-		[exact]="true"
-		className="flex shrink-0 mx-4">
+<nav class="desktop-view flex flex-row align-center justify-between layout-row">
+	<a
+		routerLink="/about"
+		routerLinkActive="active"
+		ariaCurrentWhenActive="page"
+		class="relative fast-trans">
+		<span>About</span>
+	</a>
+	<a
+		routerLink="/contact"
+		routerLinkActive="active"
+		ariaCurrentWhenActive="page"
+		class="relative fast-trans">
+		<span>Contact</span>
+	</a>
+	<a
+		routerLink="/"
+		routerLinkActive="active"
+		[routerLinkActiveOptions]="{ exact: true }"
+		ariaCurrentWhenActive="page"
+		class="logo flex fast-trans">
 		<app-image-container
 			[src]="LOGO_IMG"
 			alt="Noffty logo"
-			[width]="64"
-			[height]="64"
-			[priority]="true">
+			[width]="54"
+			[height]="54"
+			[priority]="true"
+			className="!bg-transparent">
 		</app-image-container>
-	</app-nav-link>
-
-	<app-nav-link
-		href="/about"
-		label="About"></app-nav-link>
-	<app-nav-link
-		href="/contact"
-		label="Contact"></app-nav-link>
+	</a>
+	<a
+		routerLink="/portfolio"
+		routerLinkActive="active"
+		ariaCurrentWhenActive="page"
+		class="relative fast-trans">
+		<span>Portfolio</span>
+	</a>
+	<a
+		routerLink="/services"
+		routerLinkActive="active"
+		ariaCurrentWhenActive="page"
+		class="relative fast-trans">
+		<span>Services</span>
+	</a>
 </nav>
 }

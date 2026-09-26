@@ -1,3 +1,5 @@
+<app-screen-reader-announcer></app-screen-reader-announcer>
+
 <a
 	href="#main-content"
 	class="skip-link absolute flex full-center">
@@ -14,7 +16,8 @@
 @if (showBackToTop()) {
 <a
 	href="#main-content"
-	class="back-to-top-link flex full-center fast-trans fixed z-15"
+	(click)="scrollToTarget('main-content', $event)"
+	class="back-to-top flex full-center fast-trans fixed z-15"
 	aria-label="Scroll back to main content">
 	<app-svg-icon
 		icon="arrow"
@@ -22,6 +25,10 @@
 		height="32"></app-svg-icon>
 </a>
 }
+
+<app-system-message></app-system-message>
+
+<app-aside-menu></app-aside-menu>
 
 <header app-header></header>
 <router-outlet />
