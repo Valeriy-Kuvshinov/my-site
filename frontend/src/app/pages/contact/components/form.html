@@ -9,7 +9,7 @@
 		type="text"
 		icon="person"
 		placeholder="Your name"
-		[control]="getControl('name')"
+		[control]="getInputControl('name')"
 		[error]="getErrorMessage('name')">
 	</app-input-area>
 
@@ -20,7 +20,7 @@
 		type="email"
 		icon="mail"
 		placeholder="Your email"
-		[control]="getControl('email')"
+		[control]="getInputControl('email')"
 		[error]="getErrorMessage('email')">
 	</app-input-area>
 
@@ -31,7 +31,7 @@
 		type="text"
 		icon="title"
 		placeholder="Asking about..."
-		[control]="getControl('title')"
+		[control]="getInputControl('title')"
 		[error]="getErrorMessage('title')">
 	</app-input-area>
 
@@ -39,7 +39,7 @@
 		label="Subject"
 		name="requestType"
 		icon="info"
-		[control]="getControl('requestType')"
+		[control]="getInputControl('requestType')"
 		[error]="getErrorMessage('requestType')">
 		<option value="Q&A">Q&A</option>
 		<option value="Suggestion">Suggestion</option>
@@ -56,7 +56,7 @@
 		type="textarea"
 		icon="message"
 		placeholder="Yo, I got a question..."
-		[control]="getControl('message')"
+		[control]="getInputControl('message')"
 		[error]="getErrorMessage('message')">
 	</app-input-area>
 
@@ -77,39 +77,9 @@
 				width="32"
 				height="32"></app-svg-icon>
 		</button>
-
-		<div class="recaptcha-branding grid items-center">
-			<span class="text-xs">Protected by reCAPTCHA</span>
-			<app-image-container
-				[src]="RECAPTCHA_IMG_SRC"
-				alt=""
-				[width]="40"
-				[height]="40">
-			</app-image-container>
-
-			<div class="links flex flex-row justify-between text-xs text-blue-400">
-				<a
-					href="https://policies.google.com/privacy"
-					target="_blank"
-					rel="noopener noreferrer"
-					aria-label="Privacy Policy of Google (opens in a new tab)"
-					>Privacy</a
-				>
-				<a
-					href="https://policies.google.com/terms"
-					target="_blank"
-					rel="noopener noreferrer"
-					aria-label="Terms and Conditions of Google (opens in a new tab)"
-					>Terms</a
-				>
-			</div>
-		</div>
 	</section>
-
-	<re-captcha
-		#recaptchaRef
-		size="invisible"
-		[siteKey]="RECAPTCHA_KEY"
-		(resolved)="onRecaptchaResolved($event)">
-	</re-captcha>
+	<ngx-turnstile
+		[siteKey]="TURNSTILE_KEY"
+		(resolved)="onTurnstileResolved($event)">
+	</ngx-turnstile>
 </form>

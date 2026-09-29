@@ -11,7 +11,7 @@ export interface ContactMailForm {
 	title: string
 	requestType: string
 	message: string
-	recaptchaToken?: string
+	turnstileToken?: string
 }
 
 @Injectable({

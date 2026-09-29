@@ -1,6 +1,6 @@
 import { Component, inject, ViewChild, signal } from "@angular/core"
 import { FormBuilder, Validators, ReactiveFormsModule, FormControl } from "@angular/forms"
-import { RecaptchaModule, RecaptchaComponent } from "ng-recaptcha-2"
+import { NgxTurnstileModule, NgxTurnstileComponent } from "ngx-turnstile"
 
 import { environment } from "../../../../environments/environment.development"
 
@@ -8,7 +8,6 @@ import { MailService, ContactMailForm } from "../../../core/services/api/mail/ma
 
 import { InputAreaComponent } from "../../../shared/components/form/input-area/input-area.component"
 import { SelectAreaComponent } from "../../../shared/components/form/select-area/select-area.component"
-import { ImageContainerComponent } from "../../../shared/components/general/image-container.component"
 import { SvgIconComponent } from "../../../shared/components/icon/icon.component"
 
 @Component({
@@ -16,11 +15,10 @@ import { SvgIconComponent } from "../../../shared/components/icon/icon.component
 	standalone: true,
 	imports: [
 		ReactiveFormsModule,
-		RecaptchaModule,
+		NgxTurnstileModule,
 		SvgIconComponent,
 		InputAreaComponent,
 		SelectAreaComponent,
-		ImageContainerComponent,
 	],
 	templateUrl: "./form.html",
 	styleUrl: "./form.css",
@@ -35,15 +33,14 @@ export class ContactFormComponent {
 
 	readonly sendMailMutation = this.mailService.sendContactMail()
 
-	@ViewChild("recaptchaRef") recaptchaRef!: RecaptchaComponent
+	@ViewChild(NgxTurnstileComponent) turnstileRef!: NgxTurnstileComponent
 
-	protected readonly RECAPTCHA_KEY = environment.recaptchaPublicKey
-	protected readonly RECAPTCHA_IMG_SRC = "/images/recaptcha.avif"
+	protected readonly TURNSTILE_KEY = environment.turnstilePublicKey
 
 	readonly isActiveInteract = signal(false)
 	readonly isProcessing = signal(false)
+	readonly turnstileToken = signal<string | null>(null)
 
-	// Form schema mapping with native Validators
 	readonly form = this.fb.nonNullable.group({
 		name: [
 			"",
@@ -84,8 +81,7 @@ export class ContactFormComponent {
 		],
 	})
 
-	// Helper method to cast abstract controls to FormControl for the template
-	getControl(name: keyof typeof this.form.controls): FormControl {
+	getInputControl(name: keyof typeof this.form.controls): FormControl {
 		return this.form.get(name) as FormControl
 	}
 
@@ -107,27 +103,24 @@ export class ContactFormComponent {
 		return this.form.invalid || this.isProcessing() || this.sendMailMutation.isPending()
 	}
 
-	onSubmit() {
-		if (this.form.invalid) {
+	onTurnstileResolved(token: string | null) {
+		this.turnstileToken.set(token)
+	}
+
+	async onSubmit() {
+		if (this.isSendDisabled) {
 			this.form.markAllAsTouched()
 			return
 		}
 		this.isProcessing.set(true)
-		this.recaptchaRef.execute()
-	}
 
-	async onRecaptchaResolved(token: string | null) {
-		if (!token) {
-			console.error("reCAPTCHA verification failed")
-
+		if (!this.turnstileToken()) {
 			this.isProcessing.set(false)
-			this.recaptchaRef.reset()
-
 			return
 		}
 		const formData: ContactMailForm = {
 			...this.form.getRawValue(),
-			recaptchaToken: token,
+			turnstileToken: this.turnstileToken()!,
 		}
 		try {
 			await this.sendMailMutation.mutateAsync(formData)
@@ -136,7 +129,9 @@ export class ContactFormComponent {
 			console.error("Failed process in ContactForm:", err)
 		} finally {
 			this.isProcessing.set(false)
-			this.recaptchaRef.reset()
+
+			this.turnstileToken.set(null)
+			this.turnstileRef.reset()
 		}
 	}
 }

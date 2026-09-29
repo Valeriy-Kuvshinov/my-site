@@ -38,5 +38,5 @@ export class ContactMailDto {
 
 	@IsString()
 	@IsOptional()
-	recaptchaToken?: string
+	turnstileToken?: string
 }
