@@ -67,8 +67,8 @@ class EnvironmentVariables {
 	CLOUDINARY_API_SECRET: string
 
 	@IsString()
-	@IsNotEmpty({ message: "RECAPTCHA_SECRET_KEY is missing" })
-	RECAPTCHA_SECRET_KEY: string
+	@IsNotEmpty({ message: "TURNSTILE_SECRET_KEY is missing" })
+	TURNSTILE_SECRET_KEY: string
 
 	@IsString()
 	@IsNotEmpty({ message: "GitHub Actions token is missing" })

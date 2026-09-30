@@ -1,11 +1,13 @@
 import { Module } from "@nestjs/common"
 
+import { TurnstileService } from "../../infrastructure/turnstile/turnstile.service.js"
+
 import { MailService } from "./mail.service.js"
-import { RecaptchaService } from "../../infrastructure/recaptcha/recaptcha.service.js"
+
 import { MailController } from "./mail.controller.js"
 
 @Module({
 	controllers: [MailController],
-	providers: [MailService, RecaptchaService],
+	providers: [MailService, TurnstileService],
 })
 export class MailModule {}

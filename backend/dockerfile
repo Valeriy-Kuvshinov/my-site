@@ -1,0 +1,18 @@
+FROM node:24-alpine
+
+WORKDIR /app
+
+COPY package.json package-lock.json* ./
+RUN npm ci --omit=dev
+
+COPY dist/ ./dist/
+
+ENV NODE_ENV=production
+
+ENV PORT=3030
+# Max V8 JavaScript heap size in MB
+ENV NODE_OPTIONS="--max-old-space-size=384"
+
+EXPOSE 3030
+
+CMD ["node", "--env-file=.env", "dist/main.js"]
