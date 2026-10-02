@@ -16,7 +16,7 @@ const SCROLL_THRESHOLD_PIXELS = 10
 	templateUrl: "./header.html",
 	styleUrl: "./header.css",
 	host: {
-		class: "w-full sticky z-2 fast-trans",
+		class: "w-full fixed z-2 fast-trans",
 		"[class.is-scrolled]": "isScrolled()",
 	},
 })

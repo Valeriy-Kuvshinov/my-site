@@ -1,11 +1,31 @@
 :host .page-contents {
+	.hero {
+		min-height: 100vh;
+		grid-template-columns: 1fr 1fr;
+
+		.content {
+		}
+	}
+
+	.core {
+		ul {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
 	@media (max-width: 600px) {
-		min-height: 70vh;
-		padding: 2rem 1rem;
+		.hero,
+		.core,
+		.a11y {
+			padding: 3rem 1rem;
+		}
 	}
 
 	@media (min-width: 601px) {
-		min-height: 80vh;
-		padding: 2rem 2rem;
+		.hero,
+		.core,
+		.a11y {
+			padding: 4rem 2rem;
+		}
 	}
 }

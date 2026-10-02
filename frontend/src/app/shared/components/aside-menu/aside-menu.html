@@ -5,12 +5,28 @@
 	aria-modal="true">
 	<aside
 		#asideRef
+		appClickOutside
+		(appClickOutside)="closeAsideMenu()"
+		[appFocusTrap]="true"
 		class="aside-menu flex flex-col h-full fast-trans"
 		[class.show]="showMenu()"
 		aria-label="Mobile user menu"
 		tabindex="-1">
 		<div class="menu-header flex flex-row items-center">
-			<h2 class="font-bold">Navigation</h2>
+			<a
+				routerLink="/"
+				routerLinkActive="active"
+				[routerLinkActiveOptions]="{ exact: true }"
+				ariaCurrentWhenActive="page"
+				class="fast-trans">
+				<app-image-container
+					[src]="LOGO_IMG"
+					alt="Noffty logo"
+					[width]="56"
+					[height]="46"
+					[priority]="true">
+				</app-image-container>
+			</a>
 		</div>
 
 		<nav class="flex flex-col">
@@ -23,8 +39,8 @@
 				(click)="closeAsideMenu()">
 				<app-svg-icon
 					icon="home"
-					width="32"
-					height="32"></app-svg-icon>
+					width="24"
+					height="24"></app-svg-icon>
 				<span>Home</span>
 			</a>
 			<a
@@ -33,6 +49,10 @@
 				ariaCurrentWhenActive="page"
 				class="flex flex-row items-center fast-trans"
 				(click)="closeAsideMenu()">
+				<app-svg-icon
+					icon="briefcase"
+					width="24"
+					height="24"></app-svg-icon>
 				<span>Portfolio</span>
 			</a>
 			<a
@@ -41,6 +61,10 @@
 				ariaCurrentWhenActive="page"
 				class="flex flex-row items-center fast-trans"
 				(click)="closeAsideMenu()">
+				<app-svg-icon
+					icon="magGlass"
+					width="24"
+					height="24"></app-svg-icon>
 				<span>Services</span>
 			</a>
 			<a
@@ -49,6 +73,10 @@
 				ariaCurrentWhenActive="page"
 				class="flex flex-row items-center fast-trans"
 				(click)="closeAsideMenu()">
+				<app-svg-icon
+					icon="info"
+					width="24"
+					height="24"></app-svg-icon>
 				<span>About</span>
 			</a>
 			<a
@@ -57,23 +85,11 @@
 				ariaCurrentWhenActive="page"
 				class="flex flex-row items-center fast-trans"
 				(click)="closeAsideMenu()">
+				<app-svg-icon
+					icon="mail"
+					width="24"
+					height="24"></app-svg-icon>
 				<span>Contact</span>
-			</a>
-			<a
-				routerLink="/privacy-policy"
-				routerLinkActive="active"
-				ariaCurrentWhenActive="page"
-				class="flex flex-row items-center fast-trans"
-				(click)="closeAsideMenu()">
-				<span>Privacy Policy</span>
-			</a>
-			<a
-				routerLink="/accessibility"
-				routerLinkActive="active"
-				ariaCurrentWhenActive="page"
-				class="flex flex-row items-center fast-trans"
-				(click)="closeAsideMenu()">
-				<span>Accessibility</span>
 			</a>
 		</nav>
 	</aside>

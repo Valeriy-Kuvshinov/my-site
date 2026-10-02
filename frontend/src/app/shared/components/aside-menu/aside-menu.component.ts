@@ -12,17 +12,30 @@ import { RouterLink, RouterLinkActive } from "@angular/router"
 
 import { SystemStore } from "../../../core/stores/system.store"
 
+import { ClickOutsideDirective } from "../../directives/click-outside.directive"
+import { FocusTrapDirective } from "../../directives/focus-trap.directive"
+
 import { SvgIconComponent } from "../icon/icon.component"
+import { ImageContainerComponent } from "../general/image-container.component"
 
 @Component({
 	selector: "app-aside-menu",
 	standalone: true,
-	imports: [RouterLink, RouterLinkActive, SvgIconComponent],
+	imports: [
+		RouterLink,
+		RouterLinkActive,
+		SvgIconComponent,
+		ClickOutsideDirective,
+		FocusTrapDirective,
+		ImageContainerComponent,
+	],
 	templateUrl: "./aside-menu.html",
 	styleUrl: "./aside-menu.css",
 })
 export class AsideMenuComponent {
 	protected readonly store = inject(SystemStore)
+
+	protected readonly LOGO_IMG = "/images/logo.avif"
 
 	@ViewChild("asideRef") asideRef?: ElementRef<HTMLElement>
 
@@ -56,14 +69,5 @@ export class AsideMenuComponent {
 	@HostListener("window:keydown.escape")
 	onEscape() {
 		if (this.isOpen()) this.closeAsideMenu()
-	}
-
-	@HostListener("document:click", ["$event"])
-	onClickOutside(event: MouseEvent) {
-		if (!this.isOpen() || !this.asideRef) return
-
-		const clickedInsideAside = this.asideRef.nativeElement.contains(event.target as Node)
-
-		if (!clickedInsideAside) this.closeAsideMenu()
 	}
 }

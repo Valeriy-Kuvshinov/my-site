@@ -80,6 +80,8 @@
 	</section>
 	<ngx-turnstile
 		[siteKey]="TURNSTILE_KEY"
-		(resolved)="onTurnstileResolved($event)">
+		(resolved)="onTurnstileResolved($event)"
+		(errored)="onTurnstileInvalid()"
+		(expired)="onTurnstileInvalid()">
 	</ngx-turnstile>
 </form>

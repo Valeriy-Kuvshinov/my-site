@@ -1,7 +1,6 @@
 import { Component, inject, OnInit } from "@angular/core"
 import { Meta, Title } from "@angular/platform-browser"
 
-import { ExternalLinkComponent } from "../../shared/components/general/external-link.component"
 import { RouterLink } from "@angular/router"
 
 const PAGE_TITLE = "Privacy Policy | Did Not Get It"
@@ -12,7 +11,7 @@ const PAGE_DESC =
 @Component({
 	selector: "main[app-privacy-policy-page]",
 	standalone: true,
-	imports: [ExternalLinkComponent, RouterLink],
+	imports: [RouterLink],
 	templateUrl: "./page.html",
 	styleUrl: "./page.css",
 	host: {

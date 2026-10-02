@@ -1,7 +1,7 @@
 .modal-wrapper .aside-menu {
 	max-width: 15rem;
 	background: var(--prmclr1);
-	border-right: 1px solid var(--scdclr6);
+	border-right: 1px solid var(--scdclr4);
 	transform: translateX(-100%);
 	outline: none;
 
@@ -10,36 +10,32 @@
 	}
 
 	.menu-header {
-		padding: 2rem 1rem;
-		padding-block-end: 1rem;
+		padding: 1rem 1rem;
+		background: var(--scdclr8);
 
-		h2 {
-			font-size: 1.75rem;
-			color: var(--scdclr6);
+		a {
+			max-width: 4.5rem;
+			max-height: 3.5rem;
 		}
 	}
 
 	nav {
-		border-top: 1px solid var(--scdclr6);
+		border-top: 1px solid var(--scdclr4);
 		overflow-y: auto;
 
 		a,
 		button {
 			gap: 1rem;
 			padding: 1rem;
-			color: var(--scdclr6);
-			fill: var(--scdclr6);
-			border-bottom: 1px solid var(--scdclr6);
+			color: var(--scdclr2);
+			fill: var(--scdclr2);
+			border-bottom: 1px solid var(--scdclr4);
 			font-size: 1.25rem;
+			outline: none;
 
 			&.active {
 				cursor: default;
 				pointer-events: none;
-			}
-
-			svg {
-				width: 2rem;
-				height: 2rem;
 			}
 
 			&:last-child {
@@ -49,10 +45,9 @@
 			&:hover,
 			&.active,
 			&:focus-visible {
-				color: var(--scdclr4);
-				fill: var(--scdclr4);
-				background: var(--prmclr4);
-				outline: none;
+				color: var(--scdclr8) !important;
+				fill: var(--scdclr8) !important;
+				background: var(--scdclr1);
 			}
 		}
 	}

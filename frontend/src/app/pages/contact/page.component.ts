@@ -22,6 +22,14 @@ export default class PageComponent {
 	private readonly title = inject(Title)
 	private readonly meta = inject(Meta)
 
+	protected readonly defaultFormValues = {
+		name: "",
+		email: "",
+		title: "",
+		requestType: "Q&A",
+		message: "",
+	}
+
 	ngOnInit() {
 		this.title.setTitle(PAGE_TITLE)
 		this.meta.updateTag({ name: "description", content: PAGE_DESC })

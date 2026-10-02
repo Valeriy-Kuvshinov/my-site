@@ -1,6 +1,8 @@
 import { Component, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 
+import { SvgIconComponent } from "../../shared/components/icon/icon.component"
+
 const PAGE_TITLE = "VK Freelance Software"
 const PAGE_URL = "/"
 const PAGE_DESC =
@@ -9,7 +11,7 @@ const PAGE_DESC =
 @Component({
 	selector: "main[app-home-page]",
 	standalone: true,
-	imports: [],
+	imports: [SvgIconComponent],
 	templateUrl: "./page.html",
 	styleUrl: "./page.css",
 	host: {
