@@ -1,6 +1,4 @@
 :host .page-contents {
-	gap: 1.5rem;
-
 	.policy-section {
 		h2 {
 			border-bottom: 4px dashed transparent;
@@ -34,10 +32,6 @@
 		h2 {
 			font-size: 1.25rem;
 		}
-
-		p {
-			font-size: 1.1rem;
-		}
 	}
 
 	@media (min-width: 601px) {
@@ -49,7 +43,7 @@
 		}
 
 		p {
-			font-size: 1.2rem;
+			font-size: 1.1rem;
 		}
 	}
 }

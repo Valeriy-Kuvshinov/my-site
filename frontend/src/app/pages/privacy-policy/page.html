@@ -1,17 +1,89 @@
-<section class="page-contents flex flex-col items-center relative w-h-full layout-row">
+<section class="page-contents flex flex-col items-center w-full layout-row gap-8">
 	<h1 class="text-center text-family-bold">Privacy Policy</h1>
 
 	<p class="w-full">
-		This Privacy Policy describes how "Did Not Get It" (the "Extension"), developed by
-		vkfreelancesoftware, handles your personal information and data. Our core principle is
-		absolute data minimization: your data belongs to you, stays on your device, and is never
-		transmitted to our server.
+		This Privacy Policy governs the collection, processing, and protection of data by VK
+		Freelance Software ("Company", "We", or "Us") across our digital platform
+		(vkfreelancesoftware.com) and associated applications, including the "Did Not Get It"
+		browser extension (collectively, "the Services").
 	</p>
 
-	<article class="policy-section w-full">
-		<h2 class="w-fit">1. Information We Do Not Collect</h2>
-		<p class="">"Did Not Get It" operates entirely locally within your browser.</p>
-		<ul class="list-disc">
+	<article class="policy-section flex flex-col w-full gap-4">
+		<h2 class="w-fit">1. Direct Communication & Contact Form</h2>
+		<p>
+			When you voluntarily submit a query via the platform's official Contact Form, we collect
+			your provided name, email address, and the contents of your message. This constitutes
+			Personal Identifiable Information (PII).
+		</p>
+		<p>
+			This data is collected for the sole, explicit purpose of customer service, technical
+			support, and responding to your inquiry. The data is transmitted securely to our
+			administrative inbox. We explicitly guarantee that your communication data is
+			<strong>never</strong> sold, rented, or transferred to third-party marketing entities.
+			Correspondence is retained for operational continuity unless you formally request its
+			deletion.
+		</p>
+	</article>
+
+	<article class="policy-section flex flex-col w-full gap-4">
+		<h2 class="w-fit">2. Telemetry, Analytics, and Cookies</h2>
+		<p>
+			To maintain operational stability and optimize the user experience, the website utilizes
+			third-party analytics infrastructure, specifically Google Analytics. Subject to explicit
+			consent granted via the platform's Cookie Banner, these services deploy standard
+			tracking technologies ("Cookies") to aggregate non-identifiable usage metrics.
+		</p>
+		<p>
+			Aggregated data sets may include masked IP addresses, browser specifications, and
+			structural navigation patterns. This data cannot be reverse-engineered to personally
+			identify you. You retain the right to revoke consent unilaterally at any time by
+			declining via the Cookie Banner or purging local browser storage and cookie caches
+			pertaining to this domain.
+		</p>
+	</article>
+
+	<article class="policy-section flex flex-col w-full gap-4">
+		<h2 class="w-fit">3. Security and Bot Protection</h2>
+		<p>
+			To protect the platform's infrastructure and communication forms from spam and automated
+			abuse, we utilize Cloudflare Turnstile. This security service operates in the background
+			to analyze network traffic patterns and authenticate human interactions without
+			deploying invasive tracking cookies. Your interaction with our forms is subject to the
+			<a
+				href="https://www.cloudflare.com/en-gb/turnstile-privacy-policy/"
+				aria-label="Cloudflare Turnstile Privacy Addendum (opens in a new tab)"
+				target="_blank"
+				rel="noopener noreferrer">
+				<span>Cloudflare Turnstile Privacy Addendum</span></a
+			>.
+		</p>
+	</article>
+
+	<article class="policy-section flex flex-col w-full gap-4">
+		<h2 class="w-fit">4. Remote Digital Assistance & Consulting Services</h2>
+		<p>
+			During the provision of Remote Digital Assistance—such as guided form completion,
+			navigational support, or CAPTCHA bypassing—we may transiently encounter highly sensitive
+			personal, medical, or financial information (including credit card details or
+			credentials).
+		</p>
+		<p>
+			We enforce a strict <strong>zero-retention policy</strong> for all live-session data. We
+			do not record, log, store, cache, or transmit any sensitive user data encountered during
+			these sessions. All assistance is provided ephemerally, and no persistent record of your
+			private credentials or financial information is ever created or maintained by the
+			Company.
+		</p>
+	</article>
+
+	<article class="policy-section flex flex-col w-full gap-4">
+		<h2 class="w-fit">5. "Did Not Get It" Extension: Data Minimization</h2>
+		<p>
+			The "Did Not Get It" browser extension operates entirely locally within your browser.
+			Our core principle is absolute data minimization: your data belongs to you, stays on
+			your device, and is never transmitted to our servers.
+		</p>
+		<ul class="flex flex-col gap-2">
 			<li>
 				<strong>No Telemetry or Tracking:</strong> We do not track your browsing behavior,
 				clicks, or extension usage.
@@ -27,136 +99,61 @@
 		</ul>
 	</article>
 
-	<article class="policy-section w-full">
-		<h2 class="w-fit">2. Google API Data Access and Usage</h2>
-		<p class="">
+	<article class="policy-section flex flex-col w-full gap-4">
+		<h2 class="w-fit">6. Extension: Google API Data Access (Limited Use)</h2>
+		<p>
 			In order to function, the Extension requests access to your Gmail account using the
-			Google OAuth 2.0 protocol, specifically to perform modifications in Gmail.
+			Google OAuth 2.0 protocol. We access and use this data in the following strictly limited
+			ways:
 		</p>
-		<p class="">We access and use this data in the following strictly limited ways:</p>
-		<ul class="list-disc">
+		<ul class="flex flex-col gap-2">
 			<li>
 				<strong>Reading Data:</strong> The Extension reads the HTML text of incoming unread
-				emails locally in your browser to check for standard job rejection phrasing using
-				regular expressions.
+				emails locally in your browser to check for standard job rejection phrasing.
 			</li>
 			<li>
 				<strong>Modifying Data:</strong> If a rejection is detected, the Extension
 				communicates directly with the Google Gmail API to apply your custom label and
-				remove the "UNREAD" status from that specific email thread.
-			</li>
-			<li>
-				<strong>Authentication:</strong> Your Google OAuth access token is used exclusively
-				to authorize these specific actions directly between your browser and Google's
-				servers.
+				remove the "UNREAD" status from that specific thread.
 			</li>
 		</ul>
-	</article>
-
-	<article class="policy-section w-full">
-		<h2 class="w-fit">3. Google API Services User Data Policy (Limited Use)</h2>
-		<p class="">
-			"Did Not Get It" complies entirely with Google's strict requirements for accessing user
-			data. "Did Not Get It"'s use and transfer to any other app of information received from
-			Google APIs will adhere to the
+		<p>
+			"Did Not Get It" complies entirely with the
 			<a
 				href="https://developers.google.com/terms/api-services-user-data-policy?utm_source=gemini&authuser=1"
 				aria-label="Google API Services User Data Policy (opens in a new tab)"
 				target="_blank"
-				rel="noopener noreferrer"
-				><span>Google API Services User Data Policy</span></a
-			>, including the Limited Use requirements.
+				rel="noopener noreferrer">
+				<span>Google API Services User Data Policy</span></a
+			>, including the Limited Use requirements. We do not use your data to serve
+			advertisements, we do not allow humans to read your data, and we do not sell or transfer
+			your data.
 		</p>
-
-		<p class="">Specifically:</p>
-		<ul class="list-disc">
-			<li>We do not use your data to serve advertisements.</li>
-			<li>We do not allow humans to read your data.</li>
-			<li>We do not sell or transfer your data to third parties.</li>
-		</ul>
 	</article>
 
-	<article class="policy-section w-full">
-		<h2 class="w-fit">4. Data Storage and Security</h2>
-		<p class="">
-			All data required for the Extension to function is stored securely and locally on your
-			device using the browser's native <code>browser.storage.local</code> API. This includes:
-		</p>
-		<ul class="list-disc">
-			<li>Your custom rejection label text.</li>
-			<li>Your "rejections skipped" numerical counter.</li>
-			<li>
-				Your current authentication state and extension settings (e.g., paused/active
-				status).
-			</li>
-			<li>The temporary OAuth access token provided by Google.</li>
-		</ul>
+	<article class="policy-section flex flex-col w-full gap-4">
+		<h2 class="w-fit">7. External Routing and Liability</h2>
 		<p>
-			Uninstalling the Extension or clicking "Disconnect Gmail" inside the Extension will
-			immediately clear this local data.
+			The Services may contain routing nodes and hyperlinks directing traffic to external
+			digital ecosystems. Upon executing a redirection to an external domain, you are
+			immediately subject to the privacy architecture of that third party. We exercise no
+			administrative control over external properties and explicitly disclaim all liability
+			for their data handling practices.
 		</p>
 	</article>
 
-	<article class="policy-section w-full">
-		<h2 class="w-fit">5. Third-Party Sharing</h2>
+	<article class="policy-section flex flex-col w-full gap-4">
+		<h2 class="w-fit">8. Data Inquiry and Contact Details</h2>
 		<p>
-			We do not share, sell, rent, or trade your personal information, email data, or usage
-			metrics with any third parties. The only data transmission that occurs is the direct
-			communication between your browser and Google's official API endpoints.
-		</p>
-	</article>
-
-	<article class="policy-section w-full">
-		<h2 class="w-fit">6. User Control and Revocation</h2>
-		<p class="">
-			You have complete control over your data and the Extension's access to your account:
-		</p>
-		<ul class="list-disc">
-			<li>
-				<strong>Pause Scanning:</strong> You can temporarily halt the Extension's access to
-				your emails at any time using the "Pause Scanning" button in the Extension popup.
-			</li>
-			<li>
-				<strong>Disconnect:</strong> You can permanently sever the Extension's access by
-				clicking "Disconnect Gmail" in the popup. This calls Google's official revocation
-				API to invalidate your token and wipes all local authentication data.
-			</li>
-			<li>
-				<strong>Google Account Settings:</strong> You can review and revoke access to "Did
-				Not Get It" at any time by visiting your
-				<a
-					href="https://myaccount.google.com/permissions?authuser=1"
-					aria-label="Google account third-party apps (opens in a new tab)"
-					target="_blank"
-					rel="noopener noreferrer"
-					><span>Google account third-party apps</span></a
-				>.
-			</li>
-		</ul>
-	</article>
-
-	<article class="policy-section w-full">
-		<h2 class="w-fit">7. Changes to This Policy</h2>
-		<p>
-			If we make significant changes to how we handle your data, we will update this Privacy
-			Policy and update the "Effective Date" at the top of this page. Because the Extension
-			does not collect your contact information, we recommend reviewing this policy
-			periodically on the vkfreelancesoftware website.
-		</p>
-	</article>
-
-	<article class="policy-section w-full">
-		<h2 class="w-fit">8. Contact Information</h2>
-		<p class="">
-			If you have any questions, concerns, or requests regarding this Privacy Policy or the
-			security of the Extension, please contact us
+			If you have any questions, concerns, or requests regarding this Privacy Policy, your
+			data, or the security of our Services, please submit a formal query via our official
+			communication channel
 			<a
 				routerLink="/contact"
-				aria-label="Here. Go to Contact page"
-				class="text-blue-400 hover:text-blue-300 underline w-fit">
-				<span> Here.</span>
-			</a>
+				aria-label="Go to the Contact page">
+				<span>here</span></a
+			>.
 		</p>
-		<p class="w-full"><strong>Effective Date:</strong> September 22, 2026</p>
+		<p>This policy is legally effective as of October 3, 2026.</p>
 	</article>
 </section>

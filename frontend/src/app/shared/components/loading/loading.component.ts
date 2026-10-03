@@ -39,7 +39,7 @@ const LOADING_PHRASES = [
 export class LoadingComponent implements OnInit {
 	readonly currentPhrase = signal("Loading...")
 
-	readonly LOADING_IMG_SRC = "/images/character_walk.avif"
+	readonly LOADING_IMG_SRC = "/images/character_walking.avif"
 
 	ngOnInit() {
 		const randomPhrase = LOADING_PHRASES[Math.floor(Math.random() * LOADING_PHRASES.length)]
