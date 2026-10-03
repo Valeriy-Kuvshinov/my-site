@@ -1,0 +1,103 @@
+.cookie-banner {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	background: var(--scdclr7);
+	color: var(--prmclr2);
+	border-top: 1px solid var(--scdclr6);
+	border-radius: 1rem 1rem 0 0;
+	outline: none;
+
+	a {
+		color: var(--mnrclr6);
+	}
+
+	.actions {
+		gap: 1rem;
+
+		button {
+			padding: 0.5rem 1rem;
+			border-radius: 0.5rem;
+		}
+	}
+
+	app-svg-icon {
+		left: 0.5rem;
+		top: 0.5rem;
+		fill: var(--prmclr2);
+	}
+
+	@media (max-width: 900px) {
+		padding: 1rem 2rem 2rem 2rem;
+		gap: 1rem;
+
+		.text {
+			align-items: self-start;
+			font-size: 0.8rem;
+		}
+
+		.actions button {
+			&:first-child {
+				background: var(--prmclr2);
+				color: var(--scdclr8);
+
+				&:hover,
+				&:focus-visible {
+					background: var(--scdclr8);
+					color: var(--prmclr2);
+					outline: none;
+				}
+			}
+
+			&:last-child {
+				background: var(--scdclr8);
+				color: var(--prmclr2);
+
+				&:hover,
+				&:focus-visible {
+					background: var(--prmclr2);
+					color: var(--scdclr8);
+					outline: none;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 901px) {
+		padding: 1.25rem 3rem;
+		gap: 2rem;
+
+		.text {
+			font-size: 1rem;
+		}
+
+		.actions button {
+			font-size: 1.1rem;
+
+			&:first-child {
+				background: var(--scdclr8);
+				color: var(--prmclr2);
+
+				&:hover,
+				&:focus-visible {
+					background: var(--prmclr2);
+					color: var(--scdclr8);
+					outline: none;
+				}
+			}
+
+			&:last-child {
+				background: var(--prmclr2);
+				color: var(--scdclr8);
+
+				&:hover,
+				&:focus-visible {
+					background: var(--scdclr8);
+					color: var(--prmclr2);
+					outline: none;
+				}
+			}
+		}
+	}
+}

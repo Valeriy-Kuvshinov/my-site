@@ -14,7 +14,8 @@ import { SvgIconComponent } from "../../../../shared/components/icon/icon.compon
 			<app-svg-icon
 				[icon]="icon"
 				width="32"
-				height="32"></app-svg-icon>
+				height="32">
+			</app-svg-icon>
 			<span class="text-center">{{ label }}</span>
 		</div>
 	`,

@@ -6,6 +6,8 @@ import { environment } from "../../../../environments/environment.development"
 
 import { MailService, ContactMailForm } from "../../../core/services/api/mail/mail.service"
 
+import { IconName } from "../../../shared/components/icon/icon.map"
+
 import { InputAreaComponent } from "../../../shared/components/form/input-area/input-area.component"
 import { SelectAreaComponent } from "../../../shared/components/form/select-area/select-area.component"
 import { SvgIconComponent } from "../../../shared/components/icon/icon.component"
@@ -45,14 +47,11 @@ export class ContactFormComponent implements OnInit {
 	readonly sendMailMutation = this.mailService.sendContactMail()
 
 	protected readonly TURNSTILE_KEY = environment.turnstilePublicKey
-	protected readonly DEFAULT_SUBMIT_IMG_SRC = "/images/default_submit.avif"
-	protected readonly FOCUS_SUBMIT_IMG_SRC = "/images/hover_submit.avif"
 
 	readonly isActiveInteract = signal(false)
 	readonly isProcessing = signal(false)
 	readonly turnstileToken = signal<string | null>(null)
 
-	// Initialize without values; populate in ngOnInit
 	readonly form = this.fb.nonNullable.group({
 		name: [
 			"",
@@ -119,10 +118,8 @@ export class ContactFormComponent implements OnInit {
 		return this.form.invalid || this.isProcessing() || this.sendMailMutation.isPending()
 	}
 
-	get buttonImage(): string {
-		return this.isActiveInteract() && !this.isSendDisabled
-			? this.FOCUS_SUBMIT_IMG_SRC
-			: this.DEFAULT_SUBMIT_IMG_SRC
+	get buttonIcon(): IconName {
+		return this.isActiveInteract() && !this.isSendDisabled ? "run" : "sit"
 	}
 
 	onTurnstileResolved(token: string | null) {
@@ -139,19 +136,16 @@ export class ContactFormComponent implements OnInit {
 			this.form.markAllAsTouched()
 			return
 		}
-
 		this.isProcessing.set(true)
 
 		if (!this.turnstileToken()) {
 			this.isProcessing.set(false)
 			return
 		}
-
 		const formData: ContactMailForm = {
 			...this.form.getRawValue(),
 			turnstileToken: this.turnstileToken()!,
 		}
-
 		try {
 			await this.sendMailMutation.mutateAsync(formData)
 			this.form.reset(this.initialValues)

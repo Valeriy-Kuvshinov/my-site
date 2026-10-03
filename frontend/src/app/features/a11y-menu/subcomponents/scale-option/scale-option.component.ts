@@ -16,12 +16,13 @@ export type ScaleLevel = 0 | 1 | 2 | 3 | 4
 			<app-svg-icon
 				[icon]="icon"
 				width="32"
-				height="32"></app-svg-icon>
+				height="32">
+			</app-svg-icon>
 			<label
 				[for]="id"
 				class="text-family-bold text-center"
-				>{{ label }}</label
-			>
+				>{{ label }}
+			</label>
 		</div>
 
 		<div class="progressive-bar w-full">

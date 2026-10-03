@@ -73,9 +73,10 @@
 				@if (isProcessing() || sendMailMutation.isPending()) { Sending... } @else { Send }
 			</span>
 			<app-svg-icon
-				icon="monitor"
+				[icon]="buttonIcon"
 				width="32"
-				height="32"></app-svg-icon>
+				height="32">
+			</app-svg-icon>
 		</button>
 	</section>
 	<ngx-turnstile

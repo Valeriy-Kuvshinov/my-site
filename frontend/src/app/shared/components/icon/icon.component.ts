@@ -10,7 +10,7 @@ import { ICON_MAP, IconName } from "./icon.map"
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	host: {
 		"[innerHTML]": "safeSvg",
-		"[class]": "hostClass",
+		class: "inline-flex items-center justify-center",
 		"[style.width.px]": "width",
 		"[style.height.px]": "height",
 		"aria-hidden": "true",
@@ -23,11 +23,6 @@ export class SvgIconComponent {
 
 	@Input() width?: number | string
 	@Input() height?: number | string
-	@Input() className = ""
-
-	get hostClass(): string {
-		return `inline-flex items-center justify-center ${this.className}`.trim()
-	}
 
 	get safeSvg(): SafeHtml | null {
 		const svgString = ICON_MAP[this.icon]

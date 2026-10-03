@@ -27,8 +27,7 @@
 		button {
 			gap: 1rem;
 			padding: 1rem;
-			color: var(--scdclr2);
-			fill: var(--scdclr2);
+
 			border-bottom: 1px solid var(--scdclr4);
 			font-size: 1.25rem;
 			outline: none;
@@ -42,11 +41,18 @@
 				border-bottom: none;
 			}
 
+			&:not(:hover),
+			&:not(.active),
+			&:not(:focus-visible) {
+				color: var(--scdclr2);
+				fill: var(--scdclr2);
+			}
+
 			&:hover,
 			&.active,
 			&:focus-visible {
-				color: var(--scdclr8) !important;
-				fill: var(--scdclr8) !important;
+				color: var(--scdclr8);
+				fill: var(--scdclr8);
 				background: var(--scdclr1);
 			}
 		}

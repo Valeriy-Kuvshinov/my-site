@@ -1,0 +1,75 @@
+@if (consent() === null) { @if (deviceType() === 'desktop') {
+<aside
+	#bannerRef
+	class="cookie-banner flex flex-row full-center fixed w-fit z-15"
+	aria-label="cookies policy banner"
+	tabindex="-1">
+	<app-svg-icon
+		class="absolute"
+		icon="cookie"
+		width="32"
+		height="32"></app-svg-icon>
+
+	<div class="text flex flex-row items-center">
+		<p>
+			We use cookies to analyze site traffic and improve our services in accordance with
+			our&nbsp;
+		</p>
+		<p>
+			<a
+				routerLink="/privacy-policy"
+				class="text-family-regular font-bold">
+				<span>privacy policy</span></a
+			>. Do you accept?
+		</p>
+	</div>
+
+	<div class="actions flex flex-row items-center">
+		<button
+			class="text-family-regular"
+			aria-label="Decline cookie policy"
+			(click)="handleDecline()">
+			<span>Decline</span>
+		</button>
+		<button
+			aria-label="Accept cookie policy"
+			(click)="handleAccept()">
+			<span>Accept</span>
+		</button>
+	</div>
+</aside>
+} @else {
+<aside
+	#bannerRef
+	class="cookie-banner flex flex-row justify-center fixed w-fit z-15"
+	aria-label="cookies policy banner"
+	tabindex="-1">
+	<div class="text flex flex-col">
+		<p>
+			We use cookies to analyze site traffic and improve our services in accordance with
+			our&nbsp;
+		</p>
+		<p>
+			<a
+				routerLink="/privacy-policy"
+				class="text-family-regular font-bold">
+				<span>privacy policy</span></a
+			>. Do you accept?
+		</p>
+	</div>
+	<div class="actions flex flex-col items-center">
+		<button
+			class="w-full"
+			aria-label="Accept cookie policy"
+			(click)="handleAccept()">
+			<span>Accept</span>
+		</button>
+		<button
+			class="w-full text-family-regular"
+			aria-label="Decline cookie policy"
+			(click)="handleDecline()">
+			<span>Decline</span>
+		</button>
+	</div>
+</aside>
+} }
