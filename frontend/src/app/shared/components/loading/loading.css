@@ -1,0 +1,13 @@
+:host {
+	margin: 4rem auto;
+	z-index: 1;
+
+	span {
+		color: var(--scdclr2);
+		font-size: 1.5rem;
+	}
+
+	app-image-container {
+		max-height: 15rem;
+	}
+}

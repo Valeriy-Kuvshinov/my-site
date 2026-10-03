@@ -2,6 +2,10 @@
 	[formGroup]="form"
 	class="grid layout-row w-full gap-4"
 	(ngSubmit)="onSubmit()">
+	@if (isFormBusy()) {
+	<app-loading></app-loading>
+
+	} @else {
 	<app-input-area
 		label="Name"
 		name="name"
@@ -69,9 +73,8 @@
 			(mouseleave)="isActiveInteract.set(false)"
 			(focus)="isActiveInteract.set(true)"
 			(blur)="isActiveInteract.set(false)">
-			<span>
-				@if (isProcessing() || sendMailMutation.isPending()) { Sending... } @else { Send }
-			</span>
+			<span>Send</span>
+
 			<app-svg-icon
 				[icon]="buttonIcon"
 				width="32"
@@ -79,6 +82,8 @@
 			</app-svg-icon>
 		</button>
 	</section>
+	}
+
 	<ngx-turnstile
 		[siteKey]="TURNSTILE_KEY"
 		(resolved)="onTurnstileResolved($event)"

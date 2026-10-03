@@ -1,4 +1,4 @@
-import { Component, inject, ViewChild, signal, OnInit, Input } from "@angular/core"
+import { Component, inject, ViewChild, signal, OnInit, Input, computed } from "@angular/core"
 import { FormBuilder, Validators, ReactiveFormsModule, FormControl } from "@angular/forms"
 import { NgxTurnstileModule, NgxTurnstileComponent } from "ngx-turnstile"
 
@@ -11,6 +11,7 @@ import { IconName } from "../../../shared/components/icon/icon.map"
 import { InputAreaComponent } from "../../../shared/components/form/input-area/input-area.component"
 import { SelectAreaComponent } from "../../../shared/components/form/select-area/select-area.component"
 import { SvgIconComponent } from "../../../shared/components/icon/icon.component"
+import { LoadingComponent } from "../../../shared/components/loading/loading.component";
 
 interface ContactFormValues {
 	name: string
@@ -24,12 +25,13 @@ interface ContactFormValues {
 	selector: "app-contact-form",
 	standalone: true,
 	imports: [
-		ReactiveFormsModule,
-		NgxTurnstileModule,
-		InputAreaComponent,
-		SelectAreaComponent,
-		SvgIconComponent,
-	],
+    ReactiveFormsModule,
+    NgxTurnstileModule,
+    InputAreaComponent,
+    SelectAreaComponent,
+    SvgIconComponent,
+    LoadingComponent
+],
 	templateUrl: "./form.html",
 	styleUrl: "./form.css",
 	host: {
@@ -38,6 +40,7 @@ interface ContactFormValues {
 })
 export class ContactFormComponent implements OnInit {
 	private readonly fb = inject(FormBuilder)
+
 	private readonly mailService = inject(MailService)
 
 	@Input({ required: true }) initialValues!: ContactFormValues
@@ -51,6 +54,8 @@ export class ContactFormComponent implements OnInit {
 	readonly isActiveInteract = signal(false)
 	readonly isProcessing = signal(false)
 	readonly turnstileToken = signal<string | null>(null)
+
+	readonly isFormBusy = computed(() => this.isProcessing() || this.sendMailMutation.isPending())
 
 	readonly form = this.fb.nonNullable.group({
 		name: [
@@ -115,11 +120,11 @@ export class ContactFormComponent implements OnInit {
 	}
 
 	get isSendDisabled(): boolean {
-		return this.form.invalid || this.isProcessing() || this.sendMailMutation.isPending()
+		return this.form.invalid || this.isFormBusy()
 	}
 
 	get buttonIcon(): IconName {
-		return this.isActiveInteract() && !this.isSendDisabled ? "run" : "sit"
+		return this.isActiveInteract() && !this.isSendDisabled ? "run" : "stand"
 	}
 
 	onTurnstileResolved(token: string | null) {
