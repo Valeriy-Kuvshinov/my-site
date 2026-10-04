@@ -1,0 +1,33 @@
+@keyframes infinite-scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+.tech-stack {
+	padding: 2rem 0;
+	background: var(--scdclr5);
+	mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+	-webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+
+	.carousel-track {
+		animation: infinite-scroll 30s linear infinite;
+
+		ul app-svg-icon:hover {
+			transform: scale(1.1);
+		}
+
+		&:hover {
+			animation-play-state: paused;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.carousel-track {
+			animation-play-state: paused;
+		}
+	}
+}

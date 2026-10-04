@@ -1,8 +1,8 @@
 <section class="page-contents flex flex-col items-center relative w-h-full gap-8">
-	<article class="intro-part flex flex-col w-full gap-8">
+	<article class="intro flex flex-col w-full layout-row gap-8">
 		<h1 class="text-center">Contact Me</h1>
 
-		<p class="layout-row">
+		<p>
 			Got a question, suggestion, or a project in mind? Whether you need to build a custom
 			system from scratch or improve the accessibility of existing infrastructure, I am ready
 			to help.
@@ -10,4 +10,53 @@
 	</article>
 
 	<app-contact-form [initialValues]="defaultFormValues"></app-contact-form>
+
+	<article class="alternatives flex flex-col w-full layout-row gap-4">
+		<p>Alternatively, you may contact me directly trough the following channels</p>
+
+		<nav
+			class="social-links flex flex-row gap-4"
+			aria-label="Social profiles">
+			<a
+				href="https://www.linkedin.com/in/valeriy-kuvshin-ov/"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="LinkedIn profile (opens in a new tab)">
+				<app-svg-icon
+					icon="linkedin"
+					width="32"
+					height="32">
+				</app-svg-icon>
+			</a>
+			<a
+				href="https://github.com/Valeriy-Kuvshinov"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="GitHub profile (opens in a new tab)">
+				<app-svg-icon
+					icon="github"
+					width="32"
+					height="32">
+				</app-svg-icon>
+			</a>
+			<a
+				href="https://www.facebook.com/valery.kuvshinov.75/"
+				aria-label="Facebook profile (opens in a new tab)">
+				<app-svg-icon
+					icon="facebook"
+					width="32"
+					height="32">
+				</app-svg-icon>
+			</a>
+			<a
+				href="mailto:contact@vkfreelancesoftware.com"
+				aria-label="Send an email directly">
+				<app-svg-icon
+					icon="mail"
+					width="32"
+					height="32">
+				</app-svg-icon>
+			</a>
+		</nav>
+	</article>
 </section>

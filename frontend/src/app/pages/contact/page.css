@@ -1,5 +1,5 @@
 :host .page-contents {
-	.intro-part {
+	.intro {
 		padding-block-end: 2rem;
 
 		p {
@@ -7,6 +7,18 @@
 
 			a {
 				color: var(--mnrclr6);
+			}
+		}
+	}
+
+	.alternatives {
+		.social-links a {
+			color: var(--scdclr3);
+
+			&:hover,
+			&:focus-visible {
+				color: var(--mnrclr1);
+				transform: translateY(-2px);
 			}
 		}
 	}

@@ -1,64 +1,84 @@
 <section class="page-contents flex flex-col items-center relative w-h-full">
-	<article class="hero grid items-center w-full">
-		<div class="content flex flex-col gap-4">
-			<h1>Scalable Web Systems & Uncompromising Accessibility</h1>
+	<article class="hero flex flex-col justify-center w-full h-screen relative">
+		<app-image-container
+			src="/images/hero.avif"
+			alt="Valeriy Kuvshinov"
+			[width]="240"
+			[height]="240"
+			[priority]="true">
+		</app-image-container>
 
-			<p>
-				Engineering robust full-stack applications, resolving complex system architecture
-				challenges, and guaranteeing digital inclusivity through rigorous WCAG compliance.
-			</p>
-			<p>
-				From high-performance landing pages to distributed telecom infrastructure, I build
-				digital environments that are secure, lightning-fast, and accessible by design.
-			</p>
+		<div class="relative w-full layout-row">
+			<div class="content flex flex-col gap-6">
+				<h1 class="text-family-bold">
+					Scalable Web Systems & Uncompromising Accessibility
+				</h1>
 
-			<div class="cta flex flex-row gap-8 mt-4">
-				<button class="flex flex-row items-center gap-2">
-					<span>Contact Me</span>
-					<app-svg-icon
-						icon="mail"
-						width="32"
-						height="32"></app-svg-icon>
-				</button>
-				<button class="flex flex-row items-center gap-2">
-					<span>View Services</span>
-					<app-svg-icon
-						icon="magGlass"
-						width="32"
-						height="32"></app-svg-icon>
-				</button>
-				<button class="flex flex-row items-center gap-2">
-					<span>CV</span>
-					<app-svg-icon
-						icon="monitor"
-						width="32"
-						height="32"></app-svg-icon>
-				</button>
+				<p>
+					Engineering robust full-stack applications, resolving complex system
+					architecture challenges, and guaranteeing digital inclusivity through rigorous
+					WCAG compliance.
+				</p>
+				<p>
+					From high-performance landing pages to distributed telecom infrastructure, I
+					build digital environments that are secure, lightning-fast, and accessible by
+					design.
+				</p>
+
+				<div class="cta flex items-center gap-8">
+					<a
+						routerLink="/contact/"
+						class="flex flex-row full-center gap-2">
+						<span>Contact Me</span>
+						<app-svg-icon
+							icon="mail"
+							width="24"
+							height="24"></app-svg-icon>
+					</a>
+					<a
+						routerLink="/services/"
+						class="flex flex-row full-center gap-2">
+						<span>View Services</span>
+						<app-svg-icon
+							icon="briefcase"
+							width="24"
+							height="24"></app-svg-icon>
+					</a>
+					<button class="flex flex-row full-center gap-2">
+						<span>CV</span>
+						<app-svg-icon
+							icon="download"
+							width="24"
+							height="24"></app-svg-icon>
+					</button>
+				</div>
 			</div>
 		</div>
 	</article>
+
+	<app-tech-carousel></app-tech-carousel>
 
 	<article class="core flex flex-col w-full gap-8">
 		<h2 class="text-center">My Specialties</h2>
 
 		<ul class="grid layout-row gap-6">
-			<li class="flex flex-col gap-2">
+			<li class="flex flex-col gap-2 fast-trans">
 				<h3 class="text-center">Native Full-Stack Engineering</h3>
 				<p class="text-center">
 					Escaping the limitations of templated platforms. I build custom, semantic web
 					applications with automated CI/CD cloud deployments using modern stacks
-					(Angular, Next.js, NestJS, Spring Boot).
+					(Angular, React, Next.js, Express, NestJS, Spring Boot).
 				</p>
 			</li>
-			<li class="flex flex-col gap-2">
+			<li class="flex flex-col gap-2 fast-trans">
 				<h3 class="text-center">A11y Compliance & Legal Immunity</h3>
 				<p class="text-center">
 					Auditing and refactoring digital infrastructure to natively meet WCAG 2.1 AA /
-					AAA and Israeli standards—providing true legal protection that accessibility
+					AAA and Israeli standards - providing true legal protection that accessibility
 					overlays simply cannot offer.
 				</p>
 			</li>
-			<li class="flex flex-col gap-2">
+			<li class="flex flex-col gap-2 fast-trans">
 				<h3 class="text-center">System Architecture & Optimization</h3>
 				<p class="text-center">
 					Serving as a technical consultant to resolve critical bottlenecks, secure legacy
@@ -66,7 +86,7 @@
 					assets.
 				</p>
 			</li>
-			<li class="flex flex-col gap-2">
+			<li class="flex flex-col gap-2 fast-trans">
 				<h3 class="text-center">Remote Digital Assistance</h3>
 				<p class="text-center">
 					Dedicated one-on-one support for individuals facing severe digital barriers,
@@ -77,10 +97,12 @@
 		</ul>
 	</article>
 
+	<app-portfolio-carousel></app-portfolio-carousel>
+
 	<article class="a11y flex flex-col gap-8 w-full">
 		<h2 class="text-center">An Overlay Is Never Enough</h2>
 
-		<ul class="grid layout-row gap-6">
+		<ul class="grid layout-row gap-8">
 			<li class="flex flex-col gap-4">
 				<p>
 					In a world where temporary solutions become permanent, automated widgets and
@@ -96,6 +118,7 @@
 					href="https://overlayfactsheet.com/en/#what-is-a-web-accessibility-overlay"
 					aria-label="Read more about why overlays fail (opens in a new tab)"
 					target="_blank"
+					class="text-center"
 					rel="noopener noreferrer">
 					<span>Read the Fact Sheet</span>
 				</a>
@@ -112,7 +135,7 @@
 				</p>
 				<a
 					routerLink="/contact"
-					class="fast-trans font-bold">
+					class="text-center">
 					<span>Get Support</span>
 				</a>
 			</li>

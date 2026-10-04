@@ -1,0 +1,30 @@
+.carousel-viewport {
+	position: relative;
+	width: 100%;
+}
+
+.carousel-track {
+	transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+	/* Each slide takes exactly 100% of the viewport width */
+	flex: 0 0 100%;
+}
+
+.nav-btn {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0.5rem;
+	border-radius: 50%;
+}
+
+.nav-btn:disabled {
+	opacity: 0.3;
+	cursor: not-allowed;
+}
+
+.nav-btn:not(:disabled):hover {
+	background: rgba(0, 0, 0, 0.1);
+}

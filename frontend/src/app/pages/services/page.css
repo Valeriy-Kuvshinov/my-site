@@ -1,4 +1,17 @@
 :host .page-contents {
+	.services {
+		ul .card {
+			padding: 1rem;
+			grid-template-columns: auto 1fr;
+			border: 1px solid var(--mnrclr1);
+			border-radius: 0.75rem;
+
+			app-svg-icon {
+				fill: var(--mnrclr1);
+			}
+		}
+	}
+
 	@media (max-width: 600px) {
 		min-height: 70vh;
 		padding: 6rem 1rem 3rem 1rem;

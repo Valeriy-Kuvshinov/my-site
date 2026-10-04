@@ -1,7 +1,11 @@
 import { Component, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
+import { RouterLink } from "@angular/router"
 
 import { SvgIconComponent } from "../../shared/components/icon/icon.component"
+import { ImageContainerComponent } from "../../shared/components/general/image-container.component"
+import { TechCarouselComponent } from "./components/tech/tech-carousel.component"
+import { PortfolioCarouselComponent } from "./components/portfolio/portfolio-carousel.component"
 
 const PAGE_TITLE = "VK Freelance Software"
 const PAGE_URL = "/"
@@ -11,7 +15,13 @@ const PAGE_DESC =
 @Component({
 	selector: "main[app-home-page]",
 	standalone: true,
-	imports: [SvgIconComponent],
+	imports: [
+		SvgIconComponent,
+		ImageContainerComponent,
+		RouterLink,
+		TechCarouselComponent,
+		PortfolioCarouselComponent,
+	],
 	templateUrl: "./page.html",
 	styleUrl: "./page.css",
 	host: {

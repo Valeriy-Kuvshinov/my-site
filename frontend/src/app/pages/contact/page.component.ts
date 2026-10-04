@@ -2,6 +2,7 @@ import { Component, inject } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 
 import { ContactFormComponent } from "./components/form.component"
+import { SvgIconComponent } from "../../shared/components/icon/icon.component";
 
 const PAGE_TITLE = "Contact | VK Freelance Software"
 const PAGE_URL = "/contact/"
@@ -10,7 +11,7 @@ const PAGE_DESC = "Get in Touch with VK Freelance Software."
 @Component({
 	selector: "main[app-contact-page]",
 	standalone: true,
-	imports: [ContactFormComponent],
+	imports: [ContactFormComponent, SvgIconComponent],
 	templateUrl: "./page.html",
 	styleUrl: "./page.css",
 	host: {

@@ -1,0 +1,41 @@
+<section
+	class="tech-stack flex flex-col w-full overflow-hidden"
+	aria-labelledby="tech-stack-heading">
+	<h2
+		id="tech-stack-heading"
+		class="sr-only">
+		Technologies Used
+	</h2>
+
+	<div
+		class="carousel-track flex flex-row items-center layout-row gap-8"
+		aria-hidden="true">
+		<!-- Original Set -->
+		<ul class="icon-set flex flex-row items-center gap-8 m-0 p-0">
+			@for (icon of techIcons; track icon.name) {
+			<li>
+				<app-svg-icon
+					[icon]="icon.name"
+					[width]="icon.width"
+					[height]="icon.height">
+				</app-svg-icon>
+			</li>
+			}
+		</ul>
+
+		<!-- Duplicated Set for Seamless Looping -->
+		<ul
+			class="icon-set flex flex-row items-center gap-8 m-0 p-0"
+			aria-hidden="true">
+			@for (icon of techIcons; track icon.name) {
+			<li>
+				<app-svg-icon
+					[icon]="icon.name"
+					[width]="icon.width"
+					[height]="icon.height">
+				</app-svg-icon>
+			</li>
+			}
+		</ul>
+	</div>
+</section>

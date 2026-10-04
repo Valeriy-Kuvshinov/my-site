@@ -2,20 +2,6 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: transparent;
-	border-bottom: 1px solid transparent;
-
-	&:hover,
-	&:focus-within,
-	&.is-scrolled {
-		background: var(--prmclr1);
-		border-color: var(--scdclr4);
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-
-		a {
-			scale: 1;
-		}
-	}
 
 	button {
 		fill: var(--scdclr1);
@@ -82,9 +68,26 @@
 
 	@media (max-width: 900px) {
 		padding: 1rem 1rem;
+		background: var(--prmclr1);
+		border-bottom: 1px solid var(--scdclr4);
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 	}
 
 	@media (min-width: 901px) {
 		padding: 1rem 2rem;
+		background-color: transparent;
+		border-bottom: 1px solid transparent;
+
+		&:hover,
+		&:focus-within,
+		&.is-scrolled {
+			background: var(--prmclr1);
+			border-color: var(--scdclr4);
+			box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+			a {
+				scale: 1;
+			}
+		}
 	}
 }
