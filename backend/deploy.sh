@@ -4,13 +4,12 @@
 set -e
 
 # Infrastructure Configuration Variables
-VPS_IP="151.145.84.119" # Update this to your new VPS IP if different
+VPS_IP="3.120.21.239"
 VPS_USER="ubuntu"
-SSH_KEY="$HOME/.ssh/oracle_key_noffty" # Update if using a different SSH key
+SSH_KEY="$HOME/.ssh/aws_key_my_site"
 REMOTE_DIR="~/vk-backend"
 
 echo "Building Angular Frontend Static Assets..."
-# Assuming you run deploy.sh from inside the backend folder:
 cd ../frontend
 npm run build
 cd ../backend
