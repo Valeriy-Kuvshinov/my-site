@@ -1,0 +1,12 @@
+:host {
+	background: var(--prmclr3);
+	border-top: 1px solid var(--scdclr4);
+
+	@media (max-width: 900px) {
+		padding: 1rem 1rem;
+	}
+
+	@media (min-width: 901px) {
+		padding: 1rem 2rem;
+	}
+}

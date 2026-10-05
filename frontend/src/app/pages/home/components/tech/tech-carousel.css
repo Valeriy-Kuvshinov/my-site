@@ -7,7 +7,7 @@
 	}
 }
 
-.tech-stack {
+:host {
 	padding: 2rem 0;
 	background: var(--scdclr5);
 	mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);

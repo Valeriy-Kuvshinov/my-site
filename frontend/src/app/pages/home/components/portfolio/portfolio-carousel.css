@@ -1,30 +1,27 @@
-.carousel-viewport {
-	position: relative;
-	width: 100%;
-}
+:host {
+	button {
+		padding: 0.5rem;
+		background: var(--scdclr1);
+		fill: var(--scdclr8);
+		border-radius: 50%;
 
-.carousel-track {
-	transition: transform 0.5s ease-in-out;
-}
+		&:disabled {
+			opacity: 0.3;
+			pointer-events: none;
+		}
 
-.carousel-slide {
-	/* Each slide takes exactly 100% of the viewport width */
-	flex: 0 0 100%;
-}
+		&:hover {
+			background: var(--scdclr8);
+			fill: var(--mnrclr4);
+		}
+	}
 
-.nav-btn {
-	background: transparent;
-	border: none;
-	cursor: pointer;
-	padding: 0.5rem;
-	border-radius: 50%;
-}
-
-.nav-btn:disabled {
-	opacity: 0.3;
-	cursor: not-allowed;
-}
-
-.nav-btn:not(:disabled):hover {
-	background: rgba(0, 0, 0, 0.1);
+	.viewport {
+		.track {
+			.slide {
+				/* Each slide takes exactly 100% of the viewport width */
+				flex: 0 0 100%;
+			}
+		}
+	}
 }

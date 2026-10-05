@@ -6,9 +6,10 @@ import { RouterLink, RouterLinkActive } from "@angular/router"
 	standalone: true,
 	imports: [RouterLink, RouterLinkActive],
 	templateUrl: "./footer.html",
+	styleUrl: "./footer.css",
 	host: {
 		id: "site-footer",
-		class: "w-full bg-slate-900 text-slate-400 py-6 mt-auto block",
+		class: "w-full",
 	},
 })
 export class FooterComponent {}

@@ -1,11 +1,11 @@
 :host {
 	height: 5rem;
 	padding: 0.5rem 1rem;
-	background: var(--scdclr4);
-	color: var(--scdclr2);
-	stroke: var(--scdclr2);
-	fill: var(--scdclr2);
-	border: 1px solid var(--mnrclr1);
+	background: var(--prmclr2);
+	color: var(--scdclr9);
+	stroke: var(--scdclr9);
+	fill: var(--scdclr9);
+	border: 1px solid var(--mnrclr9);
 	border-radius: 0.5rem;
 	font-size: 1rem;
 	outline: none;
@@ -13,9 +13,9 @@
 	&:hover,
 	&:focus-visible,
 	&.active {
-		background: var(--scdclr2);
-		color: var(--scdclr4);
-		fill: var(--scdclr4);
-		stroke: var(--scdclr4);
+		background: var(--scdclr9);
+		color: var(--prmclr2);
+		fill: var(--prmclr2);
+		stroke: var(--prmclr2);
 	}
 }

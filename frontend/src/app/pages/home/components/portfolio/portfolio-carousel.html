@@ -1,66 +1,47 @@
-<article class="accomplishments flex flex-col items-center w-full gap-8 layout-row">
-	<h2 class="text-center text-family-bold">Selected Accomplishments</h2>
+<button
+	class="flex full-center fast-trans absolute z-1"
+	aria-label="Previous accomplishment"
+	[disabled]="isFirstSlide()"
+	(click)="prevSlide()">
+	<app-svg-icon
+		icon="arrow"
+		width="32"
+		height="32">
+	</app-svg-icon>
+</button>
 
-	<div class="carousel-wrapper flex flex-row items-center justify-between w-full gap-4 relative">
-		<button
-			class="nav-btn flex full-center fast-trans z-10"
-			aria-label="Previous accomplishment"
-			[disabled]="isFirstSlide()"
-			(click)="prevSlide()">
-			<!-- Assuming your arrow icon supports CSS rotation or you have distinct arrowLeft/arrowRight -->
-			<app-svg-icon
-				icon="arrow"
-				width="32"
-				height="32"
-				style="transform: rotate(90deg)"></app-svg-icon>
-		</button>
+<div
+	class="viewport relative overflow-hidden w-full"
+	aria-roledescription="carousel">
+	<ul
+		class="track flex flex-row fast-trans"
+		[style.transform]="transformStyle()">
+		@for (slide of slides; track slide.title) {
+		<li
+			class="slide flex flex-col items-center gap-4 w-full shrink-0"
+			aria-roledescription="slide">
+			<app-image-container
+				[src]="slide.imgSrc"
+				[alt]="slide.imgAlt"
+				[width]="640"
+				[height]="360"
+				[priority]="false">
+			</app-image-container>
+			<h3 class="text-center">{{ slide.title }}</h3>
+			<p class="text-center w-full max-w-3xl">{{ slide.description }}</p>
+		</li>
+		}
+	</ul>
+</div>
 
-		<!-- Screen reader region for the carousel -->
-		<div
-			class="carousel-viewport overflow-hidden w-full"
-			aria-roledescription="carousel">
-			<!-- Apply dynamic transform here to slide the track -->
-			<ul
-				class="carousel-track flex flex-row m-0 p-0 fast-trans"
-				[style.transform]="transformStyle()">
-				@for (slide of slides; track slide.title) {
-				<li
-					class="carousel-slide flex flex-col items-center gap-4 w-full shrink-0"
-					aria-roledescription="slide">
-					<app-image-container
-						[src]="slide.imgSrc"
-						[alt]="slide.imgAlt"
-						[width]="640"
-						[height]="360"
-						[priority]="false">
-					</app-image-container>
-					<h3 class="text-center">{{ slide.title }}</h3>
-					<p class="text-center w-full max-w-3xl">{{ slide.description }}</p>
-				</li>
-				}
-			</ul>
-		</div>
-
-		<button
-			class="nav-btn flex full-center fast-trans z-10"
-			aria-label="Next accomplishment"
-			[disabled]="isLastSlide()"
-			(click)="nextSlide()">
-			<app-svg-icon
-				icon="arrow"
-				width="32"
-				height="32"
-				style="transform: rotate(-90deg)"></app-svg-icon>
-		</button>
-	</div>
-
-	<a
-		routerLink="/portfolio"
-		class="flex flex-row full-center gap-2 fast-trans mt-4">
-		<span>View Full Portfolio</span>
-		<app-svg-icon
-			icon="briefcase"
-			width="24"
-			height="24"></app-svg-icon>
-	</a>
-</article>
+<button
+	class="flex full-center fast-trans absolute z-1"
+	aria-label="Next accomplishment"
+	[disabled]="isLastSlide()"
+	(click)="nextSlide()">
+	<app-svg-icon
+		icon="arrow"
+		width="32"
+		height="32">
+	</app-svg-icon>
+</button>

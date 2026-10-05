@@ -97,7 +97,22 @@
 		</ul>
 	</article>
 
-	<app-portfolio-carousel></app-portfolio-carousel>
+	<article class="accomplishments flex flex-col items-center w-full gap-8">
+		<h2 class="text-center text-family-bold">Selected Work</h2>
+
+		<app-portfolio-carousel></app-portfolio-carousel>
+
+		<a
+			routerLink="/portfolio"
+			class="flex flex-row full-center gap-2 fast-trans mt-4">
+			<span>View Full Portfolio</span>
+			<app-svg-icon
+				icon="briefcase"
+				width="24"
+				height="24">
+			</app-svg-icon>
+		</a>
+	</article>
 
 	<article class="a11y flex flex-col gap-8 w-full">
 		<h2 class="text-center">An Overlay Is Never Enough</h2>

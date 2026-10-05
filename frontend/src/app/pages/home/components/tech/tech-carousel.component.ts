@@ -1,4 +1,6 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core"
+import { Component, ChangeDetectionStrategy, computed, inject } from "@angular/core"
+
+import { SystemStore } from "../../../../core/stores/system.store"
 
 import { IconName } from "../../../../shared/components/icon/icon.map"
 
@@ -12,22 +14,36 @@ import { SvgIconComponent } from "../../../../shared/components/icon/icon.compon
 	styleUrl: "./tech-carousel.css",
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	host: {
-		style: "display: contents",
+		class: "flex flex-col w-full",
+		role: "region",
+		"aria-label": "Technologies Used",
 	},
 })
 export class TechCarouselComponent {
-	readonly techIcons: Array<{ name: IconName; width: number; height: number }> = [
-		{ name: "react", width: 64, height: 64 },
-		{ name: "angular", width: 64, height: 64 },
-		{ name: "nodejs", width: 64, height: 64 },
-		{ name: "nextjs", width: 64, height: 64 },
-		{ name: "nestjs", width: 64, height: 64 },
-		{ name: "spring", width: 64, height: 64 },
-		{ name: "docker", width: 64, height: 64 },
-		{ name: "cloudflare", width: 64, height: 64 },
-		{ name: "oracle", width: 64, height: 64 },
-		{ name: "aws", width: 64, height: 64 },
-		{ name: "mongo", width: 64, height: 64 },
-		{ name: "postgresql", width: 64, height: 64 },
+	private readonly store = inject(SystemStore)
+
+	readonly iconSize = computed(() => (this.store.deviceType() === "desktop" ? 64 : 48))
+
+	readonly techIcons: Array<{ name: IconName; label: string }> = [
+		{ name: "html", label: "HTML" },
+		{ name: "css", label: "CSS" },
+		{ name: "javascript", label: "JavaScript" },
+		{ name: "typescript", label: "TypeScript" },
+		{ name: "java", label: "Java" },
+		{ name: "c", label: "C language" },
+		{ name: "python", label: "Python" },
+		{ name: "react", label: "React" },
+		{ name: "angular", label: "Angular" },
+		{ name: "tailwind", label: "TailwindCSS" },
+		{ name: "nodejs", label: "Node.js" },
+		{ name: "nextjs", label: "Next.js" },
+		{ name: "nestjs", label: "NestJS" },
+		{ name: "spring", label: "Spring Boot" },
+		{ name: "docker", label: "Docker" },
+		{ name: "cloudflare", label: "Cloudflare" },
+		{ name: "oracle", label: "Oracle Cloud" },
+		{ name: "aws", label: "Amazon Web Services" },
+		{ name: "mongo", label: "MongoDB" },
+		{ name: "postgresql", label: "PostgreSQL" },
 	]
 }

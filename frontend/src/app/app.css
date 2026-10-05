@@ -4,6 +4,7 @@
 	padding: 0.5rem;
 	background: var(--scdclr1);
 	fill: var(--prmclr3);
+	border: 1px solid transparent;
 	border-radius: 100%;
 	outline: none;
 	transform: rotate(-125deg);
@@ -12,6 +13,7 @@
 	&:focus-visible {
 		background: var(--prmclr3);
 		fill: var(--mnrclr4);
+		border-color: var(--mnrclr4);
 		transform: rotate(-125deg) scale(1.2);
 	}
 }
