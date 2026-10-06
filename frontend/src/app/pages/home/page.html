@@ -1,15 +1,16 @@
 <section class="page-contents flex flex-col items-center relative w-h-full">
 	<article class="hero flex flex-col justify-center w-full h-screen relative">
 		<app-image-container
-			src="/images/hero.avif"
+			src="/images/hero_linkedin.avif"
 			alt="Valeriy Kuvshinov"
 			[width]="240"
 			[height]="240"
-			[priority]="true">
+			[priority]="true"
+			class="fast-trans z-1">
 		</app-image-container>
 
-		<div class="relative w-full layout-row">
-			<div class="content flex flex-col gap-6">
+		<div class="content-wrapper w-full layout-row">
+			<div class="content flex flex-col w-full gap-6">
 				<h1 class="text-family-bold">
 					Scalable Web Systems & Uncompromising Accessibility
 				</h1>
@@ -40,7 +41,7 @@
 						class="flex flex-row full-center gap-2">
 						<span>View Services</span>
 						<app-svg-icon
-							icon="briefcase"
+							icon="arrow"
 							width="24"
 							height="24"></app-svg-icon>
 					</a>
@@ -56,44 +57,34 @@
 		</div>
 	</article>
 
+	<div class="highlights w-full">
+		<ul class="grid layout-row gap-8">
+			@for (item of highlights; track item.label) {
+			<li class="flex flex-col items-center gap-2">
+				<app-svg-icon
+					[icon]="item.icon"
+					width="48"
+					height="48">
+				</app-svg-icon>
+				<span class="text-family-bold">{{ item.value }}</span>
+				<span class="text-center">{{ item.label }}</span>
+			</li>
+			}
+		</ul>
+	</div>
+
 	<app-tech-carousel></app-tech-carousel>
 
-	<article class="core flex flex-col w-full gap-8">
+	<article class="core flex flex-col w-full">
 		<h2 class="text-center">My Specialties</h2>
 
-		<ul class="grid layout-row gap-6">
+		<ul class="grid layout-row gap-8">
+			@for (specialty of specialties; track specialty.title) {
 			<li class="flex flex-col gap-2 fast-trans">
-				<h3 class="text-center">Native Full-Stack Engineering</h3>
-				<p class="text-center">
-					Escaping the limitations of templated platforms. I build custom, semantic web
-					applications with automated CI/CD cloud deployments using modern stacks
-					(Angular, React, Next.js, Express, NestJS, Spring Boot).
-				</p>
+				<h3 class="text-center">{{ specialty.title }}</h3>
+				<p class="text-center">{{ specialty.description }}</p>
 			</li>
-			<li class="flex flex-col gap-2 fast-trans">
-				<h3 class="text-center">A11y Compliance & Legal Immunity</h3>
-				<p class="text-center">
-					Auditing and refactoring digital infrastructure to natively meet WCAG 2.1 AA /
-					AAA and Israeli standards - providing true legal protection that accessibility
-					overlays simply cannot offer.
-				</p>
-			</li>
-			<li class="flex flex-col gap-2 fast-trans">
-				<h3 class="text-center">System Architecture & Optimization</h3>
-				<p class="text-center">
-					Serving as a technical consultant to resolve critical bottlenecks, secure legacy
-					e-commerce platforms, and orchestrate highly scalable, independent digital
-					assets.
-				</p>
-			</li>
-			<li class="flex flex-col gap-2 fast-trans">
-				<h3 class="text-center">Remote Digital Assistance</h3>
-				<p class="text-center">
-					Dedicated one-on-one support for individuals facing severe digital barriers,
-					providing secure navigation assistance for inaccessible sites and complex
-					verification systems.
-				</p>
-			</li>
+			}
 		</ul>
 	</article>
 
@@ -131,11 +122,11 @@
 				</p>
 				<a
 					href="https://overlayfactsheet.com/en/#what-is-a-web-accessibility-overlay"
-					aria-label="Read more about why overlays fail (opens in a new tab)"
+					aria-label="Read More (opens in a new tab)"
 					target="_blank"
 					class="text-center"
 					rel="noopener noreferrer">
-					<span>Read the Fact Sheet</span>
+					<span>Read More</span>
 				</a>
 			</li>
 			<li class="flex flex-col gap-4">
@@ -145,9 +136,10 @@
 					government site blocking your screen reader?
 				</p>
 				<p>
-					I provide secure, remote assistance to help you bypass these barriers. I reply
-					to support requests within hours.
+					I provide secure, remote assistance to help you bypass these barriers, to help
+					you become independent, and if necessary, do it for you.
 				</p>
+				<p>Zoom? Google Meet? Up to you! I reply to support requests within hours.</p>
 				<a
 					routerLink="/contact"
 					class="text-center">

@@ -22,9 +22,9 @@ import { SvgIconComponent } from "../../../../shared/components/icon/icon.compon
 export class TechCarouselComponent {
 	private readonly store = inject(SystemStore)
 
-	readonly iconSize = computed(() => (this.store.deviceType() === "desktop" ? 64 : 48))
+	protected readonly iconSize = computed(() => (this.store.deviceType() === "desktop" ? 64 : 48))
 
-	readonly techIcons: Array<{ name: IconName; label: string }> = [
+	protected readonly techIcons: Array<{ name: IconName; label: string }> = [
 		{ name: "html", label: "HTML" },
 		{ name: "css", label: "CSS" },
 		{ name: "javascript", label: "JavaScript" },

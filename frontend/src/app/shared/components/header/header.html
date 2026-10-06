@@ -1,5 +1,7 @@
 @if (store.deviceType() !== 'desktop') {
-<nav class="mobile-view grid items-center">
+<nav
+	class="mobile-view grid items-center"
+	aria-label="Mobile Main Navigation">
 	<button
 		(click)="openMenu()"
 		aria-label="Open user menu"
@@ -26,7 +28,9 @@
 	</a>
 </nav>
 } @else {
-<nav class="desktop-view flex flex-row align-center justify-between layout-row">
+<nav
+	class="desktop-view flex flex-row align-center justify-between layout-row"
+	aria-label="Desktop Main Navigation">
 	<a
 		routerLink="/about/"
 		routerLinkActive="active"

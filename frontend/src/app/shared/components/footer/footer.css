@@ -1,6 +1,6 @@
 :host {
-	background: var(--prmclr3);
-	border-top: 1px solid var(--scdclr4);
+    background: var(--prmclr1); 
+    border-top: 1px solid var(--scdclr5);
 
 	@media (max-width: 900px) {
 		padding: 1rem 1rem;

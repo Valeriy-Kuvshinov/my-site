@@ -15,7 +15,7 @@ async function bootstrap() {
 
 	app.enableCors({
 		origin: isProduction
-			? ["https://vkfreelancesoftware.com", "https://www.vkfreelancesoftware.com"]
+			? ["https://kuvware.com", "https://www.kuvware.com"]
 			: ["http://127.0.0.1:4200", "http://localhost:4200"],
 		credentials: true,
 	})

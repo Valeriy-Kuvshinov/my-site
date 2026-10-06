@@ -1,156 +1,88 @@
-<section class="page-contents flex flex-col items-center w-h-full gap-12">
-	<article class="intro flex flex-col w-full layout-row gap-6">
-		<h1 class="text-center text-family-bold">Engineering & Consulting</h1>
-		<p>
-			VK Freelance Software provides end-to-end technical solutions, specializing in the
-			intersection of high-performance backend architecture and flawless frontend
-			accessibility.
-		</p>
-		<p>
-			I operate as a Systems Architect and Consultant - rescuing businesses from the bloated,
-			restrictive limits of template platforms (like Wix or Shopify) by delivering fully
-			owned, custom-coded digital assets built for speed, scalability, and long-term run.
-		</p>
+<section class="page-contents flex flex-col items-center w-h-full">
+	<article class="intro flex flex-col w-full">
+		<div class="text flex flex-col w-full layout-row gap-8">
+			<h1 class="text-center text-family-bold">Engineering & Consulting</h1>
+			<p>
+				I build websites and systems from scratch. Unlike managed platforms that trap you in
+				monthly subscriptions, I help you set up your own independent infrastructure and
+				write the code myself.
+			</p>
+			<p>
+				You own everything, the site is incredibly fast, and it meets strict AA
+				accessibility laws by default. By eliminating the middlemen, I keep your long-term
+				operational costs as low as possible.
+			</p>
+		</div>
 	</article>
 
-	<article class="services flex flex-col w-full gap-8">
-		<ul class="grid layout-row gap-6">
-			<li class="card grid items-center gap-4">
-				<app-svg-icon
-					icon="monitor"
-					width="64"
-					height="64">
-				</app-svg-icon>
+	<article class="menu flex flex-col w-full">
+		<ul class="services grid gap-8 layout-row">
+			@for (service of services; track service.title) {
+			<li class="card flex flex-col gap-6">
+				<div class="header flex flex-row items-center justify-between gap-4 w-full">
+					<div class="flex flex-row items-center gap-4">
+						<app-svg-icon
+							[icon]="service.icon"
+							[width]="iconSize()"
+							[height]="iconSize()">
+						</app-svg-icon>
+						<h2 class="text-family-bold">{{ service.title }}</h2>
+					</div>
 
-				<div class="text grid">
-					<h2 class="text-family-bold">Custom Web Development & Architecture</h2>
-					<p>
-						Stop paying monthly subscriptions for rigid platforms. Invest in an
-						independent, scalable system built from the ground up.
-					</p>
-					<ul class="flex flex-col gap-2">
-						<li>
-							<strong>Maximum Performance & SEO:</strong> Clean, semantic HTML and
-							optimized assets resulting in peak Google Lighthouse scores and reduced
-							bounce rates.
+					<span class="price-badge flex full-center"> {{ service.price }} </span>
+				</div>
+
+				<div class="text flex flex-col gap-4">
+					<p>{{ service.description }}</p>
+
+					<ul class="skills grid gap-4 mt-4">
+						@for (skill of service.skills; track skill.text) {
+						<li class="flex flex-row items-center gap-2">
+							<app-svg-icon
+								[icon]="skill.icon"
+								width="24"
+								height="24">
+							</app-svg-icon>
+							<span>{{ skill.text }}</span>
 						</li>
-						<li>
-							<strong>Modern Frontends:</strong> Blazing fast, SEO-optimized static
-							sites and single-page applications using Angular and Next.js.
-						</li>
-						<li>
-							<strong>Secure Backends:</strong> Robust authentication (JWT / RBAC),
-							real-time WebSockets, and custom API design using NestJS, Node.js, and
-							Spring Boot.
-						</li>
-						<li>
-							<strong>Cloud Infrastructure:</strong> Docker containerization, Nginx
-							proxies, and automated GitHub Actions pipelines.
-						</li>
+						}
 					</ul>
 				</div>
 			</li>
-
-			<li class="card grid items-center gap-4">
-				<app-svg-icon
-					icon="magGlass"
-					width="64"
-					height="64">
-				</app-svg-icon>
-
-				<div class="text grid">
-					<h2 class="text-family-bold">A11y Auditing & Remediation Strategy</h2>
-					<p>
-						Floating accessibility menus do not protect you from legal action. I provide
-						true, native compliance (WCAG 2.1 AA/AAA) by engineering accessibility
-						directly into the DOM.
-					</p>
-					<ul class="flex flex-col gap-2">
-						<li>
-							<strong>Full Semantic Control:</strong> Developing clean native code
-							with precise keyboard focus and uncompromising ARIA 1.2 support.
-						</li>
-						<li>
-							<strong>Validation & Strategy:</strong> Comprehensive auditing to
-							identify deep architectural failures, followed by strategic remediation
-							reports.
-						</li>
-						<li>
-							<strong>Visual Standards:</strong> Re-engineering UI color systems and
-							typography to meet strict AAA contrast ratios.
-						</li>
-					</ul>
-				</div>
-			</li>
-
-			<li class="card grid items-center gap-4">
-				<app-svg-icon
-					icon="fix"
-					width="64"
-					height="64">
-				</app-svg-icon>
-
-				<div class="text grid">
-					<h2 class="text-family-bold">System Optimization & Rescue</h2>
-					<p>
-						Breathing life back into failing, compromised, or severely bottlenecked
-						legacy systems.
-					</p>
-					<ul class="flex flex-col gap-2 list-disc">
-						<li>
-							<strong>Architectural Rewrites:</strong> When temporary patches fail, I
-							provide full-scale native rewrites to cure the root technical debt of
-							legacy platforms.
-						</li>
-						<li>
-							<strong>E-Commerce Stabilization:</strong> Identifying and patching
-							deep-seated payment gateway failures to restore conversion rates.
-						</li>
-						<li>
-							<strong>Security Hardening:</strong> Implementing strict anti-spam
-							workflows, rate limiting, and mitigating credit fraud vulnerabilities.
-						</li>
-					</ul>
-				</div>
-			</li>
-
-			<li class="card grid items-center gap-4">
-				<app-svg-icon
-					icon="support"
-					width="64"
-					height="64">
-				</app-svg-icon>
-
-				<div class="text grid">
-					<h2 class="text-family-bold">Remote Digital Assistance</h2>
-					<p>
-						A specialized service designed for individuals who encounter insurmountable
-						digital barriers in their day-to-day lives.
-					</p>
-					<ul class="flex flex-col gap-2">
-						<li>
-							<strong>Verification Bypassing:</strong> Secure, remote help for users
-							unable to solve complex visual tests like reCAPTCHA.
-						</li>
-						<li>
-							<strong>Task Completion:</strong> Navigating highly inaccessible
-							government, medical, or corporate portals on your behalf.
-						</li>
-						<li>
-							<strong>Guided Bridging:</strong> Patient, one-on-one technical support
-							for individuals lacking immediate local assistance for critical online
-							tasks.
-						</li>
-					</ul>
-				</div>
-			</li>
+			}
 		</ul>
+	</article>
 
-		<div class="bottom flex flex-col layout-row gap-4">
-			<h2 class="text-center">Have you decided?</h2>
-			<p>For any doubts, don't be afraid to ask, consulting is free!</p>
-			<a routerLink="/contact">
-				<span>Send Message</span>
+	<article class="process flex flex-col w-full">
+		<div class="content flex flex-col w-full gap-8 layout-row">
+			<h2 class="text-center text-family-bold">How I Work</h2>
+
+			<ul class="grid gap-6">
+				@for (step of processSteps; track step.title; let idx = $index) {
+				<li class="flex flex-col gap-4">
+					<h3 class="text-family-bold">{{ idx + 1 }}. {{ step.title }}</h3>
+					<p>{{ step.description }}</p>
+				</li>
+				}
+			</ul>
+		</div>
+	</article>
+
+	<article class="cta flex flex-col full-center w-full">
+		<div class="content flex flex-col layout-row gap-6">
+			<h2 class="text-center text-family-bold">Have you decided?</h2>
+			<p class="text-center">
+				For any doubts, don't be afraid to ask. Initial consulting is completely free.
+			</p>
+			<a
+				routerLink="/contact"
+				class="flex flex-row full-center w-fit gap-2">
+				<span>Send a Message</span>
+				<app-svg-icon
+					icon="mail"
+					width="24"
+					height="24">
+				</app-svg-icon>
 			</a>
 		</div>
 	</article>

@@ -18,7 +18,8 @@
 				routerLinkActive="active"
 				[routerLinkActiveOptions]="{ exact: true }"
 				ariaCurrentWhenActive="page"
-				class="fast-trans">
+				class="fast-trans"
+				(click)="closeAsideMenu()">
 				<app-image-container
 					[src]="LOGO_IMG"
 					alt="Noffty logo"

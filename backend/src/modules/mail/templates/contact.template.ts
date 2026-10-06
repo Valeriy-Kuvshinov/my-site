@@ -42,7 +42,7 @@ function getEmailBodyTemplate(content: string): string {
 	return `
     <div style="display: flex; height: 100%; margin: 0 auto; max-width:800px; background-color: #0a0a0a;">
         <div style="width: 100%; padding: 20px; font-size: 1rem; color: #F5F5F5; background-color: #0a0a0a;">
-            <a href="https://vkfreelancesoftware.com" style="display: block; width: fit-content; margin: 0 auto; color: #F5F5F5;">
+            <a href="https://kuvware.com" style="display: block; width: fit-content; margin: 0 auto; color: #F5F5F5;">
                 <img src="${SITE_LOGO}" alt="VK Freelance Software" style="height: 32px; width: 32px;">
             </a>
             ${content}

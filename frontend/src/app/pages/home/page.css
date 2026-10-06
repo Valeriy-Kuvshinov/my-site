@@ -1,14 +1,5 @@
 :host .page-contents {
 	.hero {
-		background: linear-gradient(
-			45deg,
-			var(--scdclr9),
-			var(--scdclr9),
-			var(--scdclr8),
-			var(--scdclr7),
-			var(--scdclr6)
-		);
-
 		.content {
 			p {
 				color: var(--scdclr2);
@@ -40,6 +31,10 @@
 						color: var(--scdclr9);
 						fill: var(--scdclr9);
 
+						app-svg-icon {
+							transform: rotate(-45deg);
+						}
+
 						&:hover,
 						&:focus-visible {
 							background: var(--mnrclr9);
@@ -67,11 +62,38 @@
 			aspect-ratio: 1;
 			border-radius: 100%;
 			overflow: hidden;
+
+			&:hover {
+				scale: 1.1;
+			}
+		}
+	}
+
+	.highlights {
+		background: var(--scdclr9);
+
+		ul {
+			grid-template-columns: repeat(auto-fit, minmax(min(9rem, 100%), 1fr));
+
+			li {
+				fill: var(--mnrclr5);
+
+				span:nth-of-type(1) {
+					color: var(--mnrclr5);
+					font-size: 1.5rem;
+				}
+			}
 		}
 	}
 
 	.core {
+		background: var(--scdclr9);
+
 		ul {
+			padding: 2rem 0;
+			grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+			overflow: hidden;
+
 			li {
 				background: var(--scdclr8);
 				border: 1px solid var(--scdclr7);
@@ -95,14 +117,51 @@
 		}
 	}
 
+	.accomplishments {
+		background: linear-gradient(
+			180deg,
+			var(--scdclr9),
+			var(--scdclr8),
+			var(--scdclr8),
+			var(--scdclr8),
+			var(--prmclr3)
+		);
+
+		a {
+			margin-block-start: 1rem;
+			padding: 0.75rem 1rem;
+			border-radius: 0.75rem;
+			background: var(--scdclr2);
+			color: var(--scdclr9);
+			fill: var(--scdclr9);
+
+			&:hover,
+			&:focus-visible {
+				background: var(--scdclr7);
+				color: var(--scdclr1);
+				fill: var(--scdclr1);
+			}
+		}
+	}
+
 	.a11y {
-		background: var(--scdclr8);
+		background: linear-gradient(
+			180deg,
+			var(--prmclr3),
+			var(--scdclr9),
+			var(--scdclr9),
+			var(--scdclr9),
+			var(--prmclr1)
+		);
+
+		p:last-of-type {
+			margin-block-end: 1rem;
+		}
 
 		a {
 			margin-top: auto;
 			max-width: 15rem;
 			padding: 0.75rem 1rem;
-			margin-block-start: 1rem;
 			align-self: center;
 			border-radius: 0.75rem;
 			background: var(--scdclr2);
@@ -120,6 +179,14 @@
 		.hero {
 			gap: 2rem;
 			padding: 6rem 1rem 1rem 1rem;
+			background: linear-gradient(
+				0deg,
+				var(--scdclr9),
+				var(--scdclr9),
+				var(--scdclr8),
+				var(--scdclr7),
+				var(--scdclr6)
+			);
 
 			app-image-container {
 				max-width: 10rem;
@@ -129,8 +196,12 @@
 
 		.core,
 		.a11y,
-		.accomplishments {
+		.highlights {
 			padding: 3rem 1rem;
+		}
+
+		.accomplishments {
+			padding: 3rem 0;
 		}
 	}
 
@@ -158,12 +229,9 @@
 		}
 
 		.core h2,
-		.a11y h2 {
+		.a11y h2,
+		.accomplishments h2 {
 			font-size: 1.5rem;
-		}
-
-		.core ul {
-			grid-template-columns: 1fr;
 		}
 
 		.a11y ul {
@@ -188,10 +256,6 @@
 			font-size: 2rem;
 		}
 
-		.core ul {
-			grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
-		}
-
 		.a11y ul {
 			grid-template-columns: 1fr 1fr;
 		}
@@ -200,6 +264,13 @@
 	@media (min-width: 901px) {
 		.hero {
 			padding: 6rem 2rem 2rem 2rem;
+			background: radial-gradient(
+				ellipse at 100% 40%,
+				var(--scdclr6) 0%,
+				var(--scdclr7) 15%,
+				var(--scdclr8) 30%,
+				var(--scdclr9) 50%
+			);
 
 			app-image-container {
 				max-width: 15rem;
@@ -215,7 +286,8 @@
 
 		.core,
 		.a11y,
-		.accomplishments {
+		.accomplishments,
+		.highlights {
 			padding: 4rem 2rem;
 		}
 	}

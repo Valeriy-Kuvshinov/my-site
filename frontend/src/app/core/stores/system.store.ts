@@ -1,5 +1,5 @@
 import { isPlatformBrowser } from "@angular/common"
-import { inject, Injectable, PLATFORM_ID, signal } from "@angular/core"
+import { DestroyRef, inject, Injectable, PLATFORM_ID, signal } from "@angular/core"
 
 export type DeviceType = "mobile" | "tablet" | "desktop"
 
@@ -30,6 +30,7 @@ const DISPLAY_TIMEOUT_MILLIS = 8 * 1000
 })
 export class SystemStore {
 	private readonly platformId = inject(PLATFORM_ID)
+	private readonly destroyRef = inject(DestroyRef)
 
 	// DEVICE STATE
 	readonly deviceType = signal<DeviceType>("desktop")
@@ -76,6 +77,10 @@ export class SystemStore {
 			handleResize()
 
 			window.addEventListener("resize", handleResize)
+
+			this.destroyRef.onDestroy(() => {
+				window.removeEventListener("resize", handleResize)
+			})
 		}
 	}
 

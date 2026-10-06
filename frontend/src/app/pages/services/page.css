@@ -1,24 +1,125 @@
 :host .page-contents {
-	.services {
-		ul .card {
-			padding: 1rem;
-			grid-template-columns: auto 1fr;
-			border: 1px solid var(--mnrclr1);
-			border-radius: 0.75rem;
+	.intro {
+		background: var(--scdclr8);
+	}
 
-			app-svg-icon {
-				fill: var(--mnrclr1);
+	.menu {
+		background: linear-gradient(
+			180deg,
+			var(--scdclr8),
+			var(--scdclr6),
+			var(--scdclr6),
+			var(--scdclr7)
+		);
+
+		.services {
+			grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
+			overflow: hidden;
+
+			.card {
+				padding: 1rem;
+				grid-template-columns: auto 1fr;
+				background: var(--scdclr8);
+				border: 1px solid var(--scdclr6);
+				border-radius: 0.75rem;
+
+				&:first-child app-svg-icon {
+					fill: var(--mnrclr1);
+				}
+
+				&:nth-of-type(2) app-svg-icon {
+					fill: var(--mnrclr9);
+				}
+
+				&:nth-of-type(3) app-svg-icon {
+					fill: var(--scdclr5);
+				}
+
+				&:last-child app-svg-icon {
+					fill: var(--mnrclr8);
+				}
+
+				app-svg-icon {
+					align-self: center;
+				}
+
+				&:hover {
+					border-color: var(--scdclr3);
+					transform: translateY(-0.25rem);
+				}
+			}
+		}
+	}
+
+	.process {
+		background: linear-gradient(
+			180deg,
+			var(--scdclr7),
+			var(--scdclr8),
+			var(--scdclr8),
+			var(--scdclr9)
+		);
+
+		.content ul {
+			grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+		}
+	}
+
+	.cta {
+		background: linear-gradient(180deg, var(--scdclr9), var(--prmclr3));
+
+		.content a {
+			padding: 0.75rem 1rem;
+			background: var(--scdclr2);
+			color: var(--scdclr9);
+			fill: var(--scdclr9);
+			border-radius: 0.75rem;
+			align-self: center;
+
+			&:hover,
+			&:focus-visible {
+				background: var(--scdclr7);
+				color: var(--scdclr1);
+				fill: var(--scdclr1);
 			}
 		}
 	}
 
 	@media (max-width: 600px) {
 		min-height: 70vh;
-		padding: 6rem 1rem 3rem 1rem;
+
+		.intro {
+			padding: 6rem 1rem 3rem 1rem;
+		}
+
+		.menu .services,
+		.process,
+		.cta {
+			padding: 3rem 1rem;
+		}
+
+		.process .content h2,
+		.cta .content h2 {
+			font-size: 1.5rem;
+		}
 	}
 
 	@media (min-width: 601px) {
 		min-height: 80vh;
-		padding: 8rem 2rem 4rem 2rem;
+
+		.intro {
+			padding: 8rem 2rem 4rem 2rem;
+		}
+
+		.menu .services,
+		.process,
+		.cta {
+			padding: 4rem 2rem;
+		}
+
+		.process .content h2,
+		.cta .content h2 {
+			font-size: 2rem;
+		}
 	}
 }

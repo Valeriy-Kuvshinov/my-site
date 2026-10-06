@@ -1,47 +1,54 @@
-<button
-	class="flex full-center fast-trans absolute z-1"
-	aria-label="Previous accomplishment"
-	[disabled]="isFirstSlide()"
-	(click)="prevSlide()">
-	<app-svg-icon
-		icon="arrow"
-		width="32"
-		height="32">
-	</app-svg-icon>
-</button>
-
 <div
-	class="viewport relative overflow-hidden w-full"
+	class="viewport relative layout-row w-full"
 	aria-roledescription="carousel">
 	<ul
-		class="track flex flex-row fast-trans"
+		class="track flex flex-row fast-trans relative"
 		[style.transform]="transformStyle()">
-		@for (slide of slides; track slide.title) {
+		@for (slide of slides; track slide.title; let i = $index) {
 		<li
-			class="slide flex flex-col items-center gap-4 w-full shrink-0"
-			aria-roledescription="slide">
-			<app-image-container
-				[src]="slide.imgSrc"
-				[alt]="slide.imgAlt"
-				[width]="640"
-				[height]="360"
-				[priority]="false">
-			</app-image-container>
-			<h3 class="text-center">{{ slide.title }}</h3>
-			<p class="text-center w-full max-w-3xl">{{ slide.description }}</p>
+			class="slide grid w-full"
+			aria-roledescription="slide"
+			[attr.aria-hidden]="currentIndex() !== i">
+			<div class="visual relative w-full layout-row">
+				<button
+					class="nav-btn flex full-center fast-trans absolute z-1"
+					aria-label="Previous accomplishment"
+					[disabled]="isFirstSlide()"
+					[tabIndex]="currentIndex() === i ? 0 : -1"
+					(click)="prevSlide()">
+					<app-svg-icon
+						icon="arrow"
+						[width]="iconSize()"
+						[height]="iconSize()"></app-svg-icon>
+				</button>
+
+				<app-image-container
+					[src]="getImageSrc(slide)"
+					[alt]="slide.imgAlt"
+					[width]="640"
+					[height]="360"
+					[priority]="false"
+					class="block w-full h-full">
+				</app-image-container>
+
+				<button
+					class="nav-btn flex full-center fast-trans absolute z-1"
+					aria-label="Next accomplishment"
+					[disabled]="isLastSlide()"
+					[tabIndex]="currentIndex() === i ? 0 : -1"
+					(click)="nextSlide()">
+					<app-svg-icon
+						icon="arrow"
+						[width]="iconSize()"
+						[height]="iconSize()"></app-svg-icon>
+				</button>
+			</div>
+
+			<div class="content flex flex-col justify-center gap-4">
+				<h3 class="text-center">{{ slide.title }}</h3>
+				<p class="text-center w-full">{{ slide.description }}</p>
+			</div>
 		</li>
 		}
 	</ul>
 </div>
-
-<button
-	class="flex full-center fast-trans absolute z-1"
-	aria-label="Next accomplishment"
-	[disabled]="isLastSlide()"
-	(click)="nextSlide()">
-	<app-svg-icon
-		icon="arrow"
-		width="32"
-		height="32">
-	</app-svg-icon>
-</button>

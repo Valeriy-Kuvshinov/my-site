@@ -1,0 +1,31 @@
+.modal-wrapper .image-modal {
+	max-width: 95vw;
+	max-height: 90vh;
+	background: var(--scdclr3);
+	border: 2px solid var(--scdclr5);
+	border-radius: 0.5rem;
+
+	app-image-container {
+		max-width: 95vw;
+		min-width: 20rem;
+		max-height: 90vh;
+		border-radius: 0.5rem;
+	}
+
+	button {
+		top: 0.5rem;
+		right: 0.5rem;
+		z-index: 1;
+		padding: 0.25rem;
+		background: var(--scdclr3);
+		fill: var(--scdclr2);
+		border-radius: 0.5rem;
+
+		&:hover,
+		&:focus-visible {
+			background: var(--scdclr2);
+			outline: none;
+			fill: var(--scdclr3);
+		}
+	}
+}

@@ -2,15 +2,60 @@ import { Component, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 import { RouterLink } from "@angular/router"
 
+import { IconName } from "../../shared/components/icon/icon.map"
+
 import { SvgIconComponent } from "../../shared/components/icon/icon.component"
 import { ImageContainerComponent } from "../../shared/components/general/image-container.component"
 import { TechCarouselComponent } from "./components/tech/tech-carousel.component"
 import { PortfolioCarouselComponent } from "./components/portfolio/portfolio-carousel.component"
 
+interface Highlight {
+	icon: IconName
+	value: string
+	label: string
+}
+
+interface Specialty {
+	title: string
+	description: string
+}
+
 const PAGE_TITLE = "VK Freelance Software"
 const PAGE_URL = "/"
 const PAGE_DESC =
 	"VK Freelance Software - Providing you websites, systems, open source and accessibility assistance with care."
+
+const HIGHLIGHTS: Highlight[] = [
+	{ icon: "professional", value: "2+", label: "Years of Experience" },
+	{ icon: "production", value: "5+", label: "Apps in Production" },
+	{ icon: "source", value: "2+", label: "Open Source Projects" },
+	{ icon: "magGlass", value: "3+", label: "Accessibility Audits" },
+	{ icon: "github", value: "20+", label: "GitHub Repositories" },
+	{ icon: "commits", value: "3000+", label: "GitHub Contributions" },
+]
+
+const SPECIALTIES: Specialty[] = [
+	{
+		title: "Native Full-Stack Engineering",
+		description:
+			"Escaping the limitations of templated platforms. I build custom, semantic web applications with automated CI/CD cloud deployments using modern stacks (Angular, React, Next.js, Express, NestJS, Spring Boot).",
+	},
+	{
+		title: "A11y Compliance & Legal Immunity",
+		description:
+			"Auditing and refactoring digital infrastructure to natively meet WCAG 2.1 AA / AAA and Israeli standards - providing true legal protection that accessibility overlays simply cannot offer.",
+	},
+	{
+		title: "System Architecture & Optimization",
+		description:
+			"Serving as a technical consultant to resolve critical bottlenecks, secure legacy e-commerce platforms, and orchestrate highly scalable, independent digital assets.",
+	},
+	{
+		title: "Remote Digital Assistance",
+		description:
+			"Dedicated one-on-one support for individuals facing severe digital barriers, providing secure navigation assistance for inaccessible sites and complex verification systems.",
+	},
+]
 
 @Component({
 	selector: "main[app-home-page]",
@@ -32,6 +77,9 @@ const PAGE_DESC =
 export default class PageComponent implements OnInit {
 	private readonly title = inject(Title)
 	private readonly meta = inject(Meta)
+
+	protected readonly highlights = HIGHLIGHTS
+	protected readonly specialties = SPECIALTIES
 
 	ngOnInit() {
 		this.title.setTitle(PAGE_TITLE)
