@@ -28,7 +28,8 @@
 					[width]="640"
 					[height]="360"
 					[priority]="false"
-					class="block w-full h-full">
+					class="w-h-full"
+					(onClickEvent)="openImage(getImageSrc(slide))">
 				</app-image-container>
 
 				<button

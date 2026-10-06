@@ -18,8 +18,8 @@
 	<article class="menu flex flex-col w-full">
 		<ul class="services grid gap-8 layout-row">
 			@for (service of services; track service.title) {
-			<li class="card flex flex-col gap-6">
-				<div class="header flex flex-row items-center justify-between gap-4 w-full">
+			<li class="card flex flex-col gap-6 fast-trans">
+				<div class="card-header grid items-center gap-4 w-full">
 					<div class="flex flex-row items-center gap-4">
 						<app-svg-icon
 							[icon]="service.icon"
@@ -29,15 +29,15 @@
 						<h2 class="text-family-bold">{{ service.title }}</h2>
 					</div>
 
-					<span class="price-badge flex full-center"> {{ service.price }} </span>
+					<span class="price flex full-center"> {{ service.price }} </span>
 				</div>
 
 				<div class="text flex flex-col gap-4">
 					<p>{{ service.description }}</p>
 
-					<ul class="skills grid gap-4 mt-4">
+					<ul class="skills grid gap-4">
 						@for (skill of service.skills; track skill.text) {
-						<li class="flex flex-row items-center gap-2">
+						<li class="flex flex-row items-center gap-4">
 							<app-svg-icon
 								[icon]="skill.icon"
 								width="24"
@@ -57,11 +57,21 @@
 		<div class="content flex flex-col w-full gap-8 layout-row">
 			<h2 class="text-center text-family-bold">How I Work</h2>
 
-			<ul class="grid gap-6">
-				@for (step of processSteps; track step.title; let idx = $index) {
-				<li class="flex flex-col gap-4">
+			<ul class="grid gap-20">
+				@for (step of processSteps; track step.title; let idx = $index; let last = $last) {
+				<li class="flex flex-col gap-4 relative">
 					<h3 class="text-family-bold">{{ idx + 1 }}. {{ step.title }}</h3>
+
 					<p>{{ step.description }}</p>
+
+					@if (!last) {
+					<app-svg-icon
+						icon="arrow"
+						width="48"
+						height="48"
+						class="absolute flex full-center z-1">
+					</app-svg-icon>
+					}
 				</li>
 				}
 			</ul>

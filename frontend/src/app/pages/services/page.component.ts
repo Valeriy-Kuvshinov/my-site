@@ -94,7 +94,7 @@ const PROCESS_STEPS: ProcessStep[] = [
 	{
 		title: "Handover & Support",
 		description:
-			"Once we launch, you possess an independent system that costs very little to run. I provide ongoing support for updates, security, and architectural changes whenever you need me.",
+			"Once we launch, you possess an independent system that costs very little to run. I provide ongoing support for updates, security, and architectural changes whenever you need me (1st year is free).",
 	},
 ]
 

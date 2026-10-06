@@ -10,7 +10,7 @@ import { ICON_MAP, IconName } from "./icon.map"
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	host: {
 		"[innerHTML]": "safeSvg",
-		class: "inline-flex items-center justify-center",
+		class: "inline-flex full-center pointer-events-none",
 		"[style.width.px]": "width",
 		"[style.height.px]": "height",
 		"aria-hidden": "true",

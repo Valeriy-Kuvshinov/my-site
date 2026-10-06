@@ -7,6 +7,7 @@ import { FooterComponent } from "./shared/components/footer/footer.component"
 import { SvgIconComponent } from "./shared/components/icon/icon.component"
 import { AsideMenuComponent } from "./shared/components/aside-menu/aside-menu.component"
 import { CookieBannerComponent } from "./shared/components/cookie-banner/cookie-banner.component"
+import { ImageModalComponent } from "./shared/components/image-modal/image-modal-component"
 import { A11yMenuComponent } from "./features/a11y-menu/a11y-menu.component"
 import { SystemMessageComponent } from "./features/system-message/system-message.component"
 import { ScreenReaderAnnouncerComponent } from "./features/screen-reader-announcer/screen-reader-announcer.component"
@@ -26,6 +27,7 @@ const SCROLL_THRESHOLD_PIXELS = 300
 		SvgIconComponent,
 		AsideMenuComponent,
 		CookieBannerComponent,
+		ImageModalComponent,
 	],
 	templateUrl: "./app.html",
 	styleUrl: "./app.css",

@@ -87,4 +87,8 @@ export class PortfolioCarouselComponent {
 
 		return slide.imgDesktopSrc
 	}
+
+	openImage(src: string) {
+		this.store.openModal("image-modal", src)
+	}
 }

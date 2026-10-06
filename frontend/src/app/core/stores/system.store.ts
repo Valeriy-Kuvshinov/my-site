@@ -1,9 +1,9 @@
 import { isPlatformBrowser } from "@angular/common"
 import { DestroyRef, inject, Injectable, PLATFORM_ID, signal } from "@angular/core"
 
-export type DeviceType = "mobile" | "tablet" | "desktop"
+type DeviceType = "mobile" | "tablet" | "desktop"
 
-export interface FlashMessage {
+interface FlashMessage {
 	title: string
 	msg: string
 	type: "success" | "error"
