@@ -1,4 +1,4 @@
-import { Component, HostListener, inject, PLATFORM_ID, signal } from "@angular/core"
+import { Component, HostListener, inject, OnInit, PLATFORM_ID, signal } from "@angular/core"
 import { isPlatformBrowser } from "@angular/common"
 import { RouterLink, RouterLinkActive } from "@angular/router"
 
@@ -20,7 +20,7 @@ const SCROLL_THRESHOLD_PIXELS = 10
 		"[class.is-scrolled]": "isScrolled()",
 	},
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 	protected readonly store = inject(SystemStore)
 
 	private readonly platformId = inject(PLATFORM_ID)
@@ -29,8 +29,16 @@ export class HeaderComponent {
 
 	readonly isScrolled = signal(false)
 
+	ngOnInit() {
+		this.checkScrollPosition()
+	}
+
 	@HostListener("window:scroll")
 	onWindowScroll() {
+		this.checkScrollPosition()
+	}
+
+	private checkScrollPosition() {
 		if (isPlatformBrowser(this.platformId)) {
 			this.isScrolled.set(window.scrollY > SCROLL_THRESHOLD_PIXELS)
 		}

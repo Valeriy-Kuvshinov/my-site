@@ -13,15 +13,22 @@
 	}
 
 	a {
-		align-self: center;
 		color: var(--scdclr1);
+		align-self: center;
 		outline: none;
 		scale: 0.95;
+
+		&.logo:focus-visible {
+			padding: 0.25rem;
+			border: 1px solid var(--mnrclr2);
+			border-radius: 100%;
+			overflow: hidden;
+		}
 
 		&:not(.logo)::after {
 			content: "";
 			position: absolute;
-			bottom: -0.25rem; /* Distance below the text */
+			bottom: -0.25rem;
 			left: 0;
 			width: 0;
 			height: 2px;

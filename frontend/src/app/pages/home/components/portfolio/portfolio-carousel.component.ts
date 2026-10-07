@@ -25,22 +25,30 @@ const PORTFOLIO_SLIDES: PortfolioSlide[] = [
 	{
 		title: "Micro Mineral Accessibility",
 		description:
-			"Retrofitting an entire e-commerce platform to natively meet strict AA Israeli accessibility standards while restoring payment gateway stability.",
+			"Retrofitting an entire Wordpress e-commerce platform to natively meet strict AA Israeli accessibility standards while restoring payment gateway stability.",
 		imgDesktopSrc: "/images/portfolio/micro-mineral-desktop.avif",
 		imgMobileSrc: "/images/portfolio/micro-mineral-mobile.avif",
 		imgAlt: "Screenshot of the Micro Mineral accessible home page",
 	},
 	{
+		title: "Ori Carlin Art Site",
+		description:
+			"Developed a crafts showcase with local US e-commerce platform for an American artist.",
+		imgDesktopSrc: "/images/portfolio/oricarlin-desktop.avif",
+		imgMobileSrc: "/images/portfolio/oricarlin-mobile.avif",
+		imgAlt: "Screenshot of the Ori Carlin pottery home page",
+	},
+	{
 		title: "The Vision Telecom Platform",
 		description:
-			"Architected a fault-tolerant session orchestration and state recovery system using SSH, WebSockets, and Tailscale VPN across remote Linux environments.",
+			"Architected a fault-tolerant session orchestration and state recovery system across multiple remote Linux environments.",
 		imgDesktopSrc: "/images/portfolio/mycell.avif",
 		imgAlt: "Screenshot of the Vision Telecom device selection interface",
 	},
 	{
 		title: "CModem Terminal Open Source",
 		description:
-			"Created a CLI project to handle modem interactions remotely more fluently, actively used in production (MyCell), publicly available.",
+			"Created a CLI project to handle modem interactions remotely more fluently, actively used in production (MyCell), source code publicly available.",
 		imgDesktopSrc: "/images/portfolio/cmodem-terminal.avif",
 		imgAlt: "Screenshot of CModem Terminal in use",
 	},

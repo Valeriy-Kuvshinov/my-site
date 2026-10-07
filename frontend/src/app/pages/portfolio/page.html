@@ -1,3 +1,98 @@
-<section class="page-contents flex flex-col items-center relative w-h-full">
-	<h1>Under maintenance</h1>
+<section class="page-contents flex flex-col items-center w-h-full">
+	<article class="intro flex flex-col w-full">
+		<div class="text flex flex-col w-full layout-row gap-8">
+			<h1 class="text-center text-family-bold">Accomplished Work</h1>
+			<p class="layout-row">
+				All my proudest marks in software history, be it for clients or intended as open
+				source, or just for fun, You'll find all of them here.
+			</p>
+		</div>
+	</article>
+
+	<article class="gallery flex flex-col w-full">
+		<ul class="projects grid layout-row gap-8">
+			@for (item of items; track item.title) {
+			<li class="card flex flex-col h-fit fast-trans">
+				<app-image-container
+					[src]="item.imgSrc"
+					[alt]="item.imgAlt"
+					[width]="640"
+					[height]="360"
+					[priority]="false"
+					class="w-h-full"
+					tabindex="0"
+					role="button"
+					[attr.aria-label]="'View full size image of ' + item.title"
+					(onClickEvent)="openImage(item.imgSrc)">
+				</app-image-container>
+
+				<div class="content flex flex-col justify-between h-full gap-6">
+					<div class="text flex flex-col gap-4">
+						<h2 class="text-family-bold">{{ item.title }}</h2>
+						<p>{{ item.description }}</p>
+
+						@if(item.note){
+						<p>{{item.note}}</p>
+						}
+					</div>
+
+					@if (item.linkUrl || item.githubUrl) {
+					<nav class="flex flex-row justify-between">
+						@if (item.linkUrl) {
+						<a
+							[href]="item.linkUrl"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="prod flex flex-row items-center gap-2 w-fit"
+							aria-label="Visit Site (opens in a new tab)">
+							<span>Visit Site</span>
+							<app-svg-icon
+								icon="magGlass"
+								width="24"
+								height="24">
+							</app-svg-icon>
+						</a>
+						} @if (item.githubUrl) {
+						<a
+							[href]="item.githubUrl"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="source flex flex-row items-center gap-2 w-fit"
+							aria-label="View Source Code (opens in a new tab)">
+							<span>Source Code</span>
+							<app-svg-icon
+								icon="github"
+								width="24"
+								height="24">
+							</app-svg-icon>
+						</a>
+						}
+					</nav>
+					}
+				</div>
+			</li>
+			}
+		</ul>
+	</article>
+
+	<article class="cta flex flex-col full-center w-full">
+		<div class="content flex flex-col items-center layout-row gap-8">
+			<h2 class="text-center text-family-bold">Ready to Build Your System?</h2>
+
+			<p class="text-center">
+				Let's discuss your architectural needs and engineer a digital asset you actually
+				own.
+			</p>
+			<a
+				routerLink="/contact"
+				class="flex flex-row full-center w-fit gap-4">
+				<span>Start a Project</span>
+				<app-svg-icon
+					icon="mail"
+					width="24"
+					height="24">
+				</app-svg-icon>
+			</a>
+		</div>
+	</article>
 </section>

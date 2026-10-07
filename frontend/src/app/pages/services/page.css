@@ -1,6 +1,10 @@
 :host .page-contents {
 	.intro {
 		background: var(--scdclr8);
+
+		.text p {
+			max-width: 75rem;
+		}
 	}
 
 	.menu {
@@ -84,6 +88,7 @@
 			fill: var(--scdclr9);
 			border-radius: 0.75rem;
 			align-self: center;
+			outline: none;
 
 			&:hover,
 			&:focus-visible {
@@ -118,11 +123,10 @@
 		.process,
 		.cta {
 			padding: 3rem 1rem;
-		}
 
-		.process .content h2,
-		.cta .content h2 {
-			font-size: 1.5rem;
+			.content h2 {
+				font-size: 1.5rem;
+			}
 		}
 	}
 
@@ -137,11 +141,10 @@
 		.process,
 		.cta {
 			padding: 4rem 2rem;
-		}
 
-		.process .content h2,
-		.cta .content h2 {
-			font-size: 2rem;
+			.content h2 {
+				font-size: 2rem;
+			}
 		}
 	}
 

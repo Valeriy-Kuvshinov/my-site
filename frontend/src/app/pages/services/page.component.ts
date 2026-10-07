@@ -36,14 +36,14 @@ const SERVICES: ServiceCard[] = [
 		skills: [
 			{ icon: "check", text: "Secure Backend, A11y Complaint Frontend" },
 			{ icon: "cloud", text: "Independent Cloud Hosting" },
-			{ icon: "language", text: "i18n Multi-language & RTL Support" },
+			{ icon: "language", text: "Multi-language & RTL-LTR Support" },
 			{ icon: "cart", text: "E-Commerce Integrations" },
 		],
 	},
 	{
 		icon: "magGlass",
 		title: "A11y Audits & Code Fixes",
-		price: "From $200",
+		price: "From $300",
 		description:
 			"Automated accessibility widgets do not protect you from lawsuits. True accessibility requires fixing the underlying code so keyboards and screen readers can actually navigate it.",
 		skills: [
@@ -84,7 +84,7 @@ const PROCESS_STEPS: ProcessStep[] = [
 	{
 		title: "Account Setup & Ownership",
 		description:
-			"First, I help you create your own independent cloud hosting and media accounts. You hold the passwords and the billing. I simply join as the developer. This eliminates the middleman and prevents vendor lock-in.",
+			"First, I help you create your own independent cloud hosting and media accounts. You hold the passwords and the billing. I simply join as the developer. No middleman, no vendor lock-in.",
 	},
 	{
 		title: "Writing the Code",
@@ -94,7 +94,7 @@ const PROCESS_STEPS: ProcessStep[] = [
 	{
 		title: "Handover & Support",
 		description:
-			"Once we launch, you possess an independent system that costs very little to run. I provide ongoing support for updates, security, and architectural changes whenever you need me (1st year is free).",
+			"Once we launch, you possess an independent system that costs very little to run and maintain. I provide ongoing support for updates, security, and any architectural changes whenever you need me. First year post launch is free.",
 	},
 ]
 

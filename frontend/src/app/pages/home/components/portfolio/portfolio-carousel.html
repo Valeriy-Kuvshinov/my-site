@@ -29,6 +29,9 @@
 					[height]="360"
 					[priority]="false"
 					class="w-h-full"
+					role="button"
+					[tabIndex]="currentIndex() === i ? 0 : -1"
+					[attr.aria-label]="'View full size image of ' + slide.title"
 					(onClickEvent)="openImage(getImageSrc(slide))">
 				</app-image-container>
 

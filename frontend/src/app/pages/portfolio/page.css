@@ -1,11 +1,150 @@
 :host .page-contents {
+	.intro .text p {
+		max-width: 75rem;
+	}
+
+	.gallery .projects {
+		max-width: 100rem;
+		overflow: hidden;
+
+		.card {
+			border: 1px solid var(--scdclr6);
+			border-radius: 0.75rem;
+			overflow: hidden;
+
+			app-image-container {
+				cursor: pointer;
+			}
+
+			.content {
+				padding: 1rem;
+
+				nav {
+					padding-block-start: 1rem;
+					border-top: 1px solid var(--scdclr5);
+
+					a {
+						padding: 0.25rem 0.5rem;
+						border-radius: 0.75rem;
+						font-size: 0.95rem;
+						outline: none;
+
+						&.prod {
+							color: var(--scdclr1);
+							fill: var(--scdclr1);
+
+							&:hover,
+							&:focus-visible {
+								background: var(--scdclr8);
+								color: var(--mnrclr2);
+								fill: var(--mnrclr2);
+							}
+						}
+
+						&.source {
+							color: var(--mnrclr4);
+							fill: var(--mnrclr4);
+
+							&:hover,
+							&:focus-visible {
+								background: var(--scdclr8);
+								color: var(--scdclr1);
+								fill: var(--scdclr1);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.cta {
+		background: linear-gradient(180deg, var(--prmclr3), var(--scdclr9));
+
+		.content a {
+			padding: 0.75rem 1rem;
+			background: var(--scdclr2);
+			color: var(--scdclr9);
+			fill: var(--scdclr9);
+			border-radius: 0.75rem;
+			align-self: center;
+			outline: none;
+
+			&:hover,
+			&:focus-visible {
+				background: var(--scdclr7);
+				color: var(--scdclr1);
+				fill: var(--scdclr1);
+			}
+		}
+	}
+
 	@media (max-width: 600px) {
 		min-height: 70vh;
-		padding: 6rem 1rem 3rem 1rem;
+
+		.intro {
+			padding: 6rem 1rem 3rem 1rem;
+
+			p {
+				font-size: 1.25rem;
+			}
+		}
+
+		.gallery .projects,
+		.cta {
+			padding: 3rem 1rem;
+		}
+
+		.gallery {
+			overflow: hidden;
+
+			.projects {
+				grid-template-columns: 1fr;
+
+				.card .content h2 {
+					font-size: 1.25rem;
+				}
+			}
+		}
+
+		.cta .content h2 {
+			font-size: 1.5rem;
+		}
 	}
 
 	@media (min-width: 601px) {
 		min-height: 80vh;
-		padding: 8rem 2rem 4rem 2rem;
+
+		.intro {
+			padding: 8rem 2rem 4rem 2rem;
+
+			p {
+				font-size: 1.5rem;
+			}
+		}
+
+		.gallery .projects,
+		.cta {
+			padding: 4rem 2rem;
+		}
+
+		.gallery .projects {
+			grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+			.card {
+				.content h2 {
+					font-size: 1.5rem;
+				}
+
+				&:hover,
+				&:focus-within {
+					scale: 1.05;
+				}
+			}
+		}
+
+		.cta .content h2 {
+			font-size: 2rem;
+		}
 	}
 }
