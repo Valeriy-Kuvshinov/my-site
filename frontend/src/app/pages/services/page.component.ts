@@ -98,7 +98,7 @@ const PROCESS_STEPS: ProcessStep[] = [
 	},
 ]
 
-const PAGE_TITLE = "Services | VK Freelance Software"
+const PAGE_TITLE = "Services | Kuvshinov Software"
 const PAGE_URL = "/services/"
 const PAGE_DESC =
 	"Browse through our transparent services and pricing to decide what fits your project."

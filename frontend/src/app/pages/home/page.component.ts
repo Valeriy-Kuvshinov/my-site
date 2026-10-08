@@ -20,14 +20,14 @@ interface Specialty {
 	description: string
 }
 
-const PAGE_TITLE = "VK Freelance Software"
+const PAGE_TITLE = "Kuvshinov Software"
 const PAGE_URL = "/"
 const PAGE_DESC =
-	"VK Freelance Software - Providing you websites, systems, open source and accessibility assistance with care."
+	"Kuvshinov Software - Providing you websites, systems, open source and accessibility assistance with care."
 
 const HIGHLIGHTS: Highlight[] = [
 	{ icon: "professional", value: "2+", label: "Years of Experience" },
-	{ icon: "production", value: "5+", label: "Apps in Production" },
+	{ icon: "production", value: "5+", label: "Launched Productions" },
 	{ icon: "source", value: "2+", label: "Open Source Projects" },
 	{ icon: "magGlass", value: "3+", label: "Accessibility Audits" },
 	{ icon: "github", value: "20+", label: "GitHub Repositories" },

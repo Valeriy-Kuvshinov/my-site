@@ -6,8 +6,8 @@ interface ContactTemplateData {
 	message: string
 }
 
-const SITE_LOGO =
-	"https://res.cloudinary.com/djzid7ags/image/upload/v1719919435/ydjn6p0djqwbkko4zqts.png"
+// const SITE_LOGO =
+// 	"https://res.cloudinary.com/djzid7ags/image/upload/v1719919435/ydjn6p0djqwbkko4zqts.png"
 
 export function getAdminContactTemplate(data: ContactTemplateData): string {
 	const { name, requestType, message, email } = data
@@ -19,7 +19,7 @@ export function getAdminContactTemplate(data: ContactTemplateData): string {
         <p>${message}</p>
         <hr>
         <p>This message was sent by <b>${name}</b>.</p>
-        <p>Contact them back directly at: <a href="mailto:${email}" style="color: #fff132;">${email}</a></p>
+        <p>Contact them back directly at: <a href="mailto:${email}" style="color: #0d3870;">${email}</a></p>
     `)
 }
 
@@ -28,7 +28,7 @@ export function getUserContactTemplate(data: ContactTemplateData): string {
 
 	return getEmailBodyTemplate(`
         <p>Hi ${name},</p>
-        <p>Thank you for reaching out to VK Freelance Software.</p>
+        <p>Thank you for reaching out to Kuvshinov Software.</p>
         <p>We have successfully received your message regarding <b>${title}</b> and will review it shortly.</p>
         <hr>
         <p><i>Your original message:</i></p>
@@ -40,13 +40,13 @@ export function getUserContactTemplate(data: ContactTemplateData): string {
 
 function getEmailBodyTemplate(content: string): string {
 	return `
-    <div style="display: flex; height: 100%; margin: 0 auto; max-width:800px; background-color: #0a0a0a;">
-        <div style="width: 100%; padding: 20px; font-size: 1rem; color: #F5F5F5; background-color: #0a0a0a;">
-            <a href="https://kuvware.com" style="display: block; width: fit-content; margin: 0 auto; color: #F5F5F5;">
-                <img src="${SITE_LOGO}" alt="VK Freelance Software" style="height: 32px; width: 32px;">
+    <div style="display: flex; height: 100%; margin: 0 auto; max-width:800px;">
+        <div style="width: 100%; padding: 20px; font-size: 1rem; color: #0a0a0a;">
+            <a href="https://kuvware.com" style="display: block; width: fit-content; margin: 0 auto;">
+                <span>kuvware.com</span>
             </a>
             ${content}
-            <p>Sincerely,<br>VK Freelance Software<br></p>
+            <p>Sincerely,<br>Kuvshinov Software<br></p>
         </div>
     </div>`
 }

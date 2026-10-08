@@ -1,9 +1,9 @@
 import { Component, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 
-const PAGE_TITLE = "Accessibility Statement | VK Freelance Software"
+const PAGE_TITLE = "Accessibility Statement | Kuvshinov Software"
 const PAGE_URL = "/accessibility/"
-const PAGE_DESC = "Learn about my commitment to accessibility at VK Freelance Software."
+const PAGE_DESC = "Learn about my commitment to accessibility at Kuvshinov Software."
 
 @Component({
 	selector: "main[app-accessibility-page]",

@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 
-const PAGE_TITLE = "About | VK Freelance Software"
+const PAGE_TITLE = "About | Kuvshinov Software"
 const PAGE_URL = "/about/"
 const PAGE_DESC = "Find out more about the man behind the business."
 

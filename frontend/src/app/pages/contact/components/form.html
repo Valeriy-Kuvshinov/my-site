@@ -1,7 +1,6 @@
-<form
+<div
 	[formGroup]="form"
-	class="grid layout-row w-full gap-4"
-	(ngSubmit)="onSubmit()">
+	style="display: contents">
 	@if (isFormBusy()) {
 	<app-loading></app-loading>
 
@@ -59,14 +58,37 @@
 		[required]="true"
 		type="textarea"
 		icon="message"
-		placeholder="Yo, I got a question..."
+		placeholder="Let's build a system..."
 		[control]="getInputControl('message')"
 		[error]="getErrorMessage('message')">
 	</app-input-area>
 
+	<div class="consent-wrapper flex flex-col gap-2 w-full">
+		<label class="flex flex-row items-center gap-2">
+			<input
+				type="checkbox"
+				formControlName="consent"
+				class="w-h-fit"
+				[attr.aria-invalid]="getInputControl('consent').invalid && getInputControl('consent').touched" />
+			<span>
+				I agree to the processing of my data in accordance with the
+				<a
+					routerLink="/privacy-policy"
+					(click)="$event.stopPropagation()">
+					<span>Privacy Policy</span></a
+				>.
+			</span>
+		</label>
+		@if (getInputControl('consent').invalid && getInputControl('consent').touched) {
+		<span class="error-text">
+			You must accept the privacy policy to send a message via the form.
+		</span>
+		}
+	</div>
+
 	<section class="form-actions flex flex-row items-center justify-between">
 		<button
-			class="flex flex-row items-center gap-2"
+			class="flex flex-row items-center gap-2 fast-trans"
 			type="submit"
 			[disabled]="isSendDisabled"
 			(mouseenter)="isActiveInteract.set(true)"
@@ -90,4 +112,4 @@
 		(errored)="onTurnstileInvalid()"
 		(expired)="onTurnstileInvalid()">
 	</ngx-turnstile>
-</form>
+</div>

@@ -1,6 +1,6 @@
 services:
     backend:
-        image: vk-backend:latest
+        image: kuv-backend:latest
         restart: unless-stopped
         env_file: .env
         deploy:

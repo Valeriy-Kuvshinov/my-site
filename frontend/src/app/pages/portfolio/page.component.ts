@@ -41,7 +41,7 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
 		imgSrc: "/images/portfolio/oricarlin-desktop.avif",
 		imgAlt: "Screenshot of the Ori Carlin pottery home page",
 		githubUrl: "https://github.com/TAC42/art-store",
-		note: "At this moment only source code is available",
+		note: "At this moment site is offline, thus source code is publically available.",
 	},
 	{
 		title: "The Vision Telecom Platform",
@@ -70,7 +70,7 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
 	},
 ]
 
-const PAGE_TITLE = "Portfolio | VK Freelance Software"
+const PAGE_TITLE = "Portfolio | Kuvshinov Software"
 const PAGE_URL = "/portfolio/"
 const PAGE_DESC = "Browse through the projects, clients and more that have been impacted by us."
 

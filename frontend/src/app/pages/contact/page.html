@@ -1,4 +1,4 @@
-<section class="page-contents flex flex-col items-center relative w-h-full gap-8">
+<section class="page-contents flex flex-col items-center w-h-full">
 	<article class="intro flex flex-col w-full layout-row gap-8">
 		<h1 class="text-center">Contact Me</h1>
 
@@ -9,54 +9,62 @@
 		</p>
 	</article>
 
-	<app-contact-form [initialValues]="defaultFormValues"></app-contact-form>
-
-	<article class="alternatives flex flex-col w-full layout-row gap-4">
-		<p>Alternatively, you may contact me directly trough the following channels</p>
-
+	<article class="options grid full-center layout-row w-full gap-20">
 		<nav
-			class="social-links flex flex-row gap-4"
-			aria-label="Social profiles">
+			class="grid full-center gap-4"
+			aria-label="Social profiles and direct mail">
 			<a
 				href="https://www.linkedin.com/in/valeriy-kuvshin-ov/"
 				target="_blank"
 				rel="noopener noreferrer"
-				aria-label="LinkedIn profile (opens in a new tab)">
+				aria-label="LinkedIn profile (opens in a new tab)"
+				class="w-fit">
 				<app-svg-icon
 					icon="linkedin"
-					width="32"
-					height="32">
+					[width]="socialIconSize()"
+					[height]="socialIconSize()">
 				</app-svg-icon>
 			</a>
 			<a
 				href="https://github.com/Valeriy-Kuvshinov"
 				target="_blank"
 				rel="noopener noreferrer"
-				aria-label="GitHub profile (opens in a new tab)">
+				aria-label="GitHub profile (opens in a new tab)"
+				class="w-fit">
 				<app-svg-icon
 					icon="github"
-					width="32"
-					height="32">
+					[width]="socialIconSize()"
+					[height]="socialIconSize()">
 				</app-svg-icon>
 			</a>
 			<a
 				href="https://www.facebook.com/valery.kuvshinov.75/"
-				aria-label="Facebook profile (opens in a new tab)">
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="Facebook profile (opens in a new tab)"
+				class="w-fit">
 				<app-svg-icon
 					icon="facebook"
-					width="32"
-					height="32">
+					[width]="socialIconSize()"
+					[height]="socialIconSize()">
 				</app-svg-icon>
 			</a>
 			<a
 				href="mailto:contact@kuvware.com"
-				aria-label="Send an email directly">
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="Send an email directly"
+				class="w-fit">
 				<app-svg-icon
 					icon="mail"
-					width="32"
-					height="32">
+					[width]="socialIconSize()"
+					[height]="socialIconSize()">
 				</app-svg-icon>
 			</a>
 		</nav>
+
+		<form
+			app-contact-form
+			[initialValues]="defaultFormValues"></form>
 	</article>
 </section>

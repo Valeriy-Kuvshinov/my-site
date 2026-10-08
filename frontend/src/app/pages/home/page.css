@@ -154,23 +154,31 @@
 			var(--prmclr1)
 		);
 
-		p:last-of-type {
-			margin-block-end: 1rem;
-		}
+		ul li {
+			p:last-of-type {
+				margin-block-end: 1rem;
+			}
 
-		a {
-			margin-top: auto;
-			max-width: 15rem;
-			padding: 0.75rem 1rem;
-			align-self: center;
-			border-radius: 0.75rem;
-			background: var(--scdclr2);
-			color: var(--scdclr9);
+			a {
+				margin-top: auto;
+				max-width: 15rem;
+				padding: 0.75rem 1rem;
+				align-self: center;
+				border-radius: 0.75rem;
+				background: var(--scdclr2);
+				color: var(--scdclr9);
 
-			&:hover,
-			&:focus-visible {
-				background: var(--scdclr7);
-				color: var(--scdclr1);
+				&:hover,
+				&:focus-visible {
+					background: var(--scdclr7);
+					color: var(--scdclr1);
+				}
+			}
+
+			app-image-container {
+				margin-block-start: 1rem;
+				border-radius: 0.75rem;
+				overflow: hidden;
 			}
 		}
 	}

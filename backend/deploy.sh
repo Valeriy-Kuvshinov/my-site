@@ -7,7 +7,7 @@ set -e
 VPS_IP="3.120.21.239"
 VPS_USER="ubuntu"
 SSH_KEY="$HOME/.ssh/aws_key_my_site"
-REMOTE_DIR="~/vk-backend"
+REMOTE_DIR="~/kuv-backend"
 
 echo "Building Angular Frontend Static Assets..."
 cd ../frontend
@@ -18,7 +18,7 @@ echo "Building NestJS Backend..."
 npm run build
 
 echo "Building Docker Image..."
-docker build -t vk-backend:latest .
+docker build -t kuv-backend:latest .
 
 echo "Ensuring remote target directories exist..."
 ssh -i "$SSH_KEY" "$VPS_USER@$VPS_IP" "mkdir -p $REMOTE_DIR"
@@ -30,7 +30,7 @@ rsync -avz -e "ssh -i $SSH_KEY" ./docker-compose.yml "$VPS_USER@$VPS_IP:$REMOTE_
 rsync -avz -e "ssh -i $SSH_KEY" ./.env "$VPS_USER@$VPS_IP:$REMOTE_DIR/.env"
 
 echo "Shipping Image to VPS (This may take a minute)..."
-docker save vk-backend:latest | gzip | ssh -i "$SSH_KEY" "$VPS_USER@$VPS_IP" "gunzip | docker load"
+docker save kuv-backend:latest | gzip | ssh -i "$SSH_KEY" "$VPS_USER@$VPS_IP" "gunzip | docker load"
 
 echo "Restarting Docker Stack..."
 ssh -i "$SSH_KEY" "$VPS_USER@$VPS_IP" "cd $REMOTE_DIR && docker compose up -d --force-recreate"

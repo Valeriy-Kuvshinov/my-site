@@ -25,6 +25,11 @@
 	height: 100%;
 }
 
+.w-h-fit {
+	width: fit-content;
+	height: fit-content;
+}
+
 /* ============================== TEXT STUFF ============================== */
 .text-hide-overflow {
 	overflow: hidden;

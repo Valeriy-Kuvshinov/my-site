@@ -1,12 +1,14 @@
-import { Component, inject } from "@angular/core"
+import { Component, computed, inject } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 
-import { ContactFormComponent } from "./components/form.component"
-import { SvgIconComponent } from "../../shared/components/icon/icon.component";
+import { SystemStore } from "../../core/stores/system.store"
 
-const PAGE_TITLE = "Contact | VK Freelance Software"
+import { SvgIconComponent } from "../../shared/components/icon/icon.component"
+import { ContactFormComponent } from "./components/form.component"
+
+const PAGE_TITLE = "Contact | Kuvshinov Software"
 const PAGE_URL = "/contact/"
-const PAGE_DESC = "Get in Touch with VK Freelance Software."
+const PAGE_DESC = "Get in Touch with Kuvshinov Software."
 
 @Component({
 	selector: "main[app-contact-page]",
@@ -29,7 +31,14 @@ export default class PageComponent {
 		title: "",
 		requestType: "Q&A",
 		message: "",
+		consent: false,
 	}
+
+	private readonly store = inject(SystemStore)
+
+	protected readonly socialIconSize = computed(() =>
+		this.store.deviceType() === "desktop" ? 48 : 32
+	)
 
 	ngOnInit() {
 		this.title.setTitle(PAGE_TITLE)

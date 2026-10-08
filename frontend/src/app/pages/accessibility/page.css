@@ -1,5 +1,5 @@
 :host .page-contents {
-	.policy-section {
+	.policy {
 		h2 {
 			border-bottom: 4px dashed transparent;
 			border-image: linear-gradient(to right, var(--prmclr2), var(--scdclr4), var(--prmclr3))

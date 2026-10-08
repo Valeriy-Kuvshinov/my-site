@@ -49,7 +49,7 @@ export class MailService {
 		const receiverMail = this.configService.getOrThrow<string>("RECEIVER_EMAIL_ADDRESS")
 
 		const adminMailOptions: MailOptions = {
-			from: `VK System <${senderMail}>`,
+			from: `Contact System <${senderMail}>`,
 			to: receiverMail,
 			replyTo: email,
 			subject: `New Contact Request: "${title}"`,
@@ -65,7 +65,7 @@ export class MailService {
 		const noReplyMail = this.configService.getOrThrow<string>("NOREPLY_MAIL_ADDRESS")
 
 		const userMailOptions: MailOptions = {
-			from: `VK Freelance Software <${noReplyMail}>`,
+			from: `Kuvshinov Software <${noReplyMail}>`,
 			to: email,
 			subject: `We received your message: "${title}"`,
 			text: `Hi ${name}, we received your message regarding ${title}. We will review it shortly.`,

@@ -1,5 +1,7 @@
-import { ChangeDetectionStrategy, Component, Input } from "@angular/core"
+import { ChangeDetectionStrategy, Component, computed, inject, Input } from "@angular/core"
 import { FormControl, ReactiveFormsModule } from "@angular/forms"
+
+import { SystemStore } from "../../../../core/stores/system.store"
 
 import { IconName } from "../../icon/icon.map"
 
@@ -17,8 +19,9 @@ import { SvgIconComponent } from "../../icon/icon.component"
 			@if (icon) {
 				<app-svg-icon
 					[icon]="icon"
-					width="32"
-					height="32"></app-svg-icon>
+					[width]="iconSize()"
+					[height]="iconSize()">
+				</app-svg-icon>
 			}
 			<span>{{ label }}</span>
 			@if (error) {
@@ -36,7 +39,7 @@ import { SvgIconComponent } from "../../icon/icon.component"
 	styleUrl: "./select-area.css",
 	host: {
 		"[class.error]": "!!error",
-		class: "select-area grid h-fit block",
+		class: "select-area grid h-fit",
 	},
 })
 export class SelectAreaComponent {
@@ -45,4 +48,8 @@ export class SelectAreaComponent {
 	@Input({ required: true }) name!: string
 	@Input() icon?: IconName
 	@Input() error?: string | null
+
+	private readonly store = inject(SystemStore)
+
+	protected readonly iconSize = computed(() => (this.store.deviceType() === "desktop" ? 24 : 16))
 }

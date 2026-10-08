@@ -1,6 +1,7 @@
 import { Component, inject, ViewChild, signal, OnInit, Input, computed } from "@angular/core"
 import { FormBuilder, Validators, ReactiveFormsModule, FormControl } from "@angular/forms"
 import { NgxTurnstileModule, NgxTurnstileComponent } from "ngx-turnstile"
+import { RouterLink } from "@angular/router"
 
 import { environment } from "../../../../environments/environment.development"
 
@@ -11,7 +12,7 @@ import { IconName } from "../../../shared/components/icon/icon.map"
 import { InputAreaComponent } from "../../../shared/components/form/input-area/input-area.component"
 import { SelectAreaComponent } from "../../../shared/components/form/select-area/select-area.component"
 import { SvgIconComponent } from "../../../shared/components/icon/icon.component"
-import { LoadingComponent } from "../../../shared/components/loading/loading.component";
+import { LoadingComponent } from "../../../shared/components/loading/loading.component"
 
 interface ContactFormValues {
 	name: string
@@ -22,25 +23,26 @@ interface ContactFormValues {
 }
 
 @Component({
-	selector: "app-contact-form",
+	selector: "form[app-contact-form]",
 	standalone: true,
 	imports: [
-    ReactiveFormsModule,
-    NgxTurnstileModule,
-    InputAreaComponent,
-    SelectAreaComponent,
-    SvgIconComponent,
-    LoadingComponent
-],
+		RouterLink,
+		ReactiveFormsModule,
+		NgxTurnstileModule,
+		InputAreaComponent,
+		SelectAreaComponent,
+		SvgIconComponent,
+		LoadingComponent,
+	],
 	templateUrl: "./form.html",
 	styleUrl: "./form.css",
 	host: {
-		style: "display: contents",
+		class: "grid layout-row w-full gap-4",
+		"(submit)": "onSubmit($event)",
 	},
 })
 export class ContactFormComponent implements OnInit {
 	private readonly fb = inject(FormBuilder)
-
 	private readonly mailService = inject(MailService)
 
 	@Input({ required: true }) initialValues!: ContactFormValues
@@ -95,6 +97,7 @@ export class ContactFormComponent implements OnInit {
 				Validators.pattern(/^[a-zA-Z0-9\s.\-!?@#$',*;:]+$/),
 			],
 		],
+		consent: [false, Validators.requiredTrue],
 	})
 
 	ngOnInit() {
@@ -110,7 +113,7 @@ export class ContactFormComponent implements OnInit {
 
 		if (!control || !control.touched || !control.errors) return null
 
-		if (control.errors["required"]) return "Required field"
+		if (control.errors["required"] || control.errors["requiredTrue"]) return "Required field"
 		if (control.errors["minlength"]) return "Too short"
 		if (control.errors["maxlength"]) return "Too long"
 		if (control.errors["email"]) return "Invalid format"
@@ -136,7 +139,9 @@ export class ContactFormComponent implements OnInit {
 		this.turnstileToken.set(null)
 	}
 
-	async onSubmit() {
+	async onSubmit(event?: Event) {
+		event?.preventDefault()
+
 		if (this.isSendDisabled) {
 			this.form.markAllAsTouched()
 			return
@@ -147,8 +152,10 @@ export class ContactFormComponent implements OnInit {
 			this.isProcessing.set(false)
 			return
 		}
+		const { consent, ...rawFormData } = this.form.getRawValue()
+
 		const formData: ContactMailForm = {
-			...this.form.getRawValue(),
+			...rawFormData,
 			turnstileToken: this.turnstileToken()!,
 		}
 		try {

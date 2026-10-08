@@ -5,7 +5,6 @@
 		grid-template-columns: auto auto 1fr;
 		column-gap: 0.5rem;
 		padding: 0 0.5rem;
-		font-size: 1.25rem;
 		fill: var(--prmclr2);
 
 		span:nth-of-type(2) {
@@ -18,7 +17,6 @@
 		padding: 0.25rem 0.5rem;
 		border: 2px solid transparent;
 		border-radius: 0.5rem;
-		font-size: 1rem;
 
 		&:focus {
 			border-color: var(--mnrclr2);
@@ -31,5 +29,25 @@
 
 	&.error select {
 		border-color: var(--mnrclr3);
+	}
+
+	@media (max-width: 600px) {
+		label {
+			font-size: 1.1rem;
+		}
+
+		select {
+			font-size: 0.9rem;
+		}
+	}
+
+	@media (min-width: 601px) {
+		label {
+			font-size: 1.25rem;
+		}
+
+		select {
+			font-size: 1rem;
+		}
 	}
 }

@@ -1,5 +1,7 @@
-import { Component, ChangeDetectionStrategy, Input } from "@angular/core"
+import { Component, ChangeDetectionStrategy, Input, computed, inject } from "@angular/core"
 import { FormControl, ReactiveFormsModule } from "@angular/forms"
+
+import { SystemStore } from "../../../../core/stores/system.store"
 
 import { IconName } from "../../icon/icon.map"
 
@@ -19,8 +21,9 @@ type InputAreaType = "text" | "email" | "textarea" | "password" | "tel"
 			@if (icon) {
 				<app-svg-icon
 					[icon]="icon"
-					width="32"
-					height="32"></app-svg-icon>
+					[width]="iconSize()"
+					[height]="iconSize()">
+				</app-svg-icon>
 			}
 			<span>
 				{{ label }}
@@ -56,7 +59,7 @@ type InputAreaType = "text" | "email" | "textarea" | "password" | "tel"
 	styleUrl: "./input-area.css",
 	host: {
 		"[class.error]": "!!error",
-		class: "input-area grid h-fit block",
+		class: "input-area grid h-fit",
 	},
 })
 export class InputAreaComponent {
@@ -68,4 +71,8 @@ export class InputAreaComponent {
 	@Input() error?: string | null
 	@Input() required = false
 	@Input() placeholder = ""
+
+	private readonly store = inject(SystemStore)
+
+	protected readonly iconSize = computed(() => (this.store.deviceType() === "desktop" ? 24 : 16))
 }
