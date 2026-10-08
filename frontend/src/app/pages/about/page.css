@@ -1,11 +1,89 @@
 :host .page-contents {
+	.intro {
+		background: linear-gradient(
+			to bottom,
+			var(--scdclr7),
+			var(--scdclr8),
+			var(--scdclr9),
+			var(--scdclr9),
+			var(--prmclr3)
+		);
+
+		app-image-container {
+			aspect-ratio: 1;
+			border-radius: 100%;
+			overflow: hidden;
+
+			&:hover {
+				scale: 1.1;
+			}
+		}
+	}
+
+	@media (max-width: 900px) {
+		.intro {
+			gap: 2rem;
+			padding: 6rem 1rem 3rem 1rem;
+
+			.content {
+				grid-template-columns: 1fr;
+				grid-template-rows: auto auto;
+
+				app-image-container {
+					max-width: 8rem;
+				}
+			}
+		}
+
+		.experience,
+		.profile,
+		.stack {
+			padding: 3rem 1rem;
+		}
+	}
+
 	@media (max-width: 600px) {
 		min-height: 70vh;
-		padding: 6rem 1rem 2rem 1rem;
+
+		.intro .content .text {
+			h1 {
+				font-size: 1.25rem;
+			}
+
+			p {
+				font-size: 0.9rem;
+			}
+		}
 	}
 
 	@media (min-width: 601px) {
 		min-height: 80vh;
-		padding: 8rem 2rem 2rem 2rem;
+
+		.intro .content .text p {
+			font-size: 1.25rem;
+		}
+	}
+
+	@media (min-width: 901px) {
+		.intro {
+			padding: 8rem 2rem 4rem 2rem;
+
+			.content {
+				grid-template-columns: 1fr auto;
+				grid-template-rows: 1fr;
+
+				app-image-container {
+					grid-column: 2 / -1;
+					grid-row: 1;
+					max-width: 15rem;
+				}
+			}
+		}
+
+		.experience,
+		.profile,
+		.stack {
+			padding: 4rem 2rem;
+		}
 	}
 }

@@ -1,6 +1,8 @@
 import { Component, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 
+import { ImageContainerComponent } from "../../shared/components/general/image-container.component"
+
 const PAGE_TITLE = "About | Kuvshinov Software"
 const PAGE_URL = "/about/"
 const PAGE_DESC = "Find out more about the man behind the business."
@@ -8,7 +10,7 @@ const PAGE_DESC = "Find out more about the man behind the business."
 @Component({
 	selector: "main[app-about-page]",
 	standalone: true,
-	imports: [],
+	imports: [ImageContainerComponent],
 	templateUrl: "./page.html",
 	styleUrl: "./page.css",
 	host: {
