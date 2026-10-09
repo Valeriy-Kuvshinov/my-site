@@ -13,54 +13,20 @@
 		<nav
 			class="grid full-center gap-4"
 			aria-label="Social profiles and direct mail">
+			@for (social of socials; track social.name) {
 			<a
-				href="https://www.linkedin.com/in/valeriy-kuvshin-ov/"
+				[href]="social.url"
 				target="_blank"
 				rel="noopener noreferrer"
-				aria-label="LinkedIn profile (opens in a new tab)"
+				[attr.aria-label]="social.ariaLabel"
 				class="w-fit">
 				<app-svg-icon
-					icon="linkedin"
+					[icon]="social.icon"
 					[width]="socialIconSize()"
 					[height]="socialIconSize()">
 				</app-svg-icon>
 			</a>
-			<a
-				href="https://github.com/Valeriy-Kuvshinov"
-				target="_blank"
-				rel="noopener noreferrer"
-				aria-label="GitHub profile (opens in a new tab)"
-				class="w-fit">
-				<app-svg-icon
-					icon="github"
-					[width]="socialIconSize()"
-					[height]="socialIconSize()">
-				</app-svg-icon>
-			</a>
-			<a
-				href="https://www.facebook.com/valery.kuvshinov.75/"
-				target="_blank"
-				rel="noopener noreferrer"
-				aria-label="Facebook profile (opens in a new tab)"
-				class="w-fit">
-				<app-svg-icon
-					icon="facebook"
-					[width]="socialIconSize()"
-					[height]="socialIconSize()">
-				</app-svg-icon>
-			</a>
-			<a
-				href="mailto:contact@kuvware.com"
-				target="_blank"
-				rel="noopener noreferrer"
-				aria-label="Send an email directly"
-				class="w-fit">
-				<app-svg-icon
-					icon="mail"
-					[width]="socialIconSize()"
-					[height]="socialIconSize()">
-				</app-svg-icon>
-			</a>
+			}
 		</nav>
 
 		<form

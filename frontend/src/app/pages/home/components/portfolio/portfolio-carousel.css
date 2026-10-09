@@ -8,7 +8,7 @@
 			overflow: hidden;
 
 			.visual {
-				.nav-btn {
+				button {
 					padding: 0.5rem;
 					top: 50%;
 					background: var(--scdclr1);
@@ -41,7 +41,7 @@
 			}
 
 			.content {
-				background: var(--scdclr9);
+				background: rgb(from var(--scdclr9) r g b / 0.5);
 
 				h3 {
 					font-size: 1.25rem;

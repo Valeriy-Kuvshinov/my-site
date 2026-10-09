@@ -11,7 +11,7 @@
 			[attr.aria-hidden]="currentIndex() !== i">
 			<div class="visual relative w-full layout-row">
 				<button
-					class="nav-btn flex full-center fast-trans absolute z-1"
+					class="flex full-center fast-trans absolute z-1"
 					aria-label="Previous accomplishment"
 					[disabled]="isFirstSlide()"
 					[tabIndex]="currentIndex() === i ? 0 : -1"
@@ -19,7 +19,8 @@
 					<app-svg-icon
 						icon="arrow"
 						[width]="iconSize()"
-						[height]="iconSize()"></app-svg-icon>
+						[height]="iconSize()">
+					</app-svg-icon>
 				</button>
 
 				<app-image-container
@@ -36,7 +37,7 @@
 				</app-image-container>
 
 				<button
-					class="nav-btn flex full-center fast-trans absolute z-1"
+					class="flex full-center fast-trans absolute z-1"
 					aria-label="Next accomplishment"
 					[disabled]="isLastSlide()"
 					[tabIndex]="currentIndex() === i ? 0 : -1"
@@ -44,7 +45,8 @@
 					<app-svg-icon
 						icon="arrow"
 						[width]="iconSize()"
-						[height]="iconSize()"></app-svg-icon>
+						[height]="iconSize()">
+					</app-svg-icon>
 				</button>
 			</div>
 

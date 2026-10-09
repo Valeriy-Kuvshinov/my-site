@@ -11,9 +11,9 @@
 	padding: 2rem 0;
 	background: linear-gradient(
 		var(--scdclr9),
-		var(--scdclr5),
-		var(--scdclr5),
-		var(--scdclr5),
+		var(--scdclr7),
+		var(--scdclr6),
+		var(--scdclr7),
 		var(--scdclr9)
 	);
 	mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);

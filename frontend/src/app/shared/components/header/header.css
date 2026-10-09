@@ -46,6 +46,10 @@
 				width: 100%;
 			}
 		}
+
+		&.active {
+			pointer-events: none;
+		}
 	}
 
 	.mobile-view {

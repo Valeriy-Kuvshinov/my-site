@@ -1,47 +1,76 @@
-<div class="flex flex-col items-center justify-center w-full gap-6">
-	<nav class="flex flex-row flex-wrap items-center justify-center gap-6">
+<div class="content grid w-full full-center layout-row">
+	<nav
+		class="site-nav flex flex-row flex-wrap gap-2"
+		aria-label="Footer navigation">
+		<a
+			routerLink="/"
+			routerLinkActive="active"
+			[routerLinkActiveOptions]="{ exact: true }"
+			ariaCurrentWhenActive="page">
+			<span>Home</span>
+		</a>
 		<a
 			routerLink="/portfolio"
 			routerLinkActive="active"
-			ariaCurrentWhenActive="page"
-			class="nav-link fast-trans">
+			ariaCurrentWhenActive="page">
 			<span>Portfolio</span>
 		</a>
 		<a
 			routerLink="/services"
 			routerLinkActive="active"
-			ariaCurrentWhenActive="page"
-			class="nav-link fast-trans">
+			ariaCurrentWhenActive="page">
 			<span>Services</span>
 		</a>
 		<a
 			routerLink="/about"
 			routerLinkActive="active"
-			ariaCurrentWhenActive="page"
-			class="nav-link fast-trans">
+			ariaCurrentWhenActive="page">
 			<span>About</span>
 		</a>
 		<a
 			routerLink="/contact"
 			routerLinkActive="active"
-			ariaCurrentWhenActive="page"
-			class="nav-link fast-trans">
+			ariaCurrentWhenActive="page">
 			<span>Contact</span>
 		</a>
 		<a
 			routerLink="/privacy-policy"
 			routerLinkActive="active"
-			ariaCurrentWhenActive="page"
-			class="nav-link fast-trans">
+			ariaCurrentWhenActive="page">
 			<span>Privacy</span>
 		</a>
 		<a
 			routerLink="/accessibility"
 			routerLinkActive="active"
-			ariaCurrentWhenActive="page"
-			class="nav-link fast-trans">
+			ariaCurrentWhenActive="page">
 			<span>Accessibility</span>
 		</a>
 	</nav>
-	<p>&copy; 2024 - 2026 Kuvshinov Software. All rights reserved.</p>
+
+	@if (!isDesktop()) {
+	<hr class="mobile-separator w-full" />
+	}
+
+	<nav
+		class="social-nav flex flex-row flex-wrap gap-4"
+		aria-label="Social profiles">
+		@for (social of socials; track social.name) {
+		<a
+			[href]="social.url"
+			target="_blank"
+			rel="noopener noreferrer"
+			[attr.aria-label]="social.ariaLabel"
+			class="flex full-center">
+			<app-svg-icon
+				[icon]="social.icon"
+				width="24"
+				height="24">
+			</app-svg-icon>
+		</a>
+		}
+	</nav>
+
+	<div class="copyright flex row justify-center">
+		<p class="text-center">&copy; 2024 - 2026 Kuvshinov Software.</p>
+	</div>
 </div>

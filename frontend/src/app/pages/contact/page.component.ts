@@ -3,6 +3,8 @@ import { Title, Meta } from "@angular/platform-browser"
 
 import { SystemStore } from "../../core/stores/system.store"
 
+import { SOCIAL_LINKS } from "../../shared/constants/socials"
+
 import { SvgIconComponent } from "../../shared/components/icon/icon.component"
 import { ContactFormComponent } from "./components/form.component"
 
@@ -25,6 +27,10 @@ export default class PageComponent {
 	private readonly title = inject(Title)
 	private readonly meta = inject(Meta)
 
+	private readonly store = inject(SystemStore)
+
+	protected readonly socials = SOCIAL_LINKS
+
 	protected readonly defaultFormValues = {
 		name: "",
 		email: "",
@@ -33,8 +39,6 @@ export default class PageComponent {
 		message: "",
 		consent: false,
 	}
-
-	private readonly store = inject(SystemStore)
 
 	protected readonly socialIconSize = computed(() =>
 		this.store.deviceType() === "desktop" ? 48 : 32

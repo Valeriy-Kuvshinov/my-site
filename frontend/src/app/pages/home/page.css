@@ -43,14 +43,16 @@
 					}
 
 					&:nth-of-type(3) {
-						background: var(--scdclr1);
-						color: var(--scdclr9);
+						background: rgb(from var(--scdclr6) r g b / 0.2);
+						border: 1px solid var(--scdclr2);
+						color: var(--scdclr1);
+						fill: var(--scdclr1);
 
 						&:hover,
 						&:focus-visible {
-							background: var(--scdclr7);
-							color: var(--scdclr1);
-							fill: var(--scdclr1);
+							background: var(--scdclr1);
+							color: var(--scdclr9);
+							fill: var(--scdclr9);
 						}
 					}
 				}
@@ -153,16 +155,9 @@
 			var(--prmclr1)
 		);
 
-		ul li {
-			p:last-of-type {
-				margin-block-end: 1rem;
-			}
-
+		.zig-zag-row {
 			a {
-				margin-top: auto;
-				max-width: 15rem;
-				padding: 0.75rem 1rem;
-				align-self: center;
+				padding: 0.75rem 1.25rem;
 				border-radius: 0.75rem;
 				background: var(--scdclr2);
 				color: var(--scdclr9);
@@ -175,9 +170,9 @@
 			}
 
 			app-image-container {
-				margin-block-start: 1rem;
 				border-radius: 0.75rem;
 				overflow: hidden;
+				box-shadow: 0 4px 20px rgba(92, 92, 92, 0.5);
 			}
 		}
 	}
@@ -210,6 +205,23 @@
 		.accomplishments {
 			padding: 3rem 0;
 		}
+
+		.zig-zag-row {
+			flex-direction: column;
+
+			.text-block {
+				order: 1;
+
+				h3,
+				a {
+					align-self: center;
+				}
+			}
+
+			app-image-container {
+				order: 2;
+			}
+		}
 	}
 
 	@media (max-width: 600px) {
@@ -228,10 +240,13 @@
 			}
 		}
 
-		.core h2,
-		.a11y h2,
-		.accomplishments h2 {
+		h2 {
 			font-size: 1.5rem;
+		}
+
+		h3 {
+			font-size: 1.25rem;
+			align-self: center;
 		}
 
 		.a11y ul {
@@ -250,14 +265,16 @@
 			}
 		}
 
-		.core h2,
-		.a11y h2,
-		.accomplishments h2 {
+		h2 {
 			font-size: 2rem;
 		}
 
-		.a11y ul {
-			grid-template-columns: 1fr 1fr;
+		h3 {
+			font-size: 1.75rem;
+		}
+
+		.a11y ul li .text-block a {
+			width: fit-content;
 		}
 	}
 
@@ -289,6 +306,21 @@
 		.accomplishments,
 		.highlights {
 			padding: 4rem 2rem;
+		}
+
+		.a11y {
+			.zig-zag-row {
+				flex-direction: row;
+
+				.text-block,
+				app-image-container {
+					flex: 1;
+				}
+
+				&:last-child {
+					flex-direction: row-reverse;
+				}
+			}
 		}
 	}
 
