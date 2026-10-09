@@ -1,0 +1,150 @@
+:host {
+	.track button {
+		outline: none;
+
+		.marker {
+			z-index: 1;
+			width: 3rem;
+			height: 3rem;
+			border-radius: 50%;
+			background: var(--mnrclr4);
+			border: 2px solid var(--scdclr6);
+
+			app-svg-icon {
+				fill: var(--prmclr1);
+			}
+		}
+
+		.text {
+			.year {
+				color: var(--scdclr1);
+			}
+
+			.title {
+				color: var(--mnrclr3);
+			}
+		}
+
+		&.past {
+			.marker {
+				border-color: var(--prmclr1);
+				background: var(--scdclr7);
+
+				app-svg-icon {
+					fill: var(--scdclr1);
+				}
+			}
+
+			&::after {
+				background: var(--scdclr4);
+			}
+		}
+
+		&.active {
+			.marker {
+				border-color: var(--prmclr1);
+				background: var(--scdclr4);
+				box-shadow: 0 0 10px var(--scdclr6);
+
+				app-svg-icon {
+					fill: var(--prmclr2);
+				}
+			}
+
+			.title {
+				color: var(--mnrclr1);
+			}
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			background: var(--scdclr8);
+			z-index: 0;
+			transition: all 0.3s ease-in-out;
+		}
+
+		&:last-child::after {
+			display: none;
+		}
+
+		&:hover .marker,
+		&:focus-visible .marker {
+			border-color: var(--prmclr1);
+			background: var(--scdclr4);
+
+			app-svg-icon {
+				fill: var(--prmclr4);
+			}
+		}
+	}
+
+	.info {
+		border: 1px solid var(--scdclr6);
+
+		.panel {
+			padding: 1.5rem;
+		}
+	}
+
+	@media (max-width: 900px) {
+		.track {
+			flex-direction: column;
+			padding-left: 4rem;
+
+			button {
+				text-align: left;
+				padding-bottom: 4rem;
+
+				&:last-child {
+					padding-bottom: 0;
+				}
+
+				.marker {
+					left: -4rem;
+					top: 0;
+				}
+
+				&::after {
+					width: 2px;
+					left: calc(-4rem + 1.5rem - 1px);
+					top: 1.5rem;
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 901px) {
+		.track {
+			flex-direction: row;
+			padding-top: 4rem;
+
+			button {
+				flex: 1;
+				padding: 0 1rem;
+
+				.marker {
+					left: 50%;
+					transform: translateX(-50%);
+					top: -4rem;
+				}
+
+				&:first-of-type {
+					padding-left: 0;
+				}
+
+				&:last-of-type {
+					padding-right: 0;
+				}
+
+				&::after {
+					height: 2px;
+					top: calc(-4rem + 1.5rem - 1px);
+					left: 50%;
+					width: 100%;
+				}
+			}
+		}
+	}
+}

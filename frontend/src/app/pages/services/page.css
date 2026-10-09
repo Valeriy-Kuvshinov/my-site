@@ -51,7 +51,8 @@
 
 					.price {
 						padding: 0.25rem 0.5rem;
-						border: 1px solid var(--mnrclr3);
+						color: var(--mnrclr4);
+						border: 1px solid var(--scdclr5);
 						border-radius: 0.5rem;
 					}
 				}

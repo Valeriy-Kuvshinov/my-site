@@ -6,8 +6,7 @@
 			}
 
 			.cta {
-				a,
-				button {
+				a {
 					padding: 0.75rem 1rem;
 					border-radius: 0.75rem;
 				}
@@ -42,17 +41,17 @@
 							fill: var(--prmclr2);
 						}
 					}
-				}
 
-				button {
-					background: var(--scdclr1);
-					color: var(--scdclr9);
+					&:nth-of-type(3) {
+						background: var(--scdclr1);
+						color: var(--scdclr9);
 
-					&:hover,
-					&:focus-visible {
-						background: var(--scdclr7);
-						color: var(--scdclr1);
-						fill: var(--scdclr1);
+						&:hover,
+						&:focus-visible {
+							background: var(--scdclr7);
+							color: var(--scdclr1);
+							fill: var(--scdclr1);
+						}
 					}
 				}
 			}
@@ -222,8 +221,7 @@
 			.cta {
 				flex-direction: column;
 
-				a,
-				button {
+				a {
 					width: 100%;
 					max-width: 20rem;
 				}

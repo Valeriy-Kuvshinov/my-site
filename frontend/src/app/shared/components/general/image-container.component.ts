@@ -42,8 +42,6 @@ const CustomImageLoaderProvider: Provider = {
 		"[class.ready]": "isLoaded()",
 		"[style]": "style",
 		"[style.backgroundImage]": "blurDataURL()",
-		"[style.backgroundSize]": '"cover"',
-		"[style.backgroundPosition]": '"center"',
 		"(click)": "onClickEvent.emit()",
 		"(keydown.enter)": "onClickEvent.emit()",
 		"(keydown.space)": "$event.preventDefault(); onClickEvent.emit()",

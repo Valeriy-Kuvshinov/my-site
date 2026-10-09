@@ -43,7 +43,7 @@ const SPECIALTIES: Specialty[] = [
 	{
 		title: "A11y Compliance & Legal Immunity",
 		description:
-			"Auditing and refactoring digital infrastructure to natively meet WCAG 2.1 AA / AAA and Israeli standards - providing true legal protection that accessibility overlays simply cannot offer.",
+			"Auditing and refactoring digital infrastructure to natively meet WCAG 2.1 AA/AAA and Israeli standards - providing true legal protection that accessibility overlays simply cannot offer.",
 	},
 	{
 		title: "System Architecture & Optimization",

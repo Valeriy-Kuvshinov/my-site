@@ -2,41 +2,67 @@
 	<article class="intro flex flex-col full-center w-full">
 		<div class="content grid w-full items-center layout-row gap-8">
 			<app-image-container
-				src="/images/hero.avif"
+				src="/images/about.avif"
 				alt="Valeriy Kuvshinov"
 				[width]="240"
-				[height]="240"
-				[priority]="true"
-				class="fast-trans z-1">
+				[height]="240">
 			</app-image-container>
 
-			<div class="text flex flex-col gap-6">
+			<div class="text flex flex-col gap-4">
 				<h1 class="text-family-bold">About Me</h1>
 
 				<h2>Systems Architect & Consultant | Valeriy Kuvshinov</h2>
 
 				<p>
 					I am a Full Stack Developer specializing in distributed systems, telecom
-					infrastructure, and scalable web applications. My engineering philosophy is
-					built on three pillars:
-					<strong>
-						architectural resilience, uncompromising security, and universal
-						accessibility.
-					</strong>
-				</p>
-				<p>
-					I do not just write code; I act as a technical consultant providing end-to-end
-					solutions. I rescue clients from the constraints and ongoing technical debt of
-					rigid, templated platforms by architecting independent, semantic, and highly
-					optimized digital assets from the ground up.
+					infrastructure, and scalable web applications. With over
+					<strong>3,000 GitHub contributions</strong> and multiple live production systems
+					deployed, my engineering philosophy is built on three pillars:
+					<strong
+						>architectural resilience, uncompromising security, and universal
+						accessibility.</strong
+					>
 				</p>
 			</div>
 		</div>
 	</article>
 
+	<article class="reason flex flex-col w-full">
+		<div class="content flex flex-col w-full layout-row gap-8">
+			<h2>The Engineering Difference</h2>
+
+			<ul class="grid layout-row gap-4">
+				<li class="flex flex-col gap-2">
+					<h3 class="text-lg text-family-bold">Security by Discipline</h3>
+					<p>
+						Trained in IDF OSINT and technical intelligence. I approach every database
+						constraint and API endpoint with a zero-trust, military-grade risk
+						management protocol.
+					</p>
+				</li>
+				<li class="flex flex-col gap-2">
+					<h3 class="text-lg text-family-bold">Legal-Grade Accessibility</h3>
+					<p>
+						I do not use automated overlay widgets. I rewrite native DOM structures to
+						guarantee absolute WCAG 2.1 AA/AAA compliance, protecting clients from legal
+						liabilities.
+					</p>
+				</li>
+				<li class="flex flex-col gap-2">
+					<h3 class="text-lg text-family-bold">Infrastructure Independence</h3>
+					<p>
+						I build systems from scratch, eliminating vendor lock-in. You own your
+						servers, your code, and your data, bypassing expensive managed-platform
+						subscriptions.
+					</p>
+				</li>
+			</ul>
+		</div>
+	</article>
+
 	<article class="experience flex flex-col w-full">
-		<div class="content flex flex-col w-full layout-row gap-6">
-			<h2>Professional Background</h2>
+		<div class="content flex flex-col w-full layout-row gap-8">
+			<h2>Background & Profile</h2>
 
 			<p>
 				With a background spanning high-stakes technical intelligence and complex commercial
@@ -46,77 +72,98 @@
 
 			<ul class="flex flex-col gap-4">
 				<li>
-					<strong>Distributed Infrastructure:</strong> Architected fault-tolerant session
-					orchestration and remote edge-node integrations (Raspberry Pi, Tailscale VPN,
-					WebSockets) for IT security firms.
+					<p>
+						<strong>Academic Rigor:</strong> B.Sc. in Computer Science and Mathematics,
+						Open University of Israel (In Progress). Anchoring practical engineering
+						with deep theoretical and algorithmic foundations.
+					</p>
 				</li>
 				<li>
-					<strong>Cloud & Gaming Platforms:</strong> Engineered secure, containerized
-					backend services and automated CI/CD pipelines for independent HTML5 game
-					hosting platforms, utilizing Next.js, Node.js, Docker, and Cloudflare R2.
-				</li>
-				<li>
-					<strong>E-Commerce & Accessibility:</strong> Restored payment gateway stability
-					for established WordPress/WooCommerce retailers, increasing checkout conversions
-					by 30% while retrofitting the entire platform to natively meet strict WCAG 2.1
-					AA accessibility standards.
+					<p>
+						<strong>Linguistic Reach:</strong> Native proficiency in English, Hebrew,
+						and Russian, enabling seamless technical documentation and cross-border
+						project localization.
+					</p>
 				</li>
 			</ul>
-			<p>
-				Prior to commercial software engineering, I served as a
-				<strong>Tech Advisor and Risk Analyst in the Israeli Defense Forces (Aman)</strong>,
-				specializing in OSINT-based network analysis and technical intelligence—a role that
-				cemented my rigorous approach to system security and data integrity.
-			</p>
-		</div>
-	</article>
 
-	<article class="profile flex flex-col w-full">
-		<div class="content flex flex-col w-full layout-row gap-6">
-			<h2>Academic & Linguistic Profile</h2>
-
-			<ul class="flex flex-col gap-2">
-				<li>
-					<strong>Education:</strong> B.Sc. in Computer Science, Open University of Israel
-					(In Progress).
-					<em>
-						Pursued during spare time, with my strict priority placed on gaining
-						hands-on, production-level engineering experience and delivering real-world
-						value over simply accumulating theoretical credentials.
-					</em>
-				</li>
-				<li>
-					<strong>Languages:</strong> Native proficiency in English, Hebrew, and Russian,
-					allowing for seamless communication and localization across international
-					projects.
-				</li>
-			</ul>
+			<app-timeline></app-timeline>
 		</div>
 	</article>
 
 	<article class="stack flex flex-col w-full">
-		<div class="content flex flex-col w-full layout-row gap-6">
+		<div class="content flex flex-col w-full layout-row gap-8">
 			<h2>Core Technology Stack</h2>
 
-			<ul class="flex flex-col gap-2">
+			<ul class="flex flex-col gap-4">
 				<li>
-					<strong>Languages:</strong> TypeScript, JavaScript, Java, Python, C, Bash,
-					HTML/CSS.
+					<p>
+						<strong>Languages:</strong> TypeScript, JavaScript, Java, Python, C, Bash,
+						HTML/CSS.
+					</p>
 				</li>
 				<li>
-					<strong>Frontend:</strong> Angular (v17+ SSR / SSG), Next.js, React, Electron,
-					JavaFX.
-				</li>
-				<li><strong>Backend:</strong> NestJS, Node.js, Express, Spring Boot.</li>
-				<li>
-					<strong>Database:</strong> NoSQL (MongoDB), SQL (MySQL, PostgreSQL, Supabase).
+					<p><strong>Frontend:</strong> Angular, Next.js, React, Electron, JavaFX.</p>
 				</li>
 				<li>
-					<strong>Infrastructure & DevOps:</strong> Docker, Nginx, Linux, Cloudflare,
-					Oracle Cloud Infrastructure (OCI), Amazon Web Services (AWS), GitHub Actions,
-					Cron Jobs, SSH.
+					<p><strong>Backend:</strong> NestJS, Node.js, Express, Spring Boot.</p>
+				</li>
+				<li>
+					<p>
+						<strong>Database:</strong> NoSQL (MongoDB), SQL (MySQL, PostgreSQL,
+						Supabase).
+					</p>
+				</li>
+				<li>
+					<p>
+						<strong>Infrastructure & DevOps:</strong> Docker, Nginx, Linux, Cloudflare,
+						Oracle Cloud Infrastructure (OCI), Amazon Web Services (AWS), GitHub
+						Actions, Cron Jobs, SSH.
+					</p>
 				</li>
 			</ul>
+		</div>
+	</article>
+
+	<article class="availability flex flex-col w-full">
+		<div class="content flex flex-col w-full layout-row gap-8">
+			<h2 class="text-family-bold">Current Availability</h2>
+
+			<p>I operate a flexible professional schedule. I am currently open to:</p>
+
+			<ul class="flex flex-col gap-4">
+				<li>
+					<p>
+						<strong>Freelance & Contract:</strong> Taking on new clients for system
+						rescue, custom builds, and WCAG AA remediation.
+					</p>
+				</li>
+				<li>
+					<p>
+						<strong>Full-Time Roles:</strong> Seeking positions as a Full-Stack Engineer
+						or Systems Architect within teams that value rigorous security,
+						accessibility, and independent infrastructure over bloated third-party
+						dependencies.
+					</p>
+				</li>
+			</ul>
+
+			<p>
+				Open to Remote positions worldwide. Open to Hybrid, or On-site positions within
+				Israel.
+			</p>
+
+			<a
+				routerLink="/contact"
+				class="flex flex-row full-center gap-2 w-fit">
+				<span>Reach out!</span>
+
+				<app-svg-icon
+					icon="arrow"
+					width="24"
+					height="24">
+				</app-svg-icon>
+			</a>
 		</div>
 	</article>
 </section>

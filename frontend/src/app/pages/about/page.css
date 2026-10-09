@@ -13,9 +13,37 @@
 			aspect-ratio: 1;
 			border-radius: 100%;
 			overflow: hidden;
+		}
+	}
 
-			&:hover {
-				scale: 1.1;
+	.reason .content ul {
+		overflow: hidden;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	}
+
+	.availability .content {
+		padding: 1rem;
+		border: 1px solid var(--mnrclr4);
+		border-radius: 0.75rem;
+
+		a {
+			padding: 0.75rem 1rem;
+			background: var(--scdclr2);
+			color: var(--scdclr9);
+			fill: var(--scdclr9);
+			border-radius: 0.75rem;
+			align-self: center;
+			outline: none;
+
+			app-svg-icon {
+				transform: rotate(-30deg);
+			}
+
+			&:hover,
+			&:focus-visible {
+				background: var(--scdclr7);
+				color: var(--scdclr1);
+				fill: var(--scdclr1);
 			}
 		}
 	}
@@ -30,14 +58,16 @@
 				grid-template-rows: auto auto;
 
 				app-image-container {
-					max-width: 8rem;
+					max-width: 10rem;
+					justify-self: center;
 				}
 			}
 		}
 
 		.experience,
-		.profile,
-		.stack {
+		.stack,
+		.availability,
+		.reason {
 			padding: 3rem 1rem;
 		}
 	}
@@ -46,21 +76,47 @@
 		min-height: 70vh;
 
 		.intro .content .text {
-			h1 {
-				font-size: 1.25rem;
+			h2 {
+				font-size: 1.5rem;
 			}
 
 			p {
 				font-size: 0.9rem;
 			}
 		}
+
+		.experience h2,
+		.stack h2,
+		.availability h2,
+		.reason h2 {
+			font-size: 1.5rem;
+		}
 	}
 
 	@media (min-width: 601px) {
 		min-height: 80vh;
 
-		.intro .content .text p {
-			font-size: 1.25rem;
+		.intro .content .text {
+			h2 {
+				font-size: 2rem;
+			}
+
+			p {
+				font-size: 1.25rem;
+			}
+		}
+
+		.experience,
+		.stack,
+		.availability,
+		.reason {
+			h2 {
+				font-size: 2rem;
+			}
+
+			p {
+				font-size: 1.1rem;
+			}
 		}
 	}
 
@@ -81,8 +137,9 @@
 		}
 
 		.experience,
-		.profile,
-		.stack {
+		.stack,
+		.availability,
+		.reason {
 			padding: 4rem 2rem;
 		}
 	}

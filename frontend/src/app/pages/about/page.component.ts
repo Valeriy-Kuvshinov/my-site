@@ -1,7 +1,10 @@
-import { Component, inject, OnInit } from "@angular/core"
+import { Component, inject, OnInit, signal } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
+import { RouterLink } from "@angular/router"
 
 import { ImageContainerComponent } from "../../shared/components/general/image-container.component"
+import { TimelineComponent } from "./components/timeline.component"
+import { SvgIconComponent } from "../../shared/components/icon/icon.component"
 
 const PAGE_TITLE = "About | Kuvshinov Software"
 const PAGE_URL = "/about/"
@@ -10,7 +13,7 @@ const PAGE_DESC = "Find out more about the man behind the business."
 @Component({
 	selector: "main[app-about-page]",
 	standalone: true,
-	imports: [ImageContainerComponent],
+	imports: [RouterLink, ImageContainerComponent, TimelineComponent, SvgIconComponent],
 	templateUrl: "./page.html",
 	styleUrl: "./page.css",
 	host: {

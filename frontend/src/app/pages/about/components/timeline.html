@@ -1,0 +1,49 @@
+<div
+	class="track relative flex justify-between w-full"
+	role="tablist"
+	aria-label="Career Timeline">
+	@for (step of steps; track step.id; let idx = $index) {
+	<button
+		type="button"
+		class="flex relative"
+		[class.active]="activeTab() === idx"
+		[class.past]="idx < activeTab()"
+		role="tab"
+		[attr.aria-selected]="activeTab() === idx"
+		[attr.aria-controls]="'panel-' + step.id"
+		[id]="'tab-' + step.id"
+		[tabIndex]="activeTab() === idx ? 0 : -1"
+		(click)="activeTab.set(idx)"
+		(keydown)="handleTabKeydown($event, idx)">
+		<span
+			class="marker absolute flex full-center fast-trans"
+			aria-hidden="true">
+			<app-svg-icon
+				[icon]="step.icon"
+				width="24"
+				height="24"
+				class="fast-trans">
+			</app-svg-icon>
+		</span>
+
+		<div class="text flex flex-col gap-1 w-full">
+			<span class="year font-bold">{{ step.years }}</span>
+			<span class="title fast-trans">{{ step.title }}</span>
+		</div>
+	</button>
+	}
+</div>
+
+<div class="info w-full relative">
+	@for (step of steps; track step.id; let idx = $index) { @if (activeTab() === idx) {
+	<div
+		class="panel flex flex-col gap-4 w-full"
+		role="tabpanel"
+		[id]="'panel-' + step.id"
+		[attr.aria-labelledby]="'tab-' + step.id"
+		tabindex="0">
+		<h3 class="text-family-bold">{{ step.title }}</h3>
+		<p>{{ step.description }}</p>
+	</div>
+	} }
+</div>
