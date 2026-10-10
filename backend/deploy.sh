@@ -9,11 +9,6 @@ VPS_USER="ubuntu"
 SSH_KEY="$HOME/.ssh/aws_key_my_site"
 REMOTE_DIR="~/kuv-backend"
 
-echo "Building Angular Frontend Static Assets..."
-cd ../frontend
-npm run build
-cd ../backend
-
 echo "Building NestJS Backend..."
 npm run build
 
@@ -26,7 +21,7 @@ ssh -i "$SSH_KEY" "$VPS_USER@$VPS_IP" "mkdir -p $REMOTE_DIR"
 echo "Syncing Configurations and Static Files..."
 rsync -avz --delete -e "ssh -i $SSH_KEY" ./out/ "$VPS_USER@$VPS_IP:$REMOTE_DIR/out/"
 rsync -avz -e "ssh -i $SSH_KEY" ./nginx.conf "$VPS_USER@$VPS_IP:$REMOTE_DIR/nginx.conf"
-rsync -avz -e "ssh -i $SSH_KEY" ./docker-compose.yml "$VPS_USER@$VPS_IP:$REMOTE_DIR/docker-compose.yml"
+rsync -avz -e "ssh -i $SSH_KEY" ./docker-compose.yaml "$VPS_USER@$VPS_IP:$REMOTE_DIR/docker-compose.yaml"
 rsync -avz -e "ssh -i $SSH_KEY" ./.env "$VPS_USER@$VPS_IP:$REMOTE_DIR/.env"
 
 echo "Shipping Image to VPS (This may take a minute)..."

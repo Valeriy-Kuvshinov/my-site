@@ -25,8 +25,6 @@ export class HeaderComponent implements OnInit {
 
 	private readonly platformId = inject(PLATFORM_ID)
 
-	protected readonly LOGO_IMG = "/images/logo.avif"
-
 	readonly isScrolled = signal(false)
 
 	ngOnInit() {
