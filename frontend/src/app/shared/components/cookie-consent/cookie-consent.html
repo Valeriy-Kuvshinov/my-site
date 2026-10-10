@@ -1,8 +1,8 @@
 @if (consent() === null) { @if (deviceType() === 'desktop') {
 <aside
 	#bannerRef
-	class="cookie-banner flex flex-row full-center fixed w-fit z-15"
-	aria-label="cookies policy banner"
+	class="cookie-consent flex flex-row full-center fixed w-fit z-15"
+	aria-label="cookies policy consent"
 	tabindex="-1">
 	<app-svg-icon
 		class="absolute"
@@ -41,8 +41,8 @@
 } @else {
 <aside
 	#bannerRef
-	class="cookie-banner flex flex-row justify-center fixed w-fit z-15"
-	aria-label="cookies policy banner"
+	class="cookie-consent flex flex-row justify-center fixed w-fit z-15"
+	aria-label="cookies policy consent"
 	tabindex="-1">
 	<div class="text flex flex-col">
 		<p>

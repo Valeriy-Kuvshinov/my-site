@@ -27,16 +27,16 @@ declare global {
 const GOOGLE_TAG_MANAGER_ID = "G-JM33WQ5Q8X"
 
 @Component({
-	selector: "app-cookie-banner",
+	selector: "app-cookie-consent",
 	standalone: true,
 	imports: [RouterLink, SvgIconComponent],
-	templateUrl: "./cookie-banner.html",
-	styleUrl: "./cookie-banner.css",
+	templateUrl: "./cookie-consent.html",
+	styleUrl: "./cookie-consent.css",
 	host: {
 		style: "display: contents",
 	},
 })
-export class CookieBannerComponent implements OnInit {
+export class CookieConsentComponent implements OnInit {
 	private readonly platformId = inject(PLATFORM_ID)
 	private readonly document = inject(DOCUMENT)
 	protected readonly store = inject(SystemStore)
