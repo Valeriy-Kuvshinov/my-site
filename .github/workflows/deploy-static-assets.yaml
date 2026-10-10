@@ -5,7 +5,7 @@ on:
     # After pushing software modifications to the main branch
     push:
         branches:
-            - master
+            - main
 
     # When manual executions are triggered
     workflow_dispatch:
