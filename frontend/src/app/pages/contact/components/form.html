@@ -71,7 +71,13 @@
 				class="w-h-fit"
 				[attr.aria-invalid]="getInputControl('consent').invalid && getInputControl('consent').touched" />
 			<span>
-				I agree to the processing of my data in accordance with the
+				I agree to the
+				<a
+					routerLink="/terms"
+					(click)="$event.stopPropagation()">
+					<span>Terms of Service</span></a
+				>
+				and the processing of my data in accordance with the
 				<a
 					routerLink="/privacy-policy"
 					(click)="$event.stopPropagation()">
@@ -81,7 +87,7 @@
 		</label>
 		@if (getInputControl('consent').invalid && getInputControl('consent').touched) {
 		<span class="error-text">
-			You must accept the privacy policy to send a message via the form.
+			You must accept the Terms of Service and Privacy Policy to submit form.
 		</span>
 		}
 	</div>

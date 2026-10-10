@@ -39,6 +39,7 @@ export class SystemStore {
 	readonly message = signal<FlashMessage | null>(null)
 	readonly a11yAnnouncement = signal<string>("")
 	readonly a11yUrgency = signal<"polite" | "assertive">("polite")
+
 	private timeoutId: ReturnType<typeof setTimeout> | null = null
 
 	// MODAL STATE
@@ -87,21 +88,17 @@ export class SystemStore {
 	// FLASH MESSAGES
 	// =====================================
 	showSuccess(title: string, msg: string) {
-		this.setFlashMessage({ title, msg, type: "success" }, "polite")
+		this.setFlashMessage({ title, msg, type: "success" })
 	}
 
 	showError(title: string, msg: string) {
-		this.setFlashMessage({ title, msg, type: "error" }, "assertive")
+		this.setFlashMessage({ title, msg, type: "error" })
 	}
 
-	private setFlashMessage(msgObj: FlashMessage, urgency: "polite" | "assertive") {
+	private setFlashMessage(msgObj: FlashMessage) {
 		if (this.timeoutId) clearTimeout(this.timeoutId)
 
 		this.message.set(msgObj)
-		this.a11yAnnouncement.set(
-			`${msgObj.type === "error" ? "Error" : "Success"}: ${msgObj.title}. ${msgObj.msg}`
-		)
-		this.a11yUrgency.set(urgency)
 
 		if (isPlatformBrowser(this.platformId)) {
 			this.timeoutId = setTimeout(() => this.closeMsg(), DISPLAY_TIMEOUT_MILLIS)

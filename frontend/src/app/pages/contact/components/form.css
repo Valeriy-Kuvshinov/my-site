@@ -48,11 +48,11 @@
 
 		.consent-wrapper {
 			span {
-				font-size: 0.85rem;
+				font-size: 0.8rem;
 			}
 
 			.error-text {
-				font-size: 0.75rem;
+				font-size: 0.7rem;
 			}
 		}
 	}
@@ -65,11 +65,11 @@
 
 		.consent-wrapper {
 			span {
-				font-size: 0.95rem;
+				font-size: 0.9rem;
 			}
 
 			.error-text {
-				font-size: 0.85rem;
+				font-size: 0.8rem;
 			}
 		}
 	}

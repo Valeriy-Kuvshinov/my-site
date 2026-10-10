@@ -29,4 +29,8 @@ export const routes: Routes = [
 		path: "accessibility",
 		loadComponent: () => import("./pages/accessibility/page.component"),
 	},
+	{
+		path: "terms",
+		loadComponent: () => import("./pages/terms/page.component"),
+	},
 ]

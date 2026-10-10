@@ -2,6 +2,7 @@ import { Component, ChangeDetectionStrategy, inject } from "@angular/core"
 
 import { SystemStore } from "../../core/stores/system.store"
 
+// Display either Polite/passive announcements or Assertive/critical announcements
 @Component({
 	selector: "app-screen-reader-announcer",
 	standalone: true,

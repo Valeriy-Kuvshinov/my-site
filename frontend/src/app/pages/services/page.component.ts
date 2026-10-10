@@ -82,19 +82,19 @@ const SERVICES: ServiceCard[] = [
 
 const PROCESS_STEPS: ProcessStep[] = [
 	{
-		title: "Account Setup & Ownership",
+		title: "Infrastructure & Complete Ownership",
 		description:
-			"First, I help you create your own independent cloud hosting and media accounts. You hold the passwords and the billing. I simply join as the developer. No middleman, no vendor lock-in.",
+			"I guide you through establishing your own independent cloud hosting and media accounts. You retain absolute control over passwords and billing, eliminating vendor lock-in. I join strictly as the technical architect.",
 	},
 	{
-		title: "Writing the Code",
+		title: "Native System Architecture",
 		description:
-			"I build your website or system entirely from scratch. Because there are no bloated templates, everything is blazing fast, secure, and strictly WCAG AA accessible right out of the box.",
+			"Your digital infrastructure is engineered entirely from scratch. By bypassing bloated templates and rigid CMS platforms, I ensure the final product is highly performant, fundamentally secure, and strictly WCAG AA compliant by design.",
 	},
 	{
-		title: "Handover & Support",
+		title: "Deployment & Lifecycle Support",
 		description:
-			"Once we launch, you possess an independent system that costs very little to run and maintain. I provide ongoing support for updates, security, and any architectural changes whenever you need me. First year post launch is free.",
+			"Upon launch, you possess an independent, low-overhead system. I provide 12 months of comprehensive architectural updates free of charge. Subsequent years transition to a standard retainer strictly for security maintenance, with feature upgrades billed separately.",
 	},
 ]
 
