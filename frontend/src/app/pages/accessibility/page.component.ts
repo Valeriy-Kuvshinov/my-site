@@ -3,7 +3,7 @@ import { Title, Meta } from "@angular/platform-browser"
 
 const PAGE_TITLE = "Accessibility Statement | Kuvshinov Software"
 const PAGE_URL = "/accessibility/"
-const PAGE_DESC = "Learn about my commitment to accessibility at Kuvshinov Software."
+const PAGE_DESC = "Learn about our commitment to providing accessibility at Kuvshinov Software."
 
 @Component({
 	selector: "main[app-accessibility-page]",

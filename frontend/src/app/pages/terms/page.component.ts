@@ -5,7 +5,7 @@ import { RouterLink } from "@angular/router"
 const PAGE_TITLE = "Terms of Service | Kuvshinov Software"
 const PAGE_URL = "/terms/"
 const PAGE_DESC =
-	"Official statutory privacy disclosure and data processing protocol for the Did Not Get It browser extension."
+	"Official Terms of Service for Kuvshinov Software, governing consulting engagements, remote digital assistance, software licensing, and liability bounds."
 
 @Component({
 	selector: "main[app-terms-page]",

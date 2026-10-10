@@ -1,0 +1,53 @@
+name: Frontend Deployment Workflow For Production
+
+# Redeploy in the following events:
+on:
+    # After pushing software modifications to the main branch
+    push:
+        branches:
+            - master
+
+    # When manual executions are triggered
+    workflow_dispatch:
+
+jobs:
+    build-and-ship:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Source Code Repository
+              uses: actions/checkout@v4
+
+            - name: Initialize Node.js Development Environment
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "24"
+                  cache: "npm"
+                  cache-dependency-path: frontend/package-lock.json
+
+            - name: Resolve Frontend Dependency Tree
+              working-directory: ./frontend
+              run: npm ci
+
+            # Bypass Cloudflare
+            - name: Bypass Cloudflare for GitHub Action
+              uses: xiaotianxt/bypass-cloudflare-for-github-action@v2.1.0
+              with:
+                  cf_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+                  cf_zone_id: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+                  cf_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+                  disable_bot_fight_mode: "true"
+
+            - name: Compile Angular Static Infrastructure
+              working-directory: ./frontend
+              run: npm run build
+
+            - name: Inject Secure Host Authentication Key
+              uses: shimataro/ssh-key-action@v2
+              with:
+                  key: ${{ secrets.VPS_SSH_KEY }}
+                  known_hosts: ${{ secrets.VPS_KNOWN_HOSTS }}
+
+            - name: Execute Atomic Sync to AWS Target
+              run: |
+                  # Syncs the newly generated static output directly into the VPS Nginx volume
+                  rsync -avz --delete -e "ssh" ./backend/out/ ubuntu@${{ secrets.VPS_IP }}:~/kuv-backend/out/
