@@ -3,45 +3,35 @@
 	border-top: 1px solid var(--scdclr6);
 
 	.content {
-		.site-nav {
-			a {
-				padding: 0.25rem 0.5rem;
-				color: var(--scdclr2);
-				border-radius: 0.5rem;
-				font-size: 0.9rem;
-				outline: none;
+		.site-nav a {
+			padding: 0.25rem 0.5rem;
+			color: var(--scdclr2);
+			border-radius: 0.5rem;
+			font-size: 0.9rem;
+			outline: none;
 
-				&:hover,
-				&:focus-visible,
-				&.active {
-					color: var(--mnrclr8);
-				}
+			&:hover,
+			&:focus-visible,
+			&.active {
+				color: var(--mnrclr8);
+			}
 
-				&.active {
-					pointer-events: none;
-				}
+			&.active {
+				pointer-events: none;
 			}
 		}
 
-		.social-nav {
-			a {
-				padding: 0.5rem;
-				background: var(--scdclr8);
-				border-radius: 50%;
-				outline: none;
+		.social-nav a {
+			padding: 0.5rem;
+			background: var(--scdclr8);
+			fill: var(--scdclr2);
+			border-radius: 50%;
+			outline: none;
 
-				app-svg-icon {
-					fill: var(--scdclr2);
-				}
-
-				&:hover,
-				&:focus-visible {
-					background: var(--mnrclr8);
-
-					app-svg-icon {
-						fill: var(--prmclr4);
-					}
-				}
+			&:hover,
+			&:focus-visible {
+				background: var(--mnrclr8);
+				fill: var(--prmclr4);
 			}
 		}
 

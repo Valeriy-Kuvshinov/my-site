@@ -19,7 +19,7 @@
 
 		button {
 			padding: 0.5rem 0.75rem;
-			background: var(--prmclr1);
+			background: var(--scdclr8);
 			color: var(--scdclr3);
 			fill: var(--scdclr3);
 			border-radius: 0.5rem;
@@ -27,9 +27,9 @@
 
 			&:hover,
 			&:focus-visible {
-				background: var(--mnrclr1);
-				color: var(--scdclr4);
-				fill: var(--scdclr4);
+				background: var(--mnrclr5);
+				color: var(--scdclr9);
+				fill: var(--scdclr9);
 				outline: none;
 			}
 		}

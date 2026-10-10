@@ -17,6 +17,20 @@
 			max-width: 4.5rem;
 			max-height: 3.5rem;
 		}
+
+		button {
+			padding: 0.25rem;
+			fill: var(--prmclr2);
+			background: var(--scdclr8);
+			border-radius: 100%;
+			outline: none;
+
+			&:hover,
+			&:focus-visible {
+				fill: var(--scdclr8);
+				background: var(--prmclr2);
+			}
+		}
 	}
 
 	nav {

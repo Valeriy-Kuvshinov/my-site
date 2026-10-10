@@ -28,7 +28,7 @@
 	}
 }
 
-:host {
+.system-message {
 	bottom: 3rem;
 	right: 0;
 	left: 0;
@@ -39,7 +39,7 @@
 	.message-title {
 		padding: 0.5rem 0.75rem;
 		border-radius: 0.5rem 0.5rem 0 0;
-		background: var(--scdclr5);
+		background: var(--scdclr7);
 		color: var(--prmclr2);
 
 		h3 {
@@ -47,7 +47,7 @@
 		}
 
 		&.success {
-			border: 2px solid var(--mnrclr2);
+			border: 2px solid var(--mnrclr8);
 			border-bottom: none;
 		}
 
@@ -61,7 +61,7 @@
 		gap: 0.75rem;
 		padding: 0.5rem 1rem;
 		border-radius: 0.5rem;
-		background: var(--scdclr2);
+		background: var(--scdclr8);
 		color: var(--prmclr2);
 		fill: var(--prmclr2);
 
@@ -69,13 +69,8 @@
 			font-size: 1.5rem;
 		}
 
-		svg {
-			width: 1.5rem;
-			height: 1.5rem;
-		}
-
 		&.success {
-			border: 2px solid var(--mnrclr2);
+			border: 2px solid var(--mnrclr8);
 		}
 
 		&.error {
