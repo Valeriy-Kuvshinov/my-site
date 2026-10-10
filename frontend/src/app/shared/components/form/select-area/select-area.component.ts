@@ -39,7 +39,7 @@ import { SvgIconComponent } from "../../icon/icon.component"
 	styleUrl: "./select-area.css",
 	host: {
 		"[class.error]": "!!error",
-		class: "select-area grid h-fit",
+		class: "select-area grid h-fit gap-1",
 	},
 })
 export class SelectAreaComponent {

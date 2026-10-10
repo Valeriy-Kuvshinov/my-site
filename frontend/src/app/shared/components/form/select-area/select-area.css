@@ -1,6 +1,4 @@
 :host {
-	gap: 0.25rem;
-
 	label {
 		grid-template-columns: auto auto 1fr;
 		column-gap: 0.5rem;

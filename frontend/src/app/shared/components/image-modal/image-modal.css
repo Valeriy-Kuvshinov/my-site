@@ -1,7 +1,7 @@
 .modal-wrapper .image-modal {
 	max-height: 90vh;
 	background: var(--prmclr1);
-	overflow: hidden;
+	overflow-y: auto;
 
 	button {
 		top: 0.5rem;
@@ -10,12 +10,12 @@
 		background: var(--prmclr2);
 		fill: var(--scdclr8);
 		border-radius: 0.5rem;
+		outline: none;
 
 		&:hover,
 		&:focus-visible {
 			background: var(--scdclr8);
 			fill: var(--prmclr2);
-			outline: none;
 		}
 	}
 
@@ -28,6 +28,6 @@
 	@media (min-width: 601px) {
 		max-width: 95vw;
 		border: 2px solid var(--scdclr4);
-		border-radius: 0.5rem;
+		border-radius: 0.75rem 0 0 0.75rem;
 	}
 }

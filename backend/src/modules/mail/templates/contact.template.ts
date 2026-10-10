@@ -1,4 +1,4 @@
-interface ContactTemplateData {
+interface TemplateData {
 	name: string
 	email: string
 	title: string
@@ -9,7 +9,7 @@ interface ContactTemplateData {
 // const SITE_LOGO =
 // 	"https://res.cloudinary.com/djzid7ags/image/upload/v1719919435/ydjn6p0djqwbkko4zqts.png"
 
-export function getAdminContactTemplate(data: ContactTemplateData): string {
+export function getAdminContactTemplate(data: TemplateData): string {
 	const { name, requestType, message, email } = data
 
 	return getEmailBodyTemplate(`
@@ -23,7 +23,7 @@ export function getAdminContactTemplate(data: ContactTemplateData): string {
     `)
 }
 
-export function getUserContactTemplate(data: ContactTemplateData): string {
+export function getUserContactTemplate(data: TemplateData): string {
 	const { name, title, message } = data
 
 	return getEmailBodyTemplate(`

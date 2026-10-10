@@ -31,7 +31,7 @@ export default class PageComponent {
 
 	protected readonly socials = SOCIAL_LINKS
 
-	protected readonly defaultFormValues = {
+	protected readonly defaultValues = {
 		name: "",
 		email: "",
 		title: "",

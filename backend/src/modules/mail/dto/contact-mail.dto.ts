@@ -6,6 +6,8 @@ import {
 	IsEmail,
 	IsNotEmpty,
 	IsOptional,
+	IsBoolean,
+	Equals,
 } from "class-validator"
 
 export class ContactMailDto {
@@ -35,6 +37,10 @@ export class ContactMailDto {
 	@MaxLength(600)
 	@Matches(/^[a-zA-Z0-9\s.\-!?@#$',*;:]+$/, { message: "Message contains invalid characters" })
 	message: string
+
+	@IsBoolean()
+	@Equals(true, { message: "Explicit privacy policy consent is legally required." })
+	consent: boolean
 
 	@IsString()
 	@IsOptional()

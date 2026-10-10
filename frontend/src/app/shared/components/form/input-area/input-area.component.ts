@@ -59,7 +59,7 @@ type InputAreaType = "text" | "email" | "textarea" | "password" | "tel"
 	styleUrl: "./input-area.css",
 	host: {
 		"[class.error]": "!!error",
-		class: "input-area grid h-fit",
+		class: "input-area grid h-fit gap-1",
 	},
 })
 export class InputAreaComponent {
