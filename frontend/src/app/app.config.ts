@@ -4,11 +4,10 @@ import {
 	provideAppInitializer,
 	provideBrowserGlobalErrorListeners,
 } from "@angular/core"
-import { provideRouter } from "@angular/router"
+import { provideRouter, withInMemoryScrolling } from "@angular/router"
 import { provideClientHydration } from "@angular/platform-browser"
 import { provideHttpClient, withInterceptors } from "@angular/common/http"
 import { provideTanStackQuery } from "@tanstack/angular-query-experimental"
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async'; // <-- ADD THIS
 
 import { QUERY_CLIENT_TOKEN } from "./core/tokens/query-client.token"
 
@@ -22,11 +21,11 @@ export const appConfig: ApplicationConfig = {
 	providers: [
 		provideBrowserGlobalErrorListeners(),
 
+		provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: "enabled" })),
+
 		provideRouter(routes),
 
 		provideClientHydration(),
-
-		provideAnimationsAsync(),
 
 		provideHttpClient(withInterceptors([apiInterceptor])),
 
