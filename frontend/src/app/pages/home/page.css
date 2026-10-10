@@ -1,6 +1,10 @@
 :host .page-contents {
 	.hero {
 		.content {
+			h2 {
+				color: var(--scdclr3);
+			}
+
 			p {
 				color: var(--scdclr2);
 			}
