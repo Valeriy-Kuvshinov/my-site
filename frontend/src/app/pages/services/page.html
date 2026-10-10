@@ -20,14 +20,14 @@
 			@for (service of services; track service.title) {
 			<li class="card flex flex-col gap-6 fast-trans">
 				<div class="card-header grid items-center gap-4 w-full">
-					<div class="flex flex-row items-center gap-4">
+					<label class="grid items-center gap-4">
 						<app-svg-icon
 							[icon]="service.icon"
 							[width]="iconSize()"
 							[height]="iconSize()">
 						</app-svg-icon>
 						<h2 class="text-family-bold">{{ service.title }}</h2>
-					</div>
+					</label>
 
 					<span class="price flex full-center"> {{ service.price }} </span>
 				</div>

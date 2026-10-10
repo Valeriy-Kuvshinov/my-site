@@ -16,11 +16,6 @@
 		}
 	}
 
-	.reason .content ul {
-		overflow: hidden;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	}
-
 	.availability .content {
 		padding: 1rem;
 		border: 1px solid var(--mnrclr4);
@@ -81,15 +76,25 @@
 			}
 
 			p {
+				font-size: 1rem;
+			}
+		}
+
+		.experience,
+		.stack,
+		.availability,
+		.reason {
+			h2 {
+				font-size: 1.5rem;
+			}
+
+			p {
 				font-size: 0.9rem;
 			}
 		}
 
-		.experience h2,
-		.stack h2,
-		.availability h2,
-		.reason h2 {
-			font-size: 1.5rem;
+		.reason .content ul {
+			grid-template-columns: 1fr;
 		}
 	}
 
@@ -118,6 +123,10 @@
 				font-size: 1.1rem;
 			}
 		}
+
+		.reason .content ul {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 
 	@media (min-width: 901px) {
@@ -141,6 +150,10 @@
 		.availability,
 		.reason {
 			padding: 4rem 2rem;
+		}
+
+		.reason .content ul {
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 }

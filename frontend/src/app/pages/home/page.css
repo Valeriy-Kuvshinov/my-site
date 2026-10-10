@@ -92,8 +92,6 @@
 
 		ul {
 			padding: 2rem 0;
-			grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
-			overflow: hidden;
 
 			li {
 				background: var(--scdclr8);
@@ -177,6 +175,12 @@
 		}
 	}
 
+	@media (max-width: 1200px) {
+		.core ul {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
 	@media (max-width: 900px) {
 		.hero {
 			gap: 2rem;
@@ -200,6 +204,10 @@
 		.a11y,
 		.highlights {
 			padding: 3rem 1rem;
+		}
+
+		.core ul {
+			grid-template-columns: 1fr 1fr;
 		}
 
 		.accomplishments {
@@ -247,6 +255,10 @@
 		h3 {
 			font-size: 1.25rem;
 			align-self: center;
+		}
+
+		.core ul {
+			grid-template-columns: 1fr;
 		}
 
 		.a11y ul {
@@ -328,6 +340,10 @@
 		.hero app-image-container {
 			top: 20vh;
 			right: 10vw;
+		}
+
+		.core ul {
+			grid-template-columns: repeat(4, 1fr);
 		}
 	}
 }

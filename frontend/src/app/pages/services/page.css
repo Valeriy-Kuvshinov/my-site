@@ -16,51 +16,46 @@
 			var(--scdclr7)
 		);
 
-		.services {
-			grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
-			overflow: hidden;
+		.services .card {
+			padding: 1rem;
+			background: var(--scdclr8);
+			border: 1px solid var(--scdclr6);
+			border-radius: 0.75rem;
 
-			.card {
-				padding: 1rem;
-				background: var(--scdclr8);
-				border: 1px solid var(--scdclr6);
-				border-radius: 0.75rem;
+			&:first-child app-svg-icon {
+				fill: var(--mnrclr1);
+			}
 
-				&:first-child app-svg-icon {
-					fill: var(--mnrclr1);
-				}
+			&:nth-of-type(2) app-svg-icon {
+				fill: var(--mnrclr9);
+			}
 
-				&:nth-of-type(2) app-svg-icon {
-					fill: var(--mnrclr9);
-				}
+			&:nth-of-type(3) app-svg-icon {
+				fill: var(--scdclr5);
+			}
 
-				&:nth-of-type(3) app-svg-icon {
-					fill: var(--scdclr5);
-				}
+			&:last-child app-svg-icon {
+				fill: var(--mnrclr8);
+			}
 
-				&:last-child app-svg-icon {
-					fill: var(--mnrclr8);
-				}
+			.card-header {
+				grid-template-columns: auto 1fr;
 
-				.card-header {
+				label {
 					grid-template-columns: 1fr auto;
-
-					app-svg-icon {
-						align-self: center;
-					}
-
-					.price {
-						padding: 0.25rem 0.5rem;
-						color: var(--mnrclr4);
-						border: 1px solid var(--scdclr5);
-						border-radius: 0.5rem;
-					}
 				}
 
-				&:hover {
-					border-color: var(--scdclr3);
-					transform: translateY(-0.25rem);
+				.price {
+					padding: 0.25rem 0.5rem;
+					color: var(--mnrclr4);
+					border: 1px solid var(--scdclr5);
+					border-radius: 0.5rem;
 				}
+			}
+
+			&:hover {
+				border-color: var(--scdclr3);
+				transform: translateY(-0.25rem);
 			}
 		}
 	}
@@ -100,6 +95,18 @@
 		}
 	}
 
+	@media (max-width: 1200px) {
+		.menu .services {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	@media (max-width: 1000px) {
+		.menu .services {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
 	@media (max-width: 900px) {
 		.process ul {
 			grid-template-columns: 1fr;
@@ -128,6 +135,10 @@
 			.content h2 {
 				font-size: 1.5rem;
 			}
+		}
+
+		.menu .services {
+			grid-template-columns: 1fr;
 		}
 	}
 
@@ -161,6 +172,12 @@
 				right: -2rem;
 				transform: translate(50%, -50%) rotate(0deg);
 			}
+		}
+	}
+
+	@media (min-width: 1201px) {
+		.menu .services {
+			grid-template-columns: repeat(4, 1fr);
 		}
 	}
 }
