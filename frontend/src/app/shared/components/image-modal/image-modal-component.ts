@@ -7,6 +7,8 @@ import {
 	effect,
 	HostListener,
 	computed,
+	OnDestroy,
+	signal,
 } from "@angular/core"
 
 import { SystemStore } from "../../../core/stores/system.store"
@@ -28,23 +30,48 @@ import { SvgIconComponent } from "../icon/icon.component"
 		"[style.display]": 'isOpen() ? "contents" : "none"',
 	},
 })
-export class ImageModalComponent {
+export class ImageModalComponent implements OnDestroy {
 	private readonly store = inject(SystemStore)
 
-	@ViewChild("closeBtn") closeBtnRef!: ElementRef<HTMLButtonElement>
+	@ViewChild("modalRef") modalRef?: ElementRef<HTMLDivElement>
+	@ViewChild("closeBtn") closeBtnRef?: ElementRef<HTMLButtonElement>
 
-	readonly isOpen = computed(() => this.store.activeModals().includes("image-modal"))
+	private readonly isOpen = computed(() => this.store.activeModals().includes("image-modal"))
+	protected readonly modalValue = computed(() => this.store.modalValues()["image-modal"] || null)
 
-	readonly modalValue = computed(() => this.store.modalValues()["image-modal"] || null)
+	readonly hasScrollbar = signal(false)
+
+	private resizeObserver?: ResizeObserver
 
 	constructor() {
-		effect(() => {
+		effect((onCleanup) => {
 			if (this.isOpen()) {
 				setTimeout(() => {
 					this.closeBtnRef?.nativeElement?.focus()
+					this.checkScrollbar()
+
+					if (this.modalRef?.nativeElement) {
+						this.resizeObserver = new ResizeObserver(() => this.checkScrollbar())
+						this.resizeObserver.observe(this.modalRef.nativeElement)
+					}
 				}, 10)
 			}
+			onCleanup(() => this.cleanupObserver())
 		})
+	}
+
+	private checkScrollbar() {
+		const el = this.modalRef?.nativeElement
+		if (el) {
+			this.hasScrollbar.set(el.scrollHeight > el.clientHeight)
+		}
+	}
+
+	private cleanupObserver() {
+		if (this.resizeObserver) {
+			this.resizeObserver.disconnect()
+			this.resizeObserver = undefined
+		}
 	}
 
 	closeImageModal() {
@@ -54,5 +81,9 @@ export class ImageModalComponent {
 	@HostListener("window:keydown.escape")
 	onEscape() {
 		if (this.isOpen()) this.closeImageModal()
+	}
+
+	ngOnDestroy() {
+		this.cleanupObserver()
 	}
 }

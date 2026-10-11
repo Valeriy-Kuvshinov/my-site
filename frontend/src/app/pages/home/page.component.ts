@@ -4,6 +4,8 @@ import { RouterLink } from "@angular/router"
 
 import { IconName } from "../../shared/components/icon/icon.map"
 
+import { SystemStore } from "../../core/stores/system.store"
+
 import { SvgIconComponent } from "../../shared/components/icon/icon.component"
 import { ImageContainerComponent } from "../../shared/components/general/image-container.component"
 import { TechCarouselComponent } from "./components/tech/tech-carousel.component"
@@ -78,6 +80,8 @@ export default class PageComponent implements OnInit {
 	private readonly title = inject(Title)
 	private readonly meta = inject(Meta)
 
+	private readonly store = inject(SystemStore)
+
 	protected readonly highlights = HIGHLIGHTS
 	protected readonly specialties = SPECIALTIES
 
@@ -87,5 +91,9 @@ export default class PageComponent implements OnInit {
 		this.meta.updateTag({ property: "og:title", content: PAGE_TITLE })
 		this.meta.updateTag({ property: "og:description", content: PAGE_DESC })
 		this.meta.updateTag({ property: "og:url", content: PAGE_URL })
+	}
+
+	openImage(src: string) {
+		this.store.openModal("image-modal", src)
 	}
 }

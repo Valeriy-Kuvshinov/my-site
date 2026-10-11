@@ -17,11 +17,11 @@
 
 		.text {
 			.year {
-				color: var(--scdclr1);
+				color: var(--scdclr2);
 			}
 
 			.title {
-				color: var(--mnrclr3);
+				color: var(--mnrclr6);
 			}
 		}
 
@@ -49,10 +49,6 @@
 				app-svg-icon {
 					fill: var(--prmclr2);
 				}
-			}
-
-			.title {
-				color: var(--mnrclr1);
 			}
 		}
 

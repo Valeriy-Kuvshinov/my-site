@@ -1,7 +1,9 @@
 @if (isOpen()) {
-<article class="modal-wrapper flex full-center fixed full z-15">
+<article class="modal-wrapper flex flex-col full-center fixed full z-15">
 	<div
-		class="image-modal flex column relative w-h-fit"
+		#modalRef
+		class="image-modal flex column relative"
+		[class.has-scroll]="hasScrollbar()"
 		role="dialog"
 		aria-modal="true"
 		aria-label="selected image showcase modal"
@@ -10,9 +12,9 @@
 		@if (modalValue()) {
 		<app-image-container
 			[src]="modalValue()!"
-			alt=""
 			[width]="300"
-			[height]="300">
+			[height]="300"
+			class="flex full-center">
 		</app-image-container>
 		}
 

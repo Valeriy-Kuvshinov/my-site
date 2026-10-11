@@ -79,8 +79,8 @@
 
 	<app-tech-carousel></app-tech-carousel>
 
-	<article class="core flex flex-col w-full">
-		<h2 class="text-center">My Specialties</h2>
+	<article class="core flex flex-col items-center w-full">
+		<h2 class="text-family-bold">My Specialties</h2>
 
 		<ul class="grid layout-row gap-8">
 			@for (specialty of specialties; track specialty.title) {
@@ -90,6 +90,63 @@
 			</li>
 			}
 		</ul>
+	</article>
+
+	<article class="extension flex flex-col items-center w-full">
+		<div class="content grid layout-row gap-8">
+			<div class="text flex flex-col items-center gap-4">
+				<h2 class="text-family-bold">Did Not Get It</h2>
+				<p class="text-center">
+					"Did Not Get It" is a cross-browser extension for Firefox and Chrome that
+					automatically identifies, labels, and marks Gmail rejection emails as read while
+					maintaining a local "rejections skipped" counter. Soon to be available in Chrome
+					Web Store and Firefox Browser Add-ons.
+				</p>
+				<a
+					href="https://github.com/Valeriy-Kuvshinov/did-not-get-it-extension"
+					class="flex flex-row full-center gap-2"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="View the Did Not Get It extension on GitHub (opens in a new tab)">
+					<span>View on GitHub</span>
+					<app-svg-icon
+						icon="github"
+						width="24"
+						height="24">
+					</app-svg-icon>
+				</a>
+			</div>
+
+			<figure class="flex flex-col gap-2 w-full">
+				<figcaption class="text-center text-family-bold">Before</figcaption>
+				<app-image-container
+					src="/images/portfolio/extension-before.avif"
+					alt="Gmail inbox showing unread corporate emails"
+					[width]="600"
+					[height]="400"
+					class="cursor-pointer"
+					role="button"
+					tabIndex="0"
+					aria-label="View full size image of inbox before extension processing"
+					(onClickEvent)="openImage('/images/portfolio/extension-before.avif')">
+				</app-image-container>
+			</figure>
+
+			<figure class="flex flex-col gap-2 w-full">
+				<figcaption class="text-center text-family-bold">After</figcaption>
+				<app-image-container
+					src="/images/portfolio/extension-after.avif"
+					alt="Gmail inbox showing emails automatically labeled and marked as read by the extension"
+					[width]="600"
+					[height]="400"
+					class="cursor-pointer"
+					role="button"
+					tabIndex="0"
+					aria-label="View full size image of inbox after extension processing"
+					(onClickEvent)="openImage('/images/portfolio/extension-after.avif')">
+				</app-image-container>
+			</figure>
+		</div>
 	</article>
 
 	<article class="accomplishments flex flex-col items-center w-full gap-8">

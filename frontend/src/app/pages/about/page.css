@@ -18,6 +18,7 @@
 
 	.availability .content {
 		padding: 1rem;
+		max-width: 60rem;
 		border: 1px solid var(--mnrclr4);
 		border-radius: 0.75rem;
 
@@ -43,6 +44,25 @@
 		}
 	}
 
+	.creative .content .text a {
+		padding: 0.5rem 1rem;
+		margin: 0.5rem 0;
+		background: var(--prmclr3);
+		color: var(--scdclr2);
+		fill: var(--mnrclr7);
+		border: 1px solid var(--mnrclr3);
+		border-radius: 0.75rem;
+		outline: none;
+
+		&:hover,
+		&:focus-visible {
+			background: var(--mnrclr3);
+			color: var(--scdclr9);
+			fill: var(--scdclr9);
+			border-color: transparent;
+		}
+	}
+
 	@media (max-width: 900px) {
 		.intro {
 			gap: 2rem;
@@ -62,8 +82,13 @@
 		.experience,
 		.stack,
 		.availability,
-		.reason {
+		.reason,
+		.creative {
 			padding: 3rem 1rem;
+		}
+
+		.creative .content {
+			grid-template-columns: 1fr;
 		}
 	}
 
@@ -80,12 +105,17 @@
 			}
 		}
 
-		.experience,
-		.stack,
-		.availability,
-		.reason {
+		.experience .content,
+		.stack .content,
+		.availability .content,
+		.reason .content,
+		.creative .content {
 			h2 {
 				font-size: 1.5rem;
+			}
+
+			h3 {
+				font-size: 1.25rem;
 			}
 
 			p {
@@ -111,12 +141,17 @@
 			}
 		}
 
-		.experience,
-		.stack,
-		.availability,
-		.reason {
+		.experience .content,
+		.stack .content,
+		.availability .content,
+		.reason .content,
+		.creative .content {
 			h2 {
 				font-size: 2rem;
+			}
+
+			h3 {
+				font-size: 1.5rem;
 			}
 
 			p {
@@ -148,12 +183,17 @@
 		.experience,
 		.stack,
 		.availability,
-		.reason {
+		.reason,
+		.creative {
 			padding: 4rem 2rem;
 		}
 
 		.reason .content ul {
 			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.creative .content {
+			grid-template-columns: 1fr 1fr;
 		}
 	}
 }

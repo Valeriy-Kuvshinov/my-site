@@ -19,6 +19,14 @@ interface PortfolioItem {
 
 const PORTFOLIO_ITEMS: PortfolioItem[] = [
 	{
+		title: "Did Not Get It Extension",
+		description:
+			"Created to soften the blow of living through this job market in a comedic way, source code publicly available.",
+		imgSrc: "/images/portfolio/extension-after.avif",
+		imgAlt: "Screenshot of the extension showing emails automatically labeled and marked as read",
+		githubUrl: "https://github.com/Valeriy-Kuvshinov/did-not-get-it-extension",
+	},
+	{
 		title: "Noffty Productions Gaming Hub",
 		description:
 			"Built an HTML5 game hosting platform using Cloudflare R2, eliminating third-party iframe dependencies and strengthening site Content Security Policy.",
@@ -41,7 +49,7 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
 		imgSrc: "/images/portfolio/oricarlin-desktop.avif",
 		imgAlt: "Screenshot of the Ori Carlin pottery home page",
 		githubUrl: "https://github.com/TAC42/art-store",
-		note: "At this moment site is offline, thus source code is publically available.",
+		note: "Currently the site is offline, thus source code is publically available.",
 	},
 	{
 		title: "The Vision Telecom Platform",
@@ -52,9 +60,9 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
 		note: "Source code available per recruiter's request...",
 	},
 	{
-		title: "CModem Terminal Open Source",
+		title: "CModem Terminal CLI Tool",
 		description:
-			"Created a CLI project to handle modem interactions remotely more fluently, actively used in production (MyCell), source code publicly available.",
+			"Created to handle modem interactions remotely more fluently, already used in some of my production (MyCell), source code publicly available.",
 		imgSrc: "/images/portfolio/cmodem-terminal.avif",
 		imgAlt: "Screenshot of CModem Terminal in use",
 		githubUrl: "https://github.com/Valeriy-Kuvshinov/cmodem-terminal",

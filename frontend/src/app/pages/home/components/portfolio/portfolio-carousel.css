@@ -7,36 +7,30 @@
 			flex: 0 0 100%;
 			overflow: hidden;
 
-			.visual {
-				button {
-					padding: 0.5rem;
-					top: 50%;
-					background: var(--scdclr1);
-					fill: var(--scdclr8);
-					border-radius: 50%;
+			.visual button {
+				padding: 0.5rem;
+				top: 50%;
+				background: var(--scdclr1);
+				fill: var(--scdclr8);
+				border-radius: 50%;
 
-					&:first-child {
-						left: 1rem;
-						transform: translateY(-50%) rotate(180deg);
-					}
-
-					&:last-child {
-						right: 1rem;
-						transform: translateY(-50%);
-					}
-
-					&:disabled {
-						opacity: 0;
-					}
-
-					&:hover {
-						background: var(--scdclr8);
-						fill: var(--mnrclr4);
-					}
+				&:first-child {
+					left: 1rem;
+					transform: translateY(-50%) rotate(180deg);
 				}
 
-				app-image-container {
-					cursor: pointer;
+				&:last-child {
+					right: 1rem;
+					transform: translateY(-50%);
+				}
+
+				&:disabled {
+					opacity: 0;
+				}
+
+				&:hover {
+					background: var(--scdclr8);
+					fill: var(--mnrclr4);
 				}
 			}
 

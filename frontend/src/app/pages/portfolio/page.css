@@ -8,10 +8,6 @@
 		var(--prmclr3)
 	);
 
-	.intro .text p {
-		max-width: 75rem;
-	}
-
 	.gallery .projects {
 		max-width: 100rem;
 		column-gap: 2rem;
@@ -21,10 +17,6 @@
 			border-radius: 0.75rem;
 			overflow: hidden;
 			margin-bottom: 2rem;
-
-			app-image-container {
-				cursor: pointer;
-			}
 
 			.content {
 				padding: 1rem;
@@ -103,15 +95,11 @@
 			padding: 3rem 1rem;
 		}
 
-		.gallery {
-			overflow: hidden;
+		.gallery .projects {
+			column-width: 100%;
 
-			.projects {
-				column-width: 100%;
-
-				.card .content h2 {
-					font-size: 1.25rem;
-				}
+			.card .content h2 {
+				font-size: 1.25rem;
 			}
 		}
 

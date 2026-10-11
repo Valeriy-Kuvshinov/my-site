@@ -120,29 +120,76 @@
 		}
 	}
 
-	.accomplishments {
+	.extension {
 		background: linear-gradient(
 			180deg,
 			var(--scdclr9),
+			var(--scdclr9),
+			var(--scdclr8),
+			var(--scdclr7),
+			var(--scdclr8)
+		);
+
+		.text {
+			grid-column: 1 / -1;
+
+			p {
+				max-width: 75rem;
+			}
+
+			a {
+				padding: 0.5rem 1rem;
+				margin: 0.5rem 0;
+				background: var(--prmclr3);
+				color: var(--scdclr2);
+				fill: var(--scdclr2);
+				border: 1px solid var(--scdclr2);
+				border-radius: 0.75rem;
+				outline: none;
+
+				&:hover,
+				&:focus-visible {
+					background: var(--scdclr2);
+					color: var(--scdclr9);
+					fill: var(--scdclr9);
+					border-color: transparent;
+				}
+			}
+		}
+
+		figure {
+			padding-block-start: 0.5rem;
+			background: var(--scdclr7);
+			border-radius: 0.75rem;
+			overflow: hidden;
+		}
+	}
+
+	.accomplishments {
+		background: linear-gradient(
+			180deg,
 			var(--scdclr8),
 			var(--scdclr8),
-			var(--scdclr8),
-			var(--prmclr3)
+			var(--scdclr7),
+			var(--scdclr7),
+			var(--scdclr8)
 		);
 
 		a {
 			margin-block-start: 1rem;
 			padding: 0.75rem 1rem;
 			border-radius: 0.75rem;
-			background: var(--scdclr2);
-			color: var(--scdclr9);
-			fill: var(--scdclr9);
+			background: var(--prmclr3);
+			color: var(--scdclr2);
+			fill: var(--scdclr2);
+			border: 1px solid var(--scdclr2);
 
 			&:hover,
 			&:focus-visible {
-				background: var(--scdclr7);
-				color: var(--scdclr1);
-				fill: var(--scdclr1);
+				background: var(--scdclr2);
+				color: var(--scdclr9);
+				fill: var(--scdclr9);
+				border-color: transparent;
 			}
 		}
 	}
@@ -150,10 +197,10 @@
 	.a11y {
 		background: linear-gradient(
 			180deg,
+			var(--scdclr8),
+			var(--scdclr9),
 			var(--prmclr3),
-			var(--scdclr9),
-			var(--scdclr9),
-			var(--scdclr9),
+			var(--prmclr3),
 			var(--prmclr1)
 		);
 
@@ -206,12 +253,17 @@
 
 		.core,
 		.a11y,
-		.highlights {
+		.highlights,
+		.extension {
 			padding: 3rem 1rem;
 		}
 
 		.core ul {
 			grid-template-columns: 1fr 1fr;
+		}
+
+		.extension .content {
+			grid-template-columns: 1fr;
 		}
 
 		.accomplishments {
@@ -320,8 +372,13 @@
 		.core,
 		.a11y,
 		.accomplishments,
-		.highlights {
+		.highlights,
+		.extension {
 			padding: 4rem 2rem;
+		}
+
+		.extension .content {
+			grid-template-columns: 1fr 1fr;
 		}
 
 		.a11y {
