@@ -42,7 +42,7 @@ const SERVICES: ServiceCard[] = [
 	},
 	{
 		icon: "magGlass",
-		title: "A11y Audits & Code Fixes",
+		title: "A11y Audits & ARIA Fixes",
 		price: "From $300",
 		description:
 			"Automated accessibility widgets do not protect you from lawsuits. True accessibility requires fixing the underlying code so keyboards and screen readers can actually navigate it.",
@@ -56,7 +56,7 @@ const SERVICES: ServiceCard[] = [
 	{
 		icon: "fix",
 		title: "System Rescue & Bug Fixing",
-		price: "$20/hr",
+		price: "$60/hr",
 		description:
 			"Got a website that is crashing, running slow, or full of bugs? I can jump in, clean up the technical debt, and make your system stable and secure.",
 		skills: [
@@ -69,7 +69,7 @@ const SERVICES: ServiceCard[] = [
 	{
 		icon: "support",
 		title: "Remote Digital Assistance",
-		price: "$10/hr",
+		price: "$20/hr",
 		description:
 			"Dedicated help for individuals who get blocked by annoying captchas, confusing government portals, or inaccessible web forms.",
 		skills: [
