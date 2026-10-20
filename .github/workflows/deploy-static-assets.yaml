@@ -37,6 +37,10 @@ jobs:
                   cf_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
                   disable_bot_fight_mode: "true"
 
+            # Delay Build
+            - name: Await Edge Network Propagation
+              run: sleep 15
+
             - name: Compile Angular Static Infrastructure
               working-directory: ./frontend
               run: npm run build

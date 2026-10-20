@@ -46,5 +46,8 @@ export class TechCarouselComponent {
 		{ name: "aws", label: "Amazon Web Services" },
 		{ name: "mongo", label: "MongoDB" },
 		{ name: "postgresql", label: "PostgreSQL" },
+		{ name: "rasberry", label: "Rasberry Pi" },
+		{ name: "claude", label: "Claude Code" },
+		{ name: "chatgpt", label: "ChatGPT" },
 	]
 }

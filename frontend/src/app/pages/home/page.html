@@ -18,7 +18,10 @@
 				<h1 class="text-family-bold">
 					Scalable Web Systems & Uncompromising Accessibility
 				</h1>
-				<h2>Valeriy Kuvshinov</h2>
+				<h2
+					[style.animation-play-state]="store.a11yPreferences().pauseMotion ? 'paused' : 'running'">
+					<span>Valeriy Kuvshinov</span>
+				</h2>
 				<p>
 					Engineering robust full-stack applications, resolving complex system
 					architecture challenges, and guaranteeing digital inclusivity through rigorous

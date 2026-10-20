@@ -13,7 +13,7 @@
 			&:hover,
 			&:focus-visible,
 			&.active {
-				color: var(--mnrclr8);
+				color: var(--mnrclr2);
 			}
 
 			&.active {
