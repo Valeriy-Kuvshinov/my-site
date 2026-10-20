@@ -18,8 +18,7 @@
 				<h1 class="text-family-bold">
 					Scalable Web Systems & Uncompromising Accessibility
 				</h1>
-				<h2
-					[style.animation-play-state]="store.a11yPreferences().pauseMotion ? 'paused' : 'running'">
+				<h2 [class.motion-paused]="store.a11yPreferences().pauseMotion">
 					<span>Valeriy Kuvshinov</span>
 				</h2>
 				<p>

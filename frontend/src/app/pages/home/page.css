@@ -19,6 +19,11 @@
 					display: inline-block;
 					animation: blink 1s step-end infinite;
 				}
+
+				&.motion-paused::after {
+					animation: none !important;
+					opacity: 0;
+				}
 			}
 
 			p {
