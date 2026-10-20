@@ -63,12 +63,13 @@
 			}
 		}
 
-		app-image-container {
+		.about-link {
 			aspect-ratio: 1;
 			border-radius: 100%;
 			overflow: hidden;
 
-			&:hover {
+			&:hover,
+			&:focus-visible {
 				scale: 1.1;
 			}
 		}
@@ -137,7 +138,7 @@
 				max-width: 75rem;
 			}
 
-			a {
+			.links a {
 				padding: 0.5rem 1rem;
 				margin: 0.5rem 0;
 				background: var(--prmclr3);
@@ -245,7 +246,7 @@
 				var(--scdclr6)
 			);
 
-			app-image-container {
+			.about-link {
 				max-width: 10rem;
 				align-self: center;
 			}
@@ -264,6 +265,10 @@
 
 		.extension .content {
 			grid-template-columns: 1fr;
+
+			.links {
+				grid-template-columns: 1fr 1fr;
+			}
 		}
 
 		.accomplishments {
@@ -289,18 +294,13 @@
 	}
 
 	@media (max-width: 600px) {
-		.hero {
-			.content h1 {
+		.hero .content {
+			h1 {
 				font-size: 1.75rem;
 			}
 
 			.cta {
-				flex-direction: column;
-
-				a {
-					width: 100%;
-					max-width: 20rem;
-				}
+				grid-template-columns: 1fr 1fr;
 			}
 		}
 
@@ -323,13 +323,14 @@
 	}
 
 	@media (min-width: 601px) {
-		.hero {
-			.content p {
+		.hero .content {
+			p {
 				font-size: 1.25rem;
 			}
 
 			.cta {
-				flex-direction: row;
+				width: fit-content;
+				grid-template-columns: repeat(3, auto);
 			}
 		}
 
@@ -357,7 +358,7 @@
 				var(--scdclr9) 50%
 			);
 
-			app-image-container {
+			.about-link {
 				max-width: 15rem;
 				position: absolute;
 				top: 15vh;
@@ -379,6 +380,10 @@
 
 		.extension .content {
 			grid-template-columns: 1fr 1fr;
+
+			.links {
+				grid-template-columns: repeat(3, 1fr);
+			}
 		}
 
 		.a11y {

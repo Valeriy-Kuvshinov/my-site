@@ -1,13 +1,17 @@
 <section class="page-contents flex flex-col items-center relative w-h-full">
 	<article class="hero flex flex-col justify-center w-full min-h-screen relative">
-		<app-image-container
-			src="/images/about.avif"
-			alt="Valeriy Kuvshinov"
-			[width]="240"
-			[height]="240"
-			[priority]="true"
-			class="fast-trans z-1">
-		</app-image-container>
+		<a
+			routerLink="/about/"
+			class="about-link flex flex-row full-center gap-2">
+			<app-image-container
+				src="/images/about.avif"
+				alt="Valeriy Kuvshinov sitting in a conference"
+				[width]="240"
+				[height]="240"
+				[priority]="true"
+				class="fast-trans z-1">
+			</app-image-container>
+		</a>
 
 		<div class="content-wrapper w-full layout-row">
 			<div class="content flex flex-col w-full gap-6">
@@ -25,7 +29,7 @@
 					digital environments that are secure, lightning-fast, and accessible by design.
 				</p>
 
-				<div class="cta flex items-center gap-8">
+				<div class="cta grid items-center gap-8">
 					<a
 						routerLink="/contact/"
 						class="flex flex-row full-center gap-2">
@@ -45,11 +49,11 @@
 							height="24"></app-svg-icon>
 					</a>
 					<a
-						href="/cv/Valeriy-Kuvshinov-Resume-Full-Stack.pdf"
-						download="Valeriy-Kuvshinov-Resume-Full-Stack.pdf"
+						href="/cv/Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
+						download="Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
 						class="flex flex-row full-center gap-2"
-						aria-label="Download Valeriy Kuvshinov's CV as a PDF">
-						<span>CV</span>
+						aria-label="Download Valeriy Kuvshinov's resume as a PDF">
+						<span>Resume</span>
 						<app-svg-icon
 							icon="download"
 							width="24"
@@ -99,22 +103,50 @@
 				<p class="text-center">
 					"Did Not Get It" is a cross-browser extension for Firefox and Chrome that
 					automatically identifies, labels, and marks Gmail rejection emails as read while
-					maintaining a local "rejections skipped" counter. Soon to be available in Chrome
-					Web Store and Firefox Browser Add-ons.
+					maintaining a local "rejections skipped" counter. Available now in Chrome Web
+					Store and Firefox Browser Add-ons.
 				</p>
-				<a
-					href="https://github.com/Valeriy-Kuvshinov/did-not-get-it-extension"
-					class="flex flex-row full-center gap-2"
-					target="_blank"
-					rel="noopener noreferrer"
-					aria-label="View the Did Not Get It extension on GitHub (opens in a new tab)">
-					<span>View on GitHub</span>
-					<app-svg-icon
-						icon="github"
-						width="24"
-						height="24">
-					</app-svg-icon>
-				</a>
+				<div class="links grid full-center gap-4">
+					<a
+						href="https://chromewebstore.google.com/detail/did-not-get-it/cldhhfgpefggchgbjgcfkilkpakeelih"
+						class="flex flex-row full-center gap-2"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Get the Did Not Get It extension at Chrome Web Store (opens in a new tab)">
+						<span>Get for Chrome</span>
+						<app-svg-icon
+							icon="chrome"
+							width="24"
+							height="24">
+						</app-svg-icon>
+					</a>
+					<a
+						href="https://github.com/Valeriy-Kuvshinov/did-not-get-it-extension"
+						class="flex flex-row full-center gap-2"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="View the Did Not Get It extension on GitHub (opens in a new tab)">
+						<span>View on GitHub</span>
+						<app-svg-icon
+							icon="github"
+							width="24"
+							height="24">
+						</app-svg-icon>
+					</a>
+					<a
+						href="https://addons.mozilla.org/en-US/firefox/addon/did-not-get-it/"
+						class="flex flex-row full-center gap-2"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Get the Did Not Get It extension at Firefox Add-ons (opens in a new tab)">
+						<span>Get for Firefox</span>
+						<app-svg-icon
+							icon="firefox"
+							width="24"
+							height="24">
+						</app-svg-icon>
+					</a>
+				</div>
 			</div>
 
 			<figure class="flex flex-col gap-2 w-full">

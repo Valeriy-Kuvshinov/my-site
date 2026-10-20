@@ -34,6 +34,7 @@ export class TechCarouselComponent {
 		{ name: "python", label: "Python" },
 		{ name: "react", label: "React" },
 		{ name: "angular", label: "Angular" },
+		{ name: "svelte", label: "Svelte" },
 		{ name: "tailwind", label: "TailwindCSS" },
 		{ name: "nodejs", label: "Node.js" },
 		{ name: "nextjs", label: "Next.js" },

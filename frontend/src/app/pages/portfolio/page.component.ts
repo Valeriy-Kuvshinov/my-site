@@ -22,7 +22,7 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
 		title: "Did Not Get It Extension",
 		description:
 			"Created to soften the blow of living through this job market in a comedic way, source code publicly available.",
-		imgSrc: "/images/portfolio/extension-after.avif",
+		imgSrc: "/images/portfolio/did-not-get-it-after.avif",
 		imgAlt: "Screenshot of the extension showing emails automatically labeled and marked as read",
 		githubUrl: "https://github.com/Valeriy-Kuvshinov/did-not-get-it-extension",
 	},
