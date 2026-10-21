@@ -1,9 +1,10 @@
-import { Component, computed, inject } from "@angular/core"
+import { Component, computed, DOCUMENT, inject } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 
-import { SystemStore } from "../../core/stores/system.store"
-
+import { SITE_URL } from "../../shared/constants/util"
 import { SOCIAL_LINKS } from "../../shared/constants/socials"
+
+import { SystemStore } from "../../core/stores/system.store"
 
 import { SvgIconComponent } from "../../shared/components/icon/icon.component"
 import { ContactFormComponent } from "./components/form.component"
@@ -26,6 +27,7 @@ const PAGE_DESC = "Get in Touch with Kuvshinov Software."
 export default class PageComponent {
 	private readonly title = inject(Title)
 	private readonly meta = inject(Meta)
+	private readonly document = inject(DOCUMENT)
 
 	private readonly store = inject(SystemStore)
 
@@ -49,6 +51,21 @@ export default class PageComponent {
 		this.meta.updateTag({ name: "description", content: PAGE_DESC })
 		this.meta.updateTag({ property: "og:title", content: PAGE_TITLE })
 		this.meta.updateTag({ property: "og:description", content: PAGE_DESC })
-		this.meta.updateTag({ property: "og:url", content: PAGE_URL })
+
+		const absoluteUrl = `${SITE_URL}${PAGE_URL}`
+		this.meta.updateTag({ property: "og:url", content: absoluteUrl })
+
+		this.setCanonicalUrl(absoluteUrl)
+	}
+
+	private setCanonicalUrl(url: string) {
+		let link: HTMLLinkElement | null = this.document.querySelector('link[rel="canonical"]')
+
+		if (!link) {
+			link = this.document.createElement("link")
+			link.setAttribute("rel", "canonical")
+			this.document.head.appendChild(link)
+		}
+		link.setAttribute("href", url)
 	}
 }

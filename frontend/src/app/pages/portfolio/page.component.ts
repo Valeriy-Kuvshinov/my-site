@@ -1,6 +1,8 @@
-import { Component, inject, OnInit } from "@angular/core"
+import { Component, DOCUMENT, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 import { RouterLink } from "@angular/router"
+
+import { SITE_URL } from "../../shared/constants/util"
 
 import { SystemStore } from "../../core/stores/system.store"
 
@@ -96,6 +98,7 @@ const PAGE_DESC = "Browse through the projects, clients and more that have been 
 export default class PageComponent implements OnInit {
 	private readonly title = inject(Title)
 	private readonly meta = inject(Meta)
+	private readonly document = inject(DOCUMENT)
 
 	private readonly store = inject(SystemStore)
 
@@ -106,7 +109,22 @@ export default class PageComponent implements OnInit {
 		this.meta.updateTag({ name: "description", content: PAGE_DESC })
 		this.meta.updateTag({ property: "og:title", content: PAGE_TITLE })
 		this.meta.updateTag({ property: "og:description", content: PAGE_DESC })
-		this.meta.updateTag({ property: "og:url", content: PAGE_URL })
+
+		const absoluteUrl = `${SITE_URL}${PAGE_URL}`
+		this.meta.updateTag({ property: "og:url", content: absoluteUrl })
+
+		this.setCanonicalUrl(absoluteUrl)
+	}
+
+	private setCanonicalUrl(url: string) {
+		let link: HTMLLinkElement | null = this.document.querySelector('link[rel="canonical"]')
+
+		if (!link) {
+			link = this.document.createElement("link")
+			link.setAttribute("rel", "canonical")
+			this.document.head.appendChild(link)
+		}
+		link.setAttribute("href", url)
 	}
 
 	openImage(src: string) {

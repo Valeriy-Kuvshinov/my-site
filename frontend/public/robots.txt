@@ -1,4 +1,5 @@
 User-Agent: *
 Allow: /
+Disallow: /not-found
 
 Sitemap: https://kuvware.com/sitemap.xml

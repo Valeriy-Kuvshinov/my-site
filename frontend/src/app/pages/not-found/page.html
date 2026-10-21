@@ -1,0 +1,27 @@
+<section class="page-contents flex flex-col items-center full-center w-h-full gap-8 min-h-screen">
+	<h1 class="text-family-bold text-center">Oops!</h1>
+
+	<h2 class="text-center">Looks like you got lost on my site (404)</h2>
+
+	<p>No worries, just click the button to return safely to my other content</p>
+
+	<a
+		routerLink="/"
+		class="flex flex-row items-center gap-2">
+		<span>Go Home</span>
+		<app-svg-icon
+			icon="home"
+			width="24"
+			height="24">
+		</app-svg-icon>
+	</a>
+
+	<app-image-container
+		src="/images/error.avif"
+		alt=""
+		[width]="240"
+		[height]="240">
+	</app-image-container>
+
+	<div class="floor"></div>
+</section>

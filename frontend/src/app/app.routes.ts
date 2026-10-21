@@ -33,4 +33,8 @@ export const routes: Routes = [
 		path: "terms",
 		loadComponent: () => import("./pages/terms/page.component"),
 	},
+	{
+		path: "**",
+		loadComponent: () => import("./pages/not-found/page.component"),
+	},
 ]
