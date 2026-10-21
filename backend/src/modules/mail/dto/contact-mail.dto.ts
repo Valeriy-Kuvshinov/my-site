@@ -5,12 +5,11 @@ import {
 	Matches,
 	IsEmail,
 	IsNotEmpty,
-	IsOptional,
 	IsBoolean,
 	Equals,
 } from "class-validator"
 
-export class ContactMailDto {
+export class ContactFormDto {
 	@IsString()
 	@MinLength(3)
 	@MaxLength(30)
@@ -19,7 +18,7 @@ export class ContactMailDto {
 
 	@IsEmail()
 	@MinLength(5)
-	@MaxLength(50)
+	@MaxLength(64)
 	email: string
 
 	@IsString()
@@ -43,6 +42,7 @@ export class ContactMailDto {
 	consent: boolean
 
 	@IsString()
-	@IsOptional()
-	turnstileToken?: string
+	turnstileToken: string
 }
+
+export type ContactMailPayload = Omit<ContactFormDto, "turnstileToken" | "consent">

@@ -3,7 +3,7 @@ import { ConfigService } from "@nestjs/config"
 import { PinoLogger } from "nestjs-pino"
 import { createTransport, type Transporter } from "nodemailer"
 
-import { ContactMailDto } from "./dto/contact-mail.dto.js"
+import { ContactMailPayload } from "./dto/contact-mail.dto.js"
 
 import { getAdminContactTemplate, getUserContactTemplate } from "./templates/contact.template.js"
 
@@ -37,12 +37,12 @@ export class MailService {
 		})
 	}
 
-	async processContactRequest(data: ContactMailDto): Promise<void> {
+	async processContactRequest(data: ContactMailPayload): Promise<void> {
 		this.logger.debug(`Sending contact emails for: ${data.email}`)
 		await Promise.all([this.notifyAdmin(data), this.notifyUser(data)])
 	}
 
-	private async notifyAdmin(data: ContactMailDto): Promise<void> {
+	private async notifyAdmin(data: ContactMailPayload): Promise<void> {
 		const { name, email, title, requestType, message } = data
 
 		const senderMail = this.configService.getOrThrow<string>("SENDER_MAIL_ADDRESS")
@@ -59,7 +59,7 @@ export class MailService {
 		return this.sendEmail(adminMailOptions)
 	}
 
-	private async notifyUser(data: ContactMailDto): Promise<void> {
+	private async notifyUser(data: ContactMailPayload): Promise<void> {
 		const { name, email, title } = data
 
 		const noReplyMail = this.configService.getOrThrow<string>("NOREPLY_MAIL_ADDRESS")

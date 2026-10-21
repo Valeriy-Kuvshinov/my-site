@@ -1,6 +1,6 @@
 import { Module } from "@nestjs/common"
 
-import { TurnstileService } from "../../infrastructure/turnstile/turnstile.service.js"
+import { TurnstileService } from "../../infrastructure/cloudflare/turnstile.service.js"
 
 import { MailService } from "./mail.service.js"
 

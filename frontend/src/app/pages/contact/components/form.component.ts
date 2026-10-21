@@ -77,7 +77,7 @@ export class ContactFormComponent implements OnInit {
 				Validators.required,
 				Validators.email,
 				Validators.minLength(5),
-				Validators.maxLength(50),
+				Validators.maxLength(64),
 			],
 		],
 		title: [
