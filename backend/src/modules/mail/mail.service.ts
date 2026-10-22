@@ -3,9 +3,11 @@ import { ConfigService } from "@nestjs/config"
 import { PinoLogger } from "nestjs-pino"
 import { createTransport, type Transporter } from "nodemailer"
 
-import { ContactMailPayload } from "./dto/contact-mail.dto.js"
+import { ContactFormDto } from "./dto/contact-mail.dto.js"
 
 import { getAdminContactTemplate, getUserContactTemplate } from "./templates/contact.template.js"
+
+type ContactMailPayload = Omit<ContactFormDto, "turnstileToken" | "consent">
 
 interface MailOptions {
 	from: string

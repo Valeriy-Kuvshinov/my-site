@@ -44,5 +44,3 @@ export class ContactFormDto {
 	@IsString()
 	turnstileToken: string
 }
-
-export type ContactMailPayload = Omit<ContactFormDto, "turnstileToken" | "consent">

@@ -12,9 +12,8 @@
 		@if (modalValue()) {
 		<app-image-container
 			[src]="modalValue()!"
-			[width]="300"
-			[height]="300"
-			class="flex full-center">
+			[objectFit]="objectFit()"
+			class="flex full-center w-h-full">
 		</app-image-container>
 		}
 

@@ -10,9 +10,9 @@ import {
 } from "@angular/core"
 import { RouterLink } from "@angular/router"
 
-import { SystemStore } from "../../core/stores/system.store"
+import { SystemStore } from "@/core/stores/system.store"
 
-import { SvgIconComponent } from "../../shared/components/icon/icon.component"
+import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 import { ScaleOptionComponent, ScaleLevel } from "./subcomponents/scale-option/scale-option.component"
 import { ToggleOptionComponent } from "./subcomponents/toggle-option/toggle-option.component"
 

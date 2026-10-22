@@ -1,8 +1,8 @@
 import { Component, ChangeDetectionStrategy, Input, output } from "@angular/core"
 
-import { IconName } from "../../../../shared/components/icon/icon.map"
+import { IconName } from "@/shared/components/icon/icon.map"
 
-import { SvgIconComponent } from "../../../../shared/components/icon/icon.component"
+import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 
 @Component({
 	selector: "button[app-toggle-option]",

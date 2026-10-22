@@ -16,6 +16,33 @@
 		}
 	}
 
+	.creative .content {
+		.text a {
+			padding: 0.5rem 1rem;
+			margin: 0.5rem 0;
+			background: var(--prmclr3);
+			color: var(--scdclr2);
+			fill: var(--mnrclr7);
+			border: 1px solid var(--mnrclr3);
+			border-radius: 0.75rem;
+			outline: none;
+
+			&:hover,
+			&:focus-visible {
+				background: var(--mnrclr3);
+				color: var(--scdclr9);
+				fill: var(--scdclr9);
+				border-color: transparent;
+			}
+		}
+
+		.video-wrapper {
+			aspect-ratio: 16/9;
+			border-radius: 0.75rem;
+			overflow: hidden;
+		}
+	}
+
 	.availability .content {
 		padding: 1rem;
 		max-width: 60rem;
@@ -41,25 +68,6 @@
 				color: var(--scdclr1);
 				fill: var(--scdclr1);
 			}
-		}
-	}
-
-	.creative .content .text a {
-		padding: 0.5rem 1rem;
-		margin: 0.5rem 0;
-		background: var(--prmclr3);
-		color: var(--scdclr2);
-		fill: var(--mnrclr7);
-		border: 1px solid var(--mnrclr3);
-		border-radius: 0.75rem;
-		outline: none;
-
-		&:hover,
-		&:focus-visible {
-			background: var(--mnrclr3);
-			color: var(--scdclr9);
-			fill: var(--scdclr9);
-			border-color: transparent;
 		}
 	}
 

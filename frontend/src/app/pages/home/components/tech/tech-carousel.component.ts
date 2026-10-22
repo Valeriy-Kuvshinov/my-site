@@ -1,8 +1,8 @@
 import { Component, ChangeDetectionStrategy, computed, inject } from "@angular/core"
 
-import { SystemStore } from "../../../../core/stores/system.store"
-
 import { IconName } from "../../../../shared/components/icon/icon.map"
+
+import { SystemStore } from "../../../../core/stores/system.store"
 
 import { SvgIconComponent } from "../../../../shared/components/icon/icon.component"
 

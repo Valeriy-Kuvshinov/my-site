@@ -10,10 +10,10 @@ import {
 } from "@angular/core"
 import { RouterLink, RouterLinkActive } from "@angular/router"
 
-import { SystemStore } from "../../../core/stores/system.store"
+import { SystemStore } from "@/core/stores/system.store"
 
-import { ClickOutsideDirective } from "../../directives/click-outside.directive"
-import { FocusTrapDirective } from "../../directives/focus-trap.directive"
+import { ClickOutsideDirective } from "@/shared/directives/click-outside.directive"
+import { FocusTrapDirective } from "@/shared/directives/focus-trap.directive"
 
 import { SvgIconComponent } from "../icon/icon.component"
 import { ImageContainerComponent } from "../general/image-container.component"

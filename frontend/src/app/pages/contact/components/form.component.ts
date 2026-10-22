@@ -3,26 +3,19 @@ import { FormBuilder, Validators, ReactiveFormsModule, FormControl } from "@angu
 import { NgxTurnstileModule, NgxTurnstileComponent } from "ngx-turnstile"
 import { RouterLink } from "@angular/router"
 
-import { environment } from "../../../../environments/environment.development"
+import { ContactFormData } from "@/shared/interfaces/form"
+import { IconName } from "@/shared/components/icon/icon.map"
 
-import { ContactMailForm } from "../../../shared/interfaces/form"
-import { IconName } from "../../../shared/components/icon/icon.map"
+import { environment } from "@environments/environment"
 
-import { MailService } from "../../../core/services/api/mail/mail.service"
+import { MailService } from "@/core/services/api/mail/mail.service"
 
-import { InputAreaComponent } from "../../../shared/components/form/input-area/input-area.component"
-import { SelectAreaComponent } from "../../../shared/components/form/select-area/select-area.component"
-import { SvgIconComponent } from "../../../shared/components/icon/icon.component"
-import { LoadingComponent } from "../../../shared/components/loading/loading.component"
+import { buildContactForm } from "./form.factory"
 
-interface FormValues {
-	name: string
-	email: string
-	title: string
-	requestType: string
-	consent: boolean
-	message: string
-}
+import { InputAreaComponent } from "@/shared/components/form/input-area/input-area.component"
+import { SelectAreaComponent } from "@/shared/components/form/select-area/select-area.component"
+import { SvgIconComponent } from "@/shared/components/icon/icon.component"
+import { LoadingComponent } from "@/shared/components/loading/loading.component"
 
 @Component({
 	selector: "form[app-contact-form]",
@@ -47,7 +40,7 @@ export class ContactFormComponent implements OnInit {
 	private readonly fb = inject(FormBuilder)
 	private readonly mailService = inject(MailService)
 
-	@Input({ required: true }) initialValues!: FormValues
+	@Input({ required: true }) initialValues!: ContactFormData
 
 	@ViewChild(NgxTurnstileComponent) turnstileRef!: NgxTurnstileComponent
 
@@ -61,46 +54,7 @@ export class ContactFormComponent implements OnInit {
 
 	readonly isFormBusy = computed(() => this.isProcessing() || this.sendMailMutation.isPending())
 
-	readonly form = this.fb.nonNullable.group({
-		name: [
-			"",
-			[
-				Validators.required,
-				Validators.minLength(3),
-				Validators.maxLength(30),
-				Validators.pattern(/^[a-zA-Z\s'.-]+$/),
-			],
-		],
-		email: [
-			"",
-			[
-				Validators.required,
-				Validators.email,
-				Validators.minLength(5),
-				Validators.maxLength(64),
-			],
-		],
-		title: [
-			"",
-			[
-				Validators.required,
-				Validators.minLength(3),
-				Validators.maxLength(50),
-				Validators.pattern(/^[a-zA-Z0-9\s.\-!?']+$/),
-			],
-		],
-		requestType: ["", Validators.required],
-		message: [
-			"",
-			[
-				Validators.required,
-				Validators.minLength(15),
-				Validators.maxLength(600),
-				Validators.pattern(/^[a-zA-Z0-9\s.\-!?@#$',*;:]+$/),
-			],
-		],
-		consent: [false, Validators.requiredTrue],
-	})
+	readonly form = buildContactForm(this.fb)
 
 	ngOnInit() {
 		this.form.patchValue(this.initialValues)
@@ -154,7 +108,7 @@ export class ContactFormComponent implements OnInit {
 			this.isProcessing.set(false)
 			return
 		}
-		const formData: ContactMailForm = {
+		const formData: ContactFormData = {
 			...this.form.getRawValue(),
 			turnstileToken: this.turnstileToken()!,
 		}

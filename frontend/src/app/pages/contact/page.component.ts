@@ -1,6 +1,7 @@
 import { Component, computed, DOCUMENT, inject } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 
+import { ContactFormData } from "../../shared/interfaces/form"
 import { SITE_URL } from "../../shared/constants/util"
 import { SOCIAL_LINKS } from "../../shared/constants/socials"
 
@@ -33,13 +34,14 @@ export default class PageComponent {
 
 	protected readonly socials = SOCIAL_LINKS
 
-	protected readonly defaultValues = {
+	protected readonly defaultValues: ContactFormData = {
 		name: "",
 		email: "",
 		title: "",
 		requestType: "Q&A",
 		message: "",
 		consent: false,
+		turnstileToken: "",
 	}
 
 	protected readonly socialIconSize = computed(() =>

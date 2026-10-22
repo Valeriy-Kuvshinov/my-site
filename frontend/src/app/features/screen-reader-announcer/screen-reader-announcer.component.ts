@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, inject } from "@angular/core"
 
-import { SystemStore } from "../../core/stores/system.store"
+import { SystemStore } from "@/core/stores/system.store"
 
 // Display either Polite/passive announcements or Assertive/critical announcements
 @Component({

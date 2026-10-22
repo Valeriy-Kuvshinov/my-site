@@ -2,7 +2,7 @@ import { Component, DOCUMENT, inject, OnInit } from "@angular/core"
 import { Meta, Title } from "@angular/platform-browser"
 import { RouterLink } from "@angular/router"
 
-import { SITE_URL } from "../../shared/constants/util"
+import { SITE_URL } from "@/shared/constants/util"
 
 const PAGE_TITLE = "Privacy Policy | Did Not Get It"
 const PAGE_URL = "/privacy-policy/"

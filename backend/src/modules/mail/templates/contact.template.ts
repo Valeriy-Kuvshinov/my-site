@@ -6,8 +6,7 @@ interface TemplateData {
 	message: string
 }
 
-// const SITE_LOGO =
-// 	"https://res.cloudinary.com/djzid7ags/image/upload/v1719919435/ydjn6p0djqwbkko4zqts.png"
+const SITE_LOGO = "https://res.cloudinary.com/oee6altn/image/upload/v1792666160/small_logo.png"
 
 export function getAdminContactTemplate(data: TemplateData): string {
 	const { name, requestType, message, email } = data
@@ -43,7 +42,7 @@ function getEmailBodyTemplate(content: string): string {
     <div style="display: flex; height: 100%; margin: 0 auto; max-width:800px;">
         <div style="width: 100%; padding: 20px; font-size: 1rem; color: #0a0a0a;">
             <a href="https://kuvware.com" style="display: block; width: fit-content; margin: 0 auto;">
-                <span>kuvware.com</span>
+                <img src="${SITE_LOGO}" alt="Kuvware logo" style="height: 48px; width: 64px;">
             </a>
             ${content}
             <p>Sincerely,<br>Kuvshinov Software<br></p>

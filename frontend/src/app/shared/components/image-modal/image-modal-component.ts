@@ -11,10 +11,10 @@ import {
 	signal,
 } from "@angular/core"
 
-import { SystemStore } from "../../../core/stores/system.store"
+import { SystemStore } from "@/core/stores/system.store"
 
-import { ClickOutsideDirective } from "../../directives/click-outside.directive"
-import { FocusTrapDirective } from "../../directives/focus-trap.directive"
+import { ClickOutsideDirective } from "@/shared/directives/click-outside.directive"
+import { FocusTrapDirective } from "@/shared/directives/focus-trap.directive"
 
 import { ImageContainerComponent } from "../general/image-container.component"
 import { SvgIconComponent } from "../icon/icon.component"
@@ -36,8 +36,11 @@ export class ImageModalComponent implements OnDestroy {
 	@ViewChild("modalRef") modalRef?: ElementRef<HTMLDivElement>
 	@ViewChild("closeBtn") closeBtnRef?: ElementRef<HTMLButtonElement>
 
+	private readonly isMobile = computed(() => this.store.deviceType() !== "desktop")
 	private readonly isOpen = computed(() => this.store.activeModals().includes("image-modal"))
 	protected readonly modalValue = computed(() => this.store.modalValues()["image-modal"] || null)
+
+	protected readonly objectFit = computed(() => (this.isMobile() ? "contain" : "cover"))
 
 	readonly hasScrollbar = signal(false)
 

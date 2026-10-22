@@ -13,9 +13,10 @@
 		padding: 1rem 1rem;
 		background: var(--scdclr8);
 
-		a {
-			max-width: 4.5rem;
-			max-height: 3.5rem;
+		a app-image-container {
+			width: 56px;
+			height: 46px;
+			aspect-ratio: 1;
 		}
 
 		button {

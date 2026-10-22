@@ -1,4 +1,5 @@
 import { Component, OnInit, signal } from "@angular/core"
+
 import { ImageContainerComponent } from "../general/image-container.component"
 
 const LOADING_PHRASES = [

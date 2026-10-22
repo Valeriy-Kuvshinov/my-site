@@ -2,12 +2,12 @@ import { Component, DOCUMENT, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 import { RouterLink } from "@angular/router"
 
-import { SITE_URL } from "../../shared/constants/util"
+import { SITE_URL } from "@/shared/constants/util"
 
-import { SystemStore } from "../../core/stores/system.store"
+import { SystemStore } from "@/core/stores/system.store"
 
-import { ImageContainerComponent } from "../../shared/components/general/image-container.component"
-import { SvgIconComponent } from "../../shared/components/icon/icon.component"
+import { ImageContainerComponent } from "@/shared/components/general/image-container.component"
+import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 
 interface PortfolioItem {
 	title: string
@@ -24,7 +24,7 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
 		title: "Did Not Get It Extension",
 		description:
 			"Created to soften the blow of living through this job market in a comedic way, source code publicly available.",
-		imgSrc: "/images/portfolio/did-not-get-it-end.avif",
+		imgSrc: "https://res.cloudinary.com/oee6altn/image/upload/v1792668923/did-not-get-it-end.avif",
 		imgAlt: "Screenshot of the extension showing emails automatically labeled and marked as read",
 		githubUrl: "https://github.com/Valeriy-Kuvshinov/did-not-get-it-extension",
 	},
@@ -32,23 +32,23 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
 		title: "Noffty Productions Gaming Hub",
 		description:
 			"Built an HTML5 game hosting platform using Cloudflare R2, eliminating third-party iframe dependencies and strengthening site Content Security Policy.",
-		imgSrc: "/images/portfolio/noffty-desktop.avif",
+		imgSrc: "https://res.cloudinary.com/oee6altn/image/upload/v1792668926/noffty-desktop.avif",
 		imgAlt: "Screenshot of the Noffty Productions gaming hub",
 		linkUrl: "https://noffty.com",
 	},
 	{
 		title: "Micro Mineral Accessibility",
 		description:
-			"Retrofitting an entire Wordpress e-commerce platform to natively meet strict AA Israeli accessibility standards while restoring payment gateway stability.",
-		imgSrc: "/images/portfolio/micro-mineral-desktop.avif",
+			"Retrofitting an entire Wordpress E-commerce platform to natively meet strict AA Israeli accessibility standards while restoring payment gateway stability.",
+		imgSrc: "https://res.cloudinary.com/oee6altn/image/upload/v1792668924/micro-mineral-desktop.avif",
 		imgAlt: "Screenshot of the Micro Mineral accessible home page",
 		linkUrl: "https://mmil.co.il/",
 	},
 	{
 		title: "Ori Carlin Art Site",
 		description:
-			"Developed a crafts showcase with local US e-commerce platform for an American artist.",
-		imgSrc: "/images/portfolio/oricarlin-desktop.avif",
+			"Developed a crafts showcase with local US E-commerce platform for an American artist.",
+		imgSrc: "https://res.cloudinary.com/oee6altn/image/upload/v1792668927/oricarlin-desktop.avif",
 		imgAlt: "Screenshot of the Ori Carlin pottery home page",
 		githubUrl: "https://github.com/TAC42/art-store",
 		note: "Currently the site is offline, thus source code is publically available.",
@@ -57,7 +57,7 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
 		title: "The Vision Telecom Platform",
 		description:
 			"Architected a fault-tolerant session orchestration and state recovery system across multiple remote Linux environments.",
-		imgSrc: "/images/portfolio/mycell.avif",
+		imgSrc: "https://res.cloudinary.com/oee6altn/image/upload/v1792668925/mycell.avif",
 		imgAlt: "Screenshot of the Vision Telecom device selection interface",
 		note: "Source code available per recruiter's request...",
 	},
@@ -65,15 +65,15 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
 		title: "CModem Terminal CLI Tool",
 		description:
 			"Created to handle modem interactions remotely more fluently, already used in some of my production (MyCell), source code publicly available.",
-		imgSrc: "/images/portfolio/cmodem-terminal.avif",
+		imgSrc: "https://res.cloudinary.com/oee6altn/image/upload/v1792668923/cmodem-terminal.avif",
 		imgAlt: "Screenshot of CModem Terminal in use",
 		githubUrl: "https://github.com/Valeriy-Kuvshinov/cmodem-terminal",
 	},
 	{
 		title: "Giggler Freelance Platform",
 		description:
-			"Created a Fiverr-like platform as a final project during my Full-Stack bootcamp, source code publicly available.",
-		imgSrc: "/images/portfolio/giggler-desktop.avif",
+			"Created a Fiverr-like E-commerce platform as a final project during my Full-Stack bootcamp, source code publicly available.",
+		imgSrc: "https://res.cloudinary.com/oee6altn/image/upload/v1792668924/giggler-desktop.avif",
 		imgAlt: "Screenshot of the Giggler submission home page",
 		linkUrl: "https://giggler.onrender.com/",
 		githubUrl: "https://github.com/Valeriy-Kuvshinov/Giggler",

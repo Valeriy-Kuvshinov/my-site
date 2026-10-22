@@ -18,11 +18,17 @@
 		outline: none;
 		scale: 0.95;
 
-		&.logo:focus-visible {
-			padding: 0.25rem;
-			border: 1px solid var(--mnrclr2);
-			border-radius: 100%;
-			overflow: hidden;
+		&.logo {
+			app-image-container {
+				aspect-ratio: 1;
+			}
+
+			&:focus-visible {
+				padding: 0.25rem;
+				border: 1px solid var(--mnrclr2);
+				border-radius: 100%;
+				overflow: hidden;
+			}
 		}
 
 		&:not(.logo)::after {

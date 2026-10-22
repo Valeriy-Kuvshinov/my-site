@@ -1,9 +1,9 @@
 import { Component, ChangeDetectionStrategy, Input, computed, inject } from "@angular/core"
 import { FormControl, ReactiveFormsModule } from "@angular/forms"
 
-import { SystemStore } from "../../../../core/stores/system.store"
-
 import { IconName } from "../../icon/icon.map"
+
+import { SystemStore } from "@/core/stores/system.store"
 
 import { SvgIconComponent } from "../../icon/icon.component"
 

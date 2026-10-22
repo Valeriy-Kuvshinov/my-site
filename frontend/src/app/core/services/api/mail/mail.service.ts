@@ -1,9 +1,9 @@
 import { Injectable, inject } from "@angular/core"
 import { injectMutation } from "@tanstack/angular-query-experimental"
 
-import { ContactMailForm } from "../../../../shared/interfaces/form"
+import { ContactFormData } from "@/shared/interfaces/form"
 
-import { SystemStore } from "../../../stores/system.store"
+import { SystemStore } from "@/core/stores/system.store"
 
 import { ApiService } from "../api.service"
 
@@ -17,7 +17,7 @@ export class MailService {
 
 	sendContactMail() {
 		return injectMutation(() => ({
-			mutationFn: async (formData: ContactMailForm) => {
+			mutationFn: async (formData: ContactFormData) => {
 				await this.api.post<void>("mail/contact", formData)
 			},
 			onSuccess: () => {

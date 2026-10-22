@@ -2,8 +2,8 @@ import { Component, OnInit, inject } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 import { RouterLink } from "@angular/router"
 
-import { SvgIconComponent } from "../../shared/components/icon/icon.component"
-import { ImageContainerComponent } from "../../shared/components/general/image-container.component"
+import { SvgIconComponent } from "@/shared/components/icon/icon.component"
+import { ImageContainerComponent } from "@/shared/components/general/image-container.component"
 
 const PAGE_TITLE = "Page Not Found | Kuvshinov Software"
 const PAGE_DESC = "The page you are looking for does not exist."

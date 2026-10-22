@@ -2,10 +2,10 @@ import { Component, DOCUMENT, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 import { RouterLink } from "@angular/router"
 
-import { SITE_URL } from "../../shared/constants/util"
+import { SITE_URL } from "@/shared/constants/util"
 
-import { ImageContainerComponent } from "../../shared/components/general/image-container.component"
-import { SvgIconComponent } from "../../shared/components/icon/icon.component"
+import { ImageContainerComponent } from "@/shared/components/general/image-container.component"
+import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 import { TimelineComponent } from "./components/timeline.component"
 
 const PAGE_TITLE = "About | Kuvshinov Software"

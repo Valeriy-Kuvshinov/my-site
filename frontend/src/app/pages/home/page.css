@@ -30,64 +30,63 @@
 				color: var(--scdclr2);
 			}
 
-			.cta {
-				a {
-					padding: 0.75rem 1rem;
-					border-radius: 0.75rem;
+			.cta a {
+				padding: 0.75rem 1rem;
+				border-radius: 0.75rem;
+
+				&:nth-of-type(1) {
+					background: var(--mnrclr8);
+					fill: var(--prmclr2);
+
+					&:hover,
+					&:focus-visible {
+						background: var(--mnrclr2);
+						color: var(--scdclr8);
+						fill: var(--scdclr8);
+						scale: 1.05;
+					}
 				}
 
-				a {
-					&:nth-of-type(1) {
-						background: var(--mnrclr8);
-						fill: var(--prmclr2);
+				&:nth-of-type(2) {
+					background: var(--mnrclr1);
+					color: var(--scdclr9);
+					fill: var(--scdclr9);
 
-						&:hover,
-						&:focus-visible {
-							background: var(--mnrclr2);
-							color: var(--scdclr8);
-							fill: var(--scdclr8);
-							scale: 1.05;
-						}
+					app-svg-icon {
+						transform: rotate(-45deg);
 					}
 
-					&:nth-of-type(2) {
-						background: var(--mnrclr1);
+					&:hover,
+					&:focus-visible {
+						background: var(--mnrclr9);
+						color: var(--prmclr2);
+						fill: var(--prmclr2);
+					}
+				}
+
+				&:nth-of-type(3) {
+					background: rgb(from var(--scdclr6) r g b / 0.2);
+					border: 1px solid var(--scdclr2);
+					color: var(--scdclr1);
+					fill: var(--scdclr1);
+
+					&:hover,
+					&:focus-visible {
+						background: var(--scdclr1);
 						color: var(--scdclr9);
 						fill: var(--scdclr9);
-
-						app-svg-icon {
-							transform: rotate(-45deg);
-						}
-
-						&:hover,
-						&:focus-visible {
-							background: var(--mnrclr9);
-							color: var(--prmclr2);
-							fill: var(--prmclr2);
-						}
-					}
-
-					&:nth-of-type(3) {
-						background: rgb(from var(--scdclr6) r g b / 0.2);
-						border: 1px solid var(--scdclr2);
-						color: var(--scdclr1);
-						fill: var(--scdclr1);
-
-						&:hover,
-						&:focus-visible {
-							background: var(--scdclr1);
-							color: var(--scdclr9);
-							fill: var(--scdclr9);
-						}
 					}
 				}
 			}
 		}
 
 		.about-link {
-			aspect-ratio: 1;
 			border-radius: 100%;
 			overflow: hidden;
+
+			app-image-container {
+				aspect-ratio: 1;
+			}
 
 			&:hover,
 			&:focus-visible {
@@ -156,11 +155,11 @@
 
 			p {
 				max-width: 75rem;
+				margin-block-end: 0.5rem;
 			}
 
 			.links a {
 				padding: 0.5rem 1rem;
-				margin: 0.5rem 0;
 				background: var(--prmclr3);
 				color: var(--scdclr2);
 				fill: var(--scdclr2);
@@ -241,8 +240,9 @@
 
 			app-image-container {
 				border-radius: 0.75rem;
-				overflow: hidden;
 				box-shadow: 0 4px 20px rgba(92, 92, 92, 0.5);
+				aspect-ratio: 16 / 9;
+				overflow: hidden;
 			}
 		}
 	}
@@ -288,6 +288,12 @@
 
 			.links {
 				grid-template-columns: 1fr 1fr;
+
+				a:nth-child(odd):last-child {
+					grid-column: span 2;
+					justify-self: center;
+					width: 46%;
+				}
 			}
 		}
 
@@ -309,6 +315,7 @@
 
 			app-image-container {
 				order: 2;
+				width: 100%;
 			}
 		}
 	}
@@ -321,6 +328,12 @@
 
 			.cta {
 				grid-template-columns: 1fr 1fr;
+
+				a:nth-child(odd):last-child {
+					grid-column: span 2;
+					justify-self: center;
+					width: 46%;
+				}
 			}
 		}
 

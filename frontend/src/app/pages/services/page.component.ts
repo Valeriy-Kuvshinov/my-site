@@ -2,12 +2,12 @@ import { Component, computed, DOCUMENT, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 import { RouterLink } from "@angular/router"
 
-import { IconName } from "../../shared/components/icon/icon.map"
-import { SITE_URL } from "../../shared/constants/util"
+import { IconName } from "@/shared/components/icon/icon.map"
+import { SITE_URL } from "@/shared/constants/util"
 
-import { SystemStore } from "../../core/stores/system.store"
+import { SystemStore } from "@/core/stores/system.store"
 
-import { SvgIconComponent } from "../../shared/components/icon/icon.component"
+import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 
 interface ServiceSkill {
 	icon: IconName

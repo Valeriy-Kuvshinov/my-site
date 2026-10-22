@@ -1,9 +1,9 @@
 import { Component, computed, inject } from "@angular/core"
 import { RouterLink, RouterLinkActive } from "@angular/router"
 
-import { SOCIAL_LINKS } from "../../constants/socials"
+import { SOCIAL_LINKS } from "@/shared/constants/socials"
 
-import { SystemStore } from "../../../core/stores/system.store"
+import { SystemStore } from "@/core/stores/system.store"
 
 import { SvgIconComponent } from "../icon/icon.component"
 

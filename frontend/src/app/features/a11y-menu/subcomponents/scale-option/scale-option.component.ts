@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, Input, output } from "@angular/core"
 
-import { IconName } from "../../../../shared/components/icon/icon.map"
+import { IconName } from "@/shared/components/icon/icon.map"
 
-import { SvgIconComponent } from "../../../../shared/components/icon/icon.component"
+import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 
 export type ScaleLevel = 0 | 1 | 2 | 3 | 4
 

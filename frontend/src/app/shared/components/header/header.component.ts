@@ -2,7 +2,7 @@ import { Component, HostListener, inject, OnInit, PLATFORM_ID, signal } from "@a
 import { isPlatformBrowser } from "@angular/common"
 import { RouterLink, RouterLinkActive } from "@angular/router"
 
-import { SystemStore } from "../../../core/stores/system.store"
+import { SystemStore } from "@/core/stores/system.store"
 
 import { ImageContainerComponent } from "../general/image-container.component"
 import { SvgIconComponent } from "../icon/icon.component"

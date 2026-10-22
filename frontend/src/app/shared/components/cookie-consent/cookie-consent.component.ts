@@ -13,7 +13,7 @@ import {
 } from "@angular/core"
 import { RouterLink } from "@angular/router"
 
-import { SystemStore } from "../../../core/stores/system.store"
+import { SystemStore } from "@/core/stores/system.store"
 
 import { SvgIconComponent } from "../icon/icon.component"
 

@@ -1,7 +1,7 @@
 import { Component, DOCUMENT, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 
-import { SITE_URL } from "../../shared/constants/util"
+import { SITE_URL } from "@/shared/constants/util"
 
 const PAGE_TITLE = "Accessibility Statement | Kuvshinov Software"
 const PAGE_URL = "/accessibility/"

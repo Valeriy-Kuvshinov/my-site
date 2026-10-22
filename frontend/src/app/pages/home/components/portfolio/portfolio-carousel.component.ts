@@ -1,9 +1,9 @@
 import { Component, ChangeDetectionStrategy, signal, computed, inject } from "@angular/core"
 
-import { SystemStore } from "../../../../core/stores/system.store"
+import { SystemStore } from "@/core/stores/system.store"
 
-import { ImageContainerComponent } from "../../../../shared/components/general/image-container.component"
-import { SvgIconComponent } from "../../../../shared/components/icon/icon.component"
+import { ImageContainerComponent } from "@/shared/components/general/image-container.component"
+import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 
 interface PortfolioSlide {
 	title: string
@@ -18,39 +18,48 @@ const PORTFOLIO_SLIDES: PortfolioSlide[] = [
 		title: "Noffty Productions Gaming Hub",
 		description:
 			"Built an HTML5 game hosting platform using Cloudflare R2, eliminating third-party iframe dependencies and strengthening site Content Security Policy.",
-		imgDesktopSrc: "/images/portfolio/noffty-desktop.avif",
-		imgMobileSrc: "/images/portfolio/noffty-mobile.avif",
+		imgDesktopSrc:
+			"https://res.cloudinary.com/oee6altn/image/upload/v1792668926/noffty-desktop.avif",
+		imgMobileSrc:
+			"https://res.cloudinary.com/oee6altn/image/upload/v1792668926/noffty-mobile.avif",
 		imgAlt: "Screenshot of the Noffty Productions gaming hub",
 	},
 	{
 		title: "Micro Mineral Accessibility",
 		description:
-			"Retrofitting an entire Wordpress e-commerce platform to natively meet strict AA Israeli accessibility standards while restoring payment gateway stability.",
-		imgDesktopSrc: "/images/portfolio/micro-mineral-desktop.avif",
-		imgMobileSrc: "/images/portfolio/micro-mineral-mobile.avif",
+			"Retrofitting an entire Wordpress E-commerce platform to natively meet strict AA Israeli accessibility standards while restoring payment gateway stability.",
+		imgDesktopSrc:
+			"https://res.cloudinary.com/oee6altn/image/upload/v1792668924/micro-mineral-desktop.avif",
+		imgMobileSrc:
+			"https://res.cloudinary.com/oee6altn/image/upload/v1792668925/micro-mineral-mobile.avif",
 		imgAlt: "Screenshot of the Micro Mineral accessible home page",
 	},
 	{
 		title: "Ori Carlin Art Site",
 		description:
-			"Developed a crafts showcase with local US e-commerce platform for an American artist.",
-		imgDesktopSrc: "/images/portfolio/oricarlin-desktop.avif",
-		imgMobileSrc: "/images/portfolio/oricarlin-mobile.avif",
+			"Developed a crafts showcase with local US E-commerce platform for an American artist.",
+		imgDesktopSrc:
+			"https://res.cloudinary.com/oee6altn/image/upload/v1792668927/oricarlin-desktop.avif",
+		imgMobileSrc:
+			"https://res.cloudinary.com/oee6altn/image/upload/v1792668927/oricarlin-mobile.avif",
 		imgAlt: "Screenshot of the Ori Carlin pottery home page",
+	},
+	{
+		title: "Giggler Freelance Platform",
+		description:
+			"Created a Fiverr-like E-commerce platform as a final project during my Full-Stack bootcamp, source code publicly available.",
+		imgDesktopSrc:
+			"https://res.cloudinary.com/oee6altn/image/upload/v1792668924/giggler-desktop.avif",
+		imgMobileSrc:
+			"https://res.cloudinary.com/oee6altn/image/upload/v1792668924/giggler-mobile.avif",
+		imgAlt: "Screenshot of the Giggler submission home page",
 	},
 	{
 		title: "The Vision Telecom Platform",
 		description:
 			"Architected a fault-tolerant session orchestration and state recovery system across multiple remote Linux environments.",
-		imgDesktopSrc: "/images/portfolio/mycell.avif",
+		imgDesktopSrc: "https://res.cloudinary.com/oee6altn/image/upload/v1792668925/mycell.avif",
 		imgAlt: "Screenshot of the Vision Telecom device selection interface",
-	},
-	{
-		title: "CModem Terminal Open Source",
-		description:
-			"Created a CLI project to handle modem interactions remotely more fluently, actively used in production (MyCell), source code publicly available.",
-		imgDesktopSrc: "/images/portfolio/cmodem-terminal.avif",
-		imgAlt: "Screenshot of CModem Terminal in use",
 	},
 ]
 
@@ -68,9 +77,9 @@ const PORTFOLIO_SLIDES: PortfolioSlide[] = [
 export class PortfolioCarouselComponent {
 	private readonly store = inject(SystemStore)
 
-	private readonly isDesktop = computed(() => this.store.deviceType() === "desktop")
+	private readonly isMobile = computed(() => this.store.deviceType() === "mobile")
 
-	protected readonly iconSize = computed(() => (this.isDesktop() ? 48 : 32))
+	protected readonly iconSize = computed(() => (!this.isMobile() ? 48 : 32))
 
 	protected readonly slides = PORTFOLIO_SLIDES
 
@@ -91,7 +100,7 @@ export class PortfolioCarouselComponent {
 	}
 
 	getImageSrc(slide: PortfolioSlide): string {
-		if (!this.isDesktop() && slide.imgMobileSrc) return slide.imgMobileSrc
+		if (this.isMobile() && slide.imgMobileSrc) return slide.imgMobileSrc
 
 		return slide.imgDesktopSrc
 	}
