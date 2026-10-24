@@ -1,0 +1,120 @@
+:host {
+	width: 10rem;
+	fill: var(--scdclr2);
+	color: var(--scdclr2);
+
+	.select-label {
+		margin-bottom: 0.25rem;
+	}
+
+	.select-wrapper {
+		#lang-select-btn {
+			border-radius: 0.5rem;
+			background: var(--prmclr1);
+			padding: 0.5rem;
+			outline: none;
+
+			&:hover,
+			&:focus-visible {
+				background: var(--prmclr2);
+				color: var(--prmclr1);
+				fill: var(--prmclr1);
+			}
+		}
+
+		#lang-listbox {
+			left: 0;
+			z-index: 5;
+			background: var(--prmclr1);
+
+			.option {
+				padding: 0.5rem;
+				color: var(--scdclr3);
+				outline: none;
+
+				&:hover,
+				&:focus-visible {
+					background: var(--prmclr2);
+					color: var(--prmclr1);
+					fill: var(--prmclr1);
+				}
+			}
+		}
+
+		&.show-up {
+			#lang-select-btn {
+				border-top: 1px solid transparent;
+
+				&.open {
+					border-top: 1px solid var(--scdclr3);
+					border-radius: 0 0 0.5rem 0.5rem;
+
+					app-svg-icon:last-child {
+						transform: rotate(-90deg);
+					}
+				}
+			}
+
+			#lang-listbox {
+				bottom: 100%;
+				border-radius: 0.5rem 0.5rem 0 0;
+
+				.option {
+					&:not(:last-child) {
+						border-bottom: 1px solid var(--scdclr3);
+					}
+
+					&:first-child {
+						border-radius: 0.5rem 0.5rem 0 0;
+					}
+				}
+			}
+		}
+
+		&.show-down {
+			#lang-select-btn {
+				border-bottom: 1px solid transparent;
+
+				&.open {
+					border-bottom: 1px solid var(--scdclr3);
+					border-radius: 0.5rem 0.5rem 0 0;
+
+					app-svg-icon:last-child {
+						transform: rotate(90deg);
+					}
+				}
+			}
+
+			#lang-listbox {
+				top: 100%;
+				border-radius: 0 0 0.5rem 0.5rem;
+
+				.option {
+					&:not(:first-child) {
+						border-top: 1px solid var(--scdclr3);
+					}
+
+					&:last-child {
+						border-radius: 0 0 0.5rem 0.5rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+:host-context([dir="rtl"]) {
+	.select-wrapper {
+		#lang-select-btn app-svg-icon:last-child {
+			transform: rotate(180deg);
+		}
+
+		&.show-up #lang-select-btn.open app-svg-icon:last-child {
+			transform: rotate(270deg);
+		}
+
+		&.show-down #lang-select-btn.open app-svg-icon:last-child {
+			transform: rotate(90deg);
+		}
+	}
+}

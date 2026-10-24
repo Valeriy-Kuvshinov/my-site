@@ -8,6 +8,19 @@
 	"projects": {
 		"frontend": {
 			"projectType": "application",
+			"i18n": {
+				"sourceLocale": "en",
+				"locales": {
+					"ru": {
+						"translation": "src/locale/messages.ru.xlf",
+						"subPath": "ru"
+					},
+					"he": {
+						"translation": "src/locale/messages.he.xlf",
+						"subPath": "he"
+					}
+				}
+			},
 			"schematics": {},
 			"root": "",
 			"sourceRoot": "src",
@@ -16,6 +29,9 @@
 				"build": {
 					"builder": "@angular/build:application",
 					"options": {
+						"polyfills": ["@angular/localize/init"],
+						"localize": true,
+						"i18nMissingTranslation": "warning",
 						"browser": "src/main.ts",
 						"tsConfig": "tsconfig.app.json",
 						"prerender": true,
@@ -65,6 +81,12 @@
 									"with": "src/environments/environment.development.ts"
 								}
 							]
+						},
+						"ru": {
+							"localize": ["ru"]
+						},
+						"he": {
+							"localize": ["he"]
 						}
 					},
 					"defaultConfiguration": "production"
@@ -77,6 +99,12 @@
 						},
 						"development": {
 							"buildTarget": "frontend:build:development"
+						},
+						"ru": {
+							"buildTarget": "frontend:build:development,ru"
+						},
+						"he": {
+							"buildTarget": "frontend:build:development,he"
 						}
 					},
 					"defaultConfiguration": "development"

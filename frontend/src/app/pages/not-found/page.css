@@ -15,6 +15,7 @@
 
 	app-image-container {
 		max-height: 15rem;
+		width: 20rem;
 	}
 
 	.floor {

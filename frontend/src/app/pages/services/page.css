@@ -2,7 +2,7 @@
 	.intro {
 		background: var(--scdclr8);
 
-		.text p {
+		.text {
 			max-width: 75rem;
 		}
 	}

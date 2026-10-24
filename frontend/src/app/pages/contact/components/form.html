@@ -6,58 +6,91 @@
 
 	} @else {
 	<app-input-area
+		i18n-label="@@form.name.label"
 		label="Name"
 		name="name"
 		[required]="true"
 		type="text"
 		icon="person"
+		i18n-placeholder="@@form.name.placeholder"
 		placeholder="Your name"
 		[control]="getInputControl('name')"
 		[error]="getErrorMessage('name')">
 	</app-input-area>
 
 	<app-input-area
+		i18n-label="@@form.email.label"
 		label="Email"
 		name="email"
 		[required]="true"
 		type="email"
 		icon="mail"
+		i18n-placeholder="@@form.email.placeholder"
 		placeholder="Your email"
 		[control]="getInputControl('email')"
 		[error]="getErrorMessage('email')">
 	</app-input-area>
 
 	<app-input-area
+		i18n-label="@@form.title.label"
 		label="Title"
 		name="title"
 		[required]="true"
 		type="text"
 		icon="title"
+		i18n-placeholder="@@form.title.placeholder"
 		placeholder="Asking about..."
 		[control]="getInputControl('title')"
 		[error]="getErrorMessage('title')">
 	</app-input-area>
 
 	<app-select-area
+		i18n-label="@@form.subject.label"
 		label="Subject"
 		name="requestType"
 		icon="info"
 		[control]="getInputControl('requestType')"
 		[error]="getErrorMessage('requestType')">
-		<option value="Q&A">Q&A</option>
-		<option value="Suggestion">Suggestion</option>
-		<option value="Bug Report">Bug Report</option>
-		<option value="Volunteering">Volunteering</option>
-		<option value="Accessibility">Accessibility</option>
-		<option value="Other">Other</option>
+		<option
+			value="Q&A"
+			i18n="@@form.subject.opt_qa">
+			Q&A
+		</option>
+		<option
+			value="Suggestion"
+			i18n="@@form.subject.opt_suggestion">
+			Suggestion
+		</option>
+		<option
+			value="Bug Report"
+			i18n="@@form.subject.opt_bug">
+			Bug Report
+		</option>
+		<option
+			value="Volunteering"
+			i18n="@@form.subject.opt_volunteer">
+			Volunteering
+		</option>
+		<option
+			value="Accessibility"
+			i18n="@@form.subject.opt_a11y">
+			Accessibility
+		</option>
+		<option
+			value="Other"
+			i18n="@@form.subject.opt_other">
+			Other
+		</option>
 	</app-select-area>
 
 	<app-input-area
+		i18n-label="@@form.message.label"
 		label="Message"
 		name="message"
 		[required]="true"
 		type="textarea"
 		icon="message"
+		i18n-placeholder="@@form.message.placeholder"
 		placeholder="Let's build a system..."
 		[control]="getInputControl('message')"
 		[error]="getErrorMessage('message')">
@@ -71,22 +104,26 @@
 				class="w-h-fit"
 				[attr.aria-invalid]="getInputControl('consent').invalid && getInputControl('consent').touched" />
 			<span>
-				I agree to the
+				<ng-container i18n="@@form.consent.p1">I agree to the</ng-container>
 				<a
 					routerLink="/terms"
 					(click)="$event.stopPropagation()">
-					<span>Terms of Service</span></a
-				>
-				and the processing of my data in accordance with the
+					<span i18n="@@form.consent.terms">Terms of Service</span>
+				</a>
+				<ng-container i18n="@@form.consent.p2">
+					and the processing of my data in accordance with the
+				</ng-container>
 				<a
 					routerLink="/privacy-policy"
 					(click)="$event.stopPropagation()">
-					<span>Privacy Policy</span></a
+					<span i18n="@@form.consent.privacy">Privacy Policy</span></a
 				>.
 			</span>
 		</label>
 		@if (getInputControl('consent').invalid && getInputControl('consent').touched) {
-		<span class="error-text">
+		<span
+			i18n="@@form.consent.error"
+			class="error-text">
 			You must accept the Terms of Service and Privacy Policy to submit form.
 		</span>
 		}
@@ -101,7 +138,7 @@
 			(mouseleave)="isActiveInteract.set(false)"
 			(focus)="isActiveInteract.set(true)"
 			(blur)="isActiveInteract.set(false)">
-			<span>Send</span>
+			<span i18n="@@form.btn.send">Send</span>
 
 			<app-svg-icon
 				[icon]="buttonIcon"

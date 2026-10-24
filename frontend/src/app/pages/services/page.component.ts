@@ -27,82 +27,166 @@ interface ProcessStep {
 	description: string
 }
 
+// const SERVICES: ServiceCard[] = [
+// 	{
+// 		icon: "monitor",
+// 		title: "Custom Web Development",
+// 		price: "From $900",
+// 		description:
+// 			"Instead of renting a site on a managed platform forever, I build you a site you actually own. It runs faster, costs drastically less to host, and fits your exact needs without bloated templates.",
+// 		skills: [
+// 			{ icon: "check", text: "Secure Backend, A11y Complaint Frontend" },
+// 			{ icon: "cloud", text: "Independent Cloud Hosting" },
+// 			{ icon: "language", text: "Multi-language & RTL-LTR Support" },
+// 			{ icon: "cart", text: "E-Commerce Integrations" },
+// 		],
+// 	},
+// 	{
+// 		icon: "magGlass",
+// 		title: "A11y Audits & ARIA Fixes",
+// 		price: "From $300",
+// 		description:
+// 			"Automated accessibility widgets do not protect you from lawsuits. True accessibility requires fixing the underlying code so keyboards and screen readers can actually navigate it.",
+// 		skills: [
+// 			{ icon: "fix", text: "Manual HTML Rewrites" },
+// 			{ icon: "wheelchair", text: "WCAG AA Violation Reports" },
+// 			{ icon: "highContrast", text: "Color Contrast Optimization" },
+// 			{ icon: "accessibility", text: "Screen Reader Support" },
+// 		],
+// 	},
+// 	{
+// 		icon: "fix",
+// 		title: "System Rescue & Bug Fixing",
+// 		price: "$60/hr",
+// 		description:
+// 			"Got a website that is crashing, running slow, or full of bugs? I can jump in, clean up the technical debt, and make your system stable and secure.",
+// 		skills: [
+// 			{ icon: "fix", text: "Legacy Code Refactoring" },
+// 			{ icon: "run", text: "Performance Speed Boosts" },
+// 			{ icon: "shield", text: "Security Hardening" },
+// 			{ icon: "person", text: "Spam & Bot Mitigation" },
+// 		],
+// 	},
+// 	{
+// 		icon: "support",
+// 		title: "Remote Digital Assistance",
+// 		price: "$20/hr",
+// 		description:
+// 			"Dedicated help for individuals who get blocked by annoying captchas, confusing government portals, or inaccessible web forms.",
+// 		skills: [
+// 			{ icon: "fix", text: "Bypassing Visual Barriers" },
+// 			{ icon: "mail", text: "Form & Document Completion" },
+// 			{ icon: "person", text: "Patient 1-on-1 Support" },
+// 		],
+// 	},
+// ]
+
+// const PROCESS_STEPS: ProcessStep[] = [
+// 	{
+// 		title: "Infrastructure & Complete Ownership",
+// 		description:
+// 			"I guide you through establishing your own independent cloud hosting and media accounts. You retain absolute control over passwords and billing, eliminating vendor lock-in. I join strictly as the technical architect.",
+// 	},
+// 	{
+// 		title: "Native System Architecture",
+// 		description:
+// 			"Your digital infrastructure is engineered entirely from scratch. By bypassing bloated templates and rigid CMS platforms, I ensure the final product is highly performant, fundamentally secure, and strictly WCAG AA compliant by design.",
+// 	},
+// 	{
+// 		title: "Deployment & Lifecycle Support",
+// 		description:
+// 			"Upon launch, you possess an independent, low-overhead system. I provide 12 months of comprehensive architectural updates free of charge. Subsequent years transition to a standard retainer strictly for security maintenance, with feature upgrades billed separately.",
+// 	},
+// ]
+
+// const PAGE_TITLE = "Services | Kuvshinov Software"
+// const PAGE_URL = "/services/"
+// const PAGE_DESC =
+// 	"Browse through our transparent services and pricing to decide what fits your project."
+
 const SERVICES: ServiceCard[] = [
 	{
 		icon: "monitor",
-		title: "Custom Web Development",
-		price: "From $900",
-		description:
-			"Instead of renting a site on a managed platform forever, I build you a site you actually own. It runs faster, costs drastically less to host, and fits your exact needs without bloated templates.",
+		title: $localize`:@@services.card1.title:Custom Web Development`,
+		price: $localize`:@@services.card1.price:From $900`,
+		description: $localize`:@@services.card1.desc:Instead of renting a site on a managed platform forever, I build you a site you actually own. It runs faster, costs drastically less to host, and fits your exact needs without bloated templates.`,
 		skills: [
-			{ icon: "check", text: "Secure Backend, A11y Complaint Frontend" },
-			{ icon: "cloud", text: "Independent Cloud Hosting" },
-			{ icon: "language", text: "Multi-language & RTL-LTR Support" },
-			{ icon: "cart", text: "E-Commerce Integrations" },
+			{
+				icon: "check",
+				text: $localize`:@@services.card1.skill1:Secure Backend, A11y Complaint Frontend`,
+			},
+			{ icon: "cloud", text: $localize`:@@services.card1.skill2:Independent Cloud Hosting` },
+			{
+				icon: "language",
+				text: $localize`:@@services.card1.skill3:Multi-language & RTL-LTR Support`,
+			},
+			{ icon: "cart", text: $localize`:@@services.card1.skill4:E-Commerce Integrations` },
 		],
 	},
 	{
 		icon: "magGlass",
-		title: "A11y Audits & ARIA Fixes",
-		price: "From $300",
-		description:
-			"Automated accessibility widgets do not protect you from lawsuits. True accessibility requires fixing the underlying code so keyboards and screen readers can actually navigate it.",
+		title: $localize`:@@services.card2.title:A11y Audits & ARIA Fixes`,
+		price: $localize`:@@services.card2.price:From $300`,
+		description: $localize`:@@services.card2.desc:Automated accessibility widgets do not protect you from lawsuits. True accessibility requires fixing the underlying code so keyboards and screen readers can actually navigate it.`,
 		skills: [
-			{ icon: "fix", text: "Manual HTML Rewrites" },
-			{ icon: "wheelchair", text: "WCAG AA Violation Reports" },
-			{ icon: "highContrast", text: "Color Contrast Optimization" },
-			{ icon: "accessibility", text: "Screen Reader Support" },
+			{ icon: "fix", text: $localize`:@@services.card2.skill1:Manual HTML Rewrites` },
+			{
+				icon: "wheelchair",
+				text: $localize`:@@services.card2.skill2:WCAG AA Violation Reports`,
+			},
+			{
+				icon: "highContrast",
+				text: $localize`:@@services.card2.skill3:Color Contrast Optimization`,
+			},
+			{
+				icon: "accessibility",
+				text: $localize`:@@services.card2.skill4:Screen Reader Support`,
+			},
 		],
 	},
 	{
 		icon: "fix",
-		title: "System Rescue & Bug Fixing",
-		price: "$60/hr",
-		description:
-			"Got a website that is crashing, running slow, or full of bugs? I can jump in, clean up the technical debt, and make your system stable and secure.",
+		title: $localize`:@@services.card3.title:System Rescue & Bug Fixing`,
+		price: $localize`:@@services.card3.price:$60/hr`,
+		description: $localize`:@@services.card3.desc:Got a website that is crashing, running slow, or full of bugs? I can jump in, clean up the technical debt, and make your system stable and secure.`,
 		skills: [
-			{ icon: "fix", text: "Legacy Code Refactoring" },
-			{ icon: "run", text: "Performance Speed Boosts" },
-			{ icon: "shield", text: "Security Hardening" },
-			{ icon: "person", text: "Spam & Bot Mitigation" },
+			{ icon: "fix", text: $localize`:@@services.card3.skill1:Legacy Code Refactoring` },
+			{ icon: "run", text: $localize`:@@services.card3.skill2:Performance Speed Boosts` },
+			{ icon: "shield", text: $localize`:@@services.card3.skill3:Security Hardening` },
+			{ icon: "person", text: $localize`:@@services.card3.skill4:Spam & Bot Mitigation` },
 		],
 	},
 	{
 		icon: "support",
-		title: "Remote Digital Assistance",
-		price: "$20/hr",
-		description:
-			"Dedicated help for individuals who get blocked by annoying captchas, confusing government portals, or inaccessible web forms.",
+		title: $localize`:@@services.card4.title:Remote Digital Assistance`,
+		price: $localize`:@@services.card4.price:$20/hr`,
+		description: $localize`:@@services.card4.desc:Dedicated help for individuals who get blocked by annoying captchas, confusing government portals, or inaccessible web forms.`,
 		skills: [
-			{ icon: "fix", text: "Bypassing Visual Barriers" },
-			{ icon: "mail", text: "Form & Document Completion" },
-			{ icon: "person", text: "Patient 1-on-1 Support" },
+			{ icon: "fix", text: $localize`:@@services.card4.skill1:Bypassing Visual Barriers` },
+			{ icon: "mail", text: $localize`:@@services.card4.skill2:Form & Document Completion` },
+			{ icon: "person", text: $localize`:@@services.card4.skill3:Patient 1-on-1 Support` },
 		],
 	},
 ]
 
 const PROCESS_STEPS: ProcessStep[] = [
 	{
-		title: "Infrastructure & Complete Ownership",
-		description:
-			"I guide you through establishing your own independent cloud hosting and media accounts. You retain absolute control over passwords and billing, eliminating vendor lock-in. I join strictly as the technical architect.",
+		title: $localize`:@@services.step1.title:Infrastructure & Complete Ownership`,
+		description: $localize`:@@services.step1.desc:I guide you through establishing your own independent cloud hosting and media accounts. You retain absolute control over passwords and billing, eliminating vendor lock-in. I join strictly as the technical architect.`,
 	},
 	{
-		title: "Native System Architecture",
-		description:
-			"Your digital infrastructure is engineered entirely from scratch. By bypassing bloated templates and rigid CMS platforms, I ensure the final product is highly performant, fundamentally secure, and strictly WCAG AA compliant by design.",
+		title: $localize`:@@services.step2.title:Native System Architecture`,
+		description: $localize`:@@services.step2.desc:Your digital infrastructure is engineered entirely from scratch. By bypassing bloated templates and rigid CMS platforms, I ensure the final product is highly performant, fundamentally secure, and strictly WCAG AA compliant by design.`,
 	},
 	{
-		title: "Deployment & Lifecycle Support",
-		description:
-			"Upon launch, you possess an independent, low-overhead system. I provide 12 months of comprehensive architectural updates free of charge. Subsequent years transition to a standard retainer strictly for security maintenance, with feature upgrades billed separately.",
+		title: $localize`:@@services.step3.title:Deployment & Lifecycle Support`,
+		description: $localize`:@@services.step3.desc:Upon launch, you possess an independent, low-overhead system. I provide 12 months of comprehensive architectural updates free of charge. Subsequent years transition to a standard retainer strictly for security maintenance, with feature upgrades billed separately.`,
 	},
 ]
 
-const PAGE_TITLE = "Services | Kuvshinov Software"
+const PAGE_TITLE = $localize`:@@services.meta.title:Services | Kuvshinov Software`
 const PAGE_URL = "/services/"
-const PAGE_DESC =
-	"Browse through our transparent services and pricing to decide what fits your project."
+const PAGE_DESC = $localize`:@@services.meta.desc:Browse through our transparent services and pricing to decide what fits your project.`
 
 @Component({
 	selector: "main[app-services-page]",

@@ -69,13 +69,18 @@ export class ContactFormComponent implements OnInit {
 
 		if (!control || !control.touched || !control.errors) return null
 
-		if (control.errors["required"] || control.errors["requiredTrue"]) return "Required field"
-		if (control.errors["minlength"]) return "Too short"
-		if (control.errors["maxlength"]) return "Too long"
-		if (control.errors["email"]) return "Invalid format"
-		if (control.errors["pattern"]) return "Invalid characters"
+		if (control.errors["required"] || control.errors["requiredTrue"]) {
+			return $localize`:@@form.error.required:Required field`
+		}
+		if (control.errors["minlength"]) return $localize`:@@form.error.minlength:Too short`
 
-		return "Invalid input"
+		if (control.errors["maxlength"]) return $localize`:@@form.error.maxlength:Too long`
+
+		if (control.errors["email"]) return $localize`:@@form.error.email:Invalid format`
+
+		if (control.errors["pattern"]) return $localize`:@@form.error.pattern:Invalid characters`
+
+		return $localize`:@@form.error.invalid:Invalid input`
 	}
 
 	get isSendDisabled(): boolean {

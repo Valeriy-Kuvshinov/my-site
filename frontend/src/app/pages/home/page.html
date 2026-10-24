@@ -5,6 +5,7 @@
 			class="about-link flex flex-row full-center gap-2">
 			<app-image-container
 				src="/images/about.avif"
+				i18n-alt="@@home.hero.img_alt"
 				alt="Valeriy Kuvshinov sitting in a conference"
 				[width]="240"
 				[height]="240"
@@ -15,18 +16,23 @@
 
 		<div class="content-wrapper w-full layout-row">
 			<div class="content flex flex-col w-full gap-6">
-				<h1 class="text-family-bold">
+				<h1
+					i18n="@@home.hero.title"
+					class="text-family-bold">
 					Scalable Web Systems & Uncompromising Accessibility
 				</h1>
+
 				<h2 [class.motion-paused]="store.a11yPreferences().pauseMotion">
-					<span>Valeriy Kuvshinov</span>
+					<span i18n="@@home.hero.name">Valeriy Kuvshinov</span>
 				</h2>
-				<p>
+
+				<p i18n="@@home.hero.p1">
 					Engineering robust full-stack applications, resolving complex system
 					architecture challenges, and guaranteeing digital inclusivity through rigorous
 					WCAG compliance.
 				</p>
-				<p>
+
+				<p i18n="@@home.hero.p2">
 					From high-performance landing pages to scalable full-stack systems, I build
 					digital environments that are secure, lightning-fast, and accessible by design.
 				</p>
@@ -35,27 +41,30 @@
 					<a
 						routerLink="/contact/"
 						class="flex flex-row full-center gap-2">
-						<span>Contact Me</span>
+						<span i18n="@@home.hero.btn_contact">Contact Me</span>
 						<app-svg-icon
 							icon="mail"
 							width="24"
-							height="24"></app-svg-icon>
+							height="24">
+						</app-svg-icon>
 					</a>
 					<a
 						routerLink="/services/"
 						class="flex flex-row full-center gap-2">
-						<span>View Services</span>
+						<span i18n="@@home.hero.btn_services">View Services</span>
 						<app-svg-icon
 							icon="arrow"
 							width="24"
-							height="24"></app-svg-icon>
+							height="24">
+						</app-svg-icon>
 					</a>
 					<a
 						href="/cv/Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
 						download="Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
 						class="flex flex-row full-center gap-2"
+						i18n-aria-label="@@home.hero.btn_resume.aria"
 						aria-label="Download Valeriy Kuvshinov's resume as a PDF">
-						<span>Resume</span>
+						<span i18n="@@home.hero.btn_resume.text">Resume</span>
 						<app-svg-icon
 							icon="download"
 							width="24"
@@ -86,7 +95,11 @@
 	<app-tech-carousel></app-tech-carousel>
 
 	<article class="core flex flex-col items-center w-full">
-		<h2 class="text-family-bold">My Specialties</h2>
+		<h2
+			i18n="@@home.specialties.title"
+			class="text-family-bold">
+			My Specialties
+		</h2>
 
 		<ul class="grid layout-row gap-8">
 			@for (specialty of specialties; track specialty.title) {
@@ -101,21 +114,30 @@
 	<article class="extension flex flex-col items-center w-full">
 		<div class="content grid layout-row gap-8">
 			<div class="text flex flex-col items-center gap-4">
-				<h2 class="text-family-bold">Did Not Get It</h2>
-				<p class="text-center">
+				<h2
+					i18n="@@home.extension.title"
+					class="text-family-bold">
+					Did Not Get It
+				</h2>
+
+				<p
+					i18n="@@home.extension.desc"
+					class="text-center">
 					"Did Not Get It" is a cross-browser extension for Firefox and Chrome that
 					automatically identifies, labels, and marks Gmail rejection emails as read while
 					maintaining a local "rejections skipped" counter. Available now in Chrome Web
 					Store and Firefox Browser Add-ons.
 				</p>
+
 				<div class="links grid full-center gap-8">
 					<a
 						href="https://chromewebstore.google.com/detail/did-not-get-it/cldhhfgpefggchgbjgcfkilkpakeelih"
 						class="flex flex-row full-center gap-2"
 						target="_blank"
 						rel="noopener noreferrer"
+						i18n-aria-label="@@home.extension.btn_chrome.aria"
 						aria-label="Get the Did Not Get It extension at Chrome Web Store (opens in a new tab)">
-						<span>Get for Chrome</span>
+						<span i18n="@@home.extension.btn_chrome.text">Get for Chrome</span>
 						<app-svg-icon
 							icon="chrome"
 							width="24"
@@ -127,8 +149,9 @@
 						class="flex flex-row full-center gap-2"
 						target="_blank"
 						rel="noopener noreferrer"
+						i18n-aria-label="@@home.extension.btn_github.aria"
 						aria-label="View the Did Not Get It extension on GitHub (opens in a new tab)">
-						<span>View on GitHub</span>
+						<span i18n="@@home.extension.btn_github.text">View on GitHub</span>
 						<app-svg-icon
 							icon="github"
 							width="24"
@@ -140,8 +163,9 @@
 						class="flex flex-row full-center gap-2"
 						target="_blank"
 						rel="noopener noreferrer"
+						i18n-aria-label="@@home.extension.btn_firefox.aria"
 						aria-label="Get the Did Not Get It extension at Firefox Add-ons (opens in a new tab)">
-						<span>Get for Firefox</span>
+						<span i18n="@@home.extension.btn_firefox.text">Get for Firefox</span>
 						<app-svg-icon
 							icon="firefox"
 							width="24"
@@ -152,30 +176,44 @@
 			</div>
 
 			<figure class="flex flex-col gap-2 w-full">
-				<figcaption class="text-center text-family-bold">Before</figcaption>
+				<figcaption
+					i18n="@@home.extension.fig_before"
+					class="text-center text-family-bold">
+					Before
+				</figcaption>
+
 				<app-image-container
 					src="https://res.cloudinary.com/oee6altn/image/upload/v1792668924/did-not-get-it-start.avif"
+					i18n-alt="@@home.extension.img_before.alt"
 					alt="Gmail inbox showing unread corporate emails"
 					[width]="600"
 					[height]="400"
 					class="cursor-pointer"
 					role="button"
 					tabIndex="0"
+					i18n-aria-label="@@home.extension.img_before.aria"
 					aria-label="View full size image of inbox before extension processing"
 					(onClickEvent)="openImage('https://res.cloudinary.com/oee6altn/image/upload/v1792668924/did-not-get-it-start.avif')">
 				</app-image-container>
 			</figure>
 
 			<figure class="flex flex-col gap-2 w-full">
-				<figcaption class="text-center text-family-bold">After</figcaption>
+				<figcaption
+					i18n="@@home.extension.fig_after"
+					class="text-center text-family-bold">
+					After
+				</figcaption>
+
 				<app-image-container
 					src="https://res.cloudinary.com/oee6altn/image/upload/v1792668923/did-not-get-it-end.avif"
+					i18n-alt="@@home.extension.img_after.alt"
 					alt="Gmail inbox showing emails automatically labeled and marked as read by the extension"
 					[width]="600"
 					[height]="400"
 					class="cursor-pointer"
 					role="button"
 					tabIndex="0"
+					i18n-aria-label="@@home.extension.img_after.aria"
 					aria-label="View full size image of inbox after extension processing"
 					(onClickEvent)="openImage('https://res.cloudinary.com/oee6altn/image/upload/v1792668923/did-not-get-it-end.avif')">
 				</app-image-container>
@@ -184,14 +222,18 @@
 	</article>
 
 	<article class="accomplishments flex flex-col items-center w-full gap-8">
-		<h2 class="text-center text-family-bold">Selected Work</h2>
+		<h2
+			i18n="@@home.portfolio.title"
+			class="text-center text-family-bold">
+			Selected Work
+		</h2>
 
 		<app-portfolio-carousel></app-portfolio-carousel>
 
 		<a
 			routerLink="/portfolio"
 			class="flex flex-row full-center gap-2 fast-trans mt-4">
-			<span>View Full Portfolio</span>
+			<span i18n="@@home.portfolio.btn">View Full Portfolio</span>
 			<app-svg-icon
 				icon="briefcase"
 				width="24"
@@ -199,35 +241,48 @@
 			</app-svg-icon>
 		</a>
 	</article>
+
 	<article class="a11y flex flex-col items-center gap-8 w-full">
-		<h2 class="text-center text-family-bold">An Overlay Is Never Enough</h2>
+		<h2
+			i18n="@@home.a11y.title"
+			class="text-center text-family-bold">
+			An Overlay Is Never Enough
+		</h2>
 
 		<ul class="layout-row flex flex-col gap-12 w-full">
 			<li class="flex zig-zag-row w-full items-center gap-8">
 				<div class="text-block flex flex-col gap-4 w-full">
-					<h3 class="text-family-bold">The Legal Illusion</h3>
-					<p>
+					<h3
+						i18n="@@home.a11y.legal.title"
+						class="text-family-bold">
+						The Legal Illusion
+					</h3>
+
+					<p i18n="@@home.a11y.legal.p1">
 						In a world where temporary solutions become permanent, automated widgets and
 						generic templates fail to provide true accessibility or legal protection. It
 						takes precise semantic code and manual keyboard focus management to make a
 						site truly usable.
 					</p>
-					<p>
+
+					<p i18n="@@home.a11y.legal.p2">
 						Endorsed by myself and hundreds of other privacy and accessibility
 						professionals, I invite you to read the Overlay Fact Sheet.
 					</p>
 					<a
 						href="https://overlayfactsheet.com/en/#what-is-a-web-accessibility-overlay"
+						i18n-aria-label="@@home.a11y.legal.btn.aria"
 						aria-label="Read the Web Accessibility Overlay Fact Sheet (opens in a new tab)"
 						target="_blank"
 						class="text-center"
 						rel="noopener noreferrer">
-						<span>Read the Overlay Fact Sheet</span>
+						<span i18n="@@home.a11y.legal.btn.text">Read the Overlay Fact Sheet</span>
 					</a>
 				</div>
 
 				<app-image-container
 					src="/images/overlay.avif"
+					i18n-alt="@@home.a11y.legal.img_alt"
 					alt="Showcase of how screen readers cannot read text of images, but rely on alt text provided by website itself"
 					[width]="600"
 					[height]="600">
@@ -236,26 +291,36 @@
 
 			<li class="flex zig-zag-row w-full items-center gap-8">
 				<div class="text-block flex flex-col gap-4 w-full">
-					<h3 class="text-family-bold">Stuck on an inaccessible website?</h3>
-					<p>
+					<h3
+						i18n="@@home.a11y.support.title"
+						class="text-family-bold">
+						Stuck on an inaccessible website?
+					</h3>
+
+					<p i18n="@@home.a11y.support.p1">
 						Can't complete that reCAPTCHA to finish a purchase? Is a hotel booking
 						portal or government site blocking your screen reader?
 					</p>
-					<p>
+
+					<p i18n="@@home.a11y.support.p2">
 						I provide secure, remote assistance to help you bypass these barriers, to
 						help you become independent, and if necessary, do it for you.
 					</p>
-					<p>Zoom? Google Meet? Up to you! I reply to support requests within hours.</p>
+
+					<p i18n="@@home.a11y.support.p3">
+						Zoom? Google Meet? Up to you! I reply to support requests within hours.
+					</p>
 
 					<a
 						routerLink="/contact"
 						class="text-center">
-						<span>Get Support</span>
+						<span i18n="@@home.a11y.support.btn">Get Support</span>
 					</a>
 				</div>
 
 				<app-image-container
 					src="/images/support.avif"
+					i18n-alt="@@home.a11y.support.img_alt"
 					alt="screen reader user struggling with website, wishing for help with navigation"
 					[width]="600"
 					[height]="600">

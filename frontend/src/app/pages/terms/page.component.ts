@@ -4,10 +4,9 @@ import { RouterLink } from "@angular/router"
 
 import { SITE_URL } from "../../shared/constants/util"
 
-const PAGE_TITLE = "Terms of Service | Kuvshinov Software"
+const PAGE_TITLE = $localize`:@@terms.meta.title:Terms of Service | Kuvshinov Software`
 const PAGE_URL = "/terms/"
-const PAGE_DESC =
-	"Official Terms of Service for Kuvshinov Software, governing consulting engagements, remote digital assistance, software licensing, and liability bounds."
+const PAGE_DESC = $localize`:@@terms.meta.desc:Official Terms of Service for Kuvshinov Software, governing consulting engagements, remote digital assistance, software licensing, and liability bounds.`
 
 @Component({
 	selector: "main[app-terms-page]",

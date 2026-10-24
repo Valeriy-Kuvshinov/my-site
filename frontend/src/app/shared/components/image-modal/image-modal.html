@@ -6,6 +6,7 @@
 		[class.has-scroll]="hasScrollbar()"
 		role="dialog"
 		aria-modal="true"
+		i18n-aria-label="@@image_modal.dialog.aria"
 		aria-label="selected image showcase modal"
 		[appFocusTrap]="true"
 		(appClickOutside)="closeImageModal()">
@@ -20,6 +21,7 @@
 		<button
 			#closeBtn
 			class="flex absolute z-1"
+			i18n-aria-label="@@image_modal.close.aria"
 			aria-label="Close image modal"
 			(click)="closeImageModal()">
 			<app-svg-icon

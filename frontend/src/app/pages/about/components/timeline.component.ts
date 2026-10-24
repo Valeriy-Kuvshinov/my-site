@@ -1,4 +1,4 @@
-import { Component, Input, signal } from "@angular/core"
+import { Component, signal } from "@angular/core"
 
 import { IconName } from "@/shared/components/icon/icon.map"
 
@@ -16,25 +16,22 @@ const TIMELINE_STEPS: TimelineStep[] = [
 	{
 		id: "idf",
 		years: "2020 - 2023",
-		title: "Tech Advisor & Risk Analyst (IDF)",
-		description:
-			"Served in the Israeli Defense Forces (Aman), specializing in OSINT-based network analysis and technical intelligence. This high-stakes environment cemented my rigorous, risk-averse approach to system security and data integrity.",
+		title: $localize`:@@timeline.step1.title:Tech Advisor & Risk Analyst (IDF)`,
+		description: $localize`:@@timeline.step1.desc:Served in the Israeli Defense Forces (Aman), specializing in OSINT-based network analysis and technical intelligence. This high-stakes environment cemented my rigorous, risk-averse approach to system security and data integrity.`,
 		icon: "shield",
 	},
 	{
 		id: "bootcamp",
 		years: "2023",
-		title: "MisterBit Coding Academy",
-		description:
-			"Completed an intensive, highly selective full-stack software engineering bootcamp. Transitioned my analytical military background directly into modern web technologies, mastering React, Angular, and Node.js architectures.",
+		title: $localize`:@@timeline.step2.title:MisterBit Coding Academy`,
+		description: $localize`:@@timeline.step2.desc:Completed an intensive, highly selective full-stack software engineering bootcamp. Transitioned my analytical military background directly into modern web technologies, mastering React, Angular, and Node.js architectures.`,
 		icon: "education",
 	},
 	{
 		id: "freelance",
 		years: "2024 - Present",
-		title: "Freelance Systems Architect & A11y Specialist",
-		description:
-			"Operating independently to rescue legacy platforms, architect fault-tolerant cloud infrastructure, and retrofit monolithic e-commerce systems to natively meet strict WCAG 2.1 AA Israeli accessibility standards.",
+		title: $localize`:@@timeline.step3.title:Freelance Systems Architect & A11y Specialist`,
+		description: $localize`:@@timeline.step3.desc:Operating independently to rescue legacy platforms, architect fault-tolerant cloud infrastructure, and retrofit monolithic e-commerce systems to natively meet strict WCAG 2.1 AA Israeli accessibility standards.`,
 		icon: "monitor",
 	},
 ]

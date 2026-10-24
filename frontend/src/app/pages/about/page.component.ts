@@ -8,9 +8,9 @@ import { ImageContainerComponent } from "@/shared/components/general/image-conta
 import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 import { TimelineComponent } from "./components/timeline.component"
 
-const PAGE_TITLE = "About | Kuvshinov Software"
+const PAGE_TITLE = $localize`:@@about.meta.title:About | Kuvshinov Software`
 const PAGE_URL = "/about/"
-const PAGE_DESC = "Find out more about the man behind the business."
+const PAGE_DESC = $localize`:@@about.meta.desc:Find out more about the man behind the business.`
 
 @Component({
 	selector: "main[app-about-page]",

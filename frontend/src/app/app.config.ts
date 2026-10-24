@@ -4,7 +4,7 @@ import {
 	provideAppInitializer,
 	provideBrowserGlobalErrorListeners,
 } from "@angular/core"
-import { provideRouter, withInMemoryScrolling } from "@angular/router"
+import { provideRouter, UrlSerializer, withInMemoryScrolling } from "@angular/router"
 import { provideClientHydration } from "@angular/platform-browser"
 import { provideHttpClient, withInterceptors } from "@angular/common/http"
 import { provideTanStackQuery } from "@tanstack/angular-query-experimental"
@@ -12,6 +12,8 @@ import { provideTanStackQuery } from "@tanstack/angular-query-experimental"
 import { QUERY_CLIENT_TOKEN } from "./core/tokens/query-client.token"
 
 import { apiInterceptor } from "./core/interceptor/api.interceptor"
+
+import { TrailingSlashUrlSerializer } from "./core/providers/trailing-slash-serializer"
 
 import { A11yService } from "./core/services/a11y.service"
 
@@ -23,7 +25,7 @@ export const appConfig: ApplicationConfig = {
 
 		provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: "enabled" })),
 
-		provideRouter(routes),
+		{ provide: UrlSerializer, useClass: TrailingSlashUrlSerializer },
 
 		provideClientHydration(),
 

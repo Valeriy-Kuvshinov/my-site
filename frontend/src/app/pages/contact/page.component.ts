@@ -10,9 +10,9 @@ import { SystemStore } from "../../core/stores/system.store"
 import { SvgIconComponent } from "../../shared/components/icon/icon.component"
 import { ContactFormComponent } from "./components/form.component"
 
-const PAGE_TITLE = "Contact | Kuvshinov Software"
+const PAGE_TITLE = $localize`:@@contact.meta.title:Contact | Kuvshinov Software`
 const PAGE_URL = "/contact/"
-const PAGE_DESC = "Get in Touch with Kuvshinov Software."
+const PAGE_DESC = $localize`:@@contact.meta.desc:Get in Touch with Kuvshinov Software.`
 
 @Component({
 	selector: "main[app-contact-page]",

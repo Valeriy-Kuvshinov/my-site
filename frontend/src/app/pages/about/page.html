@@ -3,23 +3,28 @@
 		<div class="content grid w-full items-center layout-row gap-8">
 			<app-image-container
 				src="/images/about.avif"
+				i18n-alt="@@about.intro.img_alt"
 				alt="Valeriy Kuvshinov sitting in a conference"
 				[width]="240"
 				[height]="240">
 			</app-image-container>
 
 			<div class="text flex flex-col gap-4">
-				<h1 class="text-family-bold">About Me</h1>
-
-				<h2>Systems Architect & Consultant | Valeriy Kuvshinov</h2>
-
-				<p>
+				<h1
+					i18n="@@about.intro.title"
+					class="text-family-bold">
+					About Me
+				</h1>
+				<h2 i18n="@@about.intro.subtitle">
+					Systems Architect & Consultant | Valeriy Kuvshinov
+				</h2>
+				<p i18n="@@about.intro.p1">
 					I am a Full Stack Developer specializing in distributed systems, telecom
 					infrastructure, and scalable web applications. With over
 					<strong>3,000 GitHub contributions</strong> and multiple live production systems
 					deployed, my engineering philosophy is built on three pillars:
-					<strong
-						>architectural resilience, uncompromising security, and universal
+					<strong>
+						architectural resilience, uncompromising security, and universal
 						accessibility.
 					</strong>
 				</p>
@@ -29,28 +34,32 @@
 
 	<article class="reason flex flex-col w-full">
 		<div class="content flex flex-col w-full layout-row gap-8">
-			<h2 class="text-family-bold">The Engineering Difference</h2>
+			<h2
+				i18n="@@about.reason.title"
+				class="text-family-bold">
+				The Engineering Difference
+			</h2>
 
 			<ul class="grid layout-row gap-4">
 				<li class="flex flex-col gap-2">
-					<h3>Security by Discipline</h3>
-					<p>
+					<h3 i18n="@@about.reason.p1.title">Security by Discipline</h3>
+					<p i18n="@@about.reason.p1.desc">
 						Trained in IDF OSINT and technical intelligence. I approach every database
 						constraint and API endpoint with a zero-trust, military-grade risk
 						management protocol.
 					</p>
 				</li>
 				<li class="flex flex-col gap-2">
-					<h3>Legal-Grade Accessibility</h3>
-					<p>
+					<h3 i18n="@@about.reason.p2.title">Legal-Grade Accessibility</h3>
+					<p i18n="@@about.reason.p2.desc">
 						I do not use automated overlay widgets. I rewrite native DOM structures to
 						guarantee absolute WCAG 2.1 AA/AAA compliance, protecting clients from legal
 						liabilities.
 					</p>
 				</li>
 				<li class="flex flex-col gap-2">
-					<h3>Infrastructure Independence</h3>
-					<p>
+					<h3 i18n="@@about.reason.p3.title">Infrastructure Independence</h3>
+					<p i18n="@@about.reason.p3.desc">
 						I build systems from scratch, eliminating vendor lock-in. You own your
 						servers, your code, and your data, bypassing expensive managed-platform
 						subscriptions.
@@ -62,9 +71,13 @@
 
 	<article class="experience flex flex-col w-full">
 		<div class="content flex flex-col w-full layout-row gap-8">
-			<h2 class="text-family-bold">Background & Profile</h2>
+			<h2
+				i18n="@@about.experience.title"
+				class="text-family-bold">
+				Background & Profile
+			</h2>
 
-			<p>
+			<p i18n="@@about.experience.p1">
 				With a background spanning high-stakes technical intelligence and complex commercial
 				web deployments, I approach software engineering as an exercise in precision risk
 				management.
@@ -72,14 +85,14 @@
 
 			<ul class="flex flex-col gap-4">
 				<li>
-					<p>
+					<p i18n="@@about.experience.p2">
 						<strong>Academic Rigor:</strong> B.Sc. in Computer Science and Mathematics,
 						Open University of Israel (In Progress). Anchoring practical engineering
 						with deep theoretical and algorithmic foundations.
 					</p>
 				</li>
 				<li>
-					<p>
+					<p i18n="@@about.experience.p3">
 						<strong>Linguistic Reach:</strong> Native proficiency in English, Hebrew,
 						and Russian, enabling seamless technical documentation and cross-border
 						project localization.
@@ -93,29 +106,37 @@
 
 	<article class="stack flex flex-col w-full">
 		<div class="content flex flex-col w-full layout-row gap-8">
-			<h2 class="text-family-bold">Core Technology Stack</h2>
+			<h2
+				i18n="@@about.stack.title"
+				class="text-family-bold">
+				Core Technology Stack
+			</h2>
 
 			<ul class="flex flex-col gap-4">
 				<li>
-					<p>
+					<p i18n="@@about.stack.p1">
 						<strong>Languages:</strong> TypeScript, JavaScript, Java, Python, C, Bash,
 						HTML/CSS.
 					</p>
 				</li>
 				<li>
-					<p><strong>Frontend:</strong> Angular, Next.js, React, Electron, JavaFX.</p>
+					<p i18n="@@about.stack.p2">
+						<strong>Frontend:</strong> Angular, Next.js, React, Electron, JavaFX.
+					</p>
 				</li>
 				<li>
-					<p><strong>Backend:</strong> NestJS, Node.js, Express, Spring Boot.</p>
+					<p i18n="@@about.stack.p3">
+						<strong>Backend:</strong> NestJS, Node.js, Express, Spring Boot.
+					</p>
 				</li>
 				<li>
-					<p>
+					<p i18n="@@about.stack.p4">
 						<strong>Database:</strong> NoSQL (MongoDB), SQL (MySQL, PostgreSQL,
 						Supabase).
 					</p>
 				</li>
 				<li>
-					<p>
+					<p i18n="@@about.stack.p5">
 						<strong>Infrastructure & DevOps:</strong> Docker, Nginx, Linux, Cloudflare,
 						Oracle Cloud Infrastructure (OCI), Amazon Web Services (AWS), GitHub
 						Actions, Cron Jobs, SSH.
@@ -128,13 +149,17 @@
 	<article class="creative flex flex-col w-full">
 		<div class="content grid layout-row items-center gap-8">
 			<div class="text flex flex-col items-center gap-4">
-				<h2 class="text-family-bold">Beyond The Code</h2>
-				<p>
+				<h2
+					i18n="@@about.creative.title"
+					class="text-family-bold">
+					Beyond The Code
+				</h2>
+				<p i18n="@@about.creative.p1">
 					While software architecture demands strict logic and risk management, I balance
 					that discipline with creative expression through instrumental and orchestral
 					music composition.
 				</p>
-				<p>
+				<p i18n="@@about.creative.p2">
 					I occasionally produce and release new cinematic tracks. You can explore my
 					latest compositions directly on my channel.
 				</p>
@@ -143,8 +168,9 @@
 					class="flex flex-row full-center w-fit gap-2"
 					target="_blank"
 					rel="noopener noreferrer"
+					i18n-aria-label="@@about.creative.link_aria"
 					aria-label="Visit My Channel on YouTube (opens in a new tab)">
-					<span>Visit My Channel</span>
+					<span i18n="@@about.creative.link_text">Visit My Channel</span>
 					<app-svg-icon
 						icon="youtube"
 						width="24"
@@ -157,6 +183,7 @@
 				<iframe
 					class="w-full h-full"
 					src="https://www.youtube.com/embed/BhYwwk-Yv9A"
+					i18n-title="@@about.creative.iframe_title"
 					title="Instrumental music composition by Valeriy Kuvshinov"
 					frameborder="0"
 					allow="
@@ -175,19 +202,25 @@
 
 	<article class="availability flex flex-col w-full">
 		<div class="content flex flex-col w-full layout-row gap-8">
-			<h2 class="text-family-bold">Current Availability</h2>
+			<h2
+				i18n="@@about.availability.title"
+				class="text-family-bold">
+				Current Availability
+			</h2>
 
-			<p>I operate a flexible professional schedule. I am currently open to:</p>
+			<p i18n="@@about.availability.p1">
+				I operate a flexible professional schedule. I am currently open to:
+			</p>
 
 			<ul class="flex flex-col gap-4">
 				<li>
-					<p>
+					<p i18n="@@about.availability.p2">
 						<strong>Freelance & Contract:</strong> Taking on new clients for system
 						rescue, custom builds, and WCAG AA remediation.
 					</p>
 				</li>
 				<li>
-					<p>
+					<p i18n="@@about.availability.p3">
 						<strong>Full-Time Roles:</strong> Seeking positions as a Full-Stack Engineer
 						or Systems Architect within teams that value rigorous security,
 						accessibility, and independent infrastructure over bloated third-party
@@ -196,7 +229,7 @@
 				</li>
 			</ul>
 
-			<p>
+			<p i18n="@@about.availability.p4">
 				Open to Remote positions worldwide. Open to Hybrid, or On-site positions within
 				Israel.
 			</p>
@@ -204,7 +237,7 @@
 			<a
 				routerLink="/contact"
 				class="flex flex-row full-center gap-2 w-fit">
-				<span>Reach out!</span>
+				<span i18n="@@about.availability.link">Reach out!</span>
 
 				<app-svg-icon
 					icon="arrow"

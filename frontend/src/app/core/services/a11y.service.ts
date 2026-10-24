@@ -86,7 +86,6 @@ export class A11yService {
 			this.detachReadingMaskListeners()
 			return
 		}
-
 		html.classList.add("reading-mask-active")
 		this.attachReadingMaskListeners(html)
 	}

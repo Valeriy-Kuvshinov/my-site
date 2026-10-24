@@ -10,6 +10,7 @@
 		[appFocusTrap]="true"
 		class="aside-menu flex flex-col h-full fast-trans"
 		[class.show]="showMenu()"
+		i18n-aria-label="@@aside.menu.aria"
 		aria-label="Mobile user menu"
 		tabindex="-1">
 		<div class="menu-header flex flex-row items-center justify-between">
@@ -22,6 +23,7 @@
 				(click)="closeAsideMenu()">
 				<app-image-container
 					[src]="LOGO_IMG"
+					i18n-alt="@@aside.logo.alt"
 					alt="Noffty logo"
 					[width]="56"
 					[height]="46"
@@ -30,6 +32,7 @@
 			</a>
 			<button
 				(click)="closeAsideMenu()"
+				i18n-aria-label="@@aside.close.aria"
 				aria-label="close navigation menu">
 				<app-svg-icon
 					icon="close"
@@ -45,68 +48,77 @@
 				routerLinkActive="active"
 				[routerLinkActiveOptions]="{ exact: true }"
 				ariaCurrentWhenActive="page"
-				class="flex flex-row items-center fast-trans"
+				i18n="@@aside.link.home"
+				class="flex flex-row items-center gap-4"
 				(click)="closeAsideMenu()">
 				<app-svg-icon
 					icon="home"
 					width="24"
 					height="24">
 				</app-svg-icon>
-				<span>Home</span>
+				Home
 			</a>
 			<a
 				routerLink="/portfolio/"
 				routerLinkActive="active"
 				ariaCurrentWhenActive="page"
-				class="flex flex-row items-center fast-trans"
+				i18n="@@aside.link.portfolio"
+				class="flex flex-row items-center gap-4"
 				(click)="closeAsideMenu()">
 				<app-svg-icon
 					icon="briefcase"
 					width="24"
 					height="24">
 				</app-svg-icon>
-				<span>Portfolio</span>
+				Portfolio
 			</a>
 			<a
 				routerLink="/services/"
 				routerLinkActive="active"
 				ariaCurrentWhenActive="page"
-				class="flex flex-row items-center fast-trans"
+				i18n="@@aside.link.services"
+				class="flex flex-row items-center gap-4"
 				(click)="closeAsideMenu()">
 				<app-svg-icon
 					icon="monitor"
 					width="24"
 					height="24">
 				</app-svg-icon>
-				<span>Services</span>
+				Services
 			</a>
 			<a
 				routerLink="/about/"
 				routerLinkActive="active"
 				ariaCurrentWhenActive="page"
-				class="flex flex-row items-center fast-trans"
+				i18n="@@aside.link.about"
+				class="flex flex-row items-center gap-4"
 				(click)="closeAsideMenu()">
 				<app-svg-icon
 					icon="info"
 					width="24"
 					height="24">
 				</app-svg-icon>
-				<span>About</span>
+				About
 			</a>
 			<a
 				routerLink="/contact/"
 				routerLinkActive="active"
 				ariaCurrentWhenActive="page"
-				class="flex flex-row items-center fast-trans"
+				i18n="@@aside.link.contact"
+				class="flex flex-row items-center gap-4"
 				(click)="closeAsideMenu()">
 				<app-svg-icon
 					icon="mail"
 					width="24"
 					height="24">
 				</app-svg-icon>
-				<span>Contact</span>
+				Contact
 			</a>
 		</nav>
+
+		<div class="menu-footer flex flex-col">
+			<app-language-select position="up"></app-language-select>
+		</div>
 	</aside>
 </div>
 }

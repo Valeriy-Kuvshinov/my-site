@@ -17,6 +17,7 @@ import { FocusTrapDirective } from "@/shared/directives/focus-trap.directive"
 
 import { SvgIconComponent } from "../icon/icon.component"
 import { ImageContainerComponent } from "../general/image-container.component"
+import { LanguageSelectComponent } from "../language-select/language-select-component"
 
 @Component({
 	selector: "app-aside-menu",
@@ -28,6 +29,7 @@ import { ImageContainerComponent } from "../general/image-container.component"
 		ClickOutsideDirective,
 		FocusTrapDirective,
 		ImageContainerComponent,
+		LanguageSelectComponent,
 	],
 	templateUrl: "./aside-menu.html",
 	styleUrl: "./aside-menu.css",

@@ -1,6 +1,7 @@
 <button
 	class="a11y-trigger flex full-center fixed fast-trans z-15"
 	(click)="openA11yMenu(); $event.stopPropagation()"
+	i18n-aria-label="@@a11y.trigger.aria"
 	aria-label="Open accessibility menu">
 	<app-svg-icon
 		icon="accessibility"
@@ -16,6 +17,7 @@
 	[class.show]="showMenu()"
 	role="dialog"
 	aria-modal="true"
+	i18n-aria-label="@@a11y.menu.dialog.aria"
 	aria-label="Accessibility menu"
 	tabindex="-1">
 	<section class="menu-header flex flex-row items-center justify-between">
@@ -25,12 +27,13 @@
 				width="32"
 				height="32">
 			</app-svg-icon>
-			<span>Accessibility Options</span>
+			<span i18n="@@a11y.menu.title">Accessibility Options</span>
 		</h2>
 
 		<div class="header-actions flex flex-row items-center">
 			<button
 				(click)="store.resetA11yPreferences()"
+				i18n-aria-label="@@a11y.menu.reset.aria"
 				aria-label="Reset accessibility settings">
 				<app-svg-icon
 					icon="reset"
@@ -45,6 +48,7 @@
 
 			<button
 				(click)="closeA11yMenu()"
+				i18n-aria-label="@@a11y.menu.close.aria"
 				aria-label="Close menu">
 				<app-svg-icon
 					icon="close"
@@ -56,73 +60,84 @@
 	</section>
 
 	<section class="a11y-options grid items-center w-full">
-		<h3>Visual</h3>
+		<h3 i18n="@@a11y.category.visual">Visual</h3>
 		<button
 			app-toggle-option
+			i18n-label="@@a11y.option.pause_motion"
 			label="Pause Motion"
 			icon="noMotion"
 			[isActive]="store.a11yPreferences().pauseMotion"
 			(onToggle)="updateToggle('pauseMotion', store.a11yPreferences().pauseMotion)"></button>
 		<button
 			app-toggle-option
+			i18n-label="@@a11y.option.hide_media"
 			label="Hide Media"
 			icon="noMedia"
 			[isActive]="store.a11yPreferences().hideMedia"
 			(onToggle)="updateToggle('hideMedia', store.a11yPreferences().hideMedia)"></button>
 		<button
 			app-toggle-option
+			i18n-label="@@a11y.option.high_contrast"
 			label="High Contrast"
 			icon="highContrast"
 			[isActive]="store.a11yPreferences().highContrast"
 			(onToggle)="toggleColorMode('highContrast')"></button>
 		<button
 			app-toggle-option
+			i18n-label="@@a11y.option.gray_mode"
 			label="Gray Mode"
 			icon="grayMode"
 			[isActive]="store.a11yPreferences().grayscaleView"
 			(onToggle)="toggleColorMode('grayscaleView')"></button>
 
-		<h3>Orientation</h3>
+		<h3 i18n="@@a11y.category.orientation">Orientation</h3>
 		<button
 			app-toggle-option
+			i18n-label="@@a11y.option.reading_mask"
 			label="Reading Mask"
 			icon="readingMask"
 			[isActive]="store.a11yPreferences().readingMask"
 			(onToggle)="updateToggle('readingMask', store.a11yPreferences().readingMask)"></button>
 		<button
 			app-toggle-option
+			i18n-label="@@a11y.option.highlight_links"
 			label="Highlight Links"
 			icon="linkHighlight"
 			[isActive]="store.a11yPreferences().highlightLinks"
 			(onToggle)="updateToggle('highlightLinks', store.a11yPreferences().highlightLinks)"></button>
 
-		<h3>Text</h3>
+		<h3 i18n="@@a11y.category.text">Text</h3>
 		<div
 			app-scale-option
+			i18n-label="@@a11y.option.word_spacing"
 			label="Word Spacing"
 			icon="wordSpace"
 			[currentLevel]="store.a11yPreferences().wordSpacing"
 			(onScaleChange)="updateScale('wordSpacing', $event)"></div>
 		<div
 			app-scale-option
+			i18n-label="@@a11y.option.line_height"
 			label="Line Height"
 			icon="lineHeight"
 			[currentLevel]="store.a11yPreferences().lineHeight"
 			(onScaleChange)="updateScale('lineHeight', $event)"></div>
 		<div
 			app-scale-option
+			i18n-label="@@a11y.option.letter_spacing"
 			label="Letter Spacing"
 			icon="letterSpace"
 			[currentLevel]="store.a11yPreferences().letterSpacing"
 			(onScaleChange)="updateScale('letterSpacing', $event)"></div>
 		<div
 			app-scale-option
+			i18n-label="@@a11y.option.text_size"
 			label="Text Size"
 			icon="textSize"
 			[currentLevel]="store.a11yPreferences().textScale"
 			(onScaleChange)="updateScale('textScale', $event)"></div>
 		<button
 			app-toggle-option
+			i18n-label="@@a11y.option.friendly_font"
 			label="Friendly Font"
 			icon="dyslexicFont"
 			[isActive]="store.a11yPreferences().dyslexiaFont"
@@ -133,9 +148,10 @@
 		<a
 			routerLink="/accessibility"
 			class="flex flex-row items-center w-fit"
+			i18n-aria-label="@@a11y.menu.statement_link.aria"
 			aria-label="Accessibility Statement. Go to Accessibility page"
 			(click)="closeA11yMenu()">
-			<span>Accessibility Statement</span>
+			<span i18n="@@a11y.menu.statement_link.text">Accessibility Statement</span>
 			<app-svg-icon
 				icon="arrow"
 				width="16"

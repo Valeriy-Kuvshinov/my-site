@@ -4,17 +4,24 @@
 	"scripts": {
 		"ng": "ng",
 		"dev": "ng serve",
-		"build": "ng build && rm -rf ../backend/out && mv dist/frontend/browser ../backend/out",
-		"watch": "ng build --watch --configuration development",
+		"dev:ru": "ng serve --configuration=ru",
+		"dev:he": "ng serve --configuration=he",
+		"locales": "npx ng extract-i18n --output-path src/locale",
+		"build": "node scripts/generate-sitemap.mjs && ng build && rm -rf ../backend/out && mv dist/frontend/browser ../backend/out",
+		"watch": "node scripts/generate-sitemap.mjs && ng build --watch --configuration development",
 		"test": "ng test"
 	},
 	"private": true,
+	"engines": {
+		"node": ">=24.22.1"
+	},
 	"dependencies": {
 		"@angular/animations": "^22.2.0",
 		"@angular/common": "^22.2.0",
 		"@angular/compiler": "^22.2.0",
 		"@angular/core": "^22.2.0",
 		"@angular/forms": "^22.2.0",
+		"@angular/localize": "22.2.0",
 		"@angular/platform-browser": "^22.2.0",
 		"@angular/platform-server": "^22.2.0",
 		"@angular/router": "^22.2.0",

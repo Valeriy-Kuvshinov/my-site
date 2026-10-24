@@ -1,9 +1,11 @@
 @if (store.deviceType() !== 'desktop') {
 <nav
-	class="mobile-view grid items-center"
+	class="mobile-view flex flex-row items-center justify-between"
+	i18n-aria-label="@@header.nav.mobile.aria"
 	aria-label="Mobile Main Navigation">
 	<button
 		(click)="openMenu()"
+		i18n-aria-label="@@header.menu.open.aria"
 		aria-label="Open user menu"
 		class="w-fit">
 		<app-svg-icon
@@ -21,6 +23,7 @@
 		class="logo flex fast-trans">
 		<app-image-container
 			src="/images/logo.avif"
+			i18n-alt="@@header.logo.noffty.alt"
 			alt="Noffty logo"
 			[width]="56"
 			[height]="46"
@@ -31,21 +34,8 @@
 } @else {
 <nav
 	class="desktop-view flex flex-row align-center justify-between layout-row"
+	i18n-aria-label="@@header.nav.desktop.aria"
 	aria-label="Desktop Main Navigation">
-	<a
-		routerLink="/about/"
-		routerLinkActive="active"
-		ariaCurrentWhenActive="page"
-		class="relative fast-trans">
-		<span>About</span>
-	</a>
-	<a
-		routerLink="/contact/"
-		routerLinkActive="active"
-		ariaCurrentWhenActive="page"
-		class="relative fast-trans">
-		<span>Contact</span>
-	</a>
 	<a
 		routerLink="/"
 		routerLinkActive="active"
@@ -54,25 +44,49 @@
 		class="logo flex fast-trans">
 		<app-image-container
 			src="/images/logo.avif"
+			i18n-alt="@@header.logo.vk.alt"
 			alt="VK Logo"
 			[width]="56"
 			[height]="46"
 			[priority]="true">
 		</app-image-container>
 	</a>
-	<a
-		routerLink="/portfolio/"
-		routerLinkActive="active"
-		ariaCurrentWhenActive="page"
-		class="relative fast-trans">
-		<span>Portfolio</span>
-	</a>
-	<a
-		routerLink="/services/"
-		routerLinkActive="active"
-		ariaCurrentWhenActive="page"
-		class="relative fast-trans">
-		<span>Services</span>
-	</a>
+
+	<div class="links flex row gap-8">
+		<a
+			routerLink="/portfolio/"
+			routerLinkActive="active"
+			ariaCurrentWhenActive="page"
+			i18n="@@header.link.portfolio"
+			class="relative fast-trans">
+			Portfolio
+		</a>
+		<a
+			routerLink="/services/"
+			routerLinkActive="active"
+			ariaCurrentWhenActive="page"
+			i18n="@@header.link.services"
+			class="relative fast-trans">
+			Services
+		</a>
+		<a
+			routerLink="/about/"
+			routerLinkActive="active"
+			ariaCurrentWhenActive="page"
+			i18n="@@header.link.about"
+			class="relative fast-trans">
+			About
+		</a>
+		<a
+			routerLink="/contact/"
+			routerLinkActive="active"
+			ariaCurrentWhenActive="page"
+			i18n="@@header.link.contact"
+			class="relative fast-trans">
+			Contact
+		</a>
+	</div>
+
+	<app-language-select></app-language-select>
 </nav>
 }

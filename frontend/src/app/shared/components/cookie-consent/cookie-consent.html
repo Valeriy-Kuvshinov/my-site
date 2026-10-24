@@ -2,6 +2,7 @@
 <aside
 	#bannerRef
 	class="cookie-consent flex flex-row full-center fixed w-fit z-15"
+	i18n-aria-label="@@cookie.dialog.aria"
 	aria-label="cookies policy consent"
 	tabindex="-1">
 	<app-svg-icon
@@ -10,25 +11,32 @@
 		width="32"
 		height="32">
 	</app-svg-icon>
-	<p>
+
+	<p i18n="@@cookie.desc.full">
 		We use cookies to analyze site traffic and improve our services in accordance with our
 		<a
 			routerLink="/privacy-policy"
 			class="text-family-regular font-bold">
-			<span>privacy policy</span></a
+			privacy policy</a
 		>. Do you accept?
 	</p>
+
 	<div class="actions flex flex-row items-center">
 		<button
 			class="text-family-regular"
+			i18n-aria-label="@@cookie.btn_decline.aria"
 			aria-label="Decline cookie policy"
+			i18n="@@cookie.btn_decline.text"
 			(click)="handleDecline()">
-			<span>Decline</span>
+			Decline
 		</button>
+
 		<button
+			i18n-aria-label="@@cookie.btn_accept.aria"
 			aria-label="Accept cookie policy"
+			i18n="@@cookie.btn_accept.text"
 			(click)="handleAccept()">
-			<span>Accept</span>
+			Accept
 		</button>
 	</div>
 </aside>
@@ -36,28 +44,35 @@
 <aside
 	#bannerRef
 	class="cookie-consent flex flex-row justify-center fixed w-fit z-15"
+	i18n-aria-label="@@cookie.dialog.aria"
 	aria-label="cookies policy consent"
 	tabindex="-1">
-	<p>
+	<p i18n="@@cookie.desc.full">
 		We use cookies to analyze site traffic and improve our services in accordance with our
 		<a
 			routerLink="/privacy-policy"
 			class="text-family-regular font-bold">
-			<span>privacy policy</span></a
+			privacy policy</a
 		>. Do you accept?
 	</p>
+
 	<div class="actions flex flex-col items-center">
 		<button
 			class="w-full"
+			i18n-aria-label="@@cookie.btn_accept.aria"
 			aria-label="Accept cookie policy"
+			i18n="@@cookie.btn_accept.text"
 			(click)="handleAccept()">
-			<span>Accept</span>
+			Accept
 		</button>
+
 		<button
 			class="w-full text-family-regular"
+			i18n-aria-label="@@cookie.btn_decline.aria"
 			aria-label="Decline cookie policy"
+			i18n="@@cookie.btn_decline.text"
 			(click)="handleDecline()">
-			<span>Decline</span>
+			Decline
 		</button>
 	</div>
 </aside>

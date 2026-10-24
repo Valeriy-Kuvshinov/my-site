@@ -3,11 +3,11 @@ import { Component, OnInit, signal } from "@angular/core"
 import { ImageContainerComponent } from "../general/image-container.component"
 
 const LOADING_PHRASES = [
-	"Getting back to you...",
-	"Almost there...",
-	"Loading...",
-	"Be right back!",
-	"Just a moment...",
+	$localize`:@@loading.phrase1:Getting back to you...`,
+	$localize`:@@loading.phrase2:Almost there...`,
+	$localize`:@@loading.phrase3:Loading...`,
+	$localize`:@@loading.phrase4:Be right back!`,
+	$localize`:@@loading.phrase5:Just a moment...`,
 ]
 
 @Component({
@@ -38,7 +38,7 @@ const LOADING_PHRASES = [
 	},
 })
 export class LoadingComponent implements OnInit {
-	readonly currentPhrase = signal("Loading...")
+	readonly currentPhrase = signal($localize`:@@loading.default:Loading...`)
 
 	readonly LOADING_IMG_SRC = "/images/hero_walk.avif"
 

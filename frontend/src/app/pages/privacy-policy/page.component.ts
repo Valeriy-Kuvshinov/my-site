@@ -4,10 +4,9 @@ import { RouterLink } from "@angular/router"
 
 import { SITE_URL } from "@/shared/constants/util"
 
-const PAGE_TITLE = "Privacy Policy | Did Not Get It"
+const PAGE_TITLE = $localize`:@@privacy.meta.title:Privacy Policy | Did Not Get It`
 const PAGE_URL = "/privacy-policy/"
-const PAGE_DESC =
-	"Official statutory privacy disclosure and data processing protocol for the Did Not Get It browser extension."
+const PAGE_DESC = $localize`:@@privacy.meta.desc:Official statutory privacy disclosure and data processing protocol for the Did Not Get It browser extension.`
 
 @Component({
 	selector: "main[app-privacy-policy-page]",

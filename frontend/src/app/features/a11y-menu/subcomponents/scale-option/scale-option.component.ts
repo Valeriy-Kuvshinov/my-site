@@ -38,7 +38,7 @@ export type ScaleLevel = 0 | 1 | 2 | 3 | 4
 				[attr.aria-valuemin]="0"
 				[attr.aria-valuemax]="4"
 				[attr.aria-valuenow]="currentLevel"
-				[attr.aria-valuetext]="currentLevel === 0 ? 'Default' : 'Level ' + currentLevel" />
+				[attr.aria-valuetext]="ariaValueText" />
 		</div>
 	`,
 	styleUrl: "./scale-option.css",
@@ -56,6 +56,12 @@ export class ScaleOptionComponent {
 
 	get id(): string {
 		return `scale-${this.label.replace(/\s+/g, "-").toLowerCase()}`
+	}
+
+	get ariaValueText(): string {
+		return this.currentLevel === 0
+			? $localize`:@@a11y.scale.default:Default`
+			: $localize`:@@a11y.scale.level:Level ${this.currentLevel}`
 	}
 
 	handleScaleChange(event: Event) {

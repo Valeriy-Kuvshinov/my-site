@@ -20,7 +20,8 @@
 
 		&.logo {
 			app-image-container {
-				aspect-ratio: 1;
+				width: 66px;
+				height: 56px;
 			}
 
 			&:focus-visible {
@@ -59,16 +60,11 @@
 	}
 
 	.mobile-view {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: auto;
-
 		a,
 		button {
 			grid-column: span 1;
 
 			&.logo {
-				max-width: 3.5rem;
-				max-height: 2.75rem;
 				justify-self: center;
 			}
 		}
@@ -76,11 +72,6 @@
 
 	.desktop-view {
 		font-size: 1.5rem;
-
-		a.logo {
-			max-width: 4.5rem;
-			max-height: 3.5rem;
-		}
 	}
 
 	@media (max-width: 900px) {

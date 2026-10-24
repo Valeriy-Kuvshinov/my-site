@@ -1,0 +1,64 @@
+<span
+	id="lang-select-label"
+	class="sr-only"
+	i18n="@@lang_select.label">
+	Select Language
+</span>
+
+<div
+	class="select-wrapper relative w-full"
+	[class.show-up]="position === 'up'"
+	[class.show-down]="position === 'down'">
+	<button
+		type="button"
+		id="lang-select-btn"
+		aria-labelledby="lang-select-label lang-select-btn"
+		aria-haspopup="listbox"
+		[attr.aria-expanded]="isOpen()"
+		class="flex flex-row items-center justify-between w-full text-family-regular"
+		[class.open]="isOpen()"
+		(click)="toggleOpen()">
+		<div class="flex flex-row items-center gap-2">
+			<app-svg-icon
+				[icon]="activeOption().icon"
+				width="24"
+				height="24">
+			</app-svg-icon>
+
+			<span>{{ activeOption().label }}</span>
+		</div>
+
+		<app-svg-icon
+			icon="arrow"
+			width="24"
+			height="24">
+		</app-svg-icon>
+	</button>
+
+	@if (isOpen()) {
+	<div
+		id="lang-listbox"
+		role="listbox"
+		aria-labelledby="lang-select-label"
+		class="absolute w-full z-15 cursor-pointer">
+		@for (option of options; track option.value) {
+		<div
+			role="option"
+			[attr.aria-selected]="option.value === activeOption().value"
+			tabindex="0"
+			class="option flex flex-row items-center justify-between fast-trans cursor-pointer"
+			(click)="selectLanguage(option.value)"
+			(keydown.enter)="selectLanguage(option.value)"
+			(keydown.space)="$event.preventDefault(); selectLanguage(option.value)">
+			<span>{{ option.label }}</span>
+
+			<app-svg-icon
+				[icon]="option.icon"
+				width="24"
+				height="24">
+			</app-svg-icon>
+		</div>
+		}
+	</div>
+	}
+</div>

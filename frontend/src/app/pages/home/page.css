@@ -392,7 +392,7 @@
 			);
 
 			.about-link {
-				max-width: 15rem;
+				max-width: 8rem;
 				position: absolute;
 				top: 15vh;
 				right: 5vw;
@@ -435,14 +435,27 @@
 		}
 	}
 
+	@media (min-width: 1001px) {
+		.hero .about-link {
+			max-width: 12rem;
+		}
+	}
+
 	@media (min-width: 1201px) {
-		.hero app-image-container {
+		.hero .about-link {
+			max-width: 15rem;
 			top: 20vh;
 			right: 10vw;
 		}
 
 		.core ul {
 			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	@media (min-width: 1401px) {
+		.hero .about-link {
+			max-width: 18rem;
 		}
 	}
 }

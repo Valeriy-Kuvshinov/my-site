@@ -1,8 +1,14 @@
 <section class="page-contents flex flex-col items-center w-h-full">
 	<article class="intro flex flex-col w-full">
 		<div class="text flex flex-col w-full layout-row gap-8">
-			<h1 class="text-center text-family-bold">Accomplished Work</h1>
-			<p class="layout-row">
+			<h1
+				i18n="@@portfolio_page.intro.title"
+				class="text-center text-family-bold">
+				Accomplished Work
+			</h1>
+			<p
+				i18n="@@portfolio_page.intro.desc"
+				class="layout-row">
 				All my proudly published software projects, ranging from final/active versions for
 				clients to open source.
 			</p>
@@ -10,18 +16,16 @@
 	</article>
 
 	<article class="gallery flex flex-col items-center w-full">
-		<ul class="projects layout-row w-full">
+		<ul class="layout-row w-full">
 			@for (item of items; track item.title) {
-			<li class="card flex flex-col h-fit fast-trans">
+			<li class="flex flex-col h-fit fast-trans">
 				<app-image-container
 					[src]="item.imgSrc"
 					[alt]="item.imgAlt"
-					[width]="640"
-					[height]="360"
 					class="cursor-pointer"
 					tabindex="0"
 					role="button"
-					[attr.aria-label]="'View full size image of ' + item.title"
+					[attr.aria-label]="getImageAriaLabel(item)"
 					(onClickEvent)="openImage(item.imgSrc)">
 				</app-image-container>
 
@@ -30,8 +34,8 @@
 						<h2 class="text-family-bold">{{ item.title }}</h2>
 						<p>{{ item.description }}</p>
 
-						@if(item.note){
-						<p>{{item.note}}</p>
+						@if(item.note) {
+						<p>{{ item.note }}</p>
 						}
 					</div>
 
@@ -43,8 +47,9 @@
 							target="_blank"
 							rel="noopener noreferrer"
 							class="prod flex flex-row items-center gap-2 w-fit"
+							i18n-aria-label="@@portfolio_page.btn_visit.aria"
 							aria-label="Visit Site (opens in a new tab)">
-							<span>Visit Site</span>
+							<span i18n="@@portfolio_page.btn_visit.text">Visit Site</span>
 							<app-svg-icon
 								icon="magGlass"
 								width="24"
@@ -57,8 +62,9 @@
 							target="_blank"
 							rel="noopener noreferrer"
 							class="source flex flex-row items-center gap-2 w-fit"
+							i18n-aria-label="@@portfolio_page.btn_source.aria"
 							aria-label="View Source Code (opens in a new tab)">
-							<span>Source Code</span>
+							<span i18n="@@portfolio_page.btn_source.text">Source Code</span>
 							<app-svg-icon
 								icon="github"
 								width="24"
@@ -76,16 +82,22 @@
 
 	<article class="cta flex flex-col full-center w-full">
 		<div class="content flex flex-col items-center layout-row gap-8">
-			<h2 class="text-center text-family-bold">Ready to Build Your System?</h2>
+			<h2
+				i18n="@@portfolio_page.cta.title"
+				class="text-center text-family-bold">
+				Ready to Build Your System?
+			</h2>
 
-			<p class="text-center">
+			<p
+				i18n="@@portfolio_page.cta.desc"
+				class="text-center">
 				Let's discuss your architectural needs and engineer a digital asset you actually
 				own.
 			</p>
 			<a
 				routerLink="/contact"
 				class="flex flex-row full-center w-fit gap-4">
-				<span>Start a Project</span>
+				<span i18n="@@portfolio_page.cta.btn">Start a Project</span>
 				<app-svg-icon
 					icon="mail"
 					width="24"

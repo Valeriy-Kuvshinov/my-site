@@ -8,15 +8,19 @@
 		var(--prmclr3)
 	);
 
-	.gallery .projects {
+	.gallery ul {
 		max-width: 100rem;
 		column-gap: 2rem;
 
-		.card {
+		li {
 			border: 1px solid var(--scdclr6);
 			border-radius: 0.75rem;
 			overflow: hidden;
 			margin-bottom: 2rem;
+
+			app-image-container {
+				aspect-ratio: 16 / 9;
+			}
 
 			.content {
 				padding: 1rem;
@@ -90,15 +94,15 @@
 			}
 		}
 
-		.gallery .projects,
+		.gallery ul,
 		.cta {
 			padding: 3rem 1rem;
 		}
 
-		.gallery .projects {
+		.gallery ul {
 			column-width: 100%;
 
-			.card .content h2 {
+			li .content h2 {
 				font-size: 1.25rem;
 			}
 		}
@@ -119,15 +123,15 @@
 			}
 		}
 
-		.gallery .projects,
+		.gallery ul,
 		.cta {
 			padding: 4rem 2rem;
 		}
 
-		.gallery .projects {
+		.gallery ul {
 			column-width: 25rem;
 
-			.card {
+			li {
 				.content h2 {
 					font-size: 1.5rem;
 				}

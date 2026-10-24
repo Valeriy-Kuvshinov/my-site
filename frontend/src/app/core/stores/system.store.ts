@@ -1,7 +1,8 @@
 import { isPlatformBrowser } from "@angular/common"
-import { DestroyRef, inject, Injectable, PLATFORM_ID, signal } from "@angular/core"
+import { DestroyRef, DOCUMENT, inject, Injectable, PLATFORM_ID, signal } from "@angular/core"
 
 type DeviceType = "mobile" | "tablet" | "desktop"
+type SupportedLanguage = "en" | "ru" | "he"
 
 interface FlashMessage {
 	title: string
@@ -31,9 +32,13 @@ const DISPLAY_TIMEOUT_MILLIS = 8 * 1000
 export class SystemStore {
 	private readonly platformId = inject(PLATFORM_ID)
 	private readonly destroyRef = inject(DestroyRef)
+	private readonly document = inject(DOCUMENT)
 
 	// DEVICE STATE
 	readonly deviceType = signal<DeviceType>("desktop")
+
+	// LOCALE STATE
+	readonly currentLang = signal<SupportedLanguage>("en")
 
 	// FLASH MESSAGE STATE
 	readonly message = signal<FlashMessage | null>(null)
@@ -64,6 +69,7 @@ export class SystemStore {
 
 	constructor() {
 		this.initDeviceTypeSync()
+		this.initLanguageSync()
 	}
 
 	private initDeviceTypeSync() {
@@ -85,6 +91,48 @@ export class SystemStore {
 		}
 	}
 
+	private initLanguageSync() {
+		if (!isPlatformBrowser(this.platformId)) return
+
+		const path = window.location.pathname
+
+		if (path.startsWith("/ru/") || path === "/ru") this.currentLang.set("ru")
+		else if (path.startsWith("/he/") || path === "/he") this.currentLang.set("he")
+		else this.currentLang.set("en")
+
+		this.applyDocumentLanguageAttributes(this.currentLang())
+	}
+
+	private applyDocumentLanguageAttributes(lang: SupportedLanguage) {
+		const htmlTag = this.document.documentElement
+		htmlTag.lang = lang
+		htmlTag.dir = lang === "he" ? "rtl" : "ltr"
+	}
+
+	switchLanguage(targetLang: SupportedLanguage) {
+		if (!isPlatformBrowser(this.platformId) || this.currentLang() === targetLang) return
+
+		let path = window.location.pathname
+
+		const current = this.currentLang()
+
+		if (current !== "en") {
+			const prefix = `/${current}`
+
+			if (path.startsWith(`${prefix}/`)) path = path.substring(prefix.length)
+			else if (path === prefix) path = "/"
+		}
+		let newPath = path
+
+		if (targetLang !== "en") newPath = `/${targetLang}${path === "/" ? "" : path}`
+
+		if (!newPath.startsWith("/")) newPath = "/" + newPath
+
+		if (newPath !== "/" && !newPath.endsWith("/")) newPath = newPath + "/"
+
+		window.location.href = newPath
+	}
+
 	// FLASH MESSAGES
 	// =====================================
 	showSuccess(title: string, msg: string) {
@@ -101,11 +149,11 @@ export class SystemStore {
 		this.message.set(msgObj)
 
 		if (isPlatformBrowser(this.platformId)) {
-			this.timeoutId = setTimeout(() => this.closeMsg(), DISPLAY_TIMEOUT_MILLIS)
+			this.timeoutId = setTimeout(() => this.closeFlashMessage(), DISPLAY_TIMEOUT_MILLIS)
 		}
 	}
 
-	closeMsg() {
+	closeFlashMessage() {
 		if (this.timeoutId) clearTimeout(this.timeoutId)
 
 		this.message.set(null)

@@ -23,42 +23,53 @@ interface Specialty {
 	description: string
 }
 
-const PAGE_TITLE = "Kuvshinov Software"
-const PAGE_URL = "/"
-const PAGE_DESC =
-	"Kuvshinov Software - Providing you websites, systems, open source and accessibility assistance with care."
-
 const HIGHLIGHTS: Highlight[] = [
-	{ icon: "professional", value: "2+", label: "Years of Experience" },
-	{ icon: "production", value: "5+", label: "Launched Productions" },
-	{ icon: "source", value: "2+", label: "Open Source Projects" },
-	{ icon: "magGlass", value: "3+", label: "Accessibility Audits" },
-	{ icon: "github", value: "20+", label: "GitHub Repositories" },
-	{ icon: "commits", value: "3000+", label: "GitHub Contributions" },
+	{
+		icon: "professional",
+		value: "2+",
+		label: $localize`:@@home.highlight.experience:Years of Experience`,
+	},
+	{
+		icon: "production",
+		value: "5+",
+		label: $localize`:@@home.highlight.production:Launched Productions`,
+	},
+	{ icon: "source", value: "2+", label: $localize`:@@home.highlight.oss:Open Source Projects` },
+	{
+		icon: "magGlass",
+		value: "3+",
+		label: $localize`:@@home.highlight.a11y:Accessibility Audits`,
+	},
+	{ icon: "github", value: "20+", label: $localize`:@@home.highlight.repos:GitHub Repositories` },
+	{
+		icon: "commits",
+		value: "3000+",
+		label: $localize`:@@home.highlight.commits:GitHub Contributions`,
+	},
 ]
 
 const SPECIALTIES: Specialty[] = [
 	{
-		title: "Native Full-Stack Engineering",
-		description:
-			"Escaping the limitations of templated platforms. I build custom, semantic web applications with automated CI/CD cloud deployments using modern stacks (Angular, React, Next.js, Express, NestJS, Spring Boot).",
+		title: $localize`:@@home.specialty1.title:Native Full-Stack Engineering`,
+		description: $localize`:@@home.specialty1.desc:Escaping the limitations of templated platforms. I build custom, semantic web applications with automated CI/CD cloud deployments using modern stacks (Angular, React, Next.js, Express, NestJS, Spring Boot).`,
 	},
 	{
-		title: "A11y Compliance & Legal Immunity",
-		description:
-			"Auditing and refactoring digital infrastructure to natively meet WCAG 2.1 AA/AAA and Israeli standards - providing true legal protection that accessibility overlays simply cannot offer.",
+		title: $localize`:@@home.specialty2.title:A11y Compliance & Legal Immunity`,
+		description: $localize`:@@home.specialty2.desc:Auditing and refactoring digital infrastructure to natively meet WCAG 2.1 AA/AAA and Israeli standards - providing true legal protection that accessibility overlays simply cannot offer.`,
 	},
 	{
-		title: "System Architecture & Optimization",
-		description:
-			"Serving as a technical consultant to resolve critical bottlenecks, secure legacy e-commerce platforms, and orchestrate highly scalable, independent digital assets.",
+		title: $localize`:@@home.specialty3.title:System Architecture & Optimization`,
+		description: $localize`:@@home.specialty3.desc:Serving as a technical consultant to resolve critical bottlenecks, secure legacy e-commerce platforms, and orchestrate highly scalable, independent digital assets.`,
 	},
 	{
-		title: "Remote Digital Assistance",
-		description:
-			"Dedicated one-on-one support for individuals facing severe digital barriers, providing secure navigation assistance for inaccessible sites and complex verification systems.",
+		title: $localize`:@@home.specialty4.title:Remote Digital Assistance`,
+		description: $localize`:@@home.specialty4.desc:Dedicated one-on-one support for individuals facing severe digital barriers, providing secure navigation assistance for inaccessible sites and complex verification systems.`,
 	},
 ]
+
+const PAGE_TITLE = $localize`:@@home.meta.title:Kuvshinov Software`
+const PAGE_URL = "/"
+const PAGE_DESC = $localize`:@@home.meta.desc:Kuvshinov Software - Providing you websites, systems, open source and accessibility assistance with care.`
 
 @Component({
 	selector: "main[app-home-page]",

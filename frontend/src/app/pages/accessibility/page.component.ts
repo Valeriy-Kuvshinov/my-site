@@ -3,9 +3,9 @@ import { Title, Meta } from "@angular/platform-browser"
 
 import { SITE_URL } from "@/shared/constants/util"
 
-const PAGE_TITLE = "Accessibility Statement | Kuvshinov Software"
+const PAGE_TITLE = $localize`:@@a11y_page.meta.title:Accessibility Statement | Kuvshinov Software`
 const PAGE_URL = "/accessibility/"
-const PAGE_DESC = "Learn about our commitment to providing accessibility at Kuvshinov Software."
+const PAGE_DESC = $localize`:@@a11y_page.meta.desc:Learn about our commitment to providing accessibility at Kuvshinov Software.`
 
 @Component({
 	selector: "main[app-accessibility-page]",
