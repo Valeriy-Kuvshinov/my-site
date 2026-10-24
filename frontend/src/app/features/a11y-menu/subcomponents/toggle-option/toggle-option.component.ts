@@ -24,7 +24,7 @@ import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 		"[attr.aria-pressed]": "isActive",
 		"[class.active]": "isActive",
 		"(click)": "onToggle.emit()",
-		class: "toggle-option flex flex-row full-center w-full fast-trans",
+		class: "flex flex-row full-center w-full fast-trans",
 	},
 })
 export class ToggleOptionComponent {

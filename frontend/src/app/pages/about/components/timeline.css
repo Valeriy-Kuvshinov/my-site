@@ -1,7 +1,5 @@
 :host {
 	.track button {
-		outline: none;
-
 		.marker {
 			z-index: 1;
 			width: 3rem;
@@ -41,6 +39,8 @@
 		}
 
 		&.active {
+			pointer-events: none;
+
 			.marker {
 				border-color: var(--prmclr1);
 				background: var(--scdclr4);
@@ -86,14 +86,14 @@
 	@media (max-width: 900px) {
 		.track {
 			flex-direction: column;
-			padding-left: 4rem;
+			padding-inline-start: 4rem;
 
 			button {
-				text-align: left;
-				padding-bottom: 4rem;
+				padding-block-end: 4rem;
+				text-align: start;
 
 				&:last-child {
-					padding-bottom: 0;
+					padding-block-end: 0;
 				}
 
 				.marker {
@@ -114,7 +114,7 @@
 	@media (min-width: 901px) {
 		.track {
 			flex-direction: row;
-			padding-top: 4rem;
+			padding-block-start: 4rem;
 
 			button {
 				flex: 1;
@@ -127,11 +127,11 @@
 				}
 
 				&:first-of-type {
-					padding-left: 0;
+					padding-inline-start: 0;
 				}
 
 				&:last-of-type {
-					padding-right: 0;
+					padding-inline-end: 0;
 				}
 
 				&::after {

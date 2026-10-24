@@ -1,0 +1,79 @@
+<a
+	routerLink="/about/"
+	class="about-link flex flex-row full-center gap-2">
+	<app-image-container
+		src="/images/about.avif"
+		i18n-alt="@@home.hero.img_alt"
+		alt="Valeriy Kuvshinov sitting in a conference"
+		[width]="240"
+		[height]="240"
+		[priority]="true"
+		class="fast-trans z-1">
+	</app-image-container>
+</a>
+
+<div class="content-wrapper w-full layout-row">
+	<div class="content flex flex-col w-full gap-6">
+		<h1
+			i18n="@@home.hero.title"
+			class="text-family-bold">
+			Scalable Web Systems & Legal-Grade Accessibility
+		</h1>
+
+		<h2
+			[class.motion-paused]="store.a11yPreferences().pauseMotion"
+			i18n="@@home.hero.name">
+			Valeriy Kuvshinov
+		</h2>
+
+		<p i18n="@@home.hero.p1">
+			I engineer fast, secure full-stack applications and protect businesses from legal
+			liabilities through rigorous WCAG 2.1 AA accessibility compliance.
+		</p>
+
+		<p i18n="@@home.hero.p2">
+			Whether you need a high-performance landing page or a complex distributed backend, I
+			build independent cloud systems that drastically reduce your monthly hosting costs. You
+			own the code, the servers, and the data.
+		</p>
+
+		<div class="cta grid items-center gap-8">
+			<a
+				routerLink="/contact/"
+				class="flex flex-row full-center gap-2">
+				<span i18n="@@home.hero.btn_contact">Contact Me</span>
+
+				<app-svg-icon
+					icon="mail"
+					width="24"
+					height="24">
+				</app-svg-icon>
+			</a>
+			<a
+				routerLink="/services/"
+				class="flex flex-row full-center gap-2">
+				<span i18n="@@home.hero.btn_services">View Services</span>
+
+				<app-svg-icon
+					icon="arrow"
+					width="24"
+					height="24">
+				</app-svg-icon>
+			</a>
+			<a
+				href="/cv/Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
+				download="Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
+				class="flex flex-row full-center gap-2"
+				i18n-aria-label="@@home.hero.btn_resume.aria"
+				aria-label="Download Valeriy Kuvshinov's resume as a PDF">
+				<span i18n="@@home.hero.btn_resume.text">Resume</span>
+
+				<app-svg-icon
+					icon="download"
+					width="24"
+					height="24">
+				</app-svg-icon>
+			</a>
+		</div>
+	</div>
+</div>

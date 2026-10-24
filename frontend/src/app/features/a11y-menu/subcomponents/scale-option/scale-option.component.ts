@@ -44,7 +44,7 @@ export type ScaleLevel = 0 | 1 | 2 | 3 | 4
 	styleUrl: "./scale-option.css",
 	host: {
 		"[class.active]": "currentLevel > 0",
-		class: "scale-option flex flex-col full-center w-full fast-trans",
+		class: "flex flex-col full-center w-full fast-trans",
 	},
 })
 export class ScaleOptionComponent {

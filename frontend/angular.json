@@ -12,11 +12,11 @@
 				"sourceLocale": "en",
 				"locales": {
 					"ru": {
-						"translation": "src/locale/messages.ru.xlf",
+						"translation": "src/locale/ru/messages.ru.xlf",
 						"subPath": "ru"
 					},
 					"he": {
-						"translation": "src/locale/messages.he.xlf",
+						"translation": "src/locale/he/messages.he.xlf",
 						"subPath": "he"
 					}
 				}

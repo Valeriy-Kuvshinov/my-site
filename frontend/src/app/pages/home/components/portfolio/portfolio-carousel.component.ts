@@ -15,46 +15,46 @@ interface PortfolioSlide {
 
 const PORTFOLIO_SLIDES: PortfolioSlide[] = [
 	{
-		title: $localize`:@@portfolio.noffty.title:Noffty Productions Gaming Hub`,
-		description: $localize`:@@portfolio.noffty.desc:Built an HTML5 game hosting platform using Cloudflare R2, eliminating third-party iframe dependencies and strengthening site Content Security Policy.`,
+		title: $localize`:@@home.portfolio.noffty.title:Noffty Productions Gaming Hub`,
+		description: $localize`:@@home.portfolio.noffty.desc:Built an HTML5 game hosting platform using Cloudflare R2, eliminating third-party iframe dependencies and strengthening site Content Security Policy.`,
 		imgDesktopSrc:
 			"https://res.cloudinary.com/oee6altn/image/upload/v1792668926/noffty-desktop.avif",
 		imgMobileSrc:
 			"https://res.cloudinary.com/oee6altn/image/upload/v1792668926/noffty-mobile.avif",
-		imgAlt: $localize`:@@portfolio.noffty.alt:Screenshot of the Noffty Productions gaming hub`,
+		imgAlt: $localize`:@@home.portfolio.noffty.alt:Screenshot of the Noffty Productions gaming hub`,
 	},
 	{
-		title: $localize`:@@portfolio.micro.title:Micro Mineral Accessibility`,
-		description: $localize`:@@portfolio.micro.desc:Retrofitting an entire Wordpress E-commerce platform to natively meet strict AA Israeli accessibility standards while restoring payment gateway stability.`,
+		title: $localize`:@@home.portfolio.micro.title:Micro Mineral Accessibility`,
+		description: $localize`:@@home.portfolio.micro.desc:Retrofitting an entire Wordpress E-commerce platform to natively meet strict AA Israeli accessibility standards while restoring payment gateway stability.`,
 		imgDesktopSrc:
 			"https://res.cloudinary.com/oee6altn/image/upload/v1792668924/micro-mineral-desktop.avif",
 		imgMobileSrc:
 			"https://res.cloudinary.com/oee6altn/image/upload/v1792668925/micro-mineral-mobile.avif",
-		imgAlt: $localize`:@@portfolio.micro.alt:Screenshot of the Micro Mineral accessible home page`,
+		imgAlt: $localize`:@@home.portfolio.micro.alt:Screenshot of the Micro Mineral accessible home page`,
 	},
 	{
-		title: $localize`:@@portfolio.ori.title:Ori Carlin Art Site`,
-		description: $localize`:@@portfolio.ori.desc:Developed a crafts showcase with local US E-commerce platform for an American artist.`,
+		title: $localize`:@@home.portfolio.ori.title:Ori Carlin Art Site`,
+		description: $localize`:@@home.portfolio.ori.desc:Developed a crafts showcase with local US E-commerce platform for an American artist.`,
 		imgDesktopSrc:
 			"https://res.cloudinary.com/oee6altn/image/upload/v1792668927/oricarlin-desktop.avif",
 		imgMobileSrc:
 			"https://res.cloudinary.com/oee6altn/image/upload/v1792668927/oricarlin-mobile.avif",
-		imgAlt: $localize`:@@portfolio.ori.alt:Screenshot of the Ori Carlin pottery home page`,
+		imgAlt: $localize`:@@home.portfolio.ori.alt:Screenshot of the Ori Carlin pottery home page`,
 	},
 	{
-		title: $localize`:@@portfolio.giggler.title:Giggler Freelance Platform`,
-		description: $localize`:@@portfolio.giggler.desc:Created a Fiverr-like E-commerce platform as a final project during my Full-Stack bootcamp, source code publicly available.`,
+		title: $localize`:@@home.portfolio.giggler.title:Giggler Freelance Platform`,
+		description: $localize`:@@home.portfolio.giggler.desc:Created a Fiverr-like E-commerce platform as a final project during my Full-Stack bootcamp, source code publicly available.`,
 		imgDesktopSrc:
 			"https://res.cloudinary.com/oee6altn/image/upload/v1792668924/giggler-desktop.avif",
 		imgMobileSrc:
 			"https://res.cloudinary.com/oee6altn/image/upload/v1792668924/giggler-mobile.avif",
-		imgAlt: $localize`:@@portfolio.giggler.alt:Screenshot of the Giggler submission home page`,
+		imgAlt: $localize`:@@home.portfolio.giggler.alt:Screenshot of the Giggler submission home page`,
 	},
 	{
-		title: $localize`:@@portfolio.vision.title:The Vision Telecom Platform`,
-		description: $localize`:@@portfolio.vision.desc:Architected a fault-tolerant session orchestration and state recovery system across multiple remote Linux environments.`,
+		title: $localize`:@@home.portfolio.vision.title:The Vision Telecom Platform`,
+		description: $localize`:@@home.portfolio.vision.desc:Architected a fault-tolerant session orchestration and state recovery system across multiple remote Linux environments.`,
 		imgDesktopSrc: "https://res.cloudinary.com/oee6altn/image/upload/v1792668925/mycell.avif",
-		imgAlt: $localize`:@@portfolio.vision.alt:Screenshot of the Vision Telecom device selection interface`,
+		imgAlt: $localize`:@@home.portfolio.vision.alt:Screenshot of the Vision Telecom device selection interface`,
 	},
 ]
 
@@ -95,7 +95,7 @@ export class PortfolioCarouselComponent {
 	}
 
 	getImageAriaLabel(slide: PortfolioSlide): string {
-		return $localize`:@@portfolio.img_click.aria:View full size image of ${slide.title}`
+		return $localize`:@@home.portfolio.img_click.aria:View full size image of ${slide.title}`
 	}
 
 	getImageSrc(slide: PortfolioSlide): string {

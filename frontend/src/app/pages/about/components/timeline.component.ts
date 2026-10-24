@@ -24,14 +24,14 @@ const TIMELINE_STEPS: TimelineStep[] = [
 		id: "bootcamp",
 		years: "2023",
 		title: $localize`:@@timeline.step2.title:MisterBit Coding Academy`,
-		description: $localize`:@@timeline.step2.desc:Completed an intensive, highly selective full-stack software engineering bootcamp. Transitioned my analytical military background directly into modern web technologies, mastering React, Angular, and Node.js architectures.`,
+		description: $localize`:@@timeline.step2.desc:Completed an intensive, highly selective full-stack software developer bootcamp. Transitioned my analytical military background directly into modern web technologies, mastering React, Angular, and Node.js with REST API architectures.`,
 		icon: "education",
 	},
 	{
-		id: "freelance",
+		id: "work",
 		years: "2024 - Present",
-		title: $localize`:@@timeline.step3.title:Freelance Systems Architect & A11y Specialist`,
-		description: $localize`:@@timeline.step3.desc:Operating independently to rescue legacy platforms, architect fault-tolerant cloud infrastructure, and retrofit monolithic e-commerce systems to natively meet strict WCAG 2.1 AA Israeli accessibility standards.`,
+		title: $localize`:@@timeline.step3.title:Independent Full Stack Engineer`,
+		description: $localize`:@@timeline.step3.desc:Operating as an independent contractor to build scalable web applications, deploy cost-efficient cloud infrastructure, and engineer user interfaces to natively meet strict WCAG 2.1 AA accessibility standards, protecting clients from legal liabilities.`,
 		icon: "monitor",
 	},
 ]

@@ -1,80 +1,5 @@
 <section class="page-contents flex flex-col items-center relative w-h-full">
-	<article class="hero flex flex-col justify-center w-full min-h-screen relative">
-		<a
-			routerLink="/about/"
-			class="about-link flex flex-row full-center gap-2">
-			<app-image-container
-				src="/images/about.avif"
-				i18n-alt="@@home.hero.img_alt"
-				alt="Valeriy Kuvshinov sitting in a conference"
-				[width]="240"
-				[height]="240"
-				[priority]="true"
-				class="fast-trans z-1">
-			</app-image-container>
-		</a>
-
-		<div class="content-wrapper w-full layout-row">
-			<div class="content flex flex-col w-full gap-6">
-				<h1
-					i18n="@@home.hero.title"
-					class="text-family-bold">
-					Scalable Web Systems & Uncompromising Accessibility
-				</h1>
-
-				<h2 [class.motion-paused]="store.a11yPreferences().pauseMotion">
-					<span i18n="@@home.hero.name">Valeriy Kuvshinov</span>
-				</h2>
-
-				<p i18n="@@home.hero.p1">
-					Engineering robust full-stack applications, resolving complex system
-					architecture challenges, and guaranteeing digital inclusivity through rigorous
-					WCAG compliance.
-				</p>
-
-				<p i18n="@@home.hero.p2">
-					From high-performance landing pages to scalable full-stack systems, I build
-					digital environments that are secure, lightning-fast, and accessible by design.
-				</p>
-
-				<div class="cta grid items-center gap-8">
-					<a
-						routerLink="/contact/"
-						class="flex flex-row full-center gap-2">
-						<span i18n="@@home.hero.btn_contact">Contact Me</span>
-						<app-svg-icon
-							icon="mail"
-							width="24"
-							height="24">
-						</app-svg-icon>
-					</a>
-					<a
-						routerLink="/services/"
-						class="flex flex-row full-center gap-2">
-						<span i18n="@@home.hero.btn_services">View Services</span>
-						<app-svg-icon
-							icon="arrow"
-							width="24"
-							height="24">
-						</app-svg-icon>
-					</a>
-					<a
-						href="/cv/Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
-						download="Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
-						class="flex flex-row full-center gap-2"
-						i18n-aria-label="@@home.hero.btn_resume.aria"
-						aria-label="Download Valeriy Kuvshinov's resume as a PDF">
-						<span i18n="@@home.hero.btn_resume.text">Resume</span>
-						<app-svg-icon
-							icon="download"
-							width="24"
-							height="24">
-						</app-svg-icon>
-					</a>
-				</div>
-			</div>
-		</div>
-	</article>
+	<app-hero></app-hero>
 
 	<div class="highlights w-full">
 		<ul class="grid layout-row gap-8">
@@ -85,7 +10,9 @@
 					width="48"
 					height="48">
 				</app-svg-icon>
+
 				<span class="text-family-bold">{{ item.value }}</span>
+
 				<span class="text-center">{{ item.label }}</span>
 			</li>
 			}
@@ -94,7 +21,7 @@
 
 	<app-tech-carousel></app-tech-carousel>
 
-	<article class="core flex flex-col items-center w-full">
+	<article class="specialties flex flex-col items-center w-full">
 		<h2
 			i18n="@@home.specialties.title"
 			class="text-family-bold">
@@ -105,121 +32,14 @@
 			@for (specialty of specialties; track specialty.title) {
 			<li class="flex flex-col gap-2 fast-trans">
 				<h3 class="text-center">{{ specialty.title }}</h3>
+
 				<p class="text-center">{{ specialty.description }}</p>
 			</li>
 			}
 		</ul>
 	</article>
 
-	<article class="extension flex flex-col items-center w-full">
-		<div class="content grid layout-row gap-8">
-			<div class="text flex flex-col items-center gap-4">
-				<h2
-					i18n="@@home.extension.title"
-					class="text-family-bold">
-					Did Not Get It
-				</h2>
-
-				<p
-					i18n="@@home.extension.desc"
-					class="text-center">
-					"Did Not Get It" is a cross-browser extension for Firefox and Chrome that
-					automatically identifies, labels, and marks Gmail rejection emails as read while
-					maintaining a local "rejections skipped" counter. Available now in Chrome Web
-					Store and Firefox Browser Add-ons.
-				</p>
-
-				<div class="links grid full-center gap-8">
-					<a
-						href="https://chromewebstore.google.com/detail/did-not-get-it/cldhhfgpefggchgbjgcfkilkpakeelih"
-						class="flex flex-row full-center gap-2"
-						target="_blank"
-						rel="noopener noreferrer"
-						i18n-aria-label="@@home.extension.btn_chrome.aria"
-						aria-label="Get the Did Not Get It extension at Chrome Web Store (opens in a new tab)">
-						<span i18n="@@home.extension.btn_chrome.text">Get for Chrome</span>
-						<app-svg-icon
-							icon="chrome"
-							width="24"
-							height="24">
-						</app-svg-icon>
-					</a>
-					<a
-						href="https://github.com/Valeriy-Kuvshinov/did-not-get-it-extension"
-						class="flex flex-row full-center gap-2"
-						target="_blank"
-						rel="noopener noreferrer"
-						i18n-aria-label="@@home.extension.btn_github.aria"
-						aria-label="View the Did Not Get It extension on GitHub (opens in a new tab)">
-						<span i18n="@@home.extension.btn_github.text">View on GitHub</span>
-						<app-svg-icon
-							icon="github"
-							width="24"
-							height="24">
-						</app-svg-icon>
-					</a>
-					<a
-						href="https://addons.mozilla.org/en-US/firefox/addon/did-not-get-it/"
-						class="flex flex-row full-center gap-2"
-						target="_blank"
-						rel="noopener noreferrer"
-						i18n-aria-label="@@home.extension.btn_firefox.aria"
-						aria-label="Get the Did Not Get It extension at Firefox Add-ons (opens in a new tab)">
-						<span i18n="@@home.extension.btn_firefox.text">Get for Firefox</span>
-						<app-svg-icon
-							icon="firefox"
-							width="24"
-							height="24">
-						</app-svg-icon>
-					</a>
-				</div>
-			</div>
-
-			<figure class="flex flex-col gap-2 w-full">
-				<figcaption
-					i18n="@@home.extension.fig_before"
-					class="text-center text-family-bold">
-					Before
-				</figcaption>
-
-				<app-image-container
-					src="https://res.cloudinary.com/oee6altn/image/upload/v1792668924/did-not-get-it-start.avif"
-					i18n-alt="@@home.extension.img_before.alt"
-					alt="Gmail inbox showing unread corporate emails"
-					[width]="600"
-					[height]="400"
-					class="cursor-pointer"
-					role="button"
-					tabIndex="0"
-					i18n-aria-label="@@home.extension.img_before.aria"
-					aria-label="View full size image of inbox before extension processing"
-					(onClickEvent)="openImage('https://res.cloudinary.com/oee6altn/image/upload/v1792668924/did-not-get-it-start.avif')">
-				</app-image-container>
-			</figure>
-
-			<figure class="flex flex-col gap-2 w-full">
-				<figcaption
-					i18n="@@home.extension.fig_after"
-					class="text-center text-family-bold">
-					After
-				</figcaption>
-
-				<app-image-container
-					src="https://res.cloudinary.com/oee6altn/image/upload/v1792668923/did-not-get-it-end.avif"
-					i18n-alt="@@home.extension.img_after.alt"
-					alt="Gmail inbox showing emails automatically labeled and marked as read by the extension"
-					[width]="600"
-					[height]="400"
-					class="cursor-pointer"
-					role="button"
-					tabIndex="0"
-					i18n-aria-label="@@home.extension.img_after.aria"
-					aria-label="View full size image of inbox after extension processing"
-					(onClickEvent)="openImage('https://res.cloudinary.com/oee6altn/image/upload/v1792668923/did-not-get-it-end.avif')">
-				</app-image-container>
-			</figure>
-		</div>
-	</article>
+	<app-extension></app-extension>
 
 	<article class="accomplishments flex flex-col items-center w-full gap-8">
 		<h2
@@ -234,6 +54,7 @@
 			routerLink="/portfolio"
 			class="flex flex-row full-center gap-2 fast-trans mt-4">
 			<span i18n="@@home.portfolio.btn">View Full Portfolio</span>
+
 			<app-svg-icon
 				icon="briefcase"
 				width="24"

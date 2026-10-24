@@ -1,42 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://kuvware.com/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/" />
         <changefrequency>monthly</changefrequency>
-        <priority>1.0</priority>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/ru/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/" />
+        <changefrequency>monthly</changefrequency>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/he/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/" />
+        <changefrequency>monthly</changefrequency>
+        <priority>1</priority>
     </url>
     <url>
         <loc>https://kuvware.com/portfolio/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/portfolio/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/portfolio/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/portfolio/" />
+        <changefrequency>monthly</changefrequency>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/ru/portfolio/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/portfolio/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/portfolio/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/portfolio/" />
+        <changefrequency>monthly</changefrequency>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/he/portfolio/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/portfolio/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/portfolio/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/portfolio/" />
         <changefrequency>monthly</changefrequency>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://kuvware.com/services/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/services/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/services/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/services/" />
+        <changefrequency>monthly</changefrequency>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/ru/services/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/services/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/services/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/services/" />
+        <changefrequency>monthly</changefrequency>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/he/services/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/services/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/services/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/services/" />
         <changefrequency>monthly</changefrequency>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://kuvware.com/about/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/about/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/about/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/about/" />
+        <changefrequency>monthly</changefrequency>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/ru/about/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/about/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/about/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/about/" />
+        <changefrequency>monthly</changefrequency>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/he/about/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/about/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/about/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/about/" />
         <changefrequency>monthly</changefrequency>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://kuvware.com/contact/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/contact/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/contact/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/contact/" />
+        <changefrequency>monthly</changefrequency>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/ru/contact/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/contact/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/contact/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/contact/" />
+        <changefrequency>monthly</changefrequency>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/he/contact/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/contact/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/contact/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/contact/" />
         <changefrequency>monthly</changefrequency>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://kuvware.com/privacy-policy/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/privacy-policy/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/privacy-policy/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/privacy-policy/" />
+        <changefrequency>yearly</changefrequency>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/ru/privacy-policy/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/privacy-policy/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/privacy-policy/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/privacy-policy/" />
+        <changefrequency>yearly</changefrequency>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/he/privacy-policy/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/privacy-policy/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/privacy-policy/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/privacy-policy/" />
         <changefrequency>yearly</changefrequency>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://kuvware.com/accessibility/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/accessibility/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/accessibility/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/accessibility/" />
+        <changefrequency>yearly</changefrequency>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/ru/accessibility/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/accessibility/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/accessibility/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/accessibility/" />
+        <changefrequency>yearly</changefrequency>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/he/accessibility/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/accessibility/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/accessibility/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/accessibility/" />
         <changefrequency>yearly</changefrequency>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://kuvware.com/terms/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/terms/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/terms/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/terms/" />
+        <changefrequency>yearly</changefrequency>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/ru/terms/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/terms/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/terms/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/terms/" />
+        <changefrequency>yearly</changefrequency>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://kuvware.com/he/terms/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kuvware.com/terms/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kuvware.com/ru/terms/" />
+        <xhtml:link rel="alternate" hreflang="he" href="https://kuvware.com/he/terms/" />
         <changefrequency>yearly</changefrequency>
         <priority>0.5</priority>
     </url>

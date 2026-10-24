@@ -24,9 +24,9 @@ interface LanguageOption {
 }
 
 const OPTIONS: LanguageOption[] = [
-	{ value: "en", label: $localize`:@@lang.en:English`, icon: "usa" },
-	{ value: "ru", label: $localize`:@@lang.ru:Русский`, icon: "rus" },
-	{ value: "he", label: $localize`:@@lang.he:עברית`, icon: "isr" },
+	{ value: "en", label: "English", icon: "usa" },
+	{ value: "ru", label: "Русский", icon: "rus" },
+	{ value: "he", label: "עברית", icon: "isr" },
 ]
 
 @Component({

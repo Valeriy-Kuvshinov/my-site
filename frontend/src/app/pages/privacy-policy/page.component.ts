@@ -13,7 +13,7 @@ const PAGE_DESC = $localize`:@@privacy.meta.desc:Official statutory privacy disc
 	standalone: true,
 	imports: [RouterLink],
 	templateUrl: "./page.html",
-	styleUrl: "./page.css",
+	styleUrl: "../../../assets/pages/policy-page.css",
 	host: {
 		id: "main-content",
 		class: "w-h-full block",

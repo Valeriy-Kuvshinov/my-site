@@ -1,7 +1,6 @@
 :host {
-	width: 10rem;
-	fill: var(--scdclr2);
-	color: var(--scdclr2);
+	width: 9rem;
+	font-size: 1rem;
 
 	.select-label {
 		margin-bottom: 0.25rem;
@@ -9,34 +8,34 @@
 
 	.select-wrapper {
 		#lang-select-btn {
-			border-radius: 0.5rem;
-			background: var(--prmclr1);
 			padding: 0.5rem;
-			outline: none;
+			background: var(--scdclr9);
+			color: var(--scdclr2);
+			fill: var(--scdclr2);
+			border-radius: 0.5rem;
 
 			&:hover,
 			&:focus-visible {
-				background: var(--prmclr2);
-				color: var(--prmclr1);
-				fill: var(--prmclr1);
+				background: var(--scdclr1);
+				color: var(--scdclr9);
+				fill: var(--scdclr9);
 			}
 		}
 
 		#lang-listbox {
 			left: 0;
 			z-index: 5;
-			background: var(--prmclr1);
+			background: var(--scdclr9);
 
 			.option {
 				padding: 0.5rem;
-				color: var(--scdclr3);
+				color: var(--scdclr1);
 				outline: none;
 
 				&:hover,
 				&:focus-visible {
-					background: var(--prmclr2);
-					color: var(--prmclr1);
-					fill: var(--prmclr1);
+					background: var(--scdclr1);
+					color: var(--scdclr9);
 				}
 			}
 		}
@@ -46,12 +45,8 @@
 				border-top: 1px solid transparent;
 
 				&.open {
-					border-top: 1px solid var(--scdclr3);
+					border-top: 1px solid var(--scdclr4);
 					border-radius: 0 0 0.5rem 0.5rem;
-
-					app-svg-icon:last-child {
-						transform: rotate(-90deg);
-					}
 				}
 			}
 
@@ -61,7 +56,7 @@
 
 				.option {
 					&:not(:last-child) {
-						border-bottom: 1px solid var(--scdclr3);
+						border-bottom: 1px solid var(--scdclr4);
 					}
 
 					&:first-child {
@@ -76,12 +71,8 @@
 				border-bottom: 1px solid transparent;
 
 				&.open {
-					border-bottom: 1px solid var(--scdclr3);
+					border-bottom: 1px solid var(--scdclr4);
 					border-radius: 0.5rem 0.5rem 0 0;
-
-					app-svg-icon:last-child {
-						transform: rotate(90deg);
-					}
 				}
 			}
 
@@ -91,7 +82,7 @@
 
 				.option {
 					&:not(:first-child) {
-						border-top: 1px solid var(--scdclr3);
+						border-top: 1px solid var(--scdclr4);
 					}
 
 					&:last-child {
@@ -111,6 +102,18 @@
 
 		&.show-up #lang-select-btn.open app-svg-icon:last-child {
 			transform: rotate(270deg);
+		}
+
+		&.show-down #lang-select-btn.open app-svg-icon:last-child {
+			transform: rotate(90deg);
+		}
+	}
+}
+
+:host-context([dir="ltr"]) {
+	.select-wrapper {
+		&.show-up #lang-select-btn.open app-svg-icon:last-child {
+			transform: rotate(-90deg);
 		}
 
 		&.show-down #lang-select-btn.open app-svg-icon:last-child {

@@ -12,7 +12,7 @@ const PAGE_DESC = $localize`:@@a11y_page.meta.desc:Learn about our commitment to
 	standalone: true,
 	imports: [],
 	templateUrl: "./page.html",
-	styleUrl: "./page.css",
+	styleUrl: "../../../assets/pages/policy-page.css",
 	host: {
 		id: "main-content",
 		class: "w-h-full block",

@@ -217,6 +217,7 @@ html {
 			user-select: none;
 			letter-spacing: 0.1ch;
 			word-spacing: 0.1ch;
+			outline: none;
 
 			&:disabled {
 				pointer-events: none;

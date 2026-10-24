@@ -11,6 +11,8 @@ import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 import { ImageContainerComponent } from "@/shared/components/general/image-container.component"
 import { TechCarouselComponent } from "./components/tech/tech-carousel.component"
 import { PortfolioCarouselComponent } from "./components/portfolio/portfolio-carousel.component"
+import { ExtensionComponent } from "./components/extension/extension.component"
+import { HeroComponent } from "./components/hero/hero.component"
 
 interface Highlight {
 	icon: IconName
@@ -80,6 +82,8 @@ const PAGE_DESC = $localize`:@@home.meta.desc:Kuvshinov Software - Providing you
 		RouterLink,
 		TechCarouselComponent,
 		PortfolioCarouselComponent,
+		ExtensionComponent,
+		HeroComponent,
 	],
 	templateUrl: "./page.html",
 	styleUrl: "./page.css",

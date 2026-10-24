@@ -1,7 +1,13 @@
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 const SITE_URL = "https://kuvware.com"
+
 const LOCALES = ["en", "ru", "he"]
+
 const STATIC_ROUTES = [
 	{ url: "", priority: 1.0, freq: "monthly" },
 	{ url: "/portfolio", priority: 0.8, freq: "monthly" },
@@ -49,7 +55,6 @@ STATIC_ROUTES.forEach((route) => {
 
 xml += `</urlset>`
 
-const outputPath = path.join(__dirname, "../public/sitemap.xml")
-fs.writeFileSync(outputPath, xml, "utf8")
+fs.writeFileSync(path.join(__dirname, "../public/sitemap.xml"), xml, "utf8")
 
-console.log(`✅ Sitemap successfully generated at ${outputPath}`)
+console.log(`Sitemap generated`)

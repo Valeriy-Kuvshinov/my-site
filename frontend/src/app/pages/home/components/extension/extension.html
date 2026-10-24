@@ -1,0 +1,110 @@
+<div class="content grid layout-row gap-8 w-full">
+	<div class="text flex flex-col items-center gap-4">
+		<h2
+			i18n="@@home.extension.title"
+			class="text-family-bold">
+			Did Not Get It
+		</h2>
+
+		<p
+			i18n="@@home.extension.desc"
+			class="text-center">
+			"Did Not Get It" is a cross-browser extension for Firefox and Chrome that automatically
+			identifies, labels, and marks Gmail rejection emails as read while maintaining a local
+			"rejections skipped" counter. Available now in Chrome Web Store and Firefox Browser
+			Add-ons.
+		</p>
+
+		<div class="links grid full-center gap-8">
+			<a
+				href="https://chromewebstore.google.com/detail/did-not-get-it/cldhhfgpefggchgbjgcfkilkpakeelih"
+				class="flex flex-row full-center gap-2"
+				target="_blank"
+				rel="noopener noreferrer"
+				i18n-aria-label="@@home.extension.btn_chrome.aria"
+				aria-label="Get the Did Not Get It extension at Chrome Web Store (opens in a new tab)">
+				<span i18n="@@home.extension.btn_chrome.text">Get for Chrome</span>
+
+				<app-svg-icon
+					icon="chrome"
+					width="24"
+					height="24">
+				</app-svg-icon>
+			</a>
+			<a
+				href="https://github.com/Valeriy-Kuvshinov/did-not-get-it-extension"
+				class="flex flex-row full-center gap-2"
+				target="_blank"
+				rel="noopener noreferrer"
+				i18n-aria-label="@@home.extension.btn_github.aria"
+				aria-label="View the Did Not Get It extension on GitHub (opens in a new tab)">
+				<span i18n="@@home.extension.btn_github.text">View on GitHub</span>
+
+				<app-svg-icon
+					icon="github"
+					width="24"
+					height="24">
+				</app-svg-icon>
+			</a>
+			<a
+				href="https://addons.mozilla.org/en-US/firefox/addon/did-not-get-it/"
+				class="flex flex-row full-center gap-2"
+				target="_blank"
+				rel="noopener noreferrer"
+				i18n-aria-label="@@home.extension.btn_firefox.aria"
+				aria-label="Get the Did Not Get It extension at Firefox Add-ons (opens in a new tab)">
+				<span i18n="@@home.extension.btn_firefox.text">Get for Firefox</span>
+
+				<app-svg-icon
+					icon="firefox"
+					width="24"
+					height="24">
+				</app-svg-icon>
+			</a>
+		</div>
+	</div>
+
+	<figure class="flex flex-col gap-2 w-full">
+		<figcaption
+			i18n="@@home.extension.fig_before"
+			class="text-center text-family-bold">
+			Before
+		</figcaption>
+
+		<app-image-container
+			src="https://res.cloudinary.com/oee6altn/image/upload/v1792668924/did-not-get-it-start.avif"
+			i18n-alt="@@home.extension.img_before.alt"
+			alt="Gmail inbox showing unread corporate emails"
+			[width]="600"
+			[height]="400"
+			class="cursor-pointer"
+			role="button"
+			tabIndex="0"
+			i18n-aria-label="@@home.extension.img_before.aria"
+			aria-label="View full size image of inbox before extension processing"
+			(onClickEvent)="openImage('https://res.cloudinary.com/oee6altn/image/upload/v1792668924/did-not-get-it-start.avif')">
+		</app-image-container>
+	</figure>
+
+	<figure class="flex flex-col gap-2 w-full">
+		<figcaption
+			i18n="@@home.extension.fig_after"
+			class="text-center text-family-bold">
+			After
+		</figcaption>
+
+		<app-image-container
+			src="https://res.cloudinary.com/oee6altn/image/upload/v1792668923/did-not-get-it-end.avif"
+			i18n-alt="@@home.extension.img_after.alt"
+			alt="Gmail inbox showing emails automatically labeled and marked as read by the extension"
+			[width]="600"
+			[height]="400"
+			class="cursor-pointer"
+			role="button"
+			tabIndex="0"
+			i18n-aria-label="@@home.extension.img_after.aria"
+			aria-label="View full size image of inbox after extension processing"
+			(onClickEvent)="openImage('https://res.cloudinary.com/oee6altn/image/upload/v1792668923/did-not-get-it-end.avif')">
+		</app-image-container>
+	</figure>
+</div>
