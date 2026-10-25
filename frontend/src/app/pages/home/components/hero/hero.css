@@ -161,13 +161,6 @@
 			var(--scdclr9) 50%
 		);
 
-		.about-link {
-			max-width: 8rem;
-			position: absolute;
-			top: 15vh;
-			right: 5vw;
-		}
-
 		.content {
 			max-width: 60rem;
 		}
@@ -179,17 +172,47 @@
 		}
 	}
 
+	@media (min-width: 1401px) {
+		.about-link {
+			max-width: 18rem;
+		}
+	}
+}
+
+:host-context([dir="rtl"]) {
+	@media (min-width: 901px) {
+		.about-link {
+			max-width: 8rem;
+			position: absolute;
+			top: 15vh;
+			left: 5vw;
+		}
+	}
+
+	@media (min-width: 1201px) {
+		.about-link {
+			max-width: 15rem;
+			top: 20vh;
+			left: 10vw;
+		}
+	}
+}
+
+:host-context([dir="ltr"]) {
+	@media (min-width: 901px) {
+		.about-link {
+			max-width: 8rem;
+			position: absolute;
+			top: 15vh;
+			right: 5vw;
+		}
+	}
+
 	@media (min-width: 1201px) {
 		.about-link {
 			max-width: 15rem;
 			top: 20vh;
 			right: 10vw;
-		}
-	}
-
-	@media (min-width: 1401px) {
-		.about-link {
-			max-width: 18rem;
 		}
 	}
 }
