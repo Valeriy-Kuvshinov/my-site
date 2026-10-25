@@ -1,13 +1,10 @@
 :host .page-contents {
 	.intro {
 		padding-block-end: 2rem;
+		max-width: 75rem;
 
-		p {
-			max-width: 75rem;
-
-			a {
-				color: var(--mnrclr6);
-			}
+		p a {
+			color: var(--mnrclr6);
 		}
 	}
 

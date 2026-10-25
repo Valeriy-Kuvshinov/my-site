@@ -12,7 +12,7 @@ import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 	templateUrl: "./extension.html",
 	styleUrl: "./extension.css",
 	host: {
-		class: "flex flex-col items-center w-full",
+		class: "flex flex-col items-center min-h-screen w-full",
 	},
 })
 export class ExtensionComponent {

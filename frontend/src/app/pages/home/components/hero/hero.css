@@ -16,7 +16,7 @@
 			&::after {
 				content: "_";
 				display: inline-block;
-				margin-inline-start: -0.25rem;
+				margin-inline-start: -0.75rem;
 				animation: blink 1s step-end infinite;
 			}
 
@@ -108,6 +108,7 @@
 
 		.about-link {
 			max-width: 10rem;
+			margin-block-start: 1rem;
 			align-self: center;
 		}
 	}
@@ -124,6 +125,7 @@
 
 			.cta {
 				grid-template-columns: 1fr 1fr;
+				gap: 1rem;
 
 				a:nth-child(odd):last-child {
 					grid-column: span 2;
@@ -147,6 +149,7 @@
 			.cta {
 				width: fit-content;
 				grid-template-columns: repeat(3, auto);
+				gap: 2rem;
 			}
 		}
 	}
@@ -161,12 +164,18 @@
 			var(--scdclr9) 50%
 		);
 
+		.about-link {
+			position: absolute;
+			max-width: 10rem;
+			top: 30vh;
+		}
+
 		.content {
 			max-width: 60rem;
 		}
 	}
 
-	@media (min-width: 1001px) {
+	@media (min-width: 1201px) {
 		.about-link {
 			max-width: 12rem;
 		}
@@ -174,7 +183,8 @@
 
 	@media (min-width: 1401px) {
 		.about-link {
-			max-width: 18rem;
+			max-width: 15rem;
+			top: 20vh;
 		}
 	}
 }
@@ -182,17 +192,12 @@
 :host-context([dir="rtl"]) {
 	@media (min-width: 901px) {
 		.about-link {
-			max-width: 8rem;
-			position: absolute;
-			top: 15vh;
 			left: 5vw;
 		}
 	}
 
-	@media (min-width: 1201px) {
+	@media (min-width: 1401px) {
 		.about-link {
-			max-width: 15rem;
-			top: 20vh;
 			left: 10vw;
 		}
 	}
@@ -201,17 +206,12 @@
 :host-context([dir="ltr"]) {
 	@media (min-width: 901px) {
 		.about-link {
-			max-width: 8rem;
-			position: absolute;
-			top: 15vh;
 			right: 5vw;
 		}
 	}
 
-	@media (min-width: 1201px) {
+	@media (min-width: 1401px) {
 		.about-link {
-			max-width: 15rem;
-			top: 20vh;
 			right: 10vw;
 		}
 	}

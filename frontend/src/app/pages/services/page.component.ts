@@ -5,12 +5,9 @@ import { RouterLink } from "@angular/router"
 import { IconName } from "@/shared/components/icon/icon.map"
 import { SITE_URL } from "@/shared/constants/util"
 
-import { SystemStore } from "@/core/stores/system.store"
-
 import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 
 interface ServiceSkill {
-	icon: IconName
 	text: string
 }
 
@@ -31,66 +28,48 @@ const SERVICES: ServiceCard[] = [
 	{
 		icon: "monitor",
 		title: $localize`:@@services.card1.title:Custom Web Development`,
-		price: $localize`:@@services.card1.price:From $999`,
-		description: $localize`:@@services.card1.desc:Starting at $999 for highly optimized static landing pages, scaling up to secure full-stack applications. By deploying your system on independent cloud infrastructure, I can often eliminate your monthly hosting subscriptions entirely.`,
+		price: $localize`:@@services.card1.price:From $1000`,
+		description: $localize`:@@services.card1.desc:Starting at $1000 for highly optimized static landing pages, scaling up to secure full-stack applications. By deploying your system on independent cloud infrastructure, I can often eliminate your monthly hosting subscriptions entirely.`,
 		skills: [
-			{
-				icon: "check",
-				text: $localize`:@@services.card1.skill1:Secure Backend, WCAG AA Frontend`,
-			},
-			{
-				icon: "cloud",
-				text: $localize`:@@services.card1.skill2:Cost-Efficient Cloud Hosting`,
-			},
-			{
-				icon: "language",
-				text: $localize`:@@services.card1.skill3:Multi-language & RTL-LTR Support`,
-			},
-			{ icon: "cart", text: $localize`:@@services.card1.skill4:E-Commerce Integrations` },
+			{ text: $localize`:@@services.card1.skill1:Secure Backend, WCAG AA Frontend` },
+			{ text: $localize`:@@services.card1.skill2:Cost-Efficient Cloud Hosting` },
+			{ text: $localize`:@@services.card1.skill3:Multi-language & RTL-LTR Support` },
+			{ text: $localize`:@@services.card1.skill4:E-Commerce Integrations` },
 		],
 	},
 	{
-		icon: "magGlass",
+		icon: "wheelchair",
 		title: $localize`:@@services.card2.title:A11y Audits & ARIA Fixes`,
-		price: $localize`:@@services.card2.price:$100/page`,
+		price: $localize`:@@services.card2.price:$100 per page`,
 		description: $localize`:@@services.card2.desc:Automated accessibility widgets do not protect you from lawsuits. True accessibility requires fixing the underlying code so keyboards and screen readers can actually navigate it.`,
 		skills: [
-			{ icon: "fix", text: $localize`:@@services.card2.skill1:Manual HTML Rewrites` },
-			{
-				icon: "wheelchair",
-				text: $localize`:@@services.card2.skill2:WCAG AA Violation Reports`,
-			},
-			{
-				icon: "highContrast",
-				text: $localize`:@@services.card2.skill3:Color Contrast Optimization`,
-			},
-			{
-				icon: "accessibility",
-				text: $localize`:@@services.card2.skill4:Screen Reader Support`,
-			},
+			{ text: $localize`:@@services.card2.skill1:Manual HTML Rewrites` },
+			{ text: $localize`:@@services.card2.skill2:WCAG AA Violation Reports` },
+			{ text: $localize`:@@services.card2.skill3:Color Contrast Optimization` },
+			{ text: $localize`:@@services.card2.skill4:Screen Reader Support` },
 		],
 	},
 	{
 		icon: "fix",
-		title: $localize`:@@services.card3.title:System Rescue & Bug Fixing`,
-		price: $localize`:@@services.card3.price:$80/hr`,
-		description: $localize`:@@services.card3.desc:Got a website that is crashing, running slow, or full of bugs? I can jump in, clean up the technical debt, and make your system stable and secure.`,
+		title: $localize`:@@services.card3.title:System Rescue & Maintenance`,
+		price: $localize`:@@services.card3.price:$80 per hour`,
+		description: $localize`:@@services.card3.desc:Got a website that is crashing, running slow, or full of bugs? Relying on AI-generated code that suddenly broke? I can jump in, clean up the technical debt, and make your system stable and secure.`,
 		skills: [
-			{ icon: "fix", text: $localize`:@@services.card3.skill1:Legacy Code Refactoring` },
-			{ icon: "run", text: $localize`:@@services.card3.skill2:Performance Speed Boosts` },
-			{ icon: "shield", text: $localize`:@@services.card3.skill3:Security Hardening` },
-			{ icon: "person", text: $localize`:@@services.card3.skill4:Spam & Bot Mitigation` },
+			{ text: $localize`:@@services.card3.skill1:Legacy Code Refactoring` },
+			{ text: $localize`:@@services.card3.skill2:Performance Speed Boosts` },
+			{ text: $localize`:@@services.card3.skill3:Security Hardening` },
+			{ text: $localize`:@@services.card3.skill4:Spam & Bot Mitigation` },
 		],
 	},
 	{
 		icon: "support",
 		title: $localize`:@@services.card4.title:Remote Digital Assistance`,
-		price: $localize`:@@services.card4.price:$20/hr`,
+		price: $localize`:@@services.card4.price:$20 per hour`,
 		description: $localize`:@@services.card4.desc:Dedicated help for individuals who get blocked by annoying captchas, confusing government portals, or inaccessible web forms.`,
 		skills: [
-			{ icon: "fix", text: $localize`:@@services.card4.skill1:Bypassing Visual Barriers` },
-			{ icon: "mail", text: $localize`:@@services.card4.skill2:Form & Document Completion` },
-			{ icon: "person", text: $localize`:@@services.card4.skill3:Patient 1-on-1 Support` },
+			{ text: $localize`:@@services.card4.skill1:Bypassing Visual Barriers` },
+			{ text: $localize`:@@services.card4.skill2:Form & Document Completion` },
+			{ text: $localize`:@@services.card4.skill3:Patient 1-on-1 Support` },
 		],
 	},
 ]
@@ -129,10 +108,6 @@ export default class PageComponent implements OnInit {
 	private readonly title = inject(Title)
 	private readonly meta = inject(Meta)
 	private readonly document = inject(DOCUMENT)
-
-	private readonly store = inject(SystemStore)
-
-	protected readonly iconSize = computed(() => (this.store.deviceType() === "desktop" ? 48 : 32))
 
 	protected readonly services = SERVICES
 	protected readonly processSteps = PROCESS_STEPS

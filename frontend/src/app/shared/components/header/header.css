@@ -17,6 +17,7 @@
 		align-self: center;
 		outline: none;
 		scale: 0.95;
+		font-size: 1.25rem;
 
 		&.logo {
 			app-image-container {

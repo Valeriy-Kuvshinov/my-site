@@ -47,28 +47,51 @@
 
 		.content {
 			grid-template-columns: 1fr;
+		}
+	}
 
-			.text .links {
-				grid-template-columns: 1fr 1fr;
+	@media (max-width: 600px) {
+		.content .text {
+			h2 {
+				font-size: 1.5rem;
+			}
 
-				a:nth-child(odd):last-child {
-					grid-column: span 2;
+			.links {
+				grid-template-columns: 1fr;
+				width: 100%;
+				gap: 1rem;
+
+				a {
 					justify-self: center;
-					width: 46%;
+
+					&:first-child {
+						justify-self: start;
+					}
+
+					&:last-child {
+						justify-self: end;
+					}
 				}
 			}
 		}
 	}
 
-	@media (max-width: 600px) {
-		.content .text h2 {
-			font-size: 1.5rem;
-		}
-	}
-
 	@media (min-width: 601px) {
-		.content .text h2 {
-			font-size: 2rem;
+		.content .text {
+			h2 {
+				font-size: 2rem;
+			}
+
+			.links {
+				grid-template-columns: 1fr 1fr;
+				gap: 2rem;
+
+				a:last-child {
+					grid-column: span 2;
+					justify-self: center;
+					width: 47%;
+				}
+			}
 		}
 	}
 
@@ -80,6 +103,12 @@
 
 			.text .links {
 				grid-template-columns: repeat(3, 1fr);
+				gap: 2rem;
+
+				a:last-child {
+					grid-column: span 1;
+					width: 100%;
+				}
 			}
 		}
 	}

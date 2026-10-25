@@ -103,20 +103,18 @@
 				formControlName="consent"
 				class="w-h-fit"
 				[attr.aria-invalid]="getInputControl('consent').invalid && getInputControl('consent').touched" />
-			<span>
-				<ng-container i18n="@@form.consent.p1">I agree to the</ng-container>
+			<span i18n="@@form.consent.text">
+				I agree to the
 				<a
 					routerLink="/terms"
 					(click)="$event.stopPropagation()">
-					<span i18n="@@form.consent.terms">Terms of Service</span>
+					Terms of Service
 				</a>
-				<ng-container i18n="@@form.consent.p2">
-					and the processing of my data in accordance with the
-				</ng-container>
+				and the processing of my data in accordance with the
 				<a
 					routerLink="/privacy-policy"
 					(click)="$event.stopPropagation()">
-					<span i18n="@@form.consent.privacy">Privacy Policy</span></a
+					Privacy Policy </a
 				>.
 			</span>
 		</label>

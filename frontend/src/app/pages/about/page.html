@@ -1,15 +1,7 @@
 <section class="page-contents flex flex-col items-center w-h-full">
-	<article class="intro flex flex-col full-center w-full">
-		<div class="content grid w-full items-center layout-row gap-8">
-			<app-image-container
-				src="/images/about.avif"
-				i18n-alt="@@about.intro.img_alt"
-				alt="Valeriy Kuvshinov sitting in a conference"
-				[width]="240"
-				[height]="240">
-			</app-image-container>
-
-			<div class="text flex flex-col gap-4">
+	<article class="intro flex flex-col full-center min-h-screen w-full">
+		<div class="content flex items-center w-full layout-row gap-8">
+			<div class="text flex flex-col gap-6">
 				<h1
 					i18n="@@about.intro.title"
 					class="text-family-bold">
@@ -30,8 +22,8 @@
 				</p>
 
 				<a
-					href="/cv/Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
-					download="Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
+					[href]="resumeUrl()"
+					[download]="resumeName()"
 					class="flex flex-row full-center gap-2 w-fit"
 					i18n-aria-label="@@about.intro.btn_resume.aria"
 					aria-label="Download Valeriy Kuvshinov's resume as a PDF">
@@ -43,6 +35,14 @@
 					</app-svg-icon>
 				</a>
 			</div>
+
+			<app-image-container
+				src="/images/about.avif"
+				i18n-alt="@@about.intro.img_alt"
+				alt="Valeriy Kuvshinov sitting in a conference"
+				[width]="240"
+				[height]="240">
+			</app-image-container>
 		</div>
 	</article>
 
@@ -54,7 +54,7 @@
 				The Engineering Difference
 			</h2>
 
-			<ul class="grid layout-row gap-4">
+			<ul class="grid layout-row gap-8">
 				<li class="flex flex-col gap-2">
 					<h3 i18n="@@about.reason.p1.title">Security by Discipline</h3>
 
@@ -102,18 +102,13 @@
 			</p>
 
 			<ul class="flex flex-col gap-4">
-				<li>
-					<p i18n="@@about.experience.p2">
-						B.Sc. in Computer Science, Open University of Israel (In Progress).
-						Anchoring practical engineering with deep theoretical and algorithmic
-						foundations.
-					</p>
+				<li i18n="@@about.experience.li1">
+					B.Sc. in Computer Science, Open University of Israel (In Progress). Anchoring
+					practical engineering with deep theoretical and algorithmic foundations.
 				</li>
-				<li>
-					<p i18n="@@about.experience.p3">
-						Native proficiency in English, Hebrew, and Russian, enabling seamless
-						technical documentation and cross-border project localization.
-					</p>
+				<li i18n="@@about.experience.li2">
+					Native proficiency in English, Hebrew, and Russian, enabling seamless technical
+					documentation and cross-border project localization.
 				</li>
 			</ul>
 
@@ -130,38 +125,28 @@
 			</h2>
 
 			<ul class="flex flex-col gap-4">
-				<li>
-					<p i18n="@@about.stack.p1">
-						<strong>Languages:</strong> TypeScript, JavaScript, Java, Python, C, Bash,
-						HTML, CSS.
-					</p>
+				<li i18n="@@about.stack.li1">
+					<strong>Languages:</strong> TypeScript, JavaScript, Java, Python, C, Bash, HTML,
+					CSS.
 				</li>
-				<li>
-					<p i18n="@@about.stack.p2">
-						<strong>Frontend:</strong> Angular, Next.js, React, Electron, JavaFX.
-					</p>
+				<li i18n="@@about.stack.li2">
+					<strong>Frontend:</strong> Angular, Next.js, React, Electron, JavaFX.
 				</li>
-				<li>
-					<p i18n="@@about.stack.p3">
-						<strong>Backend:</strong> NestJS, Node.js, Express, Spring Boot.
-					</p>
+				<li i18n="@@about.stack.li3">
+					<strong>Backend:</strong> NestJS, Node.js, Express, Spring Boot.
 				</li>
-				<li>
-					<p i18n="@@about.stack.p4">
-						<strong>Database:</strong> NoSQL (MongoDB), PostgreSQL (Supabase).
-					</p>
+				<li i18n="@@about.stack.li4">
+					<strong>Databases:</strong> PostgreSQL, MongoDB (NoSQL), Supabase.
 				</li>
-				<li>
-					<p i18n="@@about.stack.p5">
-						<strong>Infrastructure & DevOps:</strong> Docker, Linux, CI/CD (GitHub
-						Actions), Cloudflare, AWS, Oracle Cloud (OCI).
-					</p>
+				<li i18n="@@about.stack.li5">
+					<strong>Infrastructure & DevOps:</strong> Docker, Linux, CI/CD (GitHub Actions),
+					Cloudflare, AWS, Oracle Cloud (OCI).
 				</li>
 			</ul>
 		</div>
 	</article>
 
-	<article class="creative flex flex-col w-full">
+	<article class="creative flex flex-col full-center min-h-screen w-full">
 		<div class="content grid layout-row items-center gap-8">
 			<div class="text flex flex-col items-center gap-4">
 				<h2
@@ -232,20 +217,15 @@
 			</p>
 
 			<ul class="flex flex-col gap-4">
-				<li>
-					<p i18n="@@about.availability.p2">
-						<strong>Independent Contracts:</strong> Partnering with businesses to build
-						custom web applications from the ground up, reduce monthly cloud hosting
-						costs, and protect digital assets from accessibility lawsuits (WCAG 2.1 AA
-						or higher).
-					</p>
+				<li i18n="@@about.availability.li1">
+					<strong>Independent Contracts:</strong> Partnering with businesses to build
+					custom web applications from the ground up, reduce monthly cloud hosting costs,
+					and protect digital assets from accessibility lawsuits (WCAG 2.1 AA or higher).
 				</li>
-				<li>
-					<p i18n="@@about.availability.p3">
-						<strong>Full-Time Roles:</strong> Seeking positions as a Full Stack or
-						Backend Engineer. I look for teams that prioritize strict data security,
-						highly accessible user interfaces, and cost-efficient cloud infrastructure.
-					</p>
+				<li i18n="@@about.availability.li2">
+					<strong>Full-Time Roles:</strong> Seeking positions as a Full Stack or Backend
+					Engineer. I look for teams that prioritize strict data security, highly
+					accessible user interfaces, and cost-efficient cloud infrastructure.
 				</li>
 			</ul>
 

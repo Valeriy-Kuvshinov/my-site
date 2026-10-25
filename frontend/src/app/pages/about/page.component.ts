@@ -1,8 +1,10 @@
-import { Component, DOCUMENT, inject, OnInit } from "@angular/core"
+import { Component, computed, DOCUMENT, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 import { RouterLink } from "@angular/router"
 
 import { SITE_URL } from "@/shared/constants/util"
+
+import { SystemStore } from "@/core/stores/system.store"
 
 import { ImageContainerComponent } from "@/shared/components/general/image-container.component"
 import { SvgIconComponent } from "@/shared/components/icon/icon.component"
@@ -27,6 +29,20 @@ export default class PageComponent implements OnInit {
 	private readonly title = inject(Title)
 	private readonly meta = inject(Meta)
 	private readonly document = inject(DOCUMENT)
+
+	protected readonly store = inject(SystemStore)
+
+	protected readonly resumeUrl = computed(() =>
+		this.store.currentLang() === "he"
+			? "/cv/Valeriy-Kuvshinov-Full-Stack-Engineer-HE.pdf"
+			: "/cv/Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
+	)
+
+	protected readonly resumeName = computed(() =>
+		this.store.currentLang() === "he"
+			? "Valeriy-Kuvshinov-Full-Stack-Engineer-HE.pdf"
+			: "Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
+	)
 
 	ngOnInit() {
 		this.title.setTitle(PAGE_TITLE)

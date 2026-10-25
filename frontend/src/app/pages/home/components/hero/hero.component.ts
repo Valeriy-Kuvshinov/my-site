@@ -1,4 +1,4 @@
-import { Component, inject } from "@angular/core"
+import { Component, computed, inject } from "@angular/core"
 import { RouterLink } from "@angular/router"
 
 import { SystemStore } from "@/core/stores/system.store"
@@ -18,4 +18,16 @@ import { ImageContainerComponent } from "@/shared/components/general/image-conta
 })
 export class HeroComponent {
 	protected readonly store = inject(SystemStore)
+
+	protected readonly resumeUrl = computed(() =>
+		this.store.currentLang() === "he"
+			? "/cv/Valeriy-Kuvshinov-Full-Stack-Engineer-HE.pdf"
+			: "/cv/Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
+	)
+
+	protected readonly resumeName = computed(() =>
+		this.store.currentLang() === "he"
+			? "Valeriy-Kuvshinov-Full-Stack-Engineer-HE.pdf"
+			: "Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
+	)
 }
