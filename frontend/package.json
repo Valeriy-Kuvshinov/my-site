@@ -7,7 +7,7 @@
 		"dev:ru": "ng serve --configuration=ru",
 		"dev:he": "ng serve --configuration=he",
 		"locales": "npx ng extract-i18n --output-path src/locale",
-		"build": "node scripts/generate-sitemap.mjs && ng build && rm -rf ../backend/out && mv dist/frontend/browser ../backend/out && mv ../backend/out/en/* ../backend/out/ && rm -rf ../backend/out/en",
+		"build": "node scripts/generate-sitemap.mjs && ng build && rm -rf ../backend/out && mv dist/frontend/browser ../backend/out",
 		"watch": "node scripts/generate-sitemap.mjs && ng build --watch --configuration development",
 		"test": "ng test"
 	},

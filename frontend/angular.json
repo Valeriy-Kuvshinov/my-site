@@ -9,7 +9,10 @@
 		"frontend": {
 			"projectType": "application",
 			"i18n": {
-				"sourceLocale": "en",
+				"sourceLocale": {
+					"code": "en",
+					"subPath": ""
+				},
 				"locales": {
 					"ru": {
 						"translation": "src/locale/ru/messages.ru.xlf",
