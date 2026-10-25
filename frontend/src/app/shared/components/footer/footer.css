@@ -38,6 +38,7 @@
 		.legal {
 			p {
 				color: var(--scdclr1);
+				direction: ltr;
 			}
 
 			.legal-nav a {

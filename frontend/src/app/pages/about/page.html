@@ -50,7 +50,7 @@
 		<div class="content flex flex-col w-full layout-row gap-8">
 			<h2
 				i18n="@@about.reason.title"
-				class="text-family-bold">
+				class="text-family-bold text-center">
 				The Engineering Difference
 			</h2>
 
@@ -91,7 +91,7 @@
 		<div class="content flex flex-col w-full layout-row gap-8">
 			<h2
 				i18n="@@about.experience.title"
-				class="text-family-bold">
+				class="text-family-bold text-center">
 				Background
 			</h2>
 
@@ -120,27 +120,91 @@
 		<div class="content flex flex-col w-full layout-row gap-8">
 			<h2
 				i18n="@@about.stack.title"
-				class="text-family-bold">
+				class="text-family-bold text-center">
 				Core Technology Stack
 			</h2>
 
-			<ul class="flex flex-col gap-4">
-				<li i18n="@@about.stack.li1">
-					<strong>Languages:</strong> TypeScript, JavaScript, Java, Python, C, Bash, HTML,
-					CSS.
+			<ul class="grid gap-6 w-full">
+				<li class="flex flex-col gap-4">
+					<h3
+						class="text-family-bold"
+						i18n="@@about.stack.cat1">
+						Languages
+					</h3>
+
+					<div class="tags flex flex-wrap gap-2">
+						<span class="tag">TypeScript</span>
+						<span class="tag">JavaScript</span>
+						<span class="tag">Java</span>
+						<span class="tag">Python</span>
+						<span class="tag">C</span>
+						<span class="tag">Bash</span>
+						<span class="tag">HTML</span>
+						<span class="tag">CSS</span>
+					</div>
 				</li>
-				<li i18n="@@about.stack.li2">
-					<strong>Frontend:</strong> Angular, Next.js, React, Electron, JavaFX.
+
+				<li class="flex flex-col gap-4">
+					<h3
+						class="text-family-bold"
+						i18n="@@about.stack.cat2">
+						Frontend
+					</h3>
+
+					<div class="tags flex flex-wrap gap-2">
+						<span class="tag">Angular</span>
+						<span class="tag">Next.js</span>
+						<span class="tag">React</span>
+						<span class="tag">Electron</span>
+						<span class="tag">TailwindCSS</span>
+						<span class="tag">JavaFX</span>
+					</div>
 				</li>
-				<li i18n="@@about.stack.li3">
-					<strong>Backend:</strong> NestJS, Node.js, Express, Spring Boot.
+
+				<li class="flex flex-col gap-4">
+					<h3
+						class="text-family-bold"
+						i18n="@@about.stack.cat3">
+						Backend
+					</h3>
+
+					<div class="tags flex flex-wrap gap-2">
+						<span class="tag">NestJS</span>
+						<span class="tag">Node.js</span>
+						<span class="tag">Express</span>
+						<span class="tag">Spring Boot</span>
+					</div>
 				</li>
-				<li i18n="@@about.stack.li4">
-					<strong>Databases:</strong> PostgreSQL, MongoDB (NoSQL), Supabase.
+
+				<li class="flex flex-col gap-4">
+					<h3
+						class="text-family-bold"
+						i18n="@@about.stack.cat4">
+						Databases
+					</h3>
+
+					<div class="tags flex flex-wrap gap-2">
+						<span class="tag">MongoDB (NoSQL)</span>
+						<span class="tag">PostgreSQL</span>
+						<span class="tag">Supabase</span>
+					</div>
 				</li>
-				<li i18n="@@about.stack.li5">
-					<strong>Infrastructure & DevOps:</strong> Docker, Linux, CI/CD (GitHub Actions),
-					Cloudflare, AWS, Oracle Cloud (OCI).
+
+				<li class="flex flex-col gap-4">
+					<h3
+						class="text-family-bold"
+						i18n="@@about.stack.cat5">
+						Infrastructure & DevOps
+					</h3>
+
+					<div class="tags flex flex-wrap gap-2">
+						<span class="tag">AWS</span>
+						<span class="tag">Oracle Cloud (OCI)</span>
+						<span class="tag">Docker</span>
+						<span class="tag">CI/CD (GitHub Actions)</span>
+						<span class="tag">Linux</span>
+						<span class="tag">Cloudflare</span>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -204,32 +268,52 @@
 	</article>
 
 	<article class="availability flex flex-col w-full">
-		<div class="content flex flex-col w-full layout-row gap-8">
+		<div class="content flex flex-col items-center w-full layout-row gap-8">
 			<h2
 				i18n="@@about.availability.title"
-				class="text-family-bold">
+				class="text-family-bold text-center">
 				Current Availability
 			</h2>
 
-			<p i18n="@@about.availability.p1">
-				I am currently available for both independent client projects and dedicated
-				organizational roles:
-			</p>
+			<ul class="grid gap-8 w-full">
+				<li class="flex flex-col gap-4">
+					<h3 class="flex flex-row items-center justify-between w-full text-family-bold">
+						<span i18n="@@about.availability.role1">Independent Contracts</span>
+						<app-svg-icon
+							icon="briefcase"
+							width="32"
+							height="32">
+						</app-svg-icon>
+					</h3>
 
-			<ul class="flex flex-col gap-4">
-				<li i18n="@@about.availability.li1">
-					<strong>Independent Contracts:</strong> Partnering with businesses to build
-					custom web applications from the ground up, reduce monthly cloud hosting costs,
-					and protect digital assets from accessibility lawsuits (WCAG 2.1 AA or higher).
+					<p i18n="@@about.availability.desc1">
+						Partnering with businesses to build custom web applications from the ground
+						up, reduce monthly cloud hosting costs, and protect digital assets from
+						accessibility lawsuits (WCAG 2.1 AA or higher).
+					</p>
 				</li>
-				<li i18n="@@about.availability.li2">
-					<strong>Full-Time Roles:</strong> Seeking positions as a Full Stack or Backend
-					Engineer. I look for teams that prioritize strict data security, highly
-					accessible user interfaces, and cost-efficient cloud infrastructure.
+
+				<li class="flex flex-col gap-4">
+					<h3 class="flex flex-row items-center justify-between w-full text-family-bold">
+						<span i18n="@@about.availability.role2">Full-Time Roles</span>
+						<app-svg-icon
+							icon="office"
+							width="32"
+							height="32">
+						</app-svg-icon>
+					</h3>
+
+					<p i18n="@@about.availability.desc2">
+						Seeking positions as a Full Stack or Backend Engineer. I look for teams that
+						prioritize strict data security, highly accessible user interfaces, and
+						cost-efficient cloud infrastructure.
+					</p>
 				</li>
 			</ul>
 
-			<p i18n="@@about.availability.p4">
+			<p
+				i18n="@@about.availability.p"
+				class="text-center">
 				Available for global remote work, as well as hybrid or on-site positions within
 				Israel.
 			</p>

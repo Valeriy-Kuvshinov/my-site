@@ -6,46 +6,46 @@
 
 	} @else {
 	<app-input-area
-		i18n-label="@@form.name.label"
+		i18n-label="@@contact.form.name.label"
 		label="Name"
 		name="name"
 		[required]="true"
 		type="text"
 		icon="person"
-		i18n-placeholder="@@form.name.placeholder"
+		i18n-placeholder="@@contact.form.name.placeholder"
 		placeholder="Your name"
 		[control]="getInputControl('name')"
 		[error]="getErrorMessage('name')">
 	</app-input-area>
 
 	<app-input-area
-		i18n-label="@@form.email.label"
+		i18n-label="@@contact.form.email.label"
 		label="Email"
 		name="email"
 		[required]="true"
 		type="email"
 		icon="mail"
-		i18n-placeholder="@@form.email.placeholder"
+		i18n-placeholder="@@contact.form.email.placeholder"
 		placeholder="Your email"
 		[control]="getInputControl('email')"
 		[error]="getErrorMessage('email')">
 	</app-input-area>
 
 	<app-input-area
-		i18n-label="@@form.title.label"
+		i18n-label="@@contact.form.title.label"
 		label="Title"
 		name="title"
 		[required]="true"
 		type="text"
 		icon="title"
-		i18n-placeholder="@@form.title.placeholder"
+		i18n-placeholder="@@contact.form.title.placeholder"
 		placeholder="Asking about..."
 		[control]="getInputControl('title')"
 		[error]="getErrorMessage('title')">
 	</app-input-area>
 
 	<app-select-area
-		i18n-label="@@form.subject.label"
+		i18n-label="@@contact.form.subject.label"
 		label="Subject"
 		name="requestType"
 		icon="info"
@@ -53,44 +53,44 @@
 		[error]="getErrorMessage('requestType')">
 		<option
 			value="Q&A"
-			i18n="@@form.subject.opt_qa">
+			i18n="@@contact.form.subject.opt_qa">
 			Q&A
 		</option>
 		<option
 			value="Suggestion"
-			i18n="@@form.subject.opt_suggestion">
+			i18n="@@contact.form.subject.opt_suggestion">
 			Suggestion
 		</option>
 		<option
 			value="Bug Report"
-			i18n="@@form.subject.opt_bug">
+			i18n="@@contact.form.subject.opt_bug">
 			Bug Report
 		</option>
 		<option
 			value="Volunteering"
-			i18n="@@form.subject.opt_volunteer">
+			i18n="@@contact.form.subject.opt_volunteer">
 			Volunteering
 		</option>
 		<option
 			value="Accessibility"
-			i18n="@@form.subject.opt_a11y">
+			i18n="@@contact.form.subject.opt_a11y">
 			Accessibility
 		</option>
 		<option
 			value="Other"
-			i18n="@@form.subject.opt_other">
+			i18n="@@contact.form.subject.opt_other">
 			Other
 		</option>
 	</app-select-area>
 
 	<app-input-area
-		i18n-label="@@form.message.label"
+		i18n-label="@@contact.form.message.label"
 		label="Message"
 		name="message"
 		[required]="true"
 		type="textarea"
 		icon="message"
-		i18n-placeholder="@@form.message.placeholder"
+		i18n-placeholder="@@contact.form.message.placeholder"
 		placeholder="Let's build a system..."
 		[control]="getInputControl('message')"
 		[error]="getErrorMessage('message')">
@@ -103,7 +103,7 @@
 				formControlName="consent"
 				class="w-h-fit"
 				[attr.aria-invalid]="getInputControl('consent').invalid && getInputControl('consent').touched" />
-			<span i18n="@@form.consent.text">
+			<span i18n="@@contact.form.consent.text">
 				I agree to the
 				<a
 					routerLink="/terms"
@@ -120,7 +120,7 @@
 		</label>
 		@if (getInputControl('consent').invalid && getInputControl('consent').touched) {
 		<span
-			i18n="@@form.consent.error"
+			i18n="@@contact.form.consent.error"
 			class="error-text">
 			You must accept the Terms of Service and Privacy Policy to submit form.
 		</span>
@@ -136,7 +136,7 @@
 			(mouseleave)="isActiveInteract.set(false)"
 			(focus)="isActiveInteract.set(true)"
 			(blur)="isActiveInteract.set(false)">
-			<span i18n="@@form.btn.send">Send</span>
+			<span i18n="@@contact.form.btn.send">Send</span>
 
 			<app-svg-icon
 				[icon]="buttonIcon"

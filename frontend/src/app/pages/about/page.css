@@ -38,10 +38,36 @@
 		}
 	}
 
+	.reason .content {
+		margin-block-end: 5rem;
+
+		ul li {
+			padding: 1rem;
+			background: var(--scdclr9);
+			border: 1px solid var(--scdclr6);
+			border-radius: 0.75rem;
+		}
+	}
+
 	.experience .content ul {
 		margin-block-end: 1rem;
 	}
 
+	.stack .content ul li {
+		background: var(--scdclr8);
+		border: 1px solid var(--scdclr7);
+		padding: 1.5rem;
+		border-radius: 0.75rem;
+
+		.tag {
+			background: var(--prmclr1);
+			color: var(--scdclr1);
+			border: 1px solid var(--scdclr6);
+			padding: 0.25rem 0.75rem;
+			border-radius: 1rem;
+			font-size: 0.875rem;
+		}
+	}
 
 	.creative {
 		background: linear-gradient(
@@ -82,18 +108,25 @@
 	}
 
 	.availability .content {
-		padding: 1rem;
-		max-width: 60rem;
-		border: 1px solid var(--mnrclr4);
-		border-radius: 0.75rem;
+		ul {
+			margin: 2rem 0;
+
+			li {
+				background: var(--scdclr9);
+				fill: var(--scdclr2);
+				border: 1px solid var(--mnrclr4);
+				padding: 2rem;
+				border-radius: 0.75rem;
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+			}
+		}
 
 		a {
-			padding: 0.75rem 1rem;
+			padding: 0.75rem 1.5rem;
 			background: var(--scdclr2);
 			color: var(--scdclr9);
 			fill: var(--scdclr9);
 			border-radius: 0.75rem;
-			align-self: center;
 			outline: none;
 
 			app-svg-icon {
@@ -153,6 +186,10 @@
 			p {
 				font-size: 1rem;
 			}
+
+			a {
+				align-self: center;
+			}
 		}
 
 		.experience .content,
@@ -175,6 +212,11 @@
 		}
 
 		.reason .content ul {
+			grid-template-columns: 1fr;
+		}
+
+		.availability .content ul,
+		.stack .content ul {
 			grid-template-columns: 1fr;
 		}
 	}
@@ -214,6 +256,14 @@
 		.reason .content ul {
 			grid-template-columns: 1fr 1fr;
 		}
+
+		.stack .content ul {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.availability .content ul {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 
 	@media (min-width: 901px) {
@@ -241,6 +291,19 @@
 
 		.reason .content ul {
 			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.stack .content ul {
+			grid-template-columns: repeat(3, 1fr);
+
+			li {
+				&:nth-child(4) {
+					grid-column: 1 / 2;
+				}
+				&:nth-child(5) {
+					grid-column: 2 / 4;
+				}
+			}
 		}
 
 		.creative .content {

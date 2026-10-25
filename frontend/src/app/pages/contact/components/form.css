@@ -73,3 +73,9 @@
 		}
 	}
 }
+
+:host-context([dir="rtl"]) {
+	.form-actions button app-svg-icon {
+		transform: rotateY(180deg);
+	}
+}

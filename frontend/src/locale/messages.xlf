@@ -163,49 +163,49 @@
           <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="timeline.step1.title" datatype="html">
+      <trans-unit id="about.timeline.step1.title" datatype="html">
         <source>Tech Advisor &amp; Risk Analyst (IDF)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/components/timeline.component.ts</context>
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="timeline.step1.desc" datatype="html">
+      <trans-unit id="about.timeline.step1.desc" datatype="html">
         <source>Served in the Israeli Defense Forces (Aman), specializing in OSINT-based network analysis and technical intelligence. This high-stakes environment cemented my rigorous, risk-averse approach to system security and data integrity.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/components/timeline.component.ts</context>
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="timeline.step2.title" datatype="html">
+      <trans-unit id="about.timeline.step2.title" datatype="html">
         <source>MisterBit Coding Academy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/components/timeline.component.ts</context>
           <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="timeline.step2.desc" datatype="html">
+      <trans-unit id="about.timeline.step2.desc" datatype="html">
         <source>Completed an intensive, highly selective full-stack software developer bootcamp. Transitioned my analytical military background directly into modern web technologies, mastering React, Angular, and Node.js with REST API architectures.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/components/timeline.component.ts</context>
           <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="timeline.step3.title" datatype="html">
+      <trans-unit id="about.timeline.step3.title" datatype="html">
         <source>Independent Full Stack Engineer</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/components/timeline.component.ts</context>
           <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="timeline.step3.desc" datatype="html">
+      <trans-unit id="about.timeline.step3.desc" datatype="html">
         <source>Operating as an independent contractor to build scalable web applications, deploy cost-efficient cloud infrastructure, and engineer user interfaces to natively meet strict WCAG 2.1 AA accessibility standards, protecting clients from legal liabilities.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/components/timeline.component.ts</context>
           <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="timeline.tablist.aria" datatype="html">
+      <trans-unit id="about.timeline.tablist.aria" datatype="html">
         <source>Career Timeline</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/components/timeline.html</context>
@@ -216,56 +216,56 @@
         <source>About | Kuvshinov Software</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.component.ts</context>
-          <context context-type="linenumber">11</context>
+          <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.meta.desc" datatype="html">
         <source>Find out more about the man behind the business.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.component.ts</context>
-          <context context-type="linenumber">13</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="about.intro.img_alt" datatype="html">
-        <source>Valeriy Kuvshinov sitting in a conference</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">7,9</context>
+          <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.intro.title" datatype="html">
         <source> About Me </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">16,19</context>
+          <context context-type="linenumber">8,11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.intro.subtitle" datatype="html">
         <source>Full Stack Engineer | Valeriy Kuvshinov</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">19,21</context>
+          <context context-type="linenumber">11,13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.intro.p1" datatype="html">
         <source> I am a Full Stack Engineer specializing in distributed systems, real-time backends, and scalable web applications. With over <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>3,000 GitHub contributions<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> and multiple live production systems deployed, my engineering philosophy is built on three pillars: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/> cost-efficient infrastructure, strict data security, and legal-grade accessibility. <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">22,33</context>
+          <context context-type="linenumber">14,25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.intro.btn_resume.aria" datatype="html">
         <source>Download Valeriy Kuvshinov&apos;s resume as a PDF</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">37,38</context>
+          <context context-type="linenumber">29,30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.intro.btn_resume.text" datatype="html">
         <source>Resume</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">38,40</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.intro.img_alt" datatype="html">
+        <source>Valeriy Kuvshinov sitting in a conference</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/page.html</context>
+          <context context-type="linenumber">42,44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.reason.title" datatype="html">
@@ -331,144 +331,151 @@
           <context context-type="linenumber">99,104</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="about.experience.p2" datatype="html">
+      <trans-unit id="about.experience.li1" datatype="html">
         <source> B.Sc. in Computer Science, Open University of Israel (In Progress). Anchoring practical engineering with deep theoretical and algorithmic foundations. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">107,111</context>
+          <context context-type="linenumber">106,109</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="about.experience.p3" datatype="html">
+      <trans-unit id="about.experience.li2" datatype="html">
         <source> Native proficiency in English, Hebrew, and Russian, enabling seamless technical documentation and cross-border project localization. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">114,118</context>
+          <context context-type="linenumber">110,115</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.stack.title" datatype="html">
         <source> Core Technology Stack </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">129,132</context>
+          <context context-type="linenumber">124,127</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="about.stack.p1" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Languages:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> TypeScript, JavaScript, Java, Python, C, Bash, HTML, CSS. </source>
+      <trans-unit id="about.stack.cat1" datatype="html">
+        <source> Languages </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">135,138</context>
+          <context context-type="linenumber">132,135</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="about.stack.p2" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Frontend:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Angular, Next.js, React, Electron, JavaFX. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">141,144</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="about.stack.p3" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Backend:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> NestJS, Node.js, Express, Spring Boot. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">146,149</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="about.stack.p4" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Database:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> NoSQL (MongoDB), PostgreSQL (Supabase). </source>
+      <trans-unit id="about.stack.cat2" datatype="html">
+        <source> Frontend </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
           <context context-type="linenumber">151,154</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="about.stack.p5" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Infrastructure &amp; DevOps:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Docker, Linux, CI/CD (GitHub Actions), Cloudflare, AWS, Oracle Cloud (OCI). </source>
+      <trans-unit id="about.stack.cat3" datatype="html">
+        <source> Backend </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">156,159</context>
+          <context context-type="linenumber">168,171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.stack.cat4" datatype="html">
+        <source> Databases </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/page.html</context>
+          <context context-type="linenumber">183,186</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.stack.cat5" datatype="html">
+        <source> Infrastructure &amp; DevOps </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/page.html</context>
+          <context context-type="linenumber">197,200</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.creative.title" datatype="html">
         <source> Beyond The Code </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">170,173</context>
+          <context context-type="linenumber">219,222</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.creative.p1" datatype="html">
         <source> While software architecture demands strict logic and risk management, I balance that discipline with creative expression through instrumental and orchestral music composition. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">174,179</context>
+          <context context-type="linenumber">223,228</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.creative.p2" datatype="html">
         <source> I occasionally produce and release new cinematic tracks. You can explore my latest compositions directly on my channel. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">180,185</context>
+          <context context-type="linenumber">229,234</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.creative.link_aria" datatype="html">
         <source>Visit My Channel on YouTube (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">190,191</context>
+          <context context-type="linenumber">239,240</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.creative.link_text" datatype="html">
         <source>Visit My Channel</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">191,193</context>
+          <context context-type="linenumber">240,242</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.creative.iframe_title" datatype="html">
         <source>Instrumental music composition by Valeriy Kuvshinov</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">205,208</context>
+          <context context-type="linenumber">254,257</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.availability.title" datatype="html">
         <source> Current Availability </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">226,229</context>
+          <context context-type="linenumber">275,278</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="about.availability.p1" datatype="html">
-        <source> I am currently available for both independent client projects and dedicated organizational roles: </source>
+      <trans-unit id="about.availability.role1" datatype="html">
+        <source>Independent Contracts</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">230,234</context>
+          <context context-type="linenumber">281,283</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="about.availability.p2" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Independent Contracts:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Partnering with businesses to build custom web applications from the ground up, reduce monthly cloud hosting costs, and protect digital assets from accessibility lawsuits (WCAG 2.1 AA or higher). </source>
+      <trans-unit id="about.availability.desc1" datatype="html">
+        <source> Partnering with businesses to build custom web applications from the ground up, reduce monthly cloud hosting costs, and protect digital assets from accessibility lawsuits (WCAG 2.1 AA or higher). </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">237,241</context>
+          <context context-type="linenumber">290,296</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="about.availability.p3" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Full-Time Roles:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Seeking positions as a Full Stack or Backend Engineer. I look for teams that prioritize strict data security, highly accessible user interfaces, and cost-efficient cloud infrastructure. </source>
+      <trans-unit id="about.availability.role2" datatype="html">
+        <source>Full-Time Roles</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">245,248</context>
+          <context context-type="linenumber">298,300</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="about.availability.p4" datatype="html">
+      <trans-unit id="about.availability.desc2" datatype="html">
+        <source> Seeking positions as a Full Stack or Backend Engineer. I look for teams that prioritize strict data security, highly accessible user interfaces, and cost-efficient cloud infrastructure. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/page.html</context>
+          <context context-type="linenumber">307,312</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.availability.p" datatype="html">
         <source> Available for global remote work, as well as hybrid or on-site positions within Israel. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">253,258</context>
+          <context context-type="linenumber">317,322</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.availability.link" datatype="html">
         <source>Reach out!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">260,263</context>
+          <context context-type="linenumber">324,327</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.meta.title" datatype="html">
@@ -657,193 +664,178 @@
           <context context-type="linenumber">147,150</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.error.required" datatype="html">
+      <trans-unit id="contact.form.error.required" datatype="html">
         <source>Required field</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
           <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.error.minlength" datatype="html">
+      <trans-unit id="contact.form.error.minlength" datatype="html">
         <source>Too short</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
           <context context-type="linenumber">75</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.error.maxlength" datatype="html">
+      <trans-unit id="contact.form.error.maxlength" datatype="html">
         <source>Too long</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
           <context context-type="linenumber">77</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.error.email" datatype="html">
+      <trans-unit id="contact.form.error.email" datatype="html">
         <source>Invalid format</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
           <context context-type="linenumber">79</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.error.pattern" datatype="html">
+      <trans-unit id="contact.form.error.pattern" datatype="html">
         <source>Invalid characters</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
-          <context context-type="linenumber">81</context>
+          <context context-type="linenumber">82</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.error.invalid" datatype="html">
+      <trans-unit id="contact.form.error.invalid" datatype="html">
         <source>Invalid input</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
-          <context context-type="linenumber">83</context>
+          <context context-type="linenumber">84</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.name.label" datatype="html">
+      <trans-unit id="contact.form.name.label" datatype="html">
         <source>Name</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">11,12</context>
+          <context context-type="linenumber">11,13</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.name.placeholder" datatype="html">
+      <trans-unit id="contact.form.name.placeholder" datatype="html">
         <source>Your name</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">16,17</context>
+          <context context-type="linenumber">16,18</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.email.label" datatype="html">
+      <trans-unit id="contact.form.email.label" datatype="html">
         <source>Email</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">24,25</context>
+          <context context-type="linenumber">24,26</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.email.placeholder" datatype="html">
+      <trans-unit id="contact.form.email.placeholder" datatype="html">
         <source>Your email</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">29,30</context>
+          <context context-type="linenumber">29,31</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.title.label" datatype="html">
+      <trans-unit id="contact.form.title.label" datatype="html">
         <source>Title</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">37,38</context>
+          <context context-type="linenumber">37,39</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.title.placeholder" datatype="html">
+      <trans-unit id="contact.form.title.placeholder" datatype="html">
         <source>Asking about...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">42,43</context>
+          <context context-type="linenumber">42,44</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.subject.label" datatype="html">
+      <trans-unit id="contact.form.subject.label" datatype="html">
         <source>Subject</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">50,51</context>
+          <context context-type="linenumber">50,52</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.subject.opt_qa" datatype="html">
+      <trans-unit id="contact.form.subject.opt_qa" datatype="html">
         <source> Q&amp;A </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
           <context context-type="linenumber">58,60</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.subject.opt_suggestion" datatype="html">
+      <trans-unit id="contact.form.subject.opt_suggestion" datatype="html">
         <source> Suggestion </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">62,65</context>
+          <context context-type="linenumber">62,66</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.subject.opt_bug" datatype="html">
+      <trans-unit id="contact.form.subject.opt_bug" datatype="html">
         <source> Bug Report </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
           <context context-type="linenumber">67,70</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.subject.opt_volunteer" datatype="html">
+      <trans-unit id="contact.form.subject.opt_volunteer" datatype="html">
         <source> Volunteering </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
           <context context-type="linenumber">72,75</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.subject.opt_a11y" datatype="html">
+      <trans-unit id="contact.form.subject.opt_a11y" datatype="html">
         <source> Accessibility </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">77,80</context>
+          <context context-type="linenumber">77,81</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.subject.opt_other" datatype="html">
+      <trans-unit id="contact.form.subject.opt_other" datatype="html">
         <source> Other </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
           <context context-type="linenumber">82,86</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.message.label" datatype="html">
+      <trans-unit id="contact.form.message.label" datatype="html">
         <source>Message</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">89,90</context>
+          <context context-type="linenumber">89,91</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.message.placeholder" datatype="html">
+      <trans-unit id="contact.form.message.placeholder" datatype="html">
         <source>Let&apos;s build a system...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">94,95</context>
+          <context context-type="linenumber">94,96</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.consent.p1" datatype="html">
-        <source>I agree to the</source>
+      <trans-unit id="contact.form.consent.text" datatype="html">
+        <source> I agree to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+					routerLink=&quot;/terms&quot;
+					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Terms of Service <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+				&gt;"/> and the processing of my data in accordance with the <x id="START_LINK_1" equiv-text="&lt;a
+					routerLink=&quot;/privacy-policy&quot;
+					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Privacy Policy <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+				&gt;"/>. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">107,109</context>
+          <context context-type="linenumber">107,120</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.consent.terms" datatype="html">
-        <source>Terms of Service</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">111,113</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="form.consent.p2" datatype="html">
-        <source> and the processing of my data in accordance with the </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">114,116</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="form.consent.privacy" datatype="html">
-        <source>Privacy Policy</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">119,122</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="form.consent.error" datatype="html">
+      <trans-unit id="contact.form.consent.error" datatype="html">
         <source> You must accept the Terms of Service and Privacy Policy to submit form. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">127,132</context>
+          <context context-type="linenumber">125,130</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="form.btn.send" datatype="html">
+      <trans-unit id="contact.form.btn.send" datatype="html">
         <source>Send</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">141,144</context>
+          <context context-type="linenumber">139,142</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.meta.title" datatype="html">
@@ -881,102 +873,95 @@
           <context context-type="linenumber">20,21</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="home.extension.title" datatype="html">
-        <source> Did Not Get It </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">6,10</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="home.extension.desc" datatype="html">
         <source> &quot;Did Not Get It&quot; is a cross-browser extension for Firefox and Chrome that automatically identifies, labels, and marks Gmail rejection emails as read while maintaining a local &quot;rejections skipped&quot; counter. Available now in Chrome Web Store and Firefox Browser Add-ons. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">12,18</context>
+          <context context-type="linenumber">8,14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.btn_chrome.aria" datatype="html">
         <source>Get the Did Not Get It extension at Chrome Web Store (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">25,26</context>
+          <context context-type="linenumber">21,22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.btn_chrome.text" datatype="html">
         <source>Get for Chrome</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">26,29</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.extension.btn_github.aria" datatype="html">
-        <source>View the Did Not Get It extension on GitHub (opens in a new tab)</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">40,41</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.extension.btn_github.text" datatype="html">
-        <source>View on GitHub</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">41,44</context>
+          <context context-type="linenumber">22,25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.btn_firefox.aria" datatype="html">
         <source>Get the Did Not Get It extension at Firefox Add-ons (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">55,56</context>
+          <context context-type="linenumber">36,37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.btn_firefox.text" datatype="html">
         <source>Get for Firefox</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">56,59</context>
+          <context context-type="linenumber">37,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.extension.btn_github.aria" datatype="html">
+        <source>View the Did Not Get It extension on GitHub (opens in a new tab)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.extension.btn_github.text" datatype="html">
+        <source>View on GitHub</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
+          <context context-type="linenumber">52,55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.fig_before" datatype="html">
         <source> Before </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">71,74</context>
+          <context context-type="linenumber">67,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_before.alt" datatype="html">
         <source>Gmail inbox showing unread corporate emails</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">77,80</context>
+          <context context-type="linenumber">73,76</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_before.aria" datatype="html">
         <source>View full size image of inbox before extension processing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">84,85</context>
+          <context context-type="linenumber">80,81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.fig_after" datatype="html">
         <source> After </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">93,96</context>
+          <context context-type="linenumber">89,92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_after.alt" datatype="html">
         <source>Gmail inbox showing emails automatically labeled and marked as read by the extension</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">99,102</context>
+          <context context-type="linenumber">95,98</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_after.aria" datatype="html">
         <source>View full size image of inbox after extension processing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">106,107</context>
+          <context context-type="linenumber">102,103</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.img_alt" datatype="html">
@@ -1937,245 +1922,245 @@
         <source>Custom Web Development</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card1.price" datatype="html">
-        <source>From $999</source>
+        <source>From $1000</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">34</context>
+          <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card1.desc" datatype="html">
-        <source>Starting at $999 for highly optimized static landing pages, scaling up to secure full-stack applications. By deploying your system on independent cloud infrastructure, I can often eliminate your monthly hosting subscriptions entirely.</source>
+        <source>Starting at $1000 for highly optimized static landing pages, scaling up to secure full-stack applications. By deploying your system on independent cloud infrastructure, I can often eliminate your monthly hosting subscriptions entirely.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card1.skill1" datatype="html">
         <source>Secure Backend, WCAG AA Frontend</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card1.skill2" datatype="html">
         <source>Cost-Efficient Cloud Hosting</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card1.skill3" datatype="html">
         <source>Multi-language &amp; RTL-LTR Support</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card1.skill4" datatype="html">
         <source>E-Commerce Integrations</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card2.title" datatype="html">
         <source>A11y Audits &amp; ARIA Fixes</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card2.price" datatype="html">
-        <source>$100/page</source>
+        <source>$100 per page</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card2.desc" datatype="html">
         <source>Automated accessibility widgets do not protect you from lawsuits. True accessibility requires fixing the underlying code so keyboards and screen readers can actually navigate it.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card2.skill1" datatype="html">
         <source>Manual HTML Rewrites</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card2.skill2" datatype="html">
         <source>WCAG AA Violation Reports</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card2.skill3" datatype="html">
         <source>Color Contrast Optimization</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">65</context>
+          <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card2.skill4" datatype="html">
         <source>Screen Reader Support</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">69</context>
+          <context context-type="linenumber">49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card3.title" datatype="html">
-        <source>System Rescue &amp; Bug Fixing</source>
+        <source>System Rescue &amp; Maintenance</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">75</context>
+          <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card3.price" datatype="html">
-        <source>$80/hr</source>
+        <source>$80 per hour</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">76</context>
+          <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card3.desc" datatype="html">
-        <source>Got a website that is crashing, running slow, or full of bugs? I can jump in, clean up the technical debt, and make your system stable and secure.</source>
+        <source>Got a website that is crashing, running slow, or full of bugs? Relying on AI-generated code that suddenly broke? I can jump in, clean up the technical debt, and make your system stable and secure.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">77</context>
+          <context context-type="linenumber">56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card3.skill1" datatype="html">
         <source>Legacy Code Refactoring</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">79</context>
+          <context context-type="linenumber">58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card3.skill2" datatype="html">
         <source>Performance Speed Boosts</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">80</context>
+          <context context-type="linenumber">59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card3.skill3" datatype="html">
         <source>Security Hardening</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">81</context>
+          <context context-type="linenumber">60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card3.skill4" datatype="html">
         <source>Spam &amp; Bot Mitigation</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">82</context>
+          <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card4.title" datatype="html">
         <source>Remote Digital Assistance</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">87</context>
+          <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card4.price" datatype="html">
-        <source>$20/hr</source>
+        <source>$20 per hour</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">88</context>
+          <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card4.desc" datatype="html">
         <source>Dedicated help for individuals who get blocked by annoying captchas, confusing government portals, or inaccessible web forms.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">89</context>
+          <context context-type="linenumber">68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card4.skill1" datatype="html">
         <source>Bypassing Visual Barriers</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">91</context>
+          <context context-type="linenumber">70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card4.skill2" datatype="html">
         <source>Form &amp; Document Completion</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">92</context>
+          <context context-type="linenumber">71</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card4.skill3" datatype="html">
         <source>Patient 1-on-1 Support</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">93</context>
+          <context context-type="linenumber">72</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.step1.title" datatype="html">
         <source>Infrastructure &amp; Complete Ownership</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">100</context>
+          <context context-type="linenumber">79</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.step1.desc" datatype="html">
         <source>I guide you through establishing your own independent cloud hosting. You retain absolute control over passwords and billing, eliminating vendor lock-in. I act strictly as your dedicated engineer.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">101</context>
+          <context context-type="linenumber">80</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.step2.title" datatype="html">
         <source>Custom System Engineering</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">104</context>
+          <context context-type="linenumber">83</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.step2.desc" datatype="html">
         <source>Your digital infrastructure is engineered from scratch. By bypassing bloated templates and expensive CMS platforms, I ensure the final product is lightning-fast, highly secure, and legally accessible by design.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">105</context>
+          <context context-type="linenumber">84</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.step3.title" datatype="html">
         <source>Deployment &amp; Lifecycle Support</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">108</context>
+          <context context-type="linenumber">87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.step3.desc" datatype="html">
         <source>Upon launch, you own an independent, low-overhead system. I provide 12 months of structural bug fixes free of charge. Subsequent years transition to a standard retainer strictly for security patching, with new features billed separately.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">109</context>
+          <context context-type="linenumber">88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.meta.title" datatype="html">
         <source>Services | Kuvshinov Software</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">113</context>
+          <context context-type="linenumber">92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.meta.desc" datatype="html">
         <source>Browse through our transparent services and pricing to decide what fits your project.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
-          <context context-type="linenumber">115</context>
+          <context context-type="linenumber">94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.intro.title" datatype="html">
@@ -2203,28 +2188,28 @@
         <source> How I Work </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.html</context>
-          <context context-type="linenumber">65,68</context>
+          <context context-type="linenumber">58,61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.cta.title" datatype="html">
         <source> Have you decided? </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.html</context>
-          <context context-type="linenumber">94,97</context>
+          <context context-type="linenumber">87,90</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.cta.subtitle" datatype="html">
         <source> For any questions or doubts, don&apos;t be afraid to ask. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.html</context>
-          <context context-type="linenumber">99,102</context>
+          <context context-type="linenumber">92,95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.cta.btn" datatype="html">
         <source>Send a Message</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.html</context>
-          <context context-type="linenumber">104,106</context>
+          <context context-type="linenumber">97,99</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.meta.title" datatype="html">
@@ -2628,13 +2613,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
           <context context-type="linenumber">48,49</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="footer.copyright" datatype="html">
-        <source>© 2024 - 2026 Kuvshinov Software.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
-          <context context-type="linenumber">66,68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.link.privacy" datatype="html">

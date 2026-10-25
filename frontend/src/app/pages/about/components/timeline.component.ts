@@ -16,22 +16,22 @@ const TIMELINE_STEPS: TimelineStep[] = [
 	{
 		id: "idf",
 		years: "2020 - 2023",
-		title: $localize`:@@timeline.step1.title:Tech Advisor & Risk Analyst (IDF)`,
-		description: $localize`:@@timeline.step1.desc:Served in the Israeli Defense Forces (Aman), specializing in OSINT-based network analysis and technical intelligence. This high-stakes environment cemented my rigorous, risk-averse approach to system security and data integrity.`,
+		title: $localize`:@@about.timeline.step1.title:Tech Advisor & Risk Analyst (IDF)`,
+		description: $localize`:@@about.timeline.step1.desc:Served in the Israeli Defense Forces (Aman), specializing in OSINT-based network analysis and technical intelligence. This high-stakes environment cemented my rigorous, risk-averse approach to system security and data integrity.`,
 		icon: "shield",
 	},
 	{
 		id: "bootcamp",
 		years: "2023",
-		title: $localize`:@@timeline.step2.title:MisterBit Coding Academy`,
-		description: $localize`:@@timeline.step2.desc:Completed an intensive, highly selective full-stack software developer bootcamp. Transitioned my analytical military background directly into modern web technologies, mastering React, Angular, and Node.js with REST API architectures.`,
+		title: $localize`:@@about.timeline.step2.title:MisterBit Coding Academy`,
+		description: $localize`:@@about.timeline.step2.desc:Completed an intensive, highly selective full-stack software developer bootcamp. Transitioned my analytical military background directly into modern web technologies, mastering React, Angular, and Node.js with REST API architectures.`,
 		icon: "education",
 	},
 	{
 		id: "work",
 		years: "2024 - Present",
-		title: $localize`:@@timeline.step3.title:Independent Full Stack Engineer`,
-		description: $localize`:@@timeline.step3.desc:Operating as an independent contractor to build scalable web applications, deploy cost-efficient cloud infrastructure, and engineer user interfaces to natively meet strict WCAG 2.1 AA accessibility standards, protecting clients from legal liabilities.`,
+		title: $localize`:@@about.timeline.step3.title:Independent Full Stack Engineer`,
+		description: $localize`:@@about.timeline.step3.desc:Operating as an independent contractor to build scalable web applications, deploy cost-efficient cloud infrastructure, and engineer user interfaces to natively meet strict WCAG 2.1 AA accessibility standards, protecting clients from legal liabilities.`,
 		icon: "monitor",
 	},
 ]

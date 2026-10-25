@@ -51,6 +51,10 @@
 				fill: var(--mnrclr8);
 			}
 
+			app-svg-icon {
+				bottom: 1rem;
+			}
+
 			&:hover {
 				border-color: var(--scdclr3);
 				transform: translateY(-0.25rem);
@@ -159,9 +163,6 @@
 			grid-template-columns: repeat(3, 1fr);
 
 			app-svg-icon {
-				bottom: auto;
-				left: auto;
-
 				top: 50%;
 				right: -2rem;
 				transform: translate(50%, -50%) rotate(0deg);
@@ -177,15 +178,13 @@
 }
 
 :host-context([dir="rtl"]) {
-	app-svg-icon {
-		bottom: 1rem;
+	.menu .services .card app-svg-icon {
 		left: 1rem;
 	}
 }
 
 :host-context([dir="ltr"]) {
-	app-svg-icon {
-		bottom: 1rem;
+	.menu .services .card app-svg-icon {
 		right: 1rem;
 		transform: rotateY(180deg);
 	}
