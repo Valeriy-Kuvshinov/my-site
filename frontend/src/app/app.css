@@ -5,6 +5,7 @@
 	fill: var(--prmclr3);
 	border: 1px solid transparent;
 	border-radius: 100%;
+	transform: rotate(-92deg);
 	outline: none;
 
 	&:hover,
@@ -12,29 +13,18 @@
 		background: var(--prmclr3);
 		fill: var(--mnrclr4);
 		border-color: var(--mnrclr4);
-	}
-}
-
-:host-context([dir="rtl"]) {
-	.back-to-top {
-		left: 1rem;
-		transform: rotate(-40deg);
-
-		&:hover,
-		&:focus-visible {
-			transform: rotate(-40deg) scale(1.2);
-		}
+		transform: rotate(-92deg) scale(1.2);
 	}
 }
 
 :host-context([dir="ltr"]) {
 	.back-to-top {
 		right: 1rem;
-		transform: rotate(-125deg);
+	}
+}
 
-		&:hover,
-		&:focus-visible {
-			transform: rotate(-125deg) scale(1.2);
-		}
+:host-context([dir="rtl"]) {
+	.back-to-top {
+		left: 1rem;
 	}
 }

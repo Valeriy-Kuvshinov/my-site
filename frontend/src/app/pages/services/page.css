@@ -164,8 +164,6 @@
 
 			app-svg-icon {
 				top: 50%;
-				right: -2rem;
-				transform: translate(50%, -50%) rotate(0deg);
 			}
 		}
 	}
@@ -177,15 +175,29 @@
 	}
 }
 
-:host-context([dir="rtl"]) {
-	.menu .services .card app-svg-icon {
-		left: 1rem;
-	}
-}
-
 :host-context([dir="ltr"]) {
 	.menu .services .card app-svg-icon {
 		right: 1rem;
 		transform: rotateY(180deg);
+	}
+
+	@media (min-width: 901px) {
+		.process ul app-svg-icon {
+			right: -2rem;
+			transform: translate(50%, -50%) rotate(0deg);
+		}
+	}
+}
+
+:host-context([dir="rtl"]) {
+	.menu .services .card app-svg-icon {
+		left: 1rem;
+	}
+
+	@media (min-width: 901px) {
+		.process ul app-svg-icon {
+			left: -2rem;
+			transform: translate(-50%, -50%) rotate(180deg);
+		}
 	}
 }

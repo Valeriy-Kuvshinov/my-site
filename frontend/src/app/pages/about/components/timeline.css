@@ -97,13 +97,11 @@
 				}
 
 				.marker {
-					left: -4rem;
 					top: 0;
 				}
 
 				&::after {
 					width: 2px;
-					left: calc(-4rem + 1.5rem - 1px);
 					top: 1.5rem;
 					height: 100%;
 				}
@@ -121,7 +119,6 @@
 				padding: 0 1rem;
 
 				.marker {
-					left: 50%;
 					transform: translateX(-50%);
 					top: -4rem;
 				}
@@ -137,9 +134,60 @@
 				&::after {
 					height: 2px;
 					top: calc(-4rem + 1.5rem - 1px);
-					left: 50%;
 					width: 100%;
 				}
+			}
+		}
+	}
+}
+
+:host-context([dir="ltr"]) {
+	@media (max-width: 900px) {
+		.track button {
+			.marker {
+				left: -4rem;
+			}
+
+			&::after {
+				left: calc(-4rem + 1.5rem - 1px);
+			}
+		}
+	}
+
+	@media (min-width: 901px) {
+		.track button {
+			.marker {
+				left: 50%;
+			}
+
+			&::after {
+				left: 50%;
+			}
+		}
+	}
+}
+
+:host-context([dir="rtl"]) {
+	@media (max-width: 900px) {
+		.track button {
+			.marker {
+				right: -4rem;
+			}
+
+			&::after {
+				right: calc(-4rem + 1.5rem - 1px);
+			}
+		}
+	}
+
+	@media (min-width: 901px) {
+		.track button {
+			.marker {
+				right: 50%;
+			}
+
+			&::after {
+				right: 50%;
 			}
 		}
 	}

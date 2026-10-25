@@ -129,37 +129,6 @@
 	}
 }
 
-:host-context([dir="rtl"]) {
-	.a11y-menu {
-		right: 0;
-
-		.menu-footer a app-svg-icon {
-			transform: rotate(240deg);
-		}
-
-		@media (max-width: 600px) {
-			transform: translateX(100%);
-
-			&.show {
-				transform: translateX(0);
-			}
-		}
-
-		@media (min-width: 601px) {
-			border-radius: 1rem 0 0 1rem;
-			transform: translateX(100%) translateY(5%);
-
-			&.show {
-				transform: translateX(0) translateY(5%);
-			}
-		}
-	}
-
-	.a11y-trigger {
-		right: 1rem;
-	}
-}
-
 :host-context([dir="ltr"]) {
 	.a11y-menu {
 		left: 0;
@@ -188,5 +157,36 @@
 
 	.a11y-trigger {
 		left: 1rem;
+	}
+}
+
+:host-context([dir="rtl"]) {
+	.a11y-menu {
+		right: 0;
+
+		.menu-footer a app-svg-icon {
+			transform: rotate(240deg);
+		}
+
+		@media (max-width: 600px) {
+			transform: translateX(100%);
+
+			&.show {
+				transform: translateX(0);
+			}
+		}
+
+		@media (min-width: 601px) {
+			border-radius: 1rem 0 0 1rem;
+			transform: translateX(100%) translateY(5%);
+
+			&.show {
+				transform: translateX(0) translateY(5%);
+			}
+		}
+	}
+
+	.a11y-trigger {
+		right: 1rem;
 	}
 }

@@ -189,20 +189,6 @@
 	}
 }
 
-:host-context([dir="rtl"]) {
-	@media (min-width: 901px) {
-		.about-link {
-			left: 5vw;
-		}
-	}
-
-	@media (min-width: 1401px) {
-		.about-link {
-			left: 10vw;
-		}
-	}
-}
-
 :host-context([dir="ltr"]) {
 	@media (min-width: 901px) {
 		.about-link {
@@ -213,6 +199,20 @@
 	@media (min-width: 1401px) {
 		.about-link {
 			right: 10vw;
+		}
+	}
+}
+
+:host-context([dir="rtl"]) {
+	@media (min-width: 901px) {
+		.about-link {
+			left: 5vw;
+		}
+	}
+
+	@media (min-width: 1401px) {
+		.about-link {
+			left: 10vw;
 		}
 	}
 }

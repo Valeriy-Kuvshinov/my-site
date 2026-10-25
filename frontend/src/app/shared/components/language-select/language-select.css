@@ -94,14 +94,10 @@
 	}
 }
 
-:host-context([dir="rtl"]) {
+:host-context([dir="ltr"]) {
 	.select-wrapper {
-		#lang-select-btn app-svg-icon:last-child {
-			transform: rotate(180deg);
-		}
-
 		&.show-up #lang-select-btn.open app-svg-icon:last-child {
-			transform: rotate(270deg);
+			transform: rotate(-90deg);
 		}
 
 		&.show-down #lang-select-btn.open app-svg-icon:last-child {
@@ -110,10 +106,14 @@
 	}
 }
 
-:host-context([dir="ltr"]) {
+:host-context([dir="rtl"]) {
 	.select-wrapper {
+		#lang-select-btn app-svg-icon:last-child {
+			transform: rotate(180deg);
+		}
+
 		&.show-up #lang-select-btn.open app-svg-icon:last-child {
-			transform: rotate(-90deg);
+			transform: rotate(270deg);
 		}
 
 		&.show-down #lang-select-btn.open app-svg-icon:last-child {
