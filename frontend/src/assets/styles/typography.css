@@ -17,7 +17,13 @@
 }
 
 @font-face {
-	font-family: "dyslexic-regular";
+	font-family: "dyslexic-hebrew";
 	src: url("../fonts/Dyslexia-Hebrew.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "dyslexic-english";
+	src: url("../fonts/OpenDyslexic-Regular.woff2") format("woff2");
 	font-display: swap;
 }

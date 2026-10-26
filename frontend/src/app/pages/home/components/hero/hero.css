@@ -16,7 +16,7 @@
 			&::after {
 				content: "_";
 				display: inline-block;
-				margin-inline-start: -0.75rem;
+				margin-inline-start: -0.5rem;
 				animation: blink 1s step-end infinite;
 			}
 

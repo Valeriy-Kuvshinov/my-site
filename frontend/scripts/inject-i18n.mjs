@@ -19,7 +19,7 @@ const translations = JSON.parse(fs.readFileSync(jsonPath, "utf-8"))
 let xlfContent = fs.readFileSync(xlfPath, "utf-8")
 
 for (const [id, targetText] of Object.entries(translations)) {
-	const unitRegex = new RegExp(`(<trans-unit id="${id}".*?>\\s*<source>.*?<\\/source>)`, "g")
+	const unitRegex = new RegExp(`(<trans-unit id="${id}".*?>\\s*<source>.*?<\\/source>)`, "gs")
 
 	xlfContent = xlfContent.replace(unitRegex, (match) => {
 		if (match.includes("<target>")) {

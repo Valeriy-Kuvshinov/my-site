@@ -543,7 +543,7 @@
         <target>Связаться!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">324,327</context>
+          <context context-type="linenumber">324,326</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.meta.title" datatype="html">
@@ -728,6 +728,11 @@
 				i18n-aria-label=&quot;@@a11y_page.sec5.link_aria&quot;
 				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>here<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 			&gt;"/>. </source>
+        <target> Мы поддерживаем постоянный протокол исправления кодовой базы для непрерывного выявления и обновления аномалий доступности. Если вы столкнулись с цифровыми барьерами, ошибками макета или нуждаетесь в альтернативных форматах предоставления данных при просмотре этого сайта, пожалуйста, отправьте запрос через наш официальный канал связи <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+				routerLink=&quot;/contact&quot;
+				i18n-aria-label=&quot;@@a11y_page.sec5.link_aria&quot;
+				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>здесь<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+			&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
           <context context-type="linenumber">131,142</context>
@@ -933,6 +938,13 @@
 					routerLink=&quot;/privacy-policy&quot;
 					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Privacy Policy <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 				&gt;"/>. </source>
+        <target> Я согласен с <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+					routerLink=&quot;/terms&quot;
+					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Условиями использования <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+				&gt;"/> и обработкой моих данных в соответствии с <x id="START_LINK_1" equiv-text="&lt;a
+					routerLink=&quot;/privacy-policy&quot;
+					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Политикой конфиденциальности <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+				&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
           <context context-type="linenumber">107,120</context>
@@ -1023,7 +1035,7 @@
         <target>Получить расширение Did Not Get It в Firefox Add-ons (откроется в новой вкладке)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">36,37</context>
+          <context context-type="linenumber">35,36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.btn_firefox.text" datatype="html">
@@ -1031,7 +1043,7 @@
         <target>Скачать для Firefox</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">37,40</context>
+          <context context-type="linenumber">36,39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.btn_github.aria" datatype="html">
@@ -1039,7 +1051,7 @@
         <target>Посмотреть расширение Did Not Get It на GitHub (откроется в новой вкладке)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">51,52</context>
+          <context context-type="linenumber">49,50</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.btn_github.text" datatype="html">
@@ -1047,7 +1059,7 @@
         <target>Посмотреть на GitHub</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">52,55</context>
+          <context context-type="linenumber">50,53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.fig_before" datatype="html">
@@ -1055,7 +1067,7 @@
         <target> До </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">67,70</context>
+          <context context-type="linenumber">64,67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_before.alt" datatype="html">
@@ -1063,7 +1075,7 @@
         <target>Входящие Gmail с непрочитанными корпоративными письмами</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">73,76</context>
+          <context context-type="linenumber">70,73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_before.aria" datatype="html">
@@ -1071,7 +1083,7 @@
         <target>Посмотреть полноразмерное изображение входящих до обработки расширением</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">80,81</context>
+          <context context-type="linenumber">77,78</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.fig_after" datatype="html">
@@ -1079,7 +1091,7 @@
         <target> После </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">89,92</context>
+          <context context-type="linenumber">86,89</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_after.alt" datatype="html">
@@ -1087,7 +1099,7 @@
         <target>Входящие Gmail с письмами, автоматически помеченными ярлыком и прочитанными с помощью расширения</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">95,98</context>
+          <context context-type="linenumber">92,95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_after.aria" datatype="html">
@@ -1095,7 +1107,7 @@
         <target>Посмотреть полноразмерное изображение входящих после обработки расширением</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">102,103</context>
+          <context context-type="linenumber">99,100</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.img_alt" datatype="html">
@@ -1143,7 +1155,7 @@
         <target>Связаться со мной</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/hero/hero.html</context>
-          <context context-type="linenumber">44,47</context>
+          <context context-type="linenumber">44,46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.btn_services" datatype="html">
@@ -1151,7 +1163,7 @@
         <target>Посмотреть услуги</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/hero/hero.html</context>
-          <context context-type="linenumber">55,58</context>
+          <context context-type="linenumber">54,56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.btn_resume.aria" datatype="html">
@@ -1159,7 +1171,7 @@
         <target>Скачать резюме Валерия Кувшинова в формате PDF</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/hero/hero.html</context>
-          <context context-type="linenumber">68,69</context>
+          <context context-type="linenumber">66,67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.btn_resume.text" datatype="html">
@@ -1167,7 +1179,7 @@
         <target>Резюме</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/hero/hero.html</context>
-          <context context-type="linenumber">69,72</context>
+          <context context-type="linenumber">67,69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.noffty.title" datatype="html">
@@ -1471,7 +1483,7 @@
         <target>Посмотреть полное портфолио</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">56,59</context>
+          <context context-type="linenumber">56,58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.title" datatype="html">
@@ -1479,7 +1491,7 @@
         <target> Оверлея никогда не бывает достаточно </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">70,73</context>
+          <context context-type="linenumber">69,72</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.title" datatype="html">
@@ -1487,7 +1499,7 @@
         <target> Юридическая иллюзия </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">79,82</context>
+          <context context-type="linenumber">78,81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.p1" datatype="html">
@@ -1495,7 +1507,7 @@
         <target> В мире, где временные решения становятся постоянными, автоматизированные виджеты и типовые шаблоны не могут обеспечить ни настоящую доступность, ни юридическую защиту. Чтобы сайт стал по-настоящему удобным, нужен точный семантический код и ручное управление фокусом клавиатуры. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">83,87</context>
+          <context context-type="linenumber">82,86</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.p2" datatype="html">
@@ -1503,7 +1515,7 @@
         <target> Присоединяясь к сотням других специалистов по конфиденциальности и доступности, я предлагаю вам прочитать Факты об Оверлеях (Overlay Fact Sheet). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">90,94</context>
+          <context context-type="linenumber">89,93</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.btn.aria" datatype="html">
@@ -1511,7 +1523,7 @@
         <target>Прочитать Факты об Оверлеях доступности (откроется в новой вкладке)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">96,98</context>
+          <context context-type="linenumber">95,97</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.btn.text" datatype="html">
@@ -1519,7 +1531,7 @@
         <target>Прочитать Overlay Fact Sheet</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">100,104</context>
+          <context context-type="linenumber">99,103</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.img_alt" datatype="html">
@@ -1527,7 +1539,7 @@
         <target>Демонстрация того, как программы чтения с экрана не могут читать текст на изображениях, а полагаются на альтернативный текст, предоставленный самим сайтом</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">107,109</context>
+          <context context-type="linenumber">106,108</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.title" datatype="html">
@@ -1535,7 +1547,7 @@
         <target> Застряли на недоступном сайте? </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">118,121</context>
+          <context context-type="linenumber">117,120</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p1" datatype="html">
@@ -1543,7 +1555,7 @@
         <target> Не можете пройти reCAPTCHA для завершения покупки? Портал бронирования отелей или правительственный сайт блокирует вашу программу чтения с экрана? </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">122,126</context>
+          <context context-type="linenumber">121,125</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p2" datatype="html">
@@ -1551,7 +1563,7 @@
         <target> Я предоставляю безопасную удаленную помощь, чтобы помочь вам обойти эти барьеры, обрести независимость, а при необходимости — сделать это за вас. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">127,131</context>
+          <context context-type="linenumber">126,130</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p3" datatype="html">
@@ -1559,7 +1571,7 @@
         <target> Zoom? Google Meet? Выбирайте сами! Я отвечаю на запросы о поддержке в течение нескольких часов. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">132,136</context>
+          <context context-type="linenumber">131,135</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.btn" datatype="html">
@@ -1567,7 +1579,7 @@
         <target>Получить поддержку</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">138,142</context>
+          <context context-type="linenumber">137,141</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.img_alt" datatype="html">
@@ -1575,7 +1587,7 @@
         <target>пользователь программы чтения с экрана испытывает трудности с веб-сайтом, желая получить помощь в навигации</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">145,147</context>
+          <context context-type="linenumber">144,146</context>
         </context-group>
       </trans-unit>
       <trans-unit id="not_found.meta.title" datatype="html">
@@ -2002,6 +2014,13 @@
 				target=&quot;_blank&quot;
 				rel=&quot;noopener noreferrer&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Cloudflare Turnstile Privacy Addendum<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 			&gt;"/>. </source>
+        <target> Для защиты инфраструктуры платформы и форм связи от спама и автоматизированных злоупотреблений мы используем Cloudflare Turnstile. Этот сервис безопасности работает в фоновом режиме, анализируя шаблоны сетевого трафика и аутентифицируя взаимодействия человека без внедрения инвазивных файлов cookie для отслеживания. Ваше взаимодействие с нашими формами регулируется <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+				href=&quot;https://www.cloudflare.com/en-gb/turnstile-privacy-policy/&quot;
+				i18n-aria-label=&quot;@@privacy.sec3.link_aria&quot;
+				aria-label=&quot;Cloudflare Turnstile Privacy Addendum (opens in a new tab)&quot;
+				target=&quot;_blank&quot;
+				rel=&quot;noopener noreferrer&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Дополнением о конфиденциальности Cloudflare Turnstile<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+			&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">74,87</context>
@@ -2119,6 +2138,13 @@
 				target=&quot;_blank&quot;
 				rel=&quot;noopener noreferrer&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Google API Services User Data Policy<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 			&gt;"/>, including the Limited Use requirements. We do not use your data to serve advertisements, we do not allow humans to read your data, and we do not sell or transfer your data. </source>
+        <target> Расширение &quot;Did Not Get It&quot; полностью соответствует <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+				href=&quot;https://developers.google.com/terms/api-services-user-data-policy?utm_source=gemini&amp;authuser=1&quot;
+				i18n-aria-label=&quot;@@privacy.sec6.link_aria&quot;
+				aria-label=&quot;Google API Services User Data Policy (opens in a new tab)&quot;
+				target=&quot;_blank&quot;
+				rel=&quot;noopener noreferrer&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Политике в отношении пользовательских данных сервисов Google API<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+			&gt;"/>, включая требования к ограниченному использованию (Limited Use). Мы не используем ваши данные для показа рекламы, не разрешаем людям читать ваши данные, не продаем и не передаем ваши данные. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">160,172</context>
@@ -2162,6 +2188,11 @@
 				i18n-aria-label=&quot;@@privacy.sec8.link_aria&quot;
 				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>here<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 			&gt;"/>. </source>
+        <target> Если у вас есть какие-либо вопросы, опасения или запросы, касающиеся данной Политики конфиденциальности, ваших данных или безопасности наших Сервисов, пожалуйста, отправьте официальный запрос через наш официальный канал связи <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+				routerLink=&quot;/contact&quot;
+				i18n-aria-label=&quot;@@privacy.sec8.link_aria&quot;
+				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>здесь<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+			&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">196,206</context>
@@ -2725,6 +2756,11 @@
 				i18n-aria-label=&quot;@@terms.sec7.link_aria&quot;
 				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>here<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 			&gt;"/>. </source>
+        <target> Если у вас есть какие-либо вопросы, опасения или запросы, касающиеся настоящих Условий использования или объема наших консалтинговых соглашений, пожалуйста, отправьте официальный запрос через наш официальный канал связи <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+				routerLink=&quot;/contact&quot;
+				i18n-aria-label=&quot;@@terms.sec7.link_aria&quot;
+				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>здесь<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+			&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
           <context context-type="linenumber">156,166</context>
@@ -2779,61 +2815,66 @@
         </context-group>
       </trans-unit>
       <trans-unit id="aside.close.aria" datatype="html">
-        <source>close navigation menu</source>
-        <target>закрыть меню навигации</target>
+        <source>close menu</source>
+        <target>закрыть меню</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
           <context context-type="linenumber">36,38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.home" datatype="html">
-        <source><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
+        <source>Home</source>
+        <target><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
 					icon=&quot;home&quot;
 					width=&quot;24&quot;
-					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> Home </source>
+					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> Главная </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">54,62</context>
+          <context context-type="linenumber">58,61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.portfolio" datatype="html">
-        <source><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
+        <source>Portfolio</source>
+        <target><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
 					icon=&quot;briefcase&quot;
 					width=&quot;24&quot;
-					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> Portfolio </source>
+					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> Портфолио </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">68,76</context>
+          <context context-type="linenumber">71,74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.services" datatype="html">
-        <source><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
+        <source>Services</source>
+        <target><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
 					icon=&quot;monitor&quot;
 					width=&quot;24&quot;
-					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> Services </source>
+					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> Услуги </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">82,90</context>
+          <context context-type="linenumber">84,87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.about" datatype="html">
-        <source><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
+        <source>About</source>
+        <target><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
 					icon=&quot;info&quot;
 					width=&quot;24&quot;
-					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> About </source>
+					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> Обо мне </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">96,104</context>
+          <context context-type="linenumber">97,100</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.contact" datatype="html">
-        <source><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
+        <source>Contact</source>
+        <target><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
 					icon=&quot;mail&quot;
 					width=&quot;24&quot;
-					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> Contact </source>
+					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> Контакты </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">110,119</context>
+          <context context-type="linenumber">110,114</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cookie.dialog.aria" datatype="html">
@@ -2853,6 +2894,10 @@
 			routerLink=&quot;/privacy-policy&quot;
 			class=&quot;text-family-regular font-bold&quot;&gt;"/> privacy policy<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 		&gt;"/>. Do you accept? </source>
+        <target> Мы используем файлы cookie для анализа трафика сайта и улучшения наших услуг в соответствии с нашей <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+			routerLink=&quot;/privacy-policy&quot;
+			class=&quot;text-family-regular font-bold&quot;&gt;"/> политикой конфиденциальности<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+		&gt;"/>. Вы согласны? </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/cookie-consent/cookie-consent.html</context>
           <context context-type="linenumber">16,24</context>
@@ -3081,6 +3126,8 @@
       <trans-unit id="lang_select.label" datatype="html">
         <source> Select Language
 </source>
+        <target> Выбрать язык
+</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/language-select/language-select.html</context>
           <context context-type="linenumber">5,9</context>

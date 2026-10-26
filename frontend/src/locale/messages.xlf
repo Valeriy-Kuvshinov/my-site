@@ -475,7 +475,7 @@
         <source>Reach out!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">324,327</context>
+          <context context-type="linenumber">324,326</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.meta.title" datatype="html">
@@ -898,70 +898,70 @@
         <source>Get the Did Not Get It extension at Firefox Add-ons (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">36,37</context>
+          <context context-type="linenumber">35,36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.btn_firefox.text" datatype="html">
         <source>Get for Firefox</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">37,40</context>
+          <context context-type="linenumber">36,39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.btn_github.aria" datatype="html">
         <source>View the Did Not Get It extension on GitHub (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">51,52</context>
+          <context context-type="linenumber">49,50</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.btn_github.text" datatype="html">
         <source>View on GitHub</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">52,55</context>
+          <context context-type="linenumber">50,53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.fig_before" datatype="html">
         <source> Before </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">67,70</context>
+          <context context-type="linenumber">64,67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_before.alt" datatype="html">
         <source>Gmail inbox showing unread corporate emails</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">73,76</context>
+          <context context-type="linenumber">70,73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_before.aria" datatype="html">
         <source>View full size image of inbox before extension processing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">80,81</context>
+          <context context-type="linenumber">77,78</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.fig_after" datatype="html">
         <source> After </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">89,92</context>
+          <context context-type="linenumber">86,89</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_after.alt" datatype="html">
         <source>Gmail inbox showing emails automatically labeled and marked as read by the extension</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">95,98</context>
+          <context context-type="linenumber">92,95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_after.aria" datatype="html">
         <source>View full size image of inbox after extension processing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">102,103</context>
+          <context context-type="linenumber">99,100</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.img_alt" datatype="html">
@@ -1003,28 +1003,28 @@
         <source>Contact Me</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/hero/hero.html</context>
-          <context context-type="linenumber">44,47</context>
+          <context context-type="linenumber">44,46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.btn_services" datatype="html">
         <source>View Services</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/hero/hero.html</context>
-          <context context-type="linenumber">55,58</context>
+          <context context-type="linenumber">54,56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.btn_resume.aria" datatype="html">
         <source>Download Valeriy Kuvshinov&apos;s resume as a PDF</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/hero/hero.html</context>
-          <context context-type="linenumber">68,69</context>
+          <context context-type="linenumber">66,67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.btn_resume.text" datatype="html">
         <source>Resume</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/hero/hero.html</context>
-          <context context-type="linenumber">69,72</context>
+          <context context-type="linenumber">67,69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.noffty.title" datatype="html">
@@ -1290,98 +1290,98 @@
         <source>View Full Portfolio</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">56,59</context>
+          <context context-type="linenumber">56,58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.title" datatype="html">
         <source> An Overlay Is Never Enough </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">70,73</context>
+          <context context-type="linenumber">69,72</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.title" datatype="html">
         <source> The Legal Illusion </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">79,82</context>
+          <context context-type="linenumber">78,81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.p1" datatype="html">
         <source> In a world where temporary solutions become permanent, automated widgets and generic templates fail to provide true accessibility or legal protection. It takes precise semantic code and manual keyboard focus management to make a site truly usable. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">83,87</context>
+          <context context-type="linenumber">82,86</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.p2" datatype="html">
         <source> Endorsed by myself and hundreds of other privacy and accessibility professionals, I invite you to read the Overlay Fact Sheet. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">90,94</context>
+          <context context-type="linenumber">89,93</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.btn.aria" datatype="html">
         <source>Read the Web Accessibility Overlay Fact Sheet (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">96,98</context>
+          <context context-type="linenumber">95,97</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.btn.text" datatype="html">
         <source>Read the Overlay Fact Sheet</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">100,104</context>
+          <context context-type="linenumber">99,103</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.img_alt" datatype="html">
         <source>Showcase of how screen readers cannot read text of images, but rely on alt text provided by website itself</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">107,109</context>
+          <context context-type="linenumber">106,108</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.title" datatype="html">
         <source> Stuck on an inaccessible website? </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">118,121</context>
+          <context context-type="linenumber">117,120</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p1" datatype="html">
         <source> Can&apos;t complete that reCAPTCHA to finish a purchase? Is a hotel booking portal or government site blocking your screen reader? </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">122,126</context>
+          <context context-type="linenumber">121,125</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p2" datatype="html">
         <source> I provide secure, remote assistance to help you bypass these barriers, to help you become independent, and if necessary, do it for you. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">127,131</context>
+          <context context-type="linenumber">126,130</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p3" datatype="html">
         <source> Zoom? Google Meet? Up to you! I reply to support requests within hours. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">132,136</context>
+          <context context-type="linenumber">131,135</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.btn" datatype="html">
         <source>Get Support</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">138,142</context>
+          <context context-type="linenumber">137,141</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.img_alt" datatype="html">
         <source>screen reader user struggling with website, wishing for help with navigation</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">145,147</context>
+          <context context-type="linenumber">144,146</context>
         </context-group>
       </trans-unit>
       <trans-unit id="not_found.meta.title" datatype="html">
@@ -2441,60 +2441,45 @@
         </context-group>
       </trans-unit>
       <trans-unit id="aside.close.aria" datatype="html">
-        <source>close navigation menu</source>
+        <source>close menu</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
           <context context-type="linenumber">36,38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.home" datatype="html">
-        <source><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
-					icon=&quot;home&quot;
-					width=&quot;24&quot;
-					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> Home </source>
+        <source>Home</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">54,62</context>
+          <context context-type="linenumber">58,61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.portfolio" datatype="html">
-        <source><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
-					icon=&quot;briefcase&quot;
-					width=&quot;24&quot;
-					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> Portfolio </source>
+        <source>Portfolio</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">68,76</context>
+          <context context-type="linenumber">71,74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.services" datatype="html">
-        <source><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
-					icon=&quot;monitor&quot;
-					width=&quot;24&quot;
-					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> Services </source>
+        <source>Services</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">82,90</context>
+          <context context-type="linenumber">84,87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.about" datatype="html">
-        <source><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
-					icon=&quot;info&quot;
-					width=&quot;24&quot;
-					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> About </source>
+        <source>About</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">96,104</context>
+          <context context-type="linenumber">97,100</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.contact" datatype="html">
-        <source><x id="START_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;app-svg-icon
-					icon=&quot;mail&quot;
-					width=&quot;24&quot;
-					height=&quot;24&quot;&gt;"/><x id="CLOSE_TAG_APP_SVG_ICON" ctype="x-app_svg_icon" equiv-text="&lt;/app-svg-icon&gt;"/> Contact </source>
+        <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">110,119</context>
+          <context context-type="linenumber">110,114</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cookie.dialog.aria" datatype="html">

@@ -37,7 +37,13 @@ html {
 	}
 
 	&.font-accessible * {
-		font-family: "dyslexic-regular", Arial, sans-serif !important;
+		:host-context([dir="ltr"]) {
+			font-family: "dyslexic-english", Arial, sans-serif !important;
+		}
+
+		:host-context([dir="rtl"]) {
+			font-family: "dyslexic-hebrew", Arial, sans-serif !important;
+		}
 	}
 
 	&.highlight-links a {
