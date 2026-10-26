@@ -1,9 +1,18 @@
-@keyframes infinite-scroll {
+@keyframes infinite-scroll-ltr {
 	0% {
 		transform: translateX(0);
 	}
 	100% {
 		transform: translateX(-50%);
+	}
+}
+
+@keyframes infinite-scroll-rtl {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(50%);
 	}
 }
 
@@ -19,15 +28,19 @@
 	mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 	overflow: hidden;
 
+	.carousel-track :hover {
+		animation-play-state: paused;
+	}
+}
+
+:host-context([dir="ltr"]) {
 	.carousel-track {
-		animation: infinite-scroll 30s linear infinite;
+		animation: infinite-scroll-ltr 30s linear infinite;
+	}
+}
 
-		ul app-svg-icon:hover {
-			transform: scale(1.1);
-		}
-
-		&:hover {
-			animation-play-state: paused;
-		}
+:host-context([dir="rtl"]) {
+	.carousel-track {
+		animation: infinite-scroll-rtl 30s linear infinite;
 	}
 }
