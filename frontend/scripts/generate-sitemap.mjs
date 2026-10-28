@@ -19,7 +19,7 @@ const STATIC_ROUTES = [
 	{ url: "/terms", priority: 0.5, freq: "yearly" },
 ]
 
-// If you have dynamic routes (like your games in Next.js), you can fetch them here.
+// For future dynamic routes
 // const res = await fetch('YOUR_API_ENDPOINT');
 // const dynamicData = await res.json();
 
@@ -47,7 +47,7 @@ STATIC_ROUTES.forEach((route) => {
 			xml += `        <xhtml:link rel="alternate" hreflang="${altLocale}" href="${altUrl}" />\n`
 		})
 
-		xml += `        <changefrequency>${route.freq}</changefrequency>\n`
+		xml += `        <changefreq>${route.freq}</changefreq>\n`
 		xml += `        <priority>${route.priority}</priority>\n`
 		xml += `    </url>\n`
 	})
