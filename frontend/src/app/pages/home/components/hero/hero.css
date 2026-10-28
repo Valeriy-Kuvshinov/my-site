@@ -52,10 +52,6 @@
 				color: var(--scdclr9);
 				fill: var(--scdclr9);
 
-				app-svg-icon {
-					transform: rotate(-45deg);
-				}
-
 				&:hover,
 				&:focus-visible {
 					background: var(--mnrclr9);
@@ -124,13 +120,11 @@
 			}
 
 			.cta {
-				grid-template-columns: 1fr 1fr;
+				grid-template-columns: 1fr;
 				gap: 1rem;
 
-				a:nth-child(odd):last-child {
-					grid-column: span 2;
-					justify-self: center;
-					width: 46%;
+				a {
+					margin: 0 2rem;
 				}
 			}
 		}
@@ -183,7 +177,7 @@
 
 	@media (min-width: 1401px) {
 		.about-link {
-			max-width: 15rem;
+			max-width: 18rem;
 			top: 20vh;
 		}
 	}
