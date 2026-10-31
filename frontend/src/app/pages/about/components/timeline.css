@@ -183,7 +183,7 @@
 	@media (min-width: 901px) {
 		.track button {
 			.marker {
-				right: 50%;
+				left: 50%;
 			}
 
 			&::after {
