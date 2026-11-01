@@ -53,7 +53,7 @@ export class LanguageSelectComponent implements OnInit {
 	protected readonly options = OPTIONS
 
 	protected readonly activeOption = computed(
-		() => this.options.find((opt) => opt.value === this.store.currentLang()) || this.options[0]
+		() => this.options.find((opt) => opt.value === this.store.currentLanguage()) || this.options[0]
 	)
 
 	ngOnInit() {

@@ -38,7 +38,7 @@ export class SystemStore {
 	readonly deviceType = signal<DeviceType>("desktop")
 
 	// LOCALE STATE
-	readonly currentLang = signal<SupportedLanguage>("en")
+	readonly currentLanguage = signal<SupportedLanguage>("en")
 
 	// FLASH MESSAGE STATE
 	readonly message = signal<FlashMessage | null>(null)
@@ -96,11 +96,11 @@ export class SystemStore {
 
 		const path = window.location.pathname
 
-		if (path.startsWith("/ru/") || path === "/ru") this.currentLang.set("ru")
-		else if (path.startsWith("/he/") || path === "/he") this.currentLang.set("he")
-		else this.currentLang.set("en")
+		if (path.startsWith("/ru/") || path === "/ru") this.currentLanguage.set("ru")
+		else if (path.startsWith("/he/") || path === "/he") this.currentLanguage.set("he")
+		else this.currentLanguage.set("en")
 
-		this.applyDocumentLanguageAttributes(this.currentLang())
+		this.applyDocumentLanguageAttributes(this.currentLanguage())
 	}
 
 	private applyDocumentLanguageAttributes(lang: SupportedLanguage) {
@@ -110,11 +110,11 @@ export class SystemStore {
 	}
 
 	switchLanguage(targetLang: SupportedLanguage) {
-		if (!isPlatformBrowser(this.platformId) || this.currentLang() === targetLang) return
+		if (!isPlatformBrowser(this.platformId) || this.currentLanguage() === targetLang) return
 
 		let path = window.location.pathname
 
-		const current = this.currentLang()
+		const current = this.currentLanguage()
 
 		if (current !== "en") {
 			const prefix = `/${current}`

@@ -74,24 +74,28 @@ export class PortfolioCarouselComponent {
 
 	private readonly isMobile = computed(() => this.store.deviceType() === "mobile")
 
+	private readonly isRtl = computed(() => this.store.currentLanguage() === "he")
+
 	protected readonly iconSize = computed(() => (!this.isMobile() ? 48 : 32))
 
 	protected readonly slides = PORTFOLIO_SLIDES
 
-	protected readonly currentIndex = signal(0)
+	protected readonly currentIdx = signal(0)
 
-	protected readonly transformStyle = computed(() => `translateX(-${this.currentIndex() * 100}%)`)
+	protected readonly transformStyle = computed(() => {
+		const dirMultiplier = this.isRtl() ? 1 : -1
+		return `translateX(${this.currentIdx() * 100 * dirMultiplier}%)`
+	})
 
-	protected readonly isFirstSlide = computed(() => this.currentIndex() === 0)
-
-	protected readonly isLastSlide = computed(() => this.currentIndex() === this.slides.length - 1)
+	protected readonly isFirstSlide = computed(() => this.currentIdx() === 0)
+	protected readonly isLastSlide = computed(() => this.currentIdx() === this.slides.length - 1)
 
 	nextSlide() {
-		if (!this.isLastSlide()) this.currentIndex.update((i) => i + 1)
+		if (!this.isLastSlide()) this.currentIdx.update((i) => i + 1)
 	}
 
 	prevSlide() {
-		if (!this.isFirstSlide()) this.currentIndex.update((i) => i - 1)
+		if (!this.isFirstSlide()) this.currentIdx.update((i) => i - 1)
 	}
 
 	getImageAriaLabel(slide: PortfolioSlide): string {
