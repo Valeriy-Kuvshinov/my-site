@@ -549,7 +549,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec2.p1" datatype="html">
-        <source> The digital structure of this website has been engineered from the ground up—using native, semantic code—to achieve functional alignment with the World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA and AAA conformance. </source>
+        <source> The digital structure of this website has been engineered from the ground up - using native, semantic code to achieve functional alignment with the World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA and AAA conformance. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
           <context context-type="linenumber">38,42</context>
