@@ -1,6 +1,8 @@
 <button
 	class="a11y-trigger flex full-center fixed fast-trans z-15"
 	(click)="openA11yMenu(); $event.stopPropagation()"
+	(mousedown)="$event.stopPropagation()"
+	(touchstart)="$event.stopPropagation()"
 	i18n-aria-label="@@a11y.trigger.aria"
 	aria-label="Open accessibility menu">
 	<app-svg-icon
@@ -13,6 +15,9 @@
 @if (isOpen()) {
 <aside
 	#asideRef
+	appClickOutside
+	(appClickOutside)="closeA11yMenu()"
+	[appFocusTrap]="true"
 	class="a11y-menu grid fixed fast-trans w-full z-30"
 	[class.show]="showMenu()"
 	role="dialog"

@@ -2,151 +2,172 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="app.skip.main" datatype="html">
+        <source> Skip to main content </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">9,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="app.skip.footer" datatype="html">
+        <source> Skip to footer </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">18,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="app.scroll_top.aria" datatype="html">
+        <source>Scroll back to main content</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">30,33</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="a11y.trigger.aria" datatype="html">
         <source>Open accessibility menu</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">5,7</context>
+          <context context-type="linenumber">7,9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.menu.dialog.aria" datatype="html">
         <source>Accessibility menu</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">21,23</context>
+          <context context-type="linenumber">26,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.menu.title" datatype="html">
         <source>Accessibility Options</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">30,33</context>
+          <context context-type="linenumber">35,38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.menu.reset.aria" datatype="html">
         <source>Reset accessibility settings</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">37,39</context>
+          <context context-type="linenumber">42,44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.menu.close.aria" datatype="html">
         <source>Close menu</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">52,54</context>
+          <context context-type="linenumber">57,59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.category.visual" datatype="html">
         <source>Visual</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">63,65</context>
+          <context context-type="linenumber">68,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.option.pause_motion" datatype="html">
         <source>Pause Motion</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">67,69</context>
+          <context context-type="linenumber">72,74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.option.hide_media" datatype="html">
         <source>Hide Media</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">74,76</context>
+          <context context-type="linenumber">79,81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.option.high_contrast" datatype="html">
         <source>High Contrast</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">81,83</context>
+          <context context-type="linenumber">86,88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.option.gray_mode" datatype="html">
         <source>Gray Mode</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">88,90</context>
+          <context context-type="linenumber">93,95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.category.orientation" datatype="html">
         <source>Orientation</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">93,96</context>
+          <context context-type="linenumber">98,101</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.option.reading_mask" datatype="html">
         <source>Reading Mask</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">97,99</context>
+          <context context-type="linenumber">102,104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.option.highlight_links" datatype="html">
         <source>Highlight Links</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">104,106</context>
+          <context context-type="linenumber">109,111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.category.text" datatype="html">
         <source>Text</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">109,112</context>
+          <context context-type="linenumber">114,117</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.option.word_spacing" datatype="html">
         <source>Word Spacing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">113,115</context>
+          <context context-type="linenumber">118,120</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.option.line_height" datatype="html">
         <source>Line Height</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">120,122</context>
+          <context context-type="linenumber">125,127</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.option.letter_spacing" datatype="html">
         <source>Letter Spacing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">127,129</context>
+          <context context-type="linenumber">132,134</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.option.text_size" datatype="html">
         <source>Text Size</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">134,136</context>
+          <context context-type="linenumber">139,141</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.option.friendly_font" datatype="html">
         <source>Friendly Font</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">141,143</context>
+          <context context-type="linenumber">146,148</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.menu.statement_link.aria" datatype="html">
         <source>Accessibility Statement. Go to Accessibility page</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">152,154</context>
+          <context context-type="linenumber">157,159</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.menu.statement_link.text" datatype="html">
         <source>Accessibility Statement</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/a11y-menu/a11y-menu.html</context>
-          <context context-type="linenumber">154,157</context>
+          <context context-type="linenumber">159,162</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.scale.default" datatype="html">
@@ -2427,7 +2448,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="aside.menu.aria" datatype="html">
-        <source>Mobile user menu</source>
+        <source>Mobile navigation menu</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
           <context context-type="linenumber">14,16</context>
@@ -2552,10 +2573,10 @@
         </context-group>
       </trans-unit>
       <trans-unit id="footer.nav.main.aria" datatype="html">
-        <source>Footer navigation</source>
+        <source>Footer</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
-          <context context-type="linenumber">5,8</context>
+          <context context-type="linenumber">6,8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.link.home" datatype="html">
@@ -2622,14 +2643,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="header.nav.mobile.aria" datatype="html">
-        <source>Mobile Main Navigation</source>
+        <source>Mobile Main</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
           <context context-type="linenumber">5,8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.menu.open.aria" datatype="html">
-        <source>Open user menu</source>
+        <source>Open navigation menu</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
           <context context-type="linenumber">9,12</context>
@@ -2643,7 +2664,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="header.nav.desktop.aria" datatype="html">
-        <source>Desktop Main Navigation</source>
+        <source>Desktop Main</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
           <context context-type="linenumber">38,41</context>

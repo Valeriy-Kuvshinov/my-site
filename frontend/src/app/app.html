@@ -3,12 +3,20 @@
 <a
 	href="#main-content"
 	class="skip-link absolute flex full-center">
-	<span class="text-center">Skip to main content</span>
+	<span
+		i18n="@@app.skip.main"
+		class="text-center">
+		Skip to main content
+	</span>
 </a>
 <a
 	href="#site-footer"
 	class="skip-link absolute flex full-center">
-	<span class="text-center">Skip to footer</span>
+	<span
+		i18n="@@app.skip.footer"
+		class="text-center">
+		Skip to footer
+	</span>
 </a>
 
 <app-a11y-menu></app-a11y-menu>
@@ -18,6 +26,7 @@
 	href="#main-content"
 	(click)="scrollToTarget('main-content', $event)"
 	class="back-to-top flex full-center fast-trans fixed z-15"
+	i18n-aria-label="@@app.scroll_top.aria"
 	aria-label="Scroll back to main content">
 	<app-svg-icon
 		icon="arrow"
