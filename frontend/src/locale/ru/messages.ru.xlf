@@ -26,6 +26,46 @@
           <context context-type="linenumber">30,33</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="contact.mail.success.title" datatype="html">
+        <source>Message Sent!</source>
+        <target>Сообщение отправлено!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/services/api/mail/mail.service.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.mail.success.msg" datatype="html">
+        <source>We have received your message and will reply shortly.</source>
+        <target>Мы получили ваше сообщение и скоро ответим.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/services/api/mail/mail.service.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.mail.success.a11y" datatype="html">
+        <source>Message sent successfully. We will reply shortly.</source>
+        <target>Сообщение успешно отправлено. Мы скоро ответим.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/services/api/mail/mail.service.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.mail.error.title" datatype="html">
+        <source>Mail Send Failed!</source>
+        <target>Ошибка отправки!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/services/api/mail/mail.service.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.mail.error.a11y" datatype="html">
+        <source>Failed to send message: <x id="PH" equiv-text="error.message"/></source>
+        <target>Не удалось отправить сообщение: {$INTERPOLATION}</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/services/api/mail/mail.service.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="a11y.trigger.aria" datatype="html">
         <source>Open accessibility menu</source>
         <target>Открыть меню доступности</target>

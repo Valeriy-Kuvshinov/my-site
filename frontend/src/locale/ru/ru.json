@@ -404,5 +404,10 @@
 	"socials.email.aria": "Отправить письмо напрямую",
 	"app.skip.main": "Перейти к основному контенту",
 	"app.skip.footer": "Перейти к подвалу сайта",
-	"app.scroll_top.aria": "Вернуться к основному контенту"
+	"app.scroll_top.aria": "Вернуться к основному контенту",
+	"contact.mail.success.title": "Сообщение отправлено!",
+	"contact.mail.success.msg": "Мы получили ваше сообщение и скоро ответим.",
+	"contact.mail.success.a11y": "Сообщение успешно отправлено. Мы скоро ответим.",
+	"contact.mail.error.title": "Ошибка отправки!",
+	"contact.mail.error.a11y": "Не удалось отправить сообщение: {$INTERPOLATION}"
 }

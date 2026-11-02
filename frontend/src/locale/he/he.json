@@ -404,5 +404,10 @@
 	"socials.email.aria": "שלח דוא\"ל ישירות",
 	"app.skip.main": "דלג לתוכן המרכזי",
 	"app.skip.footer": "דלג לתחתית העמוד",
-	"app.scroll_top.aria": "גלול חזרה לתוכן המרכזי"
+	"app.scroll_top.aria": "גלול חזרה לתוכן המרכזי",
+	"contact.mail.success.title": "הודעה נשלחה!",
+	"contact.mail.success.msg": "קיבלנו את הודעתך ונענה בהקדם.",
+	"contact.mail.success.a11y": "ההודעה נשלחה בהצלחה. אנו נשיב בהקדם.",
+	"contact.mail.error.title": "שליחת הדואר נכשלה!",
+	"contact.mail.error.a11y": "שליחת ההודעה נכשלה: {$INTERPOLATION}"
 }
