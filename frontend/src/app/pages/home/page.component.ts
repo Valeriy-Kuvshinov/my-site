@@ -53,7 +53,7 @@ const HIGHLIGHTS: Highlight[] = [
 const SPECIALTIES: Specialty[] = [
 	{
 		title: $localize`:@@home.specialty1.title:Native Full-Stack Engineering`,
-		description: $localize`:@@home.specialty1.desc:Escaping the limitations of templated platforms. I build custom, semantic web applications with automated CI/CD cloud deployments using modern stacks (Angular, React, Next.js, Express, NestJS, Spring Boot).`,
+		description: $localize`:@@home.specialty1.desc:Escaping the limitations of templated platforms. I build custom, semantic web applications with automated cloud deployments using modern stacks.`,
 	},
 	{
 		title: $localize`:@@home.specialty2.title:A11y Compliance & Legal Immunity`,
@@ -69,7 +69,7 @@ const SPECIALTIES: Specialty[] = [
 	},
 ]
 
-const PAGE_TITLE = $localize`:@@home.meta.title:Kuvshinov Software`
+const PAGE_TITLE = "Kuvshinov Software"
 const PAGE_URL = "/"
 const PAGE_DESC = $localize`:@@home.meta.desc:Kuvshinov Software - Providing you websites, systems, open source and accessibility assistance with care.`
 

@@ -32,7 +32,7 @@
 		<h2
 			i18n="@@a11y_page.sec2.title"
 			class="w-fit">
-			2. Digital Accessibility Standards & "No Overlay" Policy
+			2. Digital Accessibility Standards
 		</h2>
 		<p i18n="@@a11y_page.sec2.p1">
 			The digital structure of this website has been engineered from the ground up - using
@@ -59,37 +59,54 @@
 			adaptations:
 		</p>
 		<ul class="flex flex-col gap-2">
-			<li i18n="@@a11y_page.sec3.li1">
-				<strong>Semantic Document Geometry:</strong> Strict hierarchical heading order (H1
-				&mdash; H6), correct ARIA 1.2 labeling, and semantic landmark segmentation
-				(<code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;aside&gt;</code>) to
-				facilitate fast screen reader index navigation.
+			<li>
+				<strong i18n="@@a11y_page.sec3.li1.title">Semantic Document Geometry:</strong>
+				<span i18n="@@a11y_page.sec3.li1.desc">
+					Strict hierarchical heading order (H1 &mdash; H6), correct ARIA 1.2 labeling,
+					and semantic landmark segmentation (<code>&lt;main&gt;</code>,
+					<code>&lt;nav&gt;</code>, <code>&lt;aside&gt;</code>) to facilitate fast screen
+					reader index navigation.
+				</span>
 			</li>
-			<li i18n="@@a11y_page.sec3.li2">
-				<strong>Native Keyboard Navigation Protocol:</strong> Complete operational execution
-				via standard keyboard loops, including custom focus traps on modals and highly
-				visible focus indicators.
+			<li>
+				<strong i18n="@@a11y_page.sec3.li2.title">
+					Native Keyboard Navigation Protocol:
+				</strong>
+				<span i18n="@@a11y_page.sec3.li2.desc">
+					Complete operational execution via standard keyboard loops, including custom
+					focus traps on modals and highly visible focus indicators.
+				</span>
 			</li>
-			<li i18n="@@a11y_page.sec3.li3">
-				<strong>Skip Link Overrides:</strong> Accessible skip links placed at the absolute
-				programmatic root level, allowing keyboard users to bypass layout directly to the
-				main content or footer.
+			<li>
+				<strong i18n="@@a11y_page.sec3.li3.title">Skip Link Overrides:</strong>
+				<span i18n="@@a11y_page.sec3.li3.desc">
+					Accessible skip links placed at the absolute programmatic root level, allowing
+					keyboard users to bypass layout directly to the main content or footer.
+				</span>
 			</li>
-			<li i18n="@@a11y_page.sec3.li4">
-				<strong>Color Contrast Optimization:</strong> Visual text layers and active
-				interactive components maintain an enhanced luminance contrast ratio matching or
-				exceeding strict AAA (7:1) thresholds.
+			<li>
+				<strong i18n="@@a11y_page.sec3.li4.title">Color Contrast Optimization:</strong>
+				<span i18n="@@a11y_page.sec3.li4.desc">
+					Visual text layers and active interactive components maintain an enhanced
+					luminance contrast ratio matching or exceeding strict AAA (7:1) thresholds.
+				</span>
 			</li>
-			<li i18n="@@a11y_page.sec3.li5">
-				<strong>Advanced Typography Toggles:</strong> An isolated native accessibility
-				interface allowing user-driven configuration changes, including system sans-serif
-				overrides for dyslexia assistance, progressive scaling for text size, line-height
-				modifications, and letter-spacing vectors.
+			<li>
+				<strong i18n="@@a11y_page.sec3.li5.title">Advanced Typography Toggles:</strong>
+				<span i18n="@@a11y_page.sec3.li5.desc">
+					An isolated native accessibility interface allowing user-driven configuration
+					changes, including system sans-serif overrides for dyslexia assistance,
+					progressive scaling for text size, line-height modifications, and letter-spacing
+					vectors.
+				</span>
 			</li>
-			<li i18n="@@a11y_page.sec3.li6">
-				<strong>Motion Mutation Flags:</strong> Comprehensive system hooks to pause looping
-				animations and CSS transition matrices, synchronized automatically with system-level
-				hardware preferences (<code>prefers-reduced-motion</code>).
+			<li>
+				<strong i18n="@@a11y_page.sec3.li6.title">Motion Mutation Flags:</strong>
+				<span i18n="@@a11y_page.sec3.li6.desc">
+					Comprehensive system hooks to pause looping animations and CSS transition
+					matrices, synchronized automatically with system-level hardware preferences
+					(<code>prefers-reduced-motion</code>).
+				</span>
 			</li>
 		</ul>
 	</article>
@@ -105,18 +122,22 @@
 			dictated by external runtime layers and third-party ecosystems:
 		</p>
 		<ul class="flex flex-col gap-2">
-			<li i18n="@@a11y_page.sec4.li1">
-				<strong>Security Challenges (CAPTCHA):</strong> To protect against automated abuse,
-				we utilize Cloudflare Turnstile. While Turnstile is designed to run invisibly and
-				provide accessible fallbacks, strict browser privacy settings may occasionally force
-				a visual challenge.
+			<li>
+				<strong i18n="@@a11y_page.sec4.li1.title">Security Challenges (CAPTCHA):</strong>
+				<span i18n="@@a11y_page.sec4.li1.desc">
+					To protect against automated abuse, we utilize Cloudflare Turnstile. While
+					Turnstile is designed to run invisibly and provide accessible fallbacks, strict
+					browser privacy settings may occasionally force a visual challenge.
+				</span>
 			</li>
-			<li i18n="@@a11y_page.sec4.li2">
-				<strong>External Platform Redirection:</strong> This website contains active links
-				routing out to external ecosystems (including LinkedIn, GitHub, and client portfolio
-				sites). These properties are maintained exclusively by their respective corporations
-				or owners; consequently, their accessibility conformance levels remain entirely
-				beyond our control.
+			<li>
+				<strong i18n="@@a11y_page.sec4.li2.title">External Platform Redirection:</strong>
+				<span i18n="@@a11y_page.sec4.li2.desc">
+					This website contains active links routing out to external ecosystems (including
+					LinkedIn, GitHub, and client portfolio sites). These properties are maintained
+					exclusively by their respective corporations or owners; consequently, their
+					accessibility conformance levels remain entirely beyond our control.
+				</span>
 			</li>
 		</ul>
 	</article>

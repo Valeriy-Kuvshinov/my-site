@@ -542,7 +542,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec2.title" datatype="html">
-        <source> 2. Digital Accessibility Standards &amp; &quot;No Overlay&quot; Policy </source>
+        <source> 2. Digital Accessibility Standards </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
           <context context-type="linenumber">35,37</context>
@@ -576,81 +576,137 @@
           <context context-type="linenumber">57,61</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="a11y_page.sec3.li1" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Semantic Document Geometry:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Strict hierarchical heading order (H1 — H6), correct ARIA 1.2 labeling, and semantic landmark segmentation (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;main&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;nav&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;aside&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>) to facilitate fast screen reader index navigation. </source>
+      <trans-unit id="a11y_page.sec3.li1.title" datatype="html">
+        <source>Semantic Document Geometry:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">63,68</context>
+          <context context-type="linenumber">63,64</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="a11y_page.sec3.li2" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Native Keyboard Navigation Protocol:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Complete operational execution via standard keyboard loops, including custom focus traps on modals and highly visible focus indicators. </source>
+      <trans-unit id="a11y_page.sec3.li1.desc" datatype="html">
+        <source> Strict hierarchical heading order (H1 — H6), correct ARIA 1.2 labeling, and semantic landmark segmentation (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;main&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;nav&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;aside&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>) to facilitate fast screen reader index navigation. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">69,73</context>
+          <context context-type="linenumber">65,70</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="a11y_page.sec3.li3" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Skip Link Overrides:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Accessible skip links placed at the absolute programmatic root level, allowing keyboard users to bypass layout directly to the main content or footer. </source>
+      <trans-unit id="a11y_page.sec3.li2.title" datatype="html">
+        <source> Native Keyboard Navigation Protocol: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">74,78</context>
+          <context context-type="linenumber">73,75</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="a11y_page.sec3.li4" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Color Contrast Optimization:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Visual text layers and active interactive components maintain an enhanced luminance contrast ratio matching or exceeding strict AAA (7:1) thresholds. </source>
+      <trans-unit id="a11y_page.sec3.li2.desc" datatype="html">
+        <source> Complete operational execution via standard keyboard loops, including custom focus traps on modals and highly visible focus indicators. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">79,83</context>
+          <context context-type="linenumber">76,80</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="a11y_page.sec3.li5" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Advanced Typography Toggles:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> An isolated native accessibility interface allowing user-driven configuration changes, including system sans-serif overrides for dyslexia assistance, progressive scaling for text size, line-height modifications, and letter-spacing vectors. </source>
+      <trans-unit id="a11y_page.sec3.li3.title" datatype="html">
+        <source>Skip Link Overrides:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">84,88</context>
+          <context context-type="linenumber">81,82</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="a11y_page.sec3.li6" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Motion Mutation Flags:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Comprehensive system hooks to pause looping animations and CSS transition matrices, synchronized automatically with system-level hardware preferences (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>prefers-reduced-motion<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>). </source>
+      <trans-unit id="a11y_page.sec3.li3.desc" datatype="html">
+        <source> Accessible skip links placed at the absolute programmatic root level, allowing keyboard users to bypass layout directly to the main content or footer. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">90,95</context>
+          <context context-type="linenumber">83,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a11y_page.sec3.li4.title" datatype="html">
+        <source>Color Contrast Optimization:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
+          <context context-type="linenumber">88,89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a11y_page.sec3.li4.desc" datatype="html">
+        <source> Visual text layers and active interactive components maintain an enhanced luminance contrast ratio matching or exceeding strict AAA (7:1) thresholds. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
+          <context context-type="linenumber">90,94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a11y_page.sec3.li5.title" datatype="html">
+        <source>Advanced Typography Toggles:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
+          <context context-type="linenumber">95,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a11y_page.sec3.li5.desc" datatype="html">
+        <source> An isolated native accessibility interface allowing user-driven configuration changes, including system sans-serif overrides for dyslexia assistance, progressive scaling for text size, line-height modifications, and letter-spacing vectors. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
+          <context context-type="linenumber">97,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a11y_page.sec3.li6.title" datatype="html">
+        <source>Motion Mutation Flags:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
+          <context context-type="linenumber">104,105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a11y_page.sec3.li6.desc" datatype="html">
+        <source> Comprehensive system hooks to pause looping animations and CSS transition matrices, synchronized automatically with system-level hardware preferences (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>prefers-reduced-motion<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
+          <context context-type="linenumber">106,110</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec4.title" datatype="html">
         <source> 4. Programmatic Boundaries &amp; Third-Party Platforms </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">101,103</context>
+          <context context-type="linenumber">118,120</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec4.desc" datatype="html">
         <source> Users navigating our digital infrastructure may encounter specific structural boundaries dictated by external runtime layers and third-party ecosystems: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">104,107</context>
+          <context context-type="linenumber">121,124</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="a11y_page.sec4.li1" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Security Challenges (CAPTCHA):<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> To protect against automated abuse, we utilize Cloudflare Turnstile. While Turnstile is designed to run invisibly and provide accessible fallbacks, strict browser privacy settings may occasionally force a visual challenge. </source>
+      <trans-unit id="a11y_page.sec4.li1.title" datatype="html">
+        <source>Security Challenges (CAPTCHA):</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">109,113</context>
+          <context context-type="linenumber">126,127</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="a11y_page.sec4.li2" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>External Platform Redirection:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> This website contains active links routing out to external ecosystems (including LinkedIn, GitHub, and client portfolio sites). These properties are maintained exclusively by their respective corporations or owners; consequently, their accessibility conformance levels remain entirely beyond our control. </source>
+      <trans-unit id="a11y_page.sec4.li1.desc" datatype="html">
+        <source> To protect against automated abuse, we utilize Cloudflare Turnstile. While Turnstile is designed to run invisibly and provide accessible fallbacks, strict browser privacy settings may occasionally force a visual challenge. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">115,120</context>
+          <context context-type="linenumber">128,133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a11y_page.sec4.li2.title" datatype="html">
+        <source>External Platform Redirection:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
+          <context context-type="linenumber">134,135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a11y_page.sec4.li2.desc" datatype="html">
+        <source> This website contains active links routing out to external ecosystems (including LinkedIn, GitHub, and client portfolio sites). These properties are maintained exclusively by their respective corporations or owners; consequently, their accessibility conformance levels remain entirely beyond our control. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
+          <context context-type="linenumber">136,141</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec5.title" datatype="html">
         <source> 5. Remediation, Feedback, and Contact Details </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">128,130</context>
+          <context context-type="linenumber">149,151</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec5.p1" datatype="html">
@@ -661,28 +717,28 @@
 			&gt;"/>. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">131,142</context>
+          <context context-type="linenumber">152,163</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec5.link_aria" datatype="html">
         <source>here. Go to the Contact page</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">138,141</context>
+          <context context-type="linenumber">159,162</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec5.p2" datatype="html">
         <source> As part of our commitment to accessible engineering, we evaluate all accessibility inquiries rapidly and process structural modifications with the highest technical priority. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">143,147</context>
+          <context context-type="linenumber">164,168</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec5.p3" datatype="html">
         <source>This statement is legally effective as of October 3, 2026.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">147,150</context>
+          <context context-type="linenumber">168,171</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.error.required" datatype="html">
@@ -1157,7 +1213,7 @@
         <source>View full size image of <x id="PH" equiv-text="slide.title"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">98</context>
+          <context context-type="linenumber">102</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.btn.prev" datatype="html">
@@ -1231,7 +1287,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty1.desc" datatype="html">
-        <source>Escaping the limitations of templated platforms. I build custom, semantic web applications with automated CI/CD cloud deployments using modern stacks (Angular, React, Next.js, Express, NestJS, Spring Boot).</source>
+        <source>Escaping the limitations of templated platforms. I build custom, semantic web applications with automated cloud deployments using modern stacks.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -1277,13 +1333,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
           <context context-type="linenumber">68</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.meta.title" datatype="html">
-        <source>Kuvshinov Software</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">72</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.meta.desc" datatype="html">
@@ -1824,53 +1873,88 @@
           <context context-type="linenumber">117,121</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="privacy.sec5.li1" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>No Telemetry or Tracking:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> We do not track your browsing behavior, clicks, or extension usage. </source>
+      <trans-unit id="privacy.sec5.li1.title" datatype="html">
+        <source>No Telemetry or Tracking:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">123,126</context>
+          <context context-type="linenumber">123,124</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="privacy.sec5.li2" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>No Server Transmissions:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> We do not own, operate, or route your data through any external backend servers. </source>
+      <trans-unit id="privacy.sec5.li1.desc" datatype="html">
+        <source> We do not track your browsing behavior, clicks, or extension usage. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">127,130</context>
+          <context context-type="linenumber">125,129</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="privacy.sec5.li3" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>No Email Harvesting:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Your email content, sender addresses, and metadata are never copied, logged, or sent to the developer or any third party. </source>
+      <trans-unit id="privacy.sec5.li2.title" datatype="html">
+        <source>No Server Transmissions:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">131,134</context>
+          <context context-type="linenumber">129,130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacy.sec5.li2.desc" datatype="html">
+        <source> We do not own, operate, or route your data through any external backend servers. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
+          <context context-type="linenumber">131,135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacy.sec5.li3.title" datatype="html">
+        <source>No Email Harvesting:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
+          <context context-type="linenumber">135,136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacy.sec5.li3.desc" datatype="html">
+        <source> Your email content, sender addresses, and metadata are never copied, logged, or sent to the developer or any third party. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
+          <context context-type="linenumber">137,141</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.title" datatype="html">
         <source> 6. Extension: Google API Data Access (Limited Use) </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">141,143</context>
+          <context context-type="linenumber">148,150</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.intro" datatype="html">
         <source> In order to function, the Extension requests access to your Gmail account using the Google OAuth 2.0 protocol. We access and use this data in the following strictly limited ways: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">144,148</context>
+          <context context-type="linenumber">151,155</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="privacy.sec6.li1" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Reading Data:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> The Extension reads the HTML text of incoming unread emails locally in your browser to check for standard job rejection phrasing. </source>
+      <trans-unit id="privacy.sec6.li1.title" datatype="html">
+        <source>Reading Data:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">150,153</context>
+          <context context-type="linenumber">157,158</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="privacy.sec6.li2" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Modifying Data:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> If a rejection is detected, the Extension communicates directly with the Google Gmail API to apply your custom label and remove the &quot;UNREAD&quot; status from that specific thread. </source>
+      <trans-unit id="privacy.sec6.li1.desc" datatype="html">
+        <source> The Extension reads the HTML text of incoming unread emails locally in your browser to check for standard job rejection phrasing. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">154,158</context>
+          <context context-type="linenumber">159,163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacy.sec6.li2.title" datatype="html">
+        <source>Modifying Data:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
+          <context context-type="linenumber">164,165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacy.sec6.li2.desc" datatype="html">
+        <source> If a rejection is detected, the Extension communicates directly with the Google Gmail API to apply your custom label and remove the &quot;UNREAD&quot; status from that specific thread. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
+          <context context-type="linenumber">166,171</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.p1" datatype="html">
@@ -1883,35 +1967,35 @@
 			&gt;"/>, including the Limited Use requirements. We do not use your data to serve advertisements, we do not allow humans to read your data, and we do not sell or transfer your data. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">160,172</context>
+          <context context-type="linenumber">173,185</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.link_aria" datatype="html">
         <source>Google API Services User Data Policy (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">164,166</context>
+          <context context-type="linenumber">177,179</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec7.title" datatype="html">
         <source> 7. External Routing and Liability </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">178,180</context>
+          <context context-type="linenumber">191,193</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec7.p1" datatype="html">
         <source> The Services may contain routing nodes and hyperlinks directing traffic to external digital ecosystems. Upon executing a redirection to an external domain, you are immediately subject to the privacy architecture of that third party. We exercise no administrative control over external properties and explicitly disclaim all liability for their data handling practices. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">181,187</context>
+          <context context-type="linenumber">194,200</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec8.title" datatype="html">
         <source> 8. Data Inquiry and Contact Details </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">193,195</context>
+          <context context-type="linenumber">206,208</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec8.p1" datatype="html">
@@ -1922,21 +2006,21 @@
 			&gt;"/>. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">196,206</context>
+          <context context-type="linenumber">209,219</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec8.link_aria" datatype="html">
         <source>here. Go to the Contact page</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">202,205</context>
+          <context context-type="linenumber">215,218</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec8.p2" datatype="html">
         <source>This policy is legally effective as of October 22, 2026.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">206,209</context>
+          <context context-type="linenumber">219,222</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card1.title" datatype="html">
@@ -2296,116 +2380,144 @@
           <context context-type="linenumber">45,48</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="terms.sec2.li1" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Accepted Methods:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> We accept payments strictly via direct Bank Wire Transfer or the Israeli Bit payment application. We do not process credit cards directly. </source>
+      <trans-unit id="terms.sec2.li1.title" datatype="html">
+        <source>Accepted Methods:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">50,54</context>
+          <context context-type="linenumber">50,51</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="terms.sec2.li2" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Settlement:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Invoices are due upon receipt unless a net-payment schedule has been formally established. The Company reserves the right to suspend ongoing development or withhold deployment access until outstanding balances are cleared. </source>
+      <trans-unit id="terms.sec2.li1.desc" datatype="html">
+        <source> We accept payments strictly via direct Bank Wire Transfer or the Israeli Bit payment application. We do not process credit cards directly. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">55,59</context>
+          <context context-type="linenumber">52,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec2.li2.title" datatype="html">
+        <source>Settlement:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec2.li2.desc" datatype="html">
+        <source> Invoices are due upon receipt unless a net-payment schedule has been formally established. The Company reserves the right to suspend ongoing development or withhold deployment access until outstanding balances are cleared. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">59,63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec3.title" datatype="html">
         <source> 3. Browser Extensions (&quot;Did Not Get It&quot;) </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">67,69</context>
+          <context context-type="linenumber">71,73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec3.p1" datatype="html">
         <source> The Company distributes the &quot;Did Not Get It&quot; browser extension via the Google Chrome Web Store and Mozilla Firefox Add-ons repository. This software is provided strictly on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">70,74</context>
+          <context context-type="linenumber">74,78</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec3.p2" datatype="html">
         <source> While the extension utilizes the Google Gmail API to categorize rejection emails, we do not guarantee absolute accuracy in algorithmic text detection. The Company is not liable for missed employment opportunities, mislabeled correspondence, or workflow disruptions resulting from API changes instituted by Google, Chrome, or Mozilla. You grant the extension local execution permissions at your own risk. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">75,81</context>
+          <context context-type="linenumber">79,85</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec4.title" datatype="html">
         <source> 4. Open Source Software &amp; Offline Programs </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">87,89</context>
+          <context context-type="linenumber">91,93</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec4.p1" datatype="html">
         <source> Certain software solutions developed by the Company, including the <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>CModem-Terminal<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> (a C-based terminal for controlling GSM/GPRS modems), are distributed as standalone, offline open-source programs. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">90,94</context>
+          <context context-type="linenumber">94,98</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec4.p2" datatype="html">
         <source> Your use, modification, and distribution of these specific repositories are governed exclusively by the open-source license files (e.g., MIT License) included within those respective codebases. The Company provides these programs &quot;AS IS&quot; without warranty of any kind. We assume no liability for hardware damage, telecommunication charges, or data loss resulting from the execution of AT commands or serial interface interactions. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">95,101</context>
+          <context context-type="linenumber">99,105</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.title" datatype="html">
         <source> 5. Post-Launch Support and Maintenance </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">107,109</context>
+          <context context-type="linenumber">111,113</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.p1" datatype="html">
         <source> For clients engaging in custom web development and system architecture, the Company includes a comprehensive 12-month support period beginning on the date of production launch. During this first year, structural updates, security patches, and minor architectural modifications are provided free of charge. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">110,115</context>
+          <context context-type="linenumber">114,119</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.p2" datatype="html">
         <source> Upon the expiration of the initial 12-month period, ongoing support transitions to a paid framework: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">116,119</context>
+          <context context-type="linenumber">120,123</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="terms.sec5.li1" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Security Retainer:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Essential security updates, dependency patches, and uptime monitoring are available via an ongoing monthly or annual retainer. </source>
+      <trans-unit id="terms.sec5.li1.title" datatype="html">
+        <source>Security Retainer:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">121,124</context>
+          <context context-type="linenumber">125,126</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="terms.sec5.li2" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Feature Upgrades:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Any updates, aesthetic redesigns, structural additions, or feature developments that fall outside the scope of strict security maintenance will be billed separately at our standard hourly rate or as a fixed-price project contract. </source>
+      <trans-unit id="terms.sec5.li1.desc" datatype="html">
+        <source> Essential security updates, dependency patches, and uptime monitoring are available via an ongoing monthly or annual retainer. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">125,129</context>
+          <context context-type="linenumber">127,131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec5.li2.title" datatype="html">
+        <source>Feature Upgrades:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">132,133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec5.li2.desc" datatype="html">
+        <source> Any updates, aesthetic redesigns, structural additions, or feature developments that fall outside the scope of strict security maintenance will be billed separately at our standard hourly rate or as a fixed-price project contract. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">134,138</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec6.title" datatype="html">
         <source> 6. Limitation of Liability </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">137,139</context>
+          <context context-type="linenumber">146,148</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec6.p1" datatype="html">
         <source> To the maximum extent permitted by applicable Israeli and international law, Kuvshinov Software, its owner, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, data, or digital infrastructure, resulting from (a) your access to or use of our Services, (b) any conduct or content of any third party encountered through our Services, or (c) unauthorized access or alteration of your transmissions. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">140,147</context>
+          <context context-type="linenumber">149,156</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec7.title" datatype="html">
         <source> 7. Inquiries and Contact Details </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">153,155</context>
+          <context context-type="linenumber">162,164</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec7.p1" datatype="html">
@@ -2416,35 +2528,35 @@
 			&gt;"/>. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">156,166</context>
+          <context context-type="linenumber">165,175</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec7.link_aria" datatype="html">
         <source>here. Go to the Contact page</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">162,165</context>
+          <context context-type="linenumber">171,174</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec8.title" datatype="html">
         <source> 8. Governing Law </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">172,174</context>
+          <context context-type="linenumber">181,183</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec8.p1" datatype="html">
         <source> These Terms shall be governed and construed in accordance with the laws of the State of Israel, without regard to its conflict of law provisions. Any legal disputes arising from these Terms or the use of our Services shall be subject to the exclusive jurisdiction of the competent courts located in Israel. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">175,180</context>
+          <context context-type="linenumber">184,189</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec8.p2" datatype="html">
         <source>These terms are legally effective as of October 10, 2026.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">180,183</context>
+          <context context-type="linenumber">189,192</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.menu.aria" datatype="html">
@@ -2662,19 +2774,16 @@
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
           <context context-type="linenumber">27,29</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
+          <context context-type="linenumber">48,50</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="header.nav.desktop.aria" datatype="html">
         <source>Desktop Main</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
           <context context-type="linenumber">38,41</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="header.logo.vk.alt" datatype="html">
-        <source>VK Logo</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">49,50</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.link.portfolio" datatype="html">

@@ -1,5 +1,5 @@
-:host .page-contents {
-	.policy {
+:host {
+	.page-contents .policy {
 		h2 {
 			border-bottom: 4px dashed transparent;
 			border-image: linear-gradient(to right, var(--prmclr2), var(--scdclr4), var(--prmclr3))
@@ -29,7 +29,7 @@
 		min-height: 70vh;
 		padding: 6rem 1rem 3rem 1rem;
 
-		h2 {
+		.page-contents .policy h2 {
 			font-size: 1.25rem;
 		}
 	}
@@ -38,11 +38,11 @@
 		min-height: 80vh;
 		padding: 8rem 2rem 4rem 2rem;
 
-		h2 {
+		.page-contents .policy h2 {
 			font-size: 1.75rem;
 		}
 
-		p {
+		.page-contents .policy p {
 			font-size: 1.1rem;
 		}
 	}
