@@ -32,7 +32,7 @@ export default class PageComponent {
 
 	private readonly store = inject(SystemStore)
 
-	protected readonly socials = SOCIAL_LINKS
+	protected readonly socials = SOCIAL_LINKS.slice(2)
 
 	protected readonly defaultValues: ContactFormData = {
 		name: "",

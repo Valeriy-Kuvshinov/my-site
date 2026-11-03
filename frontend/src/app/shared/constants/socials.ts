@@ -9,12 +9,6 @@ interface SocialLink {
 
 export const SOCIAL_LINKS: SocialLink[] = [
 	{
-		name: "LinkedIn",
-		url: "https://www.linkedin.com/in/valeriy-kuvshin-ov/",
-		icon: "linkedin",
-		ariaLabel: $localize`:@@socials.linkedin.aria:LinkedIn profile (opens in a new tab)`,
-	},
-	{
 		name: "Fiverr",
 		url: "https://www.fiverr.com/kuvware/",
 		icon: "fiverr",
@@ -25,6 +19,12 @@ export const SOCIAL_LINKS: SocialLink[] = [
 		url: "https://github.com/Valeriy-Kuvshinov",
 		icon: "github",
 		ariaLabel: $localize`:@@socials.github.aria:GitHub profile (opens in a new tab)`,
+	},
+	{
+		name: "LinkedIn",
+		url: "https://www.linkedin.com/in/valeriy-kuvshin-ov/",
+		icon: "linkedin",
+		ariaLabel: $localize`:@@socials.linkedin.aria:LinkedIn profile (opens in a new tab)`,
 	},
 	{
 		name: "Facebook",
