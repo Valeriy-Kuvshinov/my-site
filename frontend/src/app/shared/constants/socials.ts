@@ -15,6 +15,12 @@ export const SOCIAL_LINKS: SocialLink[] = [
 		ariaLabel: $localize`:@@socials.linkedin.aria:LinkedIn profile (opens in a new tab)`,
 	},
 	{
+		name: "Fiverr",
+		url: "https://www.fiverr.com/kuvware/",
+		icon: "fiverr",
+		ariaLabel: $localize`:@@socials.fiverr.aria:Fiverr profile (opens in a new tab)`,
+	},
+	{
 		name: "GitHub",
 		url: "https://github.com/Valeriy-Kuvshinov",
 		icon: "github",
