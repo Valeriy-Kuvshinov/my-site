@@ -1,6 +1,6 @@
 import { DefaultUrlSerializer, UrlTree } from "@angular/router"
 
-export class TrailingSlashUrlSerializer extends DefaultUrlSerializer {
+export class TrailingSlashSerializer extends DefaultUrlSerializer {
 	override serialize(tree: UrlTree): string {
 		const url = super.serialize(tree)
 

@@ -43,7 +43,7 @@ const SERVICES: ServiceCard[] = [
 		price: $localize`:@@services.card2.price:$100 per page`,
 		description: $localize`:@@services.card2.desc:Automated accessibility widgets do not protect you from lawsuits. True accessibility requires fixing the underlying code so keyboards and screen readers can actually navigate it.`,
 		skills: [
-			{ text: $localize`:@@services.card2.skill1:Manual HTML Rewrites` },
+			{ text: $localize`:@@services.card2.skill1:Manual Page Elements Rewrites` },
 			{ text: $localize`:@@services.card2.skill2:WCAG AA Violation Reports` },
 			{ text: $localize`:@@services.card2.skill3:Color Contrast Optimization` },
 			{ text: $localize`:@@services.card2.skill4:Screen Reader Support` },
@@ -55,7 +55,7 @@ const SERVICES: ServiceCard[] = [
 		price: $localize`:@@services.card3.price:$80 per hour`,
 		description: $localize`:@@services.card3.desc:Got a website that is crashing, running slow, or full of bugs? Relying on AI-generated code that suddenly broke? I can jump in, clean up the technical debt, and make your system stable and secure.`,
 		skills: [
-			{ text: $localize`:@@services.card3.skill1:Legacy Code Refactoring` },
+			{ text: $localize`:@@services.card3.skill1:Legacy Code Maintenance & Updating` },
 			{ text: $localize`:@@services.card3.skill2:Performance Speed Boosts` },
 			{ text: $localize`:@@services.card3.skill3:Security Hardening` },
 			{ text: $localize`:@@services.card3.skill4:Spam & Bot Mitigation` },

@@ -1,5 +1,6 @@
 import {
 	ApplicationConfig,
+	ErrorHandler,
 	inject,
 	provideAppInitializer,
 	provideBrowserGlobalErrorListeners,
@@ -13,7 +14,8 @@ import { QUERY_CLIENT_TOKEN } from "./core/tokens/query-client.token"
 
 import { apiInterceptor } from "./core/interceptor/api.interceptor"
 
-import { TrailingSlashUrlSerializer } from "./core/providers/trailing-slash-serializer"
+import { TrailingSlashSerializer } from "./core/providers/trailing-slash-serializer"
+import { GlobalErrorHandler } from "./core/errors/global-error-handler"
 
 import { A11yService } from "./core/services/a11y.service"
 
@@ -23,9 +25,11 @@ export const appConfig: ApplicationConfig = {
 	providers: [
 		provideBrowserGlobalErrorListeners(),
 
-		provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: "enabled" })),
+		{ provide: UrlSerializer, useClass: TrailingSlashSerializer },
 
-		{ provide: UrlSerializer, useClass: TrailingSlashUrlSerializer },
+		{ provide: ErrorHandler, useClass: GlobalErrorHandler },
+
+		provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: "enabled" })),
 
 		provideClientHydration(),
 
