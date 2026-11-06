@@ -20,13 +20,14 @@
 			@for (item of items; track item.title) {
 			<li class="flex flex-col h-fit fast-trans">
 				<app-image-container
-					[src]="item.imgSrc"
+					[src]="getImageSrc(item)"
 					[alt]="item.imgAlt"
+					[style.aspect-ratio]="getImageRatio(item)"
 					class="cursor-pointer"
 					tabindex="0"
 					role="button"
 					[attr.aria-label]="getImageAriaLabel(item)"
-					(onClickEvent)="openImage(item.imgSrc)">
+					(onClickEvent)="openImage(getImageSrc(item))">
 				</app-image-container>
 
 				<div class="content flex flex-col justify-between h-full gap-6">

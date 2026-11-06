@@ -1,8 +1,9 @@
 import { isPlatformBrowser } from "@angular/common"
 import { DestroyRef, DOCUMENT, inject, Injectable, PLATFORM_ID, signal } from "@angular/core"
 
+import { SupportedLanguage } from "@/shared/interfaces/locale"
+
 type DeviceType = "mobile" | "tablet" | "desktop"
-type SupportedLanguage = "en" | "ru" | "he"
 
 interface FlashMessage {
 	title: string

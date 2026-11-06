@@ -40,7 +40,7 @@ export class ContactFormComponent implements OnInit {
 	private readonly fb = inject(FormBuilder)
 	private readonly mailService = inject(MailService)
 
-	@Input({ required: true }) initialValues!: ContactFormData
+	@Input({ required: true }) formValues!: ContactFormData
 
 	@ViewChild(NgxTurnstileComponent) turnstileRef!: NgxTurnstileComponent
 
@@ -57,7 +57,7 @@ export class ContactFormComponent implements OnInit {
 	readonly form = buildContactForm(this.fb)
 
 	ngOnInit() {
-		this.form.patchValue(this.initialValues)
+		this.form.patchValue(this.formValues)
 	}
 
 	getInputControl(name: keyof typeof this.form.controls): FormControl {
@@ -117,10 +117,12 @@ export class ContactFormComponent implements OnInit {
 		const formData: ContactFormData = {
 			...this.form.getRawValue(),
 			turnstileToken: this.turnstileToken()!,
+			language: this.formValues.language as ContactFormData["language"],
 		}
 		try {
 			await this.sendMailMutation.mutateAsync(formData)
-			this.form.reset(this.initialValues)
+
+			this.form.reset(this.formValues)
 		} catch (err) {
 			console.error("Failed process in ContactForm:", err)
 		} finally {

@@ -1,4 +1,12 @@
-import { Component, HostListener, inject, OnInit, PLATFORM_ID, signal } from "@angular/core"
+import {
+	Component,
+	computed,
+	HostListener,
+	inject,
+	OnInit,
+	PLATFORM_ID,
+	signal,
+} from "@angular/core"
 import { isPlatformBrowser } from "@angular/common"
 import { RouterLink, RouterLinkActive } from "@angular/router"
 
@@ -33,6 +41,8 @@ export class HeaderComponent implements OnInit {
 	private readonly platformId = inject(PLATFORM_ID)
 
 	readonly isScrolled = signal(false)
+
+	protected readonly isMobile = computed(() => this.store.deviceType() !== "desktop")
 
 	ngOnInit() {
 		this.checkScrollPosition()

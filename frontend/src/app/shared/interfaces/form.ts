@@ -1,3 +1,5 @@
+import { SupportedLanguage } from "./locale"
+
 export interface ContactFormData {
 	name: string
 	email: string
@@ -6,4 +8,5 @@ export interface ContactFormData {
 	message: string
 	consent: boolean
 	turnstileToken?: string | null
+	language: SupportedLanguage
 }

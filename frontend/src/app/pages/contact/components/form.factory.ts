@@ -40,5 +40,6 @@ export function buildContactForm(fb: FormBuilder) {
 			],
 		],
 		consent: [false, Validators.requiredTrue],
+		language: ["en", Validators.required],
 	})
 }

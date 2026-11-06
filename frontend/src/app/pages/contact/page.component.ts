@@ -42,6 +42,7 @@ export default class PageComponent {
 		message: "",
 		consent: false,
 		turnstileToken: "",
+		language: this.store.currentLanguage(),
 	}
 
 	protected readonly socialIconSize = computed(() =>

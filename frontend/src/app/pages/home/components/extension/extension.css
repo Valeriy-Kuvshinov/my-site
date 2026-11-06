@@ -8,42 +8,44 @@
 		var(--scdclr8)
 	);
 
-	.text {
-		grid-column: 1 / -1;
+	.content {
+		max-width: 100rem;
 
-		p {
-			max-width: 75rem;
-			margin-block-end: 0.5rem;
-		}
+		.text {
+			grid-column: 1 / -1;
 
-		.links a {
-			padding: 0.5rem 1rem;
-			background: var(--prmclr3);
-			color: var(--scdclr2);
-			fill: var(--scdclr2);
-			border: 1px solid var(--scdclr2);
-			border-radius: 0.75rem;
-			outline: none;
+			p {
+				max-width: 75rem;
+				margin-block-end: 0.5rem;
+			}
 
-			&:hover,
-			&:focus-visible {
-				background: var(--scdclr2);
-				color: var(--scdclr9);
-				fill: var(--scdclr9);
-				border-color: transparent;
+			.links a {
+				padding: 0.5rem 1rem;
+				background: var(--prmclr3);
+				color: var(--scdclr2);
+				fill: var(--scdclr2);
+				border: 1px solid var(--scdclr2);
+				border-radius: 0.75rem;
+				outline: none;
+
+				&:hover,
+				&:focus-visible {
+					background: var(--scdclr2);
+					color: var(--scdclr9);
+					fill: var(--scdclr9);
+					border-color: transparent;
+				}
 			}
 		}
-	}
 
-	figure {
-		padding-block-start: 0.5rem;
-		background: var(--scdclr7);
-		border-radius: 0.75rem;
-		overflow: hidden;
+		figure {
+			padding-block-start: 0.5rem;
+			background: var(--scdclr8);
+		}
 	}
 
 	@media (max-width: 900px) {
-		padding: 3rem 1rem;
+		padding: 3rem 0rem;
 
 		.content {
 			grid-template-columns: 1fr;
@@ -109,6 +111,11 @@
 					grid-column: span 1;
 					width: 100%;
 				}
+			}
+
+			figure {
+				border-radius: 0.75rem;
+				overflow: hidden;
 			}
 		}
 	}

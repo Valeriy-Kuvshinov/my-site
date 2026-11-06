@@ -18,10 +18,6 @@
 			overflow: hidden;
 			margin-bottom: 2rem;
 
-			app-image-container {
-				aspect-ratio: 16 / 9;
-			}
-
 			.content {
 				padding: 1rem;
 

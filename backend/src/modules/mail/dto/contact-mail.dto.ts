@@ -7,6 +7,7 @@ import {
 	IsNotEmpty,
 	IsBoolean,
 	Equals,
+	IsIn,
 } from "class-validator"
 
 export class ContactFormDto {
@@ -43,4 +44,8 @@ export class ContactFormDto {
 
 	@IsString()
 	turnstileToken: string
+
+	@IsString()
+	@IsIn(["en", "ru", "he"], { message: "Language must be en, ru, or he" })
+	language: "en" | "ru" | "he"
 }

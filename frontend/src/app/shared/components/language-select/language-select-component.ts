@@ -50,6 +50,7 @@ export class LanguageSelectComponent implements OnInit {
 	private readonly destroyRef = inject(DestroyRef)
 
 	protected readonly isOpen = signal(false)
+
 	protected readonly options = OPTIONS
 
 	protected readonly activeOption = computed(

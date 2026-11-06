@@ -27,6 +27,7 @@
 				<app-image-container
 					[src]="getImageSrc(slide)"
 					[alt]="slide.imgAlt"
+					[style.aspect-ratio]="getImageRatio(slide)"
 					class="cursor-pointer"
 					role="button"
 					[tabIndex]="currentIdx() === i ? 0 : -1"

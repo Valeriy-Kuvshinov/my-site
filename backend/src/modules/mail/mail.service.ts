@@ -62,15 +62,25 @@ export class MailService {
 	}
 
 	private async notifyUser(data: ContactMailPayload): Promise<void> {
-		const { name, email, title } = data
+		const { name, email, title, language } = data
 
 		const noReplyMail = this.configService.getOrThrow<string>("NOREPLY_MAIL_ADDRESS")
 
+		let subject = `We received your message: "${title}"`
+		let text = `Hi ${name}, we received your message regarding ${title}. We will review it shortly.`
+
+		if (language === "ru") {
+			subject = `Мы получили ваше сообщение: "${title}"`
+			text = `Здравствуйте ${name}, мы получили ваше сообщение о ${title}. Мы рассмотрим его в ближайшее время.`
+		} else if (language === "he") {
+			subject = `קיבלנו את הודעתך: "${title}"`
+			text = `שלום ${name}, קיבלנו את הודעתך בנושא ${title}. נבדוק אותה בהקדם.`
+		}
 		const userMailOptions: MailOptions = {
 			from: `Kuvshinov Software <${noReplyMail}>`,
 			to: email,
-			subject: `We received your message: "${title}"`,
-			text: `Hi ${name}, we received your message regarding ${title}. We will review it shortly.`,
+			subject,
+			text: text,
 			html: getUserContactTemplate(data),
 		}
 		return this.sendEmail(userMailOptions)

@@ -7,6 +7,7 @@ import { APP_GUARD } from "@nestjs/core"
 import { validateEnv } from "./config/env.validation.js"
 
 import { MailModule } from "./modules/mail/mail.module.js"
+import { PortfolioModule } from "./modules/portfolio/portfolio.module.js"
 
 const GLOBAL_TTL_MILLIS = 15 * 60 * 1000
 
@@ -40,6 +41,7 @@ const GLOBAL_TTL_MILLIS = 15 * 60 * 1000
 			},
 		]),
 		MailModule,
+		PortfolioModule,
 	],
 	providers: [
 		{

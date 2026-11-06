@@ -71,8 +71,16 @@ class EnvironmentVariables {
 	TURNSTILE_SECRET_KEY: string
 
 	@IsString()
-	@IsNotEmpty({ message: "GitHub Actions token is missing" })
+	@IsNotEmpty({ message: "GITHUB_ACTIONS_TOKEN is missing" })
 	GITHUB_ACTIONS_TOKEN: string
+
+	@IsString()
+	@IsNotEmpty({ message: "SUPABASE_URL is missing" })
+	SUPABASE_URL: string
+
+	@IsString()
+	@IsNotEmpty({ message: "SUPABASE_SECRET_KEY is missing" })
+	SUPABASE_SECRET_KEY: string
 }
 
 export function validateEnv(config: Record<string, unknown>) {

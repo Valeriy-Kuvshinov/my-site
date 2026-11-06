@@ -77,6 +77,12 @@ export class ImageModalComponent implements OnDestroy {
 		}
 	}
 
+	getImageRatio(): string {
+		if (this.isMobile()) return "9 / 16" // Portrait
+
+		return "16 / 9" // Landscape
+	}
+
 	closeImageModal() {
 		this.store.closeModal("image-modal")
 	}
