@@ -137,7 +137,7 @@
 	"not_found.btn_home": "חזרה לדף הבית",
 	"portfolio_page.dngi.title": "תוסף Did Not Get It",
 	"portfolio_page.dngi.desc": "נוצר כדי לרכך את המכה של חיפוש עבודה בשוק הנוכחי בדרך קומית, קוד המקור זמין לציבור.",
-	"portfolio_page.dngi.alt": "צילום מסך של התוסף המציג הודעות דוא&quot;ל שתויגו וסומנו כנקראות אוטומטית",
+	"portfolio_page.dngi.alt": "צילום מסך של התוסף המציג אי-מיילים שתויגו וסומנו כנקרא אוטומטית",
 	"portfolio_page.noffty.title": "פורטל המשחקים Noffty Productions",
 	"portfolio_page.noffty.desc": "פיתחתי פלטפורמת אחסון למשחקי HTML5 באמצעות Cloudflare R2, תוך ביטול תלויות ב-iframes של צד שלישי וחיזוק מדיניות אבטחת התוכן (CSP) של האתר.",
 	"portfolio_page.noffty.alt": "צילום מסך של פורטל המשחקים Noffty Productions",
