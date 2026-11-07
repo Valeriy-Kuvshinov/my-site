@@ -12,6 +12,7 @@
 			background: var(--scdclr9);
 			color: var(--scdclr2);
 			fill: var(--scdclr2);
+			border: 1px solid var(--scdclr4);
 			border-radius: 0.5rem;
 
 			&:hover,
@@ -26,6 +27,7 @@
 			left: 0;
 			z-index: 5;
 			background: var(--scdclr9);
+			border: 1px solid var(--scdclr4);
 
 			.option {
 				padding: 0.5rem;
@@ -42,10 +44,8 @@
 
 		&.show-up {
 			#lang-select-btn {
-				border-top: 1px solid transparent;
-
 				&.open {
-					border-top: 1px solid var(--scdclr4);
+					border-top: 1px solid transparent;
 					border-radius: 0 0 0.5rem 0.5rem;
 				}
 			}
@@ -68,10 +68,8 @@
 
 		&.show-down {
 			#lang-select-btn {
-				border-bottom: 1px solid transparent;
-
 				&.open {
-					border-bottom: 1px solid var(--scdclr4);
+					border-bottom: 1px solid transparent;
 					border-radius: 0.5rem 0.5rem 0 0;
 				}
 			}
