@@ -1,0 +1,23 @@
+<p class="text-center text-family-bold">{{ message }}</p>
+
+@if (showReturn) {
+<a
+	routerLink="/"
+	class="flex flex-row items-center gap-2">
+	<span i18n="@@error_banner.home">Return Home</span>
+	<app-svg-icon
+		icon="home"
+		width="24"
+		height="24">
+	</app-svg-icon>
+</a>
+}
+
+<app-image-container
+	[src]="imgSrc()"
+	alt=""
+	[width]="240"
+	[height]="240">
+</app-image-container>
+
+<div class="floor"></div>

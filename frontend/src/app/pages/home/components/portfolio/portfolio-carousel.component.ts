@@ -10,7 +10,7 @@ import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 const PORTFOLIO_SLIDES: PortfolioItem[] = [
 	{
 		title: $localize`:@@home.portfolio.noffty.title:Noffty Productions Gaming Hub`,
-		description: $localize`:@@home.portfolio.noffty.desc:Built an HTML5 game hosting platform using Cloudflare R2, eliminating third-party iframe dependencies and strengthening site Content Security Policy.`,
+		description: $localize`:@@home.portfolio.noffty.desc:An HTML5 game hosting platform for an indie games company to showcase their portfolio.`,
 		imgDesktopSrc:
 			"https://res.cloudinary.com/oee6altn/image/upload/v1792668926/noffty-desktop.avif",
 		imgMobileSrc:
@@ -40,12 +40,12 @@ const PORTFOLIO_SLIDES: PortfolioItem[] = [
 	},
 	{
 		title: $localize`:@@home.portfolio.giggler.title:Giggler Freelance Platform`,
-		description: $localize`:@@home.portfolio.giggler.desc:Created a Fiverr-like E-commerce platform as a final project during my Full-Stack bootcamp, source code publicly available.`,
+		description: $localize`:@@home.portfolio.giggler.desc:A Fiverr-like E-commerce platform, created as a final project during my Full-Stack bootcamp.`,
 		imgDesktopSrc:
 			"https://res.cloudinary.com/oee6altn/image/upload/v1792668924/giggler-desktop.avif",
 		imgMobileSrc:
 			"https://res.cloudinary.com/oee6altn/image/upload/v1792668924/giggler-mobile.avif",
-		imgAlt: $localize`:@@home.portfolio.giggler.alt:Screenshot of the Giggler submission home page`,
+		imgAlt: $localize`:@@home.portfolio.giggler.alt:Screenshot of the Giggler home page`,
 		isOpenSource: false,
 	},
 ]

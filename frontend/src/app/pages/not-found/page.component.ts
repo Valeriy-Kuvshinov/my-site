@@ -1,16 +1,14 @@
 import { Component, OnInit, inject } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
-import { RouterLink } from "@angular/router"
 
-import { SvgIconComponent } from "@/shared/components/icon/icon.component"
-import { ImageContainerComponent } from "@/shared/components/general/image-container.component"
+import { ErrorBannerComponent } from "@/shared/components/error-banner/error-banner.component"
 
 const PAGE_TITLE = $localize`:@@not_found.meta.title:Page Not Found | Kuvshinov Software`
 
 @Component({
 	selector: "main[app-not-found-page]",
 	standalone: true,
-	imports: [RouterLink, SvgIconComponent, ImageContainerComponent],
+	imports: [ErrorBannerComponent],
 	templateUrl: "./page.html",
 	styleUrl: "./page.css",
 	host: {

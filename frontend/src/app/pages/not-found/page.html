@@ -5,33 +5,10 @@
 		Oops!
 	</h1>
 
-	<h2
-		i18n="@@not_found.subtitle"
-		class="text-center">
-		Looks like you got lost on my site (404)
-	</h2>
-
-	<p i18n="@@not_found.desc">
-		No worries, just click the button to return safely to my other content
-	</p>
-
-	<a
-		routerLink="/"
-		class="flex flex-row items-center gap-2">
-		<span i18n="@@not_found.btn_home">Go Home</span>
-		<app-svg-icon
-			icon="home"
-			width="24"
-			height="24">
-		</app-svg-icon>
-	</a>
-
-	<app-image-container
-		src="/images/error.avif"
-		alt=""
-		[width]="240"
-		[height]="240">
-	</app-image-container>
-
-	<div class="floor"></div>
+	<app-error-banner
+		i18n-message="@@not_found.subtitle"
+		message="Looks like you got lost on my site (404)"
+		type="general"
+		[showReturn]="true">
+	</app-error-banner>
 </section>

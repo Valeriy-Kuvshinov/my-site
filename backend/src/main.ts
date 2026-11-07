@@ -4,21 +4,17 @@ import helmet from "helmet"
 import { Logger } from "nestjs-pino"
 
 import { AppModule } from "./app.module.js"
+import { getCorsConfig } from "./config/cors.config.js"
 
 async function bootstrap() {
 	const app = await NestFactory.create(AppModule, { bufferLogs: true })
 
 	app.useLogger(app.get(Logger))
+
 	app.use(helmet())
 
-	const isProduction = process.env.NODE_ENV === "production"
+	app.enableCors(getCorsConfig())
 
-	app.enableCors({
-		origin: isProduction
-			? ["https://kuvware.com", "https://www.kuvware.com"]
-			: ["http://127.0.0.1:4200", "http://localhost:4200"],
-		credentials: true,
-	})
 	app.useGlobalPipes(
 		new ValidationPipe({
 			whitelist: true,
@@ -28,6 +24,6 @@ async function bootstrap() {
 	)
 	await app.listen(process.env.PORT ?? 3000)
 
-	app.get(Logger).log(`NestJS server is running on port ${process.env.PORT ?? 3000}`)
+	app.get(Logger).log(`Server running on port ${process.env.PORT ?? 3000}`)
 }
 bootstrap()

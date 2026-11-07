@@ -1143,112 +1143,91 @@
         <source>Noffty Productions Gaming Hub</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.noffty.desc" datatype="html">
-        <source>Built an HTML5 game hosting platform using Cloudflare R2, eliminating third-party iframe dependencies and strengthening site Content Security Policy.</source>
+        <source>An HTML5 game hosting platform for an indie games company to showcase their portfolio.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.noffty.alt" datatype="html">
         <source>Screenshot of the Noffty Productions gaming hub</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.micro.title" datatype="html">
         <source>Micro Mineral Accessibility</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">27</context>
+          <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.micro.desc" datatype="html">
         <source>Retrofitting an entire Wordpress E-commerce platform to natively meet strict AA Israeli accessibility standards while restoring payment gateway stability.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.micro.alt" datatype="html">
         <source>Screenshot of the Micro Mineral accessible home page</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.ori.title" datatype="html">
         <source>Ori Carlin Art Site</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.ori.desc" datatype="html">
         <source>Developed a crafts showcase with local US E-commerce platform for an American artist.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.ori.alt" datatype="html">
         <source>Screenshot of the Ori Carlin pottery home page</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.giggler.title" datatype="html">
         <source>Giggler Freelance Platform</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">45</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.giggler.desc" datatype="html">
-        <source>Created a Fiverr-like E-commerce platform as a final project during my Full-Stack bootcamp, source code publicly available.</source>
+        <source>A Fiverr-like E-commerce platform, created as a final project during my Full-Stack bootcamp.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.giggler.alt" datatype="html">
-        <source>Screenshot of the Giggler submission home page</source>
+        <source>Screenshot of the Giggler home page</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">51</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.portfolio.vision.title" datatype="html">
-        <source>The Vision Telecom Platform</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">54</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.portfolio.vision.desc" datatype="html">
-        <source>Architected a fault-tolerant session orchestration and state recovery system across multiple remote Linux environments.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">55</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.portfolio.vision.alt" datatype="html">
-        <source>Screenshot of the Vision Telecom device selection interface</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">57</context>
+          <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.img_click.aria" datatype="html">
         <source>View full size image of <x id="PH" equiv-text="slide.title"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">102</context>
+          <context context-type="linenumber">94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.btn.prev" datatype="html">
@@ -1262,7 +1241,7 @@
         <source>Next accomplishment</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.html</context>
-          <context context-type="linenumber">40,42</context>
+          <context context-type="linenumber">41,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.tech_carousel.region.aria" datatype="html">
@@ -1493,7 +1472,7 @@
         <source>Page Not Found | Kuvshinov Software</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/not-found/page.component.ts</context>
-          <context context-type="linenumber">8</context>
+          <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="not_found.title" datatype="html">
@@ -1504,206 +1483,31 @@
         </context-group>
       </trans-unit>
       <trans-unit id="not_found.subtitle" datatype="html">
-        <source> Looks like you got lost on my site (404) </source>
+        <source>Looks like you got lost on my site (404)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/not-found/page.html</context>
-          <context context-type="linenumber">11,14</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="not_found.desc" datatype="html">
-        <source> No worries, just click the button to return safely to my other content </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/not-found/page.html</context>
-          <context context-type="linenumber">15,19</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="not_found.btn_home" datatype="html">
-        <source>Go Home</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/not-found/page.html</context>
-          <context context-type="linenumber">21,23</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.dngi.title" datatype="html">
-        <source>Did Not Get It Extension</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">24</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.dngi.desc" datatype="html">
-        <source>Created to soften the blow of living through this job market in a comedic way, source code publicly available.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">25</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.dngi.alt" datatype="html">
-        <source>Screenshot of the extension showing emails automatically labeled and marked as read</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">27</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.noffty.title" datatype="html">
-        <source>Noffty Productions Gaming Hub</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">31</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.noffty.desc" datatype="html">
-        <source>Built an HTML5 game hosting platform using Cloudflare R2, eliminating third-party iframe dependencies and strengthening site Content Security Policy.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">32</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.noffty.alt" datatype="html">
-        <source>Screenshot of the Noffty Productions gaming hub</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">34</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.micro.title" datatype="html">
-        <source>Micro Mineral Accessibility</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">38</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.micro.desc" datatype="html">
-        <source>Retrofitting an entire Wordpress E-commerce platform to natively meet strict AA Israeli accessibility standards while restoring payment gateway stability.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">39</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.micro.alt" datatype="html">
-        <source>Screenshot of the Micro Mineral accessible home page</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">41</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.ori.title" datatype="html">
-        <source>Ori Carlin Art Site</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">45</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.ori.desc" datatype="html">
-        <source>Developed a crafts showcase with local US E-commerce platform for an American artist.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">46</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.ori.alt" datatype="html">
-        <source>Screenshot of the Ori Carlin pottery home page</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">48</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.ori.note" datatype="html">
-        <source>Currently the site is offline, thus source code is publically available.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">50</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.vision.title" datatype="html">
-        <source>The Vision Telecom Platform</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">53</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.vision.desc" datatype="html">
-        <source>Architected a fault-tolerant session orchestration and state recovery system across multiple remote Linux environments.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">54</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.vision.alt" datatype="html">
-        <source>Screenshot of the Vision Telecom device selection interface</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">56</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.vision.note" datatype="html">
-        <source>Source code available per recruiter&apos;s request...</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">57</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.cmodem.title" datatype="html">
-        <source>CModem Terminal CLI Tool</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">60</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.cmodem.desc" datatype="html">
-        <source>Created to handle modem interactions remotely more fluently, already used in some of my production (MyCell), source code publicly available.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">61</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.cmodem.alt" datatype="html">
-        <source>Screenshot of CModem Terminal in use</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">63</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.giggler.title" datatype="html">
-        <source>Giggler Freelance Platform</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">67</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.giggler.desc" datatype="html">
-        <source>Created a Fiverr-like E-commerce platform as a final project during my Full-Stack bootcamp, source code publicly available.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">68</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="portfolio_page.giggler.alt" datatype="html">
-        <source>Screenshot of the Giggler submission home page</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">70</context>
+          <context context-type="linenumber">10,12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.meta.title" datatype="html">
         <source>Portfolio | Kuvshinov Software</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">76</context>
+          <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.meta.desc" datatype="html">
         <source>Browse through the projects, clients and more that have been impacted by us.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">78</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.img_click.aria" datatype="html">
         <source>View full size image of <x id="PH" equiv-text="item.title"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">124</context>
+          <context context-type="linenumber">77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.intro.title" datatype="html">
@@ -1720,53 +1524,67 @@
           <context context-type="linenumber">12,18</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="portfolio_page.error.msg" datatype="html">
+        <source>Failed to load data. Please try again later...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="portfolio_page.empty.msg" datatype="html">
+        <source>Nothing found to display...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="portfolio_page.btn_visit.aria" datatype="html">
         <source>Visit Site (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">51,52</context>
+          <context context-type="linenumber">69,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_visit.text" datatype="html">
         <source>Visit Site</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">52,54</context>
+          <context context-type="linenumber">70,72</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_source.aria" datatype="html">
         <source>View Source Code (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">66,67</context>
+          <context context-type="linenumber">84,85</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_source.text" datatype="html">
         <source>Source Code</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">67,69</context>
+          <context context-type="linenumber">85,87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.title" datatype="html">
         <source> Ready to Build Your System? </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">88,92</context>
+          <context context-type="linenumber">107,111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.desc" datatype="html">
         <source> Let&apos;s discuss your architectural needs and engineer a digital asset you actually own. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">94,98</context>
+          <context context-type="linenumber">113,117</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.btn" datatype="html">
         <source>Start a Project</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">100,102</context>
+          <context context-type="linenumber">119,121</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.meta.title" datatype="html">
@@ -2719,6 +2537,13 @@
           <context context-type="linenumber">66,70</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="error_banner.home" datatype="html">
+        <source>Return Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/error-banner/error-banner.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="footer.nav.main.aria" datatype="html">
         <source>Footer</source>
         <context-group purpose="location">
@@ -2913,22 +2738,22 @@
           <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="socials.linkedin.aria" datatype="html">
-        <source>LinkedIn profile (opens in a new tab)</source>
+      <trans-unit id="socials.fiverr.aria" datatype="html">
+        <source>Fiverr profile (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/constants/socials.ts</context>
           <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="socials.fiverr.aria" datatype="html">
-        <source>Fiverr profile (opens in a new tab)</source>
+      <trans-unit id="socials.github.aria" datatype="html">
+        <source>GitHub profile (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/constants/socials.ts</context>
           <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="socials.github.aria" datatype="html">
-        <source>GitHub profile (opens in a new tab)</source>
+      <trans-unit id="socials.linkedin.aria" datatype="html">
+        <source>LinkedIn profile (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/constants/socials.ts</context>
           <context context-type="linenumber">27</context>

@@ -12,19 +12,4 @@ export interface PortfolioEntity {
 	githubUrl?: string
 	note?: LocalizedString
 	isOpenSource: boolean
-	sortOrder: number
-}
-
-// Display
-export interface PortfolioItem {
-	id?: number
-	title: string
-	description: string
-	imgDesktopSrc: string
-	imgMobileSrc?: string
-	imgAlt: string
-	linkUrl?: string
-	githubUrl?: string
-	note?: string
-	isOpenSource: boolean
 }
