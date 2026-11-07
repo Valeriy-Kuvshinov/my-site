@@ -3,7 +3,7 @@
 		transform: translateX(0);
 	}
 	100% {
-		transform: translateX(-50%);
+		transform: translateX(calc(-50% - 1rem));
 	}
 }
 
@@ -12,7 +12,7 @@
 		transform: translateX(0);
 	}
 	100% {
-		transform: translateX(50%);
+		transform: translateX(calc(50% + 1rem));
 	}
 }
 
@@ -28,19 +28,19 @@
 	mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 	overflow: hidden;
 
-	.carousel-track :hover {
-		animation-play-state: paused;
+	.carousel-track {
+		width: max-content;
+
+		&:hover {
+			animation-play-state: paused !important;
+		}
 	}
 }
 
-:host-context([dir="ltr"]) {
-	.carousel-track {
-		animation: infinite-scroll-ltr 30s linear infinite;
-	}
+:host-context([dir="ltr"]) .carousel-track {
+	animation: infinite-scroll-ltr 75s linear infinite;
 }
 
-:host-context([dir="rtl"]) {
-	.carousel-track {
-		animation: infinite-scroll-rtl 30s linear infinite;
-	}
+:host-context([dir="rtl"]) .carousel-track {
+	animation: infinite-scroll-rtl 75s linear infinite;
 }

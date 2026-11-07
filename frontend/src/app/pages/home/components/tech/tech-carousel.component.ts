@@ -1,10 +1,10 @@
 import { Component, ChangeDetectionStrategy, computed, inject } from "@angular/core"
 
-import { IconName } from "../../../../shared/components/icon/icon.map"
+import { IconName } from "@/shared/components/icon/icon.map"
 
-import { SystemStore } from "../../../../core/stores/system.store"
+import { SystemStore } from "@/core/stores/system.store"
 
-import { SvgIconComponent } from "../../../../shared/components/icon/icon.component"
+import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 
 @Component({
 	selector: "app-tech-carousel",
@@ -51,5 +51,6 @@ export class TechCarouselComponent {
 		{ name: "rasberry", label: "Raspberry Pi" },
 		{ name: "claude", label: "Claude Code" },
 		{ name: "chatgpt", label: "ChatGPT" },
+		{ name: "supabase", label: "SupaBase" },
 	]
 }
