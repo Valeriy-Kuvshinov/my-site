@@ -1,5 +1,13 @@
 import { Type } from "class-transformer"
-import { IsString, IsNotEmpty, ValidateNested, IsUrl, IsOptional, IsBoolean } from "class-validator"
+import {
+	IsString,
+	IsNotEmpty,
+	ValidateNested,
+	IsUrl,
+	IsOptional,
+	IsBoolean,
+	MaxLength,
+} from "class-validator"
 
 import { LocalizedString } from "../../../common/interfaces/locale.js"
 import { PortfolioEntity } from "../../../common/interfaces/portfolio.js"
@@ -58,6 +66,13 @@ export class PortfolioItemDto {
 	@IsBoolean()
 	@IsOptional()
 	isOpenSource: boolean = false
+}
+
+export class PortfolioQueryDto {
+	@IsString()
+	@IsOptional()
+	@MaxLength(80, { message: "Search query is too long" })
+	search?: string
 }
 
 // Data Mappers (Snake Case <-> Camel Case)

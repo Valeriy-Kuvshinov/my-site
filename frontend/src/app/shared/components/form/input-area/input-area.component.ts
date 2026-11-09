@@ -43,6 +43,7 @@ type InputAreaType = "text" | "email" | "textarea" | "password" | "tel"
 				[name]="name"
 				[required]="required"
 				[attr.aria-required]="required"
+				[attr.maxlength]="maxLength"
 				[placeholder]="placeholder"></textarea>
 		} @else {
 			<input
@@ -52,6 +53,7 @@ type InputAreaType = "text" | "email" | "textarea" | "password" | "tel"
 				[name]="name"
 				[required]="required"
 				[attr.aria-required]="required"
+				[attr.maxlength]="maxLength"
 				[placeholder]="placeholder" />
 		}
 		<ng-content></ng-content>
@@ -69,6 +71,7 @@ export class InputAreaComponent {
 	@Input() icon?: IconName
 	@Input() type: InputAreaType = "text"
 	@Input() error?: string | null
+	@Input() maxLength: number = 100
 	@Input() required = false
 	@Input() placeholder = ""
 

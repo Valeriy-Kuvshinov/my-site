@@ -25,14 +25,14 @@
 				</button>
 
 				<app-image-container
-					[src]="getImageSrc(slide)"
+					[src]="getPortfolioImageSrc(slide, isMobile())"
 					[alt]="slide.imgAlt"
-					[style.aspect-ratio]="getImageRatio(slide)"
+					[style.aspect-ratio]="getPortfolioImageRatio(slide, isMobile())"
 					class="cursor-pointer"
 					role="button"
 					[tabIndex]="currentIdx() === i ? 0 : -1"
 					[attr.aria-label]="getImageAriaLabel(slide)"
-					(onClickEvent)="openImage(getImageSrc(slide))">
+					(onClickEvent)="openImage(getPortfolioImageSrc(slide, isMobile()))">
 				</app-image-container>
 
 				<button

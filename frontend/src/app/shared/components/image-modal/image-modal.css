@@ -24,20 +24,12 @@
 		min-width: 100%;
 		border-top: 2px solid var(--scdclr4);
 		border-bottom: 2px solid var(--scdclr4);
-
-		app-image-container {
-			aspect-ratio: 9 / 16;
-		}
 	}
 
 	@media (min-width: 601px) {
 		max-width: 95vw;
 		border: 2px solid var(--scdclr4);
 		border-radius: 0.75rem;
-
-		app-image-container {
-			aspect-ratio: 16 / 9;
-		}
 
 		&.has-scroll {
 			border-radius: 0.75rem 0 0 0.75rem;

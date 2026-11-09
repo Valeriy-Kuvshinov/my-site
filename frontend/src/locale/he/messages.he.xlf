@@ -951,7 +951,7 @@
         <target>השם שלך</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">16,18</context>
+          <context context-type="linenumber">17,19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.email.label" datatype="html">
@@ -959,7 +959,7 @@
         <target>אימייל</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">24,26</context>
+          <context context-type="linenumber">25,27</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.email.placeholder" datatype="html">
@@ -967,7 +967,7 @@
         <target>האימייל שלך</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">29,31</context>
+          <context context-type="linenumber">31,33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.title.label" datatype="html">
@@ -975,7 +975,7 @@
         <target>נושא</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">37,39</context>
+          <context context-type="linenumber">39,41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.title.placeholder" datatype="html">
@@ -983,7 +983,7 @@
         <target>שואל לגבי...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">42,44</context>
+          <context context-type="linenumber">45,47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.subject.label" datatype="html">
@@ -991,7 +991,7 @@
         <target>קטגוריה</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">50,52</context>
+          <context context-type="linenumber">53,55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.subject.opt_qa" datatype="html">
@@ -999,7 +999,7 @@
         <target> שאלות ותשובות </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">58,60</context>
+          <context context-type="linenumber">61,63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.subject.opt_suggestion" datatype="html">
@@ -1007,7 +1007,7 @@
         <target> הצעה </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">62,66</context>
+          <context context-type="linenumber">65,69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.subject.opt_bug" datatype="html">
@@ -1015,15 +1015,15 @@
         <target> דיווח על באג </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">67,70</context>
+          <context context-type="linenumber">70,74</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="contact.form.subject.opt_volunteer" datatype="html">
-        <source> Volunteering </source>
-        <target> התנדבות </target>
+      <trans-unit id="contact.form.subject.opt_work" datatype="html">
+        <source> Work </source>
+        <target> עבודה </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">72,75</context>
+          <context context-type="linenumber">76,78</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.subject.opt_a11y" datatype="html">
@@ -1031,7 +1031,7 @@
         <target> נגישות </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">77,81</context>
+          <context context-type="linenumber">80,84</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.subject.opt_other" datatype="html">
@@ -1039,7 +1039,7 @@
         <target> אחר </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">82,86</context>
+          <context context-type="linenumber">85,89</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.message.label" datatype="html">
@@ -1047,7 +1047,7 @@
         <target>הודעה</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">89,91</context>
+          <context context-type="linenumber">92,94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.message.placeholder" datatype="html">
@@ -1055,7 +1055,7 @@
         <target>בואו נבנה מערכת...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">94,96</context>
+          <context context-type="linenumber">98,100</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.consent.text" datatype="html">
@@ -1075,7 +1075,7 @@
 				&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">107,120</context>
+          <context context-type="linenumber">111,124</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.consent.error" datatype="html">
@@ -1083,7 +1083,7 @@
         <target> עליך לאשר את תנאי השימוש ומדיניות הפרטיות כדי לשלוח את הטופס. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">125,130</context>
+          <context context-type="linenumber">129,134</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.btn.send" datatype="html">
@@ -1091,7 +1091,7 @@
         <target>שלח</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">139,142</context>
+          <context context-type="linenumber">143,146</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.meta.title" datatype="html">
@@ -1315,7 +1315,7 @@
         <target>פורטל המשחקים Noffty Productions</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.noffty.desc" datatype="html">
@@ -1323,7 +1323,7 @@
         <target>פלטפורמה לאירוח משחקי HTML5 עבור חברת משחקים עצמאית, במטרה להציג את תיק העבודות שלה.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.noffty.alt" datatype="html">
@@ -1331,7 +1331,7 @@
         <target>צילום מסך של פורטל המשחקים Noffty Productions</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.micro.title" datatype="html">
@@ -1339,7 +1339,7 @@
         <target>נגישות האתר Micro Mineral</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.micro.desc" datatype="html">
@@ -1347,7 +1347,7 @@
         <target>התאמת פלטפורמת מסחר אלקטרוני שלמה ב-Wordpress כך שתעמוד באופן טבעי (Native) בתקני הנגישות המחמירים בישראל ברמת AA, תוך שחזור יציבות מסוף התשלומים.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">23</context>
+          <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.micro.alt" datatype="html">
@@ -1355,7 +1355,7 @@
         <target>צילום מסך של דף הבית הנגיש של Micro Mineral</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.ori.title" datatype="html">
@@ -1363,7 +1363,7 @@
         <target>אתר האמנות של Ori Carlin</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.ori.desc" datatype="html">
@@ -1371,7 +1371,7 @@
         <target>פיתחתי תצוגת יצירות עם פלטפורמת מסחר אלקטרוני מקומית בארצות הברית עבור אמן אמריקאי.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.ori.alt" datatype="html">
@@ -1379,7 +1379,7 @@
         <target>צילום מסך של דף הבית של הקדרות של Ori Carlin</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.giggler.title" datatype="html">
@@ -1387,7 +1387,7 @@
         <target>פלטפורמת הפרילנסרים Giggler</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.giggler.desc" datatype="html">
@@ -1395,7 +1395,7 @@
         <target>פלטפורמת מסחר אלקטרוני בסגנון Fiverr, שנבנתה כפרויקט גמר במהלך בוטקאמפ Full-Stack.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.giggler.alt" datatype="html">
@@ -1403,7 +1403,7 @@
         <target>צילום מסך של דף הבית של פלטפורמת Giggler</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.img_click.aria" datatype="html">
@@ -1411,7 +1411,7 @@
         <target>צפה בתמונה בגודל מלא של <x id="PH" equiv-text="slide.title"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">94</context>
+          <context context-type="linenumber">98</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.btn.prev" datatype="html">
@@ -1443,7 +1443,7 @@
         <target>שנות ניסיון</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.production" datatype="html">
@@ -1451,7 +1451,7 @@
         <target>פרויקטים באוויר</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.oss" datatype="html">
@@ -1459,7 +1459,7 @@
         <target>פרויקטי קוד פתוח</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.a11y" datatype="html">
@@ -1467,7 +1467,7 @@
         <target>בדיקות נגישות</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.repos" datatype="html">
@@ -1475,7 +1475,7 @@
         <target>מאגרי גיטהאב</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">45</context>
+          <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.commits" datatype="html">
@@ -1483,7 +1483,7 @@
         <target>תרומות קוד בגיטהאב</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty1.title" datatype="html">
@@ -1491,7 +1491,7 @@
         <target>הנדסת פול-סטאק נייטיב</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty1.desc" datatype="html">
@@ -1499,7 +1499,7 @@
         <target>בריחה ממגבלות הפלטפורמות התבניתיות. אני בונה אפליקציות רשת סמנטיות ומותאמות אישית עם פריסות ענן אוטומטיות תוך שימוש בטכנולוגיות מודרניות.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty2.title" datatype="html">
@@ -1507,7 +1507,7 @@
         <target>התאמת נגישות והגנה משפטית</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">57</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty2.desc" datatype="html">
@@ -1515,7 +1515,7 @@
         <target>בדיקה ושכתוב של תשתית דיגיטלית כך שתעמוד באופן נייטיב בתקני WCAG 2.1 AA/AAA ובתקן הישראלי - מספק הגנה משפטית אמיתית שתוספי נגישות אוטומטיים פשוט אינם יכולים להציע.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty3.title" datatype="html">
@@ -1523,7 +1523,7 @@
         <target>ארכיטקטורת מערכות ואופטימיזציה</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">63</context>
+          <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty3.desc" datatype="html">
@@ -1531,7 +1531,7 @@
         <target>ייעוץ טכני לפתרון צווארי בקבוק קריטיים, אבטחת פלטפורמות מסחר אלקטרוני מיושנות, וניהול נכסים דיגיטליים עצמאיים בסדר גודל רחב.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">64</context>
+          <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty4.title" datatype="html">
@@ -1539,7 +1539,7 @@
         <target>סיוע דיגיטלי מרחוק</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">67</context>
+          <context context-type="linenumber">65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty4.desc" datatype="html">
@@ -1547,7 +1547,7 @@
         <target>תמיכה אישית צמודה לאנשים המתמודדים עם חסמים דיגיטליים חמורים, המספקת סיוע ניווט מאובטח עבור אתרים בלתי נגישים ומערכות אימות מורכבות.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">68</context>
+          <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.meta.desc" datatype="html">
@@ -1555,7 +1555,7 @@
         <target>Kuvshinov Software - מספקים לכם אתרים, מערכות, קוד פתוח וסיוע בנגישות באכפתיות.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">74</context>
+          <context context-type="linenumber">72</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialties.title" datatype="html">
@@ -1715,7 +1715,7 @@
         <target>תיק עבודות | Kuvshinov Software</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.meta.desc" datatype="html">
@@ -1723,7 +1723,7 @@
         <target>עיינו בפרויקטים, בלקוחות ובעוד דברים שהשפענו עליהם.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.img_click.aria" datatype="html">
@@ -1731,7 +1731,7 @@
         <target>צפה בתמונה בגודל מלא של <x id="PH" equiv-text="item.title"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">77</context>
+          <context context-type="linenumber">119</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.intro.title" datatype="html">
@@ -1747,7 +1747,23 @@
         <target> כל פרויקטי התוכנה שפרסמתי בגאווה, מגרסאות סופיות/ייצור ללקוחות שלי ועד קוד פתוח. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">12,18</context>
+          <context context-type="linenumber">12,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="portfolio_page.search.placeholder" datatype="html">
+        <source>Search projects...</source>
+        <target>חפש פרוייקטים...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="portfolio_page.search.aria" datatype="html">
+        <source>Search portfolio items</source>
+        <target>חפש בתיק העבודות</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
+          <context context-type="linenumber">33,38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.error.msg" datatype="html">
@@ -1755,7 +1771,7 @@
         <target>טעינת הנתונים נכשלה. אנא נסו שוב מאוחר יותר...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">24,26</context>
+          <context context-type="linenumber">44,46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.empty.msg" datatype="html">
@@ -1763,7 +1779,7 @@
         <target>לא נמצא דבר להציג...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">31,33</context>
+          <context context-type="linenumber">51,53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_visit.aria" datatype="html">
@@ -1771,7 +1787,7 @@
         <target>בקרו באתר (נפתח בכרטיסייה חדשה)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">69,70</context>
+          <context context-type="linenumber">89,90</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_visit.text" datatype="html">
@@ -1779,7 +1795,7 @@
         <target>בקרו באתר</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">70,72</context>
+          <context context-type="linenumber">90,92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_source.aria" datatype="html">
@@ -1787,7 +1803,7 @@
         <target>צפה בקוד המקור (נפתח בכרטיסייה חדשה)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">84,85</context>
+          <context context-type="linenumber">104,105</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_source.text" datatype="html">
@@ -1795,7 +1811,7 @@
         <target>קוד מקור</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">85,87</context>
+          <context context-type="linenumber">105,107</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.title" datatype="html">
@@ -1803,7 +1819,7 @@
         <target> מוכנים לבנות את המערכת שלכם? </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">107,111</context>
+          <context context-type="linenumber">127,131</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.desc" datatype="html">
@@ -1811,7 +1827,7 @@
         <target> בואו נדבר על הצרכים הארכיטקטוניים שלכם ונהנדס נכס דיגיטלי שהוא באמת שלכם. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">113,117</context>
+          <context context-type="linenumber">133,137</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.btn" datatype="html">
@@ -1819,7 +1835,7 @@
         <target>התחילו פרויקט</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">119,121</context>
+          <context context-type="linenumber">139,141</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.meta.title" datatype="html">
@@ -3093,7 +3109,7 @@
         <target>סגור חלון מודאלי של תמונה</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/image-modal/image-modal.html</context>
-          <context context-type="linenumber">25,27</context>
+          <context context-type="linenumber">26,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="lang_select.label" datatype="html">

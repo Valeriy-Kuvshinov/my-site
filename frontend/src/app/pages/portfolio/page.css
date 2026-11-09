@@ -8,6 +8,27 @@
 		var(--prmclr3)
 	);
 
+	.intro .text form {
+		max-width: 30rem;
+
+		app-svg-icon {
+			z-index: 1;
+			top: 0.5rem;
+			fill: var(--scdclr2);
+		}
+
+		input {
+			color: var(--scdclr2);
+			border: 2px solid var(--scdclr5);
+			border-radius: 1rem;
+			font-size: 1.1rem;
+
+			&:focus {
+				border-color: var(--mnrclr2);
+			}
+		}
+	}
+
 	.gallery ul {
 		max-width: 100rem;
 		column-gap: 2rem;
@@ -81,10 +102,10 @@
 		min-height: 70vh;
 
 		.intro {
-			padding: 6rem 1rem 3rem 1rem;
+			padding: 6rem 1rem 1rem 1rem;
 
 			p {
-				font-size: 1.25rem;
+				font-size: 1.1rem;
 			}
 		}
 
@@ -110,10 +131,10 @@
 		min-height: 80vh;
 
 		.intro {
-			padding: 8rem 2rem 4rem 2rem;
+			padding: 8rem 2rem 2rem 2rem;
 
 			p {
-				font-size: 1.5rem;
+				font-size: 1.25rem;
 			}
 		}
 
@@ -139,6 +160,30 @@
 
 		.cta .content h2 {
 			font-size: 2rem;
+		}
+	}
+}
+
+:host-context([dir="ltr"]) {
+	.intro .text form {
+		app-svg-icon {
+			left: 0.5rem;
+		}
+
+		input {
+			padding: 0.25rem 0.5rem 0.25rem 2.5rem;
+		}
+	}
+}
+
+:host-context([dir="rtl"]) {
+	.intro .text form {
+		app-svg-icon {
+			right: 0.5rem;
+		}
+
+		input {
+			padding: 0.25rem 2.5rem 0.25rem 0.5rem;
 		}
 	}
 }

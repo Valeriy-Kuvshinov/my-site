@@ -17,16 +17,20 @@
 
 	app-image-container {
 		z-index: 1;
-		width: 22rem;
+		width: 20rem;
 		aspect-ratio: 16 / 9;
 	}
 
 	.floor {
-		width: 22rem;
+		width: 20rem;
 		height: 4rem;
-		margin-block-start: -6rem;
+		margin-block-start: -2rem;
 		background: var(--scdclr5);
 		border-radius: 0 0 0.5rem 0.5rem;
+
+		&.elevate {
+			margin-block-start: -5.5rem;
+		}
 	}
 
 	@media (max-width: 600px) {

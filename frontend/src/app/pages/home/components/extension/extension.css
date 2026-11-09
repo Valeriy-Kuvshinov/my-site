@@ -49,6 +49,10 @@
 
 		.content {
 			grid-template-columns: 1fr;
+
+			.text {
+				padding: 0 1rem;
+			}
 		}
 	}
 

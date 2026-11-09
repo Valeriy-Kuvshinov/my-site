@@ -36,11 +36,19 @@ export class ImageModalComponent implements OnDestroy {
 	@ViewChild("modalRef") modalRef?: ElementRef<HTMLDivElement>
 	@ViewChild("closeBtn") closeBtnRef?: ElementRef<HTMLButtonElement>
 
-	private readonly isMobile = computed(() => this.store.deviceType() !== "desktop")
 	private readonly isOpen = computed(() => this.store.activeModals().includes("image-modal"))
-	protected readonly modalValue = computed(() => this.store.modalValues()["image-modal"] || null)
 
-	protected readonly objectFit = computed(() => (this.isMobile() ? "contain" : "cover"))
+	private readonly payload = computed<{ src: string; isMobile: boolean } | null>(
+		() => this.store.modalValues()["image-modal"] || null
+	)
+
+	protected readonly imageSrc = computed(() => this.payload()?.src || null)
+
+	protected readonly aspectRatio = computed(() =>
+		this.payload()?.isMobile ? "9 / 16" : "16 / 9"
+	)
+
+	protected readonly objectFit = computed(() => (this.payload()?.isMobile ? "contain" : "cover"))
 
 	readonly hasScrollbar = signal(false)
 
@@ -75,12 +83,6 @@ export class ImageModalComponent implements OnDestroy {
 			this.resizeObserver.disconnect()
 			this.resizeObserver = undefined
 		}
-	}
-
-	getImageRatio(): string {
-		if (this.isMobile()) return "9 / 16" // Portrait
-
-		return "16 / 9" // Landscape
 	}
 
 	closeImageModal() {

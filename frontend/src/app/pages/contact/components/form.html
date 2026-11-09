@@ -12,6 +12,7 @@
 		[required]="true"
 		type="text"
 		icon="person"
+		[maxLength]="32"
 		i18n-placeholder="@@contact.form.name.placeholder"
 		placeholder="Your name"
 		[control]="getInputControl('name')"
@@ -25,6 +26,7 @@
 		[required]="true"
 		type="email"
 		icon="mail"
+		[maxLength]="64"
 		i18n-placeholder="@@contact.form.email.placeholder"
 		placeholder="Your email"
 		[control]="getInputControl('email')"
@@ -38,6 +40,7 @@
 		[required]="true"
 		type="text"
 		icon="title"
+		[maxLength]="64"
 		i18n-placeholder="@@contact.form.title.placeholder"
 		placeholder="Asking about..."
 		[control]="getInputControl('title')"
@@ -67,9 +70,9 @@
 			Bug Report
 		</option>
 		<option
-			value="Volunteering"
-			i18n="@@contact.form.subject.opt_volunteer">
-			Volunteering
+			value="Work"
+			i18n="@@contact.form.subject.opt_work">
+			Work
 		</option>
 		<option
 			value="Accessibility"
@@ -90,6 +93,7 @@
 		[required]="true"
 		type="textarea"
 		icon="message"
+		[maxLength]="600"
 		i18n-placeholder="@@contact.form.message.placeholder"
 		placeholder="Let's build a system..."
 		[control]="getInputControl('message')"

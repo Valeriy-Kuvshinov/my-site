@@ -9,10 +9,11 @@ import {
 	Body,
 	Put,
 	Delete,
+	Query,
 } from "@nestjs/common"
 import { PinoLogger } from "nestjs-pino"
 
-import { PortfolioItemDto } from "./dto/portfolio.dto.js"
+import { PortfolioItemDto, PortfolioQueryDto } from "./dto/portfolio.dto.js"
 
 import { PortfolioService } from "./portfolio.service.js"
 
@@ -26,10 +27,10 @@ export class PortfolioController {
 	}
 
 	@Get()
-	async getAll() {
-		this.logger.info("Fetching all portfolio items")
+	async getAll(@Query() query: PortfolioQueryDto) {
+		this.logger.info({ search: query.search }, "Fetching portfolio items")
 		try {
-			const items = await this.portfolioService.getAll()
+			const items = await this.portfolioService.getAll(query.search)
 			return { data: items, message: "Portfolio items fetched successfully" }
 		} catch (err) {
 			this.logger.error({ err }, "Failed to get portfolio items")

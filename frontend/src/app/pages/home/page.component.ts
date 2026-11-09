@@ -5,8 +5,6 @@ import { RouterLink } from "@angular/router"
 import { IconName } from "@/shared/components/icon/icon.map"
 import { SITE_URL } from "@/shared/constants/util"
 
-import { SystemStore } from "@/core/stores/system.store"
-
 import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 import { ImageContainerComponent } from "@/shared/components/general/image-container.component"
 import { TechCarouselComponent } from "./components/tech/tech-carousel.component"
@@ -97,8 +95,6 @@ export default class PageComponent implements OnInit {
 	private readonly meta = inject(Meta)
 	private readonly document = inject(DOCUMENT)
 
-	private readonly store = inject(SystemStore)
-
 	protected readonly highlights = HIGHLIGHTS
 	protected readonly specialties = SPECIALTIES
 
@@ -123,9 +119,5 @@ export default class PageComponent implements OnInit {
 			this.document.head.appendChild(link)
 		}
 		link.setAttribute("href", url)
-	}
-
-	openImage(src: string) {
-		this.store.openModal("image-modal", src)
 	}
 }

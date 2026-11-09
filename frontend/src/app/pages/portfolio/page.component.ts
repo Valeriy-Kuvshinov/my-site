@@ -1,9 +1,13 @@
-import { Component, computed, DOCUMENT, inject, OnInit } from "@angular/core"
+import { Component, computed, DOCUMENT, effect, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
-import { RouterLink } from "@angular/router"
+import { ActivatedRoute, Router, RouterLink } from "@angular/router"
+import { FormControl, ReactiveFormsModule, Validators } from "@angular/forms"
+import { takeUntilDestroyed, toSignal } from "@angular/core/rxjs-interop"
+import { debounceTime, distinctUntilChanged } from "rxjs"
 
 import { SITE_URL } from "@/shared/constants/util"
 import { PortfolioItem } from "@/shared/interfaces/portfolio"
+import { getPortfolioImageRatio, getPortfolioImageSrc } from "@/shared/utilities/portfolio.utils"
 
 import { SystemStore } from "@/core/stores/system.store"
 
@@ -27,6 +31,7 @@ const PAGE_DESC = $localize`:@@portfolio_page.meta.desc:Browse through the proje
 		RouterLink,
 		LoadingComponent,
 		ErrorBannerComponent,
+		ReactiveFormsModule,
 	],
 	templateUrl: "./page.html",
 	styleUrl: "./page.css",
@@ -44,11 +49,48 @@ export default class PageComponent implements OnInit {
 
 	private readonly portfolioService = inject(PortfolioService)
 
-	private readonly portfolioQuery = this.portfolioService.getPortfolioItems()
+	private readonly route = inject(ActivatedRoute)
+	private readonly router = inject(Router)
 
-	private readonly isMobile = computed(() => this.store.deviceType() === "mobile")
+	private readonly routeQueryMap = toSignal(this.route.queryParamMap)
+
+	protected readonly isMobile = computed(() => this.store.deviceType() === "mobile")
+
+	protected readonly searchTerm = computed(() => this.routeQueryMap()?.get("title") || "")
+
+	protected readonly searchControl = new FormControl(this.searchTerm(), {
+		nonNullable: true,
+		validators: [Validators.maxLength(80)],
+	})
+
+	readonly portfolioQuery = this.portfolioService.getPortfolioItems(this.searchTerm)
 
 	protected readonly items = computed<PortfolioItem[]>(() => this.portfolioQuery.data() || [])
+
+	protected readonly getPortfolioImageSrc = getPortfolioImageSrc
+	protected readonly getPortfolioImageRatio = getPortfolioImageRatio
+
+	constructor() {
+		this.searchControl.valueChanges
+			.pipe(debounceTime(500), distinctUntilChanged(), takeUntilDestroyed())
+			.subscribe((term) => {
+				if (this.searchControl.valid) {
+					this.router.navigate([], {
+						relativeTo: this.route,
+						queryParams: { title: term || null },
+						queryParamsHandling: "merge",
+						replaceUrl: true,
+					})
+				}
+			})
+		effect(() => {
+			const urlTerm = this.searchTerm()
+
+			if (this.searchControl.value !== urlTerm) {
+				this.searchControl.setValue(urlTerm, { emitEvent: false })
+			}
+		})
+	}
 
 	ngOnInit() {
 		this.title.setTitle(PAGE_TITLE)
@@ -77,19 +119,10 @@ export default class PageComponent implements OnInit {
 		return $localize`:@@portfolio_page.img_click.aria:View full size image of ${item.title}`
 	}
 
-	getImageSrc(item: PortfolioItem): string {
-		if (this.isMobile() && item.imgMobileSrc) return item.imgMobileSrc
-
-		return item.imgDesktopSrc
-	}
-
-	getImageRatio(item: PortfolioItem): string {
-		if (this.isMobile() && item.imgMobileSrc) return "9 / 16" // Portrait
-
-		return "16 / 9" // Landscape
-	}
-
 	openImage(src: string) {
-		this.store.openModal("image-modal", src)
+		this.store.openModal("image-modal", {
+			src,
+			isMobile: this.isMobile(),
+		})
 	}
 }

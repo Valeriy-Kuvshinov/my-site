@@ -25,17 +25,32 @@ export class PortfolioService {
 		this.logger.setContext(PortfolioService.name)
 	}
 
-	async getAll(): Promise<PortfolioEntity[]> {
-		const cached = await this.cacheManager.get<PortfolioEntity[]>(this.CACHE_ALL_KEY)
+	async getAll(searchParam?: string): Promise<PortfolioEntity[]> {
+		const cacheKey = searchParam
+			? `${this.CACHE_ALL_KEY}:${searchParam.toLowerCase()}`
+			: this.CACHE_ALL_KEY
+
+		const cached = await this.cacheManager.get<PortfolioEntity[]>(cacheKey)
 
 		if (cached) return cached
 
-		this.logger.debug("Fetching all portfolio items from Supabase")
+		this.logger.debug({ searchParam }, "Fetching portfolio items from Supabase")
 
-		const { data, error } = await this.supabase
-			.from(this.TABLE_NAME)
-			.select("*")
-			.order("id", { ascending: true })
+		let query = this.supabase.from(this.TABLE_NAME).select("*").order("id", { ascending: true })
+
+		if (searchParam) {
+			const term = `%${searchParam}%`
+
+			query = query.or(
+				`title->>en.ilike.${term},` +
+					`title->>ru.ilike.${term},` +
+					`title->>he.ilike.${term},` +
+					`description->>en.ilike.${term},` +
+					`description->>ru.ilike.${term},` +
+					`description->>he.ilike.${term}`
+			)
+		}
+		const { data, error } = await query
 
 		if (error) {
 			this.logger.error({ err: error }, "Failed to fetch portfolio items from Supabase")
@@ -43,7 +58,7 @@ export class PortfolioService {
 		}
 		const mappedData = data.map(mapDbToEntity)
 
-		await this.cacheManager.set(this.CACHE_ALL_KEY, mappedData)
+		await this.cacheManager.set(cacheKey, mappedData)
 
 		return mappedData
 	}

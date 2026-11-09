@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy, signal, computed, inject } from "@angular/core"
 
 import { PortfolioItem } from "@/shared/interfaces/portfolio"
+import { getPortfolioImageSrc, getPortfolioImageRatio } from "@/shared/utilities/portfolio.utils"
 
 import { SystemStore } from "@/core/stores/system.store"
 
@@ -64,9 +65,9 @@ const PORTFOLIO_SLIDES: PortfolioItem[] = [
 export class PortfolioCarouselComponent {
 	private readonly store = inject(SystemStore)
 
-	private readonly isMobile = computed(() => this.store.deviceType() === "mobile")
-
 	private readonly isRtl = computed(() => this.store.currentLanguage() === "he")
+
+	protected readonly isMobile = computed(() => this.store.deviceType() === "mobile")
 
 	protected readonly iconSize = computed(() => (!this.isMobile() ? 48 : 32))
 
@@ -74,13 +75,16 @@ export class PortfolioCarouselComponent {
 
 	protected readonly currentIdx = signal(0)
 
+	protected readonly isFirstSlide = computed(() => this.currentIdx() === 0)
+	protected readonly isLastSlide = computed(() => this.currentIdx() === this.slides.length - 1)
+
 	protected readonly transformStyle = computed(() => {
 		const dirMultiplier = this.isRtl() ? 1 : -1
 		return `translateX(${this.currentIdx() * 100 * dirMultiplier}%)`
 	})
 
-	protected readonly isFirstSlide = computed(() => this.currentIdx() === 0)
-	protected readonly isLastSlide = computed(() => this.currentIdx() === this.slides.length - 1)
+	protected readonly getPortfolioImageSrc = getPortfolioImageSrc
+	protected readonly getPortfolioImageRatio = getPortfolioImageRatio
 
 	nextSlide() {
 		if (!this.isLastSlide()) this.currentIdx.update((i) => i + 1)
@@ -94,19 +98,10 @@ export class PortfolioCarouselComponent {
 		return $localize`:@@home.portfolio.img_click.aria:View full size image of ${slide.title}`
 	}
 
-	getImageSrc(slide: PortfolioItem): string {
-		if (this.isMobile() && slide.imgMobileSrc) return slide.imgMobileSrc
-
-		return slide.imgDesktopSrc
-	}
-
-	getImageRatio(slide: PortfolioItem): string {
-		if (this.isMobile() && slide.imgMobileSrc) return "9 / 16" // Portrait
-
-		return "16 / 9" // Landscape
-	}
-
 	openImage(src: string) {
-		this.store.openModal("image-modal", src)
+		this.store.openModal("image-modal", {
+			src,
+			isMobile: this.isMobile(),
+		})
 	}
 }

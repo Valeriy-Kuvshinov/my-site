@@ -1,7 +1,7 @@
-import { Injectable, inject } from "@angular/core"
+import { Injectable, Signal, inject } from "@angular/core"
 import { injectQuery, injectMutation, QueryClient } from "@tanstack/angular-query-experimental"
 
-import { LocalizedString } from "@/shared/interfaces/locale"
+import { LocalizedString, SupportedLanguage } from "@/shared/interfaces/locale"
 import { PortfolioItem, PortfolioEntity } from "@/shared/interfaces/portfolio"
 
 import { QUERY_CLIENT_TOKEN } from "@/core/tokens/query-client.token"
@@ -12,11 +12,32 @@ import { ApiService } from "../api.service"
 
 export const portfolioKeys = {
 	all: ["portfolio"] as const,
-	lists: () => [...portfolioKeys.all, "list"] as const,
+	lists: (search?: string) => [...portfolioKeys.all, "list", { search }] as const,
 	detail: (id: number) => [...portfolioKeys.all, "detail", id] as const,
 }
 
 const PORTFOLIO_ENDPOINT = "portfolio"
+
+function mapEntityToDisplayItem(entity: PortfolioEntity, lang: SupportedLanguage): PortfolioItem {
+	const extractString = (val?: LocalizedString): string => {
+		if (!val) return ""
+
+		return val[lang] || val.en || ""
+	}
+
+	return {
+		id: entity.id,
+		title: extractString(entity.title),
+		description: extractString(entity.description),
+		imgAlt: extractString(entity.imgAlt),
+		note: extractString(entity.note),
+		imgDesktopSrc: entity.imgDesktopSrc || "",
+		imgMobileSrc: entity.imgMobileSrc || "",
+		linkUrl: entity.linkUrl || "",
+		githubUrl: entity.githubUrl || "",
+		isOpenSource: entity.isOpenSource || false,
+	}
+}
 
 @Injectable({
 	providedIn: "root",
@@ -30,17 +51,25 @@ export class PortfolioService {
 
 	// Queries
 	// ===============================
-	getPortfolioItems() {
-		return injectQuery(() => ({
-			queryKey: portfolioKeys.lists(),
-			queryFn: async (): Promise<PortfolioItem[]> => {
-				const response = await this.api.get<PortfolioEntity[]>(PORTFOLIO_ENDPOINT)
+	getPortfolioItems(searchQuerySignal?: Signal<string>) {
+		return injectQuery(() => {
+			const search = searchQuerySignal ? searchQuerySignal() : undefined
 
-				const items = response.data || []
+			return {
+				queryKey: portfolioKeys.lists(search),
+				queryFn: async (): Promise<PortfolioItem[]> => {
+					const params = search ? { search } : undefined
+					const response = await this.api.get<PortfolioEntity[]>(
+						PORTFOLIO_ENDPOINT,
+						params
+					)
+					const items = response.data || []
+					const currentLang = this.store.currentLanguage()
 
-				return items.map((item) => this.mapEntityToDisplayItem(item))
-			},
-		}))
+					return items.map((item) => mapEntityToDisplayItem(item, currentLang))
+				},
+			}
+		})
 	}
 
 	getPortfolioItemById(id: number | null) {
@@ -51,13 +80,17 @@ export class PortfolioService {
 
 				const response = await this.api.get<PortfolioEntity>(`${PORTFOLIO_ENDPOINT}/${id}`)
 
-				return response.data ? this.mapEntityToDisplayItem(response.data) : null
+				if (!response.data) return null
+
+				const currentLang = this.store.currentLanguage()
+
+				return mapEntityToDisplayItem(response.data, currentLang)
 			},
 			enabled: !!id,
 		}))
 	}
 
-	// Mutations (For your future Admin UI)
+	// Mutations
 	// ===============================
 	saveItem() {
 		return injectMutation(() => ({
@@ -78,9 +111,11 @@ export class PortfolioService {
 				this.queryClient.invalidateQueries({ queryKey: portfolioKeys.lists() })
 
 				if (savedItem.id) {
+					const currentLang = this.store.currentLanguage()
+
 					this.queryClient.setQueryData(
 						portfolioKeys.detail(savedItem.id),
-						this.mapEntityToDisplayItem(savedItem)
+						mapEntityToDisplayItem(savedItem, currentLang)
 					)
 				}
 				this.store.showSuccess("Saved!", "Portfolio item saved successfully.")
@@ -106,28 +141,5 @@ export class PortfolioService {
 				this.store.showError("Delete Failed", error.message)
 			},
 		}))
-	}
-
-	// Helper: Map Backend Entity to Frontend Interface
-	private mapEntityToDisplayItem(entity: PortfolioEntity): PortfolioItem {
-		const lang = this.store.currentLanguage()
-
-		const extractString = (val?: LocalizedString): string => {
-			if (!val) return ""
-			return val[lang] || val.en || ""
-		}
-
-		return {
-			id: entity.id,
-			title: extractString(entity.title),
-			description: extractString(entity.description),
-			imgAlt: extractString(entity.imgAlt),
-			note: extractString(entity.note),
-			imgDesktopSrc: entity.imgDesktopSrc,
-			imgMobileSrc: entity.imgMobileSrc,
-			linkUrl: entity.linkUrl,
-			githubUrl: entity.githubUrl,
-			isOpenSource: entity.isOpenSource,
-		}
 	}
 }

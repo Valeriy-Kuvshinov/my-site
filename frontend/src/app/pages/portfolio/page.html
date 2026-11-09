@@ -12,6 +12,26 @@
 				All my proudly published software projects, ranging from final/production versions
 				for my clients to open source.
 			</p>
+
+			<form
+				class="flex flex-row items-center w-full layout-row relative fast-trans"
+				(submit)="$event.preventDefault()">
+				<app-svg-icon
+					icon="magGlass"
+					width="24"
+					height="24"
+					class="absolute">
+				</app-svg-icon>
+				<input
+					type="search"
+					maxlength="80"
+					[formControl]="searchControl"
+					class="w-full relative"
+					i18n-placeholder="@@portfolio_page.search.placeholder"
+					placeholder="Search projects..."
+					i18n-aria-label="@@portfolio_page.search.aria"
+					aria-label="Search for portfolio items" />
+			</form>
 		</div>
 	</article>
 
@@ -37,14 +57,14 @@
 			@for (item of items(); track item.id) {
 			<li class="flex flex-col h-fit fast-trans">
 				<app-image-container
-					[src]="getImageSrc(item)"
+					[src]="getPortfolioImageSrc(item, isMobile())"
 					[alt]="item.imgAlt"
-					[style.aspect-ratio]="getImageRatio(item)"
+					[style.aspect-ratio]="getPortfolioImageRatio(item, isMobile())"
 					class="cursor-pointer"
 					tabindex="0"
 					role="button"
 					[attr.aria-label]="getImageAriaLabel(item)"
-					(onClickEvent)="openImage(getImageSrc(item))">
+					(onClickEvent)="openImage(getPortfolioImageSrc(item, isMobile()))">
 				</app-image-container>
 
 				<div class="content flex flex-col justify-between h-full gap-6">

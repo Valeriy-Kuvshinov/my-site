@@ -19,6 +19,9 @@ export class ExtensionComponent {
 	private readonly store = inject(SystemStore)
 
 	openImage(src: string) {
-		this.store.openModal("image-modal", src)
+		this.store.openModal("image-modal", {
+			src,
+			isMobile: false,
+		})
 	}
 }

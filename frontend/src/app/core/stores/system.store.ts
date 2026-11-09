@@ -50,7 +50,7 @@ export class SystemStore {
 
 	// MODAL STATE
 	readonly activeModals = signal<string[]>([])
-	readonly modalValues = signal<Record<string, string | null>>({})
+	readonly modalValues = signal<Record<string, any>>({})
 	readonly modalFunctions = signal<Record<string, () => void>>({})
 
 	// ACCESSIBILITY STATE
@@ -162,7 +162,7 @@ export class SystemStore {
 
 	// MODALS
 	// =====================================
-	openModal(modalId: string, value?: string, action?: () => void) {
+	openModal(modalId: string, value?: any, action?: () => void) {
 		this.activeModals.update((modals) => [...modals, modalId])
 
 		if (value !== undefined) {
