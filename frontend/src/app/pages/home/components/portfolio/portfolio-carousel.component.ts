@@ -54,7 +54,7 @@ const PORTFOLIO_SLIDES: PortfolioItem[] = [
 		technologies: [
 			"Angular",
 			"NgRx",
-			"Node,js",
+			"Node.js",
 			"Express",
 			"MongoDB (NoSQL)",
 			"TypeScript",
