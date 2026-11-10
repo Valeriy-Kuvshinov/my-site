@@ -12,4 +12,5 @@ export interface PortfolioEntity {
 	githubUrl?: string
 	note?: LocalizedString
 	isOpenSource: boolean
+	technologies?: string[]
 }

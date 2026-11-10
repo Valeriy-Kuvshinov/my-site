@@ -7,24 +7,12 @@ import {
 	IsOptional,
 	IsBoolean,
 	MaxLength,
+	IsArray,
 } from "class-validator"
 
 import { LocalizedString } from "../../../common/interfaces/locale.js"
 import { PortfolioEntity } from "../../../common/interfaces/portfolio.js"
-
-export class LocalizedStringDto implements LocalizedString {
-	@IsString()
-	@IsNotEmpty()
-	en: string
-
-	@IsString()
-	@IsNotEmpty()
-	ru: string
-
-	@IsString()
-	@IsNotEmpty()
-	he: string
-}
+import { LocalizedStringDto } from "../../../common/dto/locale.dto.js"
 
 export class PortfolioItemDto {
 	@ValidateNested()
@@ -66,6 +54,11 @@ export class PortfolioItemDto {
 	@IsBoolean()
 	@IsOptional()
 	isOpenSource: boolean = false
+
+	@IsArray()
+	@IsString({ each: true })
+	@IsOptional()
+	technologies?: string[]
 }
 
 export class PortfolioQueryDto {
@@ -73,11 +66,15 @@ export class PortfolioQueryDto {
 	@IsOptional()
 	@MaxLength(80, { message: "Search query is too long" })
 	search?: string
+
+	@IsString()
+	@IsOptional()
+	technologies?: string
 }
 
 // Data Mappers (Snake Case <-> Camel Case)
 // ===============================
-interface PortfolioDbRow {
+interface dbRow {
 	id: number
 	title: LocalizedString
 	description: LocalizedString
@@ -88,33 +85,63 @@ interface PortfolioDbRow {
 	github_url?: string
 	note?: LocalizedString
 	is_open_source: boolean
+	technologies: string[]
 }
 
-export function mapDbToEntity(row: PortfolioDbRow): PortfolioEntity {
+export function mapDbToEntity(row: dbRow): PortfolioEntity {
+	const {
+		id,
+		title,
+		description,
+		img_desktop_src,
+		img_mobile_src,
+		img_alt,
+		link_url,
+		github_url,
+		note,
+		is_open_source,
+		technologies,
+	} = row
+
 	return {
-		id: row.id,
-		title: row.title,
-		description: row.description,
-		imgDesktopSrc: row.img_desktop_src,
-		imgMobileSrc: row.img_mobile_src,
-		imgAlt: row.img_alt,
-		linkUrl: row.link_url,
-		githubUrl: row.github_url,
-		note: row.note,
-		isOpenSource: row.is_open_source,
+		id: id,
+		title: title,
+		description: description,
+		imgDesktopSrc: img_desktop_src,
+		imgMobileSrc: img_mobile_src,
+		imgAlt: img_alt,
+		linkUrl: link_url,
+		githubUrl: github_url,
+		note: note,
+		isOpenSource: is_open_source,
+		technologies: technologies,
 	}
 }
 
-export function mapEntityToDb(entity: Partial<PortfolioEntity>): Partial<PortfolioDbRow> {
+export function mapEntityToDb(entity: Partial<PortfolioEntity>): Partial<dbRow> {
+	const {
+		title,
+		description,
+		imgDesktopSrc,
+		imgMobileSrc,
+		imgAlt,
+		linkUrl,
+		githubUrl,
+		note,
+		isOpenSource,
+		technologies,
+	} = entity
+
 	return {
-		title: entity.title,
-		description: entity.description,
-		img_desktop_src: entity.imgDesktopSrc,
-		img_mobile_src: entity.imgMobileSrc,
-		img_alt: entity.imgAlt,
-		link_url: entity.linkUrl,
-		github_url: entity.githubUrl,
-		note: entity.note,
-		is_open_source: entity.isOpenSource,
+		title: title,
+		description: description,
+		img_desktop_src: imgDesktopSrc,
+		img_mobile_src: imgMobileSrc,
+		img_alt: imgAlt,
+		link_url: linkUrl,
+		github_url: githubUrl,
+		note: note,
+		is_open_source: isOpenSource,
+		technologies: technologies,
 	}
 }

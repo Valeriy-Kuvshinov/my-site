@@ -27,10 +27,13 @@ type InputAreaType = "text" | "email" | "textarea" | "password" | "tel"
 			}
 			<span>
 				{{ label }}
+
+				<!--  -->
 				@if (required) {
 					<span aria-hidden="true">*</span>
 				}
 			</span>
+			<!--  -->
 			@if (error) {
 				<span class="text-hide-overflow">{{ error }}</span>
 			}
@@ -45,7 +48,9 @@ type InputAreaType = "text" | "email" | "textarea" | "password" | "tel"
 				[attr.aria-required]="required"
 				[attr.maxlength]="maxLength"
 				[placeholder]="placeholder"></textarea>
-		} @else {
+		}
+		<!--  -->
+		@else {
 			<input
 				[formControl]="control"
 				[type]="type"

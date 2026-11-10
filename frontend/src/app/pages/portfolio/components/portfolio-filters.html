@@ -1,0 +1,75 @@
+<form
+	class="flex flex-row items-center layout-row w-full relative fast-trans"
+	(submit)="$event.preventDefault()">
+	<app-svg-icon
+		icon="magGlass"
+		width="24"
+		height="24"
+		class="absolute z-1">
+	</app-svg-icon>
+	<input
+		type="search"
+		maxlength="80"
+		[formControl]="searchControl"
+		class="w-full relative"
+		i18n-placeholder="@@portfolio_page.search.placeholder"
+		placeholder="Search projects..."
+		i18n-aria-label="@@portfolio_page.search.aria"
+		aria-label="Search for portfolio items" />
+</form>
+
+<div class="filters flex flex-col items-center gap-4 w-fit">
+	<ul
+		class="flex flex-row flex-wrap justify-center gap-4 w-full"
+		aria-label="Filter projects by technology"
+		i18n-aria-label="@@portfolio_page.search_tech.aria">
+		<li>
+			<button
+				class="filter-btn"
+				[class.active]="selectedTechs.length === 0"
+				[disabled]="selectedTechs.length === 0"
+				(click)="onTechClick(null)"
+				i18n="@@portfolio_page.filter.all">
+				All
+			</button>
+		</li>
+
+		@for (tech of visibleTechFilters(); track tech) {
+		<li>
+			<button
+				class="filter-btn"
+				[class.active]="selectedTechs.includes(tech)"
+				(click)="onTechClick(tech)">
+				{{ tech }}
+			</button>
+		</li>
+		}
+		<li>
+			<button
+				class="expand-btn flex flex-row items-center gap-2"
+				(click)="toggleFiltersExpand()">
+				@if (isFiltersExpanded()) {
+				<span i18n="@@portfolio_page.filter.collapse">Minimize</span>
+
+				<app-svg-icon
+					icon="arrow"
+					width="16"
+					height="16"
+					class="down">
+				</app-svg-icon>
+				}
+				<!--  -->
+				@else {
+				<span i18n="@@portfolio_page.filter.expand">Expand</span>
+
+				<app-svg-icon
+					icon="arrow"
+					width="16"
+					height="16"
+					class="up">
+				</app-svg-icon>
+				}
+			</button>
+		</li>
+	</ul>
+</div>

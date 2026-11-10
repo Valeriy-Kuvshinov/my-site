@@ -1,4 +1,6 @@
-@if (consent() === null) { @if (deviceType() === 'desktop') {
+@if (consent() === null) {
+<!--  -->
+@if (deviceType() === 'desktop') {
 <aside
 	#bannerRef
 	class="cookie-consent flex flex-row full-center fixed w-fit z-15"
@@ -40,7 +42,9 @@
 		</button>
 	</div>
 </aside>
-} @else {
+}
+<!--  -->
+@else {
 <aside
 	#bannerRef
 	class="cookie-consent flex flex-row justify-center fixed w-fit z-15"

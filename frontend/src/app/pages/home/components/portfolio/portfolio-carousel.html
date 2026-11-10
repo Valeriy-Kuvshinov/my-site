@@ -52,7 +52,19 @@
 
 			<div class="content flex flex-col justify-center gap-4">
 				<h3 class="text-center">{{ slide.title }}</h3>
+
 				<p class="text-center w-full">{{ slide.description }}</p>
+
+				@if (slide.technologies && slide.technologies.length > 0) {
+				<ul
+					class="flex flex-row flex-wrap gap-2 w-full"
+					i18n-aria-label="@@home.portfolio.tech.aria"
+					aria-label="Technologies used">
+					@for (tech of slide.technologies; track tech) {
+					<li class="w-h-fit">{{ tech }}</li>
+					}
+				</ul>
+				}
 			</div>
 		</li>
 		}

@@ -12,7 +12,8 @@ import { ApiService } from "../api.service"
 
 export const portfolioKeys = {
 	all: ["portfolio"] as const,
-	lists: (search?: string) => [...portfolioKeys.all, "list", { search }] as const,
+	lists: (search?: string, technologies?: string[]) =>
+		[...portfolioKeys.all, "list", { search, technologies }] as const,
 	detail: (id: number) => [...portfolioKeys.all, "detail", id] as const,
 }
 
@@ -36,6 +37,7 @@ function mapEntityToDisplayItem(entity: PortfolioEntity, lang: SupportedLanguage
 		linkUrl: entity.linkUrl || "",
 		githubUrl: entity.githubUrl || "",
 		isOpenSource: entity.isOpenSource || false,
+		technologies: entity.technologies || [],
 	}
 }
 
@@ -51,19 +53,27 @@ export class PortfolioService {
 
 	// Queries
 	// ===============================
-	getPortfolioItems(searchQuerySignal?: Signal<string>) {
+	getPortfolioItems(searchQuerySignal?: Signal<string>, techQuerySignal?: Signal<string[]>) {
 		return injectQuery(() => {
 			const search = searchQuerySignal ? searchQuerySignal() : undefined
+			const technologies = techQuerySignal ? techQuerySignal() : undefined
 
 			return {
-				queryKey: portfolioKeys.lists(search),
+				queryKey: portfolioKeys.lists(search, technologies),
 				queryFn: async (): Promise<PortfolioItem[]> => {
-					const params = search ? { search } : undefined
+					const params: Record<string, string> = {}
+
+					if (search) params["search"] = search
+
+					if (technologies && technologies.length > 0) {
+						params["technologies"] = technologies.join(",")
+					}
 					const response = await this.api.get<PortfolioEntity[]>(
 						PORTFOLIO_ENDPOINT,
 						params
 					)
 					const items = response.data || []
+
 					const currentLang = this.store.currentLanguage()
 
 					return items.map((item) => mapEntityToDisplayItem(item, currentLang))

@@ -4,7 +4,7 @@
 			<h1
 				i18n="@@portfolio_page.intro.title"
 				class="text-center text-family-bold">
-				Accomplished Work
+				Projects
 			</h1>
 			<p
 				i18n="@@portfolio_page.intro.desc"
@@ -13,54 +13,54 @@
 				for my clients to open source.
 			</p>
 
-			<form
-				class="flex flex-row items-center w-full layout-row relative fast-trans"
-				(submit)="$event.preventDefault()">
-				<app-svg-icon
-					icon="magGlass"
-					width="24"
-					height="24"
-					class="absolute">
-				</app-svg-icon>
-				<input
-					type="search"
-					maxlength="80"
-					[formControl]="searchControl"
-					class="w-full relative"
-					i18n-placeholder="@@portfolio_page.search.placeholder"
-					placeholder="Search projects..."
-					i18n-aria-label="@@portfolio_page.search.aria"
-					aria-label="Search for portfolio items" />
-			</form>
+			<app-portfolio-filters
+				[searchControl]="searchControl"
+				[selectedTechs]="selectedTechs()"
+				(techToggled)="toggleTech($event)">
+			</app-portfolio-filters>
 		</div>
 	</article>
 
-	<article class="gallery flex flex-col items-center w-full">
+	<article class="portfolio flex flex-col items-center w-full">
 		@if (portfolioQuery.isPending()) {
 		<app-loading></app-loading>
-		} @else if (portfolioQuery.isError()) {
+		}
+		<!--  -->
+		@else if (portfolioQuery.isError()) {
 		<app-error-banner
 			i18n-message="@@portfolio_page.error.msg"
 			message="Failed to load data. Please try again later..."
 			type="general"
 			[showReturn]="false">
 		</app-error-banner>
-		} @else if (items().length === 0) {
+		}
+		<!--  -->
+		@else if (projectCount() === 0) {
 		<app-error-banner
 			i18n-message="@@portfolio_page.empty.msg"
 			message="Nothing found to display..."
 			type="search"
 			[showReturn]="false">
 		</app-error-banner>
-		} @else {
-		<ul class="layout-row w-full">
+		}
+		<!--  -->
+		@else {
+		<div class="counter flex w-fit layout-row">
+			<span class="text-family-bold">
+				<ng-container i18n="@@portfolio_page.results.count">Showing</ng-container>
+				{{ projectCount() }}
+				<ng-container i18n="@@portfolio_page.results.projects">projects</ng-container>
+			</span>
+		</div>
+
+		<ul class="projects layout-row w-full">
 			@for (item of items(); track item.id) {
-			<li class="flex flex-col h-fit fast-trans">
+			<li class="project flex flex-col h-fit fast-trans">
 				<app-image-container
 					[src]="getPortfolioImageSrc(item, isMobile())"
 					[alt]="item.imgAlt"
 					[style.aspect-ratio]="getPortfolioImageRatio(item, isMobile())"
-					class="cursor-pointer"
+					class="cursor-pointer fast-trans"
 					tabindex="0"
 					role="button"
 					[attr.aria-label]="getImageAriaLabel(item)"
@@ -70,10 +70,22 @@
 				<div class="content flex flex-col justify-between h-full gap-6">
 					<div class="text flex flex-col gap-4">
 						<h2 class="text-family-bold">{{ item.title }}</h2>
+
 						<p>{{ item.description }}</p>
 
 						@if(item.note) {
 						<p>{{ item.note }}</p>
+						}
+						<!--  -->
+						@if (item.technologies && item.technologies.length > 0) {
+						<ul
+							class="flex flex-row flex-wrap gap-2 w-full"
+							i18n-aria-label="@@portfolio_page.project_tech.aria"
+							aria-label="Technologies used">
+							@for (tech of item.technologies; track tech) {
+							<li class="w-h-fit">{{ tech }}</li>
+							}
+						</ul>
 						}
 					</div>
 
@@ -94,7 +106,9 @@
 								height="24">
 							</app-svg-icon>
 						</a>
-						} @if (item.githubUrl) {
+						}
+						<!--  -->
+						@if (item.githubUrl) {
 						<a
 							[href]="item.githubUrl"
 							target="_blank"

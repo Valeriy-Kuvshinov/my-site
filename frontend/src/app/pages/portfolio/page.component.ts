@@ -17,6 +17,7 @@ import { ImageContainerComponent } from "@/shared/components/general/image-conta
 import { SvgIconComponent } from "@/shared/components/icon/icon.component"
 import { LoadingComponent } from "@/shared/components/loading/loading.component"
 import { ErrorBannerComponent } from "@/shared/components/error-banner/error-banner.component"
+import { PortfolioFiltersComponent } from "./components/portfolio-filters.component"
 
 const PAGE_TITLE = $localize`:@@portfolio_page.meta.title:Portfolio | Kuvshinov Software`
 const PAGE_URL = "/portfolio/"
@@ -31,7 +32,7 @@ const PAGE_DESC = $localize`:@@portfolio_page.meta.desc:Browse through the proje
 		RouterLink,
 		LoadingComponent,
 		ErrorBannerComponent,
-		ReactiveFormsModule,
+		PortfolioFiltersComponent,
 	],
 	templateUrl: "./page.html",
 	styleUrl: "./page.css",
@@ -44,28 +45,33 @@ export default class PageComponent implements OnInit {
 	private readonly title = inject(Title)
 	private readonly meta = inject(Meta)
 	private readonly document = inject(DOCUMENT)
-
 	private readonly store = inject(SystemStore)
-
 	private readonly portfolioService = inject(PortfolioService)
-
 	private readonly route = inject(ActivatedRoute)
 	private readonly router = inject(Router)
 
 	private readonly routeQueryMap = toSignal(this.route.queryParamMap)
-
 	protected readonly isMobile = computed(() => this.store.deviceType() === "mobile")
 
 	protected readonly searchTerm = computed(() => this.routeQueryMap()?.get("title") || "")
+
+	protected readonly selectedTechs = computed(() => {
+		const techStr = this.routeQueryMap()?.get("tech")
+		return techStr ? techStr.split(",") : []
+	})
 
 	protected readonly searchControl = new FormControl(this.searchTerm(), {
 		nonNullable: true,
 		validators: [Validators.maxLength(80)],
 	})
 
-	readonly portfolioQuery = this.portfolioService.getPortfolioItems(this.searchTerm)
+	protected readonly portfolioQuery = this.portfolioService.getPortfolioItems(
+		this.searchTerm,
+		this.selectedTechs
+	)
 
 	protected readonly items = computed<PortfolioItem[]>(() => this.portfolioQuery.data() || [])
+	protected readonly projectCount = computed(() => this.items().length)
 
 	protected readonly getPortfolioImageSrc = getPortfolioImageSrc
 	protected readonly getPortfolioImageRatio = getPortfolioImageRatio
@@ -83,9 +89,9 @@ export default class PageComponent implements OnInit {
 					})
 				}
 			})
+
 		effect(() => {
 			const urlTerm = this.searchTerm()
-
 			if (this.searchControl.value !== urlTerm) {
 				this.searchControl.setValue(urlTerm, { emitEvent: false })
 			}
@@ -106,13 +112,28 @@ export default class PageComponent implements OnInit {
 
 	private setCanonicalUrl(url: string) {
 		let link: HTMLLinkElement | null = this.document.querySelector('link[rel="canonical"]')
-
 		if (!link) {
 			link = this.document.createElement("link")
 			link.setAttribute("rel", "canonical")
 			this.document.head.appendChild(link)
 		}
 		link.setAttribute("href", url)
+	}
+
+	toggleTech(tech: string | null) {
+		let newTechs: string[] = []
+
+		if (tech !== null) {
+			const current = this.selectedTechs()
+			if (current.includes(tech)) newTechs = current.filter((t) => t !== tech)
+			else newTechs = [...current, tech]
+		}
+		this.router.navigate([], {
+			relativeTo: this.route,
+			queryParams: { tech: newTechs.length > 0 ? newTechs.join(",") : null },
+			queryParamsHandling: "merge",
+			replaceUrl: true,
+		})
 	}
 
 	getImageAriaLabel(item: PortfolioItem): string {

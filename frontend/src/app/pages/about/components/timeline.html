@@ -35,7 +35,9 @@
 </div>
 
 <div class="info w-full relative">
-	@for (step of steps; track step.id; let idx = $index) { @if (activeTab() === idx) {
+	@for (step of steps; track step.id; let idx = $index) {
+	<!--  -->
+	@if (activeTab() === idx) {
 	<div
 		class="panel flex flex-col gap-4 w-full"
 		role="tabpanel"

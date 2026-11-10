@@ -25,16 +25,18 @@ export class PortfolioService {
 		this.logger.setContext(PortfolioService.name)
 	}
 
-	async getAll(searchParam?: string): Promise<PortfolioEntity[]> {
-		const cacheKey = searchParam
-			? `${this.CACHE_ALL_KEY}:${searchParam.toLowerCase()}`
-			: this.CACHE_ALL_KEY
+	async getAll(searchParam?: string, techParam?: string): Promise<PortfolioEntity[]> {
+		const cacheParts = [this.CACHE_ALL_KEY]
 
+		if (searchParam) cacheParts.push(`search:${searchParam.toLowerCase()}`)
+		if (techParam) cacheParts.push(`tech:${techParam.toLowerCase()}`)
+
+		const cacheKey = cacheParts.join("|")
 		const cached = await this.cacheManager.get<PortfolioEntity[]>(cacheKey)
 
 		if (cached) return cached
 
-		this.logger.debug({ searchParam }, "Fetching portfolio items from Supabase")
+		this.logger.debug({ searchParam, techParam }, "Fetching portfolio items from Supabase")
 
 		let query = this.supabase.from(this.TABLE_NAME).select("*").order("id", { ascending: true })
 
@@ -42,13 +44,13 @@ export class PortfolioService {
 			const term = `%${searchParam}%`
 
 			query = query.or(
-				`title->>en.ilike.${term},` +
-					`title->>ru.ilike.${term},` +
-					`title->>he.ilike.${term},` +
-					`description->>en.ilike.${term},` +
-					`description->>ru.ilike.${term},` +
-					`description->>he.ilike.${term}`
+				`title->>en.ilike.${term},title->>ru.ilike.${term},title->>he.ilike.${term},` +
+					`description->>en.ilike.${term},description->>ru.ilike.${term},description->>he.ilike.${term}`
 			)
+		}
+		if (techParam) {
+			const techs = techParam.split(",").map((t) => t.trim())
+			query = query.contains("technologies", techs)
 		}
 		const { data, error } = await query
 

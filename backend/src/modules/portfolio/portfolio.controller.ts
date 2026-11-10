@@ -28,9 +28,12 @@ export class PortfolioController {
 
 	@Get()
 	async getAll(@Query() query: PortfolioQueryDto) {
-		this.logger.info({ search: query.search }, "Fetching portfolio items")
+		this.logger.info(
+			{ search: query.search, tech: query.technologies },
+			"Fetching portfolio items"
+		)
 		try {
-			const items = await this.portfolioService.getAll(query.search)
+			const items = await this.portfolioService.getAll(query.search, query.technologies)
 			return { data: items, message: "Portfolio items fetched successfully" }
 		} catch (err) {
 			this.logger.error({ err }, "Failed to get portfolio items")

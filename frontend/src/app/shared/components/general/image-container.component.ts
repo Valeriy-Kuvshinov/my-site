@@ -44,7 +44,9 @@ const CustomImageLoaderProvider: Provider = {
 				[class.fast-trans]="!disableFade"
 				[class.hide]="!isLoaded()"
 				(load)="onLoad()" />
-		} @else {
+		}
+		<!--  -->
+		@else {
 			<img
 				[ngSrc]="src"
 				[alt]="alt"

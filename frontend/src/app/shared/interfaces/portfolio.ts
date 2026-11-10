@@ -12,6 +12,7 @@ export interface PortfolioEntity {
 	githubUrl?: string
 	note?: LocalizedString
 	isOpenSource: boolean
+	technologies?: string[]
 }
 
 // Display
@@ -26,4 +27,5 @@ export interface PortfolioItem {
 	githubUrl?: string
 	note?: string
 	isOpenSource: boolean
+	technologies?: string[]
 }

@@ -24,6 +24,8 @@ import { SvgIconComponent } from "../../icon/icon.component"
 				</app-svg-icon>
 			}
 			<span>{{ label }}</span>
+
+			<!--  -->
 			@if (error) {
 				<span class="text-hide-overflow">{{ error }}</span>
 			}

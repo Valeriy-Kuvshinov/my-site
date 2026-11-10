@@ -8,32 +8,11 @@
 		var(--prmclr3)
 	);
 
-	.intro .text form {
-		max-width: 30rem;
-
-		app-svg-icon {
-			z-index: 1;
-			top: 0.5rem;
-			fill: var(--scdclr2);
-		}
-
-		input {
-			color: var(--scdclr2);
-			border: 2px solid var(--scdclr5);
-			border-radius: 1rem;
-			font-size: 1.1rem;
-
-			&:focus {
-				border-color: var(--mnrclr2);
-			}
-		}
-	}
-
-	.gallery ul {
+	.portfolio .projects {
 		max-width: 100rem;
 		column-gap: 2rem;
 
-		li {
+		.project {
 			border: 1px solid var(--scdclr6);
 			border-radius: 0.75rem;
 			overflow: hidden;
@@ -41,6 +20,16 @@
 
 			.content {
 				padding: 1rem;
+
+				.text ul li {
+					padding: 0.25rem 0.75rem;
+					background: var(--scdclr8);
+					color: var(--mnrclr4);
+					border: 1px solid var(--scdclr5);
+					border-radius: 1rem;
+					font-size: 0.875rem;
+					line-height: 1.2;
+				}
 
 				nav {
 					padding-block-start: 1rem;
@@ -78,6 +67,15 @@
 					}
 				}
 			}
+
+			&:hover,
+			&:focus-visible {
+				transform: translateY(-0.5rem);
+
+				app-image-container {
+					scale: 1.05;
+				}
+			}
 		}
 	}
 
@@ -109,15 +107,15 @@
 			}
 		}
 
-		.gallery ul,
+		.portfolio .projects,
 		.cta {
 			padding: 3rem 1rem;
 		}
 
-		.gallery ul {
+		.portfolio .projects {
 			column-width: 100%;
 
-			li .content h2 {
+			.project .content .text h2 {
 				font-size: 1.25rem;
 			}
 		}
@@ -138,23 +136,16 @@
 			}
 		}
 
-		.gallery ul,
+		.portfolio .projects,
 		.cta {
 			padding: 4rem 2rem;
 		}
 
-		.gallery ul {
+		.portfolio .projects {
 			column-width: 25rem;
 
-			li {
-				.content h2 {
-					font-size: 1.5rem;
-				}
-
-				&:hover,
-				&:focus-within {
-					scale: 1.05;
-				}
+			.project .content .text h2 {
+				font-size: 1.5rem;
 			}
 		}
 
@@ -164,26 +155,3 @@
 	}
 }
 
-:host-context([dir="ltr"]) {
-	.intro .text form {
-		app-svg-icon {
-			left: 0.5rem;
-		}
-
-		input {
-			padding: 0.25rem 0.5rem 0.25rem 2.5rem;
-		}
-	}
-}
-
-:host-context([dir="rtl"]) {
-	.intro .text form {
-		app-svg-icon {
-			right: 0.5rem;
-		}
-
-		input {
-			padding: 0.25rem 2.5rem 0.25rem 0.5rem;
-		}
-	}
-}
