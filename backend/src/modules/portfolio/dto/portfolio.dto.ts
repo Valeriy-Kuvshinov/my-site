@@ -86,6 +86,7 @@ interface dbRow {
 	note?: LocalizedString
 	is_open_source: boolean
 	technologies: string[]
+	created_at: string
 }
 
 export function mapDbToEntity(row: dbRow): PortfolioEntity {
@@ -101,6 +102,7 @@ export function mapDbToEntity(row: dbRow): PortfolioEntity {
 		note,
 		is_open_source,
 		technologies,
+		created_at,
 	} = row
 
 	return {
@@ -115,6 +117,7 @@ export function mapDbToEntity(row: dbRow): PortfolioEntity {
 		note: note,
 		isOpenSource: is_open_source,
 		technologies: technologies,
+		createdAt: created_at,
 	}
 }
 
@@ -130,6 +133,7 @@ export function mapEntityToDb(entity: Partial<PortfolioEntity>): Partial<dbRow> 
 		note,
 		isOpenSource,
 		technologies,
+		createdAt,
 	} = entity
 
 	return {
@@ -143,5 +147,6 @@ export function mapEntityToDb(entity: Partial<PortfolioEntity>): Partial<dbRow> 
 		note: note,
 		is_open_source: isOpenSource,
 		technologies: technologies,
+		created_at: createdAt,
 	}
 }

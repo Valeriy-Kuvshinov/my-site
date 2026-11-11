@@ -13,4 +13,5 @@ export interface PortfolioEntity {
 	note?: LocalizedString
 	isOpenSource: boolean
 	technologies?: string[]
+	createdAt?: string
 }

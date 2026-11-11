@@ -13,6 +13,7 @@ export interface PortfolioEntity {
 	note?: LocalizedString
 	isOpenSource: boolean
 	technologies?: string[]
+	createdAt?: string
 }
 
 // Display
@@ -28,4 +29,5 @@ export interface PortfolioItem {
 	note?: string
 	isOpenSource: boolean
 	technologies?: string[]
+	createdAt?: string
 }

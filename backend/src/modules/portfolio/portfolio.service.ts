@@ -29,6 +29,7 @@ export class PortfolioService {
 		const cacheParts = [this.CACHE_ALL_KEY]
 
 		if (searchParam) cacheParts.push(`search:${searchParam.toLowerCase()}`)
+
 		if (techParam) cacheParts.push(`tech:${techParam.toLowerCase()}`)
 
 		const cacheKey = cacheParts.join("|")
@@ -38,7 +39,10 @@ export class PortfolioService {
 
 		this.logger.debug({ searchParam, techParam }, "Fetching portfolio items from Supabase")
 
-		let query = this.supabase.from(this.TABLE_NAME).select("*").order("id", { ascending: true })
+		let query = this.supabase
+			.from(this.TABLE_NAME)
+			.select("*")
+			.order("created_at", { ascending: false })
 
 		if (searchParam) {
 			const term = `%${searchParam}%`
