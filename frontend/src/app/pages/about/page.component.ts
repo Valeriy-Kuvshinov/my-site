@@ -34,13 +34,13 @@ export default class PageComponent implements OnInit {
 
 	protected readonly resumeUrl = computed(() =>
 		this.store.currentLanguage() === "he"
-			? "/cv/Valeriy-Kuvshinov-Full-Stack-Engineer-HE.pdf"
+			? "/cv/Valeriy-Kuvshinov-Full-Stack-Engineer-hebrew.pdf"
 			: "/cv/Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
 	)
 
 	protected readonly resumeName = computed(() =>
 		this.store.currentLanguage() === "he"
-			? "Valeriy-Kuvshinov-Full-Stack-Engineer-HE.pdf"
+			? "Valeriy-Kuvshinov-Full-Stack-Engineer-hebrew.pdf"
 			: "Valeriy-Kuvshinov-Full-Stack-Engineer.pdf"
 	)
 
