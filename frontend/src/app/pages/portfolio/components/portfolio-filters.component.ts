@@ -18,6 +18,7 @@ const TECH_FILTERS = [
 	"Linux",
 	"MongoDB (NoSQL)",
 	"Next.js",
+	"NestJS",
 	"NgRx",
 	"Node.js",
 	"PowerShell",

@@ -1,7 +1,7 @@
 import { Component, computed, DOCUMENT, effect, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 import { ActivatedRoute, Router, RouterLink } from "@angular/router"
-import { FormControl, ReactiveFormsModule, Validators } from "@angular/forms"
+import { FormControl, Validators } from "@angular/forms"
 import { takeUntilDestroyed, toSignal } from "@angular/core/rxjs-interop"
 import { debounceTime, distinctUntilChanged } from "rxjs"
 
@@ -92,6 +92,7 @@ export default class PageComponent implements OnInit {
 
 		effect(() => {
 			const urlTerm = this.searchTerm()
+
 			if (this.searchControl.value !== urlTerm) {
 				this.searchControl.setValue(urlTerm, { emitEvent: false })
 			}
@@ -112,6 +113,7 @@ export default class PageComponent implements OnInit {
 
 	private setCanonicalUrl(url: string) {
 		let link: HTMLLinkElement | null = this.document.querySelector('link[rel="canonical"]')
+
 		if (!link) {
 			link = this.document.createElement("link")
 			link.setAttribute("rel", "canonical")
@@ -125,6 +127,7 @@ export default class PageComponent implements OnInit {
 
 		if (tech !== null) {
 			const current = this.selectedTechs()
+
 			if (current.includes(tech)) newTechs = current.filter((t) => t !== tech)
 			else newTechs = [...current, tech]
 		}

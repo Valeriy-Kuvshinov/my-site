@@ -92,7 +92,7 @@
 
 	@media (max-width: 900px) {
 		gap: 2rem;
-		padding: 6rem 1rem 1rem 1rem;
+		padding: 7rem 1rem 1rem 1rem;
 		background: linear-gradient(
 			0deg,
 			var(--scdclr9),
@@ -103,13 +103,17 @@
 		);
 
 		.about-link {
-			max-width: 10rem;
+			max-width: 20vw;
 			margin-block-start: 1rem;
 			align-self: center;
 		}
 	}
 
 	@media (max-width: 600px) {
+		.about-link {
+			max-width: 10rem;
+		}
+
 		.content {
 			h1 {
 				font-size: 1.75rem;
@@ -149,7 +153,7 @@
 	}
 
 	@media (min-width: 901px) {
-		padding: 6rem 2rem 2rem 2rem;
+		padding: 5rem 2rem 2rem 2rem;
 		background: radial-gradient(
 			ellipse at 100% 40%,
 			var(--scdclr6) 0%,
@@ -160,7 +164,7 @@
 
 		.about-link {
 			position: absolute;
-			max-width: 10rem;
+			max-width: 18vw;
 			top: 30vh;
 		}
 
@@ -169,15 +173,8 @@
 		}
 	}
 
-	@media (min-width: 1201px) {
-		.about-link {
-			max-width: 12rem;
-		}
-	}
-
 	@media (min-width: 1401px) {
 		.about-link {
-			max-width: 18rem;
 			top: 20vh;
 		}
 	}
