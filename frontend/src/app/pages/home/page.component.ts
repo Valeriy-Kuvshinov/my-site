@@ -32,9 +32,9 @@ const HIGHLIGHTS: Highlight[] = [
 	{
 		icon: "production",
 		value: "5+",
-		label: $localize`:@@home.highlight.production:Launched Productions`,
+		label: $localize`:@@home.highlight.production:Live Production Systems`,
 	},
-	{ icon: "source", value: "2+", label: $localize`:@@home.highlight.oss:Open Source Projects` },
+	{ icon: "source", value: "4+", label: $localize`:@@home.highlight.oss:Open Source Projects` },
 	{
 		icon: "magGlass",
 		value: "3+",
@@ -44,7 +44,7 @@ const HIGHLIGHTS: Highlight[] = [
 	{
 		icon: "commits",
 		value: "3000+",
-		label: $localize`:@@home.highlight.commits:GitHub Contributions`,
+		label: $localize`:@@home.highlight.commits:GitHub Commits`,
 	},
 ]
 
@@ -54,22 +54,22 @@ const SPECIALTIES: Specialty[] = [
 		description: $localize`:@@home.specialty1.desc:Escaping the limitations of templated platforms. I build custom, semantic web applications with automated cloud deployments using modern stacks.`,
 	},
 	{
-		title: $localize`:@@home.specialty2.title:A11y Compliance & Legal Immunity`,
-		description: $localize`:@@home.specialty2.desc:Auditing and refactoring digital infrastructure to natively meet WCAG 2.1 AA/AAA and Israeli standards - providing true legal protection that accessibility overlays simply cannot offer.`,
+		title: $localize`:@@home.specialty2.title:Accessibility Compliance & Risk Reduction`,
+		description: $localize`:@@home.specialty2.desc:Auditing and refactoring digital infrastructure to natively meet WCAG 2.1 AA/AAA and Israeli standards, reducing legal risk in a way accessibility overlays alone cannot.`,
 	},
 	{
 		title: $localize`:@@home.specialty3.title:System Architecture & Optimization`,
 		description: $localize`:@@home.specialty3.desc:Serving as a technical consultant to resolve critical bottlenecks, secure legacy e-commerce platforms, and orchestrate highly scalable, independent digital assets.`,
 	},
 	{
-		title: $localize`:@@home.specialty4.title:Remote Digital Assistance`,
-		description: $localize`:@@home.specialty4.desc:Dedicated one-on-one support for individuals facing severe digital barriers, providing secure navigation assistance for inaccessible sites and complex verification systems.`,
+		title: $localize`:@@home.specialty4.title:Screen Reader Navigation Tutoring`,
+		description: $localize`:@@home.specialty4.desc:Patient one-on-one tutoring for people facing digital barriers: live descriptions of on-screen layouts and coaching through inaccessible sites, forms, and checkout flows, with you in full control.`,
 	},
 ]
 
 const PAGE_TITLE = "Kuvshinov Software"
 const PAGE_URL = "/"
-const PAGE_DESC = $localize`:@@home.meta.desc:Kuvshinov Software - Providing you websites, systems, open source and accessibility assistance with care.`
+const PAGE_DESC = $localize`:@@home.meta.desc:Kuvshinov Software: custom websites and backend systems, accessibility help, and open source projects, built with care.`
 
 @Component({
 	selector: "main[app-home-page]",

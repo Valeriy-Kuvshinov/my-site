@@ -1,4 +1,4 @@
-import { Component, computed, DOCUMENT, inject, OnInit } from "@angular/core"
+import { Component, DOCUMENT, inject, OnInit } from "@angular/core"
 import { Title, Meta } from "@angular/platform-browser"
 import { RouterLink } from "@angular/router"
 
@@ -27,12 +27,12 @@ interface ProcessStep {
 const SERVICES: ServiceCard[] = [
 	{
 		icon: "monitor",
-		title: $localize`:@@services.card1.title:Custom Web Development`,
+		title: $localize`:@@services.card1.title:Custom Software Development`,
 		price: $localize`:@@services.card1.price:From $1000`,
-		description: $localize`:@@services.card1.desc:Starting at $1000 for highly optimized static landing pages, scaling up to secure full-stack applications. By deploying your system on independent cloud infrastructure, I can often eliminate your monthly hosting subscriptions entirely.`,
+		description: $localize`:@@services.card1.desc:From highly optimized static landing pages to secure full-stack applications. By deploying your system on independent cloud infrastructure, I can often eliminate your monthly hosting subscriptions entirely.`,
 		skills: [
-			{ text: $localize`:@@services.card1.skill1:Secure Backend, WCAG AA Frontend` },
-			{ text: $localize`:@@services.card1.skill2:Cost-Efficient Cloud Hosting` },
+			{ text: $localize`:@@services.card1.skill1:Web, Desktop & Backend Systems` },
+			{ text: $localize`:@@services.card1.skill2:Secure Backend, WCAG AA Frontend` },
 			{ text: $localize`:@@services.card1.skill3:Multi-language & RTL-LTR Support` },
 			{ text: $localize`:@@services.card1.skill4:E-Commerce Integrations` },
 		],
@@ -41,7 +41,7 @@ const SERVICES: ServiceCard[] = [
 		icon: "wheelchair",
 		title: $localize`:@@services.card2.title:A11y Audits & ARIA Fixes`,
 		price: $localize`:@@services.card2.price:$100 per page`,
-		description: $localize`:@@services.card2.desc:Automated accessibility widgets do not protect you from lawsuits. True accessibility requires fixing the underlying code so keyboards and screen readers can actually navigate it.`,
+		description: $localize`:@@services.card2.desc:Automated accessibility widgets alone do not make a site compliant or protect you from lawsuits. Real accessibility means fixing the underlying code so keyboards and screen readers can actually navigate it.`,
 		skills: [
 			{ text: $localize`:@@services.card2.skill1:Manual Page Elements Rewrites` },
 			{ text: $localize`:@@services.card2.skill2:WCAG AA Violation Reports` },
@@ -53,7 +53,7 @@ const SERVICES: ServiceCard[] = [
 		icon: "fix",
 		title: $localize`:@@services.card3.title:System Rescue & Maintenance`,
 		price: $localize`:@@services.card3.price:$80 per hour`,
-		description: $localize`:@@services.card3.desc:Got a website that is crashing, running slow, or full of bugs? Relying on AI-generated code that suddenly broke? I can jump in, clean up the technical debt, and make your system stable and secure.`,
+		description: $localize`:@@services.card3.desc:Got a website that is crashing, running slow, or full of bugs? Relying on AI-generated code that suddenly broke? I can jump in, clean up the technical debt, and get your system stable and secure.`,
 		skills: [
 			{ text: $localize`:@@services.card3.skill1:Legacy Code Maintenance & Updating` },
 			{ text: $localize`:@@services.card3.skill2:Performance Speed Boosts` },
@@ -63,13 +63,13 @@ const SERVICES: ServiceCard[] = [
 	},
 	{
 		icon: "support",
-		title: $localize`:@@services.card4.title:Remote Digital Assistance`,
-		price: $localize`:@@services.card4.price:$20 per hour`,
-		description: $localize`:@@services.card4.desc:Dedicated help for individuals who get blocked by annoying captchas, confusing government portals, or inaccessible web forms.`,
+		title: $localize`:@@services.card4.title:Screen Reader Navigation Tutoring`,
+		price: $localize`:@@services.card4.price:$20 per 1-hour session`,
+		description: $localize`:@@services.card4.desc:Patient, live one-on-one tutoring for people who rely on screen readers or keyboard navigation. I describe what is on screen, coach you through unlabeled or broken elements, and map the site so you can repeat the steps on your own. Verbal guidance only: you stay in full control. Regular clients get a reduced rate (17$ per 1-hour session).`,
 		skills: [
-			{ text: $localize`:@@services.card4.skill1:Bypassing Visual Barriers` },
-			{ text: $localize`:@@services.card4.skill2:Form & Document Completion` },
-			{ text: $localize`:@@services.card4.skill3:Patient 1-on-1 Support` },
+			{ text: $localize`:@@services.card4.skill1:Live Description of On-Screen Layouts` },
+			{ text: $localize`:@@services.card4.skill2:Screen Reader & Keyboard Coaching` },
+			{ text: $localize`:@@services.card4.skill3:Site Mapping & Written Recaps` },
 		],
 	},
 ]
@@ -77,21 +77,21 @@ const SERVICES: ServiceCard[] = [
 const PROCESS_STEPS: ProcessStep[] = [
 	{
 		title: $localize`:@@services.step1.title:Infrastructure & Complete Ownership`,
-		description: $localize`:@@services.step1.desc:I guide you through establishing your own independent cloud hosting. You retain absolute control over passwords and billing, eliminating vendor lock-in. I act strictly as your dedicated engineer.`,
+		description: $localize`:@@services.step1.desc:I guide you through setting up your own independent cloud hosting. You keep full control of passwords and billing, avoiding vendor lock-in. I act strictly as your dedicated engineer.`,
 	},
 	{
 		title: $localize`:@@services.step2.title:Custom System Engineering`,
-		description: $localize`:@@services.step2.desc:Your digital infrastructure is engineered from scratch. By bypassing bloated templates and expensive CMS platforms, I ensure the final product is lightning-fast, highly secure, and legally accessible by design.`,
+		description: $localize`:@@services.step2.desc:Your system is engineered from scratch. By skipping bloated templates and expensive CMS platforms, I aim for a final product that is fast, secure, and built to WCAG 2.1 AA from the start.`,
 	},
 	{
 		title: $localize`:@@services.step3.title:Deployment & Lifecycle Support`,
-		description: $localize`:@@services.step3.desc:Upon launch, you own an independent, low-overhead system. I provide 12 months of structural bug fixes free of charge. Subsequent years transition to a standard retainer strictly for security patching, with new features billed separately.`,
+		description: $localize`:@@services.step3.desc:After launch, you own an independent, low-overhead system. I provide 12 months of structural bug fixes free of charge. After that, a standard retainer covers security patching only, and new features are billed separately.`,
 	},
 ]
 
 const PAGE_TITLE = $localize`:@@services.meta.title:Services | Kuvshinov Software`
 const PAGE_URL = "/services/"
-const PAGE_DESC = $localize`:@@services.meta.desc:Browse through our transparent services and pricing to decide what fits your project.`
+const PAGE_DESC = $localize`:@@services.meta.desc:Browse my transparent services and pricing to decide what fits your project.`
 
 @Component({
 	selector: "main[app-services-page]",

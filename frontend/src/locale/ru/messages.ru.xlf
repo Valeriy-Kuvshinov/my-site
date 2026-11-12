@@ -259,8 +259,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="about.timeline.step1.desc" datatype="html">
-        <source>Served in the Israeli Defense Forces (Aman), specializing in OSINT-based network analysis and technical intelligence. This high-stakes environment cemented my rigorous, risk-averse approach to system security and data integrity.</source>
-        <target>Служил в Армии обороны Израиля (АМАН), специализируясь на сетевом анализе на базе OSINT и технической разведке. Эта среда с высокими ставками закрепила мой строгий, не приемлющий рисков подход к безопасности систем и целостности данных.</target>
+        <source>Served in IDF Military Intelligence as a tech advisor and risk analyst: network traffic and telemetry audits, endpoint hardening, and OPSEC and network-isolation reviews. This high-stakes environment shaped my risk-aware approach to system security and data integrity.</source>
+        <target>Служил в военной разведке ЦАХАЛа техническим консультантом и аналитиком рисков: аудит сетевого трафика и телеметрии, ужесточение защиты конечных устройств, проверки OPSEC и сетевой изоляции. Эта среда с высокими ставками сформировала мой осознанный подход к рискам, безопасности систем и целостности данных.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/components/timeline.component.ts</context>
           <context context-type="linenumber">20</context>
@@ -275,24 +275,24 @@
         </context-group>
       </trans-unit>
       <trans-unit id="about.timeline.step2.desc" datatype="html">
-        <source>Completed an intensive, highly selective full-stack software developer bootcamp. Transitioned my analytical military background directly into modern web technologies, mastering React, Angular, and Node.js with REST API architectures.</source>
-        <target>Окончил интенсивный, строго отбираемый буткемп для full-stack разработчиков. Перенес свой аналитический военный опыт непосредственно в современные веб-технологии, освоив React, Angular и Node.js с архитектурой REST API.</target>
+        <source>Completed an intensive full-stack development bootcamp, applying my analytical background to modern web technologies, including React, Angular, Node.js, and REST API design.</source>
+        <target>Окончил интенсивный буткемп по full-stack разработке и применил свой аналитический опыт в современных веб-технологиях, включая React, Angular, Node.js и проектирование REST API.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/components/timeline.component.ts</context>
           <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.timeline.step3.title" datatype="html">
-        <source>Independent Full Stack Engineer</source>
-        <target>Независимый Full Stack разработчик</target>
+        <source>Full Stack Engineer (Kuvshinov Software)</source>
+        <target>Full Stack разработчик (Kuvshinov Software)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/components/timeline.component.ts</context>
           <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.timeline.step3.desc" datatype="html">
-        <source>Operating as an independent contractor to build scalable web applications, deploy cost-efficient cloud infrastructure, and engineer user interfaces to natively meet strict WCAG 2.1 AA accessibility standards, protecting clients from legal liabilities.</source>
-        <target>Работаю в качестве независимого подрядчика: создаю масштабируемые веб-приложения, развертываю экономичную облачную инфраструктуру и разрабатываю пользовательские интерфейсы, изначально соответствующие строгим стандартам доступности WCAG 2.1 AA, что защищает клиентов от юридических рисков.</target>
+        <source>Building web, desktop, and backend systems for clients, deploying cost-efficient cloud infrastructure, and engineering interfaces built to WCAG 2.1 AA accessibility standards.</source>
+        <target>Создаю веб-, десктоп- и бэкенд-системы для клиентов, развертываю экономичную облачную инфраструктуру и разрабатываю интерфейсы в соответствии со стандартом доступности WCAG 2.1 AA.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/components/timeline.component.ts</context>
           <context context-type="linenumber">34</context>
@@ -339,11 +339,19 @@
         </context-group>
       </trans-unit>
       <trans-unit id="about.intro.p1" datatype="html">
-        <source> I am a Full Stack Engineer specializing in distributed systems, real-time backends, and scalable web applications. With over <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>3,000 GitHub contributions<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> and multiple live production systems deployed, my engineering philosophy is built on three pillars: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/> cost-efficient infrastructure, strict data security, and legal-grade accessibility. <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
-        <target> Я Full Stack разработчик, специализирующийся на распределенных системах, бэкендах реального времени и масштабируемых веб-приложениях. Имея более <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>3000 контрибьютов на GitHub<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> и несколько развернутых рабочих систем, моя философия инженерии базируется на трех столпах: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/> экономичная инфраструктура, строгая безопасность данных и доступность на юридическом уровне. <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <source> I am a Full Stack Engineer specializing in distributed systems, real-time backends, and scalable web applications. With over <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>3,000 commits<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> across projects and multiple live production systems deployed, my engineering philosophy is built on three pillars: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/> cost-efficient infrastructure, strict data security, and accessibility by design. <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Я Full Stack разработчик, специализирующийся на распределенных системах, бэкендах реального времени и масштабируемых веб-приложениях. Имея более <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>3000 коммитов<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> в различных проектах и несколько работающих в продакшене систем, я строю свою инженерную философию на трех столпах: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>экономичная инфраструктура, строгая безопасность данных и доступность, заложенная в основу.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">14,25</context>
+          <context context-type="linenumber">14,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.intro.open" datatype="html">
+        <source> Open to full-time Full Stack and Backend roles, and to select client projects. </source>
+        <target>Открыт к позициям Full Stack и Backend на полный день, а также к избранным клиентским проектам.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/page.html</context>
+          <context context-type="linenumber">25,29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.intro.btn_resume.aria" datatype="html">
@@ -351,7 +359,7 @@
         <target>Скачать резюме Валерия Кувшинова в формате PDF</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">29,30</context>
+          <context context-type="linenumber">33,34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.intro.btn_resume.text" datatype="html">
@@ -359,7 +367,7 @@
         <target>Резюме</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">30,32</context>
+          <context context-type="linenumber">34,36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.intro.img_alt" datatype="html">
@@ -367,7 +375,7 @@
         <target>Валерий Кувшинов сидит на конференции</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">42,44</context>
+          <context context-type="linenumber">46,48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.reason.title" datatype="html">
@@ -375,7 +383,7 @@
         <target> Инженерный подход </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">54,57</context>
+          <context context-type="linenumber">58,61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.reason.p1.title" datatype="html">
@@ -383,31 +391,31 @@
         <target>Безопасность через дисциплину</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">59,61</context>
+          <context context-type="linenumber">63,65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.reason.p1.desc" datatype="html">
-        <source> Trained in technical intelligence and OSINT, I approach backend architecture with a strict zero-trust mindset. I enforce rigorous authentication protocols to protect your API endpoints and safeguard critical business data. </source>
-        <target> Пройдя обучение в области технической разведки и OSINT, я подхожу к архитектуре бэкенда со строгим мышлением «нулевого доверия». Я внедряю жесткие протоколы аутентификации для защиты ваших API и сохранения критически важных бизнес-данных. </target>
+        <source> Trained in technical intelligence and OSINT, I design backends with a zero-trust mindset. I enforce strong authentication to protect your API endpoints and safeguard sensitive business data. </source>
+        <target>Имея подготовку в области технической разведки и OSINT, я проектирую бэкенды с подходом «нулевого доверия» (Zero-Trust). Я внедряю надежную аутентификацию для защиты ваших API и конфиденциальных бизнес-данных.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">62,67</context>
+          <context context-type="linenumber">66,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.reason.p2.title" datatype="html">
-        <source>Legal-Grade Accessibility</source>
-        <target>Доступность на юридическом уровне</target>
+        <source>Accessibility by Design</source>
+        <target>Доступность с самого начала</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">69,71</context>
+          <context context-type="linenumber">72,74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.reason.p2.desc" datatype="html">
-        <source> Automated overlay widgets do not protect you from lawsuits. I write clean, native code to guarantee absolute WCAG 2.1 AA compliance, ensuring your site is usable by everyone and legally protected. </source>
-        <target> Автоматизированные виджеты-оверлеи не защитят вас от судебных исков. Я пишу чистый, нативный код, чтобы гарантировать абсолютное соответствие стандарту WCAG 2.1 AA, делая ваш сайт удобным для всех и юридически защищенным. </target>
+        <source> Overlay widgets alone do not make a site compliant or protect you from lawsuits. I write clean, native code built to WCAG 2.1 AA and test it with screen readers and keyboards, so your site is usable by everyone and your legal risk is lower. The reader overlay on this site is an optional comfort tool, not a substitute for accessible code. </source>
+        <target>Одни лишь виджеты-оверлеи не делают сайт соответствующим стандартам и не защищают от судебных исков. Я пишу чистый нативный код по стандарту WCAG 2.1 AA и проверяю его со скринридерами и с клавиатуры, чтобы сайтом могли пользоваться все, а ваши юридические риски снижались. Оверлей на этом сайте — необязательный инструмент для удобства, а не замена доступному коду.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">72,76</context>
+          <context context-type="linenumber">75,80</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.reason.p3.title" datatype="html">
@@ -415,15 +423,15 @@
         <target>Независимость инфраструктуры</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">78,80</context>
+          <context context-type="linenumber">83,85</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.reason.p3.desc" datatype="html">
-        <source> I build systems from scratch to eliminate vendor lock-in. You own your servers, system, and data, bypassing expensive managed-platform subscriptions to keep your monthly operational costs drastically low. </source>
-        <target> Я создаю системы с нуля, чтобы избежать привязки к конкретному поставщику. Вы владеете своими серверами, системой и данными, обходя дорогие подписки на управляемые платформы, что позволяет кардинально снизить ежемесячные эксплуатационные расходы. </target>
+        <source> I build systems from the ground up to reduce vendor lock-in. You own your servers, system, and data, and avoid expensive managed-platform subscriptions, keeping your monthly operating costs low. </source>
+        <target>Я создаю системы с нуля, чтобы снизить зависимость от конкретного поставщика. Вы владеете своими серверами, системой и данными, не переплачиваете за управляемые платформы, а ежемесячные эксплуатационные расходы остаются низкими.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">81,85</context>
+          <context context-type="linenumber">86,90</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.experience.title" datatype="html">
@@ -431,31 +439,31 @@
         <target> Опыт и образование </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">95,98</context>
+          <context context-type="linenumber">100,103</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.experience.p1" datatype="html">
-        <source> With a background spanning high-stakes technical intelligence and complex commercial web deployments, I approach software engineering as an exercise in precision risk management. </source>
-        <target> Имея за плечами опыт работы в технической разведке с высокими ставками и внедрении сложных коммерческих веб-систем, я рассматриваю разработку программного обеспечения как упражнение в точном управлении рисками. </target>
+        <source> With a background in technical intelligence and commercial web deployments, I approach software engineering as precision risk management. </source>
+        <target>Имея опыт в технической разведке и коммерческих веб-развертываниях, я рассматриваю разработку ПО как точное управление рисками.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">99,104</context>
+          <context context-type="linenumber">104,108</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.experience.li1" datatype="html">
-        <source> B.Sc. in Computer Science, Open University of Israel (In Progress). Anchoring practical engineering with deep theoretical and algorithmic foundations. </source>
-        <target> Бакалавриат (B.Sc.) в области компьютерных наук, Открытый университет Израиля (В процессе). Подкрепление практической инженерии глубокими теоретическими и алгоритмическими основами. </target>
+        <source> B.Sc. in Computer Science, Open University of Israel (in progress). </source>
+        <target>Бакалавриат (B.Sc.) в области компьютерных наук, Открытый университет Израиля (в процессе).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">106,109</context>
+          <context context-type="linenumber">110,112</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.experience.li2" datatype="html">
-        <source> Native proficiency in English, Hebrew, and Russian, enabling seamless technical documentation and cross-border project localization. </source>
-        <target> Свободное владение английским, ивритом и русским языками, что обеспечивает беспрепятственное составление технической документации и локализацию международных проектов. </target>
+        <source> Native proficiency in English, Hebrew, and Russian, enabling clear technical documentation and project localization in all three languages. </source>
+        <target>Свободное владение английским, ивритом и русским языками, что обеспечивает четкую техническую документацию и локализацию проектов на всех трех языках.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">110,115</context>
+          <context context-type="linenumber">113,118</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.stack.title" datatype="html">
@@ -463,7 +471,7 @@
         <target> Основной стек технологий </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">124,127</context>
+          <context context-type="linenumber">127,130</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.stack.cat1" datatype="html">
@@ -471,7 +479,7 @@
         <target> Языки </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">132,135</context>
+          <context context-type="linenumber">135,138</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.stack.cat2" datatype="html">
@@ -479,7 +487,7 @@
         <target> Фронтенд </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">151,154</context>
+          <context context-type="linenumber">154,157</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.stack.cat3" datatype="html">
@@ -487,7 +495,7 @@
         <target> Бэкенд </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">168,171</context>
+          <context context-type="linenumber">171,174</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.stack.cat4" datatype="html">
@@ -495,7 +503,7 @@
         <target> Базы данных </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">183,186</context>
+          <context context-type="linenumber">186,189</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.stack.cat5" datatype="html">
@@ -503,7 +511,7 @@
         <target> Инфраструктура и DevOps </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">197,200</context>
+          <context context-type="linenumber">200,203</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.creative.title" datatype="html">
@@ -511,7 +519,7 @@
         <target> За пределами кода </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">219,222</context>
+          <context context-type="linenumber">221,224</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.creative.p1" datatype="html">
@@ -519,7 +527,7 @@
         <target> Хотя архитектура программного обеспечения требует строгой логики и управления рисками, я уравновешиваю эту дисциплину творческим самовыражением через написание инструментальной и оркестровой музыки. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">223,228</context>
+          <context context-type="linenumber">225,230</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.creative.p2" datatype="html">
@@ -527,7 +535,7 @@
         <target> Время от времени я создаю и выпускаю новые кинематографичные треки. Вы можете послушать мои последние композиции прямо на моем канале. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">229,234</context>
+          <context context-type="linenumber">231,236</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.creative.link_aria" datatype="html">
@@ -535,7 +543,7 @@
         <target>Посетить мой канал на YouTube (откроется в новой вкладке)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">239,240</context>
+          <context context-type="linenumber">241,242</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.creative.link_text" datatype="html">
@@ -543,7 +551,7 @@
         <target>Посетить мой канал</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">240,242</context>
+          <context context-type="linenumber">242,244</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.creative.iframe_title" datatype="html">
@@ -551,7 +559,7 @@
         <target>Инструментальная музыкальная композиция Валерия Кувшинова</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">254,257</context>
+          <context context-type="linenumber">256,259</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.availability.title" datatype="html">
@@ -559,7 +567,7 @@
         <target> Текущая доступность </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">275,278</context>
+          <context context-type="linenumber">277,280</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.availability.role1" datatype="html">
@@ -567,15 +575,15 @@
         <target>Независимые контракты</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">281,283</context>
+          <context context-type="linenumber">283,285</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.availability.desc1" datatype="html">
-        <source> Partnering with businesses to build custom web applications from the ground up, reduce monthly cloud hosting costs, and protect digital assets from accessibility lawsuits (WCAG 2.1 AA or higher). </source>
-        <target> Сотрудничество с бизнесом для создания пользовательских веб-приложений с нуля, снижения ежемесячных расходов на облачный хостинг и защиты цифровых активов от судебных исков по доступности (WCAG 2.1 AA или выше). </target>
+        <source> Partnering with businesses to build custom software from the ground up, reduce monthly cloud hosting costs, and lower the risk of accessibility lawsuits with WCAG 2.1 AA or higher. </source>
+        <target>Сотрудничество с бизнесом для создания программного обеспечения на заказ с нуля, снижения ежемесячных расходов на облачный хостинг и уменьшения риска судебных исков по доступности благодаря соответствию WCAG 2.1 AA или выше.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">290,296</context>
+          <context context-type="linenumber">292,298</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.availability.role2" datatype="html">
@@ -583,7 +591,7 @@
         <target>Работа на полный день</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">298,300</context>
+          <context context-type="linenumber">300,302</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.availability.desc2" datatype="html">
@@ -591,7 +599,7 @@
         <target> Ищу позицию Full Stack или Backend разработчика. Меня интересуют команды, которые ставят в приоритет строгую безопасность данных, высокую доступность пользовательских интерфейсов и экономичную облачную инфраструктуру. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">307,312</context>
+          <context context-type="linenumber">309,314</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.availability.p" datatype="html">
@@ -599,7 +607,7 @@
         <target> Открыт для удаленной работы по всему миру, а также гибридных или офисных позиций в Израиле. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">317,322</context>
+          <context context-type="linenumber">319,324</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.availability.link" datatype="html">
@@ -607,7 +615,7 @@
         <target>Связаться!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">324,326</context>
+          <context context-type="linenumber">326,328</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.meta.title" datatype="html">
@@ -1247,8 +1255,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.title" datatype="html">
-        <source> Scalable Web Systems &amp; Legal-Grade Accessibility </source>
-        <target> Масштабируемые веб-системы и доступность на юридическом уровне </target>
+        <source> Scalable Web Systems, Accessible by Design </source>
+        <target> Масштабируемые веб-системы с доступностью, заложенной в основу </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/hero/hero.html</context>
           <context context-type="linenumber">20,24</context>
@@ -1263,16 +1271,16 @@
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.p1" datatype="html">
-        <source> I engineer fast, secure full-stack applications and protect businesses from legal liabilities through rigorous WCAG 2.1 AA accessibility compliance. </source>
-        <target> Я разрабатываю быстрые, безопасные full-stack приложения и защищаю бизнес от юридических рисков благодаря строгому соблюдению стандартов доступности WCAG 2.1 AA. </target>
+        <source> I engineer fast, secure full-stack applications built to WCAG 2.1 AA, so your product works for everyone and your legal risk is lower. </source>
+        <target> Я разрабатываю быстрые, безопасные full-stack приложения по стандарту доступности WCAG 2.1 AA, чтобы ваш продукт был удобен для всех, а юридические риски снижались. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/hero/hero.html</context>
           <context context-type="linenumber">30,34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.p2" datatype="html">
-        <source> Whether you need a high-performance landing page or a complex distributed backend, I build independent cloud systems that drastically reduce your monthly hosting costs. You own the code, the servers, and the data. </source>
-        <target> Нужен ли вам высокопроизводительный лендинг или сложный распределенный бэкенд, я создаю независимые облачные системы, которые кардинально снижают ваши ежемесячные расходы на хостинг. Вы владеете кодом, серверами и данными. </target>
+        <source> Whether you need a high-performance landing page or a complex distributed backend, I build independent cloud systems that cut your monthly hosting costs. You own the code, the servers, and the data. </source>
+        <target> Нужен ли вам высокопроизводительный лендинг или сложный распределенный бэкенд, я создаю независимые облачные системы, которые снижают ваши ежемесячные расходы на хостинг. Вы владеете кодом, серверами и данными. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/hero/hero.html</context>
           <context context-type="linenumber">35,40</context>
@@ -1382,36 +1390,12 @@
           <context context-type="linenumber">52</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="home.portfolio.giggler.title" datatype="html">
-        <source>Giggler Freelance Platform</source>
-        <target>Фриланс-платформа Giggler</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">68</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.portfolio.giggler.desc" datatype="html">
-        <source>A Fiverr-like E-commerce platform, created as a final project during my Full-Stack bootcamp.</source>
-        <target>Платформа электронной коммерции, похожая на Fiverr; создана в качестве выпускного проекта во время прохождения буткемпа по Full-Stack-разработке.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">69</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.portfolio.giggler.alt" datatype="html">
-        <source>Screenshot of the Giggler home page</source>
-        <target>Скриншот главной страницы платформы Giggler</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">74</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="home.portfolio.img_click.aria" datatype="html">
         <source>View full size image of <x id="PH" equiv-text="slide.title"/></source>
         <target>Посмотреть полноразмерное изображение <x id="PH" equiv-text="slide.title"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.component.ts</context>
-          <context context-type="linenumber">135</context>
+          <context context-type="linenumber">113</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.btn.prev" datatype="html">
@@ -1447,15 +1431,15 @@
       </trans-unit>
       <trans-unit id="home.highlight.experience" datatype="html">
         <source>Years of Experience</source>
-        <target>Года опыта</target>
+        <target>Лет опыта</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
           <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.production" datatype="html">
-        <source>Launched Productions</source>
-        <target>Запущенных проектов</target>
+        <source>Live Production Systems</source>
+        <target>Систем в продакшене</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
           <context context-type="linenumber">35</context>
@@ -1486,8 +1470,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.commits" datatype="html">
-        <source>GitHub Contributions</source>
-        <target>Контрибьютов на GitHub</target>
+        <source>GitHub Commits</source>
+        <target>Коммиты на GitHub</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
           <context context-type="linenumber">47</context>
@@ -1510,16 +1494,16 @@
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty2.title" datatype="html">
-        <source>A11y Compliance &amp; Legal Immunity</source>
-        <target>Соответствие доступности и юридическая защита</target>
+        <source>Accessibility Compliance &amp; Risk Reduction</source>
+        <target>Соответствие требованиям доступности и снижение рисков</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
           <context context-type="linenumber">57</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty2.desc" datatype="html">
-        <source>Auditing and refactoring digital infrastructure to natively meet WCAG 2.1 AA/AAA and Israeli standards - providing true legal protection that accessibility overlays simply cannot offer.</source>
-        <target>Аудит и рефакторинг цифровой инфраструктуры для нативного соответствия стандартам WCAG 2.1 AA/AAA и израильским стандартам доступности — обеспечение реальной юридической защиты, которую оверлеи доступности просто не могут дать.</target>
+        <source>Auditing and refactoring digital infrastructure to natively meet WCAG 2.1 AA/AAA and Israeli standards, reducing legal risk in a way accessibility overlays alone cannot.</source>
+        <target>Аудит и рефакторинг цифровой инфраструктуры для нативного соответствия стандартам WCAG 2.1 AA/AAA и израильским стандартам, что снижает юридические риски лучше, чем это могут сделать одни лишь оверлеи доступности.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
           <context context-type="linenumber">58</context>
@@ -1542,24 +1526,24 @@
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty4.title" datatype="html">
-        <source>Remote Digital Assistance</source>
-        <target>Удаленная цифровая помощь</target>
+        <source>Screen Reader Navigation Tutoring</source>
+        <target>Обучение работе с программой чтения с экрана</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
           <context context-type="linenumber">65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty4.desc" datatype="html">
-        <source>Dedicated one-on-one support for individuals facing severe digital barriers, providing secure navigation assistance for inaccessible sites and complex verification systems.</source>
-        <target>Индивидуальная поддержка для людей, сталкивающихся с серьезными цифровыми барьерами: безопасная помощь в навигации по недоступным сайтам и прохождении сложных систем верификации.</target>
+        <source>Patient one-on-one tutoring for people facing digital barriers: live descriptions of on-screen layouts and coaching through inaccessible sites, forms, and checkout flows, with you in full control.</source>
+        <target>Терпеливое индивидуальное обучение для людей, сталкивающихся с цифровыми барьерами: живое описание экрана и помощь на недоступных сайтах, в формах и при оформлении заказов, при этом вы полностью контролируете процесс.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
           <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.meta.desc" datatype="html">
-        <source>Kuvshinov Software - Providing you websites, systems, open source and accessibility assistance with care.</source>
-        <target>Kuvshinov Software - Разработка веб-сайтов, систем, проектов с открытым исходным кодом и помощь с доступностью.</target>
+        <source>Kuvshinov Software: custom websites and backend systems, accessibility help, and open source projects, built with care.</source>
+        <target>Kuvshinov Software: индивидуальные сайты и бэкенд-системы, помощь с доступностью и проекты с открытым исходным кодом, созданные с заботой.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
           <context context-type="linenumber">72</context>
@@ -1606,11 +1590,11 @@
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.p1" datatype="html">
-        <source> In a world where temporary solutions become permanent, automated widgets and generic templates fail to provide true accessibility or legal protection. It takes precise semantic code and manual keyboard focus management to make a site truly usable. </source>
-        <target> В мире, где временные решения становятся постоянными, автоматизированные виджеты и типовые шаблоны не могут обеспечить ни настоящую доступность, ни юридическую защиту. Чтобы сайт стал по-настоящему удобным, нужен точный семантический код и ручное управление фокусом клавиатуры. </target>
+        <source> In a world where temporary solutions become permanent, automated widgets and generic templates alone fail to deliver true accessibility or reliable legal protection. It takes precise semantic code and manual keyboard focus management to make a site truly usable. The reader overlay on this site is an optional comfort tool, built on top of accessible code, not instead of it. </source>
+        <target> В мире, где временные решения становятся постоянными, одни лишь автоматизированные виджеты и типовые шаблоны не обеспечивают ни настоящей доступности, ни надежной юридической защиты. Чтобы сайт стал по-настоящему удобным, нужен точный семантический код и ручное управление фокусом клавиатуры. Оверлей для чтения на этом сайте — необязательный инструмент для удобства, построенный поверх доступного кода, а не вместо него. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">82,86</context>
+          <context context-type="linenumber">82,87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.p2" datatype="html">
@@ -1618,7 +1602,7 @@
         <target> Присоединяясь к сотням других специалистов по конфиденциальности и доступности, я предлагаю вам прочитать Факты об Оверлеях (Overlay Fact Sheet). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">89,93</context>
+          <context context-type="linenumber">91,95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.btn.aria" datatype="html">
@@ -1626,7 +1610,7 @@
         <target>Прочитать Факты об Оверлеях доступности (откроется в новой вкладке)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">95,97</context>
+          <context context-type="linenumber">97,99</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.btn.text" datatype="html">
@@ -1634,7 +1618,7 @@
         <target>Прочитать Overlay Fact Sheet</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">99,103</context>
+          <context context-type="linenumber">101,105</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.img_alt" datatype="html">
@@ -1642,7 +1626,7 @@
         <target>Демонстрация того, как программы чтения с экрана не могут читать текст на изображениях, а полагаются на альтернативный текст, предоставленный самим сайтом</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">106,108</context>
+          <context context-type="linenumber">108,110</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.title" datatype="html">
@@ -1650,7 +1634,7 @@
         <target> Застряли на недоступном сайте? </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">117,120</context>
+          <context context-type="linenumber">119,122</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p1" datatype="html">
@@ -1658,23 +1642,23 @@
         <target> Не можете пройти reCAPTCHA для завершения покупки? Портал бронирования отелей или правительственный сайт блокирует вашу программу чтения с экрана? </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">121,125</context>
+          <context context-type="linenumber">123,127</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p2" datatype="html">
-        <source> I provide secure, remote assistance to help you bypass these barriers, to help you become independent, and if necessary, do it for you. </source>
-        <target> Я предоставляю безопасную удаленную помощь, чтобы помочь вам обойти эти барьеры, обрести независимость, а при необходимости — сделать это за вас. </target>
+        <source> I provide live, one-on-one tutoring over video call: I describe what is on screen, coach you step by step through these barriers, and help you build the skills to manage on your own. </source>
+        <target> Я провожу живое индивидуальное обучение по видеосвязи: описываю, что происходит на экране, шаг за шагом помогаю преодолевать эти барьеры и учу вас справляться самостоятельно. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">126,130</context>
+          <context context-type="linenumber">128,133</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p3" datatype="html">
-        <source> Zoom? Google Meet? Up to you! I reply to support requests within hours. </source>
-        <target> Zoom? Google Meet? Выбирайте сами! Я отвечаю на запросы о поддержке в течение нескольких часов. </target>
+        <source> Sessions run over Zoom. You share your screen and stay in full control. I never take remote control of your computer or ask for passwords or personal data. Regular clients get a reduced rate. I reply to requests within hours. </source>
+        <target> Занятия проходят в Zoom. Вы показываете экран и полностью контролируете процесс. Я никогда не беру под контроль ваш компьютер и не запрашиваю пароли или личные данные. Для постоянных клиентов действует сниженная цена. Я отвечаю на запросы в течение нескольких часов. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">131,135</context>
+          <context context-type="linenumber">134,139</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.btn" datatype="html">
@@ -1682,7 +1666,7 @@
         <target>Получить поддержку</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">137,141</context>
+          <context context-type="linenumber">142,146</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.img_alt" datatype="html">
@@ -1690,7 +1674,7 @@
         <target>пользователь программы чтения с экрана испытывает трудности с веб-сайтом, желая получить помощь в навигации</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">144,146</context>
+          <context context-type="linenumber">149,151</context>
         </context-group>
       </trans-unit>
       <trans-unit id="not_found.meta.title" datatype="html">
@@ -1786,7 +1770,7 @@
         <target>Смотреть полное изображение {$INTERPOLATION}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">140</context>
+          <context context-type="linenumber">143</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.intro.title" datatype="html">
@@ -2246,8 +2230,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="services.card1.title" datatype="html">
-        <source>Custom Web Development</source>
-        <target>Кастомная веб-разработка</target>
+        <source>Custom Software Development</source>
+        <target>Разработка ПО на заказ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">30</context>
@@ -2262,24 +2246,24 @@
         </context-group>
       </trans-unit>
       <trans-unit id="services.card1.desc" datatype="html">
-        <source>Starting at $1000 for highly optimized static landing pages, scaling up to secure full-stack applications. By deploying your system on independent cloud infrastructure, I can often eliminate your monthly hosting subscriptions entirely.</source>
-        <target>Начиная от $1000 за высокооптимизированные статические лендинги и до безопасных full-stack приложений. Развертывая вашу систему на независимой облачной инфраструктуре, я часто могу полностью избавить вас от ежемесячных подписок на хостинг.</target>
+        <source>From highly optimized static landing pages to secure full-stack applications. By deploying your system on independent cloud infrastructure, I can often eliminate your monthly hosting subscriptions entirely.</source>
+        <target>От высокооптимизированных статических лендингов до безопасных full-stack приложений. Развертывая вашу систему на независимой облачной инфраструктуре, я часто могу полностью избавить вас от ежемесячных платежей за хостинг.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card1.skill1" datatype="html">
-        <source>Secure Backend, WCAG AA Frontend</source>
-        <target>Безопасный Backend, WCAG AA Frontend</target>
+        <source>Web, Desktop &amp; Backend Systems</source>
+        <target>Веб-, десктоп- и бэкенд-системы</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card1.skill2" datatype="html">
-        <source>Cost-Efficient Cloud Hosting</source>
-        <target>Экономичный облачный хостинг</target>
+        <source>Secure Backend, WCAG AA Frontend</source>
+        <target>Безопасный Backend, Frontend по WCAG AA</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">35</context>
@@ -2318,8 +2302,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="services.card2.desc" datatype="html">
-        <source>Automated accessibility widgets do not protect you from lawsuits. True accessibility requires fixing the underlying code so keyboards and screen readers can actually navigate it.</source>
-        <target>Автоматизированные виджеты доступности не защитят вас от судебных исков. Настоящая доступность требует исправления исходного кода, чтобы пользователи клавиатуры и программ чтения с экрана могли реально по нему перемещаться.</target>
+        <source>Automated accessibility widgets alone do not make a site compliant or protect you from lawsuits. Real accessibility means fixing the underlying code so keyboards and screen readers can actually navigate it.</source>
+        <target>Одни лишь автоматические виджеты доступности не делают сайт соответствующим стандартам и не защищают от судебных исков. Настоящая доступность требует исправления исходного кода, чтобы пользователи клавиатуры и программ чтения с экрана могли по нему перемещаться.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">44</context>
@@ -2374,8 +2358,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="services.card3.desc" datatype="html">
-        <source>Got a website that is crashing, running slow, or full of bugs? Relying on AI-generated code that suddenly broke? I can jump in, clean up the technical debt, and make your system stable and secure.</source>
-        <target>У вас есть сайт, который падает, медленно работает или полон багов? Полагаетесь на код, сгенерированный ИИ, который внезапно сломался? Я могу вмешаться, устранить технический долг и сделать вашу систему стабильной и безопасной.</target>
+        <source>Got a website that is crashing, running slow, or full of bugs? Relying on AI-generated code that suddenly broke? I can jump in, clean up the technical debt, and get your system stable and secure.</source>
+        <target>У вас есть сайт, который падает, тормозит или полон багов? Полагаетесь на код, сгенерированный ИИ, который внезапно сломался? Я могу вмешаться, устранить технический долг и вернуть системе стабильность и безопасность.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -2414,48 +2398,48 @@
         </context-group>
       </trans-unit>
       <trans-unit id="services.card4.title" datatype="html">
-        <source>Remote Digital Assistance</source>
-        <target>Удаленная цифровая помощь</target>
+        <source>Screen Reader Navigation Tutoring</source>
+        <target>Обучение работе с программой чтения с экрана</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card4.price" datatype="html">
-        <source>$20 per hour</source>
-        <target>$20 в час</target>
+        <source>$20 per 1-hour session</source>
+        <target>$20 за часовую сессию</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card4.desc" datatype="html">
-        <source>Dedicated help for individuals who get blocked by annoying captchas, confusing government portals, or inaccessible web forms.</source>
-        <target>Специализированная помощь для лиц, которые блокируются раздражающими капчами, запутанными правительственными порталами или недоступными веб-формами.</target>
+        <source>Patient, live one-on-one tutoring for people who rely on screen readers or keyboard navigation. I describe what is on screen, coach you through unlabeled or broken elements, and map the site so you can repeat the steps on your own. Verbal guidance only: you stay in full control. Regular clients get a reduced rate (17$ per 1-hour session).</source>
+        <target>Терпеливое живое индивидуальное обучение для тех, кто пользуется программой чтения с экрана или навигацией с клавиатуры. Я описываю, что находится на экране, помогаю разобраться с неподписанными или неработающими элементами и составляю карту сайта, чтобы вы могли повторить шаги самостоятельно. Только голосовые подсказки: вы полностью контролируете процесс. Для постоянных клиентов действует сниженная цена ($17 за часовую сессию).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card4.skill1" datatype="html">
-        <source>Bypassing Visual Barriers</source>
-        <target>Обход визуальных барьеров</target>
+        <source>Live Description of On-Screen Layouts</source>
+        <target>Живое описание элементов на экране</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card4.skill2" datatype="html">
-        <source>Form &amp; Document Completion</source>
-        <target>Заполнение форм и документов</target>
+        <source>Screen Reader &amp; Keyboard Coaching</source>
+        <target>Обучение работе с программой чтения с экрана и клавиатурой</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">71</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card4.skill3" datatype="html">
-        <source>Patient 1-on-1 Support</source>
-        <target>Терпеливая индивидуальная поддержка</target>
+        <source>Site Mapping &amp; Written Recaps</source>
+        <target>Карта сайта и письменные итоги</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">72</context>
@@ -2470,8 +2454,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="services.step1.desc" datatype="html">
-        <source>I guide you through establishing your own independent cloud hosting. You retain absolute control over passwords and billing, eliminating vendor lock-in. I act strictly as your dedicated engineer.</source>
-        <target>Я помогаю вам создать собственный независимый облачный хостинг. Вы сохраняете абсолютный контроль над паролями и биллингом, избегая привязки к вендору. Я выступаю строго в качестве вашего выделенного инженера.</target>
+        <source>I guide you through setting up your own independent cloud hosting. You keep full control of passwords and billing, avoiding vendor lock-in. I act strictly as your dedicated engineer.</source>
+        <target>Я помогаю вам настроить собственный независимый облачный хостинг. Вы полностью контролируете пароли и оплату и избегаете привязки к вендору. Я выступаю строго как ваш выделенный инженер.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">80</context>
@@ -2486,8 +2470,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="services.step2.desc" datatype="html">
-        <source>Your digital infrastructure is engineered from scratch. By bypassing bloated templates and expensive CMS platforms, I ensure the final product is lightning-fast, highly secure, and legally accessible by design.</source>
-        <target>Ваша цифровая инфраструктура проектируется с нуля. Избегая громоздких шаблонов и дорогих платформ CMS, я гарантирую, что конечный продукт будет молниеносно быстрым, высокобезопасным и юридически доступным по дизайну.</target>
+        <source>Your system is engineered from scratch. By skipping bloated templates and expensive CMS platforms, I aim for a final product that is fast, secure, and built to WCAG 2.1 AA from the start.</source>
+        <target>Ваша система проектируется и создается с нуля. Без громоздких шаблонов и дорогих CMS-платформ я стремлюсь к быстрому, безопасному продукту, созданному по стандарту WCAG 2.1 AA с самого начала.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">84</context>
@@ -2502,8 +2486,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="services.step3.desc" datatype="html">
-        <source>Upon launch, you own an independent, low-overhead system. I provide 12 months of structural bug fixes free of charge. Subsequent years transition to a standard retainer strictly for security patching, with new features billed separately.</source>
-        <target>После запуска вы владеете независимой системой с низкими накладными расходами. Я бесплатно предоставляю 12 месяцев исправления структурных багов. В последующие годы поддержка переходит на стандартный тариф строго для обновлений безопасности, а новые функции оплачиваются отдельно.</target>
+        <source>After launch, you own an independent, low-overhead system. I provide 12 months of structural bug fixes free of charge. After that, a standard retainer covers security patching only, and new features are billed separately.</source>
+        <target>После запуска вы владеете независимой системой с низкими накладными расходами. Я бесплатно предоставляю 12 месяцев исправления структурных багов. Затем стандартный ретейнер покрывает только обновления безопасности, а новые функции оплачиваются отдельно.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">88</context>
@@ -2518,8 +2502,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="services.meta.desc" datatype="html">
-        <source>Browse through our transparent services and pricing to decide what fits your project.</source>
-        <target>Ознакомьтесь с нашими прозрачными услугами и ценами, чтобы решить, что подходит для вашего проекта.</target>
+        <source>Browse my transparent services and pricing to decide what fits your project.</source>
+        <target>Ознакомьтесь с моими прозрачными услугами и ценами, чтобы решить, что подходит для вашего проекта.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">94</context>
@@ -2534,16 +2518,16 @@
         </context-group>
       </trans-unit>
       <trans-unit id="services.intro.p1" datatype="html">
-        <source> I build websites and systems from scratch. Unlike managed platforms that trap you in monthly subscriptions, I help you set up your own independent infrastructure and write the code myself. </source>
-        <target> Я создаю сайты и системы с нуля. В отличие от управляемых платформ, которые загоняют вас в ловушку ежемесячных подписок, я помогаю настроить вашу собственную независимую инфраструктуру и сам пишу код. </target>
+        <source> I build websites, apps, and backend systems from scratch. Unlike managed platforms that lock you into monthly subscriptions, I help you set up your own independent infrastructure and write the code myself. </source>
+        <target>Я создаю сайты, приложения и бэкенд-системы с нуля. В отличие от управляемых платформ, которые привязывают вас к ежемесячным подпискам, я помогаю настроить вашу собственную независимую инфраструктуру и сам пишу код.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.html</context>
           <context context-type="linenumber">10,14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.intro.p2" datatype="html">
-        <source> You own everything, the site is incredibly fast, and it meets strict AA accessibility laws by default. By eliminating the middlemen, I keep your long-term operational costs as low as possible. </source>
-        <target> Вы владеете всем, сайт невероятно быстр, и он по умолчанию соответствует строгим законам доступности AA. Устраняя посредников, я сохраняю ваши долгосрочные операционные расходы на минимально возможном уровне. </target>
+        <source> You own everything, the result is fast, and it is built to WCAG 2.1 AA accessibility standards from day one. By cutting out the middlemen, I keep your long-term operating costs low. </source>
+        <target>Вы владеете всем, результат работает быстро и с первого дня создается по стандарту доступности WCAG 2.1 AA. Без посредников я сохраняю ваши долгосрочные операционные расходы низкими.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.html</context>
           <context context-type="linenumber">15,20</context>

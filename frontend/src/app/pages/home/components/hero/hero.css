@@ -103,7 +103,8 @@
 		);
 
 		.about-link {
-			max-width: 25vw;
+			width: 30vw;
+			max-width: 20rem;
 			margin-block-start: 1rem;
 			align-self: center;
 		}
@@ -164,8 +165,9 @@
 
 		.about-link {
 			position: absolute;
-			max-width: 18vw;
 			top: 30vh;
+			width: 18vw;
+			max-width: 30rem;
 		}
 
 		.content {

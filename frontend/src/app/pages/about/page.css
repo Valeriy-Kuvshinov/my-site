@@ -141,7 +141,7 @@
 	@media (max-width: 900px) {
 		.intro {
 			gap: 2rem;
-			padding: 6rem 1rem 3rem 1rem;
+			padding: 7rem 1rem 3rem 1rem;
 
 			.content {
 				flex-direction: column;
@@ -151,7 +151,8 @@
 				}
 
 				app-image-container {
-					max-width: 10rem;
+					width: 30vw;
+					max-width: 20rem;
 					margin-block-start: 1rem;
 					order: 1;
 				}
@@ -172,19 +173,23 @@
 	}
 
 	@media (max-width: 600px) {
-		min-height: 70vh;
+		.intro .content {
+			.text {
+				h2 {
+					font-size: 1.5rem;
+				}
 
-		.intro .content .text {
-			h2 {
-				font-size: 1.5rem;
+				p {
+					font-size: 1rem;
+				}
+
+				a {
+					align-self: center;
+				}
 			}
 
-			p {
-				font-size: 1rem;
-			}
-
-			a {
-				align-self: center;
+			app-image-container {
+				max-width: 10rem;
 			}
 		}
 
@@ -215,8 +220,6 @@
 	}
 
 	@media (min-width: 601px) {
-		min-height: 80vh;
-
 		.intro .content .text {
 			h2 {
 				font-size: 2rem;
@@ -262,8 +265,9 @@
 
 				app-image-container {
 					position: absolute;
-					max-width: 12rem;
 					top: 20vh;
+					width: 20vw;
+					max-width: 30rem;
 				}
 			}
 		}

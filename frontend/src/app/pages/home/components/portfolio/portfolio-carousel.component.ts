@@ -64,28 +64,6 @@ const PORTFOLIO_SLIDES: PortfolioItem[] = [
 			"Sass",
 		],
 	},
-	{
-		title: $localize`:@@home.portfolio.giggler.title:Giggler Freelance Platform`,
-		description: $localize`:@@home.portfolio.giggler.desc:A Fiverr-like E-commerce platform, created as a final project during my Full-Stack bootcamp.`,
-		imgDesktopSrc:
-			"https://res.cloudinary.com/oee6altn/image/upload/v1792668924/giggler-desktop.avif",
-		imgMobileSrc:
-			"https://res.cloudinary.com/oee6altn/image/upload/v1792668924/giggler-mobile.avif",
-		imgAlt: $localize`:@@home.portfolio.giggler.alt:Screenshot of the Giggler home page`,
-		isOpenSource: false,
-		technologies: [
-			"React",
-			"Redux",
-			"Node.js",
-			"Express",
-			"MongoDB (NoSQL)",
-			"TypeScript",
-			"JavaScript",
-			"HTML",
-			"CSS",
-			"Sass",
-		],
-	},
 ]
 
 @Component({
