@@ -2087,14 +2087,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="services.card4.price" datatype="html">
-        <source>$20 per 1-hour session</source>
+        <source>$20 per hour</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.card4.desc" datatype="html">
-        <source>Patient, live one-on-one tutoring for people who rely on screen readers or keyboard navigation. I describe what is on screen, coach you through unlabeled or broken elements, and map the site so you can repeat the steps on your own. Verbal guidance only: you stay in full control. Regular clients get a reduced rate (17$ per 1-hour session).</source>
+        <source>Patient, live one-on-one tutoring for people who rely on screen readers or keyboard navigation. I describe what is on screen, coach you through unlabeled or broken elements, and map the site so you can repeat the steps on your own. Verbal guidance only: you stay in full control. For regular clients: 17$ per hour.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.component.ts</context>
           <context context-type="linenumber">68</context>

@@ -64,8 +64,8 @@ const SERVICES: ServiceCard[] = [
 	{
 		icon: "support",
 		title: $localize`:@@services.card4.title:Screen Reader Navigation Tutoring`,
-		price: $localize`:@@services.card4.price:$20 per 1-hour session`,
-		description: $localize`:@@services.card4.desc:Patient, live one-on-one tutoring for people who rely on screen readers or keyboard navigation. I describe what is on screen, coach you through unlabeled or broken elements, and map the site so you can repeat the steps on your own. Verbal guidance only: you stay in full control. Regular clients get a reduced rate (17$ per 1-hour session).`,
+		price: $localize`:@@services.card4.price:$20 per hour`,
+		description: $localize`:@@services.card4.desc:Patient, live one-on-one tutoring for people who rely on screen readers or keyboard navigation. I describe what is on screen, coach you through unlabeled or broken elements, and map the site so you can repeat the steps on your own. Verbal guidance only: you stay in full control. For regular clients: 17$ per hour.`,
 		skills: [
 			{ text: $localize`:@@services.card4.skill1:Live Description of On-Screen Layouts` },
 			{ text: $localize`:@@services.card4.skill2:Screen Reader & Keyboard Coaching` },
