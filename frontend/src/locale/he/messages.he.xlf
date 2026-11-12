@@ -651,19 +651,19 @@
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec1.p1" datatype="html">
-        <source> Valeriy Kuvshinov, doing business as Kuvshinov Software (&quot;Company&quot;, &quot;We&quot;, or &quot;Us&quot;), operates as an independent digital consultancy and development agency. Because we provide professional accessibility remediation services, we hold our own digital infrastructure to the highest standards of digital inclusivity. We act to the full extent of our technical capabilities to ensure our platform provides an equal, seamless experience for all web users, including individuals with visual, motor, or cognitive disabilities. </source>
-        <target> ולרי קובשינוב, הפועל תחת השם Kuvshinov Software (&quot;החברה&quot; או &quot;אנחנו&quot;), פועל כסוכנות ייעוץ ופיתוח דיגיטלי עצמאית. מכיוון שאנו מספקים שירותי הנגשה מקצועיים, אנו מחזיקים את התשתית הדיגיטלית שלנו בסטנדרטים הגבוהים ביותר של הכלה דיגיטלית. אנו פועלים במלוא היכולות הטכניות שלנו כדי להבטיח שהפלטפורמה שלנו תספק חוויה שווה וחלקה לכל משתמשי הרשת, כולל אנשים עם מוגבלויות ראייה, מוטוריות או קוגניטיביות. </target>
+        <source> Valeriy Kuvshinov, operating as Kuvshinov Software (&quot;I&quot; or &quot;the Company&quot;), is an independent software developer and accessibility consultant. Because I fix accessibility problems for clients, I hold this website to the same standard. My goal is for every visitor, including people with visual, motor, or cognitive disabilities, to be able to use it equally and without barriers. </source>
+        <target> ולרי קובשינוב, הפועל תחת השם Kuvshinov Software (&quot;אני&quot; או &quot;העסק&quot;), הוא מפתח תוכנה ויועץ נגישות עצמאי. מכיוון שאני מתקן בעיות נגישות עבור לקוחות, אני מחזיק את האתר הזה באותו סטנדרט. מטרתי היא שכל גולש, כולל אנשים עם מוגבלות ראייה, מוטורית או קוגניטיבית, יוכל להשתמש בו באופן שווה וללא חסמים. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">15,23</context>
+          <context context-type="linenumber">15,21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec1.p2" datatype="html">
-        <source> This statement applies strictly to the digital properties operating under the domain root at <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>kuvware.com<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>. As a fully distributed digital entity, the Company operates no physical commercial offices open to the public; consequently, physical access metrics are non-applicable to our operational scope. </source>
-        <target> הצהרה זו חלה אך ורק על הנכסים הדיגיטליים הפועלים תחת הדומיין ב-<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>kuvware.com<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>. כישות דיגיטלית מבוזרת לחלוטין, החברה אינה מפעילה משרדים מסחריים פיזיים הפתוחים לציבור; לפיכך, מדדי גישה פיזית אינם ישימים להיקף הפעילות שלנו. </target>
+        <source> This statement applies to the website at <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>kuvware.com<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>. The business is run remotely and has no physical office open to the public, so physical access does not apply. </source>
+        <target> הצהרה זו חלה על האתר שבכתובת <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>kuvware.com<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>. העסק פועל מרחוק ואין לו משרד פיזי הפתוח לקהל, ולכן נגישות פיזית אינה רלוונטית. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">24,29</context>
+          <context context-type="linenumber">22,26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec2.title" datatype="html">
@@ -671,231 +671,223 @@
         <target> 2. תקני נגישות דיגיטלית</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">35,37</context>
+          <context context-type="linenumber">32,34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec2.p1" datatype="html">
-        <source> The digital structure of this website has been engineered from the ground up - using native, semantic code to achieve functional alignment with the World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA and AAA conformance. </source>
-        <target> המבנה הדיגיטלי של אתר זה תוכנן מאפס - תוך שימוש בקוד סמנטי וטבעי (Native) כדי להשיג התאמה פונקציונלית להנחיות הנגישות לתוכן אינטרנט של קונסורציום הרשת הכלל-עולמית (W3C WCAG) בגרסה 2.1 ברמת תאימות AA ו-AAA. </target>
+        <source> This website is built with native, semantic code, to meet Israeli Standard IS 5568 at Level AA and the W3C Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA. It also meets several Level AAA criteria, such as enhanced color contrast. </source>
+        <target> האתר נבנה בקוד סמנטי ונייטיב, בהתאם לתקן הישראלי ת&quot;י 5568 ברמת AA ולהנחיות הנגישות לתוכן אינטרנט של W3C (WCAG) גרסה 2.1 ברמת AA. בנוסף, הוא עומד בכמה קריטריונים מרמת AAA, כגון ניגודיות צבעים משופרת. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">38,42</context>
+          <context context-type="linenumber">35,39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec2.p2" datatype="html">
-        <source> We strictly oppose the use of automated &quot;accessibility overlays&quot; or temporary widget patches. Instead, inclusivity is built directly into the DOM, ensuring structural interoperability with native assistive technologies, including screen readers, refreshable braille displays, and alternative input hardware. </source>
-        <target> אנו מתנגדים נחרצות לשימוש ב'תוספי נגישות' (Overlays) אוטומטיים או בטלאי ווידג'ט זמניים. במקום זאת, ההכלה בנויה ישירות אל תוך ה-DOM, מה שמבטיח תאימות מבנית לטכנולוגיות מסייעות מקוריות, כולל קוראי מסך, צגי ברייל מתרעננים וחומרת קלט חלופית. </target>
+        <source> I do not rely on automated accessibility overlays or temporary widget patches. Accessibility is built into the code itself, to work with assistive technologies such as screen readers, braille displays, and alternative input devices. The accessibility menu on this site is an optional set of display preferences on top of that foundation, not a replacement for it. </source>
+        <target> אני לא נשען על תוספי נגישות (Overlay) אוטומטיים או על טלאים זמניים. הנגישות בנויה בקוד עצמו, כך שתעבוד עם טכנולוגיות מסייעות כגון קוראי מסך, צגי ברייל והתקני קלט חלופיים. תפריט הנגישות באתר הוא אפשרות נוספת להעדפות תצוגה מעל התשתית הזו, ולא תחליף לה. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">43,50</context>
+          <context context-type="linenumber">40,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a11y_page.sec2.p3" datatype="html">
+        <source> I test this site with the NVDA screen reader and with automated tools (Lighthouse and axe DevTools). Automated tools catch only part of the possible issues, so some barriers may still exist. If you find one, please tell me. </source>
+        <target> אני בודק את האתר באמצעות קורא המסך NVDA ובכלים אוטומטיים (Lighthouse ו-axe DevTools). כלים אוטומטיים מזהים רק חלק מהבעיות האפשריות, ולכן ייתכן שעדיין קיימים חסמים. אם מצאתם אחד, אשמח שתעדכנו אותי. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
+          <context context-type="linenumber">47,53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.title" datatype="html">
-        <source> 3. Implemented Accessibility Controls </source>
-        <target> 3. אמצעי נגישות שהוטמעו </target>
+        <source> 3. Accessibility Features </source>
+        <target> 3. תכונות נגישות </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">54,56</context>
+          <context context-type="linenumber">57,59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.desc" datatype="html">
-        <source> The core website architecture utilizes standard programmatic modifications alongside an integrated native accessibility menu, allowing users to execute real-time structural adaptations: </source>
-        <target> ארכיטקטורת הליבה של האתר משתמשת בשינויים תכנותיים סטנדרטיים לצד תפריט נגישות טבעי מובנה, המאפשר למשתמשים לבצע התאמות מבניות בזמן אמת: </target>
+        <source> This site includes the following accessibility features, plus an accessibility menu that lets you adjust the display: </source>
+        <target> האתר כולל את תכונות הנגישות הבאות, וכן תפריט נגישות המאפשר להתאים את התצוגה: </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">57,61</context>
+          <context context-type="linenumber">60,63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li1.title" datatype="html">
-        <source>Semantic Document Geometry:</source>
-        <target>גיאומטריית מסמך סמנטית:</target>
+        <source>Clear page structure:</source>
+        <target>מבנה עמוד ברור:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">63,64</context>
+          <context context-type="linenumber">65,66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li1.desc" datatype="html">
-        <source> Strict hierarchical heading order (H1 — H6), correct ARIA 1.2 labeling, and semantic landmark segmentation (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;main&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;nav&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;aside&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>) to facilitate fast screen reader index navigation. </source>
-        <target> סדר כותרות היררכי קפדני (H1 — H6), תיוג ARIA 1.2 תקין, ופילוח ציוני דרך סמנטיים (Landmarks) (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;main&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;nav&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;aside&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>) כדי לאפשר ניווט אינדקס מהיר לקוראי מסך. </target>
+        <source> Headings follow a logical order (H1 to H6), ARIA labels are used where needed, and page regions (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;main&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;nav&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;aside&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>) help screen reader users move around quickly. </source>
+        <target> כותרות בסדר לוגי (H1 עד H6), תוויות ARIA במקומות הנדרשים, ואזורי עמוד (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;main&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;nav&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;aside&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>) המאפשרים לקוראי מסך לנווט במהירות. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">65,70</context>
+          <context context-type="linenumber">67,71</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li2.title" datatype="html">
-        <source> Native Keyboard Navigation Protocol: </source>
-        <target>פרוטוקול ניווט מקלדת טבעי (Native):</target>
+        <source> Full keyboard use: </source>
+        <target>שימוש מלא במקלדת:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">73,75</context>
+          <context context-type="linenumber">73,74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li2.desc" datatype="html">
-        <source> Complete operational execution via standard keyboard loops, including custom focus traps on modals and highly visible focus indicators. </source>
-        <target> ביצוע תפעולי מלא דרך לולאות מקלדת סטנדרטיות, כולל לכידת מיקוד (Focus traps) מותאמת אישית בחלונות מודאליים ומחווני מיקוד בולטים במיוחד. </target>
+        <source> Everything can be operated with a keyboard, with clearly visible focus indicators, and focus stays inside dialogs while they are open. </source>
+        <target> ניתן להפעיל הכול באמצעות מקלדת, עם חיווי מיקוד בולט, והמיקוד נשאר בתוך חלונות דיאלוג כל עוד הם פתוחים. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">76,80</context>
+          <context context-type="linenumber">75,79</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li3.title" datatype="html">
-        <source>Skip Link Overrides:</source>
-        <target>עקיפת קישורי דילוג (Skip Links):</target>
+        <source>Skip links:</source>
+        <target>קישורי דילוג:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">81,82</context>
+          <context context-type="linenumber">80,81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li3.desc" datatype="html">
-        <source> Accessible skip links placed at the absolute programmatic root level, allowing keyboard users to bypass layout directly to the main content or footer. </source>
-        <target> קישורי דילוג נגישים הממוקמים ברמת השורש התכנותית המוחלטת, המאפשרים למשתמשי מקלדת לעקוף את פריסת האתר ישירות לתוכן המרכזי או לתחתית העמוד. </target>
+        <source> Skip links at the top of each page let keyboard users jump straight to the main content or the footer. </source>
+        <target> קישורי דילוג בראש כל עמוד מאפשרים למשתמשי מקלדת לדלג ישירות לתוכן הראשי או לתחתית העמוד. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">83,87</context>
+          <context context-type="linenumber">82,86</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li4.title" datatype="html">
-        <source>Color Contrast Optimization:</source>
-        <target>אופטימיזציית ניגודיות צבעים:</target>
+        <source>Color contrast:</source>
+        <target>ניגודיות צבעים:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">88,89</context>
+          <context context-type="linenumber">87,88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li4.desc" datatype="html">
-        <source> Visual text layers and active interactive components maintain an enhanced luminance contrast ratio matching or exceeding strict AAA (7:1) thresholds. </source>
-        <target> שכבות טקסט חזותיות ורכיבים אינטראקטיביים פעילים שומרים על יחס ניגודיות הארה משופר התואם או עולה על ספי ה-AAA המחמירים (7:1). </target>
+        <source> Text and interactive elements meet or exceed the enhanced AAA contrast ratio (7:1). </source>
+        <target> טקסט ורכיבים אינטראקטיביים עומדים ביחס הניגודיות המשופר של רמת AAA (7:1) או עולים עליו. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">90,94</context>
+          <context context-type="linenumber">89,93</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li5.title" datatype="html">
-        <source>Advanced Typography Toggles:</source>
-        <target>הגדרות טיפוגרפיה מתקדמות:</target>
+        <source>Display preferences:</source>
+        <target>העדפות תצוגה:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">95,96</context>
+          <context context-type="linenumber">94,95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li5.desc" datatype="html">
-        <source> An isolated native accessibility interface allowing user-driven configuration changes, including system sans-serif overrides for dyslexia assistance, progressive scaling for text size, line-height modifications, and letter-spacing vectors. </source>
-        <target> ממשק נגישות טבעי ומבודד המאפשר שינויי תצורה מונחי-משתמש, כולל דריסת מערכת לגופנים נטולי-תגים (Sans-serif) לסיוע בדיסלקציה, קנה מידה פרוגרסיבי לגודל טקסט, שינויי מרווח בין שורות, וווקטורים של מרווח בין אותיות. </target>
+        <source> The accessibility menu lets you change the font (including a dyslexia-friendly option), text size, line spacing, and letter spacing. </source>
+        <target> תפריט הנגישות מאפשר לשנות את הגופן (כולל אפשרות ידידותית לדיסלקציה), גודל טקסט, מרווח שורות ומרווח אותיות. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">97,102</context>
+          <context context-type="linenumber">96,100</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li6.title" datatype="html">
-        <source>Motion Mutation Flags:</source>
-        <target>דגלי מוטציית תנועה:</target>
+        <source>Reduced motion:</source>
+        <target>צמצום תנועה:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">104,105</context>
+          <context context-type="linenumber">101,102</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li6.desc" datatype="html">
-        <source> Comprehensive system hooks to pause looping animations and CSS transition matrices, synchronized automatically with system-level hardware preferences (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>prefers-reduced-motion<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>). </source>
-        <target> ממשקי מערכת מקיפים להשהיית אנימציות בלולאה ומטריצות מעבר של CSS, המסונכרנים אוטומטית עם העדפות החומרה ברמת המערכת (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>prefers-reduced-motion<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>). </target>
+        <source> You can pause animations from the accessibility menu, and the site also follows your device&apos;s reduced-motion setting (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>prefers-reduced-motion<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>). </source>
+        <target> אפשר להשהות אנימציות מתפריט הנגישות, והאתר מכבד גם את הגדרת צמצום התנועה של המכשיר (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>prefers-reduced-motion<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">106,110</context>
+          <context context-type="linenumber">103,106</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec4.title" datatype="html">
-        <source> 4. Programmatic Boundaries &amp; Third-Party Platforms </source>
-        <target> 4. גבולות תכנותיים ופלטפורמות צד-שלישי </target>
+        <source> 4. Known Limitations and Third-Party Content </source>
+        <target> 4. מגבלות ידועות ותוכן של צד שלישי </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">118,120</context>
+          <context context-type="linenumber">114,116</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec4.desc" datatype="html">
-        <source> Users navigating our digital infrastructure may encounter specific structural boundaries dictated by external runtime layers and third-party ecosystems: </source>
-        <target> משתמשים המנווטים בתשתית הדיגיטלית שלנו עשויים להיתקל בגבולות מבניים מסוימים המוכתבים על ידי שכבות זמן-ריצה (Runtime) חיצוניות ומערכות אקולוגיות של צד שלישי: </target>
+        <source> Some parts of your experience depend on services I do not control: </source>
+        <target> חלק מהחוויה תלוי בשירותים שאינם בשליטתי: </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">121,124</context>
+          <context context-type="linenumber">117,119</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec4.li1.title" datatype="html">
-        <source>Security Challenges (CAPTCHA):</source>
-        <target>אתגרי אבטחה (CAPTCHA):</target>
+        <source>Security checks (CAPTCHA):</source>
+        <target>בדיקות אבטחה (CAPTCHA):</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">126,127</context>
+          <context context-type="linenumber">121,122</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec4.li1.desc" datatype="html">
-        <source> To protect against automated abuse, we utilize Cloudflare Turnstile. While Turnstile is designed to run invisibly and provide accessible fallbacks, strict browser privacy settings may occasionally force a visual challenge. </source>
-        <target> כדי להגן מפני ניצול אוטומטי, אנו משתמשים ב-Cloudflare Turnstile. בעוד ש-Turnstile מתוכנן לפעול באופן סמוי ולספק חלופות נגישות, הגדרות פרטיות מחמירות בדפדפן עשויות לעיתים לאלץ אתגר חזותי. </target>
+        <source> To prevent automated abuse, this site uses Cloudflare Turnstile, which usually runs invisibly. Strict browser privacy settings may occasionally trigger a visual challenge. If that blocks you, contact me by phone or email and I will help. </source>
+        <target> כדי למנוע ניצול אוטומטי, האתר משתמש ב-Cloudflare Turnstile, שפועל בדרך כלל באופן סמוי. הגדרות פרטיות מחמירות בדפדפן עשויות לעיתים להציג אתגר חזותי. אם זה חוסם אתכם, פנו אליי בטלפון או במייל ואסייע. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">128,133</context>
+          <context context-type="linenumber">123,128</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec4.li2.title" datatype="html">
-        <source>External Platform Redirection:</source>
-        <target>ניתוב לפלטפורמות חיצוניות:</target>
+        <source>Third-party content and links:</source>
+        <target>תוכן וקישורים של צד שלישי:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">134,135</context>
+          <context context-type="linenumber">130,131</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec4.li2.desc" datatype="html">
-        <source> This website contains active links routing out to external ecosystems (including LinkedIn, GitHub, and client portfolio sites). These properties are maintained exclusively by their respective corporations or owners; consequently, their accessibility conformance levels remain entirely beyond our control. </source>
-        <target> אתר זה מכיל קישורים פעילים המנתבים החוצה למערכות אקולוגיות חיצוניות (כולל LinkedIn, GitHub ואתרי תיק עבודות של לקוחות). נכסים אלה מתוחזקים בלעדית על ידי התאגידים או הבעלים שלהם; לפיכך, רמות התאימות שלהם לנגישות נותרות לחלוטין מחוץ לשליטתנו. </target>
+        <source> The site embeds a YouTube video and links to external sites such as LinkedIn, GitHub, Fiverr, Facebook, and client portfolio sites. These are run by other organizations, so their accessibility is outside my control. </source>
+        <target> האתר מכיל סרטון YouTube מוטמע וקישורים לאתרים חיצוניים כגון LinkedIn, GitHub, Fiverr, Facebook ואתרי תיק עבודות של לקוחות. אלה מופעלים על ידי גופים אחרים, ולכן הנגישות שלהם אינה בשליטתי. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">136,141</context>
+          <context context-type="linenumber">132,137</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec5.title" datatype="html">
-        <source> 5. Remediation, Feedback, and Contact Details </source>
-        <target> 5. תיקון, משוב ופרטי התקשרות </target>
+        <source> 5. Feedback and Contact </source>
+        <target> 5. משוב ויצירת קשר </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">149,151</context>
+          <context context-type="linenumber">144,146</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec5.p1" datatype="html">
-        <source> We maintain an ongoing codebase remediation protocol to continually identify and update accessibility anomalies. If you experience digital barriers, layout errors, or require alternative data delivery formats while browsing this site, please file an inquiry via our official communication channel <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				routerLink=&quot;/contact&quot;
-				i18n-aria-label=&quot;@@a11y_page.sec5.link_aria&quot;
-				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>here<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>. </source>
-        <target> אנו מקיימים פרוטוקול שוטף לתיקון קוד המקור כדי לזהות ולעדכן באופן מתמיד חריגות נגישות. אם חוויתם מחסומים דיגיטליים, שגיאות פריסה, או שאתם זקוקים לפורמטים חלופיים לאספקת נתונים בעת הגלישה באתר זה, אנא הגישו פנייה דרך ערוץ התקשורת הרשמי שלנו <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				routerLink=&quot;/contact&quot;
-				i18n-aria-label=&quot;@@a11y_page.sec5.link_aria&quot;
-				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>כאן<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>. </target>
+        <source> I review this site regularly and fix accessibility problems as I find them. If you meet a barrier, find an error, or need information in another format, please tell me through the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot;&gt;"/>contact page<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, or contact me directly by email ( <x id="START_LINK_1" equiv-text="&lt;a href=&quot;mailto:contact@kuvware.com&quot;&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ). </source>
+        <target>אני בודק את האתר באופן שוטף ומתקן בעיות נגישות כשאני מוצא אותן. אם נתקלתם בחסם, מצאתם שגיאה או שאתם זקוקים למידע בפורמט אחר, אנא פנו אליי דרך <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>עמוד יצירת הקשר<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, או צרו איתי קשר ישירות בדוא"ל ( <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/> ).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">152,163</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="a11y_page.sec5.link_aria" datatype="html">
-        <source>here. Go to the Contact page</source>
-        <target>כאן. עברו לעמוד יצירת קשר</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">159,162</context>
+          <context context-type="linenumber">147,152</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec5.p2" datatype="html">
-        <source> As part of our commitment to accessible engineering, we evaluate all accessibility inquiries rapidly and process structural modifications with the highest technical priority. </source>
-        <target> כחלק ממחויבותנו להנדסה נגישה, אנו מעריכים את כל פניות הנגישות במהירות ומעבדים שינויים מבניים בעדיפות הטכנית הגבוהה ביותר. </target>
+        <source> I respond to accessibility inquiries within 2 business days and prioritize fixing the barrier. </source>
+        <target> אני משיב לפניות נגישות תוך יומיים עסקיים ומטפל בחסם בעדיפות. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">164,168</context>
+          <context context-type="linenumber">153,156</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec5.p3" datatype="html">
-        <source>This statement is legally effective as of October 3, 2026.</source>
-        <target>הצהרה זו תקפה משפטית החל מ-3 באוקטובר 2026.</target>
+        <source>This statement was last updated on November 12, 2026.</source>
+        <target>הצהרה זו עודכנה לאחרונה ב-12 בנובמבר 2026.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">168,171</context>
+          <context context-type="linenumber">156,159</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.error.required" datatype="html">
@@ -1069,29 +1061,47 @@
       <trans-unit id="contact.form.consent.text" datatype="html">
         <source> I agree to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
 					routerLink=&quot;/terms&quot;
-					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Terms of Service <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+					i18n-aria-label=&quot;@@contact.form.consent.terms_aria&quot;
+					aria-label=&quot;Terms of Service (opens in a new tab)&quot;
+					target=&quot;_blank&quot;
+					rel=&quot;noopener noreferrer&quot;
+					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Terms of Service<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 				&gt;"/> and the processing of my data in accordance with the <x id="START_LINK_1" equiv-text="&lt;a
 					routerLink=&quot;/privacy-policy&quot;
-					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Privacy Policy <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+					i18n-aria-label=&quot;@@contact.form.consent.privacy_aria&quot;
+					aria-label=&quot;Privacy Policy (opens in a new tab)&quot;
+					target=&quot;_blank&quot;
+					rel=&quot;noopener noreferrer&quot;
+					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Privacy Policy<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 				&gt;"/>. </source>
-        <target> אני מסכים ל<x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-					routerLink=&quot;/terms&quot;
-					(click)=&quot;$event.stopPropagation()&quot;&gt;"/>תנאי השימוש<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-				&gt;"/> ולעיבוד הנתונים שלי בהתאם ל<x id="START_LINK_1" equiv-text="&lt;a
-					routerLink=&quot;/privacy-policy&quot;
-					(click)=&quot;$event.stopPropagation()&quot;&gt;"/>מדיניות הפרטיות<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-				&gt;"/>. </target>
+        <target> אני מסכים/ה ל<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>תנאי השימוש<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ולעיבוד הנתונים שלי בהתאם ל<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>מדיניות הפרטיות<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">111,124</context>
+          <context context-type="linenumber">111,132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.form.consent.terms_aria" datatype="html">
+        <source>Terms of Service (opens in a new tab)</source>
+        <target>תנאי השימוש (נפתח בכרטיסייה חדשה)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
+          <context context-type="linenumber">115,117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.form.consent.privacy_aria" datatype="html">
+        <source>Privacy Policy (opens in a new tab)</source>
+        <target>מדיניות הפרטיות (נפתח בכרטיסייה חדשה)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
+          <context context-type="linenumber">125,127</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.consent.error" datatype="html">
         <source> You must accept the Terms of Service and Privacy Policy to submit form. </source>
-        <target> עליך לאשר את תנאי השימוש ומדיניות הפרטיות כדי לשלוח את הטופס. </target>
+        <target> עליכם לאשר את תנאי השימוש ואת מדיניות הפרטיות כדי לשלוח את הטופס. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">129,134</context>
+          <context context-type="linenumber">137,142</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.btn.send" datatype="html">
@@ -1099,7 +1109,7 @@
         <target>שלח</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">143,146</context>
+          <context context-type="linenumber">151,154</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.meta.title" datatype="html">
@@ -1886,16 +1896,16 @@
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.meta.title" datatype="html">
-        <source>Privacy Policy | Did Not Get It</source>
-        <target>מדיניות פרטיות | Did Not Get It</target>
+        <source>Privacy Policy | Kuvshinov Software</source>
+        <target>מדיניות פרטיות | Kuvshinov Software</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.component.ts</context>
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.meta.desc" datatype="html">
-        <source>Official statutory privacy disclosure and data processing protocol for the Did Not Get It browser extension.</source>
-        <target>גילוי נאות משפטי רשמי ופרוטוקול עיבוד נתונים עבור תוסף הדפדפן Did Not Get It.</target>
+        <source>How kuvware.com and the Did Not Get It browser extension handle your data.</source>
+        <target>כיצד האתר kuvware.com ותוסף הדפדפן Did Not Get It מטפלים בנתונים שלכם.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.component.ts</context>
           <context context-type="linenumber">9</context>
@@ -1910,67 +1920,67 @@
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.intro" datatype="html">
-        <source> This Privacy Policy governs the collection, processing, and protection of data by Valeriy Kuvshinov, doing business as Kuvshinov Software (&quot;Company&quot;, &quot;We&quot;, or &quot;Us&quot;), across our digital platform (kuvware.com) and associated applications, including the &quot;Did Not Get It&quot; browser extension (collectively, &quot;the Services&quot;). </source>
-        <target> מדיניות פרטיות זו מסדירה את איסוף, עיבוד והגנת הנתונים על ידי ולרי קובשינוב, הפועל תחת השם Kuvshinov Software (&quot;החברה&quot; או &quot;אנחנו&quot;), ברחבי הפלטפורמה הדיגיטלית שלנו (kuvware.com) והיישומים הנלווים, כולל תוסף הדפדפן &quot;Did Not Get It&quot; (יחד, &quot;השירותים&quot;). </target>
+        <source> This Privacy Policy explains what data is collected and how it is handled by Valeriy Kuvshinov, operating as Kuvshinov Software (&quot;I&quot; or &quot;the Company&quot;), on this website (kuvware.com) and in related software, including the &quot;Did Not Get It&quot; browser extension (together, &quot;the Services&quot;). </source>
+        <target> מדיניות פרטיות זו מסבירה אילו נתונים נאספים וכיצד הם מטופלים על ידי ולרי קובשינוב, הפועל תחת השם Kuvshinov Software (&quot;אני&quot; או &quot;העסק&quot;), באתר זה (kuvware.com) ובתוכנות הנלוות, כולל תוסף הדפדפן &quot;Did Not Get It&quot; (יחד, &quot;השירותים&quot;). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">11,17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec1.title" datatype="html">
-        <source> 1. Direct Communication &amp; Contact Form </source>
-        <target> 1. תקשורת ישירה וטופס יצירת קשר </target>
+        <source> 1. Contact Form and Direct Messages </source>
+        <target> 1. טופס יצירת קשר והודעות ישירות </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">21,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec1.p1" datatype="html">
-        <source> When you voluntarily submit a query via the platform&apos;s official Contact Form, we collect your provided name, email address, and the contents of your message. This constitutes Personal Identifiable Information (PII). </source>
-        <target> כאשר אתם מגישים פנייה מרצונכם דרך טופס יצירת הקשר הרשמי של הפלטפורמה, אנו אוספים את השם שסיפקתם, את כתובת הדוא"ל ואת תוכן ההודעה שלכם. זה מהווה מידע מזהה אישי (PII). </target>
+        <source> When you send a message through the contact form, I collect the name, email address, and message you provide. This is personal information. Please do not include passwords or sensitive details in your message. </source>
+        <target> כשאתם שולחים הודעה דרך טופס יצירת הקשר, אני אוסף את השם, כתובת הדוא"ל ותוכן ההודעה שמסרתם. זה מידע אישי. אנא אל תכללו בהודעה סיסמאות או פרטים רגישים. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">24,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec1.p2" datatype="html">
-        <source> This data is collected for the sole, explicit purpose of customer service, technical support, and responding to your inquiry. The data is transmitted securely to our administrative inbox. We explicitly guarantee that your communication data is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>never<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> sold, rented, or transferred to third-party marketing entities. Correspondence is retained for operational continuity unless you formally request its deletion. </source>
-        <target> נתונים אלה נאספים אך ורק למטרה המפורשת של שירות לקוחות, תמיכה טכנית ומענה לפנייתכם. הנתונים מועברים בצורה מאובטחת לתיבת הדואר המנהלית שלנו. אנו מתחייבים במפורש שנתוני התקשורת שלכם <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>לעולם אינם<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> נמכרים, מושכרים או מועברים לגופי שיווק צד שלישי. ההתכתבות נשמרת לצורך המשכיות תפעולית אלא אם תבקשו רשמית את מחיקתה. </target>
+        <source> I use this information only to respond to your inquiry and to provide support. Messages arrive in my business inbox. I <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>never<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> sell, rent, or share them with marketing companies. I keep correspondence for as long as needed to handle your inquiry and for ordinary business records, and I delete it when you ask me to, unless the law requires me to keep it. </source>
+        <target> אני משתמש במידע זה רק כדי להשיב לפנייתכם ולספק תמיכה. ההודעות מגיעות לתיבת הדואר העסקית שלי. אני <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>לעולם אינני<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> מוכר, משכיר או מעביר אותן לחברות שיווק. אני שומר התכתבויות כל עוד הדבר נחוץ לטיפול בפנייה ולניהול עסקי רגיל, ומוחק אותן לבקשתכם, אלא אם החוק מחייב אותי לשמור אותן. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">29,36</context>
+          <context context-type="linenumber">29,35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec2.title" datatype="html">
-        <source> 2. Telemetry, Analytics, and Infrastructure Logging </source>
-        <target> 2. טלמטריה, אנליטיקה ורישום נתוני תשתית (Logging) </target>
+        <source> 2. Analytics and Server Logs </source>
+        <target> 2. אנליטיקה ויומני שרת </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">42,44</context>
+          <context context-type="linenumber">41,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec2.p1" datatype="html">
-        <source> To maintain operational stability and optimize the user experience, the website utilizes third-party analytics infrastructure, specifically Google Analytics. Subject to explicit consent granted via the platform&apos;s Cookie Banner, these services deploy standard tracking technologies (&quot;Cookies&quot;) to aggregate non-identifiable usage metrics. </source>
-        <target> על מנת לשמור על יציבות תפעולית ולמטב את חווית המשתמש, האתר משתמש בתשתית אנליטיקה של צד שלישי, ספציפית Google Analytics. בכפוף להסכמה מפורשת הניתנת דרך באנר העוגיות (Cookies) של הפלטפורמה, שירותים אלה מפעילים טכנולוגיות מעקב סטנדרטיות (&quot;עוגיות&quot;) כדי לאסוף מדדי שימוש שאינם מזהים. </target>
+        <source> This site uses Google Analytics to understand how it is used and to improve it. Analytics cookies are used only if you accept them in the cookie banner. Google may process this data on servers outside Israel. </source>
+        <target> האתר משתמש ב-Google Analytics כדי להבין כיצד משתמשים בו ולשפר אותו. עוגיות אנליטיקה נטענות רק אם אישרתם אותן בבאנר העוגיות. Google עשויה לעבד נתונים אלה בשרתים מחוץ לישראל. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">45,50</context>
+          <context context-type="linenumber">44,48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec2.p2" datatype="html">
-        <source> Aggregated data sets may include masked IP addresses, browser specifications, and structural navigation patterns. This data cannot be reverse-engineered to personally identify you. You retain the right to revoke consent unilaterally at any time by declining via the Cookie Banner or purging local browser storage and cookie caches pertaining to this domain. </source>
-        <target> מערכי נתונים מצטברים עשויים לכלול כתובות IP מוסוות, מפרטי דפדפן ודפוסי ניווט מבניים. לא ניתן להשתמש בנתונים אלה כדי לזהות אתכם באופן אישי (Reverse-engineering). אתם שומרים על הזכות לבטל את הסכמתכם באופן חד צדדי בכל עת על ידי סירוב דרך באנר העוגיות או על ידי מחיקת האחסון המקומי של הדפדפן ומטמוני העוגיות הקשורים לדומיין זה. </target>
+        <source> The data is statistical and typically includes approximate location, browser and device details, and the pages you visit. It does not directly identify you, and I do not try to identify you with it. You can withdraw your consent at any time through the cookie settings on this site or by clearing this site&apos;s cookies and storage in your browser. </source>
+        <target> הנתונים סטטיסטיים וכוללים בדרך כלל מיקום משוער, פרטי דפדפן ומכשיר והעמודים שבהם ביקרתם. הם אינם מזהים אתכם ישירות, ואני לא מנסה לזהות אתכם באמצעותם. אפשר לבטל הסכמה בכל עת דרך הגדרות העוגיות באתר או על ידי מחיקת העוגיות והאחסון של האתר בדפדפן. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">51,57</context>
+          <context context-type="linenumber">49,54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec2.p3" datatype="html">
-        <source> In addition to third-party analytics, our core web server infrastructure temporarily logs standard transmission metrics—including IP addresses, user-agent strings, and request timestamps—solely for the purposes of security auditing, DDoS mitigation, and ensuring the technical stability of the Services. These infrastructure logs are routinely rotated and destroyed, and are never used for marketing or individual user profiling. </source>
-        <target> בנוסף לאנליטיקה של צד שלישי, תשתית שרת הרשת המרכזית שלנו רושמת זמנית מדדי שידור סטנדרטיים — כולל כתובות IP, מחרוזות סוכן משתמש (User-agent) וחותמות זמן של בקשות — אך ורק למטרות בקרת אבטחה, צמצום מתקפות מניעת שירות (DDoS) והבטחת היציבות הטכנית של השירותים. יומני תשתית אלה עוברים רוטציה ומושמדים באופן קבוע, ולעולם אינם משמשים לשיווק או לבניית פרופיל משתמש אישי. </target>
+        <source> For security and reliability, this site is delivered through Cloudflare, which acts as a proxy and processes visitors&apos; technical data such as IP addresses, browser details, and request times. My web server and hosting provider also keep standard technical logs. These logs are kept for a limited time, used only for security, abuse prevention, and fixing technical problems, and never for marketing or profiling. </source>
+        <target> לצורכי אבטחה ויציבות, האתר מוגש דרך Cloudflare, הפועלת כשרת ביניים (Proxy) ומעבדת נתונים טכניים של המבקרים, כגון כתובות IP, פרטי דפדפן וזמני בקשות. גם שרת האתר וספק האחסון שומרים יומנים טכניים סטנדרטיים. יומנים אלה נשמרים לזמן מוגבל, משמשים רק לאבטחה, למניעת ניצול לרעה ולתיקון תקלות טכניות, ולעולם לא לשיווק או לבניית פרופיל. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">58,65</context>
+          <context context-type="linenumber">55,61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec3.title" datatype="html">
@@ -1978,27 +1988,22 @@
         <target> 3. אבטחה והגנה מפני בוטים </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">71,73</context>
+          <context context-type="linenumber">67,69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec3.p1" datatype="html">
-        <source> To protect the platform&apos;s infrastructure and communication forms from spam and automated abuse, we utilize Cloudflare Turnstile. This security service operates in the background to analyze network traffic patterns and authenticate human interactions without deploying invasive tracking cookies. Your interaction with our forms is subject to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+        <source> To protect the site and its forms from spam and automated abuse, I use Cloudflare Turnstile, which works in the background to tell real visitors from bots. To do this, Cloudflare processes some technical information about your browser and connection. Your use of the forms is also subject to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
 				href=&quot;https://www.cloudflare.com/en-gb/turnstile-privacy-policy/&quot;
 				i18n-aria-label=&quot;@@privacy.sec3.link_aria&quot;
 				aria-label=&quot;Cloudflare Turnstile Privacy Addendum (opens in a new tab)&quot;
 				target=&quot;_blank&quot;
-				rel=&quot;noopener noreferrer&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Cloudflare Turnstile Privacy Addendum<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+				rel=&quot;noopener noreferrer&quot;
+				&gt;"/>Cloudflare Turnstile Privacy Addendum<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 			&gt;"/>. </source>
-        <target> כדי להגן על התשתית ותבניות התקשורת של הפלטפורמה מפני ספאם וניצול אוטומטי, אנו משתמשים ב-Cloudflare Turnstile. שירות אבטחה זה פועל ברקע לניתוח דפוסי תעבורת רשת ואימות אינטראקציות אנושיות מבלי לפרוס עוגיות מעקב פולשניות. האינטראקציה שלכם עם הטפסים שלנו כפופה ל<x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				href=&quot;https://www.cloudflare.com/en-gb/turnstile-privacy-policy/&quot;
-				i18n-aria-label=&quot;@@privacy.sec3.link_aria&quot;
-				aria-label=&quot;Cloudflare Turnstile Privacy Addendum (opens in a new tab)&quot;
-				target=&quot;_blank&quot;
-				rel=&quot;noopener noreferrer&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>נספח הפרטיות של Cloudflare Turnstile<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>. </target>
+        <target> כדי להגן על האתר ועל הטפסים מפני ספאם וניצול אוטומטי, אני משתמש ב-Cloudflare Turnstile, הפועל ברקע כדי להבחין בין גולשים אמיתיים לבוטים. לשם כך Cloudflare מעבדת מידע טכני מסוים על הדפדפן והחיבור שלכם. השימוש שלכם בטפסים כפוף גם ל<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>נספח הפרטיות של Cloudflare Turnstile<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">74,87</context>
+          <context context-type="linenumber">70,83</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec3.link_aria" datatype="html">
@@ -2006,31 +2011,31 @@
         <target>נספח הפרטיות של Cloudflare Turnstile (נפתח בכרטיסייה חדשה)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">81,83</context>
+          <context context-type="linenumber">77,79</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec4.title" datatype="html">
-        <source> 4. Remote Digital Assistance &amp; Consulting Services </source>
-        <target> 4. סיוע דיגיטלי מרחוק ושירותי ייעוץ </target>
+        <source> 4. Screen Reader Tutoring Sessions </source>
+        <target> 4. הדרכות ניווט עם קורא מסך </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">93,95</context>
+          <context context-type="linenumber">89,91</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec4.p1" datatype="html">
-        <source> During the provision of Remote Digital Assistance—such as guided form completion, navigational support, or CAPTCHA bypassing—we may transiently encounter highly sensitive personal, medical, or financial information (including credit card details or credentials). </source>
-        <target> במהלך מתן סיוע דיגיטלי מרחוק — כגון מילוי טפסים מודרך, תמיכה בניווט או עקיפת CAPTCHA — אנו עשויים להיתקל באופן זמני במידע אישי, רפואי או פיננסי רגיש ביותר (כולל פרטי כרטיס אשראי או אישורי התחברות). </target>
+        <source> Tutoring sessions run over video call (for example, Zoom through Fiverr, or directly). You share your screen, and I guide you verbally. I never ask for passwords, payment details, or other sensitive information, and you enter those yourself. Even so, sensitive information may sometimes appear on the screen you share. </source>
+        <target> ההדרכות מתנהלות בשיחת וידאו (למשל בזום, דרך Fiverr או ישירות). אתם משתפים מסך ואני מדריך אתכם בעל פה. אני אף פעם לא מבקש סיסמאות, פרטי תשלום או מידע רגיש אחר, ואתם מזינים אותם בעצמכם. עם זאת, ייתכן שמידע רגיש יופיע לפעמים על המסך המשותף. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">96,101</context>
+          <context context-type="linenumber">92,97</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec4.p2" datatype="html">
-        <source> We enforce a strict <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>zero-retention policy<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> for all live-session data. We do not record, log, store, cache, or transmit any sensitive user data encountered during these sessions. All assistance is provided ephemerally, and no persistent record of your private credentials or financial information is ever created or maintained by the Company. </source>
-        <target> אנו אוכפים <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>מדיניות אי-שמירה (Zero-retention) קפדנית<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> עבור כל נתוני המפגשים החיים (Live-sessions). איננו מקליטים, רושמים, שומרים, אוגרים (Cache) או מעבירים כל נתוני משתמש רגישים שנתקלנו בהם במהלך מפגשים אלה. כל סיוע מסופק באופן זמני, והחברה לעולם אינה יוצרת או שומרת תיעוד קבוע של אישורי ההתחברות הפרטיים או המידע הפיננסי שלכם. </target>
+        <source> I follow a <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>no-recording, no-storage rule<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> for session content: I do not record sessions, take screenshots, or save or copy anything I see on your screen. The written recaps I send after a session contain only navigation steps and a map of the site, never personal data. The video call platform (such as Zoom or Fiverr) handles data under its own privacy policy. </source>
+        <target> אני נוהג ב<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>כלל של אי-הקלטה ואי-שמירה<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> של תוכן המפגשים: אני לא מקליט מפגשים, לא מצלם מסך ולא שומר או מעתיק דבר ממה שאני רואה על המסך. הסיכומים הכתובים שאני שולח לאחר מפגש כוללים רק צעדי ניווט ומפת אתר, ולעולם לא מידע אישי. פלטפורמת שיחת הווידאו (כגון Zoom או Fiverr) מטפלת בנתונים לפי מדיניות הפרטיות שלה. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">102,108</context>
+          <context context-type="linenumber">98,104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.title" datatype="html">
@@ -2038,63 +2043,79 @@
         <target> 5. תוסף &quot;Did Not Get It&quot;: מינימיזציה של נתונים </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">114,116</context>
+          <context context-type="linenumber">110,112</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.intro" datatype="html">
-        <source> The &quot;Did Not Get It&quot; browser extension operates entirely locally within your browser. Our core principle is absolute data minimization: your data belongs to you, stays on your device, and is never transmitted to our servers. </source>
-        <target> תוסף הדפדפן &quot;Did Not Get It&quot; פועל באופן מקומי לחלוטין בתוך הדפדפן שלכם. עיקרון הליבה שלנו הוא מינימיזציה מוחלטת של נתונים: הנתונים שלכם שייכים לכם, נשארים במכשיר שלכם, ולעולם אינם מועברים לשרתים שלנו. </target>
+        <source> The &quot;Did Not Get It&quot; browser extension runs entirely inside your browser. Your data stays on your device and is never sent to me or to any server I operate. </source>
+        <target> תוסף הדפדפן &quot;Did Not Get It&quot; פועל כולו בתוך הדפדפן שלכם. הנתונים שלכם נשארים במכשיר שלכם ולעולם אינם נשלחים אליי או לשרת כלשהו שאני מפעיל. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">117,121</context>
+          <context context-type="linenumber">113,116</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.li1.title" datatype="html">
-        <source>No Telemetry or Tracking:</source>
-        <target>ללא טלמטריה או מעקב:</target>
+        <source>No tracking:</source>
+        <target>ללא מעקב:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">123,124</context>
+          <context context-type="linenumber">118,119</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.li1.desc" datatype="html">
-        <source> We do not track your browsing behavior, clicks, or extension usage. </source>
-        <target> איננו עוקבים אחר התנהגות הגלישה שלכם, קליקים, או השימוש בתוסף. </target>
+        <source> I do not track your browsing, clicks, or how you use the extension. </source>
+        <target> אני לא עוקב אחר הגלישה שלכם, הקלקות או אופן השימוש בתוסף. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">125,129</context>
+          <context context-type="linenumber">120,124</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.li2.title" datatype="html">
-        <source>No Server Transmissions:</source>
-        <target>ללא העברות שרת:</target>
+        <source>No servers:</source>
+        <target>ללא שרתים:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">129,130</context>
+          <context context-type="linenumber">124,125</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.li2.desc" datatype="html">
-        <source> We do not own, operate, or route your data through any external backend servers. </source>
-        <target> איננו מחזיקים, מפעילים או מנתבים את הנתונים שלכם דרך שרתי Backend חיצוניים כלשהם. </target>
+        <source> I do not run any backend servers that receive your data. </source>
+        <target> אני לא מפעיל שרתי Backend שמקבלים את הנתונים שלכם. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">131,135</context>
+          <context context-type="linenumber">126,130</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.li3.title" datatype="html">
-        <source>No Email Harvesting:</source>
-        <target>ללא איסוף דוא"ל (Harvesting):</target>
+        <source>No Email collection:</source>
+        <target>ללא איסוף דוא"ל:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">135,136</context>
+          <context context-type="linenumber">130,131</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.li3.desc" datatype="html">
-        <source> Your email content, sender addresses, and metadata are never copied, logged, or sent to the developer or any third party. </source>
-        <target> תוכן הדוא"ל שלכם, כתובות השולח והמטא-נתונים לעולם אינם מועתקים, נרשמים או נשלחים למפתח או לכל צד שלישי שהוא. </target>
+        <source> Your email content, sender addresses, and metadata are never copied, logged, or sent to me or to any third party. </source>
+        <target> תוכן הדוא"ל, כתובות השולחים והמטא-נתונים שלכם לעולם אינם מועתקים, נרשמים או נשלחים אליי או לכל צד שלישי. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">137,141</context>
+          <context context-type="linenumber">132,136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacy.sec5.li4.title" datatype="html">
+        <source>Local storage:</source>
+        <target>אחסון מקומי:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
+          <context context-type="linenumber">137,138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacy.sec5.li4.desc" datatype="html">
+        <source> The extension stores only its own settings (such as your chosen label) and a counter of skipped rejections in your browser&apos;s storage. Removing the extension deletes this data. </source>
+        <target> התוסף שומר באחסון הדפדפן שלכם רק את ההגדרות שלו (כגון התווית שבחרתם) ומונה של דחיות שדולגו. הסרת התוסף מוחקת נתונים אלה. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
+          <context context-type="linenumber">139,144</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.title" datatype="html">
@@ -2102,67 +2123,62 @@
         <target> 6. תוסף: גישה לנתוני ה-API של Google (שימוש מוגבל) </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">148,150</context>
+          <context context-type="linenumber">151,153</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.intro" datatype="html">
-        <source> In order to function, the Extension requests access to your Gmail account using the Google OAuth 2.0 protocol. We access and use this data in the following strictly limited ways: </source>
-        <target> כדי לפעול, התוסף מבקש גישה לחשבון ה-Gmail שלכם באמצעות פרוטוקול Google OAuth 2.0. אנו ניגשים לנתונים אלה ומשתמשים בהם בדרכים המוגבלות בהחלט הבאות: </target>
+        <source> To work, the extension asks for access to your Gmail account through Google OAuth 2.0. It uses that access only in these limited ways: </source>
+        <target> כדי לפעול, התוסף מבקש גישה לחשבון ה-Gmail שלכם באמצעות Google OAuth 2.0. הוא משתמש בגישה זו רק בדרכים המוגבלות הבאות: </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">151,155</context>
+          <context context-type="linenumber">154,157</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.li1.title" datatype="html">
-        <source>Reading Data:</source>
-        <target>קריאת נתונים:</target>
+        <source>Reading:</source>
+        <target>קריאה:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">157,158</context>
+          <context context-type="linenumber">159,160</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.li1.desc" datatype="html">
-        <source> The Extension reads the HTML text of incoming unread emails locally in your browser to check for standard job rejection phrasing. </source>
-        <target> התוסף קורא את טקסט ה-HTML של הודעות דוא"ל נכנסות שלא נקראו באופן מקומי בדפדפן שלכם כדי לבדוק קיומם של ניסוחי דחיית עבודה סטנדרטיים. </target>
+        <source> The extension reads the text of incoming unread emails locally in your browser, to check for standard job-rejection phrasing. </source>
+        <target> התוסף קורא באופן מקומי בדפדפן את טקסט ההודעות הנכנסות שלא נקראו, כדי לבדוק ניסוחי דחיית מועמדות סטנדרטיים. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">159,163</context>
+          <context context-type="linenumber">161,165</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.li2.title" datatype="html">
-        <source>Modifying Data:</source>
-        <target>שינוי נתונים:</target>
+        <source>Modifying:</source>
+        <target>שינוי:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">164,165</context>
+          <context context-type="linenumber">166,167</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.li2.desc" datatype="html">
-        <source> If a rejection is detected, the Extension communicates directly with the Google Gmail API to apply your custom label and remove the &quot;UNREAD&quot; status from that specific thread. </source>
-        <target> אם מתגלה דחייה, התוסף מתקשר ישירות עם ה-Google Gmail API כדי להחיל את התווית המותאמת אישית שלכם ולהסיר את הסטטוס &quot;לא נקרא (UNREAD)&quot; משרשור הודעות ספציפי זה. </target>
+        <source> If a rejection is detected, the extension asks the Gmail API to apply your label and remove the &quot;UNREAD&quot; status from that email thread. </source>
+        <target> אם מזוהה דחייה, התוסף מבקש מ-Gmail API להחיל את התווית שלכם ולהסיר את הסטטוס &quot;לא נקרא&quot; (UNREAD) משרשור ההודעות הזה. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">166,171</context>
+          <context context-type="linenumber">168,172</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.p1" datatype="html">
-        <source> &quot;Did Not Get It&quot; complies entirely with the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				href=&quot;https://developers.google.com/terms/api-services-user-data-policy?utm_source=gemini&amp;authuser=1&quot;
+        <source> The use and transfer of information received from Google APIs by &quot;Did Not Get It&quot; adheres to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+				href=&quot;https://developers.google.com/terms/api-services-user-data-policy&quot;
 				i18n-aria-label=&quot;@@privacy.sec6.link_aria&quot;
 				aria-label=&quot;Google API Services User Data Policy (opens in a new tab)&quot;
 				target=&quot;_blank&quot;
-				rel=&quot;noopener noreferrer&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Google API Services User Data Policy<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>, including the Limited Use requirements. We do not use your data to serve advertisements, we do not allow humans to read your data, and we do not sell or transfer your data. </source>
-        <target> &quot;Did Not Get It&quot; מציית במלואו ל<x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				href=&quot;https://developers.google.com/terms/api-services-user-data-policy?utm_source=gemini&amp;authuser=1&quot;
-				i18n-aria-label=&quot;@@privacy.sec6.link_aria&quot;
-				aria-label=&quot;Google API Services User Data Policy (opens in a new tab)&quot;
-				target=&quot;_blank&quot;
-				rel=&quot;noopener noreferrer&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>מדיניות נתוני המשתמש של שירותי Google API<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>, כולל דרישות השימוש המוגבל (Limited Use). איננו משתמשים בנתונים שלכם להצגת פרסומות, איננו מאפשרים לבני אדם לקרוא את הנתונים שלכם, ואיננו מוכרים או מעבירים את הנתונים שלכם. </target>
+				rel=&quot;noopener noreferrer&quot;
+				&gt;"/>Google API Services User Data Policy<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+			&gt;"/>, including the Limited Use requirements. The extension does not use your data for advertising, does not allow humans to read it, and does not sell or transfer it. </source>
+        <target> השימוש במידע שמתקבל מ-Google APIs והעברתו על ידי &quot;Did Not Get It&quot; עומדים ב<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>מדיניות נתוני המשתמש של שירותי Google API<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, כולל דרישות השימוש המוגבל (Limited Use). התוסף אינו משתמש בנתונים שלכם לפרסום, אינו מאפשר לבני אדם לקרוא אותם, ואינו מוכר או מעביר אותם. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">173,185</context>
+          <context context-type="linenumber">174,186</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.link_aria" datatype="html">
@@ -2170,60 +2186,60 @@
         <target>מדיניות נתוני המשתמש של שירותי Google API (נפתח בכרטיסייה חדשה)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">177,179</context>
+          <context context-type="linenumber">179,181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacy.sec6.p2" datatype="html">
+        <source> You can revoke the extension&apos;s access at any time in the third-party access settings of your Google Account, or by removing the extension. </source>
+        <target> אפשר לבטל את גישת התוסף בכל עת בהגדרות הגישה של צד שלישי בחשבון Google שלכם, או על ידי הסרת התוסף. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
+          <context context-type="linenumber">187,192</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec7.title" datatype="html">
-        <source> 7. External Routing and Liability </source>
-        <target> 7. ניתוב חיצוני ואחריות </target>
+        <source> 7. External Links and Embedded Content </source>
+        <target> 7. קישורים חיצוניים ותוכן מוטמע </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">191,193</context>
+          <context context-type="linenumber">196,198</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec7.p1" datatype="html">
-        <source> The Services may contain routing nodes and hyperlinks directing traffic to external digital ecosystems. Upon executing a redirection to an external domain, you are immediately subject to the privacy architecture of that third party. We exercise no administrative control over external properties and explicitly disclaim all liability for their data handling practices. </source>
-        <target> השירותים עשויים להכיל צמתי ניתוב (Routing nodes) והיפר-קישורים המכוונים תעבורה למערכות אקולוגיות דיגיטליות חיצוניות. עם ביצוע הפניה לדומיין חיצוני, אתם כפופים באופן מיידי לארכיטקטורת הפרטיות של אותו צד שלישי. איננו מפעילים שליטה ניהולית על נכסים חיצוניים ומתנערים במפורש מכל אחריות לשיטות טיפול הנתונים שלהם. </target>
+        <source> This site links to other websites and embeds a YouTube video. When you follow a link or play embedded content, that third party&apos;s privacy practices apply, and I have no control over them or responsibility for them. </source>
+        <target> האתר מקשר לאתרים אחרים ומטמיע סרטון YouTube. כשאתם עוברים לקישור או מפעילים תוכן מוטמע, חלות שיטות הפרטיות של אותו צד שלישי, ואין לי שליטה או אחריות לגביהן. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">194,200</context>
+          <context context-type="linenumber">199,205</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec8.title" datatype="html">
-        <source> 8. Data Inquiry and Contact Details </source>
-        <target> 8. פניות בנוגע לנתונים ופרטי התקשרות </target>
+        <source> 8. Your Rights, Contact, and Updates </source>
+        <target> 8. הזכויות שלכם, יצירת קשר ועדכונים </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">206,208</context>
+          <context context-type="linenumber">209,211</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec8.p1" datatype="html">
-        <source> If you have any questions, concerns, or requests regarding this Privacy Policy, your data, or the security of our Services, please submit a formal query via our official communication channel <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				routerLink=&quot;/contact&quot;
-				i18n-aria-label=&quot;@@privacy.sec8.link_aria&quot;
-				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>here<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>. </source>
-        <target> אם יש לכם שאלות, חששות או בקשות בנוגע למדיניות פרטיות זו, לנתונים שלכם, או לאבטחת השירותים שלנו, אנא הגישו פנייה רשמית דרך ערוץ התקשורת הרשמי שלנו <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				routerLink=&quot;/contact&quot;
-				i18n-aria-label=&quot;@@privacy.sec8.link_aria&quot;
-				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>כאן<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>. </target>
+        <source> You can ask me to show you the personal information I hold about you, to correct it, or to delete it, within the limits of the law. For this, or for any question about this policy, please use the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot;&gt;"/>contact page<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> or write to me at <x id="START_LINK_1" equiv-text="&lt;a href=&quot;mailto:contact@kuvware.com&quot;&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
+        <target> אתם רשאים לבקש לראות את המידע האישי שאני מחזיק עליכם, לתקן אותו או למחוק אותו, בכפוף לדין. לשם כך, או לכל שאלה על מדיניות זו, אנא פנו אליי דרך <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>עמוד יצירת הקשר<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> או במייל (<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/>). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">209,219</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="privacy.sec8.link_aria" datatype="html">
-        <source>here. Go to the Contact page</source>
-        <target>כאן. עברו לעמוד יצירת קשר</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">215,218</context>
+          <context context-type="linenumber">212,217</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec8.p2" datatype="html">
-        <source>This policy is legally effective as of October 22, 2026.</source>
-        <target>מדיניות זו תקפה משפטית החל מ-22 באוקטובר 2026.</target>
+        <source>This policy was last updated on November 12, 2026.</source>
+        <target>מדיניות זו עודכנה לאחרונה ב-12 בנובמבר 2026.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
+          <context context-type="linenumber">217,218</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacy.sec8.p3" datatype="html">
+        <source> I may update this policy from time to time. The current version is always on this page. </source>
+        <target> אני רשאי לעדכן מדיניות זו מעת לעת. הגרסה העדכנית נמצאת תמיד בעמוד זה. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">219,222</context>
@@ -2533,12 +2549,20 @@
           <context context-type="linenumber">15,20</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="services.pricing_note" datatype="html">
+        <source> Final prices, no VAT included (Exempt Dealer). </source>
+        <target>המחירים סופיים, לא כולל מעמ (עוסק פטור).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/page.html</context>
+          <context context-type="linenumber">30,33</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="services.process.title" datatype="html">
         <source> How I Work </source>
         <target> איך אני עובד </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.html</context>
-          <context context-type="linenumber">58,61</context>
+          <context context-type="linenumber">74,77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.cta.title" datatype="html">
@@ -2546,7 +2570,7 @@
         <target> החלטתם? </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.html</context>
-          <context context-type="linenumber">87,90</context>
+          <context context-type="linenumber">103,106</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.cta.subtitle" datatype="html">
@@ -2554,7 +2578,7 @@
         <target> לכל שאלה או התלבטות, אל תהססו לשאול. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.html</context>
-          <context context-type="linenumber">92,95</context>
+          <context context-type="linenumber">108,111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.cta.btn" datatype="html">
@@ -2562,7 +2586,7 @@
         <target>שלחו הודעה</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.html</context>
-          <context context-type="linenumber">97,99</context>
+          <context context-type="linenumber">113,115</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.meta.title" datatype="html">
@@ -2590,35 +2614,51 @@
         </context-group>
       </trans-unit>
       <trans-unit id="terms.intro" datatype="html">
-        <source> These Terms of Service (&quot;Terms&quot;) govern your access to and use of the digital properties, consulting services, software products, and browser extensions (collectively, the &quot;Services&quot;) provided by Valeriy Kuvshinov, doing business as Kuvshinov Software (&quot;Company&quot;, &quot;We&quot;, or &quot;Us&quot;). </source>
-        <target> תנאי שימוש אלה (&quot;התנאים&quot;) מסדירים את הגישה והשימוש שלך בנכסים הדיגיטליים, שירותי הייעוץ, מוצרי התוכנה ותוספי הדפדפן (יחד, &quot;השירותים&quot;) המסופקים על ידי ולרי קובשינוב, הפועל תחת השם Kuvshinov Software (&quot;החברה&quot; או &quot;אנחנו&quot;). </target>
+        <source> These Terms of Service (&quot;Terms&quot;) govern your access to and use of the websites, consulting and development services, tutoring, software, and browser extensions (together, the &quot;Services&quot;) provided by Valeriy Kuvshinov, operating as Kuvshinov Software (&quot;I&quot; or &quot;the Company&quot;). </source>
+        <target> תנאי שימוש אלה (&quot;התנאים&quot;) מסדירים את הגישה והשימוש שלכם באתרים, בשירותי הייעוץ והפיתוח, בהדרכה, בתוכנות ובתוספי הדפדפן (יחד, &quot;השירותים&quot;) המסופקים על ידי ולרי קובשינוב, הפועל תחת השם Kuvshinov Software (&quot;אני&quot; או &quot;העסק&quot;). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
           <context context-type="linenumber">11,17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec1.title" datatype="html">
-        <source> 1. Consulting &amp; Remote Digital Assistance </source>
-        <target> 1. ייעוץ וסיוע דיגיטלי מרחוק </target>
+        <source> 1. Consulting, Development &amp; Screen Reader Tutoring </source>
+        <target> 1. ייעוץ, פיתוח והדרכת ניווט עם קורא מסך </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
           <context context-type="linenumber">21,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec1.p1" datatype="html">
-        <source> The Company provides custom software engineering, accessibility remediation, and remote digital assistance. By engaging our services, you acknowledge that all architectural and codebase modifications are executed based on the requirements agreed upon prior to commencement. </source>
-        <target> החברה מספקת שירותי הנדסת תוכנה מותאמת אישית, תיקוני נגישות וסיוע דיגיטלי מרחוק. בהתקשרות לשירותינו, הנך מאשר כי כל השינויים בארכיטקטורה ובקוד הבסיס מבוצעים בהתאם לדרישות שהוסכמו טרם תחילת העבודה. </target>
+        <source> I provide custom software development, accessibility remediation, and screen reader navigation tutoring. Work is carried out according to the scope and requirements we agree on before it starts. </source>
+        <target> אני מספק שירותי פיתוח תוכנה מותאם אישית, תיקוני נגישות והדרכת ניווט עם קורא מסך. העבודה מתבצעת לפי ההיקף והדרישות שנקבעו בינינו לפני תחילתה. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">24,29</context>
+          <context context-type="linenumber">24,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec1.p2" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Remote Assistance Disclaimer:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> When utilizing our Remote Digital Assistance services (e.g., CAPTCHA bypassing, guided navigation), you retain ultimate responsibility for your digital actions. The Company acts strictly as a navigational aid. We bear no liability for the outcome of forms submitted, financial transactions executed, or agreements bound during a guided session. </source>
-        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>הצהרת סיוע מרחוק:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> בעת שימוש בשירותי הסיוע הדיגיטלי מרחוק שלנו (למשל, עקיפת CAPTCHA, ניווט מודרך), אתה נושא באחריות המלאה לפעולותיך הדיגיטליות. החברה פועלת אך ורק כעזר ניווט. איננו נושאים באחריות לתוצאות של טפסים שנשלחו, עסקאות פיננסיות שבוצעו, או הסכמים שנחתמו במהלך סשן מודרך. </target>
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Screen reader navigation tutoring:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> this service is verbal guidance only, delivered over a video call (for example Zoom). You share your screen and stay in full control. I do not take remote control of your computer, and I will never ask for passwords, financial details, or other sensitive data, which you enter yourself. You remain responsible for your own actions and decisions during a session, including forms submitted, purchases made, and agreements accepted. To the extent permitted by law, I am not liable for the outcome of those actions. </source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>הדרכת ניווט עם קורא מסך:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> שירות זה הוא הדרכה מילולית בלבד, בשיחת וידאו (למשל בזום). אתם משתפים מסך ונשארים בשליטה מלאה. אני לא משתלט על המחשב שלכם, ולעולם לא מבקש סיסמאות, פרטים פיננסיים או מידע רגיש אחר, שאותם אתם מזינים בעצמכם. אתם נושאים באחריות לפעולותיכם ולהחלטותיכם במהלך המפגש, כולל טפסים שנשלחו, רכישות שבוצעו והסכמים שאושרו. במידה המותרת בחוק, איני אחראי לתוצאות פעולות אלה. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">30,36</context>
+          <context context-type="linenumber">29,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec1.p3" datatype="html">
+        <source> Once you have paid in full, the code and content I create specifically for your project belong to you. Third-party components and open-source libraries remain under their own licenses. I may show the finished project in my portfolio unless we agree otherwise in writing. </source>
+        <target> לאחר תשלום מלא, הקוד והתוכן שיצרתי במיוחד עבור הפרויקט שלכם שייכים לכם. רכיבי צד שלישי וספריות קוד פתוח נשארים כפופים לרישיונות שלהם. אני רשאי להציג את הפרויקט המוגמר בתיק העבודות שלי, אלא אם הוסכם אחרת בכתב. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">38,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec1.p4" datatype="html">
+        <source> Accessibility work is built to WCAG 2.1 AA and tested, but no website can be guaranteed to be free of barriers or protected from complaints and legal claims. Nothing on this site is legal advice. </source>
+        <target> עבודת הנגישות נבנית לפי WCAG 2.1 AA ונבדקת, אך אי אפשר להבטיח שאתר יהיה נקי מחסמים או חסין מפני תלונות ותביעות. האמור באתר זה אינו ייעוץ משפטי. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">44,49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec2.title" datatype="html">
@@ -2626,31 +2666,31 @@
         <target> 2. תנאים פיננסיים ותשלומים </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">42,44</context>
+          <context context-type="linenumber">54,56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec2.intro" datatype="html">
-        <source> All financial agreements, hourly rates, and project milestones will be explicitly defined in written communication prior to the commencement of work. </source>
-        <target> כל ההסכמים הפיננסיים, התעריפים השעתיים ואבני הדרך של הפרויקט יוגדרו במפורש בכתב טרם תחילת העבודה. </target>
+        <source> Rates, prices, and project milestones are agreed in writing before work starts. Prices are final, with no VAT added. </source>
+        <target> תעריפים, מחירים ואבני דרך של פרויקטים מוסכמים בכתב לפני תחילת העבודה. המחירים סופיים וללא תוספת מע&quot;מ. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">45,48</context>
+          <context context-type="linenumber">57,60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec2.li1.title" datatype="html">
-        <source>Accepted Methods:</source>
+        <source>Accepted methods:</source>
         <target>אמצעי תשלום:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">50,51</context>
+          <context context-type="linenumber">62,63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec2.li1.desc" datatype="html">
-        <source> We accept payments strictly via direct Bank Wire Transfer or the Israeli Bit payment application. We do not process credit cards directly. </source>
-        <target> אנו מקבלים תשלומים אך ורק באמצעות העברה בנקאית ישירה או אפליקציית Bit. איננו סולקים כרטיסי אשראי ישירות. </target>
+        <source> Direct work is paid by bank transfer or the Israeli Bit app. I do not process credit cards directly. </source>
+        <target> עבודה ישירה משולמת בהעברה בנקאית או באפליקציית Bit. אני לא סולק כרטיסי אשראי ישירות. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">52,56</context>
+          <context context-type="linenumber">64,68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec2.li2.title" datatype="html">
@@ -2658,15 +2698,47 @@
         <target>הסדרה:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">57,58</context>
+          <context context-type="linenumber">69,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec2.li2.desc" datatype="html">
-        <source> Invoices are due upon receipt unless a net-payment schedule has been formally established. The Company reserves the right to suspend ongoing development or withhold deployment access until outstanding balances are cleared. </source>
-        <target> חשבוניות לתשלום מיידי עם קבלתן, אלא אם נקבע רשמית לוח תשלומים מוסכם. החברה שומרת לעצמה את הזכות להשהות פיתוח שוטף או למנוע גישה להשקה עד להסדרת חובות פתוחים. </target>
+        <source> Payment is due when you receive my payment request, unless we agree on a different schedule in writing. If a balance remains unpaid, I may pause work and further deployments until it is settled. </source>
+        <target> התשלום מתבצע עם קבלת בקשת התשלום, אלא אם הוסכם בכתב לוח תשלומים אחר. אם נותרה יתרה פתוחה, אני רשאי להשהות עבודה ופריסות נוספות עד להסדרתה. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">59,63</context>
+          <context context-type="linenumber">71,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec2.li3.title" datatype="html">
+        <source>Fiverr orders:</source>
+        <target>הזמנות דרך Fiverr:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec2.li3.desc" datatype="html">
+        <source> Services ordered through Fiverr are paid for and governed through Fiverr and its terms. </source>
+        <target> שירותים שהוזמנו דרך Fiverr משולמים ומוסדרים דרך Fiverr ותנאיה. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">79,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec2.li4.title" datatype="html">
+        <source>Cancellation:</source>
+        <target>ביטול:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec2.li4.desc" datatype="html">
+        <source> Business clients: either side may end a project in writing. You pay for the work completed up to that point, and any deposit counts toward it. Individual consumers: you may cancel as provided by the Israeli Consumer Protection Law, including its cancellation period and fee rules, and nothing in these Terms limits those rights. Tutoring sessions: you may cancel or reschedule free of charge up to 24 hours before a session, and unused sessions in prepaid bundles are refunded. </source>
+        <target> לקוחות עסקיים: כל צד רשאי לסיים פרויקט בכתב. תשלמו על העבודה שבוצעה עד אותו מועד, ופקדון יקוזז ממנה. צרכנים פרטיים: אתם רשאים לבטל כמפורט בחוק הגנת הצרכן, לרבות הוראותיו בדבר תקופת הביטול ודמי הביטול, ואין בתנאים אלה כדי לפגוע בזכויות אלה. הדרכות: ניתן לבטל או לדחות מפגש ללא עלות עד 24 שעות לפני מועדו, ומפגשים שלא נוצלו בחבילה ששולמה מראש יוחזרו. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">86,92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec3.title" datatype="html">
@@ -2674,23 +2746,23 @@
         <target> 3. תוספי דפדפן (&quot;Did Not Get It&quot;) </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">71,73</context>
+          <context context-type="linenumber">102,104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec3.p1" datatype="html">
-        <source> The Company distributes the &quot;Did Not Get It&quot; browser extension via the Google Chrome Web Store and Mozilla Firefox Add-ons repository. This software is provided strictly on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. </source>
-        <target> החברה מפיצה את תוסף הדפדפן &quot;Did Not Get It&quot; דרך חנות האינטרנט של Google Chrome ומאגר התוספים של Mozilla Firefox. תוכנה זו מסופקת על בסיס &quot;כמות שהיא&quot; (AS IS) ו&quot;כפי שהיא זמינה&quot; (AS AVAILABLE). </target>
+        <source> I distribute the &quot;Did Not Get It&quot; browser extension through the Google Chrome Web Store and the Mozilla Firefox Add-ons repository. The software is provided &quot;AS IS&quot; and &quot;AS AVAILABLE&quot;. </source>
+        <target> אני מפיץ את תוסף הדפדפן &quot;Did Not Get It&quot; דרך חנות האינטרנט של Google Chrome ומאגר התוספים של Mozilla Firefox. התוכנה מסופקת על בסיס &quot;כמות שהיא&quot; (AS IS) ו&quot;כפי שהיא זמינה&quot; (AS AVAILABLE). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">74,78</context>
+          <context context-type="linenumber">105,109</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec3.p2" datatype="html">
-        <source> While the extension utilizes the Google Gmail API to categorize rejection emails, we do not guarantee absolute accuracy in algorithmic text detection. The Company is not liable for missed employment opportunities, mislabeled correspondence, or workflow disruptions resulting from API changes instituted by Google, Chrome, or Mozilla. You grant the extension local execution permissions at your own risk. </source>
-        <target> למרות שהתוסף עושה שימוש ב-Google Gmail API לסיווג הודעות דחייה, איננו מתחייבים לדיוק מוחלט בזיהוי הטקסט האלגוריתמי. החברה אינה אחראית להזדמנויות תעסוקה שהוחמצו, תיוג שגוי של התכתבויות, או שיבושים בתהליכי עבודה כתוצאה משינויי API שהונהגו על ידי Google, Chrome או Mozilla. מתן הרשאות הפעלה מקומיות לתוסף נעשה על אחריותך בלבד. </target>
+        <source> The extension uses the Google Gmail API to categorize rejection emails, but I do not guarantee perfect accuracy in detecting text. I am not liable for missed employment opportunities, mislabeled messages, or disruptions caused by API changes from Google, Chrome, or Mozilla. You are responsible for the permissions you grant the extension, and you use it at your own risk. </source>
+        <target> התוסף משתמש ב-Google Gmail API כדי לסווג הודעות דחייה, אך איני מתחייב לדיוק מוחלט בזיהוי הטקסט. איני אחראי להזדמנויות תעסוקה שהוחמצו, לתיוג שגוי של הודעות או לשיבושים בעבודה כתוצאה משינויים ב-API של Google, Chrome או Mozilla. אתם אחראים להרשאות שאתם נותנים לתוסף, והשימוש בו הוא על אחריותכם. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">79,85</context>
+          <context context-type="linenumber">110,116</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec4.title" datatype="html">
@@ -2698,23 +2770,23 @@
         <target> 4. קוד פתוח ותוכנות לא מקוונות </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">91,93</context>
+          <context context-type="linenumber">122,124</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec4.p1" datatype="html">
-        <source> Certain software solutions developed by the Company, including the <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>CModem-Terminal<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> (a C-based terminal for controlling GSM/GPRS modems), are distributed as standalone, offline open-source programs. </source>
-        <target> פתרונות תוכנה מסוימים שפותחו על ידי החברה, כולל <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>CModem-Terminal<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> (מסוף מבוסס C לשליטה במודמי GSM/GPRS), מופצים כתוכנות קוד פתוח עצמאיות ולא מקוונות. </target>
+        <source> Some software I develop, including <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>CModem-Terminal<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> (a C-based terminal for controlling GSM/GPRS modems), is distributed as standalone, offline open-source programs. </source>
+        <target> פתרונות תוכנה מסוימים שפיתחתי, כולל <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>CModem-Terminal<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> (מסוף מבוסס C לשליטה במודמי GSM/GPRS), מופצים כתוכנות קוד פתוח עצמאיות ולא מקוונות. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">94,98</context>
+          <context context-type="linenumber">125,129</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec4.p2" datatype="html">
-        <source> Your use, modification, and distribution of these specific repositories are governed exclusively by the open-source license files (e.g., MIT License) included within those respective codebases. The Company provides these programs &quot;AS IS&quot; without warranty of any kind. We assume no liability for hardware damage, telecommunication charges, or data loss resulting from the execution of AT commands or serial interface interactions. </source>
-        <target> השימוש, השינוי וההפצה של מאגרים ספציפיים אלה כפופים בלעדית לקובצי רישיון הקוד הפתוח (למשל, רישיון MIT) הכלולים באותם בסיסי קוד. החברה מספקת תוכנות אלה &quot;כמות שהן&quot; (AS IS) ללא אחריות מכל סוג שהוא. איננו נושאים באחריות לנזקי חומרה, חיובי תקשורת, או אובדן נתונים כתוצאה מביצוע פקודות AT או אינטראקציות של ממשק טורי (Serial Interface). </target>
+        <source> Your use, modification, and distribution of these repositories are governed by the open-source license files included in them (for example, the GNU GPL v3 in CModem-Terminal). The programs are provided &quot;AS IS&quot; without warranty of any kind. I am not liable for hardware damage, telecommunication charges, or data loss resulting from running AT commands or using serial interfaces. </source>
+        <target> השימוש, השינוי וההפצה של מאגרים אלה כפופים לקובצי רישיון הקוד הפתוח הכלולים בהם (למשל, GNU GPL v3 ב-CModem-Terminal). התוכנות מסופקות &quot;כמות שהן&quot; (AS IS) ללא אחריות מכל סוג. איני אחראי לנזקי חומרה, לחיובי תקשורת או לאובדן נתונים כתוצאה מהרצת פקודות AT או מעבודה עם ממשקים טוריים (Serial). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">99,105</context>
+          <context context-type="linenumber">130,136</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.title" datatype="html">
@@ -2722,15 +2794,15 @@
         <target> 5. תמיכה ותחזוקה לאחר השקה </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">111,113</context>
+          <context context-type="linenumber">142,144</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.p1" datatype="html">
-        <source> For clients engaging in custom web development and system architecture, the Company includes a comprehensive 12-month support period beginning on the date of production launch. During this first year, structural updates, security patches, and minor architectural modifications are provided free of charge. </source>
-        <target> עבור לקוחות המתקשרים בפיתוח אתרים מותאם אישית וארכיטקטורת מערכות, החברה כוללת תקופת תמיכה מקיפה של 12 חודשים החל ממועד ההשקה (Production). במהלך שנה ראשונה זו, עדכונים מבניים, תיקוני אבטחה ושינויים ארכיטקטוניים קלים מסופקים ללא תשלום. </target>
+        <source> For custom software development projects, I include 12 months of support starting on the production launch date. During this period I fix bugs and defects in the delivered work and apply security patches at no charge. New features and redesigns are not included. </source>
+        <target> בפרויקטים של פיתוח תוכנה מותאם אישית אני כולל 12 חודשי תמיכה, החל מתאריך ההשקה (Production). בתקופה זו אני מתקן, ללא תשלום, באגים וליקויים בעבודה שנמסרה ומיישם תיקוני אבטחה. פיצ'רים חדשים ועיצוב מחדש אינם כלולים. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">114,119</context>
+          <context context-type="linenumber">145,149</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.p2" datatype="html">
@@ -2738,7 +2810,7 @@
         <target> עם תום התקופה הראשונית של 12 חודשים, התמיכה השוטפת עוברת למסגרת בתשלום: </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">120,123</context>
+          <context context-type="linenumber">150,153</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.li1.title" datatype="html">
@@ -2746,15 +2818,15 @@
         <target>ריטיינר אבטחה:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">125,126</context>
+          <context context-type="linenumber">155,156</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.li1.desc" datatype="html">
-        <source> Essential security updates, dependency patches, and uptime monitoring are available via an ongoing monthly or annual retainer. </source>
-        <target> עדכוני אבטחה חיוניים, תיקוני תלויות וניטור זמינות (Uptime) זמינים באמצעות תשלום קבוע (Retainer) חודשי או שנתי. </target>
+        <source> Essential security updates and dependency patches are available through a monthly or annual retainer, with uptime monitoring where agreed. </source>
+        <target> עדכוני אבטחה חיוניים ותיקוני תלויות זמינים באמצעות תשלום קבוע (Retainer) חודשי או שנתי, וכן ניטור זמינות (Uptime) כשהוסכם. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">127,131</context>
+          <context context-type="linenumber">157,161</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.li2.title" datatype="html">
@@ -2762,15 +2834,15 @@
         <target>שדרוגי פיצ'רים:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">132,133</context>
+          <context context-type="linenumber">162,163</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.li2.desc" datatype="html">
-        <source> Any updates, aesthetic redesigns, structural additions, or feature developments that fall outside the scope of strict security maintenance will be billed separately at our standard hourly rate or as a fixed-price project contract. </source>
-        <target> כל עדכון, עיצוב מחדש, תוספות מבניות או פיתוח פיצ'רים החורגים מתחום תחזוקת האבטחה יחויבו בנפרד לפי התעריף השעתי הסטנדרטי שלנו או כחוזה פרויקט במחיר קבוע. </target>
+        <source> Updates, redesigns, structural additions, or new features beyond security maintenance are billed separately, at my standard hourly rate or as a fixed-price project. </source>
+        <target> עדכונים, עיצוב מחדש, תוספות מבניות או פיצ'רים חדשים מעבר לתחזוקת אבטחה יחויבו בנפרד, לפי התעריף השעתי הרגיל שלי או כפרויקט במחיר קבוע. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">134,138</context>
+          <context context-type="linenumber">164,168</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec6.title" datatype="html">
@@ -2778,15 +2850,15 @@
         <target> 6. הגבלת אחריות </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">146,148</context>
+          <context context-type="linenumber">176,178</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec6.p1" datatype="html">
-        <source> To the maximum extent permitted by applicable Israeli and international law, Kuvshinov Software, its owner, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, data, or digital infrastructure, resulting from (a) your access to or use of our Services, (b) any conduct or content of any third party encountered through our Services, or (c) unauthorized access or alteration of your transmissions. </source>
-        <target> במידה המרבית המותרת על פי החוק הישראלי והבינלאומי החל, Kuvshinov Software, בעליה והחברות הקשורות אליה לא יישאו באחריות לכל נזק עקיף, מקרי, מיוחד, תוצאתי או עונשי, לרבות אובדן רווחים, נתונים או תשתית דיגיטלית, כתוצאה מ- (א) הגישה או השימוש שלך בשירותים שלנו, (ב) כל התנהגות או תוכן של צד שלישי כלשהו שנתקלת בו דרך השירותים שלנו, או (ג) גישה בלתי מורשית או שינוי של השידורים שלך. </target>
+        <source> To the extent permitted by Israeli law, I am not liable for indirect, incidental, special, or consequential damages, including loss of profits, data, or digital infrastructure, arising from your use of the Services or from the content or conduct of third parties. My total liability for any claim relating to a paid service is limited to the amount you paid me for that service. Nothing in these Terms limits liability that cannot be limited by law. </source>
+        <target> במידה המותרת על פי הדין הישראלי, איני אחראי לנזק עקיף, מקרי, מיוחד או תוצאתי, לרבות אובדן רווחים, נתונים או תשתית דיגיטלית, הנובע משימושכם בשירותים או מתוכן והתנהגות של צדדים שלישיים. האחריות הכוללת שלי בגין כל טענה הנוגעת לשירות בתשלום מוגבלת לסכום ששילמתם לי עבור אותו שירות. אין בתנאים אלה כדי להגביל אחריות שאי אפשר להגבילה על פי דין. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">149,156</context>
+          <context context-type="linenumber">179,186</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec7.title" datatype="html">
@@ -2794,31 +2866,15 @@
         <target> 7. פניות ופרטי התקשרות </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">162,164</context>
+          <context context-type="linenumber">192,194</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec7.p1" datatype="html">
-        <source> If you have any questions, concerns, or requests regarding these Terms of Service or the scope of our consulting agreements, please submit a formal query via our official communication channel <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				routerLink=&quot;/contact&quot;
-				i18n-aria-label=&quot;@@terms.sec7.link_aria&quot;
-				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>here<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>. </source>
-        <target> אם יש לכם שאלות, חששות או בקשות בנוגע לתנאי שימוש אלה או להיקף הסכמי הייעוץ שלנו, אנא הגישו פנייה רשמית דרך ערוץ התקשורת הרשמי שלנו <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				routerLink=&quot;/contact&quot;
-				i18n-aria-label=&quot;@@terms.sec7.link_aria&quot;
-				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>כאן<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>. </target>
+        <source> If you have any questions, concerns, or requests about these Terms or the scope of my consulting agreements, please contact me through the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot;&gt;"/>contact page<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> or directly by email ( <x id="START_LINK_1" equiv-text="&lt;a href=&quot;mailto:contact@kuvware.com&quot;&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ). </source>
+        <target> לשאלות, חששות או בקשות בנוגע לתנאי שימוש אלה או להיקף הסכמי הייעוץ שלי, אנא פנו אליי דרך <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>עמוד יצירת הקשר<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> או ישירות במייל (<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/>). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">165,175</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="terms.sec7.link_aria" datatype="html">
-        <source>here. Go to the Contact page</source>
-        <target>כאן. עברו לעמוד יצירת קשר</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">171,174</context>
+          <context context-type="linenumber">195,200</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec8.title" datatype="html">
@@ -2826,23 +2882,31 @@
         <target> 8. הדין החל </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">181,183</context>
+          <context context-type="linenumber">206,208</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec8.p1" datatype="html">
-        <source> These Terms shall be governed and construed in accordance with the laws of the State of Israel, without regard to its conflict of law provisions. Any legal disputes arising from these Terms or the use of our Services shall be subject to the exclusive jurisdiction of the competent courts located in Israel. </source>
-        <target> תנאים אלה יוכפפו ויפורשו בהתאם לחוקי מדינת ישראל, ללא קשר להוראות ברירת הדין (Conflict of law). כל סכסוך משפטי הנובע מתנאים אלה או משימוש בשירותים שלנו יהיה נתון לסמכות השיפוט הבלעדית של בתי המשפט המוסמכים בישראל. </target>
+        <source> These Terms are governed by the laws of the State of Israel, without regard to conflict-of-law rules. Any legal dispute arising from these Terms or the use of the Services is subject to the exclusive jurisdiction of the competent courts in Israel. </source>
+        <target> תנאים אלה כפופים לדיני מדינת ישראל, ללא קשר להוראות ברירת הדין. כל סכסוך משפטי הנובע מתנאים אלה או מהשימוש בשירותים יהיה נתון לסמכות השיפוט הבלעדית של בתי המשפט המוסמכים בישראל. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">184,189</context>
+          <context context-type="linenumber">209,213</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec8.p2" datatype="html">
-        <source>These terms are legally effective as of October 10, 2026.</source>
-        <target>תנאים אלה תקפים משפטית החל מ-10 באוקטובר 2026.</target>
+        <source> I may update these Terms from time to time. The version in effect when we agree on a project applies to that project. </source>
+        <target> אני רשאי לעדכן תנאים אלה מעת לעת. הגרסה שהייתה בתוקף כשסיכמנו על פרויקט חלה על אותו פרויקט. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">189,192</context>
+          <context context-type="linenumber">214,217</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec8.p3" datatype="html">
+        <source>These Terms were last updated on November 12, 2026.</source>
+        <target>תנאים אלה עודכנו לאחרונה ב-12 בנובמבר 2026.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">217,220</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.menu.aria" datatype="html">
@@ -2853,20 +2917,12 @@
           <context context-type="linenumber">14,16</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="aside.logo.alt" datatype="html">
-        <source>Kuvware logo</source>
-        <target>לוגו Kuvware</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">27,29</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="aside.close.aria" datatype="html">
         <source>close menu</source>
         <target>סגור תפריט</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">36,38</context>
+          <context context-type="linenumber">35,37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.home" datatype="html">
@@ -2874,7 +2930,7 @@
         <target>בית</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">58,61</context>
+          <context context-type="linenumber">57,60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.portfolio" datatype="html">
@@ -2882,7 +2938,7 @@
         <target>תיק עבודות</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">71,74</context>
+          <context context-type="linenumber">70,73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.services" datatype="html">
@@ -2890,7 +2946,7 @@
         <target>שירותים</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">84,87</context>
+          <context context-type="linenumber">83,86</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.about" datatype="html">
@@ -2898,7 +2954,7 @@
         <target>אודות</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">97,100</context>
+          <context context-type="linenumber">96,99</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.contact" datatype="html">
@@ -2906,7 +2962,7 @@
         <target>צור קשר</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">110,114</context>
+          <context context-type="linenumber">109,113</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cookie.dialog.aria" datatype="html">
@@ -3091,24 +3147,12 @@
           <context context-type="linenumber">9,12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="header.logo.alt" datatype="html">
-        <source>Kuvware logo</source>
-        <target>לוגו Kuvware</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">27,29</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">50,52</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="header.nav.desktop.aria" datatype="html">
         <source>Desktop Main</source>
         <target>ראשי</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">40,43</context>
+          <context context-type="linenumber">39,42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.link.portfolio" datatype="html">
@@ -3116,7 +3160,7 @@
         <target> תיק עבודות </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">64,67</context>
+          <context context-type="linenumber">62,65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.link.services" datatype="html">
@@ -3124,7 +3168,7 @@
         <target> שירותים </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">72,75</context>
+          <context context-type="linenumber">70,73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.link.about" datatype="html">
@@ -3132,7 +3176,7 @@
         <target> אודות </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">80,83</context>
+          <context context-type="linenumber">78,81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.link.contact" datatype="html">
@@ -3140,7 +3184,7 @@
         <target> צור קשר </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">88,92</context>
+          <context context-type="linenumber">86,90</context>
         </context-group>
       </trans-unit>
       <trans-unit id="image_modal.dialog.aria" datatype="html">

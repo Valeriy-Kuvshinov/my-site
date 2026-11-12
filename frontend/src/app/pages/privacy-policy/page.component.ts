@@ -4,9 +4,9 @@ import { RouterLink } from "@angular/router"
 
 import { SITE_URL } from "@/shared/constants/util"
 
-const PAGE_TITLE = $localize`:@@privacy.meta.title:Privacy Policy | Did Not Get It`
+const PAGE_TITLE = $localize`:@@privacy.meta.title:Privacy Policy | Kuvshinov Software`
 const PAGE_URL = "/privacy-policy/"
-const PAGE_DESC = $localize`:@@privacy.meta.desc:Official statutory privacy disclosure and data processing protocol for the Did Not Get It browser extension.`
+const PAGE_DESC = $localize`:@@privacy.meta.desc:How kuvware.com and the Did Not Get It browser extension handle your data.`
 
 @Component({
 	selector: "main[app-privacy-policy-page]",

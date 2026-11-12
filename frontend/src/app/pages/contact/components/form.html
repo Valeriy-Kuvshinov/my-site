@@ -111,14 +111,22 @@
 				I agree to the
 				<a
 					routerLink="/terms"
+					i18n-aria-label="@@contact.form.consent.terms_aria"
+					aria-label="Terms of Service (opens in a new tab)"
+					target="_blank"
+					rel="noopener noreferrer"
 					(click)="$event.stopPropagation()">
-					Terms of Service
-				</a>
+					Terms of Service</a
+				>
 				and the processing of my data in accordance with the
 				<a
 					routerLink="/privacy-policy"
+					i18n-aria-label="@@contact.form.consent.privacy_aria"
+					aria-label="Privacy Policy (opens in a new tab)"
+					target="_blank"
+					rel="noopener noreferrer"
 					(click)="$event.stopPropagation()">
-					Privacy Policy </a
+					Privacy Policy</a
 				>.
 			</span>
 		</label>

@@ -12,19 +12,16 @@
 			1. General Principles and Commitment
 		</h2>
 		<p i18n="@@a11y_page.sec1.p1">
-			Valeriy Kuvshinov, doing business as Kuvshinov Software ("Company", "We", or "Us"),
-			operates as an independent digital consultancy and development agency. Because we
-			provide professional accessibility remediation services, we hold our own digital
-			infrastructure to the highest standards of digital inclusivity. We act to the full
-			extent of our technical capabilities to ensure our platform provides an equal, seamless
-			experience for all web users, including individuals with visual, motor, or cognitive
-			disabilities.
+			Valeriy Kuvshinov, operating as Kuvshinov Software ("I" or "the Company"), is an
+			independent software developer and accessibility consultant. Because I fix accessibility
+			problems for clients, I hold this website to the same standard. My goal is for every
+			visitor, including people with visual, motor, or cognitive disabilities, to be able to
+			use it equally and without barriers.
 		</p>
 		<p i18n="@@a11y_page.sec1.p2">
-			This statement applies strictly to the digital properties operating under the domain
-			root at <strong>kuvware.com</strong>. As a fully distributed digital entity, the Company
-			operates no physical commercial offices open to the public; consequently, physical
-			access metrics are non-applicable to our operational scope.
+			This statement applies to the website at <strong>kuvware.com</strong>. The business is
+			run remotely and has no physical office open to the public, so physical access does not
+			apply.
 		</p>
 	</article>
 
@@ -35,15 +32,21 @@
 			2. Digital Accessibility Standards
 		</h2>
 		<p i18n="@@a11y_page.sec2.p1">
-			The digital structure of this website has been engineered from the ground up - using
-			native, semantic code to achieve functional alignment with the World Wide Web Consortium
-			(W3C) Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA and AAA conformance.
+			This website is built with native, semantic code, to meet Israeli Standard IS 5568 at
+			Level AA and the W3C Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA. It
+			also meets several Level AAA criteria, such as enhanced color contrast.
 		</p>
 		<p i18n="@@a11y_page.sec2.p2">
-			We strictly oppose the use of automated "accessibility overlays" or temporary widget
-			patches. Instead, inclusivity is built directly into the DOM, ensuring structural
-			interoperability with native assistive technologies, including screen readers,
-			refreshable braille displays, and alternative input hardware.
+			I do not rely on automated accessibility overlays or temporary widget patches.
+			Accessibility is built into the code itself, to work with assistive technologies such as
+			screen readers, braille displays, and alternative input devices. The accessibility menu
+			on this site is an optional set of display preferences on top of that foundation, not a
+			replacement for it.
+		</p>
+		<p i18n="@@a11y_page.sec2.p3">
+			I test this site with the NVDA screen reader and with automated tools (Lighthouse and
+			axe DevTools). Automated tools catch only part of the possible issues, so some barriers
+			may still exist. If you find one, please tell me.
 		</p>
 	</article>
 
@@ -51,61 +54,54 @@
 		<h2
 			i18n="@@a11y_page.sec3.title"
 			class="w-fit">
-			3. Implemented Accessibility Controls
+			3. Accessibility Features
 		</h2>
 		<p i18n="@@a11y_page.sec3.desc">
-			The core website architecture utilizes standard programmatic modifications alongside an
-			integrated native accessibility menu, allowing users to execute real-time structural
-			adaptations:
+			This site includes the following accessibility features, plus an accessibility menu that
+			lets you adjust the display:
 		</p>
 		<ul class="flex flex-col gap-2">
 			<li>
-				<strong i18n="@@a11y_page.sec3.li1.title">Semantic Document Geometry:</strong>
+				<strong i18n="@@a11y_page.sec3.li1.title">Clear page structure:</strong>
 				<span i18n="@@a11y_page.sec3.li1.desc">
-					Strict hierarchical heading order (H1 &mdash; H6), correct ARIA 1.2 labeling,
-					and semantic landmark segmentation (<code>&lt;main&gt;</code>,
-					<code>&lt;nav&gt;</code>, <code>&lt;aside&gt;</code>) to facilitate fast screen
-					reader index navigation.
+					Headings follow a logical order (H1 to H6), ARIA labels are used where needed,
+					and page regions (<code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>,
+					<code>&lt;aside&gt;</code>) help screen reader users move around quickly.
 				</span>
 			</li>
 			<li>
-				<strong i18n="@@a11y_page.sec3.li2.title">
-					Native Keyboard Navigation Protocol:
-				</strong>
+				<strong i18n="@@a11y_page.sec3.li2.title"> Full keyboard use: </strong>
 				<span i18n="@@a11y_page.sec3.li2.desc">
-					Complete operational execution via standard keyboard loops, including custom
-					focus traps on modals and highly visible focus indicators.
+					Everything can be operated with a keyboard, with clearly visible focus
+					indicators, and focus stays inside dialogs while they are open.
 				</span>
 			</li>
 			<li>
-				<strong i18n="@@a11y_page.sec3.li3.title">Skip Link Overrides:</strong>
+				<strong i18n="@@a11y_page.sec3.li3.title">Skip links:</strong>
 				<span i18n="@@a11y_page.sec3.li3.desc">
-					Accessible skip links placed at the absolute programmatic root level, allowing
-					keyboard users to bypass layout directly to the main content or footer.
+					Skip links at the top of each page let keyboard users jump straight to the main
+					content or the footer.
 				</span>
 			</li>
 			<li>
-				<strong i18n="@@a11y_page.sec3.li4.title">Color Contrast Optimization:</strong>
+				<strong i18n="@@a11y_page.sec3.li4.title">Color contrast:</strong>
 				<span i18n="@@a11y_page.sec3.li4.desc">
-					Visual text layers and active interactive components maintain an enhanced
-					luminance contrast ratio matching or exceeding strict AAA (7:1) thresholds.
+					Text and interactive elements meet or exceed the enhanced AAA contrast ratio
+					(7:1).
 				</span>
 			</li>
 			<li>
-				<strong i18n="@@a11y_page.sec3.li5.title">Advanced Typography Toggles:</strong>
+				<strong i18n="@@a11y_page.sec3.li5.title">Display preferences:</strong>
 				<span i18n="@@a11y_page.sec3.li5.desc">
-					An isolated native accessibility interface allowing user-driven configuration
-					changes, including system sans-serif overrides for dyslexia assistance,
-					progressive scaling for text size, line-height modifications, and letter-spacing
-					vectors.
+					The accessibility menu lets you change the font (including a dyslexia-friendly
+					option), text size, line spacing, and letter spacing.
 				</span>
 			</li>
 			<li>
-				<strong i18n="@@a11y_page.sec3.li6.title">Motion Mutation Flags:</strong>
+				<strong i18n="@@a11y_page.sec3.li6.title">Reduced motion:</strong>
 				<span i18n="@@a11y_page.sec3.li6.desc">
-					Comprehensive system hooks to pause looping animations and CSS transition
-					matrices, synchronized automatically with system-level hardware preferences
-					(<code>prefers-reduced-motion</code>).
+					You can pause animations from the accessibility menu, and the site also follows
+					your device's reduced-motion setting (<code>prefers-reduced-motion</code>).
 				</span>
 			</li>
 		</ul>
@@ -115,28 +111,27 @@
 		<h2
 			i18n="@@a11y_page.sec4.title"
 			class="w-fit">
-			4. Programmatic Boundaries & Third-Party Platforms
+			4. Known Limitations and Third-Party Content
 		</h2>
 		<p i18n="@@a11y_page.sec4.desc">
-			Users navigating our digital infrastructure may encounter specific structural boundaries
-			dictated by external runtime layers and third-party ecosystems:
+			Some parts of your experience depend on services I do not control:
 		</p>
 		<ul class="flex flex-col gap-2">
 			<li>
-				<strong i18n="@@a11y_page.sec4.li1.title">Security Challenges (CAPTCHA):</strong>
+				<strong i18n="@@a11y_page.sec4.li1.title">Security checks (CAPTCHA):</strong>
 				<span i18n="@@a11y_page.sec4.li1.desc">
-					To protect against automated abuse, we utilize Cloudflare Turnstile. While
-					Turnstile is designed to run invisibly and provide accessible fallbacks, strict
-					browser privacy settings may occasionally force a visual challenge.
+					To prevent automated abuse, this site uses Cloudflare Turnstile, which usually
+					runs invisibly. Strict browser privacy settings may occasionally trigger a
+					visual challenge. If that blocks you, contact me by phone or email and I will
+					help.
 				</span>
 			</li>
 			<li>
-				<strong i18n="@@a11y_page.sec4.li2.title">External Platform Redirection:</strong>
+				<strong i18n="@@a11y_page.sec4.li2.title">Third-party content and links:</strong>
 				<span i18n="@@a11y_page.sec4.li2.desc">
-					This website contains active links routing out to external ecosystems (including
-					LinkedIn, GitHub, and client portfolio sites). These properties are maintained
-					exclusively by their respective corporations or owners; consequently, their
-					accessibility conformance levels remain entirely beyond our control.
+					The site embeds a YouTube video and links to external sites such as LinkedIn,
+					GitHub, Fiverr, Facebook, and client portfolio sites. These are run by other
+					organizations, so their accessibility is outside my control.
 				</span>
 			</li>
 		</ul>
@@ -146,25 +141,18 @@
 		<h2
 			i18n="@@a11y_page.sec5.title"
 			class="w-fit">
-			5. Remediation, Feedback, and Contact Details
+			5. Feedback and Contact
 		</h2>
 		<p i18n="@@a11y_page.sec5.p1">
-			We maintain an ongoing codebase remediation protocol to continually identify and update
-			accessibility anomalies. If you experience digital barriers, layout errors, or require
-			alternative data delivery formats while browsing this site, please file an inquiry via
-			our official communication channel
-			<a
-				routerLink="/contact"
-				i18n-aria-label="@@a11y_page.sec5.link_aria"
-				aria-label="here. Go to the Contact page">
-				<span>here</span></a
-			>.
+			I review this site regularly and fix accessibility problems as I find them. If you meet
+			a barrier, find an error, or need information in another format, please tell me through
+			the <a routerLink="/contact">contact page</a>, or contact me directly by email (
+			<a href="mailto:contact@kuvware.com">contact@kuvware.com</a> ).
 		</p>
 		<p i18n="@@a11y_page.sec5.p2">
-			As part of our commitment to accessible engineering, we evaluate all accessibility
-			inquiries rapidly and process structural modifications with the highest technical
-			priority.
+			I respond to accessibility inquiries within 2 business days and prioritize fixing the
+			barrier.
 		</p>
-		<p i18n="@@a11y_page.sec5.p3">This statement is legally effective as of October 3, 2026.</p>
+		<p i18n="@@a11y_page.sec5.p3">This statement was last updated on November 12, 2026.</p>
 	</article>
 </section>

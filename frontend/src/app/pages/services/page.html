@@ -20,10 +20,26 @@
 	</article>
 
 	<article class="menu flex flex-col w-full">
+		<p class="notice flex flex-row full-center layout-row gap-2">
+			<app-svg-icon
+				icon="info"
+				width="24"
+				height="24">
+			</app-svg-icon>
+			<span i18n="@@services.pricing_note">
+				Final prices, no VAT included (Exempt Dealer).
+			</span>
+			<app-svg-icon
+				icon="info"
+				width="24"
+				height="24">
+			</app-svg-icon>
+		</p>
+
 		<ul class="services grid gap-8 layout-row">
 			@for (service of services; track service.title) {
 			<li class="card flex flex-col gap-6 h-fit fast-trans relative">
-				<div class="card-header flex flex-row justify-between items-center gap-4 w-full">
+				<div class="card-header grid items-center gap-4 w-full">
 					<h2 class="text-family-bold">{{ service.title }}</h2>
 
 					<span class="price flex full-center w-fit"> {{ service.price }} </span>
@@ -39,7 +55,7 @@
 				<div class="text flex flex-col gap-4">
 					<p>{{ service.description }}</p>
 
-					<ul class="skills grid gap-4">
+					<ul class="flex flex-col gap-4">
 						@for (skill of service.skills; track skill.text) {
 						<li>{{ skill.text }}</li>
 						}

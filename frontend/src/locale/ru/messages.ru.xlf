@@ -651,19 +651,19 @@
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec1.p1" datatype="html">
-        <source> Valeriy Kuvshinov, doing business as Kuvshinov Software (&quot;Company&quot;, &quot;We&quot;, or &quot;Us&quot;), operates as an independent digital consultancy and development agency. Because we provide professional accessibility remediation services, we hold our own digital infrastructure to the highest standards of digital inclusivity. We act to the full extent of our technical capabilities to ensure our platform provides an equal, seamless experience for all web users, including individuals with visual, motor, or cognitive disabilities. </source>
-        <target> Валерий Кувшинов, ведущий деятельность как Kuvshinov Software (&quot;Компания&quot; или &quot;Мы&quot;), работает как независимое цифровое консалтинговое и агентство разработки. Поскольку мы предоставляем профессиональные услуги по обеспечению доступности, мы поддерживаем собственную цифровую инфраструктуру в соответствии с высочайшими стандартами цифровой инклюзивности. Мы действуем в полной мере наших технических возможностей, чтобы наша платформа обеспечивала равный, беспрепятственный опыт для всех пользователей сети, включая людей с нарушениями зрения, моторики или когнитивных функций. </target>
+        <source> Valeriy Kuvshinov, operating as Kuvshinov Software (&quot;I&quot; or &quot;the Company&quot;), is an independent software developer and accessibility consultant. Because I fix accessibility problems for clients, I hold this website to the same standard. My goal is for every visitor, including people with visual, motor, or cognitive disabilities, to be able to use it equally and without barriers. </source>
+        <target> Валерий Кувшинов, ведущий деятельность как Kuvshinov Software («я» или «компания»), — независимый разработчик программного обеспечения и консультант по доступности. Поскольку я исправляю проблемы доступности для клиентов, я предъявляю тот же стандарт и к этому сайту. Моя цель — чтобы каждый посетитель, включая людей с нарушениями зрения, моторики или когнитивных функций, мог пользоваться им наравне с другими и без барьеров. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">15,23</context>
+          <context context-type="linenumber">15,21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec1.p2" datatype="html">
-        <source> This statement applies strictly to the digital properties operating under the domain root at <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>kuvware.com<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>. As a fully distributed digital entity, the Company operates no physical commercial offices open to the public; consequently, physical access metrics are non-applicable to our operational scope. </source>
-        <target> Данное заявление относится исключительно к цифровым ресурсам, работающим в корневом домене <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>kuvware.com<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>. Будучи полностью распределенной цифровой структурой, Компания не имеет физических коммерческих офисов, открытых для публики; следовательно, метрики физического доступа неприменимы к нашей сфере деятельности. </target>
+        <source> This statement applies to the website at <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>kuvware.com<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>. The business is run remotely and has no physical office open to the public, so physical access does not apply. </source>
+        <target> Данное заявление относится к сайту <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>kuvware.com<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>. Работа ведется удаленно, физического офиса, открытого для посетителей, нет, поэтому физическая доступность неприменима. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">24,29</context>
+          <context context-type="linenumber">22,26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec2.title" datatype="html">
@@ -671,231 +671,223 @@
         <target> 2. Стандарты цифровой доступности</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">35,37</context>
+          <context context-type="linenumber">32,34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec2.p1" datatype="html">
-        <source> The digital structure of this website has been engineered from the ground up - using native, semantic code to achieve functional alignment with the World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA and AAA conformance. </source>
-        <target> Цифровая структура этого сайта была спроектирована с нуля - с использованием нативного семантического кода для достижения функционального соответствия Руководству по доступности веб-контента Консорциума Всемирной паутины (W3C WCAG) версии 2.1 на уровнях AA и AAA. </target>
+        <source> This website is built with native, semantic code, to meet Israeli Standard IS 5568 at Level AA and the W3C Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA. It also meets several Level AAA criteria, such as enhanced color contrast. </source>
+        <target> Сайт создан на нативном семантическом коде в соответствии с израильским стандартом IS 5568 уровня AA и Руководством по доступности веб-контента W3C (WCAG) версии 2.1 уровня AA. Кроме того, он соответствует ряду критериев уровня AAA, например повышенной контрастности цветов. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">38,42</context>
+          <context context-type="linenumber">35,39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec2.p2" datatype="html">
-        <source> We strictly oppose the use of automated &quot;accessibility overlays&quot; or temporary widget patches. Instead, inclusivity is built directly into the DOM, ensuring structural interoperability with native assistive technologies, including screen readers, refreshable braille displays, and alternative input hardware. </source>
-        <target> Мы категорически против использования автоматизированных «оверлеев доступности» или временных виджетов. Вместо этого инклюзивность встроена непосредственно в DOM, обеспечивая структурную совместимость с нативными вспомогательными технологиями, включая программы чтения с экрана, обновляемые брайлевские дисплеи и альтернативное оборудование ввода. </target>
+        <source> I do not rely on automated accessibility overlays or temporary widget patches. Accessibility is built into the code itself, to work with assistive technologies such as screen readers, braille displays, and alternative input devices. The accessibility menu on this site is an optional set of display preferences on top of that foundation, not a replacement for it. </source>
+        <target> Я не полагаюсь на автоматические оверлеи доступности и временные «заплатки». Доступность заложена в сам код, чтобы сайт работал со вспомогательными технологиями, такими как программы чтения с экрана, брайлевские дисплеи и альтернативные устройства ввода. Меню доступности на сайте — это дополнительные настройки отображения поверх этой основы, а не ее замена. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">43,50</context>
+          <context context-type="linenumber">40,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a11y_page.sec2.p3" datatype="html">
+        <source> I test this site with the NVDA screen reader and with automated tools (Lighthouse and axe DevTools). Automated tools catch only part of the possible issues, so some barriers may still exist. If you find one, please tell me. </source>
+        <target> Я тестирую сайт с помощью программы чтения с экрана NVDA и автоматических инструментов (Lighthouse и axe DevTools). Автоматические инструменты находят лишь часть возможных проблем, поэтому некоторые барьеры могут остаться. Если вы найдете такой барьер, сообщите мне. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
+          <context context-type="linenumber">47,53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.title" datatype="html">
-        <source> 3. Implemented Accessibility Controls </source>
-        <target> 3. Реализованные элементы управления доступностью </target>
+        <source> 3. Accessibility Features </source>
+        <target> 3. Функции доступности </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">54,56</context>
+          <context context-type="linenumber">57,59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.desc" datatype="html">
-        <source> The core website architecture utilizes standard programmatic modifications alongside an integrated native accessibility menu, allowing users to execute real-time structural adaptations: </source>
-        <target> В основе архитектуры сайта лежат стандартные программные модификации наряду с интегрированным нативным меню доступности, что позволяет пользователям выполнять структурные адаптации в реальном времени: </target>
+        <source> This site includes the following accessibility features, plus an accessibility menu that lets you adjust the display: </source>
+        <target> На сайте есть следующие функции доступности, а также меню доступности для настройки отображения: </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">57,61</context>
+          <context context-type="linenumber">60,63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li1.title" datatype="html">
-        <source>Semantic Document Geometry:</source>
-        <target>Семантическая геометрия документа:</target>
+        <source>Clear page structure:</source>
+        <target>Понятная структура страницы:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">63,64</context>
+          <context context-type="linenumber">65,66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li1.desc" datatype="html">
-        <source> Strict hierarchical heading order (H1 — H6), correct ARIA 1.2 labeling, and semantic landmark segmentation (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;main&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;nav&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;aside&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>) to facilitate fast screen reader index navigation. </source>
-        <target> Строгая иерархия заголовков (H1 - H6), правильная разметка ARIA 1.2 и семантическая сегментация ориентиров (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;main&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;nav&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;aside&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>) для обеспечения быстрой навигации по индексу программы чтения с экрана. </target>
+        <source> Headings follow a logical order (H1 to H6), ARIA labels are used where needed, and page regions (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;main&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;nav&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;aside&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>) help screen reader users move around quickly. </source>
+        <target> Заголовки идут в логическом порядке (H1–H6), метки ARIA используются там, где нужно, а области страницы (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;main&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;nav&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>&lt;aside&gt;<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>) помогают пользователям программ чтения с экрана быстро перемещаться. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">65,70</context>
+          <context context-type="linenumber">67,71</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li2.title" datatype="html">
-        <source> Native Keyboard Navigation Protocol: </source>
-        <target>Нативный протокол навигации с клавиатуры:</target>
+        <source> Full keyboard use: </source>
+        <target>Полное управление с клавиатуры:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">73,75</context>
+          <context context-type="linenumber">73,74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li2.desc" datatype="html">
-        <source> Complete operational execution via standard keyboard loops, including custom focus traps on modals and highly visible focus indicators. </source>
-        <target> Полное операционное выполнение через стандартные циклы клавиатуры, включая кастомные ловушки фокуса в модальных окнах и хорошо видимые индикаторы фокуса. </target>
+        <source> Everything can be operated with a keyboard, with clearly visible focus indicators, and focus stays inside dialogs while they are open. </source>
+        <target> Все можно выполнить с клавиатуры; индикаторы фокуса хорошо видны, а фокус остается внутри диалоговых окон, пока они открыты. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">76,80</context>
+          <context context-type="linenumber">75,79</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li3.title" datatype="html">
-        <source>Skip Link Overrides:</source>
-        <target>Переопределение ссылок пропуска (Skip Links):</target>
+        <source>Skip links:</source>
+        <target>Ссылки пропуска:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">81,82</context>
+          <context context-type="linenumber">80,81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li3.desc" datatype="html">
-        <source> Accessible skip links placed at the absolute programmatic root level, allowing keyboard users to bypass layout directly to the main content or footer. </source>
-        <target> Доступные ссылки пропуска, размещенные на абсолютном программном корневом уровне, позволяющие пользователям клавиатуры обходить макет и переходить прямо к основному контенту или подвалу сайта. </target>
+        <source> Skip links at the top of each page let keyboard users jump straight to the main content or the footer. </source>
+        <target> Ссылки в начале каждой страницы позволяют пользователям клавиатуры сразу перейти к основному содержимому или к нижней части страницы. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">83,87</context>
+          <context context-type="linenumber">82,86</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li4.title" datatype="html">
-        <source>Color Contrast Optimization:</source>
-        <target>Оптимизация цветового контраста:</target>
+        <source>Color contrast:</source>
+        <target>Цветовой контраст:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">88,89</context>
+          <context context-type="linenumber">87,88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li4.desc" datatype="html">
-        <source> Visual text layers and active interactive components maintain an enhanced luminance contrast ratio matching or exceeding strict AAA (7:1) thresholds. </source>
-        <target> Визуальные текстовые слои и активные интерактивные компоненты поддерживают повышенный коэффициент контрастности яркости, соответствующий или превышающий строгие пороговые значения AAA (7:1). </target>
+        <source> Text and interactive elements meet or exceed the enhanced AAA contrast ratio (7:1). </source>
+        <target> Текст и интерактивные элементы соответствуют повышенному коэффициенту контрастности уровня AAA (7:1) или превышают его. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">90,94</context>
+          <context context-type="linenumber">89,93</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li5.title" datatype="html">
-        <source>Advanced Typography Toggles:</source>
-        <target>Расширенные настройки типографики:</target>
+        <source>Display preferences:</source>
+        <target>Настройки отображения:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">95,96</context>
+          <context context-type="linenumber">94,95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li5.desc" datatype="html">
-        <source> An isolated native accessibility interface allowing user-driven configuration changes, including system sans-serif overrides for dyslexia assistance, progressive scaling for text size, line-height modifications, and letter-spacing vectors. </source>
-        <target> Изолированный нативный интерфейс доступности, позволяющий вносить изменения в конфигурацию со стороны пользователя, включая системное переопределение на шрифты без засечек для помощи при дислексии, прогрессивное масштабирование размера текста, изменение межстрочного интервала и векторов межбуквенного интервала. </target>
+        <source> The accessibility menu lets you change the font (including a dyslexia-friendly option), text size, line spacing, and letter spacing. </source>
+        <target> В меню доступности можно изменить шрифт (включая вариант, удобный при дислексии), размер текста, межстрочный и межбуквенный интервалы. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">97,102</context>
+          <context context-type="linenumber">96,100</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li6.title" datatype="html">
-        <source>Motion Mutation Flags:</source>
-        <target>Флаги мутации движения:</target>
+        <source>Reduced motion:</source>
+        <target>Уменьшение анимации:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">104,105</context>
+          <context context-type="linenumber">101,102</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec3.li6.desc" datatype="html">
-        <source> Comprehensive system hooks to pause looping animations and CSS transition matrices, synchronized automatically with system-level hardware preferences (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>prefers-reduced-motion<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>). </source>
-        <target> Комплексные системные перехватчики для приостановки зацикленных анимаций и матриц CSS-переходов, автоматически синхронизируемые с аппаратными настройками системного уровня (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>prefers-reduced-motion<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>). </target>
+        <source> You can pause animations from the accessibility menu, and the site also follows your device&apos;s reduced-motion setting (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>prefers-reduced-motion<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>). </source>
+        <target> Анимации можно приостановить в меню доступности; сайт также учитывает настройку уменьшения движения на вашем устройстве (<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>prefers-reduced-motion<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">106,110</context>
+          <context context-type="linenumber">103,106</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec4.title" datatype="html">
-        <source> 4. Programmatic Boundaries &amp; Third-Party Platforms </source>
-        <target> 4. Программные границы и сторонние платформы </target>
+        <source> 4. Known Limitations and Third-Party Content </source>
+        <target> 4. Известные ограничения и сторонний контент </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">118,120</context>
+          <context context-type="linenumber">114,116</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec4.desc" datatype="html">
-        <source> Users navigating our digital infrastructure may encounter specific structural boundaries dictated by external runtime layers and third-party ecosystems: </source>
-        <target> Пользователи, перемещающиеся по нашей цифровой инфраструктуре, могут столкнуться с определенными структурными границами, продиктованными внешними средами выполнения и сторонними экосистемами: </target>
+        <source> Some parts of your experience depend on services I do not control: </source>
+        <target> Часть возможностей зависит от сервисов, которые я не контролирую: </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">121,124</context>
+          <context context-type="linenumber">117,119</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec4.li1.title" datatype="html">
-        <source>Security Challenges (CAPTCHA):</source>
-        <target>Проблемы безопасности (CAPTCHA):</target>
+        <source>Security checks (CAPTCHA):</source>
+        <target>Проверки безопасности (CAPTCHA):</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">126,127</context>
+          <context context-type="linenumber">121,122</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec4.li1.desc" datatype="html">
-        <source> To protect against automated abuse, we utilize Cloudflare Turnstile. While Turnstile is designed to run invisibly and provide accessible fallbacks, strict browser privacy settings may occasionally force a visual challenge. </source>
-        <target> Для защиты от автоматизированных злоупотреблений мы используем Cloudflare Turnstile. Хотя Turnstile работает незаметно и предоставляет доступные резервные варианты, строгие настройки конфиденциальности браузера могут иногда приводить к визуальной проверке. </target>
+        <source> To prevent automated abuse, this site uses Cloudflare Turnstile, which usually runs invisibly. Strict browser privacy settings may occasionally trigger a visual challenge. If that blocks you, contact me by phone or email and I will help. </source>
+        <target> Для защиты от автоматизированных злоупотреблений на сайте используется Cloudflare Turnstile, который обычно работает незаметно. Строгие настройки конфиденциальности браузера иногда могут вызывать визуальную проверку. Если она вас блокирует, свяжитесь со мной по телефону или электронной почте, и я помогу. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">128,133</context>
+          <context context-type="linenumber">123,128</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec4.li2.title" datatype="html">
-        <source>External Platform Redirection:</source>
-        <target>Внешнее перенаправление платформ:</target>
+        <source>Third-party content and links:</source>
+        <target>Сторонний контент и ссылки:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">134,135</context>
+          <context context-type="linenumber">130,131</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec4.li2.desc" datatype="html">
-        <source> This website contains active links routing out to external ecosystems (including LinkedIn, GitHub, and client portfolio sites). These properties are maintained exclusively by their respective corporations or owners; consequently, their accessibility conformance levels remain entirely beyond our control. </source>
-        <target> Этот сайт содержит активные ссылки, ведущие на внешние экосистемы (включая LinkedIn, GitHub и сайты портфолио клиентов). Эти ресурсы поддерживаются исключительно их соответствующими корпорациями или владельцами; следовательно, уровни их соответствия стандартам доступности остаются полностью вне нашего контроля. </target>
+        <source> The site embeds a YouTube video and links to external sites such as LinkedIn, GitHub, Fiverr, Facebook, and client portfolio sites. These are run by other organizations, so their accessibility is outside my control. </source>
+        <target> На сайте встроено видео YouTube и есть ссылки на внешние ресурсы, такие как LinkedIn, GitHub, Fiverr, Facebook и сайты портфолио клиентов. Ими управляют другие организации, поэтому их доступность вне моего контроля. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">136,141</context>
+          <context context-type="linenumber">132,137</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec5.title" datatype="html">
-        <source> 5. Remediation, Feedback, and Contact Details </source>
-        <target> 5. Устранение неполадок, обратная связь и контактная информация </target>
+        <source> 5. Feedback and Contact </source>
+        <target> 5. Обратная связь и контакты </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">149,151</context>
+          <context context-type="linenumber">144,146</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec5.p1" datatype="html">
-        <source> We maintain an ongoing codebase remediation protocol to continually identify and update accessibility anomalies. If you experience digital barriers, layout errors, or require alternative data delivery formats while browsing this site, please file an inquiry via our official communication channel <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				routerLink=&quot;/contact&quot;
-				i18n-aria-label=&quot;@@a11y_page.sec5.link_aria&quot;
-				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>here<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>. </source>
-        <target> Мы поддерживаем постоянный протокол исправления кодовой базы для непрерывного выявления и обновления аномалий доступности. Если вы столкнулись с цифровыми барьерами, ошибками макета или вам требуются альтернативные форматы предоставления данных при просмотре этого сайта, пожалуйста, отправьте запрос через наш официальный канал связи <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				routerLink=&quot;/contact&quot;
-				i18n-aria-label=&quot;@@a11y_page.sec5.link_aria&quot;
-				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>здесь<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>. </target>
+        <source> I review this site regularly and fix accessibility problems as I find them. If you meet a barrier, find an error, or need information in another format, please tell me through the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot;&gt;"/>contact page<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, or contact me directly by email ( <x id="START_LINK_1" equiv-text="&lt;a href=&quot;mailto:contact@kuvware.com&quot;&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ). </source>
+        <target>Я регулярно проверяю сайт и исправляю проблемы доступности по мере их обнаружения. Если вы столкнулись с барьером, нашли ошибку или вам нужна информация в другом формате, пожалуйста, сообщите мне через <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>страницу контактов<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> или свяжитесь со мной напрямую по электронной почте ( <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/> ).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">152,163</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="a11y_page.sec5.link_aria" datatype="html">
-        <source>here. Go to the Contact page</source>
-        <target>здесь. Перейти на страницу контактов</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">159,162</context>
+          <context context-type="linenumber">147,152</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec5.p2" datatype="html">
-        <source> As part of our commitment to accessible engineering, we evaluate all accessibility inquiries rapidly and process structural modifications with the highest technical priority. </source>
-        <target> В рамках нашей приверженности доступной инженерии мы оперативно оцениваем все запросы по доступности и обрабатываем структурные изменения с наивысшим техническим приоритетом. </target>
+        <source> I respond to accessibility inquiries within 2 business days and prioritize fixing the barrier. </source>
+        <target> Я отвечаю на обращения по доступности в течение 2 рабочих дней и исправляю барьеры в приоритетном порядке. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">164,168</context>
+          <context context-type="linenumber">153,156</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.sec5.p3" datatype="html">
-        <source>This statement is legally effective as of October 3, 2026.</source>
-        <target>Это заявление юридически вступает в силу с 3 октября 2026 года.</target>
+        <source>This statement was last updated on November 12, 2026.</source>
+        <target>Это заявление обновлено 12 ноября 2026 года.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
-          <context context-type="linenumber">168,171</context>
+          <context context-type="linenumber">156,159</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.error.required" datatype="html">
@@ -1069,29 +1061,47 @@
       <trans-unit id="contact.form.consent.text" datatype="html">
         <source> I agree to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
 					routerLink=&quot;/terms&quot;
-					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Terms of Service <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+					i18n-aria-label=&quot;@@contact.form.consent.terms_aria&quot;
+					aria-label=&quot;Terms of Service (opens in a new tab)&quot;
+					target=&quot;_blank&quot;
+					rel=&quot;noopener noreferrer&quot;
+					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Terms of Service<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 				&gt;"/> and the processing of my data in accordance with the <x id="START_LINK_1" equiv-text="&lt;a
 					routerLink=&quot;/privacy-policy&quot;
-					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Privacy Policy <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+					i18n-aria-label=&quot;@@contact.form.consent.privacy_aria&quot;
+					aria-label=&quot;Privacy Policy (opens in a new tab)&quot;
+					target=&quot;_blank&quot;
+					rel=&quot;noopener noreferrer&quot;
+					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Privacy Policy<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 				&gt;"/>. </source>
-        <target> Я согласен с <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-					routerLink=&quot;/terms&quot;
-					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Условиями использования <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-				&gt;"/> и обработкой моих данных в соответствии с <x id="START_LINK_1" equiv-text="&lt;a
-					routerLink=&quot;/privacy-policy&quot;
-					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Политикой конфиденциальности <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-				&gt;"/>. </target>
+        <target> Я принимаю <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Условия использования<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> и согласен на обработку моих данных в соответствии с <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Политикой конфиденциальности<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">111,124</context>
+          <context context-type="linenumber">111,132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.form.consent.terms_aria" datatype="html">
+        <source>Terms of Service (opens in a new tab)</source>
+        <target>Условия использования (откроется в новой вкладке)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
+          <context context-type="linenumber">115,117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.form.consent.privacy_aria" datatype="html">
+        <source>Privacy Policy (opens in a new tab)</source>
+        <target>Политика конфиденциальности (откроется в новой вкладке)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
+          <context context-type="linenumber">125,127</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.consent.error" datatype="html">
         <source> You must accept the Terms of Service and Privacy Policy to submit form. </source>
-        <target> Вы должны принять Условия использования и Политику конфиденциальности для отправки формы. </target>
+        <target> Вы должны принять Условия использования и Политику конфиденциальности, чтобы отправить форму. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">129,134</context>
+          <context context-type="linenumber">137,142</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.btn.send" datatype="html">
@@ -1099,7 +1109,7 @@
         <target>Отправить</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
-          <context context-type="linenumber">143,146</context>
+          <context context-type="linenumber">151,154</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.meta.title" datatype="html">
@@ -1886,16 +1896,16 @@
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.meta.title" datatype="html">
-        <source>Privacy Policy | Did Not Get It</source>
-        <target>Политика конфиденциальности | Did Not Get It</target>
+        <source>Privacy Policy | Kuvshinov Software</source>
+        <target>Политика конфиденциальности | Kuvshinov Software</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.component.ts</context>
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.meta.desc" datatype="html">
-        <source>Official statutory privacy disclosure and data processing protocol for the Did Not Get It browser extension.</source>
-        <target>Официальное заявление о конфиденциальности и протокол обработки данных для расширения браузера Did Not Get It.</target>
+        <source>How kuvware.com and the Did Not Get It browser extension handle your data.</source>
+        <target>Как сайт kuvware.com и расширение для браузера Did Not Get It обрабатывают ваши данные.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.component.ts</context>
           <context context-type="linenumber">9</context>
@@ -1910,67 +1920,67 @@
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.intro" datatype="html">
-        <source> This Privacy Policy governs the collection, processing, and protection of data by Valeriy Kuvshinov, doing business as Kuvshinov Software (&quot;Company&quot;, &quot;We&quot;, or &quot;Us&quot;), across our digital platform (kuvware.com) and associated applications, including the &quot;Did Not Get It&quot; browser extension (collectively, &quot;the Services&quot;). </source>
-        <target> Данная Политика конфиденциальности регулирует сбор, обработку и защиту данных Валерием Кувшиновым, ведущим деятельность как Kuvshinov Software («Компания» или «Мы»), на нашей цифровой платформе (kuvware.com) и в связанных приложениях, включая расширение для браузера «Did Not Get It» (совместно именуемые «Сервисы»). </target>
+        <source> This Privacy Policy explains what data is collected and how it is handled by Valeriy Kuvshinov, operating as Kuvshinov Software (&quot;I&quot; or &quot;the Company&quot;), on this website (kuvware.com) and in related software, including the &quot;Did Not Get It&quot; browser extension (together, &quot;the Services&quot;). </source>
+        <target> Настоящая Политика конфиденциальности объясняет, какие данные собираются и как они обрабатываются Валерием Кувшиновым, ведущим деятельность как Kuvshinov Software («я» или «компания»), на этом сайте (kuvware.com) и в связанном программном обеспечении, включая расширение для браузера «Did Not Get It» (вместе — «Сервисы»). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">11,17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec1.title" datatype="html">
-        <source> 1. Direct Communication &amp; Contact Form </source>
-        <target> 1. Прямая связь и контактная форма </target>
+        <source> 1. Contact Form and Direct Messages </source>
+        <target> 1. Контактная форма и прямые сообщения </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">21,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec1.p1" datatype="html">
-        <source> When you voluntarily submit a query via the platform&apos;s official Contact Form, we collect your provided name, email address, and the contents of your message. This constitutes Personal Identifiable Information (PII). </source>
-        <target> Когда вы добровольно отправляете запрос через официальную Контактную форму платформы, мы собираем предоставленные вами имя, адрес электронной почты и содержимое вашего сообщения. Это составляет Персонально идентифицируемую информацию (PII). </target>
+        <source> When you send a message through the contact form, I collect the name, email address, and message you provide. This is personal information. Please do not include passwords or sensitive details in your message. </source>
+        <target> Когда вы отправляете сообщение через контактную форму, я собираю указанные вами имя, адрес электронной почты и текст сообщения. Это персональная информация. Пожалуйста, не указывайте в сообщении пароли и конфиденциальные данные. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">24,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec1.p2" datatype="html">
-        <source> This data is collected for the sole, explicit purpose of customer service, technical support, and responding to your inquiry. The data is transmitted securely to our administrative inbox. We explicitly guarantee that your communication data is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>never<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> sold, rented, or transferred to third-party marketing entities. Correspondence is retained for operational continuity unless you formally request its deletion. </source>
-        <target> Эти данные собираются с единственной, явной целью обеспечения обслуживания клиентов, технической поддержки и ответов на ваши запросы. Данные безопасно передаются в наш административный почтовый ящик. Мы прямо гарантируем, что ваши коммуникационные данные <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>никогда<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> не продаются, не сдаются в аренду и не передаются сторонним маркетинговым организациям. Переписка сохраняется для обеспечения операционной непрерывности, если только вы официально не запросите ее удаление. </target>
+        <source> I use this information only to respond to your inquiry and to provide support. Messages arrive in my business inbox. I <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>never<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> sell, rent, or share them with marketing companies. I keep correspondence for as long as needed to handle your inquiry and for ordinary business records, and I delete it when you ask me to, unless the law requires me to keep it. </source>
+        <target> Я использую эти данные только для ответа на ваш запрос и оказания поддержки. Сообщения приходят в мой рабочий почтовый ящик. Я <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>никогда<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> не продаю, не сдаю в аренду и не передаю их маркетинговым компаниям. Переписку я храню столько, сколько нужно для обработки обращения и обычного ведения дел, и удаляю ее по вашей просьбе, если закон не обязывает меня ее сохранять. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">29,36</context>
+          <context context-type="linenumber">29,35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec2.title" datatype="html">
-        <source> 2. Telemetry, Analytics, and Infrastructure Logging </source>
-        <target> 2. Телеметрия, аналитика и логирование инфраструктуры </target>
+        <source> 2. Analytics and Server Logs </source>
+        <target> 2. Аналитика и журналы сервера </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">42,44</context>
+          <context context-type="linenumber">41,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec2.p1" datatype="html">
-        <source> To maintain operational stability and optimize the user experience, the website utilizes third-party analytics infrastructure, specifically Google Analytics. Subject to explicit consent granted via the platform&apos;s Cookie Banner, these services deploy standard tracking technologies (&quot;Cookies&quot;) to aggregate non-identifiable usage metrics. </source>
-        <target> Для поддержания операционной стабильности и оптимизации пользовательского опыта на сайте используется сторонняя аналитическая инфраструктура, в частности Google Analytics. При условии явного согласия, предоставленного через баннер файлов cookie (Cookie Banner) платформы, эти сервисы развертывают стандартные технологии отслеживания («Cookies») для агрегирования неидентифицируемых показателей использования. </target>
+        <source> This site uses Google Analytics to understand how it is used and to improve it. Analytics cookies are used only if you accept them in the cookie banner. Google may process this data on servers outside Israel. </source>
+        <target> Этот сайт использует Google Analytics, чтобы понимать, как им пользуются, и улучшать его. Аналитические cookie используются только если вы приняли их в баннере cookie. Google может обрабатывать эти данные на серверах за пределами Израиля. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">45,50</context>
+          <context context-type="linenumber">44,48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec2.p2" datatype="html">
-        <source> Aggregated data sets may include masked IP addresses, browser specifications, and structural navigation patterns. This data cannot be reverse-engineered to personally identify you. You retain the right to revoke consent unilaterally at any time by declining via the Cookie Banner or purging local browser storage and cookie caches pertaining to this domain. </source>
-        <target> Агрегированные наборы данных могут включать замаскированные IP-адреса, спецификации браузера и структурные паттерны навигации. Эти данные не могут быть использованы для вашей персональной идентификации посредством обратного проектирования. Вы сохраняете за собой право в любой момент в одностороннем порядке отозвать согласие, отказавшись через баннер Cookie или очистив локальное хранилище браузера и кеш файлов cookie, относящиеся к этому домену. </target>
+        <source> The data is statistical and typically includes approximate location, browser and device details, and the pages you visit. It does not directly identify you, and I do not try to identify you with it. You can withdraw your consent at any time through the cookie settings on this site or by clearing this site&apos;s cookies and storage in your browser. </source>
+        <target> Данные статистические и обычно включают примерное местоположение, сведения о браузере и устройстве и посещенные страницы. Они не идентифицируют вас напрямую, и я не пытаюсь вас с их помощью идентифицировать. Вы можете отозвать согласие в любой момент через настройки cookie на сайте или очистив cookie и данные сайта в браузере. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">51,57</context>
+          <context context-type="linenumber">49,54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec2.p3" datatype="html">
-        <source> In addition to third-party analytics, our core web server infrastructure temporarily logs standard transmission metrics—including IP addresses, user-agent strings, and request timestamps—solely for the purposes of security auditing, DDoS mitigation, and ensuring the technical stability of the Services. These infrastructure logs are routinely rotated and destroyed, and are never used for marketing or individual user profiling. </source>
-        <target> В дополнение к сторонней аналитике, инфраструктура нашего основного веб-сервера временно регистрирует стандартные показатели передачи данных — включая IP-адреса, строки user-agent и временные метки запросов — исключительно в целях аудита безопасности, предотвращения DDoS-атак и обеспечения технической стабильности Сервисов. Эти инфраструктурные логи регулярно ротируются и уничтожаются, и никогда не используются для маркетинга или индивидуального профилирования пользователей. </target>
+        <source> For security and reliability, this site is delivered through Cloudflare, which acts as a proxy and processes visitors&apos; technical data such as IP addresses, browser details, and request times. My web server and hosting provider also keep standard technical logs. These logs are kept for a limited time, used only for security, abuse prevention, and fixing technical problems, and never for marketing or profiling. </source>
+        <target> В целях безопасности и стабильности сайт доставляется через Cloudflare, которая работает как прокси и обрабатывает технические данные посетителей, такие как IP-адреса, сведения о браузере и время запросов. Веб-сервер и хостинг-провайдер также ведут стандартные технические журналы. Эти журналы хранятся ограниченное время, используются только для безопасности, предотвращения злоупотреблений и устранения технических неполадок и никогда — для маркетинга или профилирования. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">58,65</context>
+          <context context-type="linenumber">55,61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec3.title" datatype="html">
@@ -1978,27 +1988,22 @@
         <target> 3. Безопасность и защита от ботов </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">71,73</context>
+          <context context-type="linenumber">67,69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec3.p1" datatype="html">
-        <source> To protect the platform&apos;s infrastructure and communication forms from spam and automated abuse, we utilize Cloudflare Turnstile. This security service operates in the background to analyze network traffic patterns and authenticate human interactions without deploying invasive tracking cookies. Your interaction with our forms is subject to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+        <source> To protect the site and its forms from spam and automated abuse, I use Cloudflare Turnstile, which works in the background to tell real visitors from bots. To do this, Cloudflare processes some technical information about your browser and connection. Your use of the forms is also subject to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
 				href=&quot;https://www.cloudflare.com/en-gb/turnstile-privacy-policy/&quot;
 				i18n-aria-label=&quot;@@privacy.sec3.link_aria&quot;
 				aria-label=&quot;Cloudflare Turnstile Privacy Addendum (opens in a new tab)&quot;
 				target=&quot;_blank&quot;
-				rel=&quot;noopener noreferrer&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Cloudflare Turnstile Privacy Addendum<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+				rel=&quot;noopener noreferrer&quot;
+				&gt;"/>Cloudflare Turnstile Privacy Addendum<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 			&gt;"/>. </source>
-        <target> Для защиты инфраструктуры платформы и форм связи от спама и автоматизированных злоупотреблений мы используем Cloudflare Turnstile. Этот сервис безопасности работает в фоновом режиме, анализируя шаблоны сетевого трафика и аутентифицируя взаимодействия человека без внедрения инвазивных файлов cookie для отслеживания. Ваше взаимодействие с нашими формами регулируется <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				href=&quot;https://www.cloudflare.com/en-gb/turnstile-privacy-policy/&quot;
-				i18n-aria-label=&quot;@@privacy.sec3.link_aria&quot;
-				aria-label=&quot;Cloudflare Turnstile Privacy Addendum (opens in a new tab)&quot;
-				target=&quot;_blank&quot;
-				rel=&quot;noopener noreferrer&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Дополнением о конфиденциальности Cloudflare Turnstile<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>. </target>
+        <target> Чтобы защитить сайт и его формы от спама и автоматизированных злоупотреблений, я использую Cloudflare Turnstile, который работает в фоновом режиме и отличает реальных посетителей от ботов. Для этого Cloudflare обрабатывает некоторые технические сведения о вашем браузере и соединении. Использование форм также регулируется <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Дополнением о конфиденциальности Cloudflare Turnstile<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">74,87</context>
+          <context context-type="linenumber">70,83</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec3.link_aria" datatype="html">
@@ -2006,31 +2011,31 @@
         <target>Дополнение о конфиденциальности Cloudflare Turnstile (откроется в новой вкладке)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">81,83</context>
+          <context context-type="linenumber">77,79</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec4.title" datatype="html">
-        <source> 4. Remote Digital Assistance &amp; Consulting Services </source>
-        <target> 4. Удаленная цифровая помощь и консалтинговые услуги </target>
+        <source> 4. Screen Reader Tutoring Sessions </source>
+        <target> 4. Занятия по работе с программой чтения с экрана </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">93,95</context>
+          <context context-type="linenumber">89,91</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec4.p1" datatype="html">
-        <source> During the provision of Remote Digital Assistance—such as guided form completion, navigational support, or CAPTCHA bypassing—we may transiently encounter highly sensitive personal, medical, or financial information (including credit card details or credentials). </source>
-        <target> Во время предоставления Удаленной цифровой помощи — такой как помощь в заполнении форм, поддержка навигации или обход CAPTCHA — мы можем временно сталкиваться с крайне конфиденциальной личной, медицинской или финансовой информацией (включая данные кредитных карт или учетные данные). </target>
+        <source> Tutoring sessions run over video call (for example, Zoom through Fiverr, or directly). You share your screen, and I guide you verbally. I never ask for passwords, payment details, or other sensitive information, and you enter those yourself. Even so, sensitive information may sometimes appear on the screen you share. </source>
+        <target> Занятия проходят по видеосвязи (например, в Zoom через Fiverr или напрямую). Вы показываете экран, а я подсказываю голосом. Я никогда не запрашиваю пароли, платежные данные или другую конфиденциальную информацию — вы вводите их сами. Тем не менее конфиденциальная информация иногда может появляться на демонстрируемом экране. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">96,101</context>
+          <context context-type="linenumber">92,97</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec4.p2" datatype="html">
-        <source> We enforce a strict <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>zero-retention policy<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> for all live-session data. We do not record, log, store, cache, or transmit any sensitive user data encountered during these sessions. All assistance is provided ephemerally, and no persistent record of your private credentials or financial information is ever created or maintained by the Company. </source>
-        <target> Мы применяем строгую <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>политику нулевого сохранения<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> для всех данных во время живых сеансов. Мы не записываем, не логируем, не храним, не кэшируем и не передаем никакие конфиденциальные пользовательские данные, с которыми сталкиваемся во время этих сеансов. Любая помощь предоставляется временно, и Компания никогда не создает и не поддерживает постоянных записей ваших личных учетных данных или финансовой информации. </target>
+        <source> I follow a <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>no-recording, no-storage rule<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> for session content: I do not record sessions, take screenshots, or save or copy anything I see on your screen. The written recaps I send after a session contain only navigation steps and a map of the site, never personal data. The video call platform (such as Zoom or Fiverr) handles data under its own privacy policy. </source>
+        <target> Для содержимого занятий у меня действует <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>правило «не записывать и не хранить»<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>: я не записываю занятия, не делаю снимков экрана и не сохраняю и не копирую ничего из того, что вижу на вашем экране. Письменные итоги, которые я отправляю после занятия, содержат только шаги навигации и карту сайта и никогда — персональные данные. Платформа видеосвязи (например, Zoom или Fiverr) обрабатывает данные по собственной политике конфиденциальности. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">102,108</context>
+          <context context-type="linenumber">98,104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.title" datatype="html">
@@ -2038,63 +2043,79 @@
         <target> 5. Расширение «Did Not Get It»: Минимизация данных </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">114,116</context>
+          <context context-type="linenumber">110,112</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.intro" datatype="html">
-        <source> The &quot;Did Not Get It&quot; browser extension operates entirely locally within your browser. Our core principle is absolute data minimization: your data belongs to you, stays on your device, and is never transmitted to our servers. </source>
-        <target> Расширение для браузера «Did Not Get It» работает полностью локально в вашем браузере. Наш основной принцип — абсолютная минимизация данных: ваши данные принадлежат вам, остаются на вашем устройстве и никогда не передаются на наши серверы. </target>
+        <source> The &quot;Did Not Get It&quot; browser extension runs entirely inside your browser. Your data stays on your device and is never sent to me or to any server I operate. </source>
+        <target> Расширение для браузера «Did Not Get It» работает целиком внутри вашего браузера. Ваши данные остаются на вашем устройстве и никогда не отправляются мне или на какой-либо сервер, которым я управляю. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">117,121</context>
+          <context context-type="linenumber">113,116</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.li1.title" datatype="html">
-        <source>No Telemetry or Tracking:</source>
-        <target>Нет телеметрии или отслеживания:</target>
+        <source>No tracking:</source>
+        <target>Нет отслеживания:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">123,124</context>
+          <context context-type="linenumber">118,119</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.li1.desc" datatype="html">
-        <source> We do not track your browsing behavior, clicks, or extension usage. </source>
-        <target> Мы не отслеживаем ваше поведение в браузере, клики или использование расширения. </target>
+        <source> I do not track your browsing, clicks, or how you use the extension. </source>
+        <target> Я не отслеживаю ваш просмотр веб-страниц, клики или то, как вы используете расширение. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">125,129</context>
+          <context context-type="linenumber">120,124</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.li2.title" datatype="html">
-        <source>No Server Transmissions:</source>
-        <target>Нет передачи на серверы:</target>
+        <source>No servers:</source>
+        <target>Нет серверов:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">129,130</context>
+          <context context-type="linenumber">124,125</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.li2.desc" datatype="html">
-        <source> We do not own, operate, or route your data through any external backend servers. </source>
-        <target> Мы не владеем, не управляем и не маршрутизируем ваши данные через какие-либо внешние серверы. </target>
+        <source> I do not run any backend servers that receive your data. </source>
+        <target> У меня нет серверной части, которая принимала бы ваши данные. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">131,135</context>
+          <context context-type="linenumber">126,130</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.li3.title" datatype="html">
-        <source>No Email Harvesting:</source>
-        <target>Нет сбора электронной почты:</target>
+        <source>No Email collection:</source>
+        <target>Нет сбора почты:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">135,136</context>
+          <context context-type="linenumber">130,131</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec5.li3.desc" datatype="html">
-        <source> Your email content, sender addresses, and metadata are never copied, logged, or sent to the developer or any third party. </source>
-        <target> Содержимое вашей электронной почты, адреса отправителей и метаданные никогда не копируются, не регистрируются и не отправляются разработчику или любой третьей стороне. </target>
+        <source> Your email content, sender addresses, and metadata are never copied, logged, or sent to me or to any third party. </source>
+        <target> Содержимое ваших писем, адреса отправителей и метаданные никогда не копируются, не записываются и не отправляются мне или третьим лицам. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">137,141</context>
+          <context context-type="linenumber">132,136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacy.sec5.li4.title" datatype="html">
+        <source>Local storage:</source>
+        <target>Локальное хранилище:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
+          <context context-type="linenumber">137,138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacy.sec5.li4.desc" datatype="html">
+        <source> The extension stores only its own settings (such as your chosen label) and a counter of skipped rejections in your browser&apos;s storage. Removing the extension deletes this data. </source>
+        <target> Расширение хранит в собственном хранилище вашего браузера только свои настройки (например, выбранный вами ярлык) и счетчик пропущенных отказов. Удаление расширения стирает эти данные. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
+          <context context-type="linenumber">139,144</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.title" datatype="html">
@@ -2102,67 +2123,62 @@
         <target> 6. Расширение: Доступ к данным Google API (Ограниченное использование) </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">148,150</context>
+          <context context-type="linenumber">151,153</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.intro" datatype="html">
-        <source> In order to function, the Extension requests access to your Gmail account using the Google OAuth 2.0 protocol. We access and use this data in the following strictly limited ways: </source>
-        <target> Для работы расширение запрашивает доступ к вашему аккаунту Gmail с использованием протокола Google OAuth 2.0. Мы получаем доступ и используем эти данные следующими строго ограниченными способами: </target>
+        <source> To work, the extension asks for access to your Gmail account through Google OAuth 2.0. It uses that access only in these limited ways: </source>
+        <target> Для работы расширение запрашивает доступ к вашему аккаунту Gmail через Google OAuth 2.0. Оно использует этот доступ только следующими ограниченными способами: </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">151,155</context>
+          <context context-type="linenumber">154,157</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.li1.title" datatype="html">
-        <source>Reading Data:</source>
-        <target>Чтение данных:</target>
+        <source>Reading:</source>
+        <target>Чтение:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">157,158</context>
+          <context context-type="linenumber">159,160</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.li1.desc" datatype="html">
-        <source> The Extension reads the HTML text of incoming unread emails locally in your browser to check for standard job rejection phrasing. </source>
-        <target> Расширение локально в вашем браузере считывает HTML-текст входящих непрочитанных писем, чтобы проверить их на наличие стандартных фраз об отказе в приеме на работу. </target>
+        <source> The extension reads the text of incoming unread emails locally in your browser, to check for standard job-rejection phrasing. </source>
+        <target> Расширение локально в вашем браузере считывает текст входящих непрочитанных писем, чтобы проверить стандартные формулировки отказа в приеме на работу. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">159,163</context>
+          <context context-type="linenumber">161,165</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.li2.title" datatype="html">
-        <source>Modifying Data:</source>
-        <target>Изменение данных:</target>
+        <source>Modifying:</source>
+        <target>Изменение:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">164,165</context>
+          <context context-type="linenumber">166,167</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.li2.desc" datatype="html">
-        <source> If a rejection is detected, the Extension communicates directly with the Google Gmail API to apply your custom label and remove the &quot;UNREAD&quot; status from that specific thread. </source>
-        <target> Если обнаружен отказ, расширение связывается напрямую с Google Gmail API, чтобы применить ваш настраиваемый ярлык и снять статус «НЕ ПРОЧИТАНО» с этой конкретной цепочки писем. </target>
+        <source> If a rejection is detected, the extension asks the Gmail API to apply your label and remove the &quot;UNREAD&quot; status from that email thread. </source>
+        <target> Если обнаружен отказ, расширение просит Gmail API применить ваш ярлык и снять статус «НЕ ПРОЧИТАНО» с этой цепочки писем. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">166,171</context>
+          <context context-type="linenumber">168,172</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.p1" datatype="html">
-        <source> &quot;Did Not Get It&quot; complies entirely with the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				href=&quot;https://developers.google.com/terms/api-services-user-data-policy?utm_source=gemini&amp;authuser=1&quot;
+        <source> The use and transfer of information received from Google APIs by &quot;Did Not Get It&quot; adheres to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+				href=&quot;https://developers.google.com/terms/api-services-user-data-policy&quot;
 				i18n-aria-label=&quot;@@privacy.sec6.link_aria&quot;
 				aria-label=&quot;Google API Services User Data Policy (opens in a new tab)&quot;
 				target=&quot;_blank&quot;
-				rel=&quot;noopener noreferrer&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Google API Services User Data Policy<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>, including the Limited Use requirements. We do not use your data to serve advertisements, we do not allow humans to read your data, and we do not sell or transfer your data. </source>
-        <target> Расширение «Did Not Get It» полностью соответствует <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				href=&quot;https://developers.google.com/terms/api-services-user-data-policy?utm_source=gemini&amp;authuser=1&quot;
-				i18n-aria-label=&quot;@@privacy.sec6.link_aria&quot;
-				aria-label=&quot;Google API Services User Data Policy (opens in a new tab)&quot;
-				target=&quot;_blank&quot;
-				rel=&quot;noopener noreferrer&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Политике в отношении пользовательских данных сервисов Google API<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>, включая требования к ограниченному использованию (Limited Use). Мы не используем ваши данные для показа рекламы, не разрешаем людям читать ваши данные, не продаем и не передаем ваши данные. </target>
+				rel=&quot;noopener noreferrer&quot;
+				&gt;"/>Google API Services User Data Policy<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+			&gt;"/>, including the Limited Use requirements. The extension does not use your data for advertising, does not allow humans to read it, and does not sell or transfer it. </source>
+        <target> Использование и передача информации, полученной из Google API, расширением «Did Not Get It» соответствуют <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Политике в отношении пользовательских данных сервисов Google API<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, включая требования к ограниченному использованию (Limited Use). Расширение не использует ваши данные для рекламы, не позволяет людям читать их и не продает и не передает их. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">173,185</context>
+          <context context-type="linenumber">174,186</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec6.link_aria" datatype="html">
@@ -2170,60 +2186,60 @@
         <target>Политика в отношении пользовательских данных сервисов Google API (откроется в новой вкладке)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">177,179</context>
+          <context context-type="linenumber">179,181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacy.sec6.p2" datatype="html">
+        <source> You can revoke the extension&apos;s access at any time in the third-party access settings of your Google Account, or by removing the extension. </source>
+        <target> Вы можете в любой момент отозвать доступ расширения в настройках доступа сторонних приложений вашего аккаунта Google или удалив расширение. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
+          <context context-type="linenumber">187,192</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec7.title" datatype="html">
-        <source> 7. External Routing and Liability </source>
-        <target> 7. Внешняя маршрутизация и ответственность </target>
+        <source> 7. External Links and Embedded Content </source>
+        <target> 7. Внешние ссылки и встроенный контент </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">191,193</context>
+          <context context-type="linenumber">196,198</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec7.p1" datatype="html">
-        <source> The Services may contain routing nodes and hyperlinks directing traffic to external digital ecosystems. Upon executing a redirection to an external domain, you are immediately subject to the privacy architecture of that third party. We exercise no administrative control over external properties and explicitly disclaim all liability for their data handling practices. </source>
-        <target> Сервисы могут содержать узлы маршрутизации и гиперссылки, направляющие трафик во внешние цифровые экосистемы. При переходе на внешний домен вы немедленно подчиняетесь архитектуре конфиденциальности этой третьей стороны. Мы не осуществляем административный контроль над внешними ресурсами и прямо отказываемся от любой ответственности за их методы обработки данных. </target>
+        <source> This site links to other websites and embeds a YouTube video. When you follow a link or play embedded content, that third party&apos;s privacy practices apply, and I have no control over them or responsibility for them. </source>
+        <target> На сайте есть ссылки на другие сайты и встроенное видео YouTube. Когда вы переходите по ссылке или запускаете встроенный контент, действуют правила конфиденциальности этой третьей стороны, а я не контролирую их и не отвечаю за них. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">194,200</context>
+          <context context-type="linenumber">199,205</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec8.title" datatype="html">
-        <source> 8. Data Inquiry and Contact Details </source>
-        <target> 8. Запросы о данных и контактная информация </target>
+        <source> 8. Your Rights, Contact, and Updates </source>
+        <target> 8. Ваши права, контакты и обновления </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">206,208</context>
+          <context context-type="linenumber">209,211</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec8.p1" datatype="html">
-        <source> If you have any questions, concerns, or requests regarding this Privacy Policy, your data, or the security of our Services, please submit a formal query via our official communication channel <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				routerLink=&quot;/contact&quot;
-				i18n-aria-label=&quot;@@privacy.sec8.link_aria&quot;
-				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>here<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>. </source>
-        <target> Если у вас есть какие-либо вопросы, опасения или запросы, касающиеся данной Политики конфиденциальности, ваших данных или безопасности наших Сервисов, пожалуйста, отправьте официальный запрос через наш официальный канал связи <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				routerLink=&quot;/contact&quot;
-				i18n-aria-label=&quot;@@privacy.sec8.link_aria&quot;
-				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>здесь<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>. </target>
+        <source> You can ask me to show you the personal information I hold about you, to correct it, or to delete it, within the limits of the law. For this, or for any question about this policy, please use the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot;&gt;"/>contact page<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> or write to me at <x id="START_LINK_1" equiv-text="&lt;a href=&quot;mailto:contact@kuvware.com&quot;&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
+        <target> Вы можете попросить меня показать вам персональную информацию, которая у меня о вас есть, исправить ее или удалить в пределах, допустимых законом. Для этого или по любому вопросу об этой политике напишите мне через <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>страницу контактов<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> или на электронную почту (<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/>). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">209,219</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="privacy.sec8.link_aria" datatype="html">
-        <source>here. Go to the Contact page</source>
-        <target>здесь. Перейти на страницу контактов</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
-          <context context-type="linenumber">215,218</context>
+          <context context-type="linenumber">212,217</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.sec8.p2" datatype="html">
-        <source>This policy is legally effective as of October 22, 2026.</source>
-        <target>Данная политика юридически вступает в силу с 22 октября 2026 года.</target>
+        <source>This policy was last updated on November 12, 2026.</source>
+        <target>Эта политика обновлена 12 ноября 2026 года.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
+          <context context-type="linenumber">217,218</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacy.sec8.p3" datatype="html">
+        <source> I may update this policy from time to time. The current version is always on this page. </source>
+        <target> Я могу время от времени обновлять эту политику. Актуальная версия всегда находится на этой странице. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">219,222</context>
@@ -2533,12 +2549,20 @@
           <context context-type="linenumber">15,20</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="services.pricing_note" datatype="html">
+        <source> Final prices, no VAT included (Exempt Dealer). </source>
+        <target>Окончательные цены, без НДС (Освобожденный предприниматель).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/page.html</context>
+          <context context-type="linenumber">30,33</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="services.process.title" datatype="html">
         <source> How I Work </source>
         <target> Как я работаю </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.html</context>
-          <context context-type="linenumber">58,61</context>
+          <context context-type="linenumber">74,77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.cta.title" datatype="html">
@@ -2546,7 +2570,7 @@
         <target> Вы приняли решение? </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.html</context>
-          <context context-type="linenumber">87,90</context>
+          <context context-type="linenumber">103,106</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.cta.subtitle" datatype="html">
@@ -2554,7 +2578,7 @@
         <target> Если у вас есть какие-либо вопросы или сомнения, не бойтесь спрашивать. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.html</context>
-          <context context-type="linenumber">92,95</context>
+          <context context-type="linenumber">108,111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services.cta.btn" datatype="html">
@@ -2562,7 +2586,7 @@
         <target>Отправить сообщение</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/services/page.html</context>
-          <context context-type="linenumber">97,99</context>
+          <context context-type="linenumber">113,115</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.meta.title" datatype="html">
@@ -2590,35 +2614,51 @@
         </context-group>
       </trans-unit>
       <trans-unit id="terms.intro" datatype="html">
-        <source> These Terms of Service (&quot;Terms&quot;) govern your access to and use of the digital properties, consulting services, software products, and browser extensions (collectively, the &quot;Services&quot;) provided by Valeriy Kuvshinov, doing business as Kuvshinov Software (&quot;Company&quot;, &quot;We&quot;, or &quot;Us&quot;). </source>
-        <target> Данные Условия использования («Условия») регулируют ваш доступ и использование цифровых ресурсов, консалтинговых услуг, программных продуктов и расширений для браузера (совместно именуемых «Сервисы»), предоставляемых Валерием Кувшиновым, ведущим деятельность как Kuvshinov Software («Компания» или «Мы»). </target>
+        <source> These Terms of Service (&quot;Terms&quot;) govern your access to and use of the websites, consulting and development services, tutoring, software, and browser extensions (together, the &quot;Services&quot;) provided by Valeriy Kuvshinov, operating as Kuvshinov Software (&quot;I&quot; or &quot;the Company&quot;). </source>
+        <target> Настоящие Условия использования («Условия») регулируют ваш доступ к сайтам, консалтинговым услугам и услугам разработки, обучению, программным продуктам и расширениям для браузера (вместе — «Сервисы») и их использование. Сервисы предоставляет Валерий Кувшинов, ведущий деятельность как Kuvshinov Software («я» или «компания»). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
           <context context-type="linenumber">11,17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec1.title" datatype="html">
-        <source> 1. Consulting &amp; Remote Digital Assistance </source>
-        <target> 1. Консалтинг и удаленная цифровая помощь </target>
+        <source> 1. Consulting, Development &amp; Screen Reader Tutoring </source>
+        <target> 1. Консалтинг, разработка и обучение работе с программой чтения с экрана </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
           <context context-type="linenumber">21,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec1.p1" datatype="html">
-        <source> The Company provides custom software engineering, accessibility remediation, and remote digital assistance. By engaging our services, you acknowledge that all architectural and codebase modifications are executed based on the requirements agreed upon prior to commencement. </source>
-        <target> Компания предоставляет услуги по кастомной разработке программного обеспечения, исправлению доступности и удаленной цифровой помощи. Пользуясь нашими услугами, вы подтверждаете, что все изменения архитектуры и кодовой базы выполняются на основе требований, согласованных до начала работ. </target>
+        <source> I provide custom software development, accessibility remediation, and screen reader navigation tutoring. Work is carried out according to the scope and requirements we agree on before it starts. </source>
+        <target> Я оказываю услуги по разработке программного обеспечения на заказ, исправлению доступности и обучению работе с программой чтения с экрана. Работа выполняется в рамках объема и требований, согласованных до ее начала. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">24,29</context>
+          <context context-type="linenumber">24,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec1.p2" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Remote Assistance Disclaimer:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> When utilizing our Remote Digital Assistance services (e.g., CAPTCHA bypassing, guided navigation), you retain ultimate responsibility for your digital actions. The Company acts strictly as a navigational aid. We bear no liability for the outcome of forms submitted, financial transactions executed, or agreements bound during a guided session. </source>
-        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Отказ от ответственности при удаленной помощи:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> При использовании наших услуг Удаленной цифровой помощи (например, обход CAPTCHA, управляемая навигация), вы несете полную ответственность за свои цифровые действия. Компания выступает строго в качестве помощника по навигации. Мы не несем ответственности за результаты отправки форм, финансовые транзакции или соглашения, заключенные во время управляемого сеанса. </target>
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Screen reader navigation tutoring:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> this service is verbal guidance only, delivered over a video call (for example Zoom). You share your screen and stay in full control. I do not take remote control of your computer, and I will never ask for passwords, financial details, or other sensitive data, which you enter yourself. You remain responsible for your own actions and decisions during a session, including forms submitted, purchases made, and agreements accepted. To the extent permitted by law, I am not liable for the outcome of those actions. </source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Обучение работе с программой чтения с экрана:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> эта услуга предполагает только голосовые подсказки по видеосвязи (например, в Zoom). Вы показываете экран и полностью контролируете процесс. Я не беру под контроль ваш компьютер и никогда не запрашиваю пароли, финансовые данные или другую конфиденциальную информацию — вы вводите их сами. Вы несете ответственность за свои действия и решения во время занятия, включая отправленные формы, совершенные покупки и принятые соглашения. В пределах, допустимых законом, я не отвечаю за последствия этих действий. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">30,36</context>
+          <context context-type="linenumber">29,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec1.p3" datatype="html">
+        <source> Once you have paid in full, the code and content I create specifically for your project belong to you. Third-party components and open-source libraries remain under their own licenses. I may show the finished project in my portfolio unless we agree otherwise in writing. </source>
+        <target> После полной оплаты код и контент, созданные мной специально для вашего проекта, принадлежат вам. Сторонние компоненты и библиотеки с открытым исходным кодом остаются под своими лицензиями. Я вправе показывать готовый проект в своем портфолио, если иное не согласовано письменно. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">38,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec1.p4" datatype="html">
+        <source> Accessibility work is built to WCAG 2.1 AA and tested, but no website can be guaranteed to be free of barriers or protected from complaints and legal claims. Nothing on this site is legal advice. </source>
+        <target> Работа по доступности выполняется по стандарту WCAG 2.1 AA и тестируется, но невозможно гарантировать, что сайт будет полностью свободен от барьеров или защищен от жалоб и исков. Ничто на этом сайте не является юридической консультацией. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">44,49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec2.title" datatype="html">
@@ -2626,47 +2666,79 @@
         <target> 2. Финансовые условия и платежи </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">42,44</context>
+          <context context-type="linenumber">54,56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec2.intro" datatype="html">
-        <source> All financial agreements, hourly rates, and project milestones will be explicitly defined in written communication prior to the commencement of work. </source>
-        <target> Все финансовые соглашения, почасовые ставки и этапы проекта будут четко определены в письменном виде до начала работы. </target>
+        <source> Rates, prices, and project milestones are agreed in writing before work starts. Prices are final, with no VAT added. </source>
+        <target> Тарифы, цены и этапы проекта согласовываются письменно до начала работы. Цены окончательные, НДС не добавляется. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">45,48</context>
+          <context context-type="linenumber">57,60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec2.li1.title" datatype="html">
-        <source>Accepted Methods:</source>
-        <target>Принимаемые методы:</target>
+        <source>Accepted methods:</source>
+        <target>Способы оплаты:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">50,51</context>
+          <context context-type="linenumber">62,63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec2.li1.desc" datatype="html">
-        <source> We accept payments strictly via direct Bank Wire Transfer or the Israeli Bit payment application. We do not process credit cards directly. </source>
-        <target> Мы принимаем платежи строго посредством прямого банковского перевода или через израильское платежное приложение Bit. Мы не обрабатываем кредитные карты напрямую. </target>
+        <source> Direct work is paid by bank transfer or the Israeli Bit app. I do not process credit cards directly. </source>
+        <target> Напрямую работа оплачивается банковским переводом или через приложение Bit. Я не принимаю кредитные карты напрямую. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">52,56</context>
+          <context context-type="linenumber">64,68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec2.li2.title" datatype="html">
         <source>Settlement:</source>
-        <target>Оплата:</target>
+        <target>Расчеты:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">57,58</context>
+          <context context-type="linenumber">69,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec2.li2.desc" datatype="html">
-        <source> Invoices are due upon receipt unless a net-payment schedule has been formally established. The Company reserves the right to suspend ongoing development or withhold deployment access until outstanding balances are cleared. </source>
-        <target> Счета подлежат оплате при получении, если официально не установлен иной график платежей. Компания оставляет за собой право приостановить текущую разработку или закрыть доступ к развертыванию до погашения непогашенных остатков. </target>
+        <source> Payment is due when you receive my payment request, unless we agree on a different schedule in writing. If a balance remains unpaid, I may pause work and further deployments until it is settled. </source>
+        <target> Оплата производится при получении моего запроса на оплату, если письменно не согласован иной график. При наличии задолженности я вправе приостановить работу и дальнейшие развертывания до ее погашения. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">59,63</context>
+          <context context-type="linenumber">71,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec2.li3.title" datatype="html">
+        <source>Fiverr orders:</source>
+        <target>Заказы через Fiverr:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec2.li3.desc" datatype="html">
+        <source> Services ordered through Fiverr are paid for and governed through Fiverr and its terms. </source>
+        <target> Услуги, заказанные через Fiverr, оплачиваются и регулируются через Fiverr и ее условия. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">79,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec2.li4.title" datatype="html">
+        <source>Cancellation:</source>
+        <target>Отмена:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec2.li4.desc" datatype="html">
+        <source> Business clients: either side may end a project in writing. You pay for the work completed up to that point, and any deposit counts toward it. Individual consumers: you may cancel as provided by the Israeli Consumer Protection Law, including its cancellation period and fee rules, and nothing in these Terms limits those rights. Tutoring sessions: you may cancel or reschedule free of charge up to 24 hours before a session, and unused sessions in prepaid bundles are refunded. </source>
+        <target> Деловые клиенты: любая сторона вправе прекратить проект в письменной форме. Вы оплачиваете работу, выполненную к этому моменту, а предоплата засчитывается в ее счет. Частные потребители: вы вправе отменить заказ в соответствии с израильским Законом о защите прав потребителей, включая его правила о сроке отмены и сборе за отмену, и ничто в настоящих Условиях не ограничивает эти права. Занятия: занятие можно бесплатно отменить или перенести не позднее чем за 24 часа до его начала, а неиспользованные занятия в предоплаченных пакетах возвращаются. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">86,92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec3.title" datatype="html">
@@ -2674,23 +2746,23 @@
         <target> 3. Расширения для браузера («Did Not Get It») </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">71,73</context>
+          <context context-type="linenumber">102,104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec3.p1" datatype="html">
-        <source> The Company distributes the &quot;Did Not Get It&quot; browser extension via the Google Chrome Web Store and Mozilla Firefox Add-ons repository. This software is provided strictly on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. </source>
-        <target> Компания распространяет расширение для браузера «Did Not Get It» через Google Chrome Web Store и репозиторий Mozilla Firefox Add-ons. Данное программное обеспечение предоставляется строго на условиях «КАК ЕСТЬ» (AS IS) и «КАК ДОСТУПНО» (AS AVAILABLE). </target>
+        <source> I distribute the &quot;Did Not Get It&quot; browser extension through the Google Chrome Web Store and the Mozilla Firefox Add-ons repository. The software is provided &quot;AS IS&quot; and &quot;AS AVAILABLE&quot;. </source>
+        <target> Я распространяю расширение для браузера «Did Not Get It» через Google Chrome Web Store и репозиторий Mozilla Firefox Add-ons. Это программное обеспечение предоставляется на условиях «КАК ЕСТЬ» (AS IS) и «КАК ДОСТУПНО» (AS AVAILABLE). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">74,78</context>
+          <context context-type="linenumber">105,109</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec3.p2" datatype="html">
-        <source> While the extension utilizes the Google Gmail API to categorize rejection emails, we do not guarantee absolute accuracy in algorithmic text detection. The Company is not liable for missed employment opportunities, mislabeled correspondence, or workflow disruptions resulting from API changes instituted by Google, Chrome, or Mozilla. You grant the extension local execution permissions at your own risk. </source>
-        <target> Хотя расширение использует Google Gmail API для категоризации писем с отказами, мы не гарантируем абсолютную точность алгоритмического распознавания текста. Компания не несет ответственности за упущенные возможности трудоустройства, неправильно помеченную корреспонденцию или сбои в рабочем процессе в результате изменений API, введенных Google, Chrome или Mozilla. Вы предоставляете расширению разрешения на локальное выполнение на свой страх и риск. </target>
+        <source> The extension uses the Google Gmail API to categorize rejection emails, but I do not guarantee perfect accuracy in detecting text. I am not liable for missed employment opportunities, mislabeled messages, or disruptions caused by API changes from Google, Chrome, or Mozilla. You are responsible for the permissions you grant the extension, and you use it at your own risk. </source>
+        <target> Расширение использует Google Gmail API для классификации писем с отказами, но я не гарантирую абсолютную точность распознавания текста. Я не отвечаю за упущенные возможности трудоустройства, неверно помеченные письма или сбои в работе из-за изменений API со стороны Google, Chrome или Mozilla. Вы отвечаете за разрешения, которые даете расширению, и используете его на свой риск. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">79,85</context>
+          <context context-type="linenumber">110,116</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec4.title" datatype="html">
@@ -2698,23 +2770,23 @@
         <target> 4. Программное обеспечение с открытым исходным кодом и офлайн программы </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">91,93</context>
+          <context context-type="linenumber">122,124</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec4.p1" datatype="html">
-        <source> Certain software solutions developed by the Company, including the <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>CModem-Terminal<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> (a C-based terminal for controlling GSM/GPRS modems), are distributed as standalone, offline open-source programs. </source>
-        <target> Некоторые программные решения, разработанные Компанией, включая <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>CModem-Terminal<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> (терминал на базе C для управления GSM/GPRS модемами), распространяются как автономные офлайн программы с открытым исходным кодом. </target>
+        <source> Some software I develop, including <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>CModem-Terminal<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> (a C-based terminal for controlling GSM/GPRS modems), is distributed as standalone, offline open-source programs. </source>
+        <target> Некоторые разработанные мной программные решения, включая <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>CModem-Terminal<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> (терминал на C для управления GSM/GPRS-модемами), распространяются как автономные офлайн-программы с открытым исходным кодом. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">94,98</context>
+          <context context-type="linenumber">125,129</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec4.p2" datatype="html">
-        <source> Your use, modification, and distribution of these specific repositories are governed exclusively by the open-source license files (e.g., MIT License) included within those respective codebases. The Company provides these programs &quot;AS IS&quot; without warranty of any kind. We assume no liability for hardware damage, telecommunication charges, or data loss resulting from the execution of AT commands or serial interface interactions. </source>
-        <target> Использование, модификация и распространение этих конкретных репозиториев регулируются исключительно файлами лицензий на открытый исходный код (например, лицензией MIT), включенными в соответствующие кодовые базы. Компания предоставляет эти программы «КАК ЕСТЬ» без каких-либо гарантий. Мы не несем ответственности за повреждение оборудования, расходы на телекоммуникации или потерю данных в результате выполнения AT-команд или взаимодействия с последовательным интерфейсом. </target>
+        <source> Your use, modification, and distribution of these repositories are governed by the open-source license files included in them (for example, the GNU GPL v3 in CModem-Terminal). The programs are provided &quot;AS IS&quot; without warranty of any kind. I am not liable for hardware damage, telecommunication charges, or data loss resulting from running AT commands or using serial interfaces. </source>
+        <target> Использование, изменение и распространение этих репозиториев регулируются лицензиями на открытый исходный код, включенными в них (например, GNU GPL v3 в CModem-Terminal). Программы предоставляются «КАК ЕСТЬ» (AS IS) без каких-либо гарантий. Я не отвечаю за повреждение оборудования, расходы на связь или потерю данных в результате выполнения AT-команд или работы с последовательными интерфейсами. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">99,105</context>
+          <context context-type="linenumber">130,136</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.title" datatype="html">
@@ -2722,15 +2794,15 @@
         <target> 5. Пост-релизная поддержка и обслуживание </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">111,113</context>
+          <context context-type="linenumber">142,144</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.p1" datatype="html">
-        <source> For clients engaging in custom web development and system architecture, the Company includes a comprehensive 12-month support period beginning on the date of production launch. During this first year, structural updates, security patches, and minor architectural modifications are provided free of charge. </source>
-        <target> Для клиентов, заказывающих кастомную веб-разработку и архитектуру систем, Компания предоставляет комплексный 12-месячный период поддержки, начиная с даты запуска в продакшн. В течение этого первого года структурные обновления, патчи безопасности и незначительные архитектурные изменения предоставляются бесплатно. </target>
+        <source> For custom software development projects, I include 12 months of support starting on the production launch date. During this period I fix bugs and defects in the delivered work and apply security patches at no charge. New features and redesigns are not included. </source>
+        <target> В проектах по разработке программного обеспечения на заказ я включаю 12 месяцев поддержки, начиная с даты запуска в продакшн. В этот период я бесплатно исправляю ошибки и дефекты в переданной работе и устанавливаю исправления безопасности. Новые функции и редизайн не включены. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">114,119</context>
+          <context context-type="linenumber">145,149</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.p2" datatype="html">
@@ -2738,7 +2810,7 @@
         <target> По истечении первоначального 12-месячного периода текущая поддержка переходит на платную основу: </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">120,123</context>
+          <context context-type="linenumber">150,153</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.li1.title" datatype="html">
@@ -2746,15 +2818,15 @@
         <target>Поддержка безопасности:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">125,126</context>
+          <context context-type="linenumber">155,156</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.li1.desc" datatype="html">
-        <source> Essential security updates, dependency patches, and uptime monitoring are available via an ongoing monthly or annual retainer. </source>
-        <target> Важнейшие обновления безопасности, патчи зависимостей и мониторинг доступности предоставляются в рамках ежемесячной или ежегодной абонентской платы. </target>
+        <source> Essential security updates and dependency patches are available through a monthly or annual retainer, with uptime monitoring where agreed. </source>
+        <target> Важные обновления безопасности и исправления зависимостей доступны по ежемесячному или ежегодному абонементу, а также мониторинг доступности, если это согласовано. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">127,131</context>
+          <context context-type="linenumber">157,161</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.li2.title" datatype="html">
@@ -2762,15 +2834,15 @@
         <target>Обновления функционала:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">132,133</context>
+          <context context-type="linenumber">162,163</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec5.li2.desc" datatype="html">
-        <source> Any updates, aesthetic redesigns, structural additions, or feature developments that fall outside the scope of strict security maintenance will be billed separately at our standard hourly rate or as a fixed-price project contract. </source>
-        <target> Любые обновления, эстетический редизайн, структурные дополнения или разработка функций, выходящие за рамки строгого обслуживания безопасности, будут оплачиваться отдельно по нашей стандартной почасовой ставке или как проект с фиксированной ценой. </target>
+        <source> Updates, redesigns, structural additions, or new features beyond security maintenance are billed separately, at my standard hourly rate or as a fixed-price project. </source>
+        <target> Обновления, редизайн, структурные дополнения или новые функции сверх обслуживания безопасности оплачиваются отдельно — по моей стандартной почасовой ставке или как проект с фиксированной ценой. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">134,138</context>
+          <context context-type="linenumber">164,168</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec6.title" datatype="html">
@@ -2778,15 +2850,15 @@
         <target> 6. Ограничение ответственности </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">146,148</context>
+          <context context-type="linenumber">176,178</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec6.p1" datatype="html">
-        <source> To the maximum extent permitted by applicable Israeli and international law, Kuvshinov Software, its owner, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, data, or digital infrastructure, resulting from (a) your access to or use of our Services, (b) any conduct or content of any third party encountered through our Services, or (c) unauthorized access or alteration of your transmissions. </source>
-        <target> В максимальной степени, разрешенной применимым израильским и международным правом, Kuvshinov Software, ее владелец и аффилированные лица не несут ответственности за любые косвенные, случайные, особые, последующие или штрафные убытки, включая упущенную выгоду, потерю данных или цифровой инфраструктуры, возникшие в результате (а) вашего доступа к нашим Сервисам или их использования, (б) любого поведения или контента любой третьей стороны, встреченного через наши Сервисы, или (в) несанкционированного доступа или изменения ваших передач. </target>
+        <source> To the extent permitted by Israeli law, I am not liable for indirect, incidental, special, or consequential damages, including loss of profits, data, or digital infrastructure, arising from your use of the Services or from the content or conduct of third parties. My total liability for any claim relating to a paid service is limited to the amount you paid me for that service. Nothing in these Terms limits liability that cannot be limited by law. </source>
+        <target> В пределах, допустимых израильским законодательством, я не несу ответственности за косвенные, случайные, особые или последующие убытки, включая упущенную выгоду, потерю данных или цифровой инфраструктуры, возникшие в связи с использованием Сервисов либо с контентом или действиями третьих лиц. Моя общая ответственность по любому требованию, связанному с платной услугой, ограничена суммой, которую вы заплатили мне за эту услугу. Ничто в настоящих Условиях не ограничивает ответственность, которую нельзя ограничить по закону. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">149,156</context>
+          <context context-type="linenumber">179,186</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec7.title" datatype="html">
@@ -2794,31 +2866,15 @@
         <target> 7. Запросы и контактная информация </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">162,164</context>
+          <context context-type="linenumber">192,194</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec7.p1" datatype="html">
-        <source> If you have any questions, concerns, or requests regarding these Terms of Service or the scope of our consulting agreements, please submit a formal query via our official communication channel <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				routerLink=&quot;/contact&quot;
-				i18n-aria-label=&quot;@@terms.sec7.link_aria&quot;
-				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>here<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>. </source>
-        <target> Если у вас есть какие-либо вопросы, опасения или запросы, касающиеся настоящих Условий использования или объема наших консалтинговых соглашений, пожалуйста, отправьте официальный запрос через наш официальный канал связи <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-				routerLink=&quot;/contact&quot;
-				i18n-aria-label=&quot;@@terms.sec7.link_aria&quot;
-				aria-label=&quot;here. Go to the Contact page&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>здесь<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-			&gt;"/>. </target>
+        <source> If you have any questions, concerns, or requests about these Terms or the scope of my consulting agreements, please contact me through the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot;&gt;"/>contact page<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> or directly by email ( <x id="START_LINK_1" equiv-text="&lt;a href=&quot;mailto:contact@kuvware.com&quot;&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ). </source>
+        <target> Если у вас есть вопросы, опасения или запросы по поводу настоящих Условий или объема моих консалтинговых соглашений, напишите мне через <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>страницу контактов<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> или напрямую по электронной почте (<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/>). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">165,175</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="terms.sec7.link_aria" datatype="html">
-        <source>here. Go to the Contact page</source>
-        <target>здесь. Перейти на страницу контактов</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">171,174</context>
+          <context context-type="linenumber">195,200</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec8.title" datatype="html">
@@ -2826,23 +2882,31 @@
         <target> 8. Применимое право </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">181,183</context>
+          <context context-type="linenumber">206,208</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec8.p1" datatype="html">
-        <source> These Terms shall be governed and construed in accordance with the laws of the State of Israel, without regard to its conflict of law provisions. Any legal disputes arising from these Terms or the use of our Services shall be subject to the exclusive jurisdiction of the competent courts located in Israel. </source>
-        <target> Настоящие Условия регулируются и толкуются в соответствии с законодательством Государства Израиль без учета коллизионных норм. Любые правовые споры, возникающие из настоящих Условий или использования наших Сервисов, подлежат исключительной юрисдикции компетентных судов, расположенных в Израиле. </target>
+        <source> These Terms are governed by the laws of the State of Israel, without regard to conflict-of-law rules. Any legal dispute arising from these Terms or the use of the Services is subject to the exclusive jurisdiction of the competent courts in Israel. </source>
+        <target> Настоящие Условия регулируются законодательством Государства Израиль без учета коллизионных норм. Любые правовые споры, возникающие из настоящих Условий или использования Сервисов, подлежат исключительной юрисдикции компетентных судов Израиля. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">184,189</context>
+          <context context-type="linenumber">209,213</context>
         </context-group>
       </trans-unit>
       <trans-unit id="terms.sec8.p2" datatype="html">
-        <source>These terms are legally effective as of October 10, 2026.</source>
-        <target>Данные условия юридически вступают в силу с 10 октября 2026 года.</target>
+        <source> I may update these Terms from time to time. The version in effect when we agree on a project applies to that project. </source>
+        <target> Я могу время от времени обновлять эти Условия. К проекту применяется версия, действовавшая на момент, когда мы договорились о проекте. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
-          <context context-type="linenumber">189,192</context>
+          <context context-type="linenumber">214,217</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="terms.sec8.p3" datatype="html">
+        <source>These Terms were last updated on November 12, 2026.</source>
+        <target>Настоящие Условия обновлены 12 ноября 2026 года.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/terms/page.html</context>
+          <context context-type="linenumber">217,220</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.menu.aria" datatype="html">
@@ -2853,20 +2917,12 @@
           <context context-type="linenumber">14,16</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="aside.logo.alt" datatype="html">
-        <source>Kuvware logo</source>
-        <target>Логотип Kuvware</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">27,29</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="aside.close.aria" datatype="html">
         <source>close menu</source>
         <target>закрыть меню</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">36,38</context>
+          <context context-type="linenumber">35,37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.home" datatype="html">
@@ -2874,7 +2930,7 @@
         <target>Главная</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">58,61</context>
+          <context context-type="linenumber">57,60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.portfolio" datatype="html">
@@ -2882,7 +2938,7 @@
         <target>Портфолио</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">71,74</context>
+          <context context-type="linenumber">70,73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.services" datatype="html">
@@ -2890,7 +2946,7 @@
         <target>Услуги</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">84,87</context>
+          <context context-type="linenumber">83,86</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.about" datatype="html">
@@ -2898,7 +2954,7 @@
         <target>Обо мне</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">97,100</context>
+          <context context-type="linenumber">96,99</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aside.link.contact" datatype="html">
@@ -2906,7 +2962,7 @@
         <target>Контакты</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">110,114</context>
+          <context context-type="linenumber">109,113</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cookie.dialog.aria" datatype="html">
@@ -3091,24 +3147,12 @@
           <context context-type="linenumber">9,12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="header.logo.alt" datatype="html">
-        <source>Kuvware logo</source>
-        <target>Логотип Kuvware</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">27,29</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">50,52</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="header.nav.desktop.aria" datatype="html">
         <source>Desktop Main</source>
         <target>Главная</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">40,43</context>
+          <context context-type="linenumber">39,42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.link.portfolio" datatype="html">
@@ -3116,7 +3160,7 @@
         <target> Портфолио </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">64,67</context>
+          <context context-type="linenumber">62,65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.link.services" datatype="html">
@@ -3124,7 +3168,7 @@
         <target> Услуги </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">72,75</context>
+          <context context-type="linenumber">70,73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.link.about" datatype="html">
@@ -3132,7 +3176,7 @@
         <target> Обо мне </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">80,83</context>
+          <context context-type="linenumber">78,81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.link.contact" datatype="html">
@@ -3140,7 +3184,7 @@
         <target> Контакты </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">88,92</context>
+          <context context-type="linenumber">86,90</context>
         </context-group>
       </trans-unit>
       <trans-unit id="image_modal.dialog.aria" datatype="html">
