@@ -101,7 +101,7 @@
 	</app-input-area>
 
 	<div class="consent-wrapper flex flex-col gap-2 w-full">
-		<label class="flex flex-row items-center gap-2">
+		<label class="flex flex-row items-center gap-4">
 			<input
 				type="checkbox"
 				formControlName="consent"
@@ -163,6 +163,7 @@
 		[siteKey]="TURNSTILE_KEY"
 		(resolved)="onTurnstileResolved($event)"
 		(errored)="onTurnstileInvalid()"
-		(expired)="onTurnstileInvalid()">
+		(expired)="onTurnstileInvalid()"
+		class="absolute">
 	</ngx-turnstile>
 </div>

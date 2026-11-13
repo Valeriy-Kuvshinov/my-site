@@ -24,10 +24,6 @@ class EnvironmentVariables {
 	PORT: number = 3030
 
 	@IsString()
-	@IsNotEmpty({ message: "JWT_SECRET key is missing" })
-	JWT_SECRET: string
-
-	@IsString()
 	@IsNotEmpty({ message: "RESEND_API_KEY is missing" })
 	RESEND_API_KEY: string
 
@@ -81,6 +77,10 @@ class EnvironmentVariables {
 	@IsString()
 	@IsNotEmpty({ message: "SUPABASE_SECRET_KEY is missing" })
 	SUPABASE_SECRET_KEY: string
+
+	@IsString()
+	@IsNotEmpty({ message: "SUPABASE_JWT_KEY is missing" })
+	SUPABASE_JWT_KEY: string
 }
 
 export function validateEnv(config: Record<string, unknown>) {

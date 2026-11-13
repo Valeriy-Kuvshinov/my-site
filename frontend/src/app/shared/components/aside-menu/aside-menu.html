@@ -24,8 +24,8 @@
 				<app-image-container
 					[src]="LOGO_IMG"
 					alt="Kuvware logo"
-					[width]="56"
-					[height]="46"
+					[width]="50"
+					[height]="40"
 					[priority]="true">
 				</app-image-container>
 			</a>
@@ -108,6 +108,33 @@
 				</app-svg-icon>
 				<span i18n="@@aside.link.contact">Contact</span>
 			</a>
+			@if (authService.currentUser()) {
+			<a
+				routerLink="/admin/"
+				routerLinkActive="active"
+				ariaCurrentWhenActive="page"
+				class="flex flex-row items-center gap-4"
+				(click)="closeAsideMenu()">
+				<app-svg-icon
+					icon="magGlass"
+					width="24"
+					height="24">
+				</app-svg-icon>
+				<span i18n="@@aside.link.admin">Admin</span>
+			</a>
+
+			<button
+				class="flex flex-row items-center gap-4"
+				[disabled]="logoutMutation.isPending()"
+				(click)="handleLogout()">
+				<app-svg-icon
+					icon="person"
+					width="24"
+					height="24">
+				</app-svg-icon>
+				<span i18n="@@aside.link.logout">Logout</span>
+			</button>
+			}
 		</nav>
 
 		<div class="menu-footer flex flex-col">

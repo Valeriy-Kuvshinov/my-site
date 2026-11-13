@@ -3,6 +3,10 @@
 	left: 0;
 	right: 0;
 
+	a {
+		color: var(--scdclr1);
+	}
+
 	button {
 		fill: var(--scdclr1);
 
@@ -12,8 +16,8 @@
 		}
 	}
 
-	a {
-		color: var(--scdclr1);
+	.mobile-view a,
+	.desktop-view a {
 		align-self: center;
 		outline: none;
 		scale: 0.95;
@@ -21,8 +25,8 @@
 
 		&.logo {
 			app-image-container {
-				width: 66px;
-				height: 56px;
+				width: 60px;
+				height: 50px;
 			}
 
 			&:focus-visible {
@@ -60,7 +64,20 @@
 		}
 	}
 
+	.admin-bar {
+		padding: 0.5rem 2rem;
+		background: var(--mnrclr8);
+		fill: var(--scdclr2);
+
+		a,
+		button {
+			color: var(--scdclr2);
+		}
+	}
+
 	.mobile-view {
+		padding: 1rem 1rem;
+
 		a,
 		button {
 			grid-column: span 1;
@@ -72,17 +89,17 @@
 	}
 
 	.desktop-view {
+		max-width: 94rem;
+		padding: 1rem 2rem;
 		font-size: 1.5rem;
 	}
 
 	@media (max-width: 900px) {
-		padding: 1rem 1rem;
 		background: var(--prmclr1);
 		border-bottom: 1px solid var(--scdclr4);
 	}
 
 	@media (min-width: 901px) {
-		padding: 1rem 2rem;
 		background-color: transparent;
 		border-bottom: 1px solid transparent;
 

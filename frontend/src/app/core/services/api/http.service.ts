@@ -14,7 +14,7 @@ const API_BASE_URL = environment.apiUrl
 @Injectable({
 	providedIn: "root",
 })
-export class ApiService {
+export class HttpService {
 	private readonly http = inject(HttpClient)
 
 	async get<T>(

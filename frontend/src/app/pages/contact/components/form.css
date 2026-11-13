@@ -3,6 +3,14 @@
 	max-width: 50rem;
 	grid-template-columns: 1fr 1fr;
 
+	app-loading {
+		grid-column: 1 / -1;
+	}
+
+	app-input-area:nth-child(5) {
+		grid-column: 1 / -1;
+	}
+
 	.consent-wrapper {
 		grid-column: 1 / -1;
 
@@ -13,10 +21,6 @@
 		.error-text {
 			color: var(--mnrclr3);
 		}
-	}
-
-	app-input-area:nth-child(5) {
-		grid-column: 1 / -1;
 	}
 
 	.form-actions {
@@ -38,10 +42,6 @@
 				fill: var(--scdclr9);
 			}
 		}
-	}
-
-	app-loading {
-		grid-column: 1 / -1;
 	}
 
 	@media (max-width: 600px) {

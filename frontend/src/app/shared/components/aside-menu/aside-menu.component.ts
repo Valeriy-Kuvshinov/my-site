@@ -8,9 +8,11 @@ import {
 	effect,
 	HostListener,
 } from "@angular/core"
-import { RouterLink, RouterLinkActive } from "@angular/router"
+import { Router, RouterLink, RouterLinkActive } from "@angular/router"
 
 import { SystemStore } from "@/core/stores/system.store"
+
+import { AuthService } from "@/core/services/auth/auth.service"
 
 import { ClickOutsideDirective } from "@/shared/directives/click-outside.directive"
 import { FocusTrapDirective } from "@/shared/directives/focus-trap.directive"
@@ -37,6 +39,10 @@ import { LanguageSelectComponent } from "../language-select/language-select-comp
 export class AsideMenuComponent {
 	protected readonly store = inject(SystemStore)
 
+	protected readonly authService = inject(AuthService)
+
+	private readonly router = inject(Router)
+
 	protected readonly LOGO_IMG = "/images/logo.avif"
 
 	@ViewChild("asideRef") asideRef?: ElementRef<HTMLElement>
@@ -44,6 +50,8 @@ export class AsideMenuComponent {
 	readonly isOpen = computed(() => this.store.activeModals().includes("aside-menu"))
 
 	readonly showMenu = signal(false)
+
+	protected readonly logoutMutation = this.authService.logout()
 
 	constructor() {
 		effect((onCleanup) => {
@@ -66,6 +74,16 @@ export class AsideMenuComponent {
 	closeAsideMenu() {
 		this.showMenu.set(false)
 		setTimeout(() => this.store.closeModal("aside-menu"), 300)
+	}
+
+	async handleLogout() {
+		try {
+			await this.logoutMutation.mutateAsync()
+			this.closeAsideMenu()
+			this.router.navigate(["/"])
+		} catch (err) {
+			console.error("Logout failed in UI", err)
+		}
 	}
 
 	@HostListener("window:keydown.escape")

@@ -1,9 +1,9 @@
 import { CorsOptions } from "@nestjs/common/internal"
 
-export function getCorsConfig(): CorsOptions {
-	const isProduction = process.env.NODE_ENV === "production"
+import { IS_PRODUCTION } from "../common/constants/config.js"
 
-	const allowedOrigins = isProduction
+export function getCorsConfig(): CorsOptions {
+	const allowedOrigins = IS_PRODUCTION
 		? ["https://kuvware.com", "https://www.kuvware.com"]
 		: ["http://127.0.0.1:4200", "http://localhost:4200"]
 

@@ -1,13 +1,14 @@
 import { Module } from "@nestjs/common"
 
-import { TurnstileService } from "../../infrastructure/cloudflare/turnstile.service.js"
+import { TurnstileModule } from "../../infrastructure/cloudflare/turnstile.module.js"
 
 import { MailService } from "./mail.service.js"
 
 import { MailController } from "./mail.controller.js"
 
 @Module({
+	imports: [TurnstileModule],
 	controllers: [MailController],
-	providers: [MailService, TurnstileService],
+	providers: [MailService],
 })
 export class MailModule {}

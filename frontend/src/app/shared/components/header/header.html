@@ -1,3 +1,31 @@
+@if (authService.currentUser()) {
+<div class="admin-bar flex flex-row full-center gap-8 w-full">
+	<div class="user-info flex flex-row items-center gap-2">
+		<app-svg-icon
+			icon="person"
+			width="16"
+			height="16">
+		</app-svg-icon>
+		<span>{{ authService.currentUser()?.email }}</span>
+	</div>
+
+	<div class="actions flex flex-row items-center gap-8">
+		<a
+			routerLink="/admin/"
+			class="flex flex-row"
+			i18n="@@header.link.admin">
+			Admin
+		</a>
+		<button
+			class="flex flex-row"
+			[disabled]="logoutMutation.isPending()"
+			(click)="handleLogout()">
+			<span i18n="@@header.link.logout">Logout</span>
+		</button>
+	</div>
+</div>
+}
+<!--  -->
 @if (isMobile()) {
 <nav
 	class="mobile-view flex flex-row items-center justify-between"
@@ -24,8 +52,8 @@
 		<app-image-container
 			src="/images/logo.avif"
 			alt="Kuvware logo"
-			[width]="56"
-			[height]="46"
+			[width]="60"
+			[height]="50"
 			[priority]="true">
 		</app-image-container>
 	</a>
@@ -46,8 +74,8 @@
 		<app-image-container
 			src="/images/logo.avif"
 			alt="Kuvware logo"
-			[width]="56"
-			[height]="46"
+			[width]="60"
+			[height]="50"
 			[priority]="true">
 		</app-image-container>
 	</a>

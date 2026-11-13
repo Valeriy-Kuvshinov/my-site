@@ -12,7 +12,7 @@ import { provideTanStackQuery } from "@tanstack/angular-query-experimental"
 
 import { QUERY_CLIENT_TOKEN } from "./core/tokens/query-client.token"
 
-import { apiInterceptor } from "./core/interceptor/api.interceptor"
+import { httpInterceptor } from "./core/interceptor/http.interceptor"
 
 import { TrailingSlashSerializer } from "./core/providers/trailing-slash-serializer"
 import { GlobalErrorHandler } from "./core/errors/global-error-handler"
@@ -33,7 +33,7 @@ export const appConfig: ApplicationConfig = {
 
 		provideClientHydration(),
 
-		provideHttpClient(withInterceptors([apiInterceptor])),
+		provideHttpClient(withInterceptors([httpInterceptor])),
 
 		provideTanStackQuery(QUERY_CLIENT_TOKEN),
 

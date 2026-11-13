@@ -1,0 +1,64 @@
+:host .page-contents {
+	background: linear-gradient(
+		to bottom,
+		var(--scdclr7),
+		var(--scdclr8),
+		var(--scdclr9),
+		var(--scdclr9),
+		var(--prmclr3)
+	);
+	direction: ltr;
+
+	form {
+		margin: 2rem 0;
+		padding: 1rem;
+		background: var(--prmclr3);
+		border-radius: 1rem;
+
+		button {
+			align-self: center;
+			margin-block-start: 1rem;
+			padding: 0.5rem 0.75rem;
+			background: var(--mnrclr6);
+			color: var(--scdclr9);
+			border-radius: 0.5rem;
+			font-size: 1.25rem;
+
+			&:hover,
+			&:focus-visible {
+				background: var(--mnrclr4);
+				color: var(--scdclr7);
+			}
+
+			&:disabled {
+				background: var(--mnrclr10);
+				color: var(--scdclr6);
+			}
+		}
+	}
+
+	@media (max-width: 900px) {
+		padding: 8rem 1rem 4rem 1rem;
+	}
+
+	@media (max-width: 600px) {
+		min-height: 70vh;
+
+		form {
+			max-width: 25rem;
+		}
+	}
+
+	@media (min-width: 601px) {
+		min-height: 80vh;
+
+		form {
+			padding: 1rem;
+			max-width: 30rem;
+		}
+	}
+
+	@media (min-width: 901px) {
+		padding: 12rem 2rem 8rem 2rem;
+	}
+}

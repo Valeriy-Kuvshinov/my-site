@@ -1,6 +1,7 @@
 User-Agent: *
 Allow: /
 Disallow: /not-found/
+Disallow: /login/
 Disallow: /admin/
 
 Sitemap: https://kuvware.com/sitemap.xml

@@ -5,7 +5,7 @@ import { ContactFormData } from "@/shared/interfaces/form"
 
 import { SystemStore } from "@/core/stores/system.store"
 
-import { ApiService } from "../api.service"
+import { HttpService } from "../http.service"
 
 @Injectable({
 	providedIn: "root",
@@ -13,12 +13,12 @@ import { ApiService } from "../api.service"
 export class MailService {
 	private readonly store = inject(SystemStore)
 
-	private readonly api = inject(ApiService)
+	private readonly http = inject(HttpService)
 
 	sendContactMail() {
 		return injectMutation(() => ({
 			mutationFn: async (formData: ContactFormData) => {
-				await this.api.post<void>("mail/contact", formData)
+				await this.http.post<void>("mail/contact", formData)
 			},
 			onSuccess: () => {
 				this.store.showSuccess(

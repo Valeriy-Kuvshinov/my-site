@@ -26,7 +26,7 @@ interface Specialty {
 const HIGHLIGHTS: Highlight[] = [
 	{
 		icon: "professional",
-		value: "2+",
+		value: "3+",
 		label: $localize`:@@home.highlight.experience:Years of Experience`,
 	},
 	{

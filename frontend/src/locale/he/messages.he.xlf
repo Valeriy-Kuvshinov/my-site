@@ -895,7 +895,7 @@
         <target>שדה חובה</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
-          <context context-type="linenumber">73</context>
+          <context context-type="linenumber">111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.error.minlength" datatype="html">
@@ -903,7 +903,7 @@
         <target>קצר מדי</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
-          <context context-type="linenumber">75</context>
+          <context context-type="linenumber">113</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.error.maxlength" datatype="html">
@@ -911,7 +911,7 @@
         <target>ארוך מדי</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
-          <context context-type="linenumber">77</context>
+          <context context-type="linenumber">115</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.error.email" datatype="html">
@@ -919,7 +919,7 @@
         <target>פורמט לא חוקי</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
-          <context context-type="linenumber">79</context>
+          <context context-type="linenumber">117</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.error.pattern" datatype="html">
@@ -927,7 +927,7 @@
         <target>תווים לא חוקיים</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
-          <context context-type="linenumber">82</context>
+          <context context-type="linenumber">120</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.error.invalid" datatype="html">
@@ -935,7 +935,7 @@
         <target>קלט לא חוקי</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
-          <context context-type="linenumber">84</context>
+          <context context-type="linenumber">122</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.name.label" datatype="html">
@@ -2962,7 +2962,21 @@
         <target>צור קשר</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">109,113</context>
+          <context context-type="linenumber">109,111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aside.link.admin" datatype="html">
+        <source>Admin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
+          <context context-type="linenumber">123,127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aside.link.logout" datatype="html">
+        <source>Logout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
+          <context context-type="linenumber">135,138</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cookie.dialog.aria" datatype="html">
@@ -3131,12 +3145,26 @@
           <context context-type="linenumber">85,88</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="header.link.admin" datatype="html">
+        <source> Admin </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
+          <context context-type="linenumber">17,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.link.logout" datatype="html">
+        <source>Logout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
+          <context context-type="linenumber">23,26</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="header.nav.mobile.aria" datatype="html">
         <source>Mobile Main</source>
         <target>ראשי בנייד</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">5,8</context>
+          <context context-type="linenumber">33,36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.menu.open.aria" datatype="html">
@@ -3144,7 +3172,7 @@
         <target>פתח תפריט ניווט</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">9,12</context>
+          <context context-type="linenumber">37,40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.nav.desktop.aria" datatype="html">
@@ -3152,7 +3180,7 @@
         <target>ראשי</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">39,42</context>
+          <context context-type="linenumber">67,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.link.portfolio" datatype="html">
@@ -3160,7 +3188,7 @@
         <target> תיק עבודות </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">62,65</context>
+          <context context-type="linenumber">90,93</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.link.services" datatype="html">
@@ -3168,7 +3196,7 @@
         <target> שירותים </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">70,73</context>
+          <context context-type="linenumber">98,101</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.link.about" datatype="html">
@@ -3176,7 +3204,7 @@
         <target> אודות </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">78,81</context>
+          <context context-type="linenumber">106,109</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.link.contact" datatype="html">
@@ -3184,7 +3212,7 @@
         <target> צור קשר </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">86,90</context>
+          <context context-type="linenumber">114,118</context>
         </context-group>
       </trans-unit>
       <trans-unit id="image_modal.dialog.aria" datatype="html">

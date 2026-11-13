@@ -8,7 +8,7 @@ import { QUERY_CLIENT_TOKEN } from "@/core/tokens/query-client.token"
 
 import { SystemStore } from "@/core/stores/system.store"
 
-import { ApiService } from "../api.service"
+import { HttpService } from "../http.service"
 
 export const portfolioKeys = {
 	all: ["portfolio"] as const,
@@ -45,7 +45,7 @@ function mapEntityToDisplayItem(entity: PortfolioEntity, lang: SupportedLanguage
 	providedIn: "root",
 })
 export class PortfolioService {
-	private readonly api = inject(ApiService)
+	private readonly http = inject(HttpService)
 
 	private readonly store = inject(SystemStore)
 
@@ -68,7 +68,7 @@ export class PortfolioService {
 					if (technologies && technologies.length > 0) {
 						params["technologies"] = technologies.join(",")
 					}
-					const response = await this.api.get<PortfolioEntity[]>(
+					const response = await this.http.get<PortfolioEntity[]>(
 						PORTFOLIO_ENDPOINT,
 						params
 					)
@@ -88,7 +88,7 @@ export class PortfolioService {
 			queryFn: async (): Promise<PortfolioItem | null> => {
 				if (!id) return null
 
-				const response = await this.api.get<PortfolioEntity>(`${PORTFOLIO_ENDPOINT}/${id}`)
+				const response = await this.http.get<PortfolioEntity>(`${PORTFOLIO_ENDPOINT}/${id}`)
 
 				if (!response.data) return null
 
@@ -110,8 +110,8 @@ export class PortfolioService {
 					: `${PORTFOLIO_ENDPOINT}/add`
 
 				const response = item.id
-					? await this.api.put<PortfolioEntity>(endpoint, item)
-					: await this.api.post<PortfolioEntity>(endpoint, item)
+					? await this.http.put<PortfolioEntity>(endpoint, item)
+					: await this.http.post<PortfolioEntity>(endpoint, item)
 
 				if (!response.data) throw new Error("Server returned empty data on save")
 
@@ -139,7 +139,7 @@ export class PortfolioService {
 	deleteItem() {
 		return injectMutation(() => ({
 			mutationFn: async (id: number): Promise<void> => {
-				await this.api.delete(`${PORTFOLIO_ENDPOINT}/delete/${id}`)
+				await this.http.delete(`${PORTFOLIO_ENDPOINT}/delete/${id}`)
 			},
 			onSuccess: (_, deletedId) => {
 				this.queryClient.invalidateQueries({ queryKey: portfolioKeys.lists() })

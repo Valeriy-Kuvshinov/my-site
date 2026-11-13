@@ -10,8 +10,6 @@ import { environment } from "@environments/environment"
 
 import { MailService } from "@/core/services/api/mail/mail.service"
 
-import { buildContactForm } from "./form.factory"
-
 import { InputAreaComponent } from "@/shared/components/form/input-area/input-area.component"
 import { SelectAreaComponent } from "@/shared/components/form/select-area/select-area.component"
 import { SvgIconComponent } from "@/shared/components/icon/icon.component"
@@ -54,7 +52,47 @@ export class ContactFormComponent implements OnInit {
 
 	readonly isFormBusy = computed(() => this.isProcessing() || this.sendMailMutation.isPending())
 
-	readonly form = buildContactForm(this.fb)
+	readonly form = this.fb.nonNullable.group({
+		name: [
+			"",
+			[
+				Validators.required,
+				Validators.minLength(3),
+				Validators.maxLength(32),
+				Validators.pattern(/^[a-zA-Z\s'.-]+$/),
+			],
+		],
+		email: [
+			"",
+			[
+				Validators.required,
+				Validators.email,
+				Validators.minLength(5),
+				Validators.maxLength(64),
+			],
+		],
+		title: [
+			"",
+			[
+				Validators.required,
+				Validators.minLength(3),
+				Validators.maxLength(64),
+				Validators.pattern(/^[a-zA-Z0-9\s.\-!?']+$/),
+			],
+		],
+		requestType: ["", [Validators.required, Validators.minLength(1), Validators.maxLength(32)]],
+		message: [
+			"",
+			[
+				Validators.required,
+				Validators.minLength(15),
+				Validators.maxLength(600),
+				Validators.pattern(/^[a-zA-Z0-9\s.\-!?@#$',*;:]+$/),
+			],
+		],
+		consent: [false, Validators.requiredTrue],
+		language: ["en", Validators.required],
+	})
 
 	ngOnInit() {
 		this.form.patchValue(this.formValues)

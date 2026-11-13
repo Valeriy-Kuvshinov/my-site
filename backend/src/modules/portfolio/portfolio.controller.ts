@@ -10,10 +10,13 @@ import {
 	Put,
 	Delete,
 	Query,
+	UseGuards,
 } from "@nestjs/common"
 import { PinoLogger } from "nestjs-pino"
 
 import { PortfolioItemDto, PortfolioQueryDto } from "./dto/portfolio.dto.js"
+
+import { JwtAuthGuard } from "../auth/jwt-auth.guard.js"
 
 import { PortfolioService } from "./portfolio.service.js"
 
@@ -58,7 +61,7 @@ export class PortfolioController {
 		}
 	}
 
-	// NOTE: You will likely want to add @UseGuards(AdminGuard) to these modification routes later
+	@UseGuards(JwtAuthGuard)
 	@Post("add")
 	async add(@Body() dto: PortfolioItemDto) {
 		this.logger.info({ title: dto.title.en }, "Creating new portfolio item")
@@ -71,6 +74,7 @@ export class PortfolioController {
 		}
 	}
 
+	@UseGuards(JwtAuthGuard)
 	@Put("update/:id")
 	async update(@Param("id", ParseIntPipe) id: number, @Body() dto: PortfolioItemDto) {
 		this.logger.info({ id }, "Updating portfolio item")
@@ -90,6 +94,7 @@ export class PortfolioController {
 		}
 	}
 
+	@UseGuards(JwtAuthGuard)
 	@Delete("delete/:id")
 	async remove(@Param("id", ParseIntPipe) id: number) {
 		this.logger.info({ id }, "Removing portfolio item")

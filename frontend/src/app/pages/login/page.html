@@ -1,0 +1,49 @@
+<section class="page-contents flex flex-col items-center gap-8 w-h-full">
+	<h1 class="text-family-bold">Admin Login</h1>
+
+	<form
+		[formGroup]="form"
+		(submit)="onSubmit($event)"
+		class="flex flex-col w-full gap-6">
+		@if (isFormBusy()) {
+		<app-loading></app-loading>
+		}
+		<!--  -->
+		@else {
+		<app-input-area
+			[control]="getInputControl('email')"
+			[error]="getErrorMessage('email')"
+			name="email"
+			label="Email Address"
+			type="email"
+			icon="mail"
+			[required]="true">
+		</app-input-area>
+
+		<app-input-area
+			[control]="getInputControl('password')"
+			[error]="getErrorMessage('password')"
+			name="password"
+			label="Password"
+			type="password"
+			icon="lock"
+			[required]="true">
+		</app-input-area>
+
+		<button
+			type="submit"
+			class="flex flex-row full-center w-fit"
+			[disabled]="isSendDisabled">
+			<span>Login</span>
+		</button>
+		}
+
+		<ngx-turnstile
+			[siteKey]="TURNSTILE_KEY"
+			(resolved)="onTurnstileResolved($event)"
+			(errored)="onTurnstileInvalid()"
+			(expired)="onTurnstileInvalid()"
+			class="absolute">
+		</ngx-turnstile>
+	</form>
+</section>

@@ -8,9 +8,11 @@ import {
 	signal,
 } from "@angular/core"
 import { isPlatformBrowser } from "@angular/common"
-import { RouterLink, RouterLinkActive } from "@angular/router"
+import { Router, RouterLink, RouterLinkActive } from "@angular/router"
 
 import { SystemStore } from "@/core/stores/system.store"
+
+import { AuthService } from "@/core/services/auth/auth.service"
 
 import { ImageContainerComponent } from "../general/image-container.component"
 import { SvgIconComponent } from "../icon/icon.component"
@@ -38,11 +40,17 @@ const SCROLL_THRESHOLD_PIXELS = 10
 export class HeaderComponent implements OnInit {
 	protected readonly store = inject(SystemStore)
 
+	protected readonly authService = inject(AuthService)
+
+	private readonly router = inject(Router)
+
 	private readonly platformId = inject(PLATFORM_ID)
 
 	readonly isScrolled = signal(false)
 
 	protected readonly isMobile = computed(() => this.store.deviceType() !== "desktop")
+
+	protected readonly logoutMutation = this.authService.logout()
 
 	ngOnInit() {
 		this.checkScrollPosition()
@@ -61,5 +69,14 @@ export class HeaderComponent implements OnInit {
 
 	openMenu() {
 		this.store.openModal("aside-menu")
+	}
+
+	async handleLogout() {
+		try {
+			await this.logoutMutation.mutateAsync()
+			this.router.navigate(["/"])
+		} catch (err) {
+			console.error("Logout failed in Header", err)
+		}
 	}
 }
