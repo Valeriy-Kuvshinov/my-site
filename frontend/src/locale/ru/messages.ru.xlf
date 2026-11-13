@@ -868,7 +868,7 @@
       </trans-unit>
       <trans-unit id="a11y_page.sec5.p1" datatype="html">
         <source> I review this site regularly and fix accessibility problems as I find them. If you meet a barrier, find an error, or need information in another format, please tell me through the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot;&gt;"/>contact page<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, or contact me directly by email ( <x id="START_LINK_1" equiv-text="&lt;a href=&quot;mailto:contact@kuvware.com&quot;&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ). </source>
-        <target>Я регулярно проверяю сайт и исправляю проблемы доступности по мере их обнаружения. Если вы столкнулись с барьером, нашли ошибку или вам нужна информация в другом формате, пожалуйста, сообщите мне через <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>страницу контактов<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> или свяжитесь со мной напрямую по электронной почте ( <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/> ).</target>
+        <target>Я регулярно проверяю сайт и исправляю проблемы доступности по мере их обнаружения. Если вы столкнулись с барьером, нашли ошибку или вам нужна информация в другом формате, пожалуйста, сообщите мне через <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>страницу контактов<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> или свяжитесь со мной напрямую по электронной почте ( <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
           <context context-type="linenumber">147,152</context>
@@ -1074,7 +1074,7 @@
 					rel=&quot;noopener noreferrer&quot;
 					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Privacy Policy<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 				&gt;"/>. </source>
-        <target> Я принимаю <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Условия использования<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> и согласен на обработку моих данных в соответствии с <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Политикой конфиденциальности<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
+        <target> Я принимаю <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Условия использования<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> и согласен на обработку моих данных в соответствии с <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Политикой конфиденциальности<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
           <context context-type="linenumber">111,132</context>
@@ -2000,7 +2000,7 @@
 				rel=&quot;noopener noreferrer&quot;
 				&gt;"/>Cloudflare Turnstile Privacy Addendum<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 			&gt;"/>. </source>
-        <target> Чтобы защитить сайт и его формы от спама и автоматизированных злоупотреблений, я использую Cloudflare Turnstile, который работает в фоновом режиме и отличает реальных посетителей от ботов. Для этого Cloudflare обрабатывает некоторые технические сведения о вашем браузере и соединении. Использование форм также регулируется <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Дополнением о конфиденциальности Cloudflare Turnstile<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
+        <target> Чтобы защитить сайт и его формы от спама и автоматизированных злоупотреблений, я использую Cloudflare Turnstile, который работает в фоновом режиме и отличает реальных посетителей от ботов. Для этого Cloudflare обрабатывает некоторые технические сведения о вашем браузере и соединении. Использование форм также регулируется <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Дополнением о конфиденциальности Cloudflare Turnstile<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">70,83</context>
@@ -2175,7 +2175,7 @@
 				rel=&quot;noopener noreferrer&quot;
 				&gt;"/>Google API Services User Data Policy<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 			&gt;"/>, including the Limited Use requirements. The extension does not use your data for advertising, does not allow humans to read it, and does not sell or transfer it. </source>
-        <target> Использование и передача информации, полученной из Google API, расширением «Did Not Get It» соответствуют <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Политике в отношении пользовательских данных сервисов Google API<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, включая требования к ограниченному использованию (Limited Use). Расширение не использует ваши данные для рекламы, не позволяет людям читать их и не продает и не передает их. </target>
+        <target> Использование и передача информации, полученной из Google API, расширением «Did Not Get It» соответствуют <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Политике в отношении пользовательских данных сервисов Google API<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, включая требования к ограниченному использованию (Limited Use). Расширение не использует ваши данные для рекламы, не позволяет людям читать их и не продает и не передает их. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">174,186</context>
@@ -2223,7 +2223,7 @@
       </trans-unit>
       <trans-unit id="privacy.sec8.p1" datatype="html">
         <source> You can ask me to show you the personal information I hold about you, to correct it, or to delete it, within the limits of the law. For this, or for any question about this policy, please use the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot;&gt;"/>contact page<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> or write to me at <x id="START_LINK_1" equiv-text="&lt;a href=&quot;mailto:contact@kuvware.com&quot;&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
-        <target> Вы можете попросить меня показать вам персональную информацию, которая у меня о вас есть, исправить ее или удалить в пределах, допустимых законом. Для этого или по любому вопросу об этой политике напишите мне через <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>страницу контактов<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> или на электронную почту (<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/>). </target>
+        <target> Вы можете попросить меня показать вам персональную информацию, которая у меня о вас есть, исправить ее или удалить в пределах, допустимых законом. Для этого или по любому вопросу об этой политике напишите мне через <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>страницу контактов<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> или на электронную почту (<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">212,217</context>
@@ -2871,7 +2871,7 @@
       </trans-unit>
       <trans-unit id="terms.sec7.p1" datatype="html">
         <source> If you have any questions, concerns, or requests about these Terms or the scope of my consulting agreements, please contact me through the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot;&gt;"/>contact page<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> or directly by email ( <x id="START_LINK_1" equiv-text="&lt;a href=&quot;mailto:contact@kuvware.com&quot;&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ). </source>
-        <target> Если у вас есть вопросы, опасения или запросы по поводу настоящих Условий или объема моих консалтинговых соглашений, напишите мне через <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>страницу контактов<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> или напрямую по электронной почте (<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/>). </target>
+        <target> Если у вас есть вопросы, опасения или запросы по поводу настоящих Условий или объема моих консалтинговых соглашений, напишите мне через <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>страницу контактов<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> или напрямую по электронной почте ( <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
           <context context-type="linenumber">195,200</context>

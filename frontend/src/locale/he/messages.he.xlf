@@ -868,7 +868,7 @@
       </trans-unit>
       <trans-unit id="a11y_page.sec5.p1" datatype="html">
         <source> I review this site regularly and fix accessibility problems as I find them. If you meet a barrier, find an error, or need information in another format, please tell me through the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot;&gt;"/>contact page<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, or contact me directly by email ( <x id="START_LINK_1" equiv-text="&lt;a href=&quot;mailto:contact@kuvware.com&quot;&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ). </source>
-        <target>אני בודק את האתר באופן שוטף ומתקן בעיות נגישות כשאני מוצא אותן. אם נתקלתם בחסם, מצאתם שגיאה או שאתם זקוקים למידע בפורמט אחר, אנא פנו אליי דרך <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>עמוד יצירת הקשר<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, או צרו איתי קשר ישירות בדוא"ל ( <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/> ).</target>
+        <target>אני בודק את האתר באופן שוטף ומתקן בעיות נגישות כשאני מוצא אותן. אם נתקלתם בחסם, מצאתם שגיאה או שאתם זקוקים למידע בפורמט אחר, אנא פנו אליי דרך <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>עמוד יצירת הקשר<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, או צרו איתי קשר ישירות בדוא"ל ( <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/accessibility/page.html</context>
           <context context-type="linenumber">147,152</context>
@@ -1074,7 +1074,7 @@
 					rel=&quot;noopener noreferrer&quot;
 					(click)=&quot;$event.stopPropagation()&quot;&gt;"/> Privacy Policy<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 				&gt;"/>. </source>
-        <target> אני מסכים/ה ל<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>תנאי השימוש<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ולעיבוד הנתונים שלי בהתאם ל<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>מדיניות הפרטיות<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
+        <target> אני מסכים/ה ל<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>תנאי השימוש<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ולעיבוד הנתונים שלי בהתאם ל<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>מדיניות הפרטיות<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.html</context>
           <context context-type="linenumber">111,132</context>
@@ -2000,7 +2000,7 @@
 				rel=&quot;noopener noreferrer&quot;
 				&gt;"/>Cloudflare Turnstile Privacy Addendum<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 			&gt;"/>. </source>
-        <target> כדי להגן על האתר ועל הטפסים מפני ספאם וניצול אוטומטי, אני משתמש ב-Cloudflare Turnstile, הפועל ברקע כדי להבחין בין גולשים אמיתיים לבוטים. לשם כך Cloudflare מעבדת מידע טכני מסוים על הדפדפן והחיבור שלכם. השימוש שלכם בטפסים כפוף גם ל<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>נספח הפרטיות של Cloudflare Turnstile<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
+        <target> כדי להגן על האתר ועל הטפסים מפני ספאם וניצול אוטומטי, אני משתמש ב-Cloudflare Turnstile, הפועל ברקע כדי להבחין בין גולשים אמיתיים לבוטים. לשם כך Cloudflare מעבדת מידע טכני מסוים על הדפדפן והחיבור שלכם. השימוש שלכם בטפסים כפוף גם ל<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>נספח הפרטיות של Cloudflare Turnstile<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">70,83</context>
@@ -2175,7 +2175,7 @@
 				rel=&quot;noopener noreferrer&quot;
 				&gt;"/>Google API Services User Data Policy<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
 			&gt;"/>, including the Limited Use requirements. The extension does not use your data for advertising, does not allow humans to read it, and does not sell or transfer it. </source>
-        <target> השימוש במידע שמתקבל מ-Google APIs והעברתו על ידי &quot;Did Not Get It&quot; עומדים ב<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>מדיניות נתוני המשתמש של שירותי Google API<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, כולל דרישות השימוש המוגבל (Limited Use). התוסף אינו משתמש בנתונים שלכם לפרסום, אינו מאפשר לבני אדם לקרוא אותם, ואינו מוכר או מעביר אותם. </target>
+        <target> השימוש במידע שמתקבל מ-Google APIs והעברתו על ידי &quot;Did Not Get It&quot; עומדים ב<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>מדיניות נתוני המשתמש של שירותי Google API<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, כולל דרישות השימוש המוגבל (Limited Use). התוסף אינו משתמש בנתונים שלכם לפרסום, אינו מאפשר לבני אדם לקרוא אותם, ואינו מוכר או מעביר אותם. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">174,186</context>
@@ -2223,7 +2223,7 @@
       </trans-unit>
       <trans-unit id="privacy.sec8.p1" datatype="html">
         <source> You can ask me to show you the personal information I hold about you, to correct it, or to delete it, within the limits of the law. For this, or for any question about this policy, please use the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot;&gt;"/>contact page<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> or write to me at <x id="START_LINK_1" equiv-text="&lt;a href=&quot;mailto:contact@kuvware.com&quot;&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
-        <target> אתם רשאים לבקש לראות את המידע האישי שאני מחזיק עליכם, לתקן אותו או למחוק אותו, בכפוף לדין. לשם כך, או לכל שאלה על מדיניות זו, אנא פנו אליי דרך <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>עמוד יצירת הקשר<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> או במייל (<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/>). </target>
+        <target> אתם רשאים לבקש לראות את המידע האישי שאני מחזיק עליכם, לתקן אותו או למחוק אותו, בכפוף לדין. לשם כך, או לכל שאלה על מדיניות זו, אנא פנו אליי דרך <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>עמוד יצירת הקשר<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> או במייל (<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/privacy-policy/page.html</context>
           <context context-type="linenumber">212,217</context>
@@ -2871,7 +2871,7 @@
       </trans-unit>
       <trans-unit id="terms.sec7.p1" datatype="html">
         <source> If you have any questions, concerns, or requests about these Terms or the scope of my consulting agreements, please contact me through the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot;&gt;"/>contact page<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> or directly by email ( <x id="START_LINK_1" equiv-text="&lt;a href=&quot;mailto:contact@kuvware.com&quot;&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ). </source>
-        <target> לשאלות, חששות או בקשות בנוגע לתנאי שימוש אלה או להיקף הסכמי הייעוץ שלי, אנא פנו אליי דרך <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>עמוד יצירת הקשר<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> או ישירות במייל (<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK_1" ctype="x-a" equiv-text="&lt;/a&gt;"/>). </target>
+        <target> לשאלות, חששות או בקשות בנוגע לתנאי שימוש אלה או להיקף הסכמי הייעוץ שלי, אנא פנו אליי דרך <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>עמוד יצירת הקשר<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> או ישירות במייל ( <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>contact@kuvware.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/terms/page.html</context>
           <context context-type="linenumber">195,200</context>
