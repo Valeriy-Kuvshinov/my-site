@@ -23,18 +23,8 @@
 		scale: 0.95;
 		font-size: 1.25rem;
 
-		&.logo {
-			app-image-container {
-				width: 60px;
-				height: 50px;
-			}
-
-			&:focus-visible {
-				padding: 0.25rem;
-				border: 1px solid var(--mnrclr2);
-				border-radius: 100%;
-				overflow: hidden;
-			}
+		&.logo:focus-visible {
+			border: 1px solid var(--mnrclr2);
 		}
 
 		&:not(.logo)::after {
@@ -84,6 +74,11 @@
 
 			&.logo {
 				justify-self: center;
+
+				app-image-container {
+					width: 54px;
+					height: 40px;
+				}
 			}
 		}
 	}
@@ -92,6 +87,13 @@
 		max-width: 94rem;
 		padding: 1rem 2rem;
 		font-size: 1.5rem;
+
+		a.logo {
+			app-image-container {
+				width: 68px;
+				height: 50px;
+			}
+		}
 	}
 
 	@media (max-width: 900px) {

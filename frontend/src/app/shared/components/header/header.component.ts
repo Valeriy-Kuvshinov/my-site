@@ -1,6 +1,7 @@
 import {
 	Component,
 	computed,
+	ElementRef,
 	HostListener,
 	inject,
 	OnInit,
@@ -8,7 +9,7 @@ import {
 	signal,
 } from "@angular/core"
 import { isPlatformBrowser } from "@angular/common"
-import { Router, RouterLink, RouterLinkActive } from "@angular/router"
+import { NavigationEnd, Router, RouterLink, RouterLinkActive } from "@angular/router"
 
 import { SystemStore } from "@/core/stores/system.store"
 
@@ -17,6 +18,8 @@ import { AuthService } from "@/core/services/auth/auth.service"
 import { ImageContainerComponent } from "../general/image-container.component"
 import { SvgIconComponent } from "../icon/icon.component"
 import { LanguageSelectComponent } from "../language-select/language-select-component"
+import { filter } from "rxjs"
+import { takeUntilDestroyed } from "@angular/core/rxjs-interop"
 
 const SCROLL_THRESHOLD_PIXELS = 10
 
@@ -46,9 +49,28 @@ export class HeaderComponent implements OnInit {
 
 	private readonly platformId = inject(PLATFORM_ID)
 
+	private readonly elRef = inject(ElementRef)
+
 	readonly isScrolled = signal(false)
 
 	protected readonly isMobile = computed(() => this.store.deviceType() !== "desktop")
+
+	constructor() {
+		this.router.events
+			.pipe(
+				filter((event) => event instanceof NavigationEnd),
+				takeUntilDestroyed()
+			)
+			.subscribe(() => {
+				if (isPlatformBrowser(this.platformId)) {
+					const activeElement = document.activeElement as HTMLElement
+
+					if (activeElement && this.elRef.nativeElement.contains(activeElement)) {
+						activeElement.blur()
+					}
+				}
+			})
+	}
 
 	ngOnInit() {
 		this.checkScrollPosition()
