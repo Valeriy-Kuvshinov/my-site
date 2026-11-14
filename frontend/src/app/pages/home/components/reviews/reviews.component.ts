@@ -13,7 +13,7 @@ export interface Review {
 	logoSrc: string
 	text: LocalizedString
 	originalLang: SupportedLanguage
-	servicesProvided: LocalizedString[] // <-- Changed from relatedProjects
+	servicesProvided: LocalizedString[]
 }
 
 export const CLIENT_REVIEWS: Review[] = [

@@ -1287,14 +1287,14 @@
         <source>Translate</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.html</context>
-          <context context-type="linenumber">61,64</context>
+          <context context-type="linenumber">66,69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.reviews.original_in" datatype="html">
-        <source> Original (<x id="INTERPOLATION" equiv-text="{{ getLanguageName(review.originalLang) }}"/>) </source>
+        <source> Original (<x id="INTERPOLATION" equiv-text="{{ langName }}"/>) </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.html</context>
-          <context context-type="linenumber">66,68</context>
+          <context context-type="linenumber">73,75</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.tech_carousel.region.aria" datatype="html">

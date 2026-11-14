@@ -20,6 +20,13 @@
 
 <ul class="layout-row w-full">
 	@for (review of reviews; track review.id) {
+	<!--  -->
+	@let isOriginal = isShowingOriginal(review.id);
+	<!--  -->
+	@let reviewDirClass = getTextDirClass(review);
+	<!--  -->
+	@let reviewText = getReviewText(review);
+
 	<li class="flex flex-col h-fit gap-6 fast-trans">
 		<div class="content flex flex-col gap-4">
 			<div class="review-header grid w-full gap-4">
@@ -41,9 +48,7 @@
 				</app-image-container>
 			</div>
 
-			<blockquote class="{{ getTextDirClass(review) }}">
-				"{{ getReviewText(review) }}"
-			</blockquote>
+			<blockquote class="{{ reviewDirClass }}">"{{ reviewText }}"</blockquote>
 		</div>
 
 		@if (currentLang() !== review.originalLang) {
@@ -57,14 +62,15 @@
 					height="24">
 				</app-svg-icon>
 
-				@if (isShowingOriginal(review.id)) {
+				@if (isOriginal) {
 				<span i18n="@@home.reviews.translate">Translate</span>
 				}
 				<!--  -->
 				@else {
-				<span i18n="@@home.reviews.original_in">
-					Original ({{ getLanguageName(review.originalLang) }})
-				</span>
+				<!--  -->
+				@let langName = getLanguageName(review.originalLang);
+
+				<span i18n="@@home.reviews.original_in"> Original ({{ langName }}) </span>
 				}
 			</button>
 		</div>
