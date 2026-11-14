@@ -13,6 +13,8 @@
 		</p>
 	</article>
 
+	@let iconSize = socialIconSize();
+
 	<article class="options grid full-center layout-row w-full gap-20">
 		<nav
 			class="grid full-center gap-8"
@@ -27,8 +29,8 @@
 				class="w-fit">
 				<app-svg-icon
 					[icon]="social.icon"
-					[width]="socialIconSize()"
-					[height]="socialIconSize()">
+					[width]="iconSize"
+					[height]="iconSize">
 				</app-svg-icon>
 			</a>
 			}

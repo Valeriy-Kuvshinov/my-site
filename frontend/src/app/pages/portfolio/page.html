@@ -45,16 +45,23 @@
 
 		<ul class="projects layout-row w-full">
 			@for (item of portfolioService.portfolioItems(); track item.id) {
+			<!--  -->
+			@let mobileView = isMobile();
+			<!--  -->
+			@let imgSrc = getPortfolioImageSrc(item, mobileView);
+			<!--  -->
+			@let imgRatio = getPortfolioImageRatio(item, mobileView);
+
 			<li class="project flex flex-col h-fit fast-trans">
 				<app-image-container
-					[src]="getPortfolioImageSrc(item, isMobile())"
+					[src]="imgSrc"
 					[alt]="item.imgAlt"
-					[style.aspect-ratio]="getPortfolioImageRatio(item, isMobile())"
+					[style.aspect-ratio]="imgRatio"
 					class="cursor-pointer fast-trans"
 					tabindex="0"
 					role="button"
 					[attr.aria-label]="getImageAriaLabel(item)"
-					(onClickEvent)="openImage(getPortfolioImageSrc(item, isMobile()))">
+					(onClickEvent)="openImage(imgSrc)">
 				</app-image-container>
 
 				<div class="content flex flex-col justify-between h-full gap-6">

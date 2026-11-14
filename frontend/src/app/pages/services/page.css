@@ -20,6 +20,7 @@
 			margin-block-end: 2rem;
 
 			app-svg-icon {
+				min-width: 1.5rem;
 				fill: var(--scdclr1);
 			}
 		}

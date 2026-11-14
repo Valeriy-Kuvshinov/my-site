@@ -531,14 +531,14 @@
         <source> Available for global remote work, as well as hybrid or on-site positions within Israel. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">319,324</context>
+          <context context-type="linenumber">318,322</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.availability.link" datatype="html">
         <source>Reach out!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about/page.html</context>
-          <context context-type="linenumber">326,328</context>
+          <context context-type="linenumber">324,326</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y_page.meta.title" datatype="html">
@@ -1007,7 +1007,7 @@
         <source>Social profiles and direct mail</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/page.html</context>
-          <context context-type="linenumber">20,21</context>
+          <context context-type="linenumber">22,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.desc" datatype="html">
@@ -1063,42 +1063,42 @@
         <source> Before </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">64,67</context>
+          <context context-type="linenumber">67,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_before.alt" datatype="html">
         <source>Gmail inbox showing unread corporate emails</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">70,73</context>
+          <context context-type="linenumber">73,76</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_before.aria" datatype="html">
         <source>View full size image of inbox before extension processing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">77,78</context>
+          <context context-type="linenumber">80,82</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.fig_after" datatype="html">
         <source> After </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">86,89</context>
+          <context context-type="linenumber">92,95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_after.alt" datatype="html">
         <source>Gmail inbox showing emails automatically labeled and marked as read by the extension</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">92,95</context>
+          <context context-type="linenumber">98,101</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.extension.img_after.aria" datatype="html">
         <source>View full size image of inbox after extension processing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/extension/extension.html</context>
-          <context context-type="linenumber">99,100</context>
+          <context context-type="linenumber">105,107</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.img_alt" datatype="html">
@@ -1238,21 +1238,21 @@
         <source>Previous accomplishment</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.html</context>
-          <context context-type="linenumber">16,18</context>
+          <context context-type="linenumber">27,29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.btn.next" datatype="html">
         <source>Next accomplishment</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.html</context>
-          <context context-type="linenumber">41,43</context>
+          <context context-type="linenumber">52,54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.tech.aria" datatype="html">
         <source>Technologies used</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/portfolio/portfolio-carousel.html</context>
-          <context context-type="linenumber">62,63</context>
+          <context context-type="linenumber">73,74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="lang.hebrew" datatype="html">
@@ -1644,56 +1644,56 @@
         <source>Technologies used</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">74,75</context>
+          <context context-type="linenumber">81,82</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_visit.aria" datatype="html">
         <source>Visit Site (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">91,92</context>
+          <context context-type="linenumber">98,99</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_visit.text" datatype="html">
         <source>Visit Site</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">92,94</context>
+          <context context-type="linenumber">99,101</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_source.aria" datatype="html">
         <source>View Source Code (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">108,109</context>
+          <context context-type="linenumber">115,116</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_source.text" datatype="html">
         <source>Source Code</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">109,111</context>
+          <context context-type="linenumber">116,118</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.title" datatype="html">
         <source> Ready to Build Your System? </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">131,135</context>
+          <context context-type="linenumber">138,142</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.desc" datatype="html">
         <source> Let&apos;s discuss your architectural needs and engineer a digital asset you actually own. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">137,141</context>
+          <context context-type="linenumber">144,148</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.btn" datatype="html">
         <source>Start a Project</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">143,145</context>
+          <context context-type="linenumber">150,152</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.meta.title" datatype="html">
@@ -2603,7 +2603,7 @@
         <source>Home</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">56,59</context>
+          <context context-type="linenumber">57,60</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
@@ -2629,7 +2629,7 @@
         <source>Services</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">82,85</context>
+          <context context-type="linenumber">81,84</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
@@ -2644,7 +2644,7 @@
         <source>About</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">95,98</context>
+          <context context-type="linenumber">93,96</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
@@ -2659,7 +2659,7 @@
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">108,110</context>
+          <context context-type="linenumber">105,108</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
@@ -2835,7 +2835,7 @@
         <source>Close image modal</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/image-modal/image-modal.html</context>
-          <context context-type="linenumber">26,28</context>
+          <context context-type="linenumber">29,31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="lang_select.label" datatype="html">

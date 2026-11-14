@@ -74,6 +74,12 @@ export class AsideMenuComponent {
 		setTimeout(() => this.store.closeModal("aside-menu"), 300)
 	}
 
+	handleNavClick(event: MouseEvent) {
+		const target = event.target as HTMLElement
+
+		if (target.closest("a")) this.closeAsideMenu()
+	}
+
 	async handleLogout() {
 		try {
 			await this.authService.logout()

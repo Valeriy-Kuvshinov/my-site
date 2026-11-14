@@ -13,14 +13,16 @@ import { SvgIconComponent } from "../../icon/icon.component"
 	imports: [SvgIconComponent, ReactiveFormsModule],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
+		@let size = iconSize();
+
 		<label
 			[for]="name"
 			class="grid items-center">
 			@if (icon) {
 				<app-svg-icon
 					[icon]="icon"
-					[width]="iconSize()"
-					[height]="iconSize()">
+					[width]="size"
+					[height]="size">
 				</app-svg-icon>
 			}
 			<span>{{ label }}</span>

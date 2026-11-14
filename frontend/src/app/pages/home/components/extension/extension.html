@@ -58,6 +58,9 @@
 	</div>
 
 	<figure class="flex flex-col gap-2 w-full">
+		@let beforeSrc =
+		'https://res.cloudinary.com/oee6altn/image/upload/v1792668924/did-not-get-it-start.avif';
+
 		<figcaption
 			i18n="@@home.extension.fig_before"
 			class="text-center text-family-bold">
@@ -65,7 +68,7 @@
 		</figcaption>
 
 		<app-image-container
-			src="https://res.cloudinary.com/oee6altn/image/upload/v1792668924/did-not-get-it-start.avif"
+			[src]="beforeSrc"
 			i18n-alt="@@home.extension.img_before.alt"
 			alt="Gmail inbox showing unread corporate emails"
 			[width]="600"
@@ -75,11 +78,14 @@
 			tabIndex="0"
 			i18n-aria-label="@@home.extension.img_before.aria"
 			aria-label="View full size image of inbox before extension processing"
-			(onClickEvent)="openImage('https://res.cloudinary.com/oee6altn/image/upload/v1792668924/did-not-get-it-start.avif')">
+			(onClickEvent)="openImage(beforeSrc)">
 		</app-image-container>
 	</figure>
 
 	<figure class="flex flex-col gap-2 w-full">
+		@let afterSrc =
+		'https://res.cloudinary.com/oee6altn/image/upload/v1792668923/did-not-get-it-end.avif';
+
 		<figcaption
 			i18n="@@home.extension.fig_after"
 			class="text-center text-family-bold">
@@ -87,7 +93,7 @@
 		</figcaption>
 
 		<app-image-container
-			src="https://res.cloudinary.com/oee6altn/image/upload/v1792668923/did-not-get-it-end.avif"
+			[src]="afterSrc"
 			i18n-alt="@@home.extension.img_after.alt"
 			alt="Gmail inbox showing emails automatically labeled and marked as read by the extension"
 			[width]="600"
@@ -97,7 +103,7 @@
 			tabIndex="0"
 			i18n-aria-label="@@home.extension.img_after.aria"
 			aria-label="View full size image of inbox after extension processing"
-			(onClickEvent)="openImage('https://res.cloudinary.com/oee6altn/image/upload/v1792668923/did-not-get-it-end.avif')">
+			(onClickEvent)="openImage(afterSrc)">
 		</app-image-container>
 	</figure>
 </div>

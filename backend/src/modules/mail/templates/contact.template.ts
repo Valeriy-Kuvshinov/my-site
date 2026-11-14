@@ -44,7 +44,6 @@ export function getUserContactTemplate(data: TemplateData): string {
 			"ru"
 		)
 	}
-
 	if (language === "he") {
 		return getEmailBodyTemplate(
 			`
@@ -60,7 +59,6 @@ export function getUserContactTemplate(data: TemplateData): string {
 			"he"
 		)
 	}
-
 	return getEmailBodyTemplate(
 		`
         <p>Hi ${name},</p>
@@ -84,6 +82,7 @@ function getEmailBodyTemplate(content: string, language: "en" | "ru" | "he"): st
 	let footer = "<br>Kuvshinov Software<br>"
 
 	if (language === "ru") footer = "С уважением,<br>Kuvshinov Software<br>"
+
 	if (language === "he") footer = "בברכה,<br>Kuvshinov Software<br>"
 
 	return `

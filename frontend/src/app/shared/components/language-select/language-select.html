@@ -5,6 +5,11 @@
 	Select Language
 </span>
 
+<!--  -->
+@let open = isOpen();
+<!--  -->
+@let active = activeOption();
+
 <div
 	class="select-wrapper relative w-full h-fit"
 	[class.show-up]="position === 'up'"
@@ -14,9 +19,9 @@
 		id="lang-select-btn"
 		aria-labelledby="lang-select-label lang-select-btn"
 		aria-haspopup="listbox"
-		[attr.aria-expanded]="isOpen()"
+		[attr.aria-expanded]="open"
 		class="flex flex-row items-center justify-between w-full text-family-regular"
-		[class.open]="isOpen()"
+		[class.open]="open"
 		(click)="toggleOpen()">
 		<div class="flex flex-row items-center gap-2">
 			<app-svg-icon
@@ -25,7 +30,7 @@
 				height="24">
 			</app-svg-icon>
 
-			<span>{{ activeOption().label }}</span>
+			<span>{{ active.label }}</span>
 		</div>
 
 		<app-svg-icon
@@ -35,7 +40,7 @@
 		</app-svg-icon>
 	</button>
 
-	@if (isOpen()) {
+	@if (open) {
 	<div
 		id="lang-listbox"
 		role="listbox"
@@ -44,7 +49,7 @@
 		@for (option of options; track option.value) {
 		<div
 			role="option"
-			[attr.aria-selected]="option.value === activeOption().value"
+			[attr.aria-selected]="option.value === active.value"
 			tabindex="0"
 			class="option flex flex-row items-center justify-between fast-trans cursor-pointer"
 			(click)="selectLanguage(option.value)"

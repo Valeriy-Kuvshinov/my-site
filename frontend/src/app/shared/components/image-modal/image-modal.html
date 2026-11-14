@@ -10,9 +10,12 @@
 		aria-label="selected image showcase modal"
 		[appFocusTrap]="true"
 		(appClickOutside)="closeImageModal()">
-		@if (imageSrc()) {
+		<!--  -->
+		@let src = imageSrc();
+		<!--  -->
+		@if (src) {
 		<app-image-container
-			[src]="imageSrc()!"
+			[src]="src"
 			[objectFit]="objectFit()"
 			[style.aspect-ratio]="aspectRatio()"
 			class="flex full-center w-h-full">

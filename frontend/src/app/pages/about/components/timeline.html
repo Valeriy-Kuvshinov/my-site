@@ -4,16 +4,21 @@
 	i18n-aria-label="@@about.timeline.tablist.aria"
 	aria-label="Career Timeline">
 	@for (step of steps; track step.id; let idx = $index) {
+	<!--  -->
+	@let isActive = activeTab() === idx;
+	<!--  -->
+	@let isPast = idx < activeTab();
+
 	<button
 		type="button"
 		class="flex relative"
-		[class.active]="activeTab() === idx"
-		[class.past]="idx < activeTab()"
+		[class.active]="isActive"
+		[class.past]="isPast"
 		role="tab"
-		[attr.aria-selected]="activeTab() === idx"
+		[attr.aria-selected]="isActive"
 		[attr.aria-controls]="'panel-' + step.id"
 		[id]="'tab-' + step.id"
-		[tabIndex]="activeTab() === idx ? 0 : -1"
+		[tabIndex]="isActive ? 0 : -1"
 		(click)="activeTab.set(idx)"
 		(keydown)="handleTabKeydown($event, idx)">
 		<span
@@ -37,7 +42,9 @@
 <div class="info w-full relative">
 	@for (step of steps; track step.id; let idx = $index) {
 	<!--  -->
-	@if (activeTab() === idx) {
+	@let isActive = activeTab() === idx;
+	<!--  -->
+	@if (isActive) {
 	<div
 		class="panel flex flex-col gap-4 w-full"
 		role="tabpanel"
