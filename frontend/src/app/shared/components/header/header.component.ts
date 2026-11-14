@@ -50,8 +50,6 @@ export class HeaderComponent implements OnInit {
 
 	protected readonly isMobile = computed(() => this.store.deviceType() !== "desktop")
 
-	protected readonly logoutMutation = this.authService.logout()
-
 	ngOnInit() {
 		this.checkScrollPosition()
 	}
@@ -73,7 +71,7 @@ export class HeaderComponent implements OnInit {
 
 	async handleLogout() {
 		try {
-			await this.logoutMutation.mutateAsync()
+			await this.authService.logout()
 			this.router.navigate(["/"])
 		} catch (err) {
 			console.error("Logout failed in Header", err)

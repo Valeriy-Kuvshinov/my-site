@@ -15,12 +15,7 @@ import { LoadingComponent } from "@/shared/components/loading/loading.component"
 @Component({
 	selector: "main[app-login-page]",
 	standalone: true,
-	imports: [
-		ReactiveFormsModule,
-		InputAreaComponent,
-		NgxTurnstileComponent,
-		LoadingComponent,
-	],
+	imports: [ReactiveFormsModule, InputAreaComponent, NgxTurnstileComponent, LoadingComponent],
 	templateUrl: "./page.html",
 	styleUrl: "./page.css",
 	host: {
@@ -39,12 +34,10 @@ export default class PageComponent {
 
 	protected readonly TURNSTILE_KEY = environment.turnstilePublicKey
 
-	protected readonly loginMutation = this.authService.login()
-
 	readonly isProcessing = signal(false)
 	readonly turnstileToken = signal<string | null>(null)
 
-	readonly isFormBusy = computed(() => this.isProcessing() || this.loginMutation.isPending())
+	readonly isFormBusy = computed(() => this.isProcessing() || this.authService.isLoggingIn())
 
 	protected readonly form = this.fb.nonNullable.group({
 		email: ["", [Validators.required, Validators.email]],
@@ -88,24 +81,21 @@ export default class PageComponent {
 			this.form.markAllAsTouched()
 			return
 		}
-
 		this.isProcessing.set(true)
 
 		if (!this.turnstileToken()) {
 			this.isProcessing.set(false)
 			return
 		}
-
 		const formData: LoginCredentials = {
 			...this.form.getRawValue(),
 			turnstileToken: this.turnstileToken()!,
 		}
-
 		try {
-			await this.loginMutation.mutateAsync(formData)
+			await this.authService.login(formData)
 
 			this.form.reset()
-			this.router.navigate(["/admin"])
+			this.router.navigate(["/admin/"])
 		} catch (err) {
 			console.error("Login submission failed", err)
 		} finally {

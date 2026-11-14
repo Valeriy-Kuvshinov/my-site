@@ -10,7 +10,7 @@
 		[appFocusTrap]="true"
 		class="aside-menu flex flex-col h-full fast-trans"
 		[class.show]="showMenu()"
-		i18n-aria-label="@@aside.menu.aria"
+		i18n-aria-label="@@nav.aside.aria"
 		aria-label="Mobile navigation menu"
 		tabindex="-1">
 		<div class="menu-header flex flex-row items-center justify-between">
@@ -19,7 +19,6 @@
 				routerLinkActive="active"
 				[routerLinkActiveOptions]="{ exact: true }"
 				ariaCurrentWhenActive="page"
-				class="fast-trans"
 				(click)="closeAsideMenu()">
 				<app-image-container
 					[src]="LOGO_IMG"
@@ -31,7 +30,7 @@
 			</a>
 			<button
 				(click)="closeAsideMenu()"
-				i18n-aria-label="@@aside.close.aria"
+				i18n-aria-label="@@nav.aside.close.aria"
 				aria-label="close menu">
 				<app-svg-icon
 					icon="close"
@@ -54,7 +53,7 @@
 					width="24"
 					height="24">
 				</app-svg-icon>
-				<span i18n="@@aside.link.home">Home</span>
+				<span i18n="@@nav.link.home">Home</span>
 			</a>
 			<a
 				routerLink="/portfolio/"
@@ -67,7 +66,7 @@
 					width="24"
 					height="24">
 				</app-svg-icon>
-				<span i18n="@@aside.link.portfolio">Portfolio</span>
+				<span i18n="@@nav.link.portfolio">Portfolio</span>
 			</a>
 			<a
 				routerLink="/services/"
@@ -80,7 +79,7 @@
 					width="24"
 					height="24">
 				</app-svg-icon>
-				<span i18n="@@aside.link.services">Services</span>
+				<span i18n="@@nav.link.services">Services</span>
 			</a>
 			<a
 				routerLink="/about/"
@@ -93,7 +92,7 @@
 					width="24"
 					height="24">
 				</app-svg-icon>
-				<span i18n="@@aside.link.about">About</span>
+				<span i18n="@@nav.link.about">About</span>
 			</a>
 			<a
 				routerLink="/contact/"
@@ -106,7 +105,7 @@
 					width="24"
 					height="24">
 				</app-svg-icon>
-				<span i18n="@@aside.link.contact">Contact</span>
+				<span i18n="@@nav.link.contact">Contact</span>
 			</a>
 			@if (authService.currentUser()) {
 			<a
@@ -120,19 +119,19 @@
 					width="24"
 					height="24">
 				</app-svg-icon>
-				<span i18n="@@aside.link.admin">Admin</span>
+				<span i18n="@@nav.link.admin">Admin</span>
 			</a>
 
 			<button
 				class="flex flex-row items-center gap-4"
-				[disabled]="logoutMutation.isPending()"
+				[disabled]="authService.isLoggingIn()"
 				(click)="handleLogout()">
 				<app-svg-icon
 					icon="person"
 					width="24"
 					height="24">
 				</app-svg-icon>
-				<span i18n="@@aside.link.logout">Logout</span>
+				<span i18n="@@nav.link.logout">Logout</span>
 			</button>
 			}
 		</nav>

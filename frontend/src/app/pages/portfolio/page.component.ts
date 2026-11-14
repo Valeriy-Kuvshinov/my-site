@@ -45,12 +45,17 @@ export default class PageComponent implements OnInit {
 	private readonly title = inject(Title)
 	private readonly meta = inject(Meta)
 	private readonly document = inject(DOCUMENT)
+
 	private readonly store = inject(SystemStore)
-	private readonly portfolioService = inject(PortfolioService)
+
+	protected readonly portfolioService = inject(PortfolioService)
+
 	private readonly route = inject(ActivatedRoute)
+
 	private readonly router = inject(Router)
 
 	private readonly routeQueryMap = toSignal(this.route.queryParamMap)
+
 	protected readonly isMobile = computed(() => this.store.deviceType() === "mobile")
 
 	protected readonly searchTerm = computed(() => this.routeQueryMap()?.get("title") || "")
@@ -60,21 +65,15 @@ export default class PageComponent implements OnInit {
 		return techStr ? techStr.split(",") : []
 	})
 
+	protected readonly projectCount = computed(() => this.portfolioService.portfolioItems().length)
+
+	protected readonly getPortfolioImageSrc = getPortfolioImageSrc
+	protected readonly getPortfolioImageRatio = getPortfolioImageRatio
+
 	protected readonly searchControl = new FormControl(this.searchTerm(), {
 		nonNullable: true,
 		validators: [Validators.maxLength(80)],
 	})
-
-	protected readonly portfolioQuery = this.portfolioService.getPortfolioItems(
-		this.searchTerm,
-		this.selectedTechs
-	)
-
-	protected readonly items = computed<PortfolioItem[]>(() => this.portfolioQuery.data() || [])
-	protected readonly projectCount = computed(() => this.items().length)
-
-	protected readonly getPortfolioImageSrc = getPortfolioImageSrc
-	protected readonly getPortfolioImageRatio = getPortfolioImageRatio
 
 	constructor() {
 		this.searchControl.valueChanges
@@ -89,13 +88,18 @@ export default class PageComponent implements OnInit {
 					})
 				}
 			})
-
 		effect(() => {
 			const urlTerm = this.searchTerm()
 
 			if (this.searchControl.value !== urlTerm) {
 				this.searchControl.setValue(urlTerm, { emitEvent: false })
 			}
+		})
+		effect(() => {
+			const search = this.searchTerm()
+			const techs = this.selectedTechs()
+
+			this.portfolioService.fetchPortfolioItems(search, techs)
 		})
 	}
 
@@ -144,9 +148,6 @@ export default class PageComponent implements OnInit {
 	}
 
 	openImage(src: string) {
-		this.store.openModal("image-modal", {
-			src,
-			isMobile: this.isMobile(),
-		})
+		this.store.openModal("image-modal", { src, isMobile: this.isMobile() })
 	}
 }

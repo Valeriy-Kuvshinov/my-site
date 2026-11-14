@@ -13,14 +13,14 @@
 		<a
 			routerLink="/admin/"
 			class="flex flex-row"
-			i18n="@@header.link.admin">
+			i18n="@@nav.link.admin">
 			Admin
 		</a>
 		<button
 			class="flex flex-row"
-			[disabled]="logoutMutation.isPending()"
+			[disabled]="authService.isLoggingIn()"
 			(click)="handleLogout()">
-			<span i18n="@@header.link.logout">Logout</span>
+			<span i18n="@@nav.link.logout">Logout</span>
 		</button>
 	</div>
 </div>
@@ -29,11 +29,11 @@
 @if (isMobile()) {
 <nav
 	class="mobile-view flex flex-row items-center justify-between"
-	i18n-aria-label="@@header.nav.mobile.aria"
+	i18n-aria-label="@@nav.mobile.aria"
 	aria-label="Mobile Main">
 	<button
 		(click)="openMenu()"
-		i18n-aria-label="@@header.menu.open.aria"
+		i18n-aria-label="@@nav.mobile.open.aria"
 		aria-label="Open navigation menu"
 		class="w-fit">
 		<app-svg-icon
@@ -63,7 +63,7 @@
 @else {
 <nav
 	class="desktop-view flex flex-row items-center justify-between layout-row"
-	i18n-aria-label="@@header.nav.desktop.aria"
+	i18n-aria-label="@@nav.desktop.aria"
 	aria-label="Desktop Main">
 	<a
 		routerLink="/"
@@ -85,7 +85,7 @@
 			routerLink="/portfolio/"
 			routerLinkActive="active"
 			ariaCurrentWhenActive="page"
-			i18n="@@header.link.portfolio"
+			i18n="@@nav.link.portfolio"
 			class="relative fast-trans">
 			Portfolio
 		</a>
@@ -93,7 +93,7 @@
 			routerLink="/services/"
 			routerLinkActive="active"
 			ariaCurrentWhenActive="page"
-			i18n="@@header.link.services"
+			i18n="@@nav.link.services"
 			class="relative fast-trans">
 			Services
 		</a>
@@ -101,7 +101,7 @@
 			routerLink="/about/"
 			routerLinkActive="active"
 			ariaCurrentWhenActive="page"
-			i18n="@@header.link.about"
+			i18n="@@nav.link.about"
 			class="relative fast-trans">
 			About
 		</a>
@@ -109,7 +109,7 @@
 			routerLink="/contact/"
 			routerLinkActive="active"
 			ariaCurrentWhenActive="page"
-			i18n="@@header.link.contact"
+			i18n="@@nav.link.contact"
 			class="relative fast-trans">
 			Contact
 		</a>

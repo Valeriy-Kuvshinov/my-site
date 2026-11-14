@@ -36,13 +36,12 @@ import { LoadingComponent } from "@/shared/components/loading/loading.component"
 })
 export class ContactFormComponent implements OnInit {
 	private readonly fb = inject(FormBuilder)
+
 	private readonly mailService = inject(MailService)
 
 	@Input({ required: true }) formValues!: ContactFormData
 
 	@ViewChild(NgxTurnstileComponent) turnstileRef!: NgxTurnstileComponent
-
-	readonly sendMailMutation = this.mailService.sendContactMail()
 
 	protected readonly TURNSTILE_KEY = environment.turnstilePublicKey
 
@@ -50,7 +49,7 @@ export class ContactFormComponent implements OnInit {
 	readonly isProcessing = signal(false)
 	readonly turnstileToken = signal<string | null>(null)
 
-	readonly isFormBusy = computed(() => this.isProcessing() || this.sendMailMutation.isPending())
+	readonly isFormBusy = computed(() => this.isProcessing())
 
 	readonly form = this.fb.nonNullable.group({
 		name: [
@@ -158,7 +157,7 @@ export class ContactFormComponent implements OnInit {
 			language: this.formValues.language as ContactFormData["language"],
 		}
 		try {
-			await this.sendMailMutation.mutateAsync(formData)
+			await this.mailService.sendContactMail(formData)
 
 			this.form.reset(this.formValues)
 		} catch (err) {

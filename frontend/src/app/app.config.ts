@@ -7,10 +7,7 @@ import {
 } from "@angular/core"
 import { provideRouter, UrlSerializer, withInMemoryScrolling } from "@angular/router"
 import { provideClientHydration } from "@angular/platform-browser"
-import { provideHttpClient, withInterceptors } from "@angular/common/http"
-import { provideTanStackQuery } from "@tanstack/angular-query-experimental"
-
-import { QUERY_CLIENT_TOKEN } from "./core/tokens/query-client.token"
+import { provideHttpClient, withFetch, withInterceptors } from "@angular/common/http"
 
 import { httpInterceptor } from "./core/interceptor/http.interceptor"
 
@@ -33,9 +30,7 @@ export const appConfig: ApplicationConfig = {
 
 		provideClientHydration(),
 
-		provideHttpClient(withInterceptors([httpInterceptor])),
-
-		provideTanStackQuery(QUERY_CLIENT_TOKEN),
+		provideHttpClient(withInterceptors([httpInterceptor]), withFetch()),
 
 		provideAppInitializer(() => {
 			inject(A11yService)

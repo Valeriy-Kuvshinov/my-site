@@ -1,38 +1,38 @@
 <div class="content grid w-full full-center layout-row">
 	<nav
 		class="site-nav flex flex-row flex-wrap gap-2"
-		i18n-aria-label="@@footer.nav.main.aria"
+		i18n-aria-label="@@nav.footer.aria"
 		aria-label="Footer">
 		<a
 			routerLink="/"
 			routerLinkActive="active"
 			[routerLinkActiveOptions]="{ exact: true }"
 			ariaCurrentWhenActive="page">
-			<span i18n="@@footer.link.home">Home</span>
+			<span i18n="@@nav.link.home">Home</span>
 		</a>
 		<a
 			routerLink="/portfolio"
 			routerLinkActive="active"
 			ariaCurrentWhenActive="page">
-			<span i18n="@@footer.link.portfolio">Portfolio</span>
+			<span i18n="@@nav.link.portfolio">Portfolio</span>
 		</a>
 		<a
 			routerLink="/services"
 			routerLinkActive="active"
 			ariaCurrentWhenActive="page">
-			<span i18n="@@footer.link.services">Services</span>
+			<span i18n="@@nav.link.services">Services</span>
 		</a>
 		<a
 			routerLink="/about"
 			routerLinkActive="active"
 			ariaCurrentWhenActive="page">
-			<span i18n="@@footer.link.about">About</span>
+			<span i18n="@@nav.link.about">About</span>
 		</a>
 		<a
 			routerLink="/contact"
 			routerLinkActive="active"
 			ariaCurrentWhenActive="page">
-			<span i18n="@@footer.link.contact">Contact</span>
+			<span i18n="@@nav.link.contact">Contact</span>
 		</a>
 	</nav>
 
@@ -44,7 +44,7 @@
 
 	<nav
 		class="social-nav flex flex-row flex-wrap gap-4"
-		i18n-aria-label="@@footer.nav.social.aria"
+		i18n-aria-label="@@nav.social.aria"
 		aria-label="Social profiles">
 		@for (social of socials; track social.name) {
 		<a
@@ -70,19 +70,19 @@
 				routerLink="/privacy-policy"
 				routerLinkActive="active"
 				ariaCurrentWhenActive="page">
-				<span i18n="@@footer.link.privacy">Privacy</span>
+				<span i18n="@@nav.link.privacy">Privacy</span>
 			</a>
 			<a
 				routerLink="/accessibility"
 				routerLinkActive="active"
 				ariaCurrentWhenActive="page">
-				<span i18n="@@footer.link.accessibility">Accessibility</span>
+				<span i18n="@@nav.link.accessibility">Accessibility</span>
 			</a>
 			<a
 				routerLink="/terms"
 				routerLinkActive="active"
 				ariaCurrentWhenActive="page">
-				<span i18n="@@footer.link.terms">Terms</span>
+				<span i18n="@@nav.link.terms">Terms</span>
 			</a>
 		</nav>
 	</div>

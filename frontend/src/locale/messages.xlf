@@ -27,35 +27,35 @@
         <source>Message Sent!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/services/api/mail/mail.service.ts</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.mail.success.msg" datatype="html">
         <source>We have received your message and will reply shortly.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/services/api/mail/mail.service.ts</context>
-          <context context-type="linenumber">26</context>
+          <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.mail.success.a11y" datatype="html">
         <source>Message sent successfully. We will reply shortly.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/services/api/mail/mail.service.ts</context>
-          <context context-type="linenumber">29</context>
+          <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.mail.error.title" datatype="html">
         <source>Mail Send Failed!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/services/api/mail/mail.service.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.mail.error.a11y" datatype="html">
         <source>Failed to send message: <x id="PH" equiv-text="error.message"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/services/api/mail/mail.service.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a11y.trigger.aria" datatype="html">
@@ -783,42 +783,42 @@
         <source>Required field</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
-          <context context-type="linenumber">111</context>
+          <context context-type="linenumber">110</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.error.minlength" datatype="html">
         <source>Too short</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
-          <context context-type="linenumber">113</context>
+          <context context-type="linenumber">112</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.error.maxlength" datatype="html">
         <source>Too long</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
-          <context context-type="linenumber">115</context>
+          <context context-type="linenumber">114</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.error.email" datatype="html">
         <source>Invalid format</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
-          <context context-type="linenumber">117</context>
+          <context context-type="linenumber">116</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.error.pattern" datatype="html">
         <source>Invalid characters</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
-          <context context-type="linenumber">120</context>
+          <context context-type="linenumber">119</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.error.invalid" datatype="html">
         <source>Invalid input</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/components/form.component.ts</context>
-          <context context-type="linenumber">122</context>
+          <context context-type="linenumber">121</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.name.label" datatype="html">
@@ -1560,7 +1560,7 @@
         <source>View full size image of <x id="PH" equiv-text="item.title"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.component.ts</context>
-          <context context-type="linenumber">143</context>
+          <context context-type="linenumber">147</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.intro.title" datatype="html">
@@ -1577,88 +1577,81 @@
           <context context-type="linenumber">12,16</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="portfolio_page.error.msg" datatype="html">
-        <source>Failed to load data. Please try again later...</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">32,34</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="portfolio_page.empty.msg" datatype="html">
         <source>Nothing found to display...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">41,43</context>
+          <context context-type="linenumber">32,34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.results.count" datatype="html">
         <source>Showing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">50,52</context>
+          <context context-type="linenumber">41,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.results.projects" datatype="html">
         <source>projects</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">52,56</context>
+          <context context-type="linenumber">43,47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.project_tech.aria" datatype="html">
         <source>Technologies used</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">84,85</context>
+          <context context-type="linenumber">75,76</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_visit.aria" datatype="html">
         <source>Visit Site (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">101,102</context>
+          <context context-type="linenumber">92,93</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_visit.text" datatype="html">
         <source>Visit Site</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">102,104</context>
+          <context context-type="linenumber">93,95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_source.aria" datatype="html">
         <source>View Source Code (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">118,119</context>
+          <context context-type="linenumber">109,110</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_source.text" datatype="html">
         <source>Source Code</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">119,121</context>
+          <context context-type="linenumber">110,112</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.title" datatype="html">
         <source> Ready to Build Your System? </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">141,145</context>
+          <context context-type="linenumber">132,136</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.desc" datatype="html">
         <source> Let&apos;s discuss your architectural needs and engineer a digital asset you actually own. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">147,151</context>
+          <context context-type="linenumber">138,142</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.btn" datatype="html">
         <source>Start a Project</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">153,155</context>
+          <context context-type="linenumber">144,146</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.meta.title" datatype="html">
@@ -2550,67 +2543,111 @@
           <context context-type="linenumber">217,220</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="aside.menu.aria" datatype="html">
+      <trans-unit id="nav.aside.aria" datatype="html">
         <source>Mobile navigation menu</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
           <context context-type="linenumber">14,16</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="aside.close.aria" datatype="html">
+      <trans-unit id="nav.aside.close.aria" datatype="html">
         <source>close menu</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">35,37</context>
+          <context context-type="linenumber">34,36</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="aside.link.home" datatype="html">
+      <trans-unit id="nav.link.home" datatype="html">
         <source>Home</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">57,60</context>
+          <context context-type="linenumber">56,59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
+          <context context-type="linenumber">11,14</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="aside.link.portfolio" datatype="html">
+      <trans-unit id="nav.link.portfolio" datatype="html">
         <source>Portfolio</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">70,73</context>
+          <context context-type="linenumber">69,72</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
+          <context context-type="linenumber">17,20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
+          <context context-type="linenumber">90,93</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="aside.link.services" datatype="html">
+      <trans-unit id="nav.link.services" datatype="html">
         <source>Services</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">83,86</context>
+          <context context-type="linenumber">82,85</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
+          <context context-type="linenumber">23,26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
+          <context context-type="linenumber">98,101</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="aside.link.about" datatype="html">
+      <trans-unit id="nav.link.about" datatype="html">
         <source>About</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">96,99</context>
+          <context context-type="linenumber">95,98</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
+          <context context-type="linenumber">29,32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
+          <context context-type="linenumber">106,109</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="aside.link.contact" datatype="html">
+      <trans-unit id="nav.link.contact" datatype="html">
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">109,111</context>
+          <context context-type="linenumber">108,110</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
+          <context context-type="linenumber">35,39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
+          <context context-type="linenumber">114,118</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="aside.link.admin" datatype="html">
+      <trans-unit id="nav.link.admin" datatype="html">
         <source>Admin</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">123,127</context>
+          <context context-type="linenumber">122,126</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
+          <context context-type="linenumber">17,20</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="aside.link.logout" datatype="html">
+      <trans-unit id="nav.link.logout" datatype="html">
         <source>Logout</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/aside-menu/aside-menu.html</context>
-          <context context-type="linenumber">135,138</context>
+          <context context-type="linenumber">134,137</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
+          <context context-type="linenumber">23,26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cookie.dialog.aria" datatype="html">
@@ -2689,137 +2726,60 @@
           <context context-type="linenumber">7,9</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="footer.nav.main.aria" datatype="html">
+      <trans-unit id="nav.footer.aria" datatype="html">
         <source>Footer</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
           <context context-type="linenumber">6,8</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="footer.link.home" datatype="html">
-        <source>Home</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
-          <context context-type="linenumber">11,14</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="footer.link.portfolio" datatype="html">
-        <source>Portfolio</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
-          <context context-type="linenumber">17,20</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="footer.link.services" datatype="html">
-        <source>Services</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
-          <context context-type="linenumber">23,26</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="footer.link.about" datatype="html">
-        <source>About</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
-          <context context-type="linenumber">29,32</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="footer.link.contact" datatype="html">
-        <source>Contact</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
-          <context context-type="linenumber">35,39</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="footer.nav.social.aria" datatype="html">
+      <trans-unit id="nav.social.aria" datatype="html">
         <source>Social profiles</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
           <context context-type="linenumber">48,49</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="footer.link.privacy" datatype="html">
+      <trans-unit id="nav.link.privacy" datatype="html">
         <source>Privacy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
           <context context-type="linenumber">73,76</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="footer.link.accessibility" datatype="html">
+      <trans-unit id="nav.link.accessibility" datatype="html">
         <source>Accessibility</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
           <context context-type="linenumber">79,82</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="footer.link.terms" datatype="html">
+      <trans-unit id="nav.link.terms" datatype="html">
         <source>Terms</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.html</context>
           <context context-type="linenumber">85,88</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="header.link.admin" datatype="html">
-        <source> Admin </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">17,20</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="header.link.logout" datatype="html">
-        <source>Logout</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">23,26</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="header.nav.mobile.aria" datatype="html">
+      <trans-unit id="nav.mobile.aria" datatype="html">
         <source>Mobile Main</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">33,36</context>
+          <context context-type="linenumber">33,35</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="header.menu.open.aria" datatype="html">
+      <trans-unit id="nav.mobile.open.aria" datatype="html">
         <source>Open navigation menu</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
           <context context-type="linenumber">37,40</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="header.nav.desktop.aria" datatype="html">
+      <trans-unit id="nav.desktop.aria" datatype="html">
         <source>Desktop Main</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
           <context context-type="linenumber">67,70</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="header.link.portfolio" datatype="html">
-        <source> Portfolio </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">90,93</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="header.link.services" datatype="html">
-        <source> Services </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">98,101</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="header.link.about" datatype="html">
-        <source> About </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">106,109</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="header.link.contact" datatype="html">
-        <source> Contact </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">114,118</context>
         </context-group>
       </trans-unit>
       <trans-unit id="image_modal.dialog.aria" datatype="html">

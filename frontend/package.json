@@ -28,7 +28,6 @@
 		"@angular/router": "^22.2.4",
 		"@angular/ssr": "^22.2.5",
 		"@ngrx/signals": "^22.0.1",
-		"@tanstack/angular-query-experimental": "^5.105.3",
 		"express": "^5.3.0",
 		"ngx-turnstile": "^1.0.0",
 		"rxjs": "~7.8.2",

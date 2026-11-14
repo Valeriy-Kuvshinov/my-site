@@ -51,8 +51,6 @@ export class AsideMenuComponent {
 
 	readonly showMenu = signal(false)
 
-	protected readonly logoutMutation = this.authService.logout()
-
 	constructor() {
 		effect((onCleanup) => {
 			const open = this.isOpen()
@@ -78,7 +76,7 @@ export class AsideMenuComponent {
 
 	async handleLogout() {
 		try {
-			await this.logoutMutation.mutateAsync()
+			await this.authService.logout()
 			this.closeAsideMenu()
 			this.router.navigate(["/"])
 		} catch (err) {

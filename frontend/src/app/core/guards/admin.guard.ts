@@ -1,10 +1,10 @@
 import { inject, PLATFORM_ID } from "@angular/core"
 import { CanActivateFn, Router } from "@angular/router"
 import { toObservable } from "@angular/core/rxjs-interop"
-import { filter, map } from "rxjs"
+import { isPlatformBrowser } from "@angular/common"
+import { filter, map, take } from "rxjs"
 
 import { AuthService } from "../services/auth/auth.service"
-import { isPlatformBrowser } from "@angular/common"
 
 export const adminGuard: CanActivateFn = () => {
 	const authService = inject(AuthService)
@@ -17,10 +17,11 @@ export const adminGuard: CanActivateFn = () => {
 
 	return toObservable(authService.isAuthInitializing).pipe(
 		filter((isInit) => !isInit),
+		take(1),
 		map(() => {
 			if (authService.currentUser()) return true
 
-			return router.parseUrl("/login") // Not authorized
+			return router.parseUrl("/login")
 		})
 	)
 }

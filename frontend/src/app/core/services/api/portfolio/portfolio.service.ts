@@ -1,21 +1,11 @@
-import { Injectable, Signal, inject } from "@angular/core"
-import { injectQuery, injectMutation, QueryClient } from "@tanstack/angular-query-experimental"
+import { Injectable, inject, signal } from "@angular/core"
 
 import { LocalizedString, SupportedLanguage } from "@/shared/interfaces/locale"
 import { PortfolioItem, PortfolioEntity } from "@/shared/interfaces/portfolio"
 
-import { QUERY_CLIENT_TOKEN } from "@/core/tokens/query-client.token"
-
 import { SystemStore } from "@/core/stores/system.store"
 
 import { HttpService } from "../http.service"
-
-export const portfolioKeys = {
-	all: ["portfolio"] as const,
-	lists: (search?: string, technologies?: string[]) =>
-		[...portfolioKeys.all, "list", { search, technologies }] as const,
-	detail: (id: number) => [...portfolioKeys.all, "detail", id] as const,
-}
 
 const PORTFOLIO_ENDPOINT = "portfolio"
 
@@ -49,107 +39,71 @@ export class PortfolioService {
 
 	private readonly store = inject(SystemStore)
 
-	private readonly queryClient = inject<QueryClient>(QUERY_CLIENT_TOKEN)
+	private readonly _portfolioItems = signal<PortfolioItem[]>([])
+	private readonly _isFetching = signal<boolean>(false)
 
-	// Queries
-	// ===============================
-	getPortfolioItems(searchQuerySignal?: Signal<string>, techQuerySignal?: Signal<string[]>) {
-		return injectQuery(() => {
-			const search = searchQuerySignal ? searchQuerySignal() : undefined
-			const technologies = techQuerySignal ? techQuerySignal() : undefined
+	readonly portfolioItems = this._portfolioItems.asReadonly()
+	readonly isFetching = this._isFetching.asReadonly()
 
-			return {
-				queryKey: portfolioKeys.lists(search, technologies),
-				queryFn: async (): Promise<PortfolioItem[]> => {
-					const params: Record<string, string> = {}
+	async fetchPortfolioItems(search?: string, technologies?: string[]): Promise<void> {
+		this._isFetching.set(true)
 
-					if (search) params["search"] = search
+		const params: Record<string, string> = {}
 
-					if (technologies && technologies.length > 0) {
-						params["technologies"] = technologies.join(",")
-					}
-					const response = await this.http.get<PortfolioEntity[]>(
-						PORTFOLIO_ENDPOINT,
-						params
-					)
-					const items = response.data || []
+		if (search) params["search"] = search
 
-					const currentLang = this.store.currentLanguage()
+		if (technologies && technologies.length > 0) {
+			params["technologies"] = technologies.join(",")
+		}
+		try {
+			const response = await this.http.get<PortfolioEntity[]>(PORTFOLIO_ENDPOINT, params)
 
-					return items.map((item) => mapEntityToDisplayItem(item, currentLang))
-				},
-			}
-		})
+			const currentLang = this.store.currentLanguage()
+
+			const mapped = (response.data || []).map((item) =>
+				mapEntityToDisplayItem(item, currentLang)
+			)
+			this._portfolioItems.set(mapped)
+		} catch (err) {
+			console.error("Failed to fetch portfolio", err)
+			this._portfolioItems.set([])
+		} finally {
+			this._isFetching.set(false)
+		}
 	}
 
-	getPortfolioItemById(id: number | null) {
-		return injectQuery(() => ({
-			queryKey: portfolioKeys.detail(id || 0),
-			queryFn: async (): Promise<PortfolioItem | null> => {
-				if (!id) return null
+	async saveItem(item: PortfolioEntity): Promise<PortfolioEntity | null> {
+		const endpoint = item.id
+			? `${PORTFOLIO_ENDPOINT}/update/${item.id}`
+			: `${PORTFOLIO_ENDPOINT}/add`
 
-				const response = await this.http.get<PortfolioEntity>(`${PORTFOLIO_ENDPOINT}/${id}`)
+		try {
+			const response = item.id
+				? await this.http.put<PortfolioEntity>(endpoint, item)
+				: await this.http.post<PortfolioEntity>(endpoint, item)
 
-				if (!response.data) return null
+			if (!response.data) throw new Error("Server returned empty data on save")
 
-				const currentLang = this.store.currentLanguage()
+			await this.fetchPortfolioItems()
 
-				return mapEntityToDisplayItem(response.data, currentLang)
-			},
-			enabled: !!id,
-		}))
+			this.store.showSuccess("Saved!", "Portfolio item saved successfully.")
+
+			return response.data
+		} catch (error: any) {
+			this.store.showError("Save Failed", error.message)
+			return null
+		}
 	}
 
-	// Mutations
-	// ===============================
-	saveItem() {
-		return injectMutation(() => ({
-			mutationFn: async (item: PortfolioEntity): Promise<PortfolioEntity> => {
-				const endpoint = item.id
-					? `${PORTFOLIO_ENDPOINT}/update/${item.id}`
-					: `${PORTFOLIO_ENDPOINT}/add`
+	async deleteItem(id: number): Promise<void> {
+		try {
+			await this.http.delete(`${PORTFOLIO_ENDPOINT}/delete/${id}`)
 
-				const response = item.id
-					? await this.http.put<PortfolioEntity>(endpoint, item)
-					: await this.http.post<PortfolioEntity>(endpoint, item)
+			this._portfolioItems.update((items) => items.filter((item) => item.id !== id))
 
-				if (!response.data) throw new Error("Server returned empty data on save")
-
-				return response.data
-			},
-			onSuccess: (savedItem) => {
-				this.queryClient.invalidateQueries({ queryKey: portfolioKeys.lists() })
-
-				if (savedItem.id) {
-					const currentLang = this.store.currentLanguage()
-
-					this.queryClient.setQueryData(
-						portfolioKeys.detail(savedItem.id),
-						mapEntityToDisplayItem(savedItem, currentLang)
-					)
-				}
-				this.store.showSuccess("Saved!", "Portfolio item saved successfully.")
-			},
-			onError: (error: Error) => {
-				this.store.showError("Save Failed", error.message)
-			},
-		}))
-	}
-
-	deleteItem() {
-		return injectMutation(() => ({
-			mutationFn: async (id: number): Promise<void> => {
-				await this.http.delete(`${PORTFOLIO_ENDPOINT}/delete/${id}`)
-			},
-			onSuccess: (_, deletedId) => {
-				this.queryClient.invalidateQueries({ queryKey: portfolioKeys.lists() })
-				this.queryClient.removeQueries({ queryKey: portfolioKeys.detail(deletedId) })
-
-				this.store.showSuccess("Deleted", "Portfolio item removed.")
-			},
-			onError: (error: Error) => {
-				this.store.showError("Delete Failed", error.message)
-			},
-		}))
+			this.store.showSuccess("Deleted", "Portfolio item removed.")
+		} catch (error: any) {
+			this.store.showError("Delete Failed", error.message)
+		}
 	}
 }
