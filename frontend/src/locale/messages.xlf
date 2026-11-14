@@ -1255,6 +1255,48 @@
           <context context-type="linenumber">62,63</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="lang.hebrew" datatype="html">
+        <source>Hebrew</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.component.ts</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang.russian" datatype="html">
+        <source>Russian</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.component.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang.english" datatype="html">
+        <source>English</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.component.ts</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.reviews.title" datatype="html">
+        <source> A Word From The Clients </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.html</context>
+          <context context-type="linenumber">5,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.reviews.translate" datatype="html">
+        <source>Translate</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.html</context>
+          <context context-type="linenumber">61,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.reviews.original_in" datatype="html">
+        <source> Original (<x id="INTERPOLATION" equiv-text="{{ getLanguageName(review.originalLang) }}"/>) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.html</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="home.tech_carousel.region.aria" datatype="html">
         <source>Technologies Used</source>
         <context-group purpose="location">
@@ -1266,217 +1308,217 @@
         <source>Years of Experience</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.production" datatype="html">
         <source>Live Production Systems</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.oss" datatype="html">
         <source>Open Source Projects</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.a11y" datatype="html">
         <source>Accessibility Audits</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.repos" datatype="html">
         <source>GitHub Repositories</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.commits" datatype="html">
         <source>GitHub Commits</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty1.title" datatype="html">
         <source>Native Full-Stack Engineering</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty1.desc" datatype="html">
         <source>Escaping the limitations of templated platforms. I build custom, semantic web applications with automated cloud deployments using modern stacks.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty2.title" datatype="html">
         <source>Accessibility Compliance &amp; Risk Reduction</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">57</context>
+          <context context-type="linenumber">58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty2.desc" datatype="html">
         <source>Auditing and refactoring digital infrastructure to natively meet WCAG 2.1 AA/AAA and Israeli standards, reducing legal risk in a way accessibility overlays alone cannot.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty3.title" datatype="html">
         <source>System Architecture &amp; Optimization</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty3.desc" datatype="html">
         <source>Serving as a technical consultant to resolve critical bottlenecks, secure legacy e-commerce platforms, and orchestrate highly scalable, independent digital assets.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">62</context>
+          <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty4.title" datatype="html">
         <source>Screen Reader Navigation Tutoring</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">65</context>
+          <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty4.desc" datatype="html">
         <source>Patient one-on-one tutoring for people facing digital barriers: live descriptions of on-screen layouts and coaching through inaccessible sites, forms, and checkout flows, with you in full control.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.meta.desc" datatype="html">
         <source>Kuvshinov Software: custom websites and backend systems, accessibility help, and open source projects, built with care.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">72</context>
+          <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialties.title" datatype="html">
         <source> My Specialties </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">28,31</context>
+          <context context-type="linenumber">27,30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.title" datatype="html">
         <source> Selected Work </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">48,51</context>
+          <context context-type="linenumber">49,52</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.btn" datatype="html">
         <source>View Full Portfolio</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">56,58</context>
+          <context context-type="linenumber">57,59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.title" datatype="html">
         <source> An Overlay Is Never Enough </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">69,72</context>
+          <context context-type="linenumber">70,73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.title" datatype="html">
         <source> The Legal Illusion </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">78,81</context>
+          <context context-type="linenumber">79,82</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.p1" datatype="html">
         <source> In a world where temporary solutions become permanent, automated widgets and generic templates alone fail to deliver true accessibility or reliable legal protection. It takes precise semantic code and manual keyboard focus management to make a site truly usable. The reader overlay on this site is an optional comfort tool, built on top of accessible code, not instead of it. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">82,87</context>
+          <context context-type="linenumber">83,88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.p2" datatype="html">
         <source> Endorsed by myself and hundreds of other privacy and accessibility professionals, I invite you to read the Overlay Fact Sheet. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">91,95</context>
+          <context context-type="linenumber">92,96</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.btn.aria" datatype="html">
         <source>Read the Web Accessibility Overlay Fact Sheet (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">97,99</context>
+          <context context-type="linenumber">98,100</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.btn.text" datatype="html">
         <source>Read the Overlay Fact Sheet</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">101,105</context>
+          <context context-type="linenumber">102,106</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.img_alt" datatype="html">
         <source>Showcase of how screen readers cannot read text of images, but rely on alt text provided by website itself</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">108,110</context>
+          <context context-type="linenumber">109,111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.title" datatype="html">
         <source> Stuck on an inaccessible website? </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">119,122</context>
+          <context context-type="linenumber">120,123</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p1" datatype="html">
         <source> Can&apos;t complete that reCAPTCHA to finish a purchase? Is a hotel booking portal or government site blocking your screen reader? </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">123,127</context>
+          <context context-type="linenumber">124,128</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p2" datatype="html">
         <source> I provide live, one-on-one tutoring over video call: I describe what is on screen, coach you step by step through these barriers, and help you build the skills to manage on your own. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">128,133</context>
+          <context context-type="linenumber">129,134</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p3" datatype="html">
         <source> Sessions run over Zoom. You share your screen and stay in full control. I never take remote control of your computer or ask for passwords or personal data. Regular clients get a reduced rate. I reply to requests within hours. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">134,139</context>
+          <context context-type="linenumber">135,140</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.btn" datatype="html">
         <source>Get Support</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">142,146</context>
+          <context context-type="linenumber">143,147</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.img_alt" datatype="html">
         <source>screen reader user struggling with website, wishing for help with navigation</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">149,151</context>
+          <context context-type="linenumber">150,152</context>
         </context-group>
       </trans-unit>
       <trans-unit id="not_found.meta.title" datatype="html">
@@ -1574,84 +1616,84 @@
         <source> All my proudly published software projects, ranging from final/production versions for my clients to open source. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">12,16</context>
+          <context context-type="linenumber">12,15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.empty.msg" datatype="html">
         <source>Nothing found to display...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">32,34</context>
+          <context context-type="linenumber">31,33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.results.count" datatype="html">
         <source>Showing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">41,43</context>
+          <context context-type="linenumber">40,42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.results.projects" datatype="html">
         <source>projects</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">43,47</context>
+          <context context-type="linenumber">42,46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.project_tech.aria" datatype="html">
         <source>Technologies used</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">75,76</context>
+          <context context-type="linenumber">74,75</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_visit.aria" datatype="html">
         <source>Visit Site (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">92,93</context>
+          <context context-type="linenumber">91,92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_visit.text" datatype="html">
         <source>Visit Site</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">93,95</context>
+          <context context-type="linenumber">92,94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_source.aria" datatype="html">
         <source>View Source Code (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">109,110</context>
+          <context context-type="linenumber">108,109</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_source.text" datatype="html">
         <source>Source Code</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">110,112</context>
+          <context context-type="linenumber">109,111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.title" datatype="html">
         <source> Ready to Build Your System? </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">132,136</context>
+          <context context-type="linenumber">131,135</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.desc" datatype="html">
         <source> Let&apos;s discuss your architectural needs and engineer a digital asset you actually own. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">138,142</context>
+          <context context-type="linenumber">137,141</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.btn" datatype="html">
         <source>Start a Project</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">144,146</context>
+          <context context-type="linenumber">143,145</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.meta.title" datatype="html">

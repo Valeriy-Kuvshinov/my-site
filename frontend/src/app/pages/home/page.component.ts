@@ -11,6 +11,7 @@ import { TechCarouselComponent } from "./components/tech/tech-carousel.component
 import { PortfolioCarouselComponent } from "./components/portfolio/portfolio-carousel.component"
 import { ExtensionComponent } from "./components/extension/extension.component"
 import { HeroComponent } from "./components/hero/hero.component"
+import { ReviewsComponent } from "./components/reviews/reviews.component"
 
 interface Highlight {
 	icon: IconName
@@ -82,6 +83,7 @@ const PAGE_DESC = $localize`:@@home.meta.desc:Kuvshinov Software: custom website
 		PortfolioCarouselComponent,
 		ExtensionComponent,
 		HeroComponent,
+		ReviewsComponent,
 	],
 	templateUrl: "./page.html",
 	styleUrl: "./page.css",

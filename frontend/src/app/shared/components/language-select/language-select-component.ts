@@ -37,7 +37,7 @@ const OPTIONS: LanguageOption[] = [
 	templateUrl: "./language-select.html",
 	styleUrl: "./language-select.css",
 	host: {
-		class: "custom-select flex column relative",
+		class: "flex column relative",
 	},
 })
 export class LanguageSelectComponent implements OnInit {

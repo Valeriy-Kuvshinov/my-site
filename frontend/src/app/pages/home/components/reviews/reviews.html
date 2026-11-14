@@ -1,0 +1,74 @@
+<div class="intro flex flex-col items-center gap-4 w-full">
+	<h2
+		i18n="@@home.reviews.title"
+		class="text-center text-family-bold">
+		A Word From The Clients
+	</h2>
+
+	<div
+		class="stars flex flex-row items-center gap-2"
+		aria-hidden="true">
+		@for (star of starsArray; track $index) {
+		<app-svg-icon
+			icon="star"
+			width="32"
+			height="32">
+		</app-svg-icon>
+		}
+	</div>
+</div>
+
+<ul class="layout-row w-full">
+	@for (review of reviews; track review.id) {
+	<li class="flex flex-col h-fit gap-6 fast-trans">
+		<div class="content flex flex-col gap-4">
+			<div class="review-header grid w-full gap-4">
+				<div class="flex flex-col justify-center gap-2">
+					<h3 class="text-family-bold">{{ review.clientName }}</h3>
+
+					<div class="services flex flex-row flex-wrap gap-2">
+						@for (service of review.servicesProvided; track service.en) {
+						<span class="service-tag">{{ getServiceName(service) }}</span>
+						}
+					</div>
+				</div>
+
+				<app-image-container
+					[src]="review.logoSrc"
+					[alt]="review.clientName + ' logo'"
+					[width]="64"
+					[height]="64">
+				</app-image-container>
+			</div>
+
+			<blockquote class="{{ getTextDirClass(review) }}">
+				"{{ getReviewText(review) }}"
+			</blockquote>
+		</div>
+
+		@if (currentLang() !== review.originalLang) {
+		<div class="actions flex flex-col gap-2">
+			<button
+				class="flex flex-row items-center gap-2 w-fit"
+				(click)="toggleOriginal(review.id)">
+				<app-svg-icon
+					icon="language"
+					width="24"
+					height="24">
+				</app-svg-icon>
+
+				@if (isShowingOriginal(review.id)) {
+				<span i18n="@@home.reviews.translate">Translate</span>
+				}
+				<!--  -->
+				@else {
+				<span i18n="@@home.reviews.original_in">
+					Original ({{ getLanguageName(review.originalLang) }})
+				</span>
+				}
+			</button>
+		</div>
+		}
+	</li>
+	}
+</ul>

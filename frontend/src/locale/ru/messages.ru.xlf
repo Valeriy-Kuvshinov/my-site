@@ -1431,6 +1431,54 @@
           <context context-type="linenumber">62,63</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="lang.hebrew" datatype="html">
+        <source>Hebrew</source>
+        <target>Иврит</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.component.ts</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang.russian" datatype="html">
+        <source>Russian</source>
+        <target>Русский</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.component.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang.english" datatype="html">
+        <source>English</source>
+        <target>Английский</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.component.ts</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.reviews.title" datatype="html">
+        <source> A Word From The Clients </source>
+        <target>Слово от клиентов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.html</context>
+          <context context-type="linenumber">5,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.reviews.translate" datatype="html">
+        <source>Translate</source>
+        <target>Перевести</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.html</context>
+          <context context-type="linenumber">61,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.reviews.original_in" datatype="html">
+        <source> Original (<x id="INTERPOLATION" equiv-text="{{ getLanguageName(review.originalLang) }}"/>) </source>
+        <target>Оригинал на ({$INTERPOLATION})</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.html</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="home.tech_carousel.region.aria" datatype="html">
         <source>Technologies Used</source>
         <target>Используемые технологии</target>
@@ -1444,7 +1492,7 @@
         <target>Лет опыта</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.production" datatype="html">
@@ -1452,7 +1500,7 @@
         <target>Систем в продакшене</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.oss" datatype="html">
@@ -1460,7 +1508,7 @@
         <target>Open Source проектов</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.a11y" datatype="html">
@@ -1468,7 +1516,7 @@
         <target>Аудитов доступности</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.repos" datatype="html">
@@ -1476,7 +1524,7 @@
         <target>Репозиториев на GitHub</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.highlight.commits" datatype="html">
@@ -1484,7 +1532,7 @@
         <target>Коммиты на GitHub</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty1.title" datatype="html">
@@ -1492,7 +1540,7 @@
         <target>Нативная Full-Stack Разработка</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty1.desc" datatype="html">
@@ -1500,7 +1548,7 @@
         <target>Избавление от ограничений шаблонных платформ. Я создаю кастомные, семантические веб-приложения с автоматизированным развертыванием в облаке, используя современные технологии.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty2.title" datatype="html">
@@ -1508,7 +1556,7 @@
         <target>Соответствие требованиям доступности и снижение рисков</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">57</context>
+          <context context-type="linenumber">58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty2.desc" datatype="html">
@@ -1516,7 +1564,7 @@
         <target>Аудит и рефакторинг цифровой инфраструктуры для нативного соответствия стандартам WCAG 2.1 AA/AAA и израильским стандартам, что снижает юридические риски лучше, чем это могут сделать одни лишь оверлеи доступности.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty3.title" datatype="html">
@@ -1524,7 +1572,7 @@
         <target>Архитектура систем и оптимизация</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty3.desc" datatype="html">
@@ -1532,7 +1580,7 @@
         <target>Технический консалтинг для устранения критических узких мест, защиты устаревших платформ электронной коммерции и оркестрации высокомасштабируемых, независимых цифровых активов.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">62</context>
+          <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty4.title" datatype="html">
@@ -1540,7 +1588,7 @@
         <target>Обучение работе с программой чтения с экрана</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">65</context>
+          <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialty4.desc" datatype="html">
@@ -1548,7 +1596,7 @@
         <target>Терпеливое индивидуальное обучение для людей, сталкивающихся с цифровыми барьерами: живое описание экрана и помощь на недоступных сайтах, в формах и при оформлении заказов, при этом вы полностью контролируете процесс.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.meta.desc" datatype="html">
@@ -1556,7 +1604,7 @@
         <target>Kuvshinov Software: индивидуальные сайты и бэкенд-системы, помощь с доступностью и проекты с открытым исходным кодом, созданные с заботой.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.component.ts</context>
-          <context context-type="linenumber">72</context>
+          <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.specialties.title" datatype="html">
@@ -1564,7 +1612,7 @@
         <target> Моя специализация </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">28,31</context>
+          <context context-type="linenumber">27,30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.title" datatype="html">
@@ -1572,7 +1620,7 @@
         <target> Избранные работы </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">48,51</context>
+          <context context-type="linenumber">49,52</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.portfolio.btn" datatype="html">
@@ -1580,7 +1628,7 @@
         <target>Посмотреть полное портфолио</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">56,58</context>
+          <context context-type="linenumber">57,59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.title" datatype="html">
@@ -1588,7 +1636,7 @@
         <target> Оверлея никогда не бывает достаточно </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">69,72</context>
+          <context context-type="linenumber">70,73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.title" datatype="html">
@@ -1596,7 +1644,7 @@
         <target> Юридическая иллюзия </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">78,81</context>
+          <context context-type="linenumber">79,82</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.p1" datatype="html">
@@ -1604,7 +1652,7 @@
         <target> В мире, где временные решения становятся постоянными, одни лишь автоматизированные виджеты и типовые шаблоны не обеспечивают ни настоящей доступности, ни надежной юридической защиты. Чтобы сайт стал по-настоящему удобным, нужен точный семантический код и ручное управление фокусом клавиатуры. Оверлей для чтения на этом сайте — необязательный инструмент для удобства, построенный поверх доступного кода, а не вместо него. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">82,87</context>
+          <context context-type="linenumber">83,88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.p2" datatype="html">
@@ -1612,7 +1660,7 @@
         <target> Присоединяясь к сотням других специалистов по конфиденциальности и доступности, я предлагаю вам прочитать Факты об Оверлеях (Overlay Fact Sheet). </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">91,95</context>
+          <context context-type="linenumber">92,96</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.btn.aria" datatype="html">
@@ -1620,7 +1668,7 @@
         <target>Прочитать Факты об Оверлеях доступности (откроется в новой вкладке)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">97,99</context>
+          <context context-type="linenumber">98,100</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.btn.text" datatype="html">
@@ -1628,7 +1676,7 @@
         <target>Прочитать Overlay Fact Sheet</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">101,105</context>
+          <context context-type="linenumber">102,106</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.legal.img_alt" datatype="html">
@@ -1636,7 +1684,7 @@
         <target>Демонстрация того, как программы чтения с экрана не могут читать текст на изображениях, а полагаются на альтернативный текст, предоставленный самим сайтом</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">108,110</context>
+          <context context-type="linenumber">109,111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.title" datatype="html">
@@ -1644,7 +1692,7 @@
         <target> Застряли на недоступном сайте? </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">119,122</context>
+          <context context-type="linenumber">120,123</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p1" datatype="html">
@@ -1652,7 +1700,7 @@
         <target> Не можете пройти reCAPTCHA для завершения покупки? Портал бронирования отелей или правительственный сайт блокирует вашу программу чтения с экрана? </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">123,127</context>
+          <context context-type="linenumber">124,128</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p2" datatype="html">
@@ -1660,7 +1708,7 @@
         <target> Я провожу живое индивидуальное обучение по видеосвязи: описываю, что происходит на экране, шаг за шагом помогаю преодолевать эти барьеры и учу вас справляться самостоятельно. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">128,133</context>
+          <context context-type="linenumber">129,134</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.p3" datatype="html">
@@ -1668,7 +1716,7 @@
         <target> Занятия проходят в Zoom. Вы показываете экран и полностью контролируете процесс. Я никогда не беру под контроль ваш компьютер и не запрашиваю пароли или личные данные. Для постоянных клиентов действует сниженная цена. Я отвечаю на запросы в течение нескольких часов. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">134,139</context>
+          <context context-type="linenumber">135,140</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.btn" datatype="html">
@@ -1676,7 +1724,7 @@
         <target>Получить поддержку</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">142,146</context>
+          <context context-type="linenumber">143,147</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.a11y.support.img_alt" datatype="html">
@@ -1684,7 +1732,7 @@
         <target>пользователь программы чтения с экрана испытывает трудности с веб-сайтом, желая получить помощь в навигации</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/page.html</context>
-          <context context-type="linenumber">149,151</context>
+          <context context-type="linenumber">150,152</context>
         </context-group>
       </trans-unit>
       <trans-unit id="not_found.meta.title" datatype="html">
@@ -1796,7 +1844,7 @@
         <target>Все мои с гордостью опубликованные программные проекты, от финальных/рабочих версий для клиентов до открытого исходного кода.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">12,16</context>
+          <context context-type="linenumber">12,15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.empty.msg" datatype="html">
@@ -1804,7 +1852,7 @@
         <target>Ничего не найдено...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">32,34</context>
+          <context context-type="linenumber">31,33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.results.count" datatype="html">
@@ -1812,7 +1860,7 @@
         <target>Показано</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">41,43</context>
+          <context context-type="linenumber">40,42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.results.projects" datatype="html">
@@ -1820,7 +1868,7 @@
         <target>проектов</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">43,47</context>
+          <context context-type="linenumber">42,46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.project_tech.aria" datatype="html">
@@ -1828,7 +1876,7 @@
         <target>Используемые технологии</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">75,76</context>
+          <context context-type="linenumber">74,75</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_visit.aria" datatype="html">
@@ -1836,7 +1884,7 @@
         <target>Посетить сайт (открывается в новой вкладке)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">92,93</context>
+          <context context-type="linenumber">91,92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_visit.text" datatype="html">
@@ -1844,7 +1892,7 @@
         <target>Посетить сайт</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">93,95</context>
+          <context context-type="linenumber">92,94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_source.aria" datatype="html">
@@ -1852,7 +1900,7 @@
         <target>Смотреть исходный код (открывается в новой вкладке)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">109,110</context>
+          <context context-type="linenumber">108,109</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.btn_source.text" datatype="html">
@@ -1860,7 +1908,7 @@
         <target>Исходный код</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">110,112</context>
+          <context context-type="linenumber">109,111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.title" datatype="html">
@@ -1868,7 +1916,7 @@
         <target>Готовы создать свою систему?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">132,136</context>
+          <context context-type="linenumber">131,135</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.desc" datatype="html">
@@ -1876,7 +1924,7 @@
         <target>Давайте обсудим ваши архитектурные потребности и разработаем цифровой актив, которым вы будете владеть по-настоящему.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">138,142</context>
+          <context context-type="linenumber">137,141</context>
         </context-group>
       </trans-unit>
       <trans-unit id="portfolio_page.cta.btn" datatype="html">
@@ -1884,7 +1932,7 @@
         <target>Начать проект</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/page.html</context>
-          <context context-type="linenumber">144,146</context>
+          <context context-type="linenumber">143,145</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacy.meta.title" datatype="html">

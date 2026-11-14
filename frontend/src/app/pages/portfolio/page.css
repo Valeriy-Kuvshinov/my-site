@@ -111,7 +111,14 @@
 			}
 		}
 
-		.portfolio .projects,
+		.portfolio {
+			padding: 1rem;
+
+			.counter {
+				margin-block-end: 1rem;
+			}
+		}
+
 		.cta {
 			padding: 3rem 1rem;
 		}
@@ -140,7 +147,14 @@
 			}
 		}
 
-		.portfolio .projects,
+		.portfolio {
+			padding: 2rem;
+
+			.counter {
+				margin-block-end: 2rem;
+			}
+		}
+
 		.cta {
 			padding: 4rem 2rem;
 		}

@@ -36,16 +36,6 @@ html {
 		}
 	}
 
-	&.font-accessible * {
-		:host-context([dir="ltr"]) {
-			font-family: "dyslexic-english", Arial, sans-serif !important;
-		}
-
-		:host-context([dir="rtl"]) {
-			font-family: "dyslexic-hebrew", Arial, sans-serif !important;
-		}
-	}
-
 	&.highlight-links a {
 		text-decoration: underline !important;
 		text-decoration-thickness: 0.15em !important;
@@ -309,4 +299,12 @@ html {
 			}
 		}
 	}
+}
+
+html[dir="ltr"].font-accessible * {
+	font-family: "dyslexic-english", Arial, sans-serif !important;
+}
+
+html[dir="rtl"].font-accessible * {
+	font-family: "dyslexic-hebrew", Arial, sans-serif !important;
 }
