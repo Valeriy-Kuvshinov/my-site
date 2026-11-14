@@ -22,10 +22,28 @@ for (const [id, targetText] of Object.entries(translations)) {
 	const unitRegex = new RegExp(`(<trans-unit id="${id}".*?>\\s*<source>.*?<\\/source>)`, "gs")
 
 	xlfContent = xlfContent.replace(unitRegex, (match) => {
+		let processedTargetText = targetText
+
+		const xTags = match.match(/<x id="INTERPOLATION[^>]*\/>/g) || []
+
+		xTags.forEach((xTag) => {
+			const idMatch = xTag.match(/id="(INTERPOLATION(?:_\d+)?)"/)
+
+			if (idMatch) {
+				const exactPlaceholder = `{$${idMatch[1]}}`
+				const generalPlaceholder = "{$INTERPOLATION}"
+
+				if (processedTargetText.includes(exactPlaceholder)) {
+					processedTargetText = processedTargetText.replace(exactPlaceholder, xTag)
+				} else if (processedTargetText.includes(generalPlaceholder)) {
+					processedTargetText = processedTargetText.replace(generalPlaceholder, xTag)
+				}
+			}
+		})
 		if (match.includes("<target>")) {
-			return match.replace(/<target>.*?<\/target>/, `<target>${targetText}</target>`)
+			return match.replace(/<target>.*?<\/target>/, `<target>${processedTargetText}</target>`)
 		}
-		return `${match}\n        <target>${targetText}</target>`
+		return `${match}\n        <target>${processedTargetText}</target>`
 	})
 }
 fs.writeFileSync(xlfPath, xlfContent)

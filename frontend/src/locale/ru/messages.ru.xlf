@@ -1473,7 +1473,7 @@
       </trans-unit>
       <trans-unit id="home.reviews.original_in" datatype="html">
         <source> Original (<x id="INTERPOLATION" equiv-text="{{ langName }}"/>) </source>
-        <target>Оригинал на ({$INTERPOLATION})</target>
+        <target>Оригинал на (<x id="INTERPOLATION" equiv-text="{{ langName }}"/>)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/components/reviews/reviews.html</context>
           <context context-type="linenumber">73,75</context>
@@ -2990,7 +2990,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">90,93</context>
+          <context context-type="linenumber">92,95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav.link.services" datatype="html">
@@ -3006,7 +3006,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">98,101</context>
+          <context context-type="linenumber">100,103</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav.link.about" datatype="html">
@@ -3022,7 +3022,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">106,109</context>
+          <context context-type="linenumber">108,111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav.link.contact" datatype="html">
@@ -3038,7 +3038,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">114,118</context>
+          <context context-type="linenumber">116,120</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav.link.admin" datatype="html">
@@ -3050,7 +3050,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">17,20</context>
+          <context context-type="linenumber">19,22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav.link.logout" datatype="html">
@@ -3062,7 +3062,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">23,26</context>
+          <context context-type="linenumber">25,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cookie.dialog.aria" datatype="html">
@@ -3196,7 +3196,7 @@
         <target>Главная мобильная</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">33,35</context>
+          <context context-type="linenumber">35,37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav.mobile.open.aria" datatype="html">
@@ -3204,7 +3204,7 @@
         <target>Открыть меню навигации</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">37,40</context>
+          <context context-type="linenumber">39,42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav.desktop.aria" datatype="html">
@@ -3212,7 +3212,7 @@
         <target>Главная</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/header/header.html</context>
-          <context context-type="linenumber">67,70</context>
+          <context context-type="linenumber">69,72</context>
         </context-group>
       </trans-unit>
       <trans-unit id="image_modal.dialog.aria" datatype="html">

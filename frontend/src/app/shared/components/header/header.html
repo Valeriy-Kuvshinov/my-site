@@ -1,4 +1,6 @@
-@if (authService.currentUser()) {
+@let user = authService.currentUser();
+
+@if (user) {
 <div class="admin-bar flex flex-row full-center gap-8 w-full">
 	<div class="user-info flex flex-row items-center gap-2">
 		<app-svg-icon
@@ -6,7 +8,7 @@
 			width="16"
 			height="16">
 		</app-svg-icon>
-		<span>{{ authService.currentUser()?.email }}</span>
+		<span>{{ user.email }}</span>
 	</div>
 
 	<div class="actions flex flex-row items-center gap-8">
