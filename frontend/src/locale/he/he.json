@@ -201,6 +201,7 @@
 	"privacy.sec8.p1": " אתם רשאים לבקש לראות את המידע האישי שאני מחזיק עליכם, לתקן אותו או למחוק אותו, בכפוף לדין. לשם כך, או לכל שאלה על מדיניות זו, אנא פנו אליי דרך <x id=\"START_LINK\" ctype=\"x-a\" equiv-text=\"&lt;a&gt;\"/>עמוד יצירת הקשר<x id=\"CLOSE_LINK\" ctype=\"x-a\" equiv-text=\"&lt;/a&gt;\"/> או במייל (<x id=\"START_LINK_1\" ctype=\"x-a\" equiv-text=\"&lt;a&gt;\"/>contact@kuvware.com<x id=\"CLOSE_LINK\" ctype=\"x-a\" equiv-text=\"&lt;/a&gt;\"/>). ",
 	"privacy.sec8.p2": "מדיניות זו עודכנה לאחרונה ב-12 בנובמבר 2026.",
 	"privacy.sec8.p3": " אני רשאי לעדכן מדיניות זו מעת לעת. הגרסה העדכנית נמצאת תמיד בעמוד זה. ",
+	"home.meta.title": "Kuvshinov Software | תוכנות מותאמות אישית, שירותי נגישות דיגיטליים",
 	"home.meta.desc": "Kuvshinov Software: אתרים ומערכות Backend מותאמים אישית, סיוע בנגישות ופרויקטי קוד פתוח, שנבנים באכפתיות.",
 	"home.hero.img_alt": "ולרי קובשינוב יושב בכנס",
 	"home.hero.title": " מערכות רשת סקלביליות, עם נגישות כחלק מהעיצוב ",
