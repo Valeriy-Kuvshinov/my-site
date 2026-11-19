@@ -30,15 +30,17 @@ const GLOBAL_TTL_MILLIS = 15 * 60 * 1000
 					req: (req) => ({ method: req.method, url: req.url }),
 					res: (res) => ({ statusCode: res.statusCode }),
 				},
-				transport: {
-					target: "pino-pretty",
-					options: {
-						colorize: true,
-						translateTime: "SYS:standard",
-						ignore: "pid,hostname",
-						singleLine: true,
-					},
-				},
+				transport: !IS_PRODUCTION
+					? {
+							target: "pino-pretty",
+							options: {
+								colorize: true,
+								translateTime: "SYS:standard",
+								ignore: "pid,hostname",
+								singleLine: true,
+							},
+						}
+					: undefined,
 			},
 		}),
 		ThrottlerModule.forRoot([

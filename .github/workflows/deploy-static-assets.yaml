@@ -1,5 +1,9 @@
 name: Frontend Deployment Workflow For Production
 
+concurrency:
+    group: frontend-prod-deploy
+    cancel-in-progress: false
+
 # Redeploy in the following events:
 on:
     # After pushing software modifications to the main branch
@@ -20,7 +24,7 @@ jobs:
             - name: Initialize Node.js Development Environment
               uses: actions/setup-node@v4
               with:
-                  node-version: "24"
+                  node-version-file: "frontend/.nvmrc"
                   cache: "npm"
                   cache-dependency-path: frontend/package-lock.json
 
@@ -51,7 +55,18 @@ jobs:
                   key: ${{ secrets.VPS_SSH_KEY }}
                   known_hosts: ${{ secrets.VPS_KNOWN_HOSTS }}
 
-            - name: Execute Atomic Sync to AWS Target
+            - name: Deploy Static Build Atomically to AWS VPS
               run: |
-                  # Syncs the newly generated static output directly into the VPS Nginx volume
-                  rsync -avz --delete -e "ssh" ./backend/out/ ubuntu@${{ secrets.VPS_IP }}:~/kuv-backend/out/
+                  RELEASE_ID="$(date +%Y%m%d%H%M%S)-${GITHUB_SHA::7}"
+                  REMOTE_BASE="~/kuv-backend/site"
+                  REMOTE_RELEASE="$REMOTE_BASE/releases/$RELEASE_ID"
+
+                  ssh ubuntu@${{ secrets.VPS_IP }} "mkdir -p $REMOTE_RELEASE"
+                  rsync -avz -e "ssh" ./backend/out/ ubuntu@${{ secrets.VPS_IP }}:$REMOTE_RELEASE/
+
+                  ssh ubuntu@${{ secrets.VPS_IP }} "
+                    cd $REMOTE_BASE &&
+                    ln -sfn releases/$RELEASE_ID current.tmp &&
+                    mv -Tf current.tmp current &&
+                    ls -1dt releases/* | tail -n +4 | xargs -r rm -rf
+                  "

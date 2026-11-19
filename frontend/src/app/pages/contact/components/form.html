@@ -101,11 +101,11 @@
 	</app-input-area>
 
 	<div class="consent-wrapper flex flex-col gap-2 w-full">
-		<label class="flex flex-row items-center gap-4">
+		<label class="flex flex-row items-center gap-4 w-fit cursor-pointer fast-trans">
 			<input
 				type="checkbox"
 				formControlName="consent"
-				class="w-h-fit"
+				class="w-h-fit cursor-pointer"
 				[attr.aria-invalid]="getInputControl('consent').invalid && getInputControl('consent').touched" />
 			<span i18n="@@contact.form.consent.text">
 				I agree to the

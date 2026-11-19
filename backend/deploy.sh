@@ -19,7 +19,6 @@ echo "Ensuring remote target directories exist..."
 ssh -i "$SSH_KEY" "$VPS_USER@$VPS_IP" "mkdir -p $REMOTE_DIR"
 
 echo "Syncing Configurations and Static Files..."
-rsync -avz --delete -e "ssh -i $SSH_KEY" ./out/ "$VPS_USER@$VPS_IP:$REMOTE_DIR/out/"
 rsync -avz -e "ssh -i $SSH_KEY" ./nginx.conf "$VPS_USER@$VPS_IP:$REMOTE_DIR/nginx.conf"
 rsync -avz -e "ssh -i $SSH_KEY" ./docker-compose.yaml "$VPS_USER@$VPS_IP:$REMOTE_DIR/docker-compose.yaml"
 rsync -avz -e "ssh -i $SSH_KEY" ./.env "$VPS_USER@$VPS_IP:$REMOTE_DIR/.env"

@@ -14,8 +14,25 @@
 	.consent-wrapper {
 		grid-column: 1 / -1;
 
-		a {
-			color: var(--mnrclr4);
+		label {
+			color: var(--scdclr3);
+
+			input {
+				accent-color: var(--mnrclr2);
+
+				&:focus-visible {
+					outline: 2px solid var(--mnrclr2);
+					outline-offset: 2px;
+				}
+			}
+
+			a {
+				color: var(--mnrclr4);
+			}
+
+			&:hover {
+				color: var(--scdclr1);
+			}
 		}
 
 		.error-text {

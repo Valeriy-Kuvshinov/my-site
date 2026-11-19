@@ -1,11 +1,9 @@
 :root {
-	/* Primary Colors: The Extremes (Backgrounds & Core Text) */
 	--prmclr1: #0b0f19; /* Deep Cyber Navy (Main App Background) */
 	--prmclr2: #f8fafc; /* Ice White (Primary Text / High Contrast) */
 	--prmclr3: #04060a; /* Dark Abyss (Deepest background / shadow) */
 	--prmclr4: #ffffff; /* Pure White (Absolute contrast points) */
 
-	/* Secondary Colors: The "In-Betweeners" (Typography gradients & Surface elevations) */
 	--scdclr1: #e2e8f0; /* Light Silver (Subheadings) */
 	--scdclr2: #cbd5e1; /* Muted Silver (Secondary Text / Metadata) */
 	--scdclr3: #94a3b8; /* Slate Gray (Tertiary Text / Muted Icons) */
@@ -16,7 +14,6 @@
 	--scdclr8: #0f172a; /* Surface L1 (Low elevation panels) */
 	--scdclr9: #080b12; /* Inset backgrounds / Code block backgrounds */
 
-	/* Minor Colors: Accents, Interactions & Alerts */
 	--mnrclr1: #38bdf8; /* Neon Sky Blue */
 	--mnrclr2: #4ade80; /* Mint Green */
 	--mnrclr3: #f87171; /* Soft Coral Red */
