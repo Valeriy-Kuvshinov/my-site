@@ -68,7 +68,7 @@ const SPECIALTIES: Specialty[] = [
 	},
 ]
 
-const PAGE_TITLE = $localize`:"@@home.meta.title:Kuvshinov Software | Custom Apps, Digital Accessibility Services"`
+const PAGE_TITLE = $localize`:@@home.meta.title:Kuvshinov Software | Custom Apps, Digital Accessibility Services`
 const PAGE_URL = "/"
 const PAGE_DESC = $localize`:@@home.meta.desc:Kuvshinov Software: custom websites and backend systems, accessibility help, and open source projects, built with care.`
 
