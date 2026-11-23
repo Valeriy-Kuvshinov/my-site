@@ -4,7 +4,9 @@
 set -e
 
 # Infrastructure Configuration Variables
-VPS_IP="3.120.21.239"
+VPS_IP="$(grep -E '^VPS_IP=' .env | cut -d= -f2- | tr -d "\"'\r")"
+: "${VPS_IP:?VPS_IP is missing from .env}"
+
 VPS_USER="ubuntu"
 SSH_KEY="$HOME/.ssh/aws_key_my_site"
 REMOTE_DIR="~/kuv-backend"
